@@ -1,0 +1,303 @@
+@media (max-width: 992px) {
+  .header {
+
+    &__link,
+    &__button {
+      margin-top: 0px;
+    }
+  }
+
+  .bottomNav {
+    &__list {
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      max-width: 50%;
+    }
+  }
+
+  .sliderWork {
+    .swiper {
+      overflow: visible;
+    }
+  }
+
+  .advantage {
+    &__inner {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .type {
+    &__image {
+      height: 300px;
+    }
+  }
+
+  .form {
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__input {
+      margin-bottom: 20px;
+    }
+
+    &__box {
+      width: 100%;
+    }
+
+    &__button {
+      margin: 0 auto 5px;
+    }
+
+    &__text {
+      text-align: center;
+    }
+  }
+
+  .footer {
+    &__inner {
+      flex-wrap: wrap;
+      justify-content: left;
+    }
+
+    &__item {
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    &__item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__link {
+      margin-right: 0;
+      margin-bottom: 10px;
+
+      &:nth-child(2) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .content {
+    padding-top: 20px;
+
+    &__item {
+      font-size: 18px;
+    }
+  }
+
+  .bottomNav {
+    padding-top: 20px;
+
+    &__link {
+      padding-top: 25px;
+      padding-bottom: 25px;
+      font-size: 18px;
+    }
+  }
+
+  .sliderWork {
+    &__icon {
+      margin-bottom: 20px;
+    }
+  }
+
+  .type {
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__item,
+    &__content {
+      width: 100%;
+    }
+  }
+
+  .contact {
+    &__content:first-child {
+      margin-right: 0;
+    }
+
+    &__link {
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+  }
+
+  .form {
+    &__input {
+      width: 100%;
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .bottomNav {
+    &__item {
+      max-width: 100%;
+    }
+
+    &__link {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-size: 14px;
+    }
+  }
+
+  .content {
+    &__title {
+      font-size: 25px;
+    }
+
+    &__item {
+      font-size: 14px;
+    }
+  }
+
+  .advantage {
+    &__text {
+      font-size: 14px;
+    }
+
+    &__num {
+      font-size: 20px;
+    }
+  }
+
+  .use {
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__content {
+      width: 100%;
+
+      &:first-child {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .contact {
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__content {
+      margin-right: 0;
+      text-align-last: left;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .footer {
+    &__content {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .button {
+    width: 180px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .title {
+    padding-top: 0px;
+    font-size: 25px;
+  }
+
+  .header {
+    &__item:nth-child(2) {
+      flex-direction: column;
+    }
+
+    &__box {
+      &:first-child {
+        margin-bottom: 10px;
+      }
+
+      &:last-child {
+        margin-left: auto;
+      }
+    }
+
+    &__link {
+      margin-right: 0;
+      font-size: 14px;
+
+      &:nth-child(2) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .advantage {
+    &__inner {
+      display: grid;
+      grid-template-rows: repeat(8, 1fr);
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .application {
+    padding-top: 0;
+  }
+
+  .form {
+    &__box:first-child {
+      margin-bottom: 20px;
+    }
+
+    &__input {
+      margin-right: 0;
+    }
+
+    &__button {
+      margin: 0 auto 10px;
+    }
+  }
+
+
+  .footer {
+    &__inner {
+      justify-content: center;
+      text-align: center;
+    }
+
+    &__item {
+      margin-right: 0;
+
+      &:first-child {
+        flex-direction: column;
+      }
+    }
+
+    &__logo {
+      margin: 0 auto 10px;
+    }
+  }
+}

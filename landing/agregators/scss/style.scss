@@ -1,0 +1,449 @@
+@import 'mixins';
+@import 'variables';
+@import 'global';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+
+.wrapper {
+  background-image: url(../images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  @include fluid(padding-top, 20px, 35px);
+  @include fluid(padding-bottom, 20px, 35px);
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  &__item {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    @include fluid(margin-top, 0px, -35px);
+  }
+
+  &__link {
+    @include fluid(margin-right, 25px, 50px);
+    @include fluid(font-size, 14px, 16px);
+    color: $default;
+    transition: all .38s;
+
+    &:last-child {
+      @include fluid(margin-right, 15px, 30px);
+    }
+
+    &:hover {
+      color: $accent;
+    }
+
+    &-image {
+      position: relative;
+      top: 4px;
+      width: 20px;
+      height: 20px;
+      display: inline;
+      margin-right: 5px;
+    }
+  }
+}
+
+.content {
+  @include fluid(padding-top, 50px, 110px);
+
+  &__title {
+    @include fluid(margin-bottom, 20px, 32px);
+    @include fluid(font-size, 28px, 48px);
+    font-weight: 700px;
+    color: $default;
+  }
+
+  &__item {
+    max-width: 930px;
+    padding-left: 12px;
+    @include fluid(font-size, 18px, 24px);
+    line-height: 170.02%;
+    list-style: inside;
+    color: $default;
+  }
+}
+
+.bottomNav {
+  @include fluid(padding-top, 50px, 145px);
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    width: 100%;
+  }
+
+  &__link {
+    display: block;
+    @include fluid(padding-top, 45px, 110px);
+    @include fluid(padding-bottom, 45px, 110px);
+    border: 1px solid #667385;
+    @include fluid(font-size, 18px, 24px);
+    text-align: center;
+    color: $default;
+    transition: all .38s;
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid $default;
+    }
+  }
+}
+
+.sliderWork {
+  @include fluid(padding-top, 50px, 200px);
+  @include fluid(margin-bottom, 50px, 100px);
+
+  &__title {
+    @include fluid(margin-bottom, 40px, 120px);
+    color: $text;
+  }
+
+  &__box {
+    &:hover {
+      cursor: url('../images/icon/arrow.svg'), pointer;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    @include fluid(width, 55px, 110px);
+    @include fluid(height, 55px, 110px);
+    @include fluid(margin-bottom, 15px, 42px);
+  }
+
+  &__text {
+    text-align: center;
+  }
+}
+
+.advantage {
+  @include fluid(padding-top, 50px, 100px);
+  @include fluid(margin-bottom, 50px, 100px);
+
+  &__title {
+    @include fluid(margin-bottom, 40px, 100px);
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    @include fluid(column-gap, 15px, 30px);
+    @include fluid(row-gap, 30px, 100px);
+  }
+
+  &__item {
+    display: grid;
+    align-content: space-between;
+  }
+
+  &__text {
+    @include fluid(margin-bottom, 10px, 22px);
+    @include fluid(font-size, 16px, 20px);
+    line-height: 32px;
+  }
+
+  &__num {
+    position: relative;
+    padding-bottom: 10px;
+    color: $accent;
+    @include fluid(font-size, 24px, 36px);
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #ACACAC;
+    }
+  }
+}
+
+.type {
+  @include fluid(padding-top, 50px, 175px);
+  @include fluid(padding-bottom, 50px, 127px);
+  background-image: url(../images/type/type-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__title {
+    @include fluid(margin-bottom, 50px, 120px);
+    margin-bottom: 15px;
+    @include fluid(font-size, 28px, 56px);
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    @include fluid(margin-right, 20px, 30px);
+    width: 50%;
+  }
+
+  &__text {
+    position: relative;
+    max-width: 550px;
+    @include fluid(padding-left, 15px, 30px);
+    @include fluid(margin-bottom, 15px, 31px);
+    color: #909192;
+    transition: all .38s;
+    cursor: pointer;
+
+    &:hover {
+      @include fluid(padding-left, 30px, 50px);
+      color: $text;
+
+      &::before {
+        @include fluid(width, 20px, 40px);
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      @include fluid(top, 8px, 11px);
+      left: 0px;
+      @include fluid(width, 10px, 20px);
+      height: 1px;
+      background-color: $accent;
+      transition: all .38s;
+    }
+
+    &--active {
+      @include fluid(padding-left, 30px, 50px);
+      color: $text;
+
+      &::before {
+        @include fluid(width, 20px, 40px);
+      }
+    }
+  }
+
+  &__content {
+    width: 50%;
+  }
+
+  &__image {
+    @include fluid(height, 360px, 500px);
+    display: none;
+    object-fit: cover;
+    opacity: 0;
+
+    &--active {
+      display: block;
+    }
+
+    &--opacity {
+      opacity: 1;
+      transition: all 0.38s;
+    }
+  }
+}
+
+.object {
+  @include fluid(padding-top, 50px, 200px);
+  @include fluid(margin-bottom, 50px, 100px);
+
+  &__box {
+    &:hover {
+      cursor: url('../images/icon/arrow.svg'), pointer;
+    }
+  }
+
+  &__inner {
+    position: relative;
+  }
+
+  &__image {
+    @include fluid(height, 275px, 375px);
+    object-fit: cover;
+  }
+
+  .swiper {
+    overflow: visible;
+  }
+}
+
+.contact {
+  @include fluid(padding-top, 50px, 100px);
+  @include fluid(margin-bottom, 50px, 100px);
+
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+    @include fluid(margin-bottom, 50px, 100px);
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__link {
+    display: block;
+    @include fluid(margin-bottom, 15px, 30px);
+    @include fluid(font-size, 22px, 48px);
+    font-weight: 700;
+    color: $accent;
+  }
+
+  &__text {
+    @include fluid(font-size, 16px, 24px);
+  }
+}
+
+.application {
+  @include fluid(padding-top, 50px, 100px);
+  @include fluid(margin-bottom, 0px, 100px);
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+
+  &__input {
+    @include fluid(width, 200px, 382px);
+    padding: 16px 0px;
+    align-self: start;
+    color: $text;
+    border: none;
+    border-bottom: 1px solid #C4C4C4;
+    background-color: transparent;
+    @include fluid(font-size, 18px, 24px);
+    outline: none;
+    transition: all .38s;
+
+    &::placeholder {
+      color: #ACACAC;
+      transition: all .38s;
+    }
+
+    &:focus,
+    &:hover {
+      border-bottom: 1px solid $text;
+
+      &::placeholder {
+        color: $text;
+      }
+    }
+  }
+
+  &__box {
+    padding-top: 12px;
+    @include fluid(width, 310px, 382px);
+  }
+
+  &__button {
+    margin-bottom: 10px;
+    @include fluid(width, 310px, 382px);
+  }
+
+  &__text {
+    @include fluid(font-size, 12px, 16px);
+    line-height: 25px;
+    color: #7E7E7E;
+
+    &-link {
+      color: $accent;
+    }
+  }
+}
+
+.map iframe {
+  @include fluid(height, 300px, 650px);
+}
+
+.footer {
+  @include fluid(padding-top, 25px, 45px);
+  @include fluid(padding-bottom, 25px, 50px);
+  background: #013E5E;
+  @include fluid(font-size, 14px, 16px);
+  color: $default;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    align-self: center;
+
+    &:nth-child(2) {
+      @include fluid(margin-right, 20px, 115px);
+    }
+  }
+
+  &__content {
+    padding-top: 3px;
+    margin-right: 20px;
+  }
+
+  &__logo {
+    @include fluid(margin-right, 15px, 30px);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &:first-child {
+      @include fluid(margin-right, 20px, 100px);
+    }
+  }
+
+  &__link {
+    display: block;
+    color: $default;
+    transition: all .38s;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  &__button {
+    align-self: center;
+    border: none;
+    background-color: $default;
+    color: $text;
+    text-align: center;
+    transition: all .38s;
+
+    &:hover {
+      color: $default;
+      background-color: $accent;
+    }
+  }
+}
+
+@import 'media';

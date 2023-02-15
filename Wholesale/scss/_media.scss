@@ -1,0 +1,149 @@
+@media (max-width: 992px) {
+
+  .slider {
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+    &__inner {
+      grid-template-columns: 1fr;
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+
+    &__item {
+      &-title {
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 15px;
+      }
+
+      &-block {
+        margin-bottom: 20px;
+      }
+
+      &-subtitle,
+      &-text {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 10px;
+      }
+
+      &-text {
+        span {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+
+      &-color,
+      &-size {
+        font-size: 14px;
+      }
+
+      &-price {
+        font-size: 26px;
+        line-height: 30px;
+        margin-right: 20px;
+      }
+
+      &-btn {
+        padding: 5px 15px;
+        font-size: 14px;
+      }
+    }
+
+    &__list {
+      &-subtitle {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 10px;
+      }
+
+      &-item {
+        font-size: 16px;
+        line-height: 20px;
+
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  .enamel {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__item {
+      &-name {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .enamel {
+    &__title {
+      font-size: 40px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .slider {
+    &__item {
+      margin: 0 auto;
+
+      &:first-child {
+        max-width: 390px;
+      }
+    }
+
+    &__item,
+    &-price {
+      &-title {
+        font-size: 22px;
+        line-height: 26px;
+      }
+
+      &-subtitle,
+      &-text {
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      &-text {
+        span {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+    }
+
+    &__list {
+
+      &-subtitle,
+      &-item {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .slider {
+    &__item {
+
+      &:first-child {
+        max-width: 290px;
+      }
+    }
+  }
+}

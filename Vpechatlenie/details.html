@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Впечатление</title>
+  <link rel="stylesheet" href="./plugins/fancybox/jquery.fancybox.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/icons.css">
+  <link rel="shortcut icon" href="./images/favicon.svg" type="x-icon">
+  <link rel="stylesheet" href="./css/jquery.formstyler.css">
+  <link rel="stylesheet" href="./css/nouislider.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner header__inner--details">
+        <div class="header__item">
+          <a class="header__logo logo" href="#">
+            <img class="logo__image" src="images/logo.png" alt="">
+          </a>
+          <a class="header__catalog" href="#">
+            <div class="header__icon icon-catalog"></div>
+            Каталог товаров
+          </a>
+          <div class="header__modal modal">
+            <div class="modal__list">
+              <div class="modal__item">
+                <a class="modal__link" href="#">
+                  <div class="modal__icon icon-man-and-woman"></div>
+                  Для двоих
+                </a>
+              </div>
+              <div class="modal__item">
+                <a class="modal__link" href="#">
+                  <div class="modal__icon icon-woman"></div>
+                  Для нее
+                </a>
+              </div>
+              <div class="modal__item">
+                <a class="modal__link" href="#">
+                  <div class="modal__icon icon-man"></div>
+                  Для него
+                </a>
+              </div>
+              <div class="modal__item">
+                <a class="modal__link" href="#">
+                  <div class="modal__icon icon-hot-air-baloon"></div>
+                  Полеты
+                </a>
+              </div>
+              <div class="modal__item">
+                <a class="modal__link" href="#">
+                  <div class="modal__icon icon-surf"></div>
+                  Экстрим
+                </a>
+              </div>
+              <div class="modal__item">
+                <a class="modal__link" href="#">
+                  <div class="modal__icon icon-spa"></div>
+                  SPA
+                </a>
+              </div>
+              <div class="modal__item">
+                <a class="modal__link" href="#">
+                  <div class="modal__icon icon-tank"></div>
+                  Милитари
+                </a>
+              </div>
+              <div class="modal__item">
+                <a class="modal__link" href="#">
+                  <div class="modal__icon icon-drawing"></div>
+                  Мастер-класс
+                </a>
+              </div>
+              <div class="modal__item">
+                <a class="modal__link" href="#">
+                  <div class="modal__icon icon-boat"></div>
+                  Отдых на воде
+                </a>
+              </div>
+              <div class="modal__item">
+                <a class="modal__link" href="#">
+                  <div class="modal__icon icon-photo-camera"></div>
+                  Фотосессия
+                </a>
+              </div>
+              <div class="modal__item">
+                <a class="modal__link" href="#">
+                  <div class="modal__icon icon-price"></div>
+                  Цена со скидкой
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__burger">
+          <div class="header__burger-line"></div>
+        </div>
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link link" href="#">
+              О нас
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link" href="#">
+              Как это работает
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link" href="#">
+              Доставка
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link" href="#">
+              Отзывы
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link" href="#">
+              Служба качества
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link" href="#">
+              Контакты
+            </a>
+          </li>
+        </ul>
+        <div class="header__item">
+          <a class="header__button button" href="#">
+            Активация сертификата
+          </a>
+          <div class="header__search">
+            <div class="icon-search"></div>
+            <div class="header__search-box">
+              <input class="header__search-input" type="text">
+              <div class="icon-close"></div>
+            </div>
+          </div>
+          <a class="header__basket" href="#">
+            <div class="icon-basket"></div>
+            <span class="header__num">5</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="video">
+    <div class="container">
+      <div class="video__item">
+        <div class="video__breadcrumbs breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Главная
+                <div class="breadcrumbs__icon icon-arrow"></div>
+              </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Каталог
+                <div class="breadcrumbs__icon icon-arrow"></div>
+              </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Мастер-классы
+                <div class="breadcrumbs__icon icon-arrow"></div>
+              </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Активный отдых
+                <div class="breadcrumbs__icon icon-arrow"></div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <h3 class="video__title">
+          Прогулка на лошадях
+        </h3>
+        <div class="rating video__rating">
+          <div class="rating__body">
+            <div class="rating__active"></div>
+            <div class="rating__items">
+              <input class="rating__item" type="radio" name="star" value="1">
+              <input class="rating__item" type="radio" name="star" value="2">
+              <input class="rating__item" type="radio" name="star" value="3">
+              <input class="rating__item" type="radio" name="star" value="4">
+              <input class="rating__item" type="radio" name="star" value="5">
+            </div>
+          </div>
+          <div class="rating__value">3.6</div>
+        </div>
+        <a class="video__link link" href="#">
+          382 восторженных отзыва
+        </a>
+      </div>
+    </div>
+    <div class="video__swiper swiper">
+      <div class="video__wrapper swiper-wrapper">
+        <div class="video__details-slide swiper-slide">
+          <iframe src="https://www.youtube.com/embed/ysOl0KUpOZs" title="YouTube video player" frameborder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+            width="100%" height="100%">
+          </iframe>
+        </div>
+        <div class="video__details-slide swiper-slide">
+          <iframe src="https://www.youtube.com/embed/ysOl0KUpOZs" title="YouTube video player" frameborder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+            width="100%" height="100%">
+          </iframe>
+        </div>
+        <div class="video__details-slide swiper-slide">
+          <iframe src="https://www.youtube.com/embed/ysOl0KUpOZs" title="YouTube video player" frameborder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+            width="100%" height="100%">
+          </iframe>
+        </div>
+      </div>
+      <div class="video__arrow-prev swiper-button-prev"></div>
+      <div class="video__arrow-next swiper-button-next"></div>
+    </div>
+    <nav class="nav">
+      <div class="newContainer">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a data-goto=".section-1" class="nav__link link" href="#">
+              Описание
+            </a>
+          </li>
+          <li class="nav__item">
+            <a data-goto=".section-1" class="nav__link link" href="#">
+              Что входит
+            </a>
+          </li>
+          <li class="nav__item">
+            <a data-goto=".section-2" class="nav__link link" href="#">
+              Подробности
+            </a>
+          </li>
+          <li class="nav__item">
+            <a data-goto=".section-3" class="nav__link link" href="#">
+              Отзывы
+            </a>
+          </li>
+          <li class="nav__item">
+            <a data-goto=".section-4" class="nav__link link" href="#">
+              Где проходит
+            </a>
+          </li>
+          <li class="nav__item">
+            <a data-goto=".section-5" class="nav__link link" href="#">
+              Упаковка
+            </a>
+          </li>
+          <li class="nav__item">
+            <a data-goto=".section-6" class="nav__link link" href="#">
+              Наборы
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+  <section class="sticky">
+    <div class="container newContainer sticky__container">
+      <div class="sticky__inner">
+        <div class="sticky__item">
+
+          <div class="impression section-1">
+            <h2 class="impression__title title">
+              О впечатлении
+            </h2>
+            <p class="impression__text">
+              Давно мечтали покататься на лошади? Отправляйтесь в романтичную прогулку, отдохните вдали от суеты в лесах
+              Подмосковья! Общение с лошадьми - чудесный способ снять стресс и отдохнуть от городской суеты.
+            </p>
+            <div class="impression__box section-1">
+              <div class="impression__item">
+                <div class="impression__subtitle">
+                  В подарок входит:
+                </div>
+                <ul class="impression__list">
+                  <li class="impression__list-text">
+                    Индивидуальный урок верховой езды
+                  </li>
+                  <li class="impression__list-text">
+                    Инструктаж по технике безопасности
+                  </li>
+                  <li class="impression__list-text">
+                    Конная прогулка по парку
+                    в сопровождении инструктора
+                  </li>
+                </ul>
+              </div>
+              <div class="impression__item">
+                <div class="impression__subtitle">
+                  В чем фишка этого подарка?
+                </div>
+                <ul class="impression__list">
+                  <li class="impression__list-text">
+                    Общение с животными снижает стресс
+                  </li>
+                  <li class="impression__list-text">
+                    Кататься можно в любое время года
+                  </li>
+                  <li class="impression__list-text">
+                    Прогулка на свежем воздухе
+                    по живописной местности
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="details section-2">
+            <h2 class="details__title title">
+              Подробности
+            </h2>
+            <div class="details__content details__content--open">
+              <div class="details__content-box">
+                <div class="details__content-text">
+                  <img class="details__content-image" src="./images/details/safety.png" alt="">
+                  Безопасность
+                  <div class="details__content-icon icon-plus"></div>
+                </div>
+                <ul class="details__content-list">
+                  <li class="details__content-item">
+                    Участник должен быть старше 4 лет.
+                  </li>
+                  <li class="details__content-item">
+                    Вес участника не более 120 кг.
+                  </li>
+                </ul>
+              </div>
+              <div class="details__content-box">
+                <div class="details__content-text">
+                  <img class="details__content-image" src="./images/details/with-myself.png" alt="">
+                  Что взять с собой
+                  <div class="details__content-icon icon-plus"></div>
+                </div>
+                <ul class="details__content-list">
+                  <li class="details__content-item">
+                    Участник должен быть старше 4 лет.
+                  </li>
+                  <li class="details__content-item">
+                    Вес участника не более 120 кг.
+                  </li>
+                </ul>
+              </div>
+              <div class="details__content-box">
+                <div class="details__content-text">
+                  <img class="details__content-image" src="./images/details/limitation.png" alt="">
+                  Ограничения
+                  <div class="details__content-icon icon-plus"></div>
+                </div>
+                <ul class="details__content-list">
+                  <li class="details__content-item">
+                    Участник должен быть старше 4 лет.
+                  </li>
+                  <li class="details__content-item">
+                    Вес участника не более 120 кг.
+                  </li>
+                </ul>
+              </div>
+              <div class="details__content-box">
+                <div class="details__content-text">
+                  <img class="details__content-image" src="./images/details/more.png" alt="">
+                  Подробнее
+                  <div class="details__content-icon icon-plus"></div>
+                </div>
+                <ul class="details__content-list">
+                  <li class="details__content-item">
+                    Участник должен быть старше 4 лет.
+                  </li>
+                  <li class="details__content-item">
+                    Вес участника не более 120 кг.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="pack section-5">
+            <h2 class="pack__title title">
+              Упаковка
+            </h2>
+            <p class="pack__text pack__text--width">
+              Вы можете выбрать один из трех вариантов упаковки
+              во время оформления заказа
+            </p>
+            <div class="pack__content">
+              <div class="pack__content-item">
+                <img class="pack__content-image" src="./images/pack/1.png" alt="" class="pack__content-image">
+                <div class="pack__content-box">
+                  <p class="pack__content-title">
+                    Подарочная упаковка
+                  </p>
+                  <p class="pack__content-accent">
+                    350 ₽
+                  </p>
+                  <p class="pack__content-text">
+                    Сертификат выполнен на плотной бумаге и содержит в себе всю необходимую информацию о подарке
+                    (название, уникальный номер и дату продажи). Упакован в стильный конверт из приятного материала.
+                  </p>
+                </div>
+              </div>
+              <div class="pack__content-item">
+                <img class="pack__content-image" src="./images/pack/2.png" alt="" class="pack__content-image">
+                <div class="pack__content-box">
+                  <p class="pack__content-title">
+                    Электронный сертификат
+                  </p>
+                  <p class="pack__content-accent">
+                    Бесплатно
+                  </p>
+                  <p class="pack__content-text">
+                    Вы можете отправить его на e-mail получателю.
+                  </p>
+                  <p class="pack__content-text">
+                    Сертификат также можно распечатать и вручить лично.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p class="pack__text">
+              У нас своя курьерская служба. Это позволяет нам обеспечивать быструю
+              и своевременную доставку по Москве и ближайшей области.
+            </p>
+            <ul class="pack__list">
+              <li class="pack__list-item">
+                <p class="pack__list-title">
+                  Стандартная доставка
+                </p>
+                <p class="pack__list-text">
+                  350₽ в пределах МКАД. С 9:00 до 21:00 без выходных. Отправка в день заказа.
+                </p>
+              </li>
+              <li class="pack__list-item">
+                <p class="pack__list-title">
+                  Срочная доставка
+                </p>
+                <p class="pack__list-text">
+                  350₽ в пределах МКАД. С 9:00 до 21:00 без выходных. Отправка в день заказа.
+                </p>
+              </li>
+              <li class="pack__list-item">
+                <p class="pack__list-title">
+                  Самовывоз
+                </p>
+                <p class="pack__list-text">
+                  Мы открыты ежедневно с 9:00 до 21:00. Необходимо оформить заказ.
+                </p>
+              </li>
+              <li class="pack__list-item">
+                <p class="pack__list-title">
+                  Доставка за МКАД </p>
+                <p class="pack__list-text">
+                  От 500 ₽, рассчитывается индивидуально. Доставка службой UPS или TNT.
+                </p>
+              </li>
+              <li class="pack__list-item">
+                <p class="pack__list-title">
+                  Доставка сразу получателю
+                </p>
+                <p class="pack__list-text">
+                  Оплатите подарок и выезд курьера онлайн, и мы доставим подарок получателю! </p>
+              </li>
+              <li class="pack__list-item">
+                <p class="pack__list-title">
+                  Электронный сертификат </p>
+                <p class="pack__list-text">
+                  Мгновенная бесплатная доставка на почту. Сертификат прийдет на e-mail.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="work">
+            <h2 class="work__title title">
+              Как это работает?
+            </h2>
+            <ul class="work__list">
+              <li class="work__list-item">
+                <!-- <div class="work__list-arrow"></div> -->
+                <p class="work__list-text">
+                  Выбираете подарочный сертификат
+                </p>
+              </li>
+              <li class="work__list-item">
+                <!-- <div class="work__list-arrow"></div> -->
+                <p class="work__list-text">
+                  Дарите сертификат получателю
+                </p>
+              </li>
+              <li class="work__list-item">
+                <!-- <div class="work__list-arrow"></div> -->
+                <p class="work__list-text">
+                  Получатель активирует подарок
+                </p>
+              </li>
+              <li class="work__list-item">
+                <p class="work__list-text">
+                  Яркие впечатления гарантированы
+                </p>
+              </li>
+            </ul>
+            <a class="work__btn button modalBox" href="#modalVideo">
+              <div class="work__btn-icon icon-play"></div>
+              Смотреть видео
+            </a>
+          </div>
+
+          <div class="place section-4">
+            <h2 class="place__title title">
+              Где проходит <span class="place__title-span">(2)</span>
+            </h2>
+            <div class="place__map">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A8e0cac27437b8e62cdb3570453503001676eebec5ebff3bc6a39a9e97cd15d3c&amp;source=constructor"
+                width="100%" height="100%" frameborder="0">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardDetails">
+          <div class="cardDetails__item">
+            <h3 class="cardDetails__title">
+              Прогулка на лощадях
+            </h3>
+            <div class="cardDetails__price">
+              <div class="cardDetails__price-box">
+                <span class="cardDetails__price-content">
+                  3 495 ₽
+                </span>
+                <span class="cardDetails__price-content cardDetails__price-content--old">
+                  3 700 ₽
+                </span>
+              </div>
+              <div class="cardDetails__rating rating rating--js">
+                <div class="cardDetails__rating-box">
+                  <div class="rating__body">
+                    <div class="rating__active"></div>
+                    <div class="rating__items">
+                      <input class="rating__item" type="radio" name="star" value="1">
+                      <input class="rating__item" type="radio" name="star" value="2">
+                      <input class="rating__item" type="radio" name="star" value="3">
+                      <input class="rating__item" type="radio" name="star" value="4">
+                      <input class="rating__item" type="radio" name="star" value="5">
+                    </div>
+                  </div>
+                  <div class="rating__value">3.6</div>
+                </div>
+                <a class="cardDetails__link link" href="#">
+                  382 отзыва
+                </a>
+              </div>
+            </div>
+            <div class="cardDetails__info-subtitle">
+              Комплектация
+            </div>
+            <ul class="cardDetails__info cardDetails__info--open">
+              <li class="cardDetails__info-box">
+                <input class="cardDetails__input" name="price" type="radio">
+                Минимальная
+                <span class="cardDetails__input-opacity">
+                  (1 495₽, 1 человек, 1 час)
+                </span>
+                </input>
+              </li>
+              <li class="cardDetails__info-box">
+                <input class="cardDetails__input" name="price" type="radio">
+                Средняя
+                <span class="cardDetails__input-opacity">
+                  (2 495₽, 2 человека, 2 часа)
+                </span>
+                </input>
+              </li>
+              <li class="cardDetails__info-box">
+                <input class="cardDetails__input" name="price" type="radio">
+                Максимальная
+                <span class="cardDetails__input-opacity">
+                  (3 495₽, 4 человека, 2 часа)
+                </span>
+                </input>
+              </li>
+              <li class="cardDetails__info-box">
+                <input class="cardDetails__input" name="price" type="radio">
+                Минимальная
+                <span class="cardDetails__input-opacity">
+                  (1 495₽, 1 человек, 1 час)
+                </span>
+                </input>
+              </li>
+              <li class="cardDetails__info-box">
+                <input class="cardDetails__input" name="price" type="radio">
+                Средняя
+                <span class="cardDetails__input-opacity">
+                  (2 495₽, 2 человека, 2 часа)
+                </span>
+                </input>
+              </li>
+              <li class="cardDetails__info-box">
+                <input class="cardDetails__input" name="price" type="radio">
+                Максимальная
+                <span class="cardDetails__input-opacity">
+                  (3 495₽, 4 человека, 2 часа)
+                </span>
+                </input>
+              </li>
+              <p class="cardDetails__tab">
+                Показать еще
+              </p>
+            </ul>
+            <div class="cardDetails__info">
+              <div class="cardDetails__info-subtitle cardDetails__info-subtitle--question">
+                Упаковка
+              </div>
+              <div class="cardDetails__info-block cardDetails__info-block--opacity">
+                <input class="cardDetails__input" name="price" type="radio">
+                Электронный сертификат
+                <span class="cardDetails__input-opacity cardDetails__input-opacity--color">
+                  (бесплатно)
+                </span>
+                </input>
+                <img class="cardDetails__info-image" src="./images/pack/2.png" alt="">
+              </div>
+              <div class="cardDetails__info-block cardDetails__info-block--opacity">
+                <input class="cardDetails__input" name="price" type="radio">
+                Подарочная упаковка
+                <span class="cardDetails__input-opacity cardDetails__input-opacity--color">
+                  (450₽)
+                </span>
+                </input>
+                <img class="cardDetails__info-image" src="./images/pack/1.png" alt="">
+              </div>
+              <div data-goto=".section-5" class="cardDetails__info-down link">
+                Подробнее об упаковке
+              </div>
+            </div>
+            <a class="cardDetails__button button cardDetails__button--sticky" href="#">
+              Купить
+            </a>
+            <a class="cardDetails__button button cardDetails__button--details" href="#">
+              Подробнее о доставке
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews reviews--details section-3">
+    <div class="container reviews__containerDetails">
+      <h2 class="reviews__title title reviews__title--details">
+        Восторженные отзывы
+        <span class="reviews__title-span">
+          (382)
+        </span>
+      </h2>
+      <div class="reviews__details">
+        <div class="reviews__details-box swiper">
+          <div class="reviews__details-container swiper-wrapper">
+            <div class="reviews__item swiper-slide card">
+              <div class="reviews__video reviews__video--details">
+                <!-- <iframe src="https://www.youtube.com/embed/ysOl0KUpOZs" title="YouTube video player" frameborder="0"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe> -->
+              </div>
+              <div class="reviews__inner">
+                <div class="card__rating rating rating--js rating--mt">
+                  <div class="rating__body">
+                    <div class="rating__active"></div>
+                    <div class="rating__items">
+                      <input class="rating__item" type="radio" name="star" value="1">
+                      <input class="rating__item" type="radio" name="star" value="2">
+                      <input class="rating__item" type="radio" name="star" value="3">
+                      <input class="rating__item" type="radio" name="star" value="4">
+                      <input class="rating__item" type="radio" name="star" value="5">
+                    </div>
+                  </div>
+                  <div class="rating__value">5</div>
+                </div>
+                <div class="reviews__content reviews__content--details">
+                  <span class="reviews__name">
+                    Лена
+                  </span>
+                  <span class="reviews__date">
+                    15 марта 2022
+                  </span>
+                </div>
+                <div class="reviews__box reviews__box--details">
+                  <div class="reviews__info">
+                    Отличный инструктор
+                  </div>
+                  <div class="reviews__info">
+                    Доступность
+                  </div>
+                  <div class="reviews__info">
+                    Сертификат
+                  </div>
+                </div>
+                <p class="reviews__text reviews__text--details">
+                  С детства обожаю лошадей! Поэтому очень обрадовалась сертификату на прогулку...
+                </p>
+              </div>
+            </div>
+
+            <div class="reviews__item swiper-slide">
+              <div class="reviews__video reviews__video--details">
+                <!-- <iframe src="https://www.youtube.com/embed/ysOl0KUpOZs" title="YouTube video player" frameborder="0"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe> -->
+              </div>
+              <div class="reviews__inner">
+                <div class="card__rating rating rating--js rating--mt">
+                  <div class="rating__body">
+                    <div class="rating__active"></div>
+                    <div class="rating__items">
+                      <input class="rating__item" type="radio" name="star" value="1">
+                      <input class="rating__item" type="radio" name="star" value="2">
+                      <input class="rating__item" type="radio" name="star" value="3">
+                      <input class="rating__item" type="radio" name="star" value="4">
+                      <input class="rating__item" type="radio" name="star" value="5">
+                    </div>
+                  </div>
+                  <div class="rating__value">5</div>
+                </div>
+                <div class="reviews__content reviews__content--details">
+                  <span class="reviews__name">
+                    Екатерина
+                  </span>
+                  <span class="reviews__date">
+                    16 ноября 2020
+                  </span>
+                </div>
+                <div class="reviews__box reviews__box--details">
+                  <div class="reviews__info">
+                    Эмоции
+                  </div>
+                  <div class="reviews__info">
+                    Супер
+                  </div>
+                  <div class="reviews__info">
+                    Впечатление
+                  </div>
+                  <div class="reviews__info">
+                    Ухоженные животные
+                  </div>
+                </div>
+                <p class="reviews__text reviews__text--details">
+                  Получили море впечатлений от прогулки на лошадях)) Животные все красивые и ухоженные, инструктор...
+                </p>
+              </div>
+            </div>
+
+            <div class="reviews__item swiper-slide">
+              <div class="reviews__video reviews__video--details">
+                <!-- <iframe src="https://www.youtube.com/embed/ysOl0KUpOZs" title="YouTube video player" frameborder="0"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe> -->
+              </div>
+              <div class="reviews__inner">
+                <div class="card__rating rating rating--js rating--mt">
+                  <div class="rating__body">
+                    <div class="rating__active"></div>
+                    <div class="rating__items">
+                      <input class="rating__item" type="radio" name="star" value="1">
+                      <input class="rating__item" type="radio" name="star" value="2">
+                      <input class="rating__item" type="radio" name="star" value="3">
+                      <input class="rating__item" type="radio" name="star" value="4">
+                      <input class="rating__item" type="radio" name="star" value="5">
+                    </div>
+                  </div>
+                  <div class="rating__value">5</div>
+                </div>
+                <div class="reviews__content reviews__content--details">
+                  <span class="reviews__name">
+                    Лена
+                  </span>
+                  <span class="reviews__date">
+                    15 марта 2022
+                  </span>
+                </div>
+                <div class="reviews__box reviews__box--details">
+                  <div class="reviews__info">
+                    Отличный инструктор
+                  </div>
+                  <div class="reviews__info">
+                    Доступность
+                  </div>
+                  <div class="reviews__info">
+                    Сертификат
+                  </div>
+                </div>
+                <p class="reviews__text reviews__text--details">
+                  С детства обожаю лошадей! Поэтому очень обрадовалась сертификату на прогулку...
+                </p>
+              </div>
+            </div>
+
+            <div class="reviews__item swiper-slide">
+              <div class="reviews__video reviews__video--details">
+                <!-- <iframe src="https://www.youtube.com/embed/ysOl0KUpOZs" title="YouTube video player" frameborder="0"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe> -->
+              </div>
+              <div class="reviews__inner">
+                <div class="card__rating rating rating--js rating--mt">
+                  <div class="rating__body">
+                    <div class="rating__active"></div>
+                    <div class="rating__items">
+                      <input class="rating__item" type="radio" name="star" value="1">
+                      <input class="rating__item" type="radio" name="star" value="2">
+                      <input class="rating__item" type="radio" name="star" value="3">
+                      <input class="rating__item" type="radio" name="star" value="4">
+                      <input class="rating__item" type="radio" name="star" value="5">
+                    </div>
+                  </div>
+                  <div class="rating__value">5</div>
+                </div>
+                <div class="reviews__content reviews__content--details">
+                  <span class="reviews__name">
+                    Екатерина
+                  </span>
+                  <span class="reviews__date">
+                    16 ноября 2020
+                  </span>
+                </div>
+                <div class="reviews__box reviews__box--details">
+                  <div class="reviews__info">
+                    Эмоции
+                  </div>
+                  <div class="reviews__info">
+                    Супер
+                  </div>
+                  <div class="reviews__info">
+                    Впечатление
+                  </div>
+                  <div class="reviews__info">
+                    Ухоженные животные
+                  </div>
+                </div>
+                <p class="reviews__text reviews__text--details">
+                  Получили море впечатлений от прогулки на лошадях)) Животные все красивые и ухоженные, инструктор...
+                </p>
+              </div>
+            </div>
+            <div class="reviews__item swiper-slide">
+              <div class="reviews__video reviews__video--details">
+                <!-- <iframe src="https://www.youtube.com/embed/ysOl0KUpOZs" title="YouTube video player" frameborder="0"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe> -->
+              </div>
+              <div class="reviews__inner">
+                <div class="card__rating rating rating--js rating--mt">
+                  <div class="rating__body">
+                    <div class="rating__active"></div>
+                    <div class="rating__items">
+                      <input class="rating__item" type="radio" name="star" value="1">
+                      <input class="rating__item" type="radio" name="star" value="2">
+                      <input class="rating__item" type="radio" name="star" value="3">
+                      <input class="rating__item" type="radio" name="star" value="4">
+                      <input class="rating__item" type="radio" name="star" value="5">
+                    </div>
+                  </div>
+                  <div class="rating__value">5</div>
+                </div>
+                <div class="reviews__content reviews__content--details">
+                  <span class="reviews__name">
+                    Лена
+                  </span>
+                  <span class="reviews__date">
+                    15 марта 2022
+                  </span>
+                </div>
+                <div class="reviews__box reviews__box--details">
+                  <div class="reviews__info">
+                    Отличный инструктор
+                  </div>
+                  <div class="reviews__info">
+                    Доступность
+                  </div>
+                  <div class="reviews__info">
+                    Сертификат
+                  </div>
+                </div>
+                <p class="reviews__text reviews__text--details">
+                  С детства обожаю лошадей! Поэтому очень обрадовалась сертификату на прогулку...
+                </p>
+              </div>
+            </div>
+
+            <div class="reviews__item swiper-slide">
+              <div class="reviews__video reviews__video--details">
+                <!-- <iframe src="https://www.youtube.com/embed/ysOl0KUpOZs" title="YouTube video player" frameborder="0"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe> -->
+              </div>
+              <div class="reviews__inner">
+                <div class="card__rating rating rating--js rating--mt">
+                  <div class="rating__body">
+                    <div class="rating__active"></div>
+                    <div class="rating__items">
+                      <input class="rating__item" type="radio" name="star" value="1">
+                      <input class="rating__item" type="radio" name="star" value="2">
+                      <input class="rating__item" type="radio" name="star" value="3">
+                      <input class="rating__item" type="radio" name="star" value="4">
+                      <input class="rating__item" type="radio" name="star" value="5">
+                    </div>
+                  </div>
+                  <div class="rating__value">5</div>
+                </div>
+                <div class="reviews__content reviews__content--details">
+                  <span class="reviews__name">
+                    Екатерина
+                  </span>
+                  <span class="reviews__date">
+                    16 ноября 2020
+                  </span>
+                </div>
+                <div class="reviews__box reviews__box--details">
+                  <div class="reviews__info">
+                    Эмоции
+                  </div>
+                  <div class="reviews__info">
+                    Супер
+                  </div>
+                  <div class="reviews__info">
+                    Впечатление
+                  </div>
+                  <div class="reviews__info">
+                    Ухоженные животные
+                  </div>
+                </div>
+                <p class="reviews__text reviews__text--details">
+                  Получили море впечатлений от прогулки на лошадях)) Животные все красивые и ухоженные, инструктор...
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="swiper-button-prev reviews__prev-details"></div>
+        <div class="swiper-button-next reviews__next-details"></div>
+      </div>
+      <div class="container newContainer">
+        <p class="reviews__details-subtitle">
+          Если кратко:
+        </p>
+        <div class="reviews__details-content">
+          <p class="reviews__details-text">
+            Отличный инструктор
+          </p>
+          <p class="reviews__details-text">
+            Доступность
+          </p>
+          <p class="reviews__details-text">
+            Сертификат
+          </p>
+          <p class="reviews__details-text">
+            Эмоции
+          </p>
+          <p class="reviews__details-text">
+            Супер
+          </p>
+          <p class="reviews__details-text">
+            Красиво
+          </p>
+          <p class="reviews__details-text">
+            Впечатление
+          </p>
+          <p class="reviews__details-text">
+            Ухоженные животные
+          </p>
+          <p class="reviews__details-text">
+            Помогли разобраться
+          </p>
+          <p class="reviews__details-text">
+            С детьми
+          </p>
+          <p class="reviews__details-text">
+            Сервис отличный
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="giftDetails section-6">
+    <div class="container newContainer">
+      <h2 class="giftDetails__title title">
+        Этот подарок входит в наборы
+      </h2>
+      <div class="giftDetails__inner swiper">
+        <div class="card swiper-wrapper">
+          <div class="card__item swiper-slide">
+            <img class="card__image" src="images/set/1.jpg" alt="">
+            <div class="card__box">
+              <div class="card__rating rating rating--js">
+                <div class="rating__body">
+                  <div class="rating__active"></div>
+                  <div class="rating__items">
+                    <input class="rating__item" type="radio" name="star" value="1">
+                    <input class="rating__item" type="radio" name="star" value="2">
+                    <input class="rating__item" type="radio" name="star" value="3">
+                    <input class="rating__item" type="radio" name="star" value="4">
+                    <input class="rating__item" type="radio" name="star" value="5">
+                  </div>
+                </div>
+                <div class="rating__value">3.6</div>
+              </div>
+              <a class="card__link link" href="#">
+                382 отзыва
+              </a>
+            </div>
+            <h3 class="card__subtitle">
+              Набор “Экстрим” для него
+            </h3>
+            <div class="card__item-box">
+              <p class="card__text">
+                Хотите миновать столичные пробки на мотоцикле?
+              </p>
+              <p class="card__text card__text--lt">
+                Хотите чувствовать свободу? Этот урок позволит в...
+                <a class="card__text-link" href="#">
+                  еще
+                </a>
+              </p>
+            </div>
+            <div class="card__price">
+              <a class="card__button button" href="#">
+                Купить
+              </a>
+              <div class="card__price-box">
+                <span class="card__price-content">
+                  2 700 ₽
+                </span>
+                <span class="card__price-content card__price-content--old">
+                  2 900 ₽
+                </span>
+              </div>
+            </div>
+            <p class="card__item-text">
+              В набор входят:
+            </p>
+            <div class="card__slider">
+              <div class="card__slider-extreme swiper">
+                <div class="card__slider-container swiper-wrapper">
+                  <img class="card__slider-image swiper-slide" src="images/setSlider/1.jpg" alt="">
+                  <img class="card__slider-image swiper-slide" src="images/setSlider/2.jpg" alt="">
+                  <img class="card__slider-image swiper-slide" src="images/setSlider/3.jpg" alt="">
+                  <img class="card__slider-image swiper-slide" src="images/setSlider/4.jpg" alt="">
+                  <img class="card__slider-image swiper-slide" src="images/setSlider/5.jpg" alt="">
+                  <img class="card__slider-image swiper-slide" src="images/setSlider/6.jpg" alt="">
+                  <img class="card__slider-image swiper-slide" src="images/setSlider/7.jpg" alt="">
+                  <img class="card__slider-image swiper-slide" src="images/setSlider/8.jpg" alt="">
+                  <img class="card__slider-image swiper-slide" src="images/setSlider/9.jpg" alt="">
+                  <img class="card__slider-image swiper-slide" src="images/setSlider/10.jpg" alt="">
+                  <img class="card__slider-image swiper-slide" src="images/setSlider/11.jpg" alt="">
+                  <img class="card__slider-image swiper-slide" src="images/setSlider/12.jpg" alt="">
+                  <img class="card__slider-image swiper-slide" src="images/setSlider/13.jpg" alt="">
+                  <img class="card__slider-image swiper-slide" src="images/setSlider/14.jpg" alt="">
+                  <img class="card__slider-image swiper-slide" src="images/setSlider/15.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-button-prev swiper-button-prev-extreme">
+              </div>
+              <div class="swiper-button-next swiper-button-next-extreme">
+              </div>
+            </div>
+          </div>
+          <div class="card__item swiper-slide">
+            <img class="card__image" src="images/set/3.jpg" alt="">
+            <div class="card__box">
+              <div class="card__rating rating rating--js">
+                <div class="rating__body">
+                  <div class="rating__active"></div>
+                  <div class="rating__items">
+                    <input class="rating__item" type="radio" name="star" value="1">
+                    <input class="rating__item" type="radio" name="star" value="2">
+                    <input class="rating__item" type="radio" name="star" value="3">
+                    <input class="rating__item" type="radio" name="star" value="4">
+                    <input class="rating__item" type="radio" name="star" value="5">
+                  </div>
+                </div>
+                <div class="rating__value">3.6</div>
+              </div>
+              <a class="card__link link" href="#">
+                149 отзывов
+              </a>
+            </div>
+            <h3 class="card__subtitle">
+              Набор “Яркие впечатления” для двоих
+            </h3>
+            <div class="card__item-box">
+              <p class="card__text">
+                Хотите миновать столичные пробки на мотоцикле?
+              </p>
+              <p class="card__text card__text--lt">
+                Хотите чувствовать свободу? Этот урок позволит в...
+                <a class="card__text-link" href="#">
+                  еще
+                </a>
+              </p>
+            </div>
+            <div class="card__price">
+              <a class="card__button button" href="#">
+                Купить
+              </a>
+              <div class="card__price-box">
+                <span class="card__price-content">
+                  3 495 ₽
+                </span>
+                <span class="card__price-content card__price-content--old">
+                  3 700 ₽
+                </span>
+              </div>
+            </div>
+            <p class="card__slider-text">
+              В набор входят:
+            </p>
+            <div class="card__slider">
+              <div class="card__slider-bright swiper">
+                <div class="card__slider-container swiper-wrapper">
+                  <img class="card__slider-image swiper-slide" src="images/setSlider/11.jpg" alt="">
+                  <img class="card__slider-image swiper-slide" src="images/setSlider/12.jpg" alt="">
+                  <img class="card__slider-image swiper-slide" src="images/setSlider/13.jpg" alt="">
+                  <img class="card__slider-image swiper-slide" src="images/setSlider/14.jpg" alt="">
+                  <img class="card__slider-image swiper-slide" src="images/setSlider/15.jpg" alt="">
+                  <img class="card__slider-image swiper-slide" src="images/setSlider/6.jpg" alt="">
+                  <img class="card__slider-image swiper-slide" src="images/setSlider/7.jpg" alt="">
+                  <img class="card__slider-image swiper-slide" src="images/setSlider/8.jpg" alt="">
+                  <img class="card__slider-image swiper-slide" src="images/setSlider/9.jpg" alt="">
+                  <img class="card__slider-image swiper-slide" src="images/setSlider/10.jpg" alt="">
+                  <img class="card__slider-image swiper-slide" src="images/setSlider/1.jpg" alt="">
+                  <img class="card__slider-image swiper-slide" src="images/setSlider/2.jpg" alt="">
+                  <img class="card__slider-image swiper-slide" src="images/setSlider/3.jpg" alt="">
+                  <img class="card__slider-image swiper-slide" src="images/setSlider/4.jpg" alt="">
+                  <img class="card__slider-image swiper-slide" src="images/setSlider/5.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-button-prev swiper-button-prev-bright">
+              </div>
+              <div class="swiper-button-next swiper-button-next-bright">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__item">
+          <div class="footer__text">
+            <div class="footer__icon icon-loca"></div>
+            Адрес офиса
+          </div>
+          <div class=" footer__info">
+            125481, Москва, ул. Свободы, д. 95, корп. 2
+          </div>
+        </div>
+        <div class="footer__item">
+          <div class="footer__text">
+            <div class="footer__icon icon-watch"></div>
+            Время работы
+          </div>
+          <div class="footer__info">
+            Ежедневно с 09:00 до 21:00
+          </div>
+        </div>
+        <div class="footer__item">
+          <div class="footer__text">
+            <div class="footer__icon icon-phone"></div>
+            Телефон
+          </div>
+          <a class="footer__info footer__info--phone" href="tel:+74950232888">
+            +7 (495) 023-28-88
+          </a>
+        </div>
+        <div class="footer__item">
+          <div class="footer__text">
+            <div class="footer__icon icon-email"></div>
+            Почтовый адрес
+          </div>
+          <a class="footer__info footer__info--email" href="mailto:info@vpechatlenie.ru" target="_blank">
+            info@vpechatlenie.ru
+          </a>
+        </div>
+        <div class="footer__item">
+          <div class="footer__text">
+            <div class="footer__icon icon-support"></div>
+            Служба качества
+          </div>
+          <div class="footer__info">
+            Нам очень важно, чтобы вы остались довольны
+          </div>
+        </div>
+      </div>
+      <div class="footer__content">
+        <div class="footer__item">
+          <a class="footer__logo logo" href="#">
+            <img class="logo__image" src="images/logo-footer.png" alt="">
+          </a>
+          <div class="footer__info">
+            ©2022 ИП Лазовская А.В.
+          </div>
+        </div>
+        <div class="footer__item">
+          <div class="footer__box">
+            <a class="footer__box-icon" href="#">
+              <div class="footer__icon-social icon-vk"></div>
+            </a>
+            <a class="footer__box-icon" href="#">
+              <div class="footer__icon-social icon-youtube"></div>
+            </a>
+          </div>
+          <button class="footer__button">
+            Подписатьcя на рассылку
+          </button>
+          <a class="footer__link" href="#">
+            Пользовательское соглашение
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="modalVideo" class="popup">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/MqxCQEHLQSI"
+      title="⚡Fantastic Remixes For Gaming: Top 50 EDM ♫ Best Remixes x NCS Gaming Music ♫ Best Of EDM 2022"
+      frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="./js/jquery.formstyler.min.js"></script>
+  <script src="./js/nouislider.min.js"></script>
+  <script src="./js/wNumb.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

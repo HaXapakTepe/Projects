@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,viewport-fit=cover,maximum-scale=1,user-scalable=0" />
+  <link rel="shortcut icon" href="./images/favicon.png" type="x-icon" />
+  <link rel="stylesheet" href="./plugins/daterangepicker/daterangepicker.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/icons.css" />
+  <link rel="stylesheet" href="./css/style.css?v=0.0004" />
+  <title>НАРОДНЫЙ ПОПУТЧИК</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="nav">
+        <div class="nav__item">
+          <img class="logo" src="./images/logo.png" alt="" />
+          <div class="nav__item-box">
+            <div class="nav__item-text">БЫСТРО</div>
+            <div class="nav__item-text">БЕЗОПАСНО</div>
+            <div class="nav__item-text">КОМФОРТНО</div>
+          </div>
+        </div>
+        <div class="group">
+          <a class="group__icon icon-vk" href="#" target="_blank"></a>
+          <a class="group__icon icon-ok" href="#" target="_blank"></a>
+          <a class="group__icon icon-ut" href="#" target="_blank"></a>
+          <a class="group__icon icon-user" href="#" target="_blank"></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="top">
+    <div class="top__swiper swiper">
+      <div class="top__wrapper swiper-wrapper">
+        <div class="top__slide swiper-slide">
+          <img class="top__img" src="./images/top/1.jpg" alt="">
+          <div class="container">
+            <a class="top__link" href="#">КАЖДАЯ ДЕСЯТАЯ ПОЕЗДКА БЕЗ СЕРВИСНОГО СБОРА</a>
+          </div>
+        </div>
+        <div class="top__slide swiper-slide">
+          <img class="top__img" src="./images/top/2.jpg" alt="">
+          <div class="container">
+            <a class="top__link" href="#">КАЖДАЯ ДЕСЯТАЯ ПОЕЗДКА БЕЗ СЕРВИСНОГО СБОРА</a>
+          </div>
+        </div>
+        <div class="top__slide swiper-slide">
+          <img class="top__img" src="./images/top/3.jpg" alt="">
+          <div class="container">
+            <a class="top__link" href="#">КАЖДАЯ ДЕСЯТАЯ ПОЕЗДКА БЕЗ СЕРВИСНОГО СБОРА</a>
+          </div>
+        </div>
+      </div>
+      <div class="top__swiper-prev swiper-button-prev"></div>
+      <div class="top__swiper-next swiper-button-next"></div>
+    </div>
+  </section>
+
+  <section class="info">
+    <div class="container">
+      <div class="info__inner">
+        <div class="info__item">
+          <a class="info__item-link info__item-link--active" href="#">
+            <p>Найти поездку</p>
+          </a>
+          <a class="info__item-link" href="./CreateTrip.html">
+            <p>Создать поездку</p>
+          </a>
+          <a class="info__item-link" href="./SendParcel.html">
+            <p>Отправить посылку</p>
+          </a>
+        </div>
+        <div class="info__bg">
+          <form class="info__form" action="">
+            <div class="info__form-item info__form-item--change">
+              <input class="input input--width" type="text" placeholder="Саратов" />
+              <input class="input input--width" type="text" placeholder="Город отправления" />
+            </div>
+            <div class="info__form-item">
+              <input class="input" name="range" type="text" />
+              <input class="input num" type="text" placeholder="Пассажиров" />
+              <button class="button" type="submit">Поехали</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="result">
+    <div class="container result__container">
+      <p class="result__sum">2 результата</p>
+      <div class="result__inner">
+        <div class="result__item">
+          <div class="result__item-box">
+            <div class="result__item-info">
+              <div class="result__item-block">
+                <time class="result__item-time" datetime="2022-12-15 12:00">
+                  11 декабря 12:00
+                </time>
+                <p class="result__item-name">Саратов</p>
+              </div>
+              <div class="result__item-block">
+                <time class="result__item-time" datetime="2022-12-16 00:20">
+                  12 декабря 12:00
+                </time>
+                <p class="result__item-name result__item-name--tar">Москва</p>
+              </div>
+            </div>
+            <div class="result__item-imgContent">
+              <img class="result__item-line" src="./images/result/line.png" alt="" />
+            </div>
+            <p class="result__item-text">840 км</p>
+          </div>
+          <div class="result__item-content">
+            <img class="result__item-img" src="./images/result/1.png" alt="" />
+            <div class="result__item-info">
+              <div class="result__item-block">
+                <p class="result__item-name">Вечаслав</p>
+                <p class="result__item-brand">Ford F-650 Raptor</p>
+              </div>
+              <div class="result__item-block">
+                <p class="result__item-sum">2400 ₽</p>
+                <p class="result__item-place">Мест 2 из 4</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="result__item">
+          <div class="result__item-box">
+            <div class="result__item-info">
+              <div class="result__item-block">
+                <time class="result__item-time" datetime="2022-12-15 12:00">
+                  11 декабря 12:00
+                </time>
+                <p class="result__item-name">Саратов</p>
+              </div>
+              <div class="result__item-block">
+                <time class="result__item-time" datetime="2022-12-16 00:20">
+                  12 декабря 12:00
+                </time>
+                <p class="result__item-name result__item-name--tar">Москва</p>
+              </div>
+            </div>
+            <div class="result__item-imgContent">
+              <img class="result__item-line" src="./images/result/line.png" alt="" />
+            </div>
+            <p class="result__item-text">840 км</p>
+          </div>
+          <div class="result__item-content">
+            <img class="result__item-img" src="./images/result/2.png" alt="" />
+            <div class="result__item-info">
+              <div class="result__item-block">
+                <p class="result__item-name">Вечаслав</p>
+                <p class="result__item-brand">Lamborghini Murciélago</p>
+              </div>
+              <div class="result__item-block">
+                <p class="result__item-sum">7800 ₽</p>
+                <p class="result__item-place">Мест 1 из 1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="popular">
+    <div class="container">
+      <h2 class="popular__title">Популярные <span>направления</span></h2>
+      <div class="popular__inner">
+        <a class="popular__link" href="#">
+          <img class="popular__img" src="./images/popular/1.jpg" alt="" />
+          <div class="popular__box">
+            <p class="popular__box-city">Саратов</p>
+            <p class="popular__box-city popular__box-city--last">Москва</p>
+            <p class="popular__box-price">от 1500 ₽</p>
+            <div class="icon-arrow popular__box-icon"></div>
+          </div>
+        </a>
+        <a class="popular__link" href="#">
+          <img class="popular__img" src="./images/popular/1.jpg" alt="" />
+          <div class="popular__box">
+            <p class="popular__box-city">Саратов</p>
+            <p class="popular__box-city popular__box-city--last">Москва</p>
+            <p class="popular__box-price">от 1500 ₽</p>
+            <div class="icon-arrow popular__box-icon"></div>
+          </div>
+        </a>
+        <a class="popular__link" href="#">
+          <img class="popular__img" src="./images/popular/1.jpg" alt="" />
+          <div class="popular__box">
+            <p class="popular__box-city">Ярославль</p>
+            <p class="popular__box-city popular__box-city--last">Санкт-Петербург</p>
+            <p class="popular__box-price">от 2500 ₽</p>
+            <div class="icon-arrow popular__box-icon"></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="safety">
+    <div class="container safety__container">
+      <div class="safety__swiper swiper">
+        <div class="safety__wrapper swiper-wrapper">
+          <div class="safety__inner swiper-slide">
+            <img class="safety__img" src="./images/safety/bg.png" alt="" />
+            <div class="safety__item">
+              <h2 class="safety__title"><span>БЕЗОПАСНОСТЬ-</span> НАШ ПРИОРИТЕТ</h2>
+              <ul class="safety__list">
+                <li class="safety__list-item">Круглосуточная служба поддержки</li>
+                <li class="safety__list-item">Оплата после поездки</li>
+                <li class="safety__list-item">Рейтинги водителей</li>
+                <li class="safety__list-item">Все поездки в одном месте</li>
+                <li class="safety__list-item">Информирование о мошенниках</li>
+              </ul>
+              <a class="safety__link" href="#">
+                Подробнее
+                <div class="icon-arrow safety__link-icon"></div>
+              </a>
+              <div class="safety__pagination swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="safety__inner swiper-slide">
+            <img class="safety__img" src="./images/safety/bg.png" alt="" />
+            <div class="safety__item">
+              <h2 class="safety__title"><span>БЕЗОПАСНОСТЬ-</span> НАШ ПРИОРИТЕТ</h2>
+              <ul class="safety__list">
+                <li class="safety__list-item">Круглосуточная служба поддержки</li>
+                <li class="safety__list-item">Оплата после поездки</li>
+                <li class="safety__list-item">Рейтинги водителей</li>
+                <li class="safety__list-item">Все поездки в одном месте</li>
+                <li class="safety__list-item">Информирование о мошенниках</li>
+              </ul>
+              <a class="safety__link" href="#">
+                Подробнее
+                <div class="icon-arrow safety__link-icon"></div>
+              </a>
+              <div class="safety__pagination swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="safety__inner swiper-slide">
+            <img class="safety__img" src="./images/safety/bg.png" alt="" />
+            <div class="safety__item">
+              <h2 class="safety__title"><span>БЕЗОПАСНОСТЬ-</span> НАШ ПРИОРИТЕТ</h2>
+              <ul class="safety__list">
+                <li class="safety__list-item">Круглосуточная служба поддержки</li>
+                <li class="safety__list-item">Оплата после поездки</li>
+                <li class="safety__list-item">Рейтинги водителей</li>
+                <li class="safety__list-item">Все поездки в одном месте</li>
+                <li class="safety__list-item">Информирование о мошенниках</li>
+              </ul>
+              <a class="safety__link" href="#">
+                Подробнее
+                <div class="icon-arrow safety__link-icon"></div>
+              </a>
+              <div class="safety__pagination swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why">
+    <div class="container">
+      <h2 class="why__title">Как выбрать <span>поездку?</span></h2>
+      <div class="why__inner">
+        <div class="why__item">
+          <div class="why__item-bg">
+            <p class="why__item-text">
+              Иллюстрация с лупой и монитором. на мониторе скриншот сайта
+            </p>
+          </div>
+          <p class="why__item-step"><span>1.</span> Найдите нужный рейс</p>
+        </div>
+        <div class="why__item why__item--pb">
+          <div class="why__item-bg why__item-bg--little">
+            <p class="why__item-text">Иллюстрация с водителем за рулём, в руках смартфон</p>
+          </div>
+          <p class="why__item-step"><span>2.</span> Отправьте запрос водителю</p>
+        </div>
+        <div class="why__item why__item--direction">
+          <div class="why__item-bg why__item-bg--small">
+            <p class="why__item-text">
+              Девушка на сидении машины, руки за головой, глаза закрыты
+            </p>
+          </div>
+          <p class="why__item-step"><span>3.</span> Проведите комфортно время в пути</p>
+        </div>
+        <div class="why__item">
+          <div class="why__item-bg">
+            <p class="why__item-text">Смартфон в руках с экраном оплаты приложения</p>
+          </div>
+          <p class="why__item-step">
+            <span>4.</span> Оплатите на 30% меньше, чем в другом траспорте
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="questions">
+    <div class="container">
+      <div class="questions__inner">
+        <div class="questions__item">
+          <h2 class="questions__title">Частые <span>вопросы</span> пользователей</h2>
+          <div class="accordion">
+            <div class="accordion__item">
+              <div class="accordion__box">
+                <div class="icon-arrow accordion__icon"></div>
+                <p class="accordion__title">Зачем мне рейтинг? Как он создаётся?</p>
+              </div>
+              <p class="accordion__text">
+                Текст-заглушка. Может вмещать неограниченное количество информации. Что касается
+                возмещаемых расходов, то они должны быть подтверждены документально, например,
+                чеками АЗС, что не может вызвать претензий у налоговых органов, поскольку чеки
+                должны быть представлены только за рабочие дни.
+              </p>
+            </div>
+            <div class="accordion__item">
+              <div class="accordion__box">
+                <div class="icon-arrow accordion__icon"></div>
+                <p class="accordion__title">
+                  Что делать, если водитель просит оплатить доставку заранее?
+                </p>
+              </div>
+              <p class="accordion__text">
+                Текст-заглушка. Может вмещать неограниченное количество информации. Что касается
+                возмещаемых расходов, то они должны быть подтверждены документально, например,
+                чеками АЗС, что не может вызвать претензий у налоговых органов, поскольку чеки
+                должны быть представлены только за рабочие дни.
+              </p>
+            </div>
+            <div class="accordion__item">
+              <div class="accordion__box">
+                <div class="icon-arrow accordion__icon"></div>
+                <p class="accordion__title">Что такое “Вклад в затраты водителя”?</p>
+              </div>
+              <p class="accordion__text">
+                Текст-заглушка. Может вмещать неограниченное количество информации. Что касается
+                возмещаемых расходов, то они должны быть подтверждены документально, например,
+                чеками АЗС, что не может вызвать претензий у налоговых органов, поскольку чеки
+                должны быть представлены только за рабочие дни.
+              </p>
+            </div>
+            <div class="accordion__item">
+              <div class="accordion__box">
+                <div class="icon-arrow accordion__icon"></div>
+                <p class="accordion__title">Что означает в балансе “замороженная сумма”?</p>
+              </div>
+              <p class="accordion__text">
+                Текст-заглушка. Может вмещать неограниченное количество информации. Что касается
+                возмещаемых расходов, то они должны быть подтверждены документально, например,
+                чеками АЗС, что не может вызвать претензий у налоговых органов, поскольку чеки
+                должны быть представлены только за рабочие дни.
+              </p>
+            </div>
+          </div>
+        </div>
+        <img class="questions__img" src="./images/questions/bg.png" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <section class="service">
+    <div class="container">
+      <h2 class="service__title">НЕ ЗАБУДЬ ЗАБРОНИРОВАТЬ <span>ЖИЛЬЁ</span></h2>
+      <div class="service__inner">
+        <a class="service__link" href="#">
+          <img class="service__img" src="./images/service/1.png" alt="" />
+        </a>
+        <a class="service__link" href="#">
+          <img class="service__img" src="./images/service/2.png" alt="" />
+        </a>
+        <a class="service__link" href="#">
+          <img class="service__img" src="./images/service/3.png" alt="" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="nav">
+        <div class="nav__item">
+          <img class="logo" src="./images/logo.png" alt="" />
+          <div class="nav__item-box">
+            <div class="nav__item-text">БЫСТРО</div>
+            <div class="nav__item-text">БЕЗОПАСНО</div>
+            <div class="nav__item-text">КОМФОРТНО</div>
+          </div>
+        </div>
+        <div class="footer__item">
+          <a class="footer__item-link" href="">Пользовательское соглашение</a>
+          <a class="footer__item-link" href="">Обработку персональных данны</a>
+        </div>
+        <div class="group">
+          <a class="group__icon icon-vk" href="#" target="_blank"></a>
+          <a class="group__icon icon-ok" href="#" target="_blank"></a>
+          <a class="group__icon icon-ut" href="#" target="_blank"></a>
+        </div>
+      </div>
+      <div class="footer__box">
+        <p class="footer__box-text">2022 © Народный попутчик. Все права защищены</p>
+        <a class="creator" href="#">
+          Разработка сайта
+          <div class="icon-sa"></div>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./plugins/jquery/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+    type="text/javascript"></script>
+  <script src="./plugins/daterangepicker/moment.min.js"></script>
+  <script src="./plugins/daterangepicker/daterangepicker.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/main.js?v=0.0004"></script>
+</body>
+
+</html>

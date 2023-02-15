@@ -1,0 +1,94 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: #F0F0F0;
+  font-family: $inter;
+  font-weight: 400;
+  @include fluid(font-size, 14px, 18px);
+  line-height: 1.2;
+  color: $text;
+}
+
+.logo {
+  @include fluid(width, 54px, 108px);
+  @include fluid(height, 54px, 108px);
+}
+
+.container {
+  @include container;
+}
+
+.button {
+  @include fluid(width, 200px, 245px);
+  padding: 16px 0;
+  display: block;
+  background-color: $accent;
+  font-size: 16px;
+  color: $default;
+  text-align: center;
+  transition: all .3s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $default;
+    color: $accent;
+  }
+}
+
+.title {
+  @include fluid(margin-bottom, 30px, 100px);
+  @include fluid(font-size, 28px, 56px);
+  font-weight: 700;
+  color: $text;
+}
