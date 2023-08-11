@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,viewport-fit=cover,maximum-scale=1,user-scalable=0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>HelpCenter</title>
+    <style>
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+      }
+
+      body,
+      p {
+        margin: 0;
+      }
+
+      .helpСenter {
+        padding-top: 28px;
+        max-width: 576px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.3;
+        color: #808080;
+        background-color: #fff;
+      }
+
+      .container {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      .helpСenter__box {
+        margin-bottom: 15px;
+        border-bottom: 1px solid #d9d9d9;
+      }
+
+      .helpСenter__title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      .helpСenter__box-title {
+        position: relative;
+        line-height: 20px;
+        color: #000000;
+        margin-bottom: 10px;
+        padding-right: 20px;
+        cursor: pointer;
+      }
+
+      .helpСenter__box-title::before,
+      .helpСenter__box-title::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        width: 8px;
+        height: 2px;
+        top: 10px;
+        background-color: #000;
+        transition: all 0.3s;
+      }
+
+      .helpСenter__box-title::before {
+        right: 6px;
+        transform: rotate(45deg);
+      }
+
+      .helpСenter__box-title::after {
+        right: 1px;
+        transform: rotate(-45deg);
+      }
+
+      .helpСenter__box-title.in::before {
+        transform: rotate(-45deg);
+      }
+
+      .helpСenter__box-title.in::after {
+        transform: rotate(45deg);
+      }
+
+      .helpСenter__box-item {
+        display: none;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="helpСenter">
+      <div class="container">
+        <p class="helpСenter__title">Центр помощи</p>
+        <div class="helpCenter__inner">
+          <div class="helpСenter__box">
+            <p class="helpСenter__box-title">Что входит в жилищно-коммунальные услуги?</p>
+            <div class="helpСenter__box-item">
+              <p class="helpСenter__box-text">
+                1. Обратитесь в местный муниципалитет или коммунальное предприятие, ответственное за
+                предоставление жилищно-коммунальных услуг в вашем районе.
+              </p>
+              <p class="helpСenter__box-text">
+                2. Предоставьте свои личные данные, включая ваше имя, адрес и контактную информацию.
+              </p>
+              <p class="helpСenter__box-text">
+                3. Предоставьте подробную информацию о своей квартире или собственности, в том числе
+                о ее местонахождении, размере и любых особенностях.
+              </p>
+              <p class="helpСenter__box-text">
+                4. Подписать договор или соглашение с указанием условий оказания услуг, а также
+                связанных с этим затрат.5. Оплатить любой депозит или первоначальные взносы,
+                необходимые для активации услуг.
+              </p>
+              <p class="helpСenter__box-text">
+                5. Оплатить любой депозит или первоначальные взносы, необходимые для активации
+                услуг.
+              </p>
+            </div>
+          </div>
+          <div class="helpСenter__box">
+            <p class="helpСenter__box-title">Как можно зарегистрироваться в ЖКХ?</p>
+            <div class="helpСenter__box-item">
+              <p class="helpСenter__box-text">
+                1. Обратитесь в местный муниципалитет или коммунальное предприятие, ответственное за
+                предоставление жилищно-коммунальных услуг в вашем районе.
+              </p>
+              <p class="helpСenter__box-text">
+                2. Предоставьте свои личные данные, включая ваше имя, адрес и контактную информацию.
+              </p>
+              <p class="helpСenter__box-text">
+                3. Предоставьте подробную информацию о своей квартире или собственности, в том числе
+                о ее местонахождении, размере и любых особенностях.
+              </p>
+              <p class="helpСenter__box-text">
+                4. Подписать договор или соглашение с указанием условий оказания услуг, а также
+                связанных с этим затрат.5. Оплатить любой депозит или первоначальные взносы,
+                необходимые для активации услуг.
+              </p>
+              <p class="helpСenter__box-text">
+                5. Оплатить любой депозит или первоначальные взносы, необходимые для активации
+                услуг.
+              </p>
+            </div>
+          </div>
+          <div class="helpСenter__box">
+            <p class="helpСenter__box-title">
+              Как рассчитывается стоимость жилищно-коммунальных услуг?
+            </p>
+            <div class="helpСenter__box-item">
+              <p class="helpСenter__box-text">
+                1. Обратитесь в местный муниципалитет или коммунальное предприятие, ответственное за
+                предоставление жилищно-коммунальных услуг в вашем районе.
+              </p>
+              <p class="helpСenter__box-text">
+                2. Предоставьте свои личные данные, включая ваше имя, адрес и контактную информацию.
+              </p>
+              <p class="helpСenter__box-text">
+                3. Предоставьте подробную информацию о своей квартире или собственности, в том числе
+                о ее местонахождении, размере и любых особенностях.
+              </p>
+              <p class="helpСenter__box-text">
+                4. Подписать договор или соглашение с указанием условий оказания услуг, а также
+                связанных с этим затрат.5. Оплатить любой депозит или первоначальные взносы,
+                необходимые для активации услуг.
+              </p>
+              <p class="helpСenter__box-text">
+                5. Оплатить любой депозит или первоначальные взносы, необходимые для активации
+                услуг.
+              </p>
+            </div>
+          </div>
+          <div class="helpСenter__box">
+            <p class="helpСenter__box-title">Можно ли снизить стоимость ЖКХ?</p>
+            <div class="helpСenter__box-item">
+              <p class="helpСenter__box-text">
+                1. Обратитесь в местный муниципалитет или коммунальное предприятие, ответственное за
+                предоставление жилищно-коммунальных услуг в вашем районе.
+              </p>
+              <p class="helpСenter__box-text">
+                2. Предоставьте свои личные данные, включая ваше имя, адрес и контактную информацию.
+              </p>
+              <p class="helpСenter__box-text">
+                3. Предоставьте подробную информацию о своей квартире или собственности, в том числе
+                о ее местонахождении, размере и любых особенностях.
+              </p>
+              <p class="helpСenter__box-text">
+                4. Подписать договор или соглашение с указанием условий оказания услуг, а также
+                связанных с этим затрат.5. Оплатить любой депозит или первоначальные взносы,
+                необходимые для активации услуг.
+              </p>
+              <p class="helpСenter__box-text">
+                5. Оплатить любой депозит или первоначальные взносы, необходимые для активации
+                услуг.
+              </p>
+            </div>
+          </div>
+          <div class="helpСenter__box">
+            <p class="helpСenter__box-title">Как подать жалобу на жилищно-коммунальные услуги?</p>
+            <div class="helpСenter__box-item">
+              <p class="helpСenter__box-text">
+                1. Обратитесь в местный муниципалитет или коммунальное предприятие, ответственное за
+                предоставление жилищно-коммунальных услуг в вашем районе.
+              </p>
+              <p class="helpСenter__box-text">
+                2. Предоставьте свои личные данные, включая ваше имя, адрес и контактную информацию.
+              </p>
+              <p class="helpСenter__box-text">
+                3. Предоставьте подробную информацию о своей квартире или собственности, в том числе
+                о ее местонахождении, размере и любых особенностях.
+              </p>
+              <p class="helpСenter__box-text">
+                4. Подписать договор или соглашение с указанием условий оказания услуг, а также
+                связанных с этим затрат.5. Оплатить любой депозит или первоначальные взносы,
+                необходимые для активации услуг.
+              </p>
+              <p class="helpСenter__box-text">
+                5. Оплатить любой депозит или первоначальные взносы, необходимые для активации
+                услуг.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $('.helpСenter__box-title').click(function () {
+        $(this).toggleClass('in').next().slideToggle()
+        $('.helpСenter__box-title').not(this).removeClass('in').next().slideUp()
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+.about {
+  position: relative;
+  @include fluid(margin-top, 30px, 55px);
+  @include fluid(margin-bottom, 30px, 120px);
+
+  &__bg {
+    position: absolute;
+    @include fluid(right, 15px, 30px);
+    @include fluid(bottom, -100px, -217px);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    z-index: -1;
+    @include fluid(width, 350px, 622px);
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: .95fr 1fr;
+    @include fluid(gap, 30px, 60px);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 15px, 23px);
+
+    &-title {
+      @include fluid(margin-bottom, 5px, 10px);
+    }
+  }
+
+  &__img {
+    border-radius: 20px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 100%;
+  }
+}

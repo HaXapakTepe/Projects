@@ -1,0 +1,139 @@
+.contacts {
+  @include fluid(margin-top, 30px, 55px);
+  @include fluid(margin-bottom, 60px, 120px);
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+      @include fluid(margin-bottom, 10px, 20px);
+    }
+
+    &-box {
+      display: flex;
+      flex-direction: column;
+      @include fluid(gap, 20px, 40px);
+      @include fluid(margin-bottom, 20px, 60px);
+    }
+
+    &-icon {
+      color: #7AC8C9;
+      @include fluid(font-size, 26px, 32px);
+    }
+
+    &-link,
+    &-text {
+      display: flex;
+      align-items: center;
+      @include fluid(gap, 15px, 20px);
+      line-height: 1;
+    }
+
+    &-link {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      color: #343a3d;
+      transition: color .38s ease-in-out;
+      margin-bottom: 20px;
+
+      &:hover {
+        color: #7AC8C9;
+      }
+
+      &--phone {
+        @include fluid(font-size, 16px, 18px);
+        font-weight: 800;
+      }
+    }
+  }
+
+  &__accordion {
+    &-title {
+      position: relative;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      @include fluid(padding-right, 20px, 23px);
+      padding-left: 5px;
+      color: #AABAC2;
+      @include fluid(padding-top, 5px, 10px);
+      @include fluid(padding-bottom, 5px, 10px);
+      border-bottom: 1px solid #EBF2F5;
+      color: #343a3d;
+      cursor: pointer;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        width: 4px;
+        height: 1px;
+        background-color: #AABAC2;
+        transition: transform 0.38s ease-in-out;
+      }
+
+      &::before {
+        right: 3px;
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        right: 0px;
+        transform: rotate(-45deg);
+      }
+
+      &--active::before {
+        transform: rotate(-45deg);
+      }
+
+      &--active::after {
+        transform: rotate(45deg);
+      }
+    }
+
+    &-hidden {
+      display: none;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      @include fluid(gap, 10px, 21px);
+      @include fluid(margin-top, 15px, 27px);
+    }
+
+    &-box {
+      display: flex;
+      align-items: center
+    }
+
+    &-text {
+      @include fluid(font-size, 12px, 14px);
+
+      &--bold,
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__mobile {
+    display: none;
+  }
+
+  .social {
+    @include fluid(font-size, 20px, 24px);
+    @include fluid(margin-bottom, 40px, 57px);
+    @include fluid(gap, 20px, 40px);
+  }
+}

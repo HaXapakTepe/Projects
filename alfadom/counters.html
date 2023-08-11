@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counters</title>
+  <link rel="stylesheet" type="text/css" href="./plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/icons.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__inner">
+        <a class="logo" href="#">
+          <img class="logo__image" src="./images/logo.png" alt="">
+          <p class="logo__text">Альфа Дом</p>
+        </a>
+        <div class="header__item">
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Абонентам
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Провайдерам
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Партнерам
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Поддержка
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <div class="header__burger">
+            <div class="header__burger-line"></div>
+          </div>
+          <a class="header__city link" data-fancybox href="#city">
+            <div class="icon-loca header__loca"></div>
+            <p class="header__city-text">Москва</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="mask"></div>
+
+      <div class="yourCity" id="yourCity">
+        <p class="yourCity__title">
+          Ваш город
+          <span class="yourCity__span">Москва</span>
+          ?
+        </p>
+        <div class="yourCity__inner">
+          <div class="icon-close yourCity__icon"></div>
+          <button id="yes" class="yourCity__btn btn" type="submit">
+            <span>да</span>
+          </button>
+          <button id="no" class="yourCity__btn btn" type="submit">
+            <span>нет</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="breadcrumbs">
+    <div class="container">
+      <div class="breadcrumbs__inner">
+        <a class="breadcrumbs__link" href="#">
+          <div class="icon-arrow breadcrumbs__icon"></div>
+          Главная
+        </a>
+        <a class="breadcrumbs__link" href="#">
+          <div class="icon-arrow breadcrumbs__icon"></div>
+          Как снять показания (электроэнергия)
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="correctly">
+    <div class="container">
+      <div class="correctly__inner">
+        <h2 class="correctly__title title">Передать показания счетчика</h2>
+        <p class="correctly__subtitle">
+          Как правильно снять показания с электросчетчика: однотарифный, многорарифный
+        </p>
+        <p class="correctly__text correctly__text--width">
+          Существует несколько видов электросчетчиков: однотарифные и многотарифные, но принцип
+          снятия показаний для всех одинаков. Счетчик имеет табло, на котором находится ряд цифр с целой и дробной
+          частью, как правило:
+        </p>
+        <ul class="correctly__list">
+          <li class="correctly__list-item">
+            передаются только целые значения показаний, а дробная часть не берется в
+            расчет
+          </li>
+          <li class="correctly__list-item">
+            если перед целой частью есть нули, то они убираются
+          </li>
+        </ul>
+        <p class="correctly__textAccent">Пример:</p>
+        <ul class="correctly__list">
+          <li class="correctly__list-item">
+            Значение на табло: 004523.8
+          </li>
+          <li class="correctly__list-item">
+            Передается число: 4523
+          </li>
+        </ul>
+        <div class="correctly__content">
+          <div class="correctly__content-box">
+            <div class="correctly__content-item">
+              <p class="correctly__textAccent">Однотарифные счетчики</p>
+              <p class="correctly__text correctly__text--marginBottom">
+                Однотарифные счетчики на данный момент самые распространенные приборы учета электроэнергии. Их шкала
+                бывает механическая либо электронная и несет в себе только одно значение показаний — круглосуточное.
+                Показания в этом случае передаются одним значением.
+              </p>
+            </div>
+            <div class="correctly__content-border">
+              <img class="correctly__content-image" src="./images/correctly/1.png" alt="">
+            </div>
+          </div>
+          <div class="correctly__content-box">
+            <div class="correctly__content-item">
+              <p class="correctly__textAccent">Многотарифные счетчики</p>
+              <p class="correctly__text correctly__text--marginBottom">
+                Многотарифные счетчики делятся на двухтарифные и трехтарифные. Такие счетчики отличаются от однотарифных
+                своей дороговизной и потребностью первоначальной настройки. Но несмотря на такие недостатки окупают себя
+                уже на пару лет засчет особого способа расчета потребления электрической энергии.
+              </p>
+            </div>
+            <div class="correctly__content-border">
+              <img class="correctly__content-image" src="./images/correctly/2.png" alt="">
+            </div>
+          </div>
+          <div class="correctly__content-box">
+            <div class="correctly__content-item">
+              <p class="correctly__textAccent">Двухтарифные</p>
+              <p class="correctly__text">
+                Считают энергию по разному днем и ночью. Следует отметить, что в ночное время стоимость электроэнергии
+                дешевле на 50%. Если у вас установлен двухтарифный прибор учета, то в энергоснабжающую организацию
+                передается два значения показаний: дневное и ночное.
+              </p>
+            </div>
+            <div class="correctly__content-border">
+              <img class="correctly__content-image" src="./images/correctly/3.png" alt="">
+            </div>
+          </div>
+          <div class="correctly__content-box">
+            <div class="correctly__content-item">
+              <p class="correctly__textAccent">Трехтарифные</p>
+              <p class="correctly__text">
+                Трехтарифные счетчики делят сутки на три периода:
+              </p>
+              <ul class="correctly__list correctly__list--marginBottom"">
+                <li class=" correctly__list-item">
+                часы пик (дневной) — длится с 10.00 до 17.00 и 21.00 до 23.00 — самый дорогой период
+                </li>
+                <li class="correctly__list-item">
+                  часы полупик — с 7.00 до 10.00 и 17.00 до 21.00 — немного дешевле дневного
+                </li>
+                <li class="correctly__list-item">
+                  ночной период — с 23.00 до 7.00 — значительно дешевле дневного.
+                </li>
+              </ul>
+              <p class="correctly__text correctly__text--marginBottom">
+                Если у вас установлен трехтарифный, то передаются сразу три значения показаний: дневные, получиковые и
+                ночные.
+              </p>
+            </div>
+            <div class="correctly__content-border">
+              <img class="correctly__content-image" src="./images/correctly/4.png" alt="">
+            </div>
+          </div>
+        </div>
+        <p class="correctly__textAccent">
+          Потребителю для общего сведения
+        </p>
+        <p class="correctly__text correctly__text--mbnone">
+          В современном обществе при использовании коммунальных ресурсов (электроэнергия, газ, вода или тепло)
+          потребителю необходимо ежемесячно и строго в установленные сроки передавать показания счетчиков. Как правило,
+          расчетные центры ресурсоснабжающих организаций, управляющих компаний и т.д. предлагают своим клиентам сразу
+          несколько способов сообщить показания приборов учета в их адрес. В зависимости от возможностей и величины
+          территории обслуживания таких организаций это можно сделать:
+        </p>
+        <ul class="correctly__list correctly__list--mbnone">
+          <li class="correctly__list-item">
+            через интернет в личном кабинете,
+          </li>
+          <li class="correctly__list-item">
+            без регистрации по лицевому счету на официальном сайте
+          </li>
+          <li class="correctly__list-item">
+            по телефонам через оператора или автоответчик (телефонные коды по региону Инструкции вы можете уточнять в
+            справочных)
+          </li>
+          <li class="correctly__list-item">
+            СМС сообщением на мобильный номер телефона,
+          </li>
+          <li class="correctly__list-item">
+            Письмом на электронный ящик компании,
+          </li>
+          <li class="correctly__list-item">
+            через мобильные приложения, социальные сети и мессенджеры
+          </li>
+        </ul>
+        <p class="correctly__text correctly__text--marginBottom">
+          Более полную информацию о методах, которые использует ваша обслуживающая компания можно уточнить в клиентском
+          офисе или по телефонам на квитанции.
+        </p>
+        <p class="correctly__textAccent">
+          Почему нужно передавать показания
+        </p>
+        <p class="correctly__text correctly__text--mbnone">
+          Если жилец не будет вносить показания по счетчикам в адрес обслуживающей организации, то расчетный центр этой
+          организации будет считать стоимость потребленного ресурса руководствуясь нормативами потребления. А это
+          неизбежно приведет к возрастанию расходов потребителя.
+        </p>
+        <p class="correctly__text correctly__text--marginBottom">
+          Как правильно выписать показания с табло счетчика электроэнергии, все виды электросчетчиков.
+        </p>
+        <p class="correctly__textAccent">
+          Некоторые правила подачи показаний
+        </p>
+        <ul class="correctly__list correctly__list--mbnone">
+          <li class="correctly__list-item">
+            Показания счетчиков за воду, электроэнергию или газ необходимо передавать в строго установленные вашей
+            обслуживающей организацией сроки. Если показания были отправлены с опозданием даже на один день, то оплата
+            за
+            расчетный месяц будет рассчитываться по среднему. Ничего страшного в этом нет. Просто в следующий раз
+            вовремя
+            подайте показания ИПУ и последующую квитанцию вы уже получите с учетом перерасчета
+          </li>
+          <li class="correctly__list-item">
+            Отправляйте только целые значения показаний. Дробную часть с приборов учета выписывать не нужно
+          </li>
+          <li class="correctly__list-item">
+            Переодически контролирующие органы ресурсоснабжающих и обслуживающих организаций могут присылать своих
+            специалистов фиксировать показания на ваших приборах. По закону вы обязаны обеспечить им доступ.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__item">
+          <a class="logo" href="#">
+            <img class="logo__image" src="./images/logo.png" alt="">
+            <p class="logo__text">Альфа Дом</p>
+          </a>
+          <p class="footer__text">
+            © 2022 «Альфа Дом». Все права защищены.
+            Сайт не является публичной офертой.
+          </p>
+        </div>
+        <div class="footer__item">
+          <div class="footer__item-box">
+            <a class="footer__link" href="#">Абонентам</a>
+            <a class="footer__link" href="#">Провайдерам</a>
+            <a class="footer__link" href="#">Партнерам</a>
+          </div>
+          <div class="footer__item-box">
+            <a class="footer__link" href="#">Поддержка</a>
+            <a class="footer__link" href="#">Политики и оферты</a>
+            <a class="footer__link" href="#">Документация API</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <section id="city" class="city">
+    <div class="city__inner">
+      <p class="city__title">Выберите город</p>
+      <div id="cities" class="search">
+        <div class="search__icon icon-search"></div>
+        <input class="search__input typeahead" type="text" placeholder="Поиск по организациям?">
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"></script>
+  <script src="./plugins/typeahead/bloodhound.min.js"></script>
+  <script src="./plugins/typeahead/typeahead.jquery.min.js"></script>
+  <script src="./plugins/typeahead/typeahead.bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="./plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

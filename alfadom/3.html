@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3</title>
+  <link rel="stylesheet" type="text/css" href="./plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/icons.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="body">
+
+
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__inner">
+        <a class="logo" href="#">
+          <img class="logo__image" src="./images/logo.png" alt="">
+          <p class="logo__text">Альфа Дом</p>
+        </a>
+        <div class="header__item">
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Абонентам
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Провайдерам
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Партнерам
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Поддержка
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <div class="header__burger">
+            <div class="header__burger-line"></div>
+          </div>
+          <a class="header__city link" data-fancybox href="#city">
+            <div class="icon-loca header__loca"></div>
+            <p class="header__city-text">Москва</p>
+          </a>
+        </div>
+
+        <div class="mask"></div>
+
+        <div class="yourCity" id="yourCity">
+          <p class="yourCity__title">
+            Ваш город
+            <span class="yourCity__span">Москва</span>
+            ?
+          </p>
+          <div class="yourCity__inner">
+            <div class="icon-close yourCity__icon"></div>
+            <button id="yes" class="yourCity__btn btn" type="submit">
+              <span>да</span>
+            </button>
+            <button id="no" class="yourCity__btn btn" type="submit">
+              <span>нет</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="all">
+    <div class="container">
+      <div class="all__inner">
+        <div class="all__item">
+          <div class="all__content all__content--width">
+            <h1 class="all__title">
+              Передавай все показания в МПГЭС в один клик
+            </h1>
+            <p class="all__text">
+              Заполните форму
+            </p>
+            <a data-goto=".section-1" class="all__link link">
+              Заполнить
+            </a>
+          </div>
+          <img class="all__image" src="./images/all-bg.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="card">
+    <div class="container">
+      <div class="card__inner">
+        <div class="card__item">
+          <div class="icon-indications card__item-icon"></div>
+          <div class="card__item-box">
+            <p class="card__item-textAccent">Передавай все показания</p>
+            <p class="card__item-text">в одном месте</p>
+          </div>
+        </div>
+        <div class="card__item">
+          <div class="icon-check card__item-icon"></div>
+          <div class="card__item-box">
+            <p class="card__item-textAccent">Не надо указывать каждый раз</p>
+            <p class="card__item-text">Адрес и лицевые счета</p>
+          </div>
+        </div>
+        <div class="card__item">
+          <div class="icon-all card__item-icon"></div>
+          <div class="card__item-box">
+            <p class="card__item-textAccent">Все поставщики ЖКХ услуг</p>
+            <p class="card__item-text">в одном месте</p>
+          </div>
+        </div>
+        <div class="card__item">
+          <div class="icon-lock card__item-icon"></div>
+          <div class="card__item-box">
+            <p class="card__item-textAccent">Не нужно придумывать</p>
+            <p class="card__item-text">Множество разных паролей</p>
+          </div>
+        </div>
+        <div class="card__item">
+          <div class="icon-lk card__item-icon"></div>
+          <div class="card__item-box">
+
+            <p class="card__item-textAccent">Больше не потребуется</p>
+            <p class="card__item-text">иметь десятки отдельных личных кабинетов</p>
+          </div>
+        </div>
+        <div class="card__item">
+          <div class="icon-wallet card__item-icon"></div>
+          <div class="card__item-box">
+            <p class="card__item-textAccent">Хватит тратиться</p>
+            <p class="card__item-text">на СМС для оплаты ЖКХ</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="form section-1">
+    <div class="container">
+      <h2 class="form__title title">Заполните форму для передачи показаний</h2>
+      <div class="form__inner">
+        <div class="form__box">
+          <div data-target="target1" class="form__subtitle form__subtitle--active">
+            Жилые помещения
+          </div>
+          <div data-target="target2" class="form__subtitle">
+            Нежилые помещения
+          </div>
+        </div>
+        <form class="form__body" action="">
+          <div data-info="target1" class="form__content form__content--active form__content--opacity">
+            <div class="form__item">
+              <p class="form__text">Лицевой счет</p>
+              <input class="form__input" type="text" placeholder="8 символов">
+            </div>
+            <div class="form__item" id="theOutside">
+              <p class="form__text">Адрес</p>
+              <input class="form__input typeahead" type="text" placeholder="Укажите улицу">
+            </div>
+            <div class="form__item">
+              <p class="form__text">Текущие показания прибора учета</p>
+              <input class="form__input" type="text" placeholder="Только целые числа">
+            </div>
+            <div class="form__item">
+              <p class="form__text">Телефон</p>
+              <input class="form__input" id="phone" type="tel" placeholder="В формате 9876543210">
+            </div>
+          </div>
+          <div data-info="target2" class="form__content">
+            <div class="form__item">
+              <p class="form__text">Лицевой счет</p>
+              <input class="form__input" type="text" placeholder="8 символов">
+            </div>
+            <div class="form__item" id="theOutside">
+              <p class="form__text">Адрес</p>
+              <input class="form__input typeahead" type="text" placeholder="Укажите улицу">
+            </div>
+            <div class="form__item">
+              <p class="form__text">Текущие показания прибора учета</p>
+              <input class="form__input" type="text" placeholder="Только целые числа">
+            </div>
+            <div class="form__item">
+              <p class="form__text">Телефон</p>
+              <input class="form__input" id="phone" type="tel" placeholder="В формате 9876543210">
+            </div>
+            <div class="form__item">
+              <p class="form__text">Лицевой счет</p>
+              <input class="form__input" type="text" placeholder="8 символов">
+            </div>
+            <div class="form__item" id="theOutside">
+              <p class="form__text">Адрес</p>
+              <input class="form__input typeahead" type="text" placeholder="Укажите улицу">
+            </div>
+            <div class="form__item">
+              <p class="form__text">Текущие показания прибора учета</p>
+              <input class="form__input" type="text" placeholder="Только целые числа">
+            </div>
+            <div class="form__item">
+              <p class="form__text">Телефон</p>
+              <input class="form__input" id="phone" type="tel" placeholder="В формате 9876543210">
+            </div>
+          </div>
+        </form>
+        <button class="form__btn btn" data-fancybox data-src="#sentApplication" type="submit">
+          <span> Отправить показания</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="video">
+    <div class="container">
+      <div class="video__inner">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/65a7PBca6f8" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="take">
+    <div class="container">
+      <div class="take__inner">
+        <h2 class="take__title">Как правильно снимать показания</h2>
+        <div class="take__list">
+          <a class="take__link" href="#">
+            <div class="icon-lightning take__icon"></div>
+            <p class="take__text">Электроэнергия</p>
+          </a>
+          <a class="take__link" href="#">
+            <div class="icon-drops take__icon"></div>
+            <p class="take__text">Горячая и холодная вода</p>
+          </a>
+          <a class="take__link" href="#">
+            <div class="icon-fire take__icon"></div>
+            <p class="take__text">Природный газ</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="bot">
+    <div class="container">
+      <div class="bot__inner">
+        <img class="bot__image" src="./images/bot/bot-bg.png" alt="">
+        <div class="bot__item">
+          <p class="bot__subtitle">Lorem ipsum dolor sit amet</p>
+          <p class="bot__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id ex accumsan, efficitur nulla non, cursus
+            turpis. Suspendisse vitae nulla leo. Praesent in dignissim metus. Sed auctor ex dui, quis varius ligula
+            dictum non. Donec dapibus ultricies neque, sit amet scelerisque velit imperdiet et. Mauris et dictum nunc.
+            Maecenas et sagittis nunc, et pretium massa. Suspendisse vitae faucibus justo. Mauris aliquet at nunc id
+            efficitur. Pellentesque magna risus, rhoncus vel erat id, ornare accumsan sem. Pellentesque habitant morbi
+            tristique senectus et netus et malesuada fames ac turpis egestas. Nullam et purus at arcu viverra placerat
+            non sit amet est.
+          </p>
+          <p class="bot__text">
+            Etiam volutpat efficitur nisl, non auctor risus rhoncus sit amet. Curabitur volutpat efficitur risus, non
+            dapibus neque. Sed tincidunt tellus sit amet mattis egestas. Nunc sit amet placerat nunc, at viverra ipsum.
+            Maecenas sed augue purus. Pellentesque imperdiet convallis elit, non aliquam nisl tincidunt efficitur.
+            Nullam ligula elit, feugiat et maximus at, gravida in augue. Nam imperdiet, nibh non accumsan malesuada,
+            neque erat eleifend nunc, at porttitor lacus tellus quis lorem. Curabitur tincidunt libero vel sem
+            malesuada, at scelerisque lacus pulvinar. Pellentesque id ipsum lobortis enim rhoncus semper. Etiam vitae
+            posuere mi, nec lacinia urna.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__item">
+          <a class="logo" href="#">
+            <img class="logo__image" src="./images/logo.png" alt="">
+            <p class="logo__text">Альфа Дом</p>
+          </a>
+          <p class="footer__text">
+            © 2022 «Альфа Дом». Все права защищены.
+            Сайт не является публичной офертой.
+          </p>
+        </div>
+        <div class="footer__item">
+          <div class="footer__item-box">
+            <a class="footer__link" href="#">Абонентам</a>
+            <a class="footer__link" href="#">Провайдерам</a>
+            <a class="footer__link" href="#">Партнерам</a>
+          </div>
+          <div class="footer__item-box">
+            <a class="footer__link" href="#">Поддержка</a>
+            <a class="footer__link" href="#">Политики и оферты</a>
+            <a class="footer__link" href="#">Документация API</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <section id="city" class="city">
+    <div class="city__inner">
+      <p class="city__title">Выберите город</p>
+      <div id="cities" class="search">
+        <div class="search__icon icon-search"></div>
+        <input class="search__input typeahead" type="text" placeholder="Поиск по организациям?">
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section id="sent" class="sent">
+    <div class="sent__inner">
+      <p class="sent__title">Ваши показания были успешно отправлены</p>
+      <p class="sent__subtitle">
+        В случае передачи некорректных данных обратитесь в поддержку
+      </p>
+      <div class="sent__box">
+        <p class="sent__box-title">Лицевой счет</p>
+        <p class="sent__box-text">12345678</p>
+      </div>
+      <div class="sent__box">
+        <p class="sent__box-title">Адрес</p>
+        <p class="sent__box-text">г. Москва, ул. Пушкина, д. 1, кв. 4</p>
+      </div>
+      <div class="sent__box">
+        <p class="sent__box-title">Текущие показания прибора учета</p>
+        <p class="sent__box-text">333</p>
+      </div>
+      <div class="sent__box sent__box--last">
+        <p class="sent__box-title">Телефон</p>
+        <p class="sent__box-text">9876543210</p>
+      </div>
+      <button class="sent__btn btn" type="submit">
+        <span>Готово</span>
+      </button>
+      <a class="sent__link sent__link--transparent link" href="#" target="_blank">Написать в поддержку</a>
+      <p class="sent__title sent__title--bottom">
+        Получай 10 бонусный рублей за каждую передачу показания счетчиков на сайте Альфа Дом
+      </p>
+      <input class="sent__input" type="text" placeholder="Введите номер телефона">
+      <button class="sent__btn btn sent__btn--transparent" type="submit">
+        <span>Получить 10 рублей</span>
+      </button>
+    </div>
+  </section>
+
+
+  <section id="sentApplication" class="sentApplication">
+    <div class="sentApplication__inner">
+      <p class="sentApplication__title">Ваши показания были успешно отправлены</p>
+      <p class="sentApplication__subtitle">
+        В случае передачи некорректных данных обратитесь в поддержку
+      </p>
+      <div class="sentApplication__box">
+        <p class="sentApplication__box-title">Лицевой счет</p>
+        <p class="sentApplication__box-text">12345678</p>
+      </div>
+      <div class="sentApplication__box">
+        <p class="sentApplication__box-title">Адрес</p>
+        <p class="sentApplication__box-text">г. Москва, ул. Пушкина, д. 1, кв. 4</p>
+      </div>
+      <div class="sentApplication__box">
+        <p class="sentApplication__box-title">Текущие показания прибора учета</p>
+        <p class="sentApplication__box-text">333</p>
+      </div>
+      <div class="sentApplication__box sentApplication__box--last">
+        <p class="sentApplication__box-title">Телефон</p>
+        <p class="sentApplication__box-text">9876543210</p>
+      </div>
+      <button class="sentApplication__btn btn" type="submit">
+        <span>Готово</span>
+      </button>
+      <a class="sentApplication__link sentApplication__link--transparent link" href="#" target="_blank">Написать в
+        поддержку</a>
+      <p class="sentApplication__title sentApplication__title--bottom">
+        Начни передавать показания в 1 клик с помощью мобильного приложения Альфа Дом
+      </p>
+      <p class="sentApplication__subtitle sentApplication__subtitle--mb">
+        Мы сохранили у себя данные лицевого счета и вам не придется вводить их повторно в мобильном приложении каждый
+        раз
+        при передаче показаний.
+      </p>
+      <input class="sentApplication__input" type="text" placeholder="Введите номер телефона">
+      <button class="sentApplication__btn btn sent__btn--transparent" type="submit" data-fancybox
+        data-src="#application">
+        <span>Скачать мобильное приложение</span>
+      </button>
+    </div>
+  </section>
+
+
+  <section id="application" class="application">
+    <div class="application__inner">
+      <p class="application__title">
+        Вы успешно создали аккаунт в мобильном приложении Альфа Дом
+      </p>
+      <div class="application__item">
+        <a href="#" class="application__item-link">
+          <img class="application__item-image" src="./images/application/google-play.png" alt="">
+        </a>
+        <a href="#" class="application__item-link">
+          <img class="application__item-image" src="./images/application/app-store.png" alt="">
+        </a>
+      </div>
+      <img class="application__barcode" src="./images/application/barcode.png" alt="">
+      <a class="application__link link" href="#" target="_blank">
+        <span>Скачать</span>
+      </a>
+      <a class="application__link application__link--transparent link" href="#" target="_blank">Прислать ссылку на
+        скачивание в смс-сообещнии</a>
+    </div>
+  </section>
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"></script>
+  <script src="./plugins/typeahead/bloodhound.min.js"></script>
+  <script src="./plugins/typeahead/typeahead.jquery.min.js"></script>
+  <script src="./plugins/typeahead/typeahead.bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="./plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icons/icomoon.eot?rnqsbl");
+  src: url("../fonts/icons/icomoon.eot?rnqsbl#iefix") format("embedded-opentype"),
+    url("../fonts/icons/icomoon.ttf?rnqsbl") format("truetype"),
+    url("../fonts/icons/icomoon.woff?rnqsbl") format("woff"),
+    url("../fonts/icons/icomoon.svg?rnqsbl#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-point:before {
+  content: "\e919";
+}
+.icon-chip:before {
+  content: "\e900";
+}
+.icon-experience:before {
+  content: "\e90a";
+}
+.icon-guarantee:before {
+  content: "\e90b";
+}
+.icon-handshake:before {
+  content: "\e90d";
+}
+.icon-home:before {
+  content: "\e90e";
+}
+.icon-hours:before {
+  content: "\e90f";
+}
+.icon-important:before {
+  content: "\e910";
+}
+.icon-kremlin:before {
+  content: "\e911";
+}
+.icon-mail:before {
+  content: "\e912";
+}
+.icon-money:before {
+  content: "\e913";
+}
+.icon-payment:before {
+  content: "\e914";
+}
+.icon-pdf:before {
+  content: "\e915";
+}
+.icon-pdf-hover:before {
+  content: "\e916";
+}
+.icon-phone:before {
+  content: "\e917";
+}
+.icon-phoneCall:before {
+  content: "\e918";
+}
+.icon-quality:before {
+  content: "\e91a";
+}
+.icon-sertificate:before {
+  content: "\e91b";
+}
+.icon-talk:before {
+  content: "\e91c";
+}
+.icon-telegram:before {
+  content: "\e91d";
+}
+.icon-time:before {
+  content: "\e91e";
+}
+.icon-Union:before {
+  content: "\e920";
+}
+.icon-user:before {
+  content: "\e921";
+}
+.icon-ant-design_phone-outlined:before {
+  content: "\e901";
+}
+.icon-arrow:before {
+  content: "\e902";
+}
+.icon-bi_check-lg:before {
+  content: "\e903";
+}
+.icon-bx_map-alt:before {
+  content: "\e904";
+}
+.icon-bxs_down-arrow:before {
+  content: "\e905";
+}
+.icon-carbon_delivery:before {
+  content: "\e906";
+}
+.icon-cart:before {
+  content: "\e907";
+}
+.icon-clarity_calendar-line:before {
+  content: "\e908";
+}
+.icon-ic_outline-watch-later:before {
+  content: "\e909";
+}
+.icon-Vk:before {
+  content: "\e90c";
+}
+.icon-Time2:before {
+  content: "\e94f";
+}
+
+
+

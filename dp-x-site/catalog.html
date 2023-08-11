@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,viewport-fit=cover,maximum-scale=1,user-scalable=0">
+  <link rel="shortcut icon" href="./images/favicon.svg" type="x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" />
+  <link rel="stylesheet" href="./css/icons.css">
+  <link rel="stylesheet" href="./css/style.css?v=0.0007">
+  <title>Карточка товара</title>
+</head>
+
+<body>
+
+
+
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-inner">
+            <div class="header__top-box">
+              <a class="header__top-phone" href="tel:88005553535">
+                8 800 555 35 35
+              </a>
+              <p class="header__top-text">
+                Круглосуточно
+              </p>
+            </div>
+            <ul class="header__list">
+              <li class="header__list-item">
+                <a class="header__list-link" href="#">
+                  О компании
+                </a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__list-link" href="#">
+                  Контакты
+                </a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__list-link" href="#">
+                  Партнерам
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <div class="header__inner">
+            <a class="logo" href="#">
+              <img class="logo__img" src="./images/logo.svg" alt="">
+            </a>
+            <div class="header__catalog">
+              <div class="header__catalog-icon icon-menu"></div>
+              <p class="header__catalog-text">
+                Каталог
+              </p>
+            </div>
+            <form class="search" action="">
+              <label class="search__label">
+                <input class="search__input" type="text" placeholder=" Что ищем сегодня?">
+              </label>
+              <button class="search__icon icon-search"></button>
+            </form>
+            <div class="header__item">
+              <a class="header__item-link" href="#">
+                <div class="header__item-icon icon-shuffle"></div>
+                <p class="header__item-text">
+                  Сравнить
+                </p>
+              </a>
+              <a class="header__item-link" href="#">
+                <div class="header__item-icon icon-bookmark"></div>
+                <p class="header__item-text">
+                  Избранное
+                </p>
+              </a>
+              <a class="header__item-link" href="#">
+                <div class="header__item-icon icon-basket"></div>
+                <p class="header__item-text">
+                  Корзина
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+    <main class="main">
+
+
+      <section class="card">
+        <div class="container">
+          <div class="card__inner">
+            <img class="card__img" src="./images/card/1.jpg" alt="">
+            <div class="card__item">
+              <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                  <li class="breadcrumbs__list-item">
+                    <a class="breadcrumbs__list-link" href="#">
+                      Главная
+                      <span>/</span>
+                    </a>
+                  </li>
+                  <li class="breadcrumbs__list-item">
+                    <a class="breadcrumbs__list-link" href="#">
+                      Категория
+                      <span>/</span>
+                    </a>
+                  </li>
+                  <li class="breadcrumbs__list-item">
+                    <a class="breadcrumbs__list-link" href="#">
+                      ...
+                      <span>/</span>
+                    </a>
+                  </li>
+                  <li class="breadcrumbs__list-item">
+                    <a class="breadcrumbs__list-link" href="#">
+                      Название товара
+                      <span>/</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <h2 class="card__item-title">
+                Пластина WNMG 080408-MA DPM154U
+              </h2>
+              <div class="card__item-box">
+                <p class="card__item-price">
+                  $369.00
+                </p>
+                <p class="card__item-stock">
+                  <span class="card__item-num">
+                    1525
+                  </span>
+                  в наличии
+                </p>
+              </div>
+              <div class="card__item-block">
+                <button class="card__item-btn">
+                  <div class="card__item-icon icon-shuffle"></div>
+                  <p class="card__item-btnText">
+                    Сравнить
+                  </p>
+                </button>
+                <button class="card__item-btn">
+                  <span class="card__item-icon icon-bookmark"></span>
+                  <span class="card__item-btnText">
+                    Избранное
+                  </span>
+                </button>
+              </div>
+              <p class="card__item-category">
+                <span>Категория:</span>
+                Инструмент
+              </p>
+              <p class="card__item-text">
+                С этим товаром покупают следующие продукты:
+              </p>
+              <p class="card__item-selectTitle">
+                Державка для наружнего точения
+              </p>
+              <div class="card__item-wrapper">
+                <select class="card__item-select card__item-select--1 js-example-basic-single" name="state">
+                  <option selected></option>
+                  <option value="AL">GARWIN INDUSTRIAL MDJNR2525M1506</option>
+                  <option value="AL">GARWIN </option>
+                  <option value="AL">INDUSTRIAL</option>
+                  <option value="WY">MDJNR2525M1506</option>
+                </select>
+                <p class="card__item-selectTitle">
+                  Державка для наружнего точения
+                </p>
+                <select class="card__item-select card__item-select--2 js-example-basic-single" name="state">
+                  <option selected></option>
+                  <option value="AL">Выберите дополнительную державку</option>
+                  <option value="WY">Выберите</option>
+                  <option value="WY">дополнительную</option>
+                  <option value="WY">державку</option>
+                </select>
+              </div>
+              <button class="btn">
+                Добавить в корзину
+              </button>
+            </div>
+          </div>
+          <div class="card__tab">
+            <div data-target="target1" class="card__target card__target--active">
+              Описание
+            </div>
+            <div data-target="target2" class="card__target">
+              Отзывы
+            </div>
+            <div data-target="target3" class="card__target">
+              Оплата/Доставка
+            </div>
+          </div>
+          <div class="card__wrapper">
+            <div data-info="target1" class="card__info card__info--active card__info--opacity">
+              <div class="card__info-inner">
+                <div class="card__info-box">
+                  <div class="card__info-title">
+                    Lorem, ipsum.
+                  </div>
+                  <div class="card__info-block">
+                    <img class="card__info-img" src="./images/card/1.jpg" alt="">
+                    <p class="card__info-text">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore fugiat distinctio molestiae
+                      vero
+                      expedita! Veritatis deserunt ipsa autem sunt illum? Culpa numquam incidunt nisi laudantium illo,
+                      delectus ipsa repellendus obcaecati. delectus ipsa repellendus obcaecati.
+                    </p>
+                  </div>
+                  <p class="card__info-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, quis? Sint minima magni recusandae.
+                    Voluptate est cum saepe voluptatem omnis optio ad, provident
+                  </p>
+                </div>
+                <div class="card__info-box">
+                  <div class="card__info-title">
+                    Lorem, ipsum.
+                  </div>
+                  <p class="card__info-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore fugiat distinctio molestiae
+                    vero
+                    expedita! Veritatis deserunt ipsa autem sunt illum? Culpa numquam incidunt nisi laudantium illo,
+                    delectus ipsa repellendus obcaecati.
+                  </p>
+                  <p class="card__info-accordion">
+                    Lorem ipsum dolor sit,
+                  </p>
+                  <p class="card__info-hidden">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore fugiat distinctio molestiae
+                    vero
+                  </p>
+                  <p class="card__info-accordion">
+                    Lorem ipsum dolor sit,
+                  </p>
+                  <p class="card__info-hidden">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore fugiat distinctio molestiae
+                    vero
+                  </p>
+                  <p class="card__info-accordion">
+                    Lorem ipsum dolor sit,
+                  </p>
+                  <p class="card__info-hidden">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore fugiat distinctio molestiae
+                    vero
+                  </p>
+                  <p class="card__info-accordion">
+                    Lorem ipsum dolor sit,
+                  </p>
+                  <p class="card__info-hidden">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore fugiat distinctio molestiae
+                    vero
+                  </p>
+                </div>
+                <div class="card__info-box">
+                  <div class="card__info-title">
+                    Lorem, ipsum.
+                  </div>
+                  <p class="card__info-text">
+                    Lorem ipsum dolor sit,
+                  </p>
+                  <p class="card__info-text">
+                    Lorem ipsum dolor sit,
+                  </p>
+                  <div class="card__info-title">
+                    Lorem, ipsum.
+                  </div>
+                  <p class="card__info-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quod modi quidem et
+                    consectetur
+                  </p>
+                  <div class="card__info-title">
+                    Lorem, ipsum.
+                  </div>
+                  <p class="card__info-text">
+                    Lorem ipsum dolor sit,
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div data-info="target2" class="card__info">
+              <div class="card__info-inner">
+                <div class="card__info-box">
+                  <div class="card__info-title">
+                    Lorem, ipsum.
+                  </div>
+                  <div class="card__info-block">
+                    <img class="card__info-img" src="./images/card/1.jpg" alt="">
+                    <p class="card__info-text">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore fugiat distinctio molestiae
+                      vero
+                      expedita! Veritatis deserunt ipsa autem sunt illum? Culpa numquam incidunt nisi laudantium illo,
+                      delectus ipsa repellendus obcaecati. delectus ipsa repellendus obcaecati.
+                    </p>
+                  </div>
+                  <p class="card__info-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, quis? Sint minima magni
+                    recusandae.
+                    Voluptate est cum saepe voluptatem omnis optio ad, provident
+                  </p>
+                </div>
+                <div class="card__info-box">
+                  <div class="card__info-title">
+                    Lorem, ipsum.
+                  </div>
+                  <p class="card__info-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore fugiat distinctio molestiae
+                    vero
+                    expedita! Veritatis deserunt ipsa autem sunt illum? Culpa numquam incidunt nisi laudantium illo,
+                    delectus ipsa repellendus obcaecati.
+                  </p>
+                  <p class="card__info-accordion">
+                    Lorem ipsum dolor sit,
+                  </p>
+                  <p class="card__info-hidden">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore fugiat distinctio molestiae
+                    vero
+                  </p>
+                  <p class="card__info-accordion">
+                    Lorem ipsum dolor sit,
+                  </p>
+                  <p class="card__info-hidden">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore fugiat distinctio molestiae
+                    vero
+                  </p>
+                  <p class="card__info-accordion">
+                    Lorem ipsum dolor sit,
+                  </p>
+                  <p class="card__info-hidden">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore fugiat distinctio molestiae
+                    vero
+                  </p>
+                  <p class="card__info-accordion card__info-accordion--mbnone">
+                    Lorem ipsum dolor sit,
+                  </p>
+                  <p class="card__info-hidden">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore fugiat distinctio molestiae
+                    vero
+                  </p>
+                </div>
+                <div class="card__info-box">
+                  <div class="card__info-title">
+                    Lorem, ipsum.
+                  </div>
+                  <p class="card__info-text">
+                    Lorem ipsum dolor sit,
+                  </p>
+                  <p class="card__info-text">
+                    Lorem ipsum dolor sit,
+                  </p>
+                  <div class="card__info-title">
+                    Lorem, ipsum.
+                  </div>
+                  <p class="card__info-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quod modi quidem et
+                    consectetur
+                  </p>
+                  <div class="card__info-title">
+                    Lorem, ipsum.
+                  </div>
+                  <p class="card__info-text">
+                    Lorem ipsum dolor sit,
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div data-info="target3" class="card__info">
+              <div class="card__info-inner">
+                <div class="card__info-box">
+                  <div class="card__info-title">
+                    Lorem, ipsum.
+                  </div>
+                  <div class="card__info-block">
+                    <img class="card__info-img" src="./images/card/1.jpg" alt="">
+                    <p class="card__info-text">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore fugiat distinctio molestiae
+                      vero
+                      expedita! Veritatis deserunt ipsa autem sunt illum? Culpa numquam incidunt nisi laudantium illo,
+                      delectus ipsa repellendus obcaecati. delectus ipsa repellendus obcaecati.
+                    </p>
+                  </div>
+                  <p class="card__info-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, quis? Sint minima magni
+                    recusandae.
+                    Voluptate est cum saepe voluptatem omnis optio ad, provident
+                  </p>
+                </div>
+                <div class="card__info-box">
+                  <div class="card__info-title">
+                    Lorem, ipsum.
+                  </div>
+                  <p class="card__info-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore fugiat distinctio molestiae
+                    vero
+                    expedita! Veritatis deserunt ipsa autem sunt illum? Culpa numquam incidunt nisi laudantium illo,
+                    delectus ipsa repellendus obcaecati.
+                  </p>
+                  <p class="card__info-accordion">
+                    Lorem ipsum dolor sit,
+                  </p>
+                  <p class="card__info-hidden">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore fugiat distinctio molestiae
+                    vero
+                  </p>
+                  <p class="card__info-accordion">
+                    Lorem ipsum dolor sit,
+                  </p>
+                  <p class="card__info-hidden">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore fugiat distinctio molestiae
+                    vero
+                  </p>
+                  <p class="card__info-accordion">
+                    Lorem ipsum dolor sit,
+                  </p>
+                  <p class="card__info-hidden">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore fugiat distinctio molestiae
+                    vero
+                  </p>
+                  <p class="card__info-accordion">
+                    Lorem ipsum dolor sit,
+                  </p>
+                  <p class="card__info-hidden">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore fugiat distinctio molestiae
+                    vero
+                  </p>
+                </div>
+                <div class="card__info-box">
+                  <div class="card__info-title">
+                    Lorem, ipsum.
+                  </div>
+                  <p class="card__info-text">
+                    Lorem ipsum dolor sit,
+                  </p>
+                  <p class="card__info-text">
+                    Lorem ipsum dolor sit,
+                  </p>
+                  <div class="card__info-title">
+                    Lorem, ipsum.
+                  </div>
+                  <p class="card__info-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quod modi quidem et
+                    consectetur
+                  </p>
+                  <div class="card__info-title">
+                    Lorem, ipsum.
+                  </div>
+                  <p class="card__info-text">
+                    Lorem ipsum dolor sit,
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__item">
+            <a class="logo" href="#">
+              <img class="logo__img" src="./images/logo.svg" alt="">
+            </a>
+            <div class="footer__item-box">
+              <a class="footer__item-phone" href="tel:88005553535">
+                8 800 555 35 35
+              </a>
+              <p class="footer__item-text">
+                Заказать обратный звонок
+              </p>
+            </div>
+            <div class="social">
+              <a class="social__icon icon-vk" href="#"></a>
+              <a class="social__icon icon-tg" href="#"></a>
+              <a class="social__icon icon-wa" href="#"></a>
+              <a class="social__icon icon-wb" href="#"></a>
+            </div>
+          </div>
+          <div class="footer__box">
+            <div class="footer__box-item">
+              <p class="footer__box-title">
+                Категория меню
+              </p>
+              <ul class="footer__list">
+                <a class="footer__list-link" href="#">
+                  Пункт 1
+                </a>
+                <a class="footer__list-link" href="#">
+                  Пункт 1
+                </a>
+                <a class="footer__list-link" href="#">
+                  Пункт 1
+                </a>
+                <a class="footer__list-link" href="#">
+                  Пункт 1
+                </a>
+              </ul>
+            </div>
+            <div class="footer__box-item">
+              <p class="footer__box-title">
+                Категория меню
+              </p>
+              <ul class="footer__list">
+                <a class="footer__list-link" href="#">
+                  Пункт 1
+                </a>
+                <a class="footer__list-link" href="#">
+                  Пункт 1
+                </a>
+              </ul>
+            </div>
+            <div class="footer__box-item">
+              <p class="footer__box-title">
+                Категория меню
+              </p>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a class="footer__list-link" href="#">
+                    Пункт 1
+                  </a>
+                </li>
+                <a class="footer__list-link" href="#">
+                  Пункт 1
+                </a>
+                <a class="footer__list-link" href="#">
+                  Пункт 1
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__bottom-item">
+            <p class="footer__copy">
+              © 2022 — 2023.
+            </p>
+            <p class="footer__copy">
+              Все права защищены
+            </p>
+          </div>
+          <div class="footer__bottom-item">
+            <a class="footer__bottom-link" href="#">
+              Политика конфеденциальности
+            </a>
+            <p class="footer__bottom-text">
+              ИНН 283518258125
+            </p>
+          </div>
+          <div class="footer__bottom-item">
+            <p class="footer__bottom-text">
+              Сайт разработан
+            </p>
+            <p class="footer__bottom-text">
+              NIKIFOROVDESIGN
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./js/main.js?v=0.0007"></script>
+</body>
+
+</html>

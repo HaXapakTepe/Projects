@@ -1,0 +1,135 @@
+.basket {
+  border-radius: 20px;
+  border: 1px solid #EBF2F5;
+  @include fluid(padding, 20px, 40px);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+
+  &__item,
+  &__box {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 15px, 19px);
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    @include fluid(gap, 10px, 15px);
+    @include fluid(margin-bottom, 5px, 10px);
+
+    &-title {
+      line-height: 1.2;
+    }
+
+    &-icon {
+      width: 32px;
+      height: 32px;
+    }
+
+    &-num {
+      display: none;
+    }
+  }
+
+  &__box {
+    >:first-child.basket__box {
+      display: none;
+    }
+  }
+
+  &__card {
+    display: grid;
+    grid-template-columns: .4fr .9fr .4fr;
+    @include fluid(gap, 8px, 16px);
+    @include fluid(padding-bottom, 15px, 20px);
+    border-bottom: 1px solid #EBF2F5;
+
+    &:has(+.basket__price) {
+      @include fluid(margin-bottom, 20px, 40px);
+    }
+
+    &-img {
+      width: 64px;
+      height: 64px;
+      @include fluid(margin-right, 0px, 4px);
+      -o-object-fit: cover;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @include fluid(gap, 5px, 8px);
+      flex-grow: 1;
+    }
+
+    &-text {
+      @include fluid(font-size, 11px, 14px);
+      line-height: 1.15;
+      font-weight: 600;
+    }
+
+    &-icon {
+      margin-left: auto;
+      color: #FF4B23;
+      cursor: pointer;
+    }
+
+    &-price {
+      @include fluid(font-size, 14px, 18px);
+      font-weight: 700;
+      line-height: 1;
+    }
+  }
+
+  &__text {
+    @include fluid(margin-top, 10px, 15px);
+    @include fluid(margin-bottom, 10px, 15px);
+    color: #848E94;
+    line-height: 1.35;
+
+    span {
+      color: #343A3D;
+    }
+
+    &--null {
+      z-index: 0;
+      opacity: 1;
+      visibility: visible;
+      transition: z-index .38s ease-in-out,
+        opacity .38s ease-in-out,
+        visibility .38s ease-in-out;
+      margin: 0;
+
+      &:has(+.basket__box>.basket__card) {
+        display: none;
+        z-index: -1;
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+
+  &__price {
+    @include fluid(margin-bottom, 10px, 25px);
+    @include fluid(font-size, 24px, 35px);
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .btn {
+    @include fluid(margin-bottom, 10px, 20px);
+  }
+
+  .social {
+    @include fluid(gap, 20px, 40px);
+
+    &__icon {
+      @include fluid(font-size, 24px, 32px);
+    }
+  }
+}

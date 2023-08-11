@@ -1,0 +1,40 @@
+.header {
+  background-color: #fff;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    @include fluid(padding-top, 15px, 20px);
+    @include fluid(padding-bottom, 15px, 20px);
+    gap: 20px;
+  }
+
+  &__bottom {
+    border-top: 1px solid #EBF2F5;
+    border-bottom: 1px solid #EBF2F5;
+    @include fluid(padding-top, 15px, 15px);
+    @include fluid(padding-bottom, 15px, 20px);
+
+    &-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .logo {
+    @include fluid(max-width, 335px, 458px);
+  }
+
+  .phone {
+    @include fluid(margin-right, 0px, 25px);
+  }
+
+  .user {
+    @include fluid(margin-right, 0px, 35px);
+  }
+
+  .city {
+    @include fluid(margin-right, 0px, 85px);
+  }
+}

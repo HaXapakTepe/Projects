@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,viewport-fit=cover,maximum-scale=1,user-scalable=0" />
+  <link rel="shortcut icon" href="./images/favicon.svg" type="x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/icons.css" />
+  <link rel="stylesheet" href="./css/style.css?v=0.0003" />
+  <title>Страница товара</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+
+    <header class="header header--color">
+      <div class="container">
+        <nav class="header__inner">
+          <a class="logo" href="./Index.html">
+            <img class="logo__img" src="./images/logo-black.svg" alt="" />
+          </a>
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__item-link" href="./About.html">
+                О нас
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="./Blog.html">
+                Блог
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="./Catalog.html">
+                Каталог
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="./Reviews.html">
+                Обзоры
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="./Contacts.html">
+                Контакты
+              </a>
+            </li>
+            <li class="menu__item menu__item--hidden">
+              <p class="menu__item-showModal showModal">
+                Заказать звонок
+              </p>
+            </li>
+            <li class="menu__item menu__item--hidden">
+              <div class="header__item">
+                <a class="header__item-phone" href="tel:+74992880170">
+                  +7 499 288 01 70
+                </a>
+                <p class="header__item-text">Бесплатный звонок по РФ</p>
+                <p class="header__item-time">с 10:00 до 21:30</p>
+              </div>
+            </li>
+          </ul>
+          <div class="header__item">
+            <a class="header__item-phone" href="tel:+74992880170">+7 499 288 01 70</a>
+            <p class="header__item-text">Бесплатный звонок по РФ</p>
+            <div class="header__item-box">
+              <div class="header__item-icon icon-time"></div>
+              <p class="header__item-time">с 10:00 до 21:30</p>
+            </div>
+          </div>
+          <p class="header__showModal showModal">
+            Заказать звонок
+          </p>
+          <div class="burger">
+            <div class="burger__line"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+
+    <main class="main">
+
+
+      <section class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Главная
+              </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Каталог
+              </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Наж. гарнитур 26/92 мм ANTEY БЕЛЫЙ с пружиной
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+      <section class="product">
+        <div class="container">
+          <div class="product__inner">
+            <div class="product__box">
+              <img class="product__box-img" src="./images/product/1.jpg" alt="">
+            </div>
+            <div class="product__item">
+              <div class="product__item-box">
+                <h1 class="product__item-title">
+                  Наж гарнитур 26/92 мм ANTEY БЕЛЫЙ с пружиной
+                </h1>
+                <p class="product__item-text">
+                  <span>Артикул:</span>
+                  DHS ANTEY 92/26 9016
+                </p>
+                <p class="product__item-text">
+                  <span>Категория:</span>
+                  Комплектующие
+                </p>
+              </div>
+              <div class="product__item-box">
+                <a class="product__item-phone" href="#">
+                  Заказать звонок
+                  <svg viewBox="0 0 139 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM138.707 8.70711C139.098 8.31658 139.098 7.68342 138.707 7.29289L132.343 0.928932C131.953 0.538408 131.319 0.538408 130.929 0.928932C130.538 1.31946 130.538 1.95262 130.929 2.34315L136.586 8L130.929 13.6569C130.538 14.0474 130.538 14.6805 130.929 15.0711C131.319 15.4616 131.953 15.4616 132.343 15.0711L138.707 8.70711ZM1 9H138V7H1V9Z" />
+                  </svg>
+                </a>
+                <p class="product__item-remained">
+                  На складе осталось: 100 шт
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tab">
+            <div class="tab__item">
+              <div data-target="target1" class="tab__target tab__target--active">
+                Описание
+              </div>
+              <div data-target="target2" class="tab__target">
+                Характеристики
+              </div>
+              <div data-target="target3" class="tab__target">
+                Отзывы
+              </div>
+              <div data-target="target4" class="tab__target">
+                Обзор
+              </div>
+            </div>
+            <div data-info="target1" class="tab__info tab__info--active tab__info--opacity">
+              <div class="tab__flex">
+                <div class="tab__box">
+                  <p class="tab__text">
+                    <span>Категория:</span>
+                    Комплектующие
+                  </p>
+                  <p class="tab__text">
+                    <span>Длина, мм:</span>
+                    128
+                  </p>
+                  <p class="tab__text">
+                    <span>Ширина, мм:</span>
+                    29
+                  </p>
+                  <p class="tab__text">
+                    <span>Высота, мм:</span>
+                    53
+                  </p>
+                </div>
+                <div class="tab__box">
+                  <p class="tab__text">
+                    <span>Материал:</span>
+                    Алюминий
+                  </p>
+                  <p class="tab__text">
+                    <span>Особенности фурнитуры:</span>
+                    Механическое открывание ключом
+                  </p>
+                  <p class="tab__text">
+                    <span>Цвет:</span>
+                    Белый
+                  </p>
+                  <p class="tab__text">
+                    <span>Страна изготовитель:</span>
+                    Германия
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div data-info="target2" class="tab__info">
+              <div class="tab__flex">
+                <div class="tab__box">
+                  <p class="tab__text">
+                    <span>Категория:</span>
+                    Комплектующие
+                  </p>
+                  <p class="tab__text">
+                    <span>Длина, мм:</span>
+                    128
+                  </p>
+                  <p class="tab__text">
+                    <span>Ширина, мм:</span>
+                    29
+                  </p>
+                  <p class="tab__text">
+                    <span>Высота, мм:</span>
+                    53
+                  </p>
+                </div>
+                <div class="tab__box">
+                  <p class="tab__text">
+                    <span>Материал:</span>
+                    Алюминий
+                  </p>
+                  <p class="tab__text">
+                    <span>Особенности фурнитуры:</span>
+                    Механическое открывание ключом
+                  </p>
+                  <p class="tab__text">
+                    <span>Цвет:</span>
+                    Белый
+                  </p>
+                  <p class="tab__text">
+                    <span>Страна изготовитель:</span>
+                    Германия
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div data-info="target3" class="tab__info">
+              <div class="tab__flex">
+                <div class="tab__box">
+                  <p class="tab__text">
+                    <span>Категория:</span>
+                    Комплектующие
+                  </p>
+                  <p class="tab__text">
+                    <span>Длина, мм:</span>
+                    128
+                  </p>
+                  <p class="tab__text">
+                    <span>Ширина, мм:</span>
+                    29
+                  </p>
+                  <p class="tab__text">
+                    <span>Высота, мм:</span>
+                    53
+                  </p>
+                </div>
+                <div class="tab__box">
+                  <p class="tab__text">
+                    <span>Материал:</span>
+                    Алюминий
+                  </p>
+                  <p class="tab__text">
+                    <span>Особенности фурнитуры:</span>
+                    Механическое открывание ключом
+                  </p>
+                  <p class="tab__text">
+                    <span>Цвет:</span>
+                    Белый
+                  </p>
+                  <p class="tab__text">
+                    <span>Страна изготовитель:</span>
+                    Германия
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div data-info="target4" class="tab__info">
+              <div class="tab__flex">
+                <div class="tab__box">
+                  <p class="tab__text">
+                    <span>Категория:</span>
+                    Комплектующие
+                  </p>
+                  <p class="tab__text">
+                    <span>Длина, мм:</span>
+                    128
+                  </p>
+                  <p class="tab__text">
+                    <span>Ширина, мм:</span>
+                    29
+                  </p>
+                  <p class="tab__text">
+                    <span>Высота, мм:</span>
+                    53
+                  </p>
+                </div>
+                <div class="tab__box">
+                  <p class="tab__text">
+                    <span>Материал:</span>
+                    Алюминий
+                  </p>
+                  <p class="tab__text">
+                    <span>Особенности фурнитуры:</span>
+                    Механическое открывание ключом
+                  </p>
+                  <p class="tab__text">
+                    <span>Цвет:</span>
+                    Белый
+                  </p>
+                  <p class="tab__text">
+                    <span>Страна изготовитель:</span>
+                    Германия
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product__text">
+            Информация о технических характеристиках, комплекте поставки, стране изготовления, внешнем виде и цвете
+            товара носит справочный характер и основывается на последних доступных к моменту публикации сведениях
+          </div>
+        </div>
+      </section>
+
+
+      <section class="popular">
+        <div class="container">
+          <div class="popular__box">
+            <h2 class="popular__title">
+              С этим товаром покупают
+            </h2>
+          </div>
+          <div class="popular__swiper swiper">
+            <div class="popular__wrapper swiper-wrapper">
+              <a class="popular__slide swiper-slide" href="#">
+                <img class="popular__slide-img" src="./images/popular/1.jpg" alt="">
+                <p class="popular__slide-title">
+                  <span>Наж. гарнитур 26/92 мм ANTEY</span>
+                  <span>БЕЛЫЙ с пружиной</span>
+                </p>
+                <p class="popular__slide-articul">
+                  Артикул: DHS ANTEY 92/26 9016
+                </p>
+                <div class="popular__text">
+                  Подробнее
+                  <div class="popular__text-icon icon-arrowRight"></div>
+                </div>
+              </a>
+              <a class="popular__slide swiper-slide" href="#">
+                <img class="popular__slide-img" src="./images/popular/2.jpg" alt="">
+                <p class="popular__slide-title">
+                  <span>Наж. гарнитур 26/92 мм ANTEY</span>
+                  <span>БЕЛЫЙ с пружиной</span>
+                </p>
+                <p class="popular__slide-articul">
+                  Артикул: DHS ANTEY 92/26 9016
+                </p>
+                <div class="popular__text">
+                  Подробнее
+                  <div class="popular__text-icon icon-arrowRight"></div>
+                </div>
+              </a>
+              <a class="popular__slide swiper-slide" href="#">
+                <img class="popular__slide-img" src="./images/popular/3.jpg" alt="">
+                <p class="popular__slide-title">
+                  <span>Наж. гарнитур 26/92 мм ANTEY</span>
+                  <span>БЕЛЫЙ с пружиной</span>
+                </p>
+                <p class="popular__slide-articul">
+                  Артикул: DHS ANTEY 92/26 9016
+                </p>
+                <div class="popular__text">
+                  Подробнее
+                  <div class="popular__text-icon icon-arrowRight"></div>
+                </div>
+              </a>
+              <a class="popular__slide swiper-slide" href="#">
+                <img class="popular__slide-img" src="./images/popular/4.jpg" alt="">
+                <p class="popular__slide-title">
+                  <span>Наж. гарнитур 26/92 мм ANTEY</span>
+                  <span>БЕЛЫЙ с пружиной</span>
+                </p>
+                <p class="popular__slide-articul">
+                  Артикул: DHS ANTEY 92/26 9016
+                </p>
+                <div class="popular__text">
+                  Подробнее
+                  <div class="popular__text-icon icon-arrowRight"></div>
+                </div>
+              </a>
+              <a class="popular__slide swiper-slide" href="#">
+                <img class="popular__slide-img" src="./images/popular/1.jpg" alt="">
+                <p class="popular__slide-title">
+                  <span>Наж. гарнитур 26/92 мм ANTEY</span>
+                  <span>БЕЛЫЙ с пружиной</span>
+                </p>
+                <p class="popular__slide-articul">
+                  Артикул: DHS ANTEY 92/26 9016
+                </p>
+                <div class="popular__text">
+                  Подробнее
+                  <div class="popular__text-icon icon-arrowRight"></div>
+                </div>
+              </a>
+              <a class="popular__slide swiper-slide" href="#">
+                <img class="popular__slide-img" src="./images/popular/2.jpg" alt="">
+                <p class="popular__slide-title">
+                  <span>Наж. гарнитур 26/92 мм ANTEY</span>
+                  <span>БЕЛЫЙ с пружиной</span>
+                </p>
+                <p class="popular__slide-articul">
+                  Артикул: DHS ANTEY 92/26 9016
+                </p>
+                <div class="popular__text">
+                  Подробнее
+                  <div class="popular__text-icon icon-arrowRight"></div>
+                </div>
+              </a>
+              <a class="popular__slide swiper-slide" href="#">
+                <img class="popular__slide-img" src="./images/popular/3.jpg" alt="">
+                <p class="popular__slide-title">
+                  <span>Наж. гарнитур 26/92 мм ANTEY</span>
+                  <span>БЕЛЫЙ с пружиной</span>
+                </p>
+                <p class="popular__slide-articul">
+                  Артикул: DHS ANTEY 92/26 9016
+                </p>
+                <div class="popular__text">
+                  Подробнее
+                  <div class="popular__text-icon icon-arrowRight"></div>
+                </div>
+              </a>
+              <a class="popular__slide swiper-slide" href="#">
+                <img class="popular__slide-img" src="./images/popular/4.jpg" alt="">
+                <p class="popular__slide-title">
+                  <span>Наж. гарнитур 26/92 мм ANTEY</span>
+                  <span>БЕЛЫЙ с пружиной</span>
+                </p>
+                <p class="popular__slide-articul">
+                  Артикул: DHS ANTEY 92/26 9016
+                </p>
+                <div class="popular__text">
+                  Подробнее
+                  <div class="popular__text-icon icon-arrowRight"></div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <a class="logo" href="./Index.html">
+            <img class="logo__img" src="./images/logo.svg" alt="" />
+          </a>
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__item-link" href="./About.html">
+                О нас
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="./Blog.html">
+                Блог
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="./Catalog.html">
+                Каталог
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="./Reviews.html">
+                Обзоры
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="./Contacts.html">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__inner">
+          <div class="footer__item">
+            <p class="footer__item-city">
+              Саратов
+            </p>
+            <div class="footer__info">
+              <p class="footer__info-title">
+                Адрес
+              </p>
+              <div class="footer__info-box">
+                <p class="footer__info-text">
+                  410047, г.Саратов, ул. Танкистов, 195
+                </p>
+                <a data-partners="partners1" class="footer__info-link onTheMap" href="./Contacts.html?target=1">
+                  ООО "Бизнес-Партнер" на карте
+                </a>
+              </div>
+            </div>
+            <div class="footer__info">
+              <p class="footer__info-title">
+                Телефон/Факс
+              </p>
+              <div class="footer__info-box">
+                <a class="footer__info-link" href="tel:88452720404">
+                  8 (8452) 72-04-04,
+                </a>
+                <a class="footer__info-link" href="tel:89379615429">
+                  8-937-961-54-29
+                </a>
+              </div>
+            </div>
+            <div class="footer__info">
+              <p class="footer__info-title">
+                E-mail
+              </p>
+              <div class="footer__info-box">
+                <a class="footer__info-link" href="mailto:business-partner64@mail.ru">
+                  business-partner64@mail.ru
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__item">
+            <p class="footer__item-city">
+              Энгельс
+            </p>
+            <div class="footer__info">
+              <p class="footer__info-title">
+                Адрес
+              </p>
+              <div class="footer__info-box">
+                <p class="footer__info-text">
+                  413118 г.Энгельс ул.Маяковского 138
+                </p>
+                <a data-partners="partners2" class="footer__info-link onTheMap" href="./Contacts.html?target=3">
+                  ООО "Бизнес-Партнер" на карте
+                </a>
+              </div>
+            </div>
+            <div class="footer__info">
+              <p class="footer__info-title">
+                Телефон/Факс
+              </p>
+              <div class="footer__info-box">
+                <a class="footer__info-link" href="tel:88453556650">
+                  8 (8453) 55-66-50
+                </a>
+                <a class="footer__info-link" href="tel:88453556466">
+                  ф. 55-64-66
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__item">
+            <p class="footer__item-city">
+              Балашов
+            </p>
+            <div class="footer__info">
+              <p class="footer__info-title">
+                Адрес
+              </p>
+              <div class="footer__info-box">
+                <p class="footer__info-text">
+                  г. Балашов, ул.Автомобилистов, 10
+                </p>
+                <a data-partners="partners3" class="footer__info-link onTheMap" href="./Contacts.html?target=2">
+                  ООО "Бизнес-Партнер" на карте
+                </a>
+              </div>
+            </div>
+            <div class="footer__info">
+              <p class="footer__info-title">
+                Телефон/Факс
+              </p>
+              <div class="footer__info-box">
+                <a class="footer__info-link" href="tel:88454551008">
+                  8 (84545) 5-10-08
+                </a>
+                <a class="footer__info-link" href="tel:89297719559">
+                  8-929-771-9559
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__item">
+            <p class="footer__item-city">
+              Камышин
+            </p>
+            <div class="footer__info">
+              <p class="footer__info-title">
+                Адрес
+              </p>
+              <div class="footer__info-box">
+                <p class="footer__info-text">
+                  403882, ул.Волгоградская, 39. р-н Авторынка,
+                  база "Пульсар" №2
+                </p>
+                <a data-partners="partners4" class="footer__info-link onTheMap" href="./Contacts.html?target=4">
+                  ООО "Бизнес-Партнер" на карте
+                </a>
+              </div>
+            </div>
+            <div class="footer__info">
+              <p class="footer__info-title">
+                Телефон/Факс
+              </p>
+              <div class="footer__info-box">
+                <a class="footer__info-link" href="tel:88454551008">
+                  8 (84457) 444-08
+                </a>
+                <a class="footer__info-link" href="tel:89297719559">
+                  8-937-729-72-45
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copy">
+            2023 © ООО "Бизнес-Партнер" - Комплектующие для производства и строительства
+          </p>
+          <a class="development" href="#">
+            <p class="development__text">
+              Разработка сайта
+            </p>
+            <img class="development__image" src="./images/icons/spaceApp.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </footer>
+
+
+    <form class="phoneModal" action="">
+      <div class="phoneModal__inner">
+        <div class="phoneModal__close"></div>
+        <p class="phoneModal__title">
+          Заказать звонок
+        </p>
+        <span class="error"></span>
+        <input class="phoneModal__input" id="name" type="text" placeholder="Имя*" required>
+        <span class="error"></span>
+        <input class="phoneModal__input" id="phone" name="phone" type="text" placeholder="Телефон*" required>
+        <span class="error"></span>
+        <input class="phoneModal__input" id="mail" type="text" placeholder="Почта*" required>
+        <p class="phoneModal__text">
+          Текст сообщения
+        </p>
+        <textarea class="phoneModal__textarea" cols="30" rows="7" placeholder="Введите текст сообщения..."></textarea>
+        <button class="btn" type="submit">
+          Отправить
+          <div class="link__icon icon-arrowRightLong"></div>
+        </button>
+        <p class="phoneModal__text">
+          Нажимая на кнопку, Вы соглашаетесь на
+          <a class="phoneModal__link" href="#">
+            обработку персональных данных
+          </a>
+        </p>
+      </div>
+    </form>
+
+
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+    type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/main.js?v=0.0002"></script>
+</body>
+
+</html>

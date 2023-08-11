@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repair</title>
+  <link rel="shortcut icon" href="./images/favicon.svg" type="x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="./css/icons.css" type="text/css">
+  <link rel="stylesheet" href="./css/style.css?v=1" type="text/css">
+</head>
+
+<body>
+
+
+  <div class="preloader">
+    <div class="preloader__image">
+      <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M65.8105 127.885C65.1208 127.943 64.4885 128 63.9713 128C29.313 128 1.03457 100.239 0.0574668 65.8105C-9.64594e-06 65.1208 0 64.4885 0 63.9713C0 29.313 27.7036 1.09206 62.132 0.0574875C62.7642 7.62939e-06 63.3965 0 63.9713 0C98.6295 0 126.908 27.7036 127.885 62.132C127.942 62.7643 128 63.3965 128 63.9713C128 98.6295 100.239 126.908 65.8105 127.885ZM63.9713 116.505C64.3736 116.505 64.7759 116.447 65.1783 116.447C67.8796 116.16 72.4778 114.091 72.4778 100.814C72.4778 96.4454 71.1558 91.0427 68.6268 84.8927C67.1325 85.2375 65.5231 85.4675 63.9713 85.4675C57.9937 85.4675 52.4185 82.996 48.4526 78.8577C42.1877 81.4441 34.4859 83.9156 27.1863 83.9156C22.2434 83.9156 18.22 83.3408 14.8864 82.4212C22.3583 102.308 41.498 116.505 63.9713 116.505ZM45.5213 14.8864C25.6345 22.3583 11.4953 41.498 11.4953 63.9713C11.4953 64.4311 11.5528 64.8334 11.5528 65.2932C11.8401 68.0521 13.9093 72.4203 27.1863 72.4203C31.5546 72.4203 36.9573 71.0983 42.9924 68.6269C42.705 67.075 42.4751 65.5231 42.4751 63.9713C42.4751 57.9937 44.9466 52.361 49.1423 48.3952C45.7512 40.4634 43.9695 33.2789 43.9695 27.1289C43.9695 22.1859 44.5442 18.22 45.5213 14.8864ZM63.9713 11.4953C63.5114 11.4953 63.0516 11.5528 62.5918 11.5528C59.833 11.8976 55.4647 13.9668 55.4647 27.1289C55.4647 31.4396 56.8442 36.8999 59.3157 43.0498C60.8101 42.705 62.3619 42.4751 63.9713 42.4751C69.9488 42.4751 75.524 45.004 79.4899 49.1423C87.4791 45.8087 94.6637 43.9695 100.756 43.9695C105.757 43.9695 109.78 44.6017 113.056 45.5213C105.584 25.692 86.4445 11.4953 63.9713 11.4953ZM116.447 62.5918C116.102 59.833 114.033 55.4648 100.756 55.4648C96.4454 55.4648 91.0426 56.8442 84.8927 59.3157C85.687 62.9098 85.5438 66.6478 84.4769 70.1707C83.41 73.6936 81.4551 76.8829 78.8002 79.4324C82.1913 87.4791 83.973 94.6637 83.973 100.814C83.973 105.757 83.3983 109.78 82.4212 113.056C102.308 105.584 116.505 86.4445 116.505 63.9713C116.505 63.5115 116.447 63.0516 116.447 62.5918Z"
+          fill="#0F6296" />
+      </svg>
+
+    </div>
+  </div>
+
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__top">
+          <a class="header__top-linkLogo" href="#">
+            <img class="logo" src="./images/logo.png" alt="">
+          </a>
+          <div class="header__top-item">
+            <div class="header__top-box">
+              <p class="header__top-text">Позвоните нам прямо сейчас!</p>
+              <img class="header__top-img" src="./images/womanPhone.png" alt="">
+            </div>
+            <div class="header__top-box header__top-box--column">
+              <a class="header__top-phone" href="tel:+78452682058">8 (8452) <span>682-058</span></a>
+              <a class="header__top-phone" href="tel:+79198378494">8 (919) <span>837-8494</span></a>
+            </div>
+            <a class="header__top-link link" href="#">обратный звонок</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container">
+        <nav class="header__bottom-item">
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__item-link" href="#">ГЛАВНАЯ</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#">УСЛУГИ</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#">ПОРТФОЛИО</a>
+            </li>
+            <li class="menu__item">
+              <a data-goto=".section-footer" class="menu__item-link" href="#">КОНТАКТЫ</a>
+            </li>
+            <li class="menu__item menu__item--hidden">
+              <a class="menu__item-link" href="tel:+78452682058">
+                8 (8452) 682-058
+              </a>
+            </li>
+            <li class="menu__item menu__item--hidden">
+              <a class="menu__item-link" href="tel:+79198378494">
+                8 (919) 837-8494
+              </a>
+            </li>
+            <li class="menu__item menu__item--hidden">
+              <a class="header__bottom-mail header__bottom-mail--adaptive" href="mailto:info_support@byl.ru">
+                <span class="icon-mail header__bottom-icon"></span>
+                info_support@byl.ruspan
+                <span class="icon-telegram header__bottom-icon"></span>
+              </a>
+            </li>
+            <li class="menu__item menu__item--hidden">
+              <a class="header__top-link header__top-link--adaptive link" href="#">обратный звонок</a>
+            </li>
+          </ul>
+          <div class="header__burger">
+            <div class="header__burger-line"></div>
+          </div>
+          <a class="header__bottom-mail" href="mailto:info_support@byl.ru">
+            <span class="icon-mail header__bottom-icon"></span>
+            info_support@byl.ruspan
+            <span class="icon-telegram header__bottom-icon"></span>
+          </a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="work">
+
+    <div class="work__wrapper">
+      <img src="./images/work/bg.jpg" alt="" class="work__fon">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a class="breadcrumbs__link" href="#">Главная</a>
+          <a class="breadcrumbs__link" href="#">Услуги</a>
+          <a class="breadcrumbs__link" href="#">Строительно-монтажные работы</a>
+          <a class="breadcrumbs__link" href="#">Монтаж газопроводов, паропроводов, водопроводов, канализации</a>
+        </div>
+        <div class="work__inner work__inner--paddingBottomBig">
+          <h1 class="work__title work__title--maxWidth">
+            <span>Монтаж</span> газопроводов, паропроводов, водопроводов, канализации
+          </h1>
+          <div class="work__description">
+            Гарантия достижения результата, соблюдение договоренностей
+            по срокам и гибкая система ценообразования
+          </div>
+          <a href="" class="btn link">РАССЧИТАТЬ СТОИМОСТЬ</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="card">
+    <div class="container">
+      <div div class="accent accent--marginTop">
+        <div class="accent__icon icon-important"></div>
+        <div class="accent__box">
+          <p class="accent__title">ГАРАНТИЯ ЛУЧШЕЙ ЦЕНЫ</p>
+          <p class="accent__text">Если вы найдёте более выгодное предложение, то мы предложим такую же цену и
+            дополонительную скидку в 15%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="content content--paddingTop">
+    <div class="container">
+      <h2 class="content__title">
+        <span>4 ПРИЧИНЫ</span> ВЫБРАТЬ НАС
+      </h2>
+      <div class="cards">
+        <div class="cards__item">
+          <img src="./images/picture/24 Hours Service.svg" alt="" class="cards__icon">
+          <div class="cards__text">Выезд мастера
+            в течение 24 часов после вызова
+          </div>
+        </div>
+        <div class="cards__item">
+          <img src="./images/picture/Experience.svg" alt="" class="cards__icon">
+          <div class="cards__text">10 лет на рынке</div>
+        </div>
+        <div class="cards__item">
+          <img src="./images/picture/Guarantee.svg" alt="" class="cards__icon">
+          <div class="cards__text">Выезд мастера
+            в течение 24 часов после вызова
+          </div>
+        </div>
+        <div class="cards__item">
+          <img src="./images/picture/Home.svg" alt="" class="cards__icon">
+          <div class="cards__text">Выезд мастера
+            в течение 24 часов после вызова
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="content">
+    <div class="container">
+      <div class="sliderServis swiper">
+        <div class="swiper-wrapper">
+          <div class="sliderServis__slide swiper-slide">
+            <div class="sliderServis__info">
+              <div class="sliderServis__title">Монтаж <span>газопроводов</span></div>
+              <div class="sliderServis__text">Строительноство газопровода начинается с земляных работ и доставки
+                необходимых материалов. Газопровод может быть наздемным и поздемныи. Это определяется проектом и зависит
+                от ряда факторов: особенностей грунта, проходящих в близи коммуникаций и других обстоятельств
+              </div>
+              <div class="sliderServis__wrapper">
+                <div class="sliderServis__links">
+                  <a href="" class="sliderServis__link link">ОСТАВИТЬ ЗАЯВКУ</a>
+                  <a href="" class="sliderServis__linkMin">Подробнее</a>
+                </div>
+                <div class="nav">
+                  <div class="nav__pagination sliderServis__pagination swiper-pagination"></div>
+                  <div class="nav__btn nav__btnPrev sliderServis__btnPrev swiper-buttom-prev icon-arrow"></div>
+                  <div class="nav__btn nav__btnNext sliderServis__btnNext swiper-buttom-next icon-arrow"></div>
+                </div>
+              </div>
+            </div>
+            <img src="./images/picture/Rectangle 34.png" alt="" class="sliderServis__photo">
+          </div>
+          <div class="sliderServis__slide swiper-slide">
+            <div class="sliderServis__info">
+              <div class="sliderServis__title">Монтаж <span>газопроводов</span></div>
+              <div class="sliderServis__text">Строительноство газопровода начинается с земляных работ и доставки
+                необходимых материалов. Газопровод может быть наздемным и поздемныи. Это определяется проектом и зависит
+                от ряда факторов: особенностей грунта, проходящих в близи коммуникаций и других обстоятельств
+              </div>
+              <div class="sliderServis__wrapper">
+                <div class="sliderServis__links">
+                  <a href="" class="sliderServis__link link">ОСТАВИТЬ ЗАЯВКУ</a>
+                  <a href="" class="sliderServis__linkMin">Подробнее</a>
+                </div>
+                <div class="nav">
+                  <div class="nav__pagination sliderServis__pagination swiper-pagination"></div>
+                  <div class="nav__btn nav__btnPrev sliderServis__btnPrev swiper-buttom-prev icon-arrow"></div>
+                  <div class="nav__btn nav__btnNext sliderServis__btnNext swiper-buttom-next icon-arrow"></div>
+                </div>
+              </div>
+            </div>
+            <img src="./images/picture/Rectangle 34.png" alt="" class="sliderServis__photo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="how how--beforeNone content">
+    <div class="how__videoСontainer">
+      <div class="how__container">
+        <div class="imageFon">
+          <img src="./images/picture/фонuntitled 8.png" alt="" class="imageFon__box">
+        </div>
+        <div class="how__wrapper">
+          <div class="howCard">
+            <h2 class="howCard__title">ЭТАПЫ <span>РАБОТ</span></h2>
+            <div class="stages">
+              <div class="stages__item">Получение технических условий (ТУ)</div>
+              <div class="stages__item">Заказ проекта</div>
+              <div class="stages__item">Согласование проекта</div>
+              <div class="stages__item">Строительство системы газоснабжения</div>
+              <div class="stages__item">Приемка законченного строительством объекта системы газоснабжения</div>
+              <div class="stages__item">Заключение договора о техническом обслуживании внутридомового газового
+                оборудования</div>
+              <div class="stages__item">Договор на поставку газа</div>
+              <div class="stages__item">Врезка и пуск газа</div>
+              <div class="stages__item">Получение номера лицевого счета</div>
+              <div class="stages__item">Опломбировка счетчика</div>
+            </div>
+          </div>
+          <div class="certificate">
+            <h2 class="certificate__title">СЕРТИФИКАТЫ</h2>
+            <div class="certificate__inner certificate__inner--bot">
+              <a class="certificate__download" href="./images/bg.jpg" download>
+                <div class="certificate__download-box">
+                  <p class="certificate__download-text">Свидетельство ГОСТ-2356</p>
+                  <p class="certificate__download-heft">1.23 МБ</p>
+                </div>
+              </a>
+              <a class="certificate__download" href="./images/bg.jpg" download>
+                <div class="certificate__download-box">
+                  <p class="certificate__download-text">Свидетельство БУГА-79ГА</p>
+                  <p class="certificate__download-heft">1.23 МБ</p>
+                </div>
+              </a>
+              <a class="certificate__download" href="./images/bg.jpg" download>
+                <div class="certificate__download-box">
+                  <p class="certificate__download-text">Сертификат №242213 СНФПИП</p>
+                  <p class="certificate__download-heft">1.23 МБ</p>
+                </div>
+              </a>
+              <a class="certificate__download" href="./images/bg.jpg" download>
+                <div class="certificate__download-box">
+                  <p class="certificate__download-text">Диплом ГЗВТМ 7.36 категории А</p>
+                  <p class="certificate__download-heft">1.23 МБ</p>
+                </div>
+              </a>
+              <a class="certificate__download" href="./images/bg.jpg" download>
+                <div class="certificate__download-box">
+                  <p class="certificate__download-text">Свидетельство ГОСТ-223236 категории А</p>
+                  <p class="certificate__download-heft">1.23 МБ</p>
+                </div>
+              </a>
+              <a class="certificate__download" href="./images/bg.jpg" download>
+                <div class="certificate__download-box">
+                  <p class="certificate__download-text">Свидетельство КБР ЖЗ-4</p>
+                  <p class="certificate__download-heft">1.23 МБ</p>
+                </div>
+              </a>
+              <a class="certificate__download" href="./images/bg.jpg" download>
+                <div class="certificate__download-box">
+                  <p class="certificate__download-text">Сертификат №242-3ЛОПИФ</p>
+                  <p class="certificate__download-heft">1.23 МБ</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="information">
+          <h2 class="information__title">О ЧЁМ СТОИТ <span>ЗНАТЬ</span></h2>
+          <div class="information__slider swiper">
+            <div class="swiper-wrapper">
+              <a href="" class="information__slider-slide swiper-slide">
+                <div class="information__slider-icon">
+                  <img src="./images/icons/Pressure Meter.svg" alt="" class="information__slider-img">
+                  <img src="./images/icons/Pressure Meter-hover.svg" alt="" class="information__slider-imgHover">
+                </div>
+                <div class="information__slider-text">Умный газовый счётчик.
+                  Какая выгода?
+                </div>
+              </a>
+              <a href="" class="information__slider-slide swiper-slide">
+                <div class="information__slider-icon">
+                  <img src="./images/icons/Alarm.svg" alt="" class="information__slider-img">
+                  <img src="./images/icons/Alarm-hover.svg" alt="" class="information__slider-imgHover">
+                </div>
+                <div class="information__slider-text">Выбираем и устанавливаем
+                  сигнализатор загазованности
+                </div>
+              </a>
+              <a href="" class="information__slider-slide swiper-slide">
+                <div class="information__slider-icon">
+                  <img src="./images/icons/Furnace.svg" alt="" class="information__slider-img">
+                  <img src="./images/icons/Furnace-hover.svg" alt="" class="information__slider-imgHover">
+                </div>
+                <div class="information__slider-text">Как правильно подобрать газовый котёл</div>
+              </a>
+            </div>
+          </div>
+          <div class="nav nav--right">
+            <div class="nav__pagination information__slider-pagination swiper-pagination"></div>
+            <div class="nav__btn nav__btnPrev information__slider-btnPrev swiper-buttom-prev icon-arrow"></div>
+            <div class="nav__btn nav__btnNext information__slider-btnNext swiper-buttom-next icon-arrow"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="content">
+    <div class="container">
+      <h2 class="content__title">ПРИМЕРЫ <span>РАБОТ</span></h2>
+      <div class="sliderServis swiper workSlider">
+        <div class="swiper-wrapper">
+          <div class="sliderServis__slide swiper-slide">
+            <!-- <video src="" class="sliderServis__photo" controls></video> -->
+            <iframe class="sliderServis__photo" src="https://www.youtube.com/embed/adY6So61-NA?start=140"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <div class="sliderServis__info sliderServis__info--marginLeft">
+              <div class="sliderServis__title">Монтаж <span>газовых котлов</span>
+                в Заводском р-не г. Саратов
+              </div>
+              <div class="sliderServis__text">Строительноство газопровода начинается с земляных работ и доставки
+                необходимых материалов.
+                Газопровод может быть наздемным и поздемныи.
+                Это определяется проектом и зависит от ряда факторов: особенностей грунта, проходящих в близи
+                коммуникаций и других обстоятельств
+              </div>
+              <div class="sliderServis__wrapper">
+                <div class="sliderServis__links">
+                  <a href="" class="sliderServis__link link">ХОЧУ ТАК ЖЕ</a>
+                  <a href="" class="sliderServis__linkMin">Подробнее</a>
+                </div>
+                <div class="nav">
+                  <div class="nav__pagination workSlider__pagination swiper-pagination"></div>
+                  <div class="nav__btn nav__btnPrev workSlider__btnPrev swiper-buttom-prev icon-arrow"></div>
+                  <div class="nav__btn nav__btnNext workSlider__btnNext swiper-buttom-next icon-arrow"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sliderServis__slide swiper-slide">
+            <!-- <video src="" class="sliderServis__photo" controls></video> -->
+            <iframe class="sliderServis__photo" src="https://www.youtube.com/embed/adY6So61-NA?start=140"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <div class="sliderServis__info sliderServis__info--marginLeft">
+              <div class="sliderServis__title">Монтаж <span>газовых котлов</span>
+                в Заводском р-не г. Саратов
+              </div>
+              <div class="sliderServis__text">Строительноство газопровода начинается с земляных работ и доставки
+                необходимых материалов.
+                Газопровод может быть наздемным и поздемныи.
+                Это определяется проектом и зависит от ряда факторов: особенностей грунта, проходящих в близи
+                коммуникаций и других обстоятельств
+              </div>
+              <div class="sliderServis__wrapper">
+                <div class="sliderServis__links">
+                  <a href="" class="sliderServis__link link">ХОЧУ ТАК ЖЕ</a>
+                  <a href="" class="sliderServis__linkMin">Подробнее</a>
+                </div>
+                <div class="nav">
+                  <div class="nav__pagination workSlider__pagination swiper-pagination"></div>
+                  <div class="nav__btn nav__btnPrev workSlider__btnPrev swiper-buttom-prev icon-arrow"></div>
+                  <div class="nav__btn nav__btnNext workSlider__btnNext swiper-buttom-next icon-arrow"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sliderServis__slide swiper-slide">
+            <!-- <video src="" class="sliderServis__photo" controls></video> -->
+            <iframe class="sliderServis__photo" src="https://www.youtube.com/embed/adY6So61-NA?start=140"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <div class="sliderServis__info sliderServis__info--marginLeft">
+              <div class="sliderServis__title">Монтаж <span>газовых котлов</span>
+                в Заводском р-не г. Саратов
+              </div>
+              <div class="sliderServis__text">Строительноство газопровода начинается с земляных работ и доставки
+                необходимых материалов.
+                Газопровод может быть наздемным и поздемныи.
+                Это определяется проектом и зависит от ряда факторов: особенностей грунта, проходящих в близи
+                коммуникаций и других обстоятельств
+              </div>
+              <div class="sliderServis__wrapper">
+                <div class="sliderServis__links">
+                  <a href="" class="sliderServis__link link">ХОЧУ ТАК ЖЕ</a>
+                  <a href="" class="sliderServis__linkMin">Подробнее</a>
+                </div>
+                <div class="nav">
+                  <div class="nav__pagination workSlider__pagination swiper-pagination"></div>
+                  <div class="nav__btn nav__btnPrev workSlider__btnPrev swiper-buttom-prev icon-arrow"></div>
+                  <div class="nav__btn nav__btnNext workSlider__btnNext swiper-buttom-next icon-arrow"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reviews">
+        <h2 class="reviews__title">ОТЗЫВЫ НАШИХ <span>КЛИЕНТОВ</span></h2>
+        <div class="reviews__slider swiper">
+          <div class="swiper-wrapper">
+            <div class="reviews__slider-slide swiper-slide">
+              <div class="reviews__slider-wrapper">
+                <img src="./images/picture/Ellipse 1.png" alt="" class="reviews__slider-photo">
+                <div class="reviews__slider-name">
+                  <div class="reviews__slider-fio">Шинода Михаил Лесливич</div>
+                  <div class="reviews__slider-post">Директор ООО “ФортГазМинорПром”</div>
+                </div>
+              </div>
+              <div class="reviews__slider-text">
+                Строительноство газопровода начинается с земляных работ и доставки необходимых материалов. Газопровод
+                может быть наздемным и поздемныи. Это определяется проектом и зависит от ряда факторов: особенностей
+                грунта, проходящих в близи коммуникаций и других обстоятельств. Строительноство газопровода начинается с
+                земляных работ и доставки необходимых материалов. Газопровод может быть наздемным и поздемныи. Это
+                определяется проектом и зависит от ряда факторов: особенностей грунта, проходящих в близи коммуникаций и
+                других обстоятельств.
+                Строительноство газопровода начинается с земляных работ и доставки необходимых материалов. Газопровод
+                может быть наздемным и поздемныи. Это определяется проектом и зависит от ряда факторов: особенностей
+                грунта, проходящих в близи коммуникаций и других обстоятельств
+              </div>
+            </div>
+            <div class="reviews__slider-slide swiper-slide">
+              <div class="reviews__slider-wrapper">
+                <img src="./images/picture/Ellipse 2.png" alt="" class="reviews__slider-photo">
+                <div class="reviews__slider-name">
+                  <div class="reviews__slider-fio">Шинода Михаил Лесливич</div>
+                  <div class="reviews__slider-post">Директор ООО “ФортГазМинорПром”</div>
+                </div>
+              </div>
+              <div class="reviews__slider-text">
+                Строительноство газопровода начинается с земляных работ и доставки необходимых материалов. Газопровод
+                может быть наздемным и поздемныи. Это определяется проектом и зависит от ряда факторов: особенностей
+                грунта, проходящих в близи коммуникаций и других обстоятельств. Строительноство газопровода начинается с
+                земляных работ и доставки необходимых материалов. Газопровод может быть наздемным и поздемныи. Это
+                определяется проектом и зависит от ряда факторов: особенностей грунта, проходящих в близи коммуникаций и
+                других обстоятельств.
+                Строительноство газопровода начинается с земляных работ и доставки необходимых материалов. Газопровод
+                может быть наздемным и поздемныи. Это определяется проектом и зависит от ряда факторов: особенностей
+                грунта, проходящих в близи коммуникаций и других обстоятельств
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav nav--right">
+          <div class="nav__pagination reviews__slider-pagination swiper-pagination"></div>
+          <div class="nav__btn nav__btnPrev reviews__slider-btnPrev swiper-buttom-prev icon-arrow"></div>
+          <div class="nav__btn nav__btnNext reviews__slider-btnNext swiper-buttom-next icon-arrow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="content content--fon">
+    <img src="./images/picture/Rectangle 2.png" alt="" class="content__fon">
+    <div class="container">
+      <div class="content__minText">
+        Следующая услуга
+      </div>
+      <div class="miniSlider swiper">
+        <div class="swiper-wrapper">
+          <div class="miniSlider__slide swiper-slide">
+            <h2 class="miniSlider__title"><span>Монтаж</span> систем отопления, вентиляции
+              и дымоходов
+            </h2>
+          </div>
+          <div class="miniSlider__slide swiper-slide">
+            <h2 class="miniSlider__title"><span>Монтаж</span> систем отопления, вентиляции
+              и дымоходов
+            </h2>
+          </div>
+          <div class="miniSlider__slide swiper-slide">
+            <h2 class="miniSlider__title"><span>Монтаж</span> систем отопления, вентиляции
+              и дымоходов
+            </h2>
+          </div>
+        </div>
+        <div class="miniSlider__container">
+          <a href="" class="miniSlider__link">ПОДРОБНЕЕ</a>
+          <div class="nav">
+            <div class="nav__pagination miniSlider__pagination swiper-pagination"></div>
+            <div class="nav__btn nav__btnPrev miniSlider__btnPrev swiper-buttom-prev icon-arrow"></div>
+            <div class="nav__btn nav__btnNext miniSlider__btnNext swiper-buttom-next icon-arrow"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="formBottom">
+    <img class="formBottom__parallax rellax" data-rellax-percentage="0.5" data-rellax-speed="4"
+      src="./images/parallax/2.png" alt="">
+    <img class="formBottom__parallax rellax" data-rellax-percentage="0.5" data-rellax-speed="-2"
+      src="./images/parallax/1.png" alt="">
+    <div class="container">
+      <div class="formBottom__inner">
+        <div class="formBottom__content">
+          <div class="formBottom__content-item">
+            <h2 class="formBottom__content-title">ОСТАВЬТЕ ЗАЯВКУ СЕЙЧАС
+              И ПОЛУЧИТЕ КОНСУЛЬТАЦИЮ
+              АБСОЛЮТНО <span>БЕСПЛАТНО</span></h2>
+          </div>
+          <div class="formBottom__content-item">
+            <form class="form form--formBootom" action="">
+              <h3 class="form__title form__title--color">
+                Оставьте заявку<span> прямо сейчас</span>
+              </h3>
+              <p class="form__subtitle form__subtitle--color">
+                и мастер проведёт наружную чистку механизмов
+                вашего газового оборудования <span>бесплатно</span>
+              </p>
+              <div class="form__box">
+                <div class="form__icon icon-user"></div>
+                <input class="form__input" type="text" placeholder="Ваше имя">
+              </div>
+              <div class="form__box">
+                <div class="form__icon icon-mail"></div>
+                <input class="form__input" type="text" placeholder="Ваш e-mail">
+              </div>
+              <div class="form__box">
+                <div class="form__icon icon-phone"></div>
+                <input class="form__input" type="text" placeholder="Ваш телефон">
+              </div>
+              <p class="form__text">
+                Нажимая на кнопку, вы соглашаетесь на обработку
+                персональных данных и с политикой конфиденциальности
+              </p>
+              <a class="form__link form__link--formBottom link" href="#">ОСТАВИТЬ ЗАЯВКУ</a>
+            </form>
+          </div>
+        </div>
+        <div class="accent accent--formBottom">
+          <div class="accent__icon icon-phoneCall"></div>
+          <div class="accent__box">
+            <p class="accent__title">ОСТАЛИСЬ ВОПРОСЫ? ЗВОНИТЕ!</p>
+            <a class="accent__phone" href="tel:+78452600202">8 (8452) 600-202<span>, </span></a>
+            <a class="accent__phone" href="tel:+78452322902">8 (8452) 322-902</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="map" id="myMap">
+    <iframe
+      src="https://yandex.ru/map-widget/v1/?um=constructor%3A17699eb172fb7390ad4a5afa7508a5c7a5878d7ac4728d96610e364b5e78f605&amp;source=constructor"
+      width="100%" height="100%" frameborder="0"></iframe>
+  </section>
+
+
+  <footer class="footer section-footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__item-box">
+          <img class="footer__logo logo" src="./images/logo-white.png" alt="">
+          <p class="footer__copy">2022 © Все права защищены</p>
+        </div>
+        <img class="footer__image" src="./images/divider.png" alt="картинка">
+        <div class="footer__item">
+          <a class="footer__phone" href="tel:+78452682058">8 (8452) <span>682-058</span></a>
+          <a class="footer__phone" href="tel:+79198378494">8 (919) <span>837-8494</span></a>
+          <div class="footer__item-box">
+            <p class="footer__text">г. Саратов, Охотная улица, 15А</p>
+            <a class="footer__development" href="#">Разработка сайта</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./plugins/wow/wow.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./plugins/rellax/rellax.min.js"></script>
+  <script src="./js/main.js?v=1"></script>
+</body>
+
+</html>

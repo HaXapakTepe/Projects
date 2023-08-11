@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Furore";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Furore-Regular.woff") format("woff2"),
+    url("../fonts/Furore-Regular.ttf") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GothamPro";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/GothamPro-Regular.woff") format("woff2"),
+    url("../fonts/GothamPro-Regular.ttf") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GothamPro";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/GothamPro-Bold.woff") format("woff2"),
+    url("../fonts/GothamPro-Bold.ttf") format("woff");
+  font-display: swap;
+}

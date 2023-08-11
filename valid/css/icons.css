@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icons/icomoon.eot?5nxvoi');
+  src: url('../fonts/icons/icomoon.eot?5nxvoi#iefix') format('embedded-opentype'),
+    url('../fonts/icons/icomoon.ttf?5nxvoi') format('truetype'),
+    url('../fonts/icons/icomoon.woff?5nxvoi') format('woff'),
+    url('../fonts/icons/icomoon.svg?5nxvoi#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-agreement:before {
+  content: '\e900';
+}
+.icon-bus:before {
+  content: '\e901';
+}
+.icon-card:before {
+  content: '\e902';
+}
+.icon-clock:before {
+  content: '\e903';
+}
+.icon-mail:before {
+  content: '\e904';
+}
+.icon-map:before {
+  content: '\e905';
+}
+.icon-payment:before {
+  content: '\e906';
+}
+.icon-phone:before {
+  content: '\e907';
+}
+.icon-truck:before {
+  content: '\e908';
+}
+.icon-truck2:before {
+  content: '\e909';
+}
+.icon-vehicles:before {
+  content: '\e90a';
+}

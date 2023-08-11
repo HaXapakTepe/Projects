@@ -1,0 +1,101 @@
+.footer {
+  background-color: #343A3D;
+  @include fluid(padding-top, 30px, 60px);
+  @include fluid(padding-bottom, 30px, 37px);
+
+  &__inner {
+    display: grid;
+    grid-template-columns: .68fr .7fr .3fr;
+    @include fluid(margin-bottom, 30px, 50px);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 15px, 18px);
+
+    &:last-child {
+      align-items: end;
+    }
+
+    &-link {
+      font-size: 12px;
+      color: #7AC8C9;
+      transition: color .38s ease-in-out;
+
+      &:hover {
+        color: #F43E36;
+      }
+    }
+  }
+
+  &__menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include fluid(gap, 30px, 109px);
+    justify-content: space-between;
+
+    &-box {
+      display: flex;
+      flex-direction: column;
+      @include fluid(gap, 20px, 40px);
+    }
+
+    &-link {
+      white-space: nowrap;
+      color: #fff;
+      line-height: 1.3;
+      transition: color .38s ease-in-out;
+      font-size: 16px;
+
+      &:hover {
+        color: #F43E36;
+      }
+    }
+
+    .social {
+      display: none;
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    @include fluid(gap, 15px, 30px);
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    &-mobile {
+      display: none;
+    }
+
+    &-copy {
+      color: #aabac2;
+      @include fluid(font-size, 14px, 16px);
+    }
+  }
+
+  .logo {
+    @include fluid(margin-bottom, 5px, 10px);
+    @include fluid(max-width, 335px, 458px);
+  }
+
+  .social {
+    @include fluid(margin-top, 15px, 30px);
+  }
+
+  .phone {
+    color: #fff;
+
+    &-icon {
+      @include fluid(font-size, 14px, 15px);
+    }
+  }
+}

@@ -1,0 +1,153 @@
+.top {
+  @include fluid(margin-top, 30px, 60px);
+  @include fluid(margin-bottom, 30px, 71px);
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @include fluid(gap, 20px, 40px);
+  }
+
+  &__item {
+    position: relative;
+    grid-column: 1/3;
+    background-color: #fff;
+    @include fluid(padding-top, 15px, 30px);
+    @include fluid(padding-bottom, 15px, 30px);
+    @include fluid(padding-left, 15px, 30px);
+    @include fluid(padding-right, 15px, 30px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &--big {
+      @include fluid(padding-top, 20px, 40px);
+      @include fluid(padding-bottom, 20px, 40px);
+      @include fluid(padding-left, 30px, 60px);
+      @include fluid(padding-right, 30px, 60px);
+    }
+
+    &-bg {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 50%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &-box,
+    &-img {
+      position: relative;
+      z-index: 1;
+    }
+
+    &-img {
+      width: fit-content;
+      @include fluid(height, 30px, 37px);
+      object-fit: contain;
+    }
+
+    &-title {
+      font-weight: 700;
+      @include fluid(font-size, 20px, 24px);
+      line-height: 1.2;
+      margin-bottom: 5px;
+
+      &--small {
+        font-weight: 700;
+        @include fluid(font-size, 14px, 16px);
+        color: #D92227;
+      }
+    }
+
+    &-text {
+      @include fluid(margin-bottom, 20px, 40px);
+      color: #000000;
+    }
+  }
+
+  .link {
+    &--small {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 20px, 40px);
+
+    .top__item {
+      @include fluid(padding-left, 15px, 30px);
+      @include fluid(padding-right, 15px, 30px);
+      @include fluid(padding-left, 15px, 30px);
+      @include fluid(padding-right, 15px, 30px);
+
+      &-bg {
+        top: auto;
+        bottom: 0;
+        width: 40%;
+        height: 74%;
+      }
+
+      &-text {
+        @include fluid(margin-bottom, 10px, 17px);
+        max-width: 223px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .top {
+    &__item {
+      &-bg {
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .top {
+    &__inner {
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-flow: dense;
+    }
+
+    &__item {
+      &-box {
+        margin-top: 15px;
+      }
+    }
+
+    &__box {
+      grid-column: 1/3;
+      flex-direction: unset;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .top {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+
+    &__item,
+    &__box {
+      grid-column: unset;
+    }
+
+    &__box {
+      flex-direction: column;
+
+      .top__item {
+        &-bg {
+          width: fit-content;
+        }
+      }
+    }
+  }
+}

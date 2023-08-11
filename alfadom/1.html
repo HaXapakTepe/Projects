@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1</title>
+  <link rel="stylesheet" type="text/css" href="./plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/icons.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__inner">
+        <a class="logo" href="#">
+          <img class="logo__image" src="./images/logo1.png" alt="">
+          <!-- <p class="logo__text">Альфа Дом</p> -->
+        </a>
+        <div class="header__item">
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Абонентам
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Провайдерам
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Партнерам
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Поддержка
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <div class="header__burger">
+            <div class="header__burger-line"></div>
+          </div>
+          <a class="header__city link" data-fancybox href="#city">
+            <div class="icon-loca header__loca"></div>
+            <p class="header__city-text">Москва</p>
+          </a>
+        </div>
+
+        <div class="mask"></div>
+
+
+        <div class="yourCity" id="yourCity">
+          <p class="yourCity__title">
+            Ваш город
+            <span class="yourCity__span">Москва</span>
+            ?
+          </p>
+          <div class="yourCity__inner">
+            <div class="icon-close yourCity__icon"></div>
+            <button id="yes" class="yourCity__btn btn" type="submit">
+              <span>да</span>
+            </button>
+            <button id="no" class="yourCity__btn btn" type="submit">
+              <span>нет</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="all">
+    <div class="container">
+      <div class="all__inner">
+        <div class="all__item">
+          <div class="all__content all__content--width">
+            <h1 class="all__title">
+              Передавай все показания приборов учета в один клик
+            </h1>
+            <p class="all__text">
+              Для жилых и нежилых помещений
+            </p>
+            <a data-goto=".section-1" class="all__link link" href="#">
+              Передать
+            </a>
+          </div>
+          <img class="all__image" src="./images/all-bg.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="card">
+    <div class="container">
+      <div class="card__inner">
+        <div class="card__item">
+          <div class="icon-indications card__item-icon"></div>
+          <div class="card__item-box">
+            <p class="card__item-textAccent">Передавай все показания</p>
+            <p class="card__item-text">в одном месте</p>
+          </div>
+        </div>
+        <div class="card__item">
+          <div class="icon-check card__item-icon"></div>
+          <div class="card__item-box">
+            <p class="card__item-textAccent">Не надо указывать каждый раз</p>
+            <p class="card__item-text">Адрес и лицевые счета</p>
+          </div>
+        </div>
+        <div class="card__item">
+          <div class="icon-all card__item-icon"></div>
+          <div class="card__item-box">
+            <p class="card__item-textAccent">Все поставщики ЖКХ услуг</p>
+            <p class="card__item-text">в одном месте</p>
+          </div>
+        </div>
+        <div class="card__item">
+          <div class="icon-lock card__item-icon"></div>
+          <div class="card__item-box">
+            <p class="card__item-textAccent">Не нужно придумывать</p>
+            <p class="card__item-text">Множество разных паролей</p>
+          </div>
+        </div>
+        <div class="card__item">
+          <div class="icon-lk card__item-icon"></div>
+          <div class="card__item-box">
+            <p class="card__item-textAccent">Больше не потребуется</p>
+            <p class="card__item-text">иметь десятки отдельных личных кабинетов</p>
+          </div>
+        </div>
+        <div class="card__item">
+          <div class="icon-wallet card__item-icon"></div>
+          <div class="card__item-box">
+            <p class="card__item-textAccent">Хватит тратиться</p>
+            <p class="card__item-text">на СМС для оплаты ЖКХ</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="type section-1">
+    <div class="container">
+      <div class="type__inner">
+        <h2 class="type__title">Укажите тип услуг для передачи показаний</h2>
+        <div class="type__list">
+          <a class="type__link" href="#">
+            <div class="icon-lightning type__icon"></div>
+            <p class="type__text">Электроэнергия</p>
+          </a>
+          <a class="type__link" href="#">
+            <div class="icon-drops type__icon"></div>
+            <p class="type__text">Вода</p>
+          </a>
+          <a class="type__link" href="#">
+            <div class="icon-fire type__icon"></div>
+            <p class="type__text">Газ</p>
+          </a>
+          <a class="type__link" href="#">
+            <div class="icon-sun type__icon"></div>
+            <p class="type__text">Отопление</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="video">
+    <div class="container">
+      <div class="video__inner">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/65a7PBca6f8" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="take">
+    <div class="container">
+      <div class="take__inner">
+        <h2 class="take__title">Как правильно снимать показания</h2>
+        <div class="take__list">
+          <a class="take__link" href="#">
+            <div class="icon-lightning take__icon"></div>
+            <p class="take__text">Электроэнергия</p>
+          </a>
+          <a class="take__link" href="#">
+            <div class="icon-drops take__icon"></div>
+            <p class="take__text">Горячая и холодная вода</p>
+          </a>
+          <a class="take__link" href="#">
+            <div class="icon-fire take__icon"></div>
+            <p class="take__text">Природный газ</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="bot">
+    <div class="container">
+      <div class="bot__inner">
+        <img class="bot__image" src="./images/bot/bot-bg.png" alt="">
+        <div class="bot__item">
+          <p class="bot__subtitle">Lorem ipsum dolor sit amet</p>
+          <p class="bot__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id ex accumsan, efficitur nulla non, cursus
+            turpis. Suspendisse vitae nulla leo. Praesent in dignissim metus. Sed auctor ex dui, quis varius ligula
+            dictum non. Donec dapibus ultricies neque, sit amet scelerisque velit imperdiet et. Mauris et dictum nunc.
+            Maecenas et sagittis nunc, et pretium massa. Suspendisse vitae faucibus justo. Mauris aliquet at nunc id
+            efficitur. Pellentesque magna risus, rhoncus vel erat id, ornare accumsan sem. Pellentesque habitant morbi
+            tristique senectus et netus et malesuada fames ac turpis egestas. Nullam et purus at arcu viverra placerat
+            non sit amet est.
+          </p>
+          <p class="bot__text">
+            Etiam volutpat efficitur nisl, non auctor risus rhoncus sit amet. Curabitur volutpat efficitur risus, non
+            dapibus neque. Sed tincidunt tellus sit amet mattis egestas. Nunc sit amet placerat nunc, at viverra ipsum.
+            Maecenas sed augue purus. Pellentesque imperdiet convallis elit, non aliquam nisl tincidunt efficitur.
+            Nullam ligula elit, feugiat et maximus at, gravida in augue. Nam imperdiet, nibh non accumsan malesuada,
+            neque erat eleifend nunc, at porttitor lacus tellus quis lorem. Curabitur tincidunt libero vel sem
+            malesuada, at scelerisque lacus pulvinar. Pellentesque id ipsum lobortis enim rhoncus semper. Etiam vitae
+            posuere mi, nec lacinia urna.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="choice">
+    <div class="container">
+      <h2 class="choice__title title">Выбор города</h2>
+      <div class="choice__inner">
+        <div class="choise__list">
+          <div class="choice__item">
+            <p class="choice__item-letter">А</p>
+            <div class="choice__item-box">
+              <div class="choice__item-region">
+                Алтайский край
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Амурская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Архангельская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Астраханская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+            </div>
+          </div>
+          <div class="choice__item">
+            <p class="choice__item-letter">Б</p>
+            <div class="choice__item-box">
+              <div class="choice__item-region">
+                Белгородская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Брянская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+            </div>
+          </div>
+          <div class="choice__item">
+            <p class="choice__item-letter">В</p>
+            <div class="choice__item-box">
+              <div class="choice__item-region">
+                Владимирская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Волгоградская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Вологодская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Воронежская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+            </div>
+          </div>
+          <div class="choice__item">
+            <p class="choice__item-letter">Е</p>
+            <div class="choice__item-box">
+              <div class="choice__item-region">
+                Еврейская автономная область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+            </div>
+          </div>
+          <div class="choice__item">
+            <p class="choice__item-letter">З</p>
+            <div class="choice__item-box">
+              <div class="choice__item-region">
+                Забайкальский край
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+            </div>
+          </div>
+          <div class="choice__item">
+            <p class="choice__item-letter">И</p>
+            <div class="choice__item-box">
+              <div class="choice__item-region">
+                Ивановская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Иркутская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+            </div>
+          </div>
+          <div class="choice__item">
+            <p class="choice__item-letter">К</p>
+            <div class="choice__item-box">
+              <div class="choice__item-region">
+                Кабардино-Балкарская Республика
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Калининградская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Калужская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Камчатский край
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Карачаево-Черкесская Республика
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Кемеровская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Кировская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Костромская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Краснодарский край
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Красноярский край
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Крым
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Курганская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Курская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+            </div>
+          </div>
+          <div class="choice__item">
+            <p class="choice__item-letter">Л</p>
+            <div class="choice__item-box">
+              <div class="choice__item-region">
+                Ленинградская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Липецкая область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="choice__list">
+          <div class="choice__item">
+            <p class="choice__item-letter">М</p>
+            <div class="choice__item-box">
+              <div class="choice__item-region">
+                Магаданская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Москва
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Московская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Мурманская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+            </div>
+          </div>
+          <div class="choice__item">
+            <p class="choice__item-letter">Н</p>
+            <div class="choice__item-box">
+              <div class="choice__item-region">
+                Ненецкий автономный округ
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Нижегородская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Новгородская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Новосибирская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+            </div>
+          </div>
+          <div class="choice__item">
+            <p class="choice__item-letter">О</p>
+            <div class="choice__item-box">
+              <div class="choice__item-region">
+                Омская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Оренбургская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Орловская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+            </div>
+          </div>
+          <div class="choice__item">
+            <p class="choice__item-letter">П</p>
+            <div class="choice__item-box">
+              <div class="choice__item-region">
+                Пензенская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Пермский край
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Приморский край
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Псковская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+            </div>
+          </div>
+          <div class="choice__item">
+            <p class="choice__item-letter">Р</p>
+            <div class="choice__item-box">
+              <div class="choice__item-region">
+                Республика Адыгея
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Республика Алтай
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Республика Башкортостан
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Республика Бурятия
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Республика Дагестан
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Республика Ингушетия
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Республика Калмыкия
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Республика Карелия
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Республика Коми
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Республика Марий Эл
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Республика Мордовия
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Республика Саха (Якутия)
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Республика Северная Осетия — Алания
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Республика Татарстан
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Республика Тыва
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Республика Хакасия
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Ростовская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Рязанская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="choice__list">
+          <div class="choice__item">
+            <p class="choice__item-letter">С</p>
+            <div class="choice__item-box">
+              <div class="choice__item-region">
+                Самарская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Санкт-Петербург
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Саратовская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Сахалинская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Свердловская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Севастополь
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Смоленская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Ставропольский край
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+            </div>
+          </div>
+          <div class="choice__item">
+            <p class="choice__item-letter">Т</p>
+            <div class="choice__item-box">
+              <div class="choice__item-region">
+                Тамбовская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Тверская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Томская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Тульская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Тюменская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+            </div>
+          </div>
+          <div class="choice__item">
+            <p class="choice__item-letter">У</p>
+            <div class="choice__item-box">
+              <div class="choice__item-region">
+                Удмуртская Республика
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Ульяновская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+                <p class="choice__item-text">Инза</p>
+                <p class="choice__item-text">Барыш</p>
+                <p class="choice__item-text">Новоульяновск</p>
+                <p class="choice__item-text">Сенгилей</p>
+              </div>
+            </div>
+          </div>
+          <div class="choice__item">
+            <p class="choice__item-letter">Х</p>
+            <div class="choice__item-box">
+              <div class="choice__item-region">
+                Хабаровский край
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Ханты-Мансийский автономный округ — Югра
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+            </div>
+          </div>
+          <div class="choice__item">
+            <p class="choice__item-letter">Ч</p>
+            <div class="choice__item-box">
+              <div class="choice__item-region">
+                Челябинская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Чеченская Республика
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Чувашская Республика
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Чукотский автономный округ
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+                <p class="choice__item-text">Инза</p>
+                <p class="choice__item-text">Барыш</p>
+                <p class="choice__item-text">Новоульяновск</p>
+                <p class="choice__item-text">Сенгилей</p>
+              </div>
+            </div>
+          </div>
+          <div class="choice__item">
+            <p class="choice__item-letter">Я</p>
+            <div class="choice__item-box">
+              <div class="choice__item-region">
+                Ямало-Ненецкий автономный округ
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+              <div class="choice__item-region">
+                Ярославская область
+              </div>
+              <div class="choice__item-city">
+                <p class="choice__item-text">Ульяновск</p>
+                <p class="choice__item-text">Димитровград</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="otherOrg">
+    <div class="container">
+      <h2 class="otherOrg__title title">Другие организации в г. Москва</h2>
+      <div class="otherOrg__inner">
+        <div class="otherOrg__item">
+          <a class="otherOrg__item-title otherOrg__item-title--gray" href="#">Организация</a>
+          <div class="otherOrg__item-city otherOrg__item-city--gray">Город</div>
+          <div class="otherOrg__item-service otherOrg__item-service--gray">Услуга</div>
+        </div>
+        <div class="otherOrg__item">
+          <a class="otherOrg__item-title" href="#">ООО "Владимиртеплогаз"</a>
+          <div class="otherOrg__item-city">Москва</div>
+          <div class="otherOrg__item-service">Вода</div>
+        </div>
+        <div class="otherOrg__item">
+          <a class="otherOrg__item-title" href="#">ООО "Газпром межрегионгаз"</a>
+          <div class="otherOrg__item-city">Москва</div>
+          <div class="otherOrg__item-service">Газ</div>
+        </div>
+        <div class="otherOrg__item">
+          <a class="otherOrg__item-title" href="#">ООО "ЕРИЦ Владимирской области"</a>
+          <div class="otherOrg__item-city">Москва</div>
+          <div class="otherOrg__item-service">Вода</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="otherOrgCity">
+    <div class="container">
+      <h2 class="otherOrgCity__title title">Организации в других городах Московской области</h2>
+      <div class="otherOrgCity__inner">
+        <div class="otherOrgCity__item">
+          <a class="otherOrgCity__item-title otherOrgCity__item-title--gray" href="#">Организация</a>
+          <div class="otherOrgCity__item-city otherOrgCity__item-city--gray">Город</div>
+          <div class="otherOrgCity__item-service otherOrgCity__item-service--gray">Услуга</div>
+        </div>
+        <div class="otherOrgCity__item">
+          <a class="otherOrgCity__item-title" href="#">ООО "Владимиртеплогаз"</a>
+          <div class="otherOrgCity__item-city">Москва</div>
+          <div class="otherOrgCity__item-service">Вода</div>
+        </div>
+        <div class="otherOrgCity__item">
+          <a class="otherOrgCity__item-title" href="#">ООО "Газпром межрегионгаз"</a>
+          <div class="otherOrgCity__item-city">Москва</div>
+          <div class="otherOrgCity__item-service">Газ</div>
+        </div>
+        <div class="otherOrgCity__item">
+          <a class="otherOrgCity__item-title" href="#">ООО "ЕРИЦ Владимирской области"</a>
+          <div class="otherOrgCity__item-city">Москва</div>
+          <div class="otherOrgCity__item-service">Вода</div>
+        </div>
+        <div class="otherOrgCity__item">
+          <a class="otherOrgCity__item-title" href="#">ООО "Владимиртеплогаз"</a>
+          <div class="otherOrgCity__item-city">Москва</div>
+          <div class="otherOrgCity__item-service">Вода</div>
+        </div>
+        <div class="otherOrgCity__item">
+          <a class="otherOrgCity__item-title" href="#">ООО "Газпром межрегионгаз"</a>
+          <div class="otherOrgCity__item-city">Москва</div>
+          <div class="otherOrgCity__item-service">Газ</div>
+        </div>
+        <div class="otherOrgCity__item">
+          <a class="otherOrgCity__item-title" href="#">ООО "ЕРИЦ Владимирской области"</a>
+          <div class="otherOrgCity__item-city">Москва</div>
+          <div class="otherOrgCity__item-service">Вода</div>
+        </div>
+        <div class="otherOrgCity__item">
+          <a class="otherOrgCity__item-title" href="#">ООО "Владимиртеплогаз"</a>
+          <div class="otherOrgCity__item-city">Москва</div>
+          <div class="otherOrgCity__item-service">Вода</div>
+        </div>
+        <div class="otherOrgCity__item">
+          <a class="otherOrgCity__item-title" href="#">ООО "Газпром межрегионгаз"</a>
+          <div class="otherOrgCity__item-city">Москва</div>
+          <div class="otherOrgCity__item-service">Газ</div>
+        </div>
+        <div class="otherOrgCity__item">
+          <a class="otherOrgCity__item-title" href="#">ООО "ЕРИЦ Владимирской области"</a>
+          <div class="otherOrgCity__item-city">Москва</div>
+          <div class="otherOrgCity__item-service">Вода</div>
+        </div>
+        <div class="otherOrgCity__item">
+          <a class="otherOrgCity__item-title" href="#">ООО "Владимиртеплогаз"</a>
+          <div class="otherOrgCity__item-city">Москва</div>
+          <div class="otherOrgCity__item-service">Вода</div>
+        </div>
+        <div class="otherOrgCity__item">
+          <a class="otherOrgCity__item-title" href="#">ООО "Газпром межрегионгаз"</a>
+          <div class="otherOrgCity__item-city">Москва</div>
+          <div class="otherOrgCity__item-service">Газ</div>
+        </div>
+        <div class="otherOrgCity__item">
+          <a class="otherOrgCity__item-title" href="#">ООО "ЕРИЦ Владимирской области"</a>
+          <div class="otherOrgCity__item-city">Москва</div>
+          <div class="otherOrgCity__item-service">Вода</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__item">
+          <a class="logo" href="#">
+            <img class="logo__image" src="./images/logo.png" alt="">
+            <p class="logo__text">Альфа Дом</p>
+          </a>
+          <p class="footer__text">
+            © 2022 «Альфа Дом». Все права защищены.
+            Сайт не является публичной офертой.
+          </p>
+        </div>
+        <div class="footer__item">
+          <div class="footer__item-box">
+            <a class="footer__link" href="#">Абонентам</a>
+            <a class="footer__link" href="#">Провайдерам</a>
+            <a class="footer__link" href="#">Партнерам</a>
+          </div>
+          <div class="footer__item-box">
+            <a class="footer__link" href="#">Поддержка</a>
+            <a class="footer__link" href="#">Политики и оферты</a>
+            <a class="footer__link" href="#">Документация API</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <section id="city" class="city">
+    <div class="city__inner">
+      <p class="city__title">Выберите город</p>
+      <div id="cities" class="search">
+        <div class="search__icon icon-search"></div>
+        <input class="search__input typeahead" type="text" placeholder="Поиск по организациям?">
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"></script>
+  <script src="./plugins/typeahead/bloodhound.min.js"></script>
+  <script src="./plugins/typeahead/typeahead.jquery.min.js"></script>
+  <script src="./plugins/typeahead/typeahead.bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="./plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

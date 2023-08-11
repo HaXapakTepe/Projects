@@ -1,0 +1,15 @@
+.social {
+  display: flex;
+  align-items: center;
+  @include fluid(gap, 15px, 30px);
+
+  &__icon {
+    color: #AABAC2;
+    transition: color .38s ease-in-out;
+    font-size: 16px;
+
+    &:hover {
+      color: #FF4B23;
+    }
+  }
+}

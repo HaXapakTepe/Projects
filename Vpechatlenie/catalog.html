@@ -1,0 +1,2277 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Впечатление</title>
+  <link rel="stylesheet" href="./plugins/fancybox/jquery.fancybox.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/icons.css">
+  <link rel="shortcut icon" href="./images/favicon.svg" type="x-icon">
+  <link rel="stylesheet" href="./css/jquery.formstyler.css">
+  <link rel="stylesheet" href="./css/nouislider.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="header__inner">
+          <div class="header__item">
+            <a class="header__logo logo" href="#">
+              <img class="logo__image" src="images/logo.png" alt="">
+            </a>
+            <a class="header__catalog" href="#">
+              <div class="header__icon icon-catalog"></div>
+              Каталог товаров
+            </a>
+            <div class="header__modal modal">
+              <div class="modal__list">
+                <div class="modal__item">
+                  <a class="modal__link" href="#">
+                    <div class="modal__icon icon-man-and-woman"></div>
+                    Для двоих
+                  </a>
+                </div>
+                <div class="modal__item">
+                  <a class="modal__link" href="#">
+                    <div class="modal__icon icon-woman"></div>
+                    Для нее
+                  </a>
+                </div>
+                <div class="modal__item">
+                  <a class="modal__link" href="#">
+                    <div class="modal__icon icon-man"></div>
+                    Для него
+                  </a>
+                </div>
+                <div class="modal__item">
+                  <a class="modal__link" href="#">
+                    <div class="modal__icon icon-hot-air-baloon"></div>
+                    Полеты
+                  </a>
+                </div>
+                <div class="modal__item">
+                  <a class="modal__link" href="#">
+                    <div class="modal__icon icon-surf"></div>
+                    Экстрим
+                  </a>
+                </div>
+                <div class="modal__item">
+                  <a class="modal__link" href="#">
+                    <div class="modal__icon icon-spa"></div>
+                    SPA
+                  </a>
+                </div>
+                <div class="modal__item">
+                  <a class="modal__link" href="#">
+                    <div class="modal__icon icon-tank"></div>
+                    Милитари
+                  </a>
+                </div>
+                <div class="modal__item">
+                  <a class="modal__link" href="#">
+                    <div class="modal__icon icon-drawing"></div>
+                    Мастер-класс
+                  </a>
+                </div>
+                <div class="modal__item">
+                  <a class="modal__link" href="#">
+                    <div class="modal__icon icon-boat"></div>
+                    Отдых на воде
+                  </a>
+                </div>
+                <div class="modal__item">
+                  <a class="modal__link" href="#">
+                    <div class="modal__icon icon-photo-camera"></div>
+                    Фотосессия
+                  </a>
+                </div>
+                <div class="modal__item">
+                  <a class="modal__link" href="#">
+                    <div class="modal__icon icon-price"></div>
+                    Цена со скидкой
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__burger">
+            <div class="header__burger-line"></div>
+          </div>
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link link" href="#">
+                О нас
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="#">
+                Как это работает
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="#">
+                Доставка
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="#">
+                Отзывы
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="#">
+                Служба качества
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <div class="header__item">
+            <a class="header__button button" href="#">
+              Активация сертификата
+            </a>
+            <div class="header__search">
+              <div class="icon-search"></div>
+              <div class="header__search-box">
+                <input class="header__search-input" type="text">
+                <div class="icon-close"></div>
+              </div>
+            </div>
+            <a class="header__basket" href="#">
+              <div class="icon-basket"></div>
+              <span class="header__num">5</span>
+            </a>
+          </div>
+        </div>
+        <div class="header__list list">
+          <div class="list__item">
+            <div class="icon-filter"></div>
+            <div class="list__text">
+              Цена
+              <div class="icon-arrow"></div>
+            </div>
+            <div class="list__text">
+              Сортировка
+              <div class="icon-arrow"></div>
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="list__text">
+              Для двоих
+            </div>
+            <div class="list__text">
+              Для нее
+            </div>
+            <div class="list__text">
+              Для него
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="list__text">
+              Полеты
+            </div>
+            <div class="list__text">
+              Экстрим
+            </div>
+            <div class="list__text">
+              SPA
+            </div>
+            <div class="list__text">
+              Милитари
+            </div>
+            <div class="list__text">
+              Мастер-класс
+            </div>
+            <div class="list__text">
+              Романтика
+            </div>
+            <div class="list__text">
+              Отдых на воде
+            </div>
+            <div class="list__text">
+              Фотосессия
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="list__text">
+              Цена со скидкой
+            </div>
+          </div>
+        </div>
+        <div class="filter">
+          <div class="filter__price">
+            <div class="filter__title">
+              Цена
+            </div>
+            <div id="slider"></div>
+            <div class="filter__content">
+              <div class="filter__box">
+                <label for="" class="filter__box-label">от</label>
+                <input type="text" name="" id="input-with-keypress-0" disabled>
+              </div>
+              <div class="filter__box">
+                <label for="" class="filter__box-label">до</label>
+                <input type="text" name="" id="input-with-keypress-1" disabled>
+              </div>
+            </div>
+          </div>
+          <div class="filter__sorting">
+            <div class="filter__title">
+              Сортировка
+            </div>
+            <div class="filter__hidden">
+              <div class="filter__item">
+                <input class="filter__input" name="price" type="radio">
+                Сначала дешевые
+                </input>
+              </div>
+              <div class="filter__item">
+                <input class="filter__input" name="price" type="radio">
+                Сначала дорогие
+                </input>
+              </div>
+              <div class="filter__item">
+                <input class="filter__input" name="price" type="radio">
+                Сначала более популярные
+                </input>
+              </div>
+              <div class="filter__item">
+                <input class="filter__input" name="price" type="radio">
+                Сначала менее популярные
+                </input>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="bg">
+    <div class="container">
+      <h1 class="bg__title">
+        Мастер-класс
+      </h1>
+      <ul class="bg__list">
+        <li class="bg__text">
+          Экстремальные, спортивные, творческие мастер-классы на любой вкус;
+        </li>
+        <li class="bg__text">
+          Высокое качество услуг, большое количество площадок с удобным расположением;
+        </li>
+        <li class="bg__text">
+          Стильная упаковка и быстрая доставка вашего подарка.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="set">
+    <div class="container">
+      <div class="card">
+        <div class="card__item">
+          <img class="card__image" src="images/set/1.jpg" alt="">
+          <div class="card__box">
+            <div class="card__rating rating rating--js">
+              <div class="rating__body">
+                <div class="rating__active"></div>
+                <div class="rating__items">
+                  <input class="rating__item" type="radio" name="star" value="1">
+                  <input class="rating__item" type="radio" name="star" value="2">
+                  <input class="rating__item" type="radio" name="star" value="3">
+                  <input class="rating__item" type="radio" name="star" value="4">
+                  <input class="rating__item" type="radio" name="star" value="5">
+                </div>
+              </div>
+              <div class="rating__value">3.6</div>
+            </div>
+            <a class="card__link link" href="#">
+              382 отзыва
+            </a>
+          </div>
+          <h3 class="card__subtitle">
+            Набор “Экстрим” для него
+          </h3>
+          <div class="card__item-box">
+            <p class="card__text">
+              Хотите миновать столичные пробки на мотоцикле?
+            </p>
+            <p class="card__text">
+              Хотите чувствовать свободу? Этот урок позволит в...
+              <a class="card__text-link" href="#">
+                еще
+              </a>
+            </p>
+          </div>
+          <div class="card__price">
+            <a class="card__button button" href="#">
+              Купить
+            </a>
+            <div class="card__price-box">
+              <span class="card__price-content">
+                2 700 ₽
+              </span>
+              <span class="card__price-content card__price-content--old">
+                2 900 ₽
+              </span>
+            </div>
+          </div>
+          <p class="card__item-text">
+            В набор входят:
+          </p>
+          <div class="card__slider">
+            <div class="card__slider-extreme swiper">
+              <div class="card__slider-container swiper-wrapper">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/1.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/2.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/3.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/4.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/5.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/6.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/7.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/8.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/9.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/10.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/11.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/12.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/13.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/14.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/15.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-button-prev swiper-button-prev-extreme">
+            </div>
+            <div class="swiper-button-next swiper-button-next-extreme">
+            </div>
+          </div>
+        </div>
+        <div class="card__item">
+          <img class="card__image" src="images/set/2.jpg" alt="">
+          <div class="card__box">
+            <div class="card__rating rating rating--js">
+              <div class="rating__body">
+                <div class="rating__active"></div>
+                <div class="rating__items">
+                  <input class="rating__item" type="radio" name="star" value="1">
+                  <input class="rating__item" type="radio" name="star" value="2">
+                  <input class="rating__item" type="radio" name="star" value="3">
+                  <input class="rating__item" type="radio" name="star" value="4">
+                  <input class="rating__item" type="radio" name="star" value="5">
+                </div>
+              </div>
+              <div class="rating__value">3.6</div>
+            </div>
+            <a class="card__link link" href="#">
+              401 отзыв
+            </a>
+          </div>
+          <h3 class="card__subtitle">
+            Набор “Кулинария” для нее
+          </h3>
+          <div class="card__item-box">
+            <p class="card__text">
+              Хотите миновать столичные пробки на мотоцикле?
+            </p>
+            <p class="card__text">
+              Хотите чувствовать свободу? Этот урок позволит в...
+              <a class="card__text-link" href="#">
+                еще
+              </a>
+            </p>
+          </div>
+          <div class="card__price">
+            <a class="card__button button" href="#">
+              Купить
+            </a>
+            <div class="card__price-box">
+              <span class="card__price-content">
+                2 995 ₽
+              </span>
+              <span class="card__price-content card__price-content--old">
+                3 500 ₽
+              </span>
+            </div>
+          </div>
+          <p class="card__item-text">
+            В набор входят:
+          </p>
+          <div class="card__slider">
+            <div class="card__slider-cooking swiper">
+              <div class="card__slider-container swiper-wrapper">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/6.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/7.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/8.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/9.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/10.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/1.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/2.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/3.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/4.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/5.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/11.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/12.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/13.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/14.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/15.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-button-prev swiper-button-prev-cooking">
+            </div>
+            <div class="swiper-button-next swiper-button-next-cooking">
+            </div>
+          </div>
+        </div>
+        <div class="card__item">
+          <img class="card__image" src="images/set/3.jpg" alt="">
+          <div class="card__box">
+            <div class="card__rating rating rating--js">
+              <div class="rating__body">
+                <div class="rating__active"></div>
+                <div class="rating__items">
+                  <input class="rating__item" type="radio" name="star" value="1">
+                  <input class="rating__item" type="radio" name="star" value="2">
+                  <input class="rating__item" type="radio" name="star" value="3">
+                  <input class="rating__item" type="radio" name="star" value="4">
+                  <input class="rating__item" type="radio" name="star" value="5">
+                </div>
+              </div>
+              <div class="rating__value">3.6</div>
+            </div>
+            <a class="card__link link" href="#">
+              149 отзывов
+            </a>
+          </div>
+          <h3 class="card__subtitle">
+            Набор “Яркие впечатления” для двоих
+          </h3>
+          <div class="card__item-box">
+            <p class="card__text">
+              Хотите миновать столичные пробки на мотоцикле?
+            </p>
+            <p class="card__text">
+              Хотите чувствовать свободу? Этот урок позволит в...
+              <a class="card__text-link" href="#">
+                еще
+              </a>
+            </p>
+          </div>
+          <div class="card__price">
+            <a class="card__button button" href="#">
+              Купить
+            </a>
+            <div class="card__price-box">
+              <span class="card__price-content">
+                3 495 ₽
+              </span>
+              <span class="card__price-content card__price-content--old">
+                3 700 ₽
+              </span>
+            </div>
+          </div>
+          <p class="card__item-text">
+            В набор входят:
+          </p>
+          <div class="card__slider">
+            <div class="card__slider-bright swiper">
+              <div class="card__slider-container swiper-wrapper">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/11.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/12.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/13.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/14.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/15.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/6.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/7.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/8.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/9.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/10.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/1.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/2.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/3.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/4.jpg" alt="">
+                <img class="card__slider-image swiper-slide" src="images/setSlider/5.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-button-prev swiper-button-prev-bright">
+            </div>
+            <div class="swiper-button-next swiper-button-next-bright">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__item">
+          <img class="card__image" src="images/set/4.jpg" alt="">
+          <div class="card__box">
+            <div class="card__rating rating rating--js">
+              <div class="rating__body">
+                <div class="rating__active"></div>
+                <div class="rating__items">
+                  <input class="rating__item" type="radio" name="star" value="1">
+                  <input class="rating__item" type="radio" name="star" value="2">
+                  <input class="rating__item" type="radio" name="star" value="3">
+                  <input class="rating__item" type="radio" name="star" value="4">
+                  <input class="rating__item" type="radio" name="star" value="5">
+                </div>
+              </div>
+              <div class="rating__value">3.6</div>
+            </div>
+            <a class="card__link link" href="#">
+              382 отзыва
+            </a>
+          </div>
+          <h3 class="card__subtitle">
+            Мастер-класс дайвинга
+          </h3>
+          <div class="card__item-box">
+            <p class="card__text">
+              Хотите миновать столичные пробки на мотоцикле?
+            </p>
+            <p class="card__text">
+              Хотите чувствовать свободу? Этот урок позволит в...
+              <a class="card__text-link" href="#">
+                еще
+              </a>
+            </p>
+          </div>
+          <div class="card__price">
+            <a class="card__button button" href="#">
+              Купить
+            </a>
+            <div class="card__price-box">
+              <span class="card__price-content">
+                2 700 ₽
+              </span>
+              <span class="card__price-content card__price-content--old">
+                2 900 ₽
+              </span>
+            </div>
+          </div>
+          <div class="card__info">
+            <div class="card__info-content">
+              <div class="card__info-subtitle">
+                Комплектация
+              </div>
+              <div class="card__info-text">
+                Максимальная (4 человека, 2 часа)
+              </div>
+            </div>
+            <div class="card__info-hidden">
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Минимальная
+                <span class="card__input-opacity">
+                  (1 495₽, 1 человек, 1 час)
+                </span>
+                </input>
+              </div>
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Средняя
+                <span class="card__input-opacity">
+                  (2 495₽, 2 человека, 2 часа)
+                </span>
+                </input>
+              </div>
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Максимальная
+                <span class="card__input-opacity">
+                  (3 495₽, 4 человека, 2 часа)
+                </span>
+                </input>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card__item">
+          <img class="card__image" src="images/set/5.jpg" alt="">
+          <div class="card__box">
+            <div class="card__rating rating rating--js">
+              <div class="rating__body">
+                <div class="rating__active"></div>
+                <div class="rating__items">
+                  <input class="rating__item" type="radio" name="star" value="1">
+                  <input class="rating__item" type="radio" name="star" value="2">
+                  <input class="rating__item" type="radio" name="star" value="3">
+                  <input class="rating__item" type="radio" name="star" value="4">
+                  <input class="rating__item" type="radio" name="star" value="5">
+                </div>
+              </div>
+              <div class="rating__value">3.6</div>
+            </div>
+            <a class="card__link link" href="#">
+              382 отзыва
+            </a>
+          </div>
+          <h3 class="card__subtitle">
+            Прогулка на лошадях
+          </h3>
+          <div class="card__item-box">
+            <p class="card__text">
+              Хотите миновать столичные пробки на мотоцикле?
+            </p>
+            <p class="card__text">
+              Хотите чувствовать свободу? Этот урок позволит в...
+              <a class="card__text-link" href="#">
+                еще
+              </a>
+            </p>
+          </div>
+          <div class="card__price">
+            <a class="card__button button" href="#">
+              Купить
+            </a>
+            <div class="card__price-box">
+              <span class="card__price-content">
+                2 700 ₽
+              </span>
+              <span class="card__price-content card__price-content--old">
+                2 900 ₽
+              </span>
+            </div>
+          </div>
+          <div class="card__info">
+            <div class="card__info-content">
+              <div class="card__info-subtitle">
+                Комплектация
+              </div>
+              <div class="card__info-text">
+                Максимальная (4 человека, 2 часа)
+              </div>
+            </div>
+            <div class="card__info-hidden">
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Минимальная
+                <span class="card__input-opacity">
+                  (1 495₽, 1 человек, 1 час)
+                </span>
+                </input>
+              </div>
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Средняя
+                <span class="card__input-opacity">
+                  (2 495₽, 2 человека, 2 часа)
+                </span>
+                </input>
+              </div>
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Максимальная
+                <span class="card__input-opacity">
+                  (3 495₽, 4 человека, 2 часа)
+                </span>
+                </input>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card__item">
+          <img class="card__image" src="images/set/6.jpg" alt="">
+          <div class="card__box">
+            <div class="card__rating rating rating--js">
+              <div class="rating__body">
+                <div class="rating__active"></div>
+                <div class="rating__items">
+                  <input class="rating__item" type="radio" name="star" value="1">
+                  <input class="rating__item" type="radio" name="star" value="2">
+                  <input class="rating__item" type="radio" name="star" value="3">
+                  <input class="rating__item" type="radio" name="star" value="4">
+                  <input class="rating__item" type="radio" name="star" value="5">
+                </div>
+              </div>
+              <div class="rating__value">3.6</div>
+            </div>
+            <a class="card__link link" href="#">
+              382 отзыва
+            </a>
+          </div>
+          <h3 class="card__subtitle">
+            Мастер-класс суши
+          </h3>
+          <div class="card__item-box">
+            <p class="card__text">
+              Хотите миновать столичные пробки на мотоцикле?
+            </p>
+            <p class="card__text">
+              Хотите чувствовать свободу? Этот урок позволит в...
+              <a class="card__text-link" href="#">
+                еще
+              </a>
+            </p>
+          </div>
+          <div class="card__price">
+            <a class="card__button button" href="#">
+              Купить
+            </a>
+            <div class="card__price-box">
+              <span class="card__price-content">
+                2 700 ₽
+              </span>
+              <span class="card__price-content card__price-content--old">
+                2 900 ₽
+              </span>
+            </div>
+          </div>
+          <div class="card__info">
+            <div class="card__info-content">
+              <div class="card__info-subtitle">
+                Комплектация
+              </div>
+              <div class="card__info-text">
+                Максимальная (4 человека, 2 часа)
+              </div>
+            </div>
+            <div class="card__info-hidden">
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Минимальная
+                <span class="card__input-opacity">
+                  (1 495₽, 1 человек, 1 час)
+                </span>
+                </input>
+              </div>
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Средняя
+                <span class="card__input-opacity">
+                  (2 495₽, 2 человека, 2 часа)
+                </span>
+                </input>
+              </div>
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Максимальная
+                <span class="card__input-opacity">
+                  (3 495₽, 4 человека, 2 часа)
+                </span>
+                </input>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card__item">
+          <img class="card__image" src="images/set/7.jpg" alt="">
+          <div class="card__box">
+            <div class="card__rating rating rating--js">
+              <div class="rating__body">
+                <div class="rating__active"></div>
+                <div class="rating__items">
+                  <input class="rating__item" type="radio" name="star" value="1">
+                  <input class="rating__item" type="radio" name="star" value="2">
+                  <input class="rating__item" type="radio" name="star" value="3">
+                  <input class="rating__item" type="radio" name="star" value="4">
+                  <input class="rating__item" type="radio" name="star" value="5">
+                </div>
+              </div>
+              <div class="rating__value">3.6</div>
+            </div>
+            <a class="card__link link" href="#">
+              382 отзыва
+            </a>
+          </div>
+          <h3 class="card__subtitle">
+            Мастер-класс пивоварения
+          </h3>
+          <div class="card__item-box">
+            <p class="card__text">
+              Хотите миновать столичные пробки на мотоцикле?
+            </p>
+            <p class="card__text">
+              Хотите чувствовать свободу? Этот урок позволит в...
+              <a class="card__text-link" href="#">
+                еще
+              </a>
+            </p>
+          </div>
+          <div class="card__price">
+            <a class="card__button button" href="#">
+              Купить
+            </a>
+            <div class="card__price-box">
+              <span class="card__price-content">
+                2 700 ₽
+              </span>
+              <span class="card__price-content card__price-content--old">
+                2 900 ₽
+              </span>
+            </div>
+          </div>
+          <div class="card__info">
+            <div class="card__info-content">
+              <div class="card__info-subtitle">
+                Комплектация
+              </div>
+              <div class="card__info-text">
+                Максимальная (4 человека, 2 часа)
+              </div>
+            </div>
+            <div class="card__info-hidden">
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Минимальная
+                <span class="card__input-opacity">
+                  (1 495₽, 1 человек, 1 час)
+                </span>
+                </input>
+              </div>
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Средняя
+                <span class="card__input-opacity">
+                  (2 495₽, 2 человека, 2 часа)
+                </span>
+                </input>
+              </div>
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Максимальная
+                <span class="card__input-opacity">
+                  (3 495₽, 4 человека, 2 часа)
+                </span>
+                </input>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card__item">
+          <img class="card__image" src="images/set/8.jpg" alt="">
+          <div class="card__box">
+            <div class="card__rating rating rating--js">
+              <div class="rating__body">
+                <div class="rating__active"></div>
+                <div class="rating__items">
+                  <input class="rating__item" type="radio" name="star" value="1">
+                  <input class="rating__item" type="radio" name="star" value="2">
+                  <input class="rating__item" type="radio" name="star" value="3">
+                  <input class="rating__item" type="radio" name="star" value="4">
+                  <input class="rating__item" type="radio" name="star" value="5">
+                </div>
+              </div>
+              <div class="rating__value">3.6</div>
+            </div>
+            <a class="card__link link" href="#">
+              382 отзыва
+            </a>
+          </div>
+          <h3 class="card__subtitle">
+            Мастер-класс рисования на кофе
+          </h3>
+          <div class="card__item-box">
+            <p class="card__text">
+              Хотите миновать столичные пробки на мотоцикле?
+            </p>
+            <p class="card__text">
+              Хотите чувствовать свободу? Этот урок позволит в...
+              <a class="card__text-link" href="#">
+                еще
+              </a>
+            </p>
+          </div>
+          <div class="card__price">
+            <a class="card__button button" href="#">
+              Купить
+            </a>
+            <div class="card__price-box">
+              <span class="card__price-content">
+                2 700 ₽
+              </span>
+              <span class="card__price-content card__price-content--old">
+                2 900 ₽
+              </span>
+            </div>
+          </div>
+          <div class="card__info">
+            <div class="card__info-content">
+              <div class="card__info-subtitle">
+                Комплектация
+              </div>
+              <div class="card__info-text">
+                Максимальная (4 человека, 2 часа)
+              </div>
+            </div>
+            <div class="card__info-hidden">
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Минимальная
+                <span class="card__input-opacity">
+                  (1 495₽, 1 человек, 1 час)
+                </span>
+                </input>
+              </div>
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Средняя
+                <span class="card__input-opacity">
+                  (2 495₽, 2 человека, 2 часа)
+                </span>
+                </input>
+              </div>
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Максимальная
+                <span class="card__input-opacity">
+                  (3 495₽, 4 человека, 2 часа)
+                </span>
+                </input>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card__item">
+          <img class="card__image" src="images/set/9.jpg" alt="">
+          <div class="card__box">
+            <div class="card__rating rating rating--js">
+              <div class="rating__body">
+                <div class="rating__active"></div>
+                <div class="rating__items">
+                  <input class="rating__item" type="radio" name="star" value="1">
+                  <input class="rating__item" type="radio" name="star" value="2">
+                  <input class="rating__item" type="radio" name="star" value="3">
+                  <input class="rating__item" type="radio" name="star" value="4">
+                  <input class="rating__item" type="radio" name="star" value="5">
+                </div>
+              </div>
+              <div class="rating__value">3.6</div>
+            </div>
+            <a class="card__link link" href="#">
+              382 отзыва
+            </a>
+          </div>
+          <h3 class="card__subtitle">
+            Мастер-класс тенниса
+          </h3>
+          <div class="card__item-box">
+            <p class="card__text">
+              Хотите миновать столичные пробки на мотоцикле?
+            </p>
+            <p class="card__text">
+              Хотите чувствовать свободу? Этот урок позволит в...
+              <a class="card__text-link" href="#">
+                еще
+              </a>
+            </p>
+          </div>
+          <div class="card__price">
+            <a class="card__button button" href="#">
+              Купить
+            </a>
+            <div class="card__price-box">
+              <span class="card__price-content">
+                2 700 ₽
+              </span>
+              <span class="card__price-content card__price-content--old">
+                2 900 ₽
+              </span>
+            </div>
+          </div>
+          <div class="card__info">
+            <div class="card__info-content">
+              <div class="card__info-subtitle">
+                Комплектация
+              </div>
+              <div class="card__info-text">
+                Максимальная (4 человека, 2 часа)
+              </div>
+            </div>
+            <div class="card__info-hidden">
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Минимальная
+                <span class="card__input-opacity">
+                  (1 495₽, 1 человек, 1 час)
+                </span>
+                </input>
+              </div>
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Средняя
+                <span class="card__input-opacity">
+                  (2 495₽, 2 человека, 2 часа)
+                </span>
+                </input>
+              </div>
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Максимальная
+                <span class="card__input-opacity">
+                  (3 495₽, 4 человека, 2 часа)
+                </span>
+                </input>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card__item">
+          <img class="card__image" src="images/set/10.jpg" alt="">
+          <div class="card__box">
+            <div class="card__rating rating rating--js">
+              <div class="rating__body">
+                <div class="rating__active"></div>
+                <div class="rating__items">
+                  <input class="rating__item" type="radio" name="star" value="1">
+                  <input class="rating__item" type="radio" name="star" value="2">
+                  <input class="rating__item" type="radio" name="star" value="3">
+                  <input class="rating__item" type="radio" name="star" value="4">
+                  <input class="rating__item" type="radio" name="star" value="5">
+                </div>
+              </div>
+              <div class="rating__value">3.6</div>
+            </div>
+            <a class="card__link link" href="#">
+              382 отзыва
+            </a>
+          </div>
+          <h3 class="card__subtitle">
+            Приготовление коктейлей
+          </h3>
+          <div class="card__item-box">
+            <p class="card__text">
+              Хотите миновать столичные пробки на мотоцикле?
+            </p>
+            <p class="card__text">
+              Хотите чувствовать свободу? Этот урок позволит в...
+              <a class="card__text-link" href="#">
+                еще
+              </a>
+            </p>
+          </div>
+          <div class="card__price">
+            <a class="card__button button" href="#">
+              Купить
+            </a>
+            <div class="card__price-box">
+              <span class="card__price-content">
+                2 700 ₽
+              </span>
+              <span class="card__price-content card__price-content--old">
+                2 900 ₽
+              </span>
+            </div>
+          </div>
+          <div class="card__info">
+            <div class="card__info-content">
+              <div class="card__info-subtitle">
+                Комплектация
+              </div>
+              <div class="card__info-text">
+                Максимальная (4 человека, 2 часа)
+              </div>
+            </div>
+            <div class="card__info-hidden">
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Минимальная
+                <span class="card__input-opacity">
+                  (1 495₽, 1 человек, 1 час)
+                </span>
+                </input>
+              </div>
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Средняя
+                <span class="card__input-opacity">
+                  (2 495₽, 2 человека, 2 часа)
+                </span>
+                </input>
+              </div>
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Максимальная
+                <span class="card__input-opacity">
+                  (3 495₽, 4 человека, 2 часа)
+                </span>
+                </input>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card__item">
+          <img class="card__image" src="images/set/11.jpg" alt="">
+          <div class="card__box">
+            <div class="card__rating rating rating--js">
+              <div class="rating__body">
+                <div class="rating__active"></div>
+                <div class="rating__items">
+                  <input class="rating__item" type="radio" name="star" value="1">
+                  <input class="rating__item" type="radio" name="star" value="2">
+                  <input class="rating__item" type="radio" name="star" value="3">
+                  <input class="rating__item" type="radio" name="star" value="4">
+                  <input class="rating__item" type="radio" name="star" value="5">
+                </div>
+              </div>
+              <div class="rating__value">3.6</div>
+            </div>
+            <a class="card__link link" href="#">
+              382 отзыва
+            </a>
+          </div>
+          <h3 class="card__subtitle">
+            Дегустация вина
+          </h3>
+          <div class="card__item-box">
+            <p class="card__text">
+              Хотите миновать столичные пробки на мотоцикле?
+            </p>
+            <p class="card__text">
+              Хотите чувствовать свободу? Этот урок позволит в...
+              <a class="card__text-link" href="#">
+                еще
+              </a>
+            </p>
+          </div>
+          <div class="card__price">
+            <a class="card__button button" href="#">
+              Купить
+            </a>
+            <div class="card__price-box">
+              <span class="card__price-content">
+                2 700 ₽
+              </span>
+              <span class="card__price-content card__price-content--old">
+                2 900 ₽
+              </span>
+            </div>
+          </div>
+          <div class="card__info">
+            <div class="card__info-content">
+              <div class="card__info-subtitle">
+                Комплектация
+              </div>
+              <div class="card__info-text">
+                Максимальная (4 человека, 2 часа)
+              </div>
+            </div>
+            <div class="card__info-hidden">
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Минимальная
+                <span class="card__input-opacity">
+                  (1 495₽, 1 человек, 1 час)
+                </span>
+                </input>
+              </div>
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Средняя
+                <span class="card__input-opacity">
+                  (2 495₽, 2 человека, 2 часа)
+                </span>
+                </input>
+              </div>
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Максимальная
+                <span class="card__input-opacity">
+                  (3 495₽, 4 человека, 2 часа)
+                </span>
+                </input>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card__item">
+          <img class="card__image" src="images/set/12.jpg" alt="">
+          <div class="card__box">
+            <div class="card__rating rating rating--js">
+              <div class="rating__body">
+                <div class="rating__active"></div>
+                <div class="rating__items">
+                  <input class="rating__item" type="radio" name="star" value="1">
+                  <input class="rating__item" type="radio" name="star" value="2">
+                  <input class="rating__item" type="radio" name="star" value="3">
+                  <input class="rating__item" type="radio" name="star" value="4">
+                  <input class="rating__item" type="radio" name="star" value="5">
+                </div>
+              </div>
+              <div class="rating__value">3.6</div>
+            </div>
+            <a class="card__link link" href="#">
+              382 отзыва
+            </a>
+          </div>
+          <h3 class="card__subtitle">
+            Запись песни в студии
+          </h3>
+          <div class="card__item-box">
+            <p class="card__text">
+              Хотите миновать столичные пробки на мотоцикле?
+            </p>
+            <p class="card__text">
+              Хотите чувствовать свободу? Этот урок позволит в...
+              <a class="card__text-link" href="#">
+                еще
+              </a>
+            </p>
+          </div>
+          <div class="card__price">
+            <a class="card__button button" href="#">
+              Купить
+            </a>
+            <div class="card__price-box">
+              <span class="card__price-content">
+                2 700 ₽
+              </span>
+              <span class="card__price-content card__price-content--old">
+                2 900 ₽
+              </span>
+            </div>
+          </div>
+          <div class="card__info">
+            <div class="card__info-content">
+              <div class="card__info-subtitle">
+                Комплектация
+              </div>
+              <div class="card__info-text">
+                Максимальная (4 человека, 2 часа)
+              </div>
+            </div>
+            <div class="card__info-hidden">
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Минимальная
+                <span class="card__input-opacity">
+                  (1 495₽, 1 человек, 1 час)
+                </span>
+                </input>
+              </div>
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Средняя
+                <span class="card__input-opacity">
+                  (2 495₽, 2 человека, 2 часа)
+                </span>
+                </input>
+              </div>
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Максимальная
+                <span class="card__input-opacity">
+                  (3 495₽, 4 человека, 2 часа)
+                </span>
+                </input>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card__item">
+          <img class="card__image" src="images/set/13.jpg" alt="">
+          <div class="card__box">
+            <div class="card__rating rating rating--js">
+              <div class="rating__body">
+                <div class="rating__active"></div>
+                <div class="rating__items">
+                  <input class="rating__item" type="radio" name="star" value="1">
+                  <input class="rating__item" type="radio" name="star" value="2">
+                  <input class="rating__item" type="radio" name="star" value="3">
+                  <input class="rating__item" type="radio" name="star" value="4">
+                  <input class="rating__item" type="radio" name="star" value="5">
+                </div>
+              </div>
+              <div class="rating__value">3.6</div>
+            </div>
+            <a class="card__link link" href="#">
+              382 отзыва
+            </a>
+          </div>
+          <h3 class="card__subtitle">
+            Запись альбома (4 песни)
+          </h3>
+          <div class="card__item-box">
+            <p class="card__text">
+              Хотите миновать столичные пробки на мотоцикле?
+            </p>
+            <p class="card__text">
+              Хотите чувствовать свободу? Этот урок позволит в...
+              <a class="card__text-link" href="#">
+                еще
+              </a>
+            </p>
+          </div>
+          <div class="card__price">
+            <a class="card__button button" href="#">
+              Купить
+            </a>
+            <div class="card__price-box">
+              <span class="card__price-content">
+                2 700 ₽
+              </span>
+              <span class="card__price-content card__price-content--old">
+                2 900 ₽
+              </span>
+            </div>
+          </div>
+          <div class="card__info">
+            <div class="card__info-content">
+              <div class="card__info-subtitle">
+                Комплектация
+              </div>
+              <div class="card__info-text">
+                Максимальная (4 человека, 2 часа)
+              </div>
+            </div>
+            <div class="card__info-hidden">
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Минимальная
+                <span class="card__input-opacity">
+                  (1 495₽, 1 человек, 1 час)
+                </span>
+                </input>
+              </div>
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Средняя
+                <span class="card__input-opacity">
+                  (2 495₽, 2 человека, 2 часа)
+                </span>
+                </input>
+              </div>
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Максимальная
+                <span class="card__input-opacity">
+                  (3 495₽, 4 человека, 2 часа)
+                </span>
+                </input>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card__item">
+          <img class="card__image" src="images/set/14.jpg" alt="">
+          <div class="card__box">
+            <div class="card__rating rating rating--js">
+              <div class="rating__body">
+                <div class="rating__active"></div>
+                <div class="rating__items">
+                  <input class="rating__item" type="radio" name="star" value="1">
+                  <input class="rating__item" type="radio" name="star" value="2">
+                  <input class="rating__item" type="radio" name="star" value="3">
+                  <input class="rating__item" type="radio" name="star" value="4">
+                  <input class="rating__item" type="radio" name="star" value="5">
+                </div>
+              </div>
+              <div class="rating__value">3.6</div>
+            </div>
+            <a class="card__link link" href="#">
+              382 отзыва
+            </a>
+          </div>
+          <h3 class="card__subtitle">
+            Рыбацкая деревня
+          </h3>
+          <div class="card__item-box">
+            <p class="card__text">
+              Хотите миновать столичные пробки на мотоцикле?
+            </p>
+            <p class="card__text">
+              Хотите чувствовать свободу? Этот урок позволит в...
+              <a class="card__text-link" href="#">
+                еще
+              </a>
+            </p>
+          </div>
+          <div class="card__price">
+            <a class="card__button button" href="#">
+              Купить
+            </a>
+            <div class="card__price-box">
+              <span class="card__price-content">
+                2 700 ₽
+              </span>
+              <span class="card__price-content card__price-content--old">
+                2 900 ₽
+              </span>
+            </div>
+          </div>
+          <div class="card__info">
+            <div class="card__info-content">
+              <div class="card__info-subtitle">
+                Комплектация
+              </div>
+              <div class="card__info-text">
+                Максимальная (4 человека, 2 часа)
+              </div>
+            </div>
+            <div class="card__info-hidden">
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Минимальная
+                <span class="card__input-opacity">
+                  (1 495₽, 1 человек, 1 час)
+                </span>
+                </input>
+              </div>
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Средняя
+                <span class="card__input-opacity">
+                  (2 495₽, 2 человека, 2 часа)
+                </span>
+                </input>
+              </div>
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Максимальная
+                <span class="card__input-opacity">
+                  (3 495₽, 4 человека, 2 часа)
+                </span>
+                </input>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card__item">
+          <img class="card__image" src="images/set/15.jpg" alt="">
+          <div class="card__box">
+            <div class="card__rating rating rating--js">
+              <div class="rating__body">
+                <div class="rating__active"></div>
+                <div class="rating__items">
+                  <input class="rating__item" type="radio" name="star" value="1">
+                  <input class="rating__item" type="radio" name="star" value="2">
+                  <input class="rating__item" type="radio" name="star" value="3">
+                  <input class="rating__item" type="radio" name="star" value="4">
+                  <input class="rating__item" type="radio" name="star" value="5">
+                </div>
+              </div>
+              <div class="rating__value">3.6</div>
+            </div>
+            <a class="card__link link" href="#">
+              382 отзыва
+            </a>
+          </div>
+          <h3 class="card__subtitle">
+            Танцевальный мастер-класс
+          </h3>
+          <div class="card__item-box">
+            <p class="card__text">
+              Хотите миновать столичные пробки на мотоцикле?
+            </p>
+            <p class="card__text">
+              Хотите чувствовать свободу? Этот урок позволит в...
+              <a class="card__text-link" href="#">
+                еще
+              </a>
+            </p>
+          </div>
+          <div class="card__price">
+            <a class="card__button button" href="#">
+              Купить
+            </a>
+            <div class="card__price-box">
+              <span class="card__price-content">
+                2 700 ₽
+              </span>
+              <span class="card__price-content card__price-content--old">
+                2 900 ₽
+              </span>
+            </div>
+          </div>
+          <div class="card__info">
+            <div class="card__info-content">
+              <div class="card__info-subtitle">
+                Комплектация
+              </div>
+              <div class="card__info-text">
+                Максимальная (4 человека, 2 часа)
+              </div>
+            </div>
+            <div class="card__info-hidden">
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Минимальная
+                <span class="card__input-opacity">
+                  (1 495₽, 1 человек, 1 час)
+                </span>
+                </input>
+              </div>
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Средняя
+                <span class="card__input-opacity">
+                  (2 495₽, 2 человека, 2 часа)
+                </span>
+                </input>
+              </div>
+              <div class="card__info-box">
+                <input class="card__input" name="price" type="radio">
+                Максимальная
+                <span class="card__input-opacity">
+                  (3 495₽, 4 человека, 2 часа)
+                </span>
+                </input>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <div class="container">
+      <h2 class="reviews__title title">
+        Восторженные отзывы
+      </h2>
+      <div class="reviews__wpapper swiper">
+        <div class="reviews__wrapper-container swiper-wrapper">
+          <div class="reviews__item swiper-slide">
+            <div class="reviews__video">
+              <!-- <iframe src="https://www.youtube.com/embed/ysOl0KUpOZs" title="YouTube video player" frameborder="0"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+              </iframe> -->
+            </div>
+            <div class="reviews__inner">
+              <p class="reviews__subtitle">
+                Прогулка на лошадях
+              </p>
+              <div class="card__rating rating rating--js rating--mb">
+                <div class="rating__body">
+                  <div class="rating__active"></div>
+                  <div class="rating__items">
+                    <input class="rating__item" type="radio" name="star" value="1">
+                    <input class="rating__item" type="radio" name="star" value="2">
+                    <input class="rating__item" type="radio" name="star" value="3">
+                    <input class="rating__item" type="radio" name="star" value="4">
+                    <input class="rating__item" type="radio" name="star" value="5">
+                  </div>
+                </div>
+                <div class="rating__value">5</div>
+              </div>
+              <div class="reviews__box">
+                <div class="reviews__info">
+                  Отличный инструктор
+                </div>
+                <div class="reviews__info">
+                  Доступность
+                </div>
+              </div>
+              <div class="reviews__content">
+                <span class="reviews__name">
+                  Лена
+                </span>
+                <span class="reviews__date">
+                  15 марта 2022
+                </span>
+                <p class="reviews__text">
+                  С детства обожаю лошадей! Поэтому очень обрадовалась сертификату на прогулку...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__item swiper-slide">
+            <div class="reviews__video">
+              <!-- <iframe src="https://www.youtube.com/embed/Vzm2Mx_Ym4s" title="YouTube video player" frameborder="0"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+              </iframe> -->
+            </div>
+            <div class="reviews__inner">
+              <p class="reviews__subtitle">
+                Мастер-класс езды на мотоцикле
+              </p>
+              <div class="card__rating rating rating--js rating--mb">
+                <div class="rating__body">
+                  <div class="rating__active"></div>
+                  <div class="rating__items">
+                    <input class="rating__item" type="radio" name="star" value="1">
+                    <input class="rating__item" type="radio" name="star" value="2">
+                    <input class="rating__item" type="radio" name="star" value="3">
+                    <input class="rating__item" type="radio" name="star" value="4">
+                    <input class="rating__item" type="radio" name="star" value="5">
+                  </div>
+                </div>
+                <div class="rating__value">5</div>
+              </div>
+              <div class="reviews__box">
+                <div class="reviews__info">
+                  Эмоции
+                </div>
+                <div class="reviews__info">
+                  Супер
+                </div>
+                <div class="reviews__info">
+                  Ямаха
+                </div>
+              </div>
+              <div class="reviews__content">
+                <span class="reviews__name">
+                  Дмитрий
+                </span>
+                <span class="reviews__date">
+                  22 октября 2021
+                </span>
+                <p class="reviews__text">
+                  Подарил своей девушке этот сертификат!
+                  Она давно грезит мотоциклами и не прогадал...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__item swiper-slide">
+            <div class="reviews__video">
+              <!-- <iframe src="https://www.youtube.com/embed/xUdfYUKIeMY" title="YouTube video player" frameborder="0"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+              </iframe> -->
+            </div>
+            <div class="reviews__inner">
+              <p class="reviews__subtitle">
+                Полет на параплане
+              </p>
+              <div class="card__rating rating rating--js rating--mb">
+                <div class="rating__body">
+                  <div class="rating__active"></div>
+                  <div class="rating__items">
+                    <input class="rating__item" type="radio" name="star" value="1">
+                    <input class="rating__item" type="radio" name="star" value="2">
+                    <input class="rating__item" type="radio" name="star" value="3">
+                    <input class="rating__item" type="radio" name="star" value="4">
+                    <input class="rating__item" type="radio" name="star" value="5">
+                  </div>
+                </div>
+                <div class="rating__value">5</div>
+              </div>
+              <div class="reviews__box"></div>
+              <div class="reviews__content">
+                <span class="reviews__name">
+                  Елена и Виталий
+                </span>
+                <span class="reviews__date">
+                  22 октября 2021
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__item swiper-slide">
+            <div class="reviews__video">
+              <!-- <iframe src="https://www.youtube.com/embed/ZeqKHqAKkQM" title="YouTube video player" frameborder="0"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+              </iframe> -->
+            </div>
+            <div class="reviews__inner">
+              <p class="reviews__subtitle">
+                Полет на истребителе L-39
+              </p>
+              <div class="card__rating rating rating--js rating--mb">
+                <div class="rating__body">
+                  <div class="rating__active"></div>
+                  <div class="rating__items">
+                    <input class="rating__item" type="radio" name="star" value="1">
+                    <input class="rating__item" type="radio" name="star" value="2">
+                    <input class="rating__item" type="radio" name="star" value="3">
+                    <input class="rating__item" type="radio" name="star" value="4">
+                    <input class="rating__item" type="radio" name="star" value="5">
+                  </div>
+                </div>
+                <div class="rating__value">5</div>
+              </div>
+              <div class="reviews__box"></div>
+              <div class="reviews__content">
+                <span class="reviews__name">
+                  Дмитрий
+                </span>
+                <span class="reviews__date">
+                  22 октября 2021
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__item swiper-slide">
+            <div class="reviews__video">
+              <!-- <iframe src="https://www.youtube.com/embed/ysOl0KUpOZs" title="YouTube video player" frameborder="0"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+              </iframe> -->
+            </div>
+            <div class="reviews__inner">
+              <p class="reviews__subtitle">
+                Прогулка на лошадях
+              </p>
+              <div class="card__rating rating rating--js rating--mb">
+                <div class="rating__body">
+                  <div class="rating__active"></div>
+                  <div class="rating__items">
+                    <input class="rating__item" type="radio" name="star" value="1">
+                    <input class="rating__item" type="radio" name="star" value="2">
+                    <input class="rating__item" type="radio" name="star" value="3">
+                    <input class="rating__item" type="radio" name="star" value="4">
+                    <input class="rating__item" type="radio" name="star" value="5">
+                  </div>
+                </div>
+                <div class="rating__value">5</div>
+              </div>
+              <div class="reviews__box">
+                <div class="reviews__info">
+                  Отличный инструктор
+                </div>
+                <div class="reviews__info">
+                  Доступность
+                </div>
+              </div>
+              <div class="reviews__content">
+                <span class="reviews__name">
+                  Лена
+                </span>
+                <span class="reviews__date">
+                  15 марта 2022
+                </span>
+                <p class="reviews__text">
+                  С детства обожаю лошадей! Поэтому очень обрадовалась сертификату на прогулку...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__item swiper-slide">
+            <div class="reviews__video">
+              <!-- <iframe src="https://www.youtube.com/embed/Vzm2Mx_Ym4s" title="YouTube video player" frameborder="0"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+              </iframe> -->
+            </div>
+            <div class="reviews__inner">
+              <p class="reviews__subtitle">
+                Мастер-класс езды на мотоцикле
+              </p>
+              <div class="card__rating rating rating--js rating--mb">
+                <div class="rating__body">
+                  <div class="rating__active"></div>
+                  <div class="rating__items">
+                    <input class="rating__item" type="radio" name="star" value="1">
+                    <input class="rating__item" type="radio" name="star" value="2">
+                    <input class="rating__item" type="radio" name="star" value="3">
+                    <input class="rating__item" type="radio" name="star" value="4">
+                    <input class="rating__item" type="radio" name="star" value="5">
+                  </div>
+                </div>
+                <div class="rating__value">5</div>
+              </div>
+              <div class="reviews__box">
+                <div class="reviews__info">
+                  Эмоции
+                </div>
+                <div class="reviews__info">
+                  Супер
+                </div>
+                <div class="reviews__info">
+                  Ямаха
+                </div>
+              </div>
+              <div class="reviews__content">
+                <span class="reviews__name">
+                  Дмитрий
+                </span>
+                <span class="reviews__date">
+                  22 октября 2021
+                </span>
+                <p class="reviews__text">
+                  Подарил своей девушке этот сертификат!
+                  Она давно грезит мотоциклами и не прогадал...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__item swiper-slide">
+            <div class="reviews__video">
+              <!-- <iframe src="https://www.youtube.com/embed/xUdfYUKIeMY" title="YouTube video player" frameborder="0"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+              </iframe> -->
+            </div>
+            <div class="reviews__inner">
+              <p class="reviews__subtitle">
+                Полет на параплане
+              </p>
+              <div class="card__rating rating rating--js rating--mb">
+                <div class="rating__body">
+                  <div class="rating__active"></div>
+                  <div class="rating__items">
+                    <input class="rating__item" type="radio" name="star" value="1">
+                    <input class="rating__item" type="radio" name="star" value="2">
+                    <input class="rating__item" type="radio" name="star" value="3">
+                    <input class="rating__item" type="radio" name="star" value="4">
+                    <input class="rating__item" type="radio" name="star" value="5">
+                  </div>
+                </div>
+                <div class="rating__value">5</div>
+              </div>
+              <div class="reviews__box"></div>
+              <div class="reviews__content">
+                <span class="reviews__name">
+                  Елена и Виталий
+                </span>
+                <span class="reviews__date">
+                  22 октября 2021
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__item swiper-slide">
+            <div class="reviews__video">
+              <!-- <iframe src="https://www.youtube.com/embed/ZeqKHqAKkQM" title="YouTube video player" frameborder="0"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+              </iframe> -->
+            </div>
+            <div class="reviews__inner">
+              <p class="reviews__subtitle">
+                Полет на истребителе L-39
+              </p>
+              <div class="card__rating rating rating--js rating--mb">
+                <div class="rating__body">
+                  <div class="rating__active"></div>
+                  <div class="rating__items">
+                    <input class="rating__item" type="radio" name="star" value="1">
+                    <input class="rating__item" type="radio" name="star" value="2">
+                    <input class="rating__item" type="radio" name="star" value="3">
+                    <input class="rating__item" type="radio" name="star" value="4">
+                    <input class="rating__item" type="radio" name="star" value="5">
+                  </div>
+                </div>
+                <div class="rating__value">5</div>
+              </div>
+              <div class="reviews__box"></div>
+              <div class="reviews__content">
+                <span class="reviews__name">
+                  Дмитрий
+                </span>
+                <span class="reviews__date">
+                  22 октября 2021
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gift">
+    <div class="gift__wrapper">
+      <div class="gift__content">
+        <div class="gift__title">
+          Мы поможем вам сделать отличный подарок
+        </div>
+        <div class="gift__text">
+          Ваш подарок может стать исполнением долгожданной мечты
+          или неожиданным приключением. И он обязательно запомнится,
+          потому что мы отвечаем за организацию программ и полноту впечатлений.
+        </div>
+        <div class="gift__item">
+          <div class="gift__icon icon-gift"></div>
+          <p class="gift__item-text">
+            Красиво оформим выбранные впечатления
+          </p>
+        </div>
+        <div class="gift__item">
+          <div class="gift__icon icon-delivery"></div>
+          <p class="gift__item-text">
+            Быстро доставим удобным способом
+          </p>
+        </div>
+        <div class="gift__item">
+          <div class="gift__icon icon-calendar"></div>
+          <p class="gift__item-text">
+            Сертификат действует в течение 300 дней
+          </p>
+        </div>
+        <div class="gift__item">
+          <div class="gift__icon icon-happy"></div>
+          <p class="gift__item-text">
+            Яркие впечатления – идеальный подарок
+          </p>
+        </div>
+        <div class="gift__item">
+          <div class="gift__icon icon-location"></div>
+          <p class="gift__item-text">
+            Один сертификат – несколько мест проведения
+          </p>
+        </div>
+        <div class="gift__item">
+          <div class="gift__icon icon-time"></div>
+          <p class="gift__item-text">
+            7 лет дарим незабываемые впечатления
+          </p>
+        </div>
+        <div class="gift__item">
+          <div class="gift__icon icon-support"></div>
+          <p class="gift__item-text">
+            Клиентская поддержка 24/7
+          </p>
+        </div>
+      </div>
+      <img class="gift__image" src="images/gift/gift-bg.jpg" alt="">
+    </div>
+  </section>
+
+  <section class="extra">
+    <div class="container">
+      <div class="extra__box">
+        <h2 class="extra__title title">
+          Смотрите также
+        </h2>
+        <div class="extra__item">
+          <div class="extra__text">
+            Топ-10
+          </div>
+          <div class="extra__text">
+            Новые
+          </div>
+          <div class="extra__text">
+            Просмотренные
+          </div>
+        </div>
+      </div>
+      <div class="extra__swiper swiper">
+        <div class="extra__inner card swiper-wrapper">
+          <div class="card__item swiper-slide">
+            <img class="card__image" src="images/set/13.jpg" alt="">
+            <div class="card__box">
+              <div class="card__rating rating rating--js">
+                <div class="rating__body">
+                  <div class="rating__active"></div>
+                  <div class="rating__items">
+                    <input class="rating__item" type="radio" name="star" value="1">
+                    <input class="rating__item" type="radio" name="star" value="2">
+                    <input class="rating__item" type="radio" name="star" value="3">
+                    <input class="rating__item" type="radio" name="star" value="4">
+                    <input class="rating__item" type="radio" name="star" value="5">
+                  </div>
+                </div>
+                <div class="rating__value">3.6</div>
+              </div>
+              <a class="card__link link" href="#">
+                382 отзыва
+              </a>
+            </div>
+            <h3 class="card__subtitle">
+              Запись альбома (4 песни)
+            </h3>
+            <div class="card__item-box">
+              <p class="card__text">
+                Хотите миновать столичные пробки на мотоцикле?
+              </p>
+              <p class="card__text">
+                Хотите чувствовать свободу? Этот урок позволит в...
+                <a class="card__text-link" href="#">
+                  еще
+                </a>
+              </p>
+            </div>
+            <div class="card__price">
+              <a class="card__button button" href="#">
+                Купить
+              </a>
+              <div class="card__price-box">
+                <span class="card__price-content">
+                  2 700 ₽
+                </span>
+                <span class="card__price-content card__price-content--old">
+                  2 900 ₽
+                </span>
+              </div>
+            </div>
+            <div class="card__info">
+              <div class="card__info-content">
+                <div class="card__info-subtitle">
+                  Комплектация
+                </div>
+                <div class="card__info-text">
+                  Максимальная (4 человека, 2 часа)
+                </div>
+              </div>
+              <div class="card__info-hidden">
+                <div class="card__info-box">
+                  <input class="card__input" name="price" type="radio">
+                  Минимальная
+                  <span class="card__input-opacity">
+                    (1 495₽, 1 человек, 1 час)
+                  </span>
+                  </input>
+                </div>
+                <div class="card__info-box">
+                  <input class="card__input" name="price" type="radio">
+                  Средняя
+                  <span class="card__input-opacity">
+                    (2 495₽, 2 человека, 2 часа)
+                  </span>
+                  </input>
+                </div>
+                <div class="card__info-box">
+                  <input class="card__input" name="price" type="radio">
+                  Максимальная
+                  <span class="card__input-opacity">
+                    (3 495₽, 4 человека, 2 часа)
+                  </span>
+                  </input>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card__item swiper-slide">
+            <img class="card__image" src="images/set/14.jpg" alt="">
+            <div class="card__box">
+              <div class="card__rating rating rating--js">
+                <div class="rating__body">
+                  <div class="rating__active"></div>
+                  <div class="rating__items">
+                    <input class="rating__item" type="radio" name="star" value="1">
+                    <input class="rating__item" type="radio" name="star" value="2">
+                    <input class="rating__item" type="radio" name="star" value="3">
+                    <input class="rating__item" type="radio" name="star" value="4">
+                    <input class="rating__item" type="radio" name="star" value="5">
+                  </div>
+                </div>
+                <div class="rating__value">3.6</div>
+              </div>
+              <a class="card__link link" href="#">
+                382 отзыва
+              </a>
+            </div>
+            <h3 class="card__subtitle">
+              Рыбацкая деревня
+            </h3>
+            <div class="card__item-box">
+              <p class="card__text">
+                Хотите миновать столичные пробки на мотоцикле?
+              </p>
+              <p class="card__text">
+                Хотите чувствовать свободу? Этот урок позволит в...
+                <a class="card__text-link" href="#">
+                  еще
+                </a>
+              </p>
+            </div>
+            <div class="card__price">
+              <a class="card__button button" href="#">
+                Купить
+              </a>
+              <div class="card__price-box">
+                <span class="card__price-content">
+                  2 700 ₽
+                </span>
+                <span class="card__price-content card__price-content--old">
+                  2 900 ₽
+                </span>
+              </div>
+            </div>
+            <div class="card__info">
+              <div class="card__info-content">
+                <div class="card__info-subtitle">
+                  Комплектация
+                </div>
+                <div class="card__info-text">
+                  Максимальная (4 человека, 2 часа)
+                </div>
+              </div>
+              <div class="card__info-hidden">
+                <div class="card__info-box">
+                  <input class="card__input" name="price" type="radio">
+                  Минимальная
+                  <span class="card__input-opacity">
+                    (1 495₽, 1 человек, 1 час)
+                  </span>
+                  </input>
+                </div>
+                <div class="card__info-box">
+                  <input class="card__input" name="price" type="radio">
+                  Средняя
+                  <span class="card__input-opacity">
+                    (2 495₽, 2 человека, 2 часа)
+                  </span>
+                  </input>
+                </div>
+                <div class="card__info-box">
+                  <input class="card__input" name="price" type="radio">
+                  Максимальная
+                  <span class="card__input-opacity">
+                    (3 495₽, 4 человека, 2 часа)
+                  </span>
+                  </input>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card__item swiper-slide">
+            <img class="card__image" src="images/set/15.jpg" alt="">
+            <div class="card__box">
+              <div class="card__rating rating rating--js">
+                <div class="rating__body">
+                  <div class="rating__active"></div>
+                  <div class="rating__items">
+                    <input class="rating__item" type="radio" name="star" value="1">
+                    <input class="rating__item" type="radio" name="star" value="2">
+                    <input class="rating__item" type="radio" name="star" value="3">
+                    <input class="rating__item" type="radio" name="star" value="4">
+                    <input class="rating__item" type="radio" name="star" value="5">
+                  </div>
+                </div>
+                <div class="rating__value">3.6</div>
+              </div>
+              <a class="card__link link" href="#">
+                382 отзыва
+              </a>
+            </div>
+            <h3 class="card__subtitle">
+              Танцевальный мастер-класс
+            </h3>
+            <div class="card__item-box">
+              <p class="card__text">
+                Хотите миновать столичные пробки на мотоцикле?
+              </p>
+              <p class="card__text">
+                Хотите чувствовать свободу? Этот урок позволит в...
+                <a class="card__text-link" href="#">
+                  еще
+                </a>
+              </p>
+            </div>
+            <div class="card__price">
+              <a class="card__button button" href="#">
+                Купить
+              </a>
+              <div class="card__price-box">
+                <span class="card__price-content">
+                  2 700 ₽
+                </span>
+                <span class="card__price-content card__price-content--old">
+                  2 900 ₽
+                </span>
+              </div>
+            </div>
+            <div class="card__info">
+              <div class="card__info-content">
+                <div class="card__info-subtitle">
+                  Комплектация
+                </div>
+                <div class="card__info-text">
+                  Максимальная (4 человека, 2 часа)
+                </div>
+              </div>
+              <div class="card__info-hidden">
+                <div class="card__info-box">
+                  <input class="card__input" name="price" type="radio">
+                  Минимальная
+                  <span class="card__input-opacity">
+                    (1 495₽, 1 человек, 1 час)
+                  </span>
+                  </input>
+                </div>
+                <div class="card__info-box">
+                  <input class="card__input" name="price" type="radio">
+                  Средняя
+                  <span class="card__input-opacity">
+                    (2 495₽, 2 человека, 2 часа)
+                  </span>
+                  </input>
+                </div>
+                <div class="card__info-box">
+                  <input class="card__input" name="price" type="radio">
+                  Максимальная
+                  <span class="card__input-opacity">
+                    (3 495₽, 4 человека, 2 часа)
+                  </span>
+                  </input>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__item">
+          <div class="footer__text">
+            <div class="footer__icon icon-loca"></div>
+            Адрес офиса
+          </div>
+          <div class=" footer__info">
+            125481, Москва, ул. Свободы, д. 95, корп. 2
+          </div>
+        </div>
+        <div class="footer__item">
+          <div class="footer__text">
+            <div class="footer__icon icon-watch"></div>
+            Время работы
+          </div>
+          <div class="footer__info">
+            Ежедневно с 09:00 до 21:00
+          </div>
+        </div>
+        <div class="footer__item">
+          <div class="footer__text">
+            <div class="footer__icon icon-phone"></div>
+            Телефон
+          </div>
+          <a class="footer__info footer__info--phone" href="tel:+74950232888">
+            +7 (495) 023-28-88
+          </a>
+        </div>
+        <div class="footer__item">
+          <div class="footer__text">
+            <div class="footer__icon icon-email"></div>
+            Почтовый адрес
+          </div>
+          <a class="footer__info footer__info--email" href="mailto:info@vpechatlenie.ru" target="_blank">
+            info@vpechatlenie.ru
+          </a>
+        </div>
+        <div class="footer__item">
+          <div class="footer__text">
+            <div class="footer__icon icon-support"></div>
+            Служба качества
+          </div>
+          <div class="footer__info">
+            Нам очень важно, чтобы вы остались довольны
+          </div>
+        </div>
+      </div>
+      <div class="footer__content">
+        <div class="footer__item">
+          <a class="footer__logo logo" href="#">
+            <img class="logo__image" src="images/logo-footer.png" alt="">
+          </a>
+          <div class="footer__info">
+            ©2022 ИП Лазовская А.В.
+          </div>
+        </div>
+        <div class="footer__item">
+          <div class="footer__box">
+            <a class="footer__box-icon" href="#">
+              <div class="footer__icon-social icon-vk"></div>
+            </a>
+            <a class="footer__box-icon" href="#">
+              <div class="footer__icon-social icon-youtube"></div>
+            </a>
+          </div>
+          <button class="footer__button">
+            Подписатьcя на рассылку
+          </button>
+          <a class="footer__link" href="#">
+            Пользовательское соглашение
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="./js/jquery.formstyler.min.js"></script>
+  <script src="./js/nouislider.min.js"></script>
+  <script src="./js/wNumb.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

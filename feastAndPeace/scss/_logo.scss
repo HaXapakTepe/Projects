@@ -1,0 +1,15 @@
+.logo {
+  display: flex;
+  align-items: center;
+  @include fluid(gap, 10px, 20px);
+
+  &__img {
+    @include fluid(width, 80px, 112px);
+    @include fluid(height, 80px, 112px);
+  }
+
+  &__text {
+    @include fluid(font-size, 14px, 16px);
+    color: #AABAC2;
+  }
+}

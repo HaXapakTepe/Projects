@@ -1,0 +1,104 @@
+.design {
+  @include fluid(margin-top, 30px, 75px);
+
+  &__title {
+    @include fluid(margin-bottom, 20px, 80px);
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include fluid(gap, 25px, 56px);
+    @include fluid(margin-bottom, 30px, 60px);
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &-box {
+      display: flex;
+      flex-direction: column;
+      @include fluid(margin-bottom, 20px, 30px);
+    }
+
+    &-text {
+      max-width: 493px;
+      font-weight: 500;
+    }
+
+    &-title {
+      font-weight: 700;
+      @include fluid(font-size, 20px, 22px);
+    }
+
+    &-img {
+      @include fluid(height, 320px, 360px);
+      object-fit: cover;
+      border-radius: 20px;
+    }
+  }
+
+  &__step {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @include fluid(column-gap, 15px, 20px);
+    @include fluid(row-gap, 30px, 60px);
+    @include fluid(margin-bottom, 35px, 70px);
+    counter-reset: num;
+
+    &-num {
+      position: relative;
+      font-weight: 800;
+      @include fluid(font-size, 44px, 70px);
+      line-height: 1.2;
+      color: #B4B4B4;
+
+      &:before {
+        content: counter(num, decimal-leading-zero);
+        counter-increment: num;
+      }
+    }
+
+    &-text {
+      @include fluid(padding-top, 10px, 15px);
+      border-top: 1px solid #B4B4B4;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .design {
+    &__step {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__info {
+      &-img {
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .design {
+
+    &__step,
+    &__info {
+      grid-template-columns: 1fr;
+    }
+
+    &__info {
+      &-title {
+        font-size: 18px;
+      }
+
+      &-img {
+        order: -1;
+        height: 320px;
+      }
+    }
+  }
+}

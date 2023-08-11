@@ -1,0 +1,89 @@
+.modalDishes {
+  display: none;
+  width: 100%;
+  @include fluid(max-width, 938px, 1426px);
+  margin-left: auto;
+  margin-right: auto;
+
+  &.fancybox__content {
+    .f-button.is-close-btn {
+      @include fluid(top, 45px, 60px);
+      @include fluid(right, 45px, 60px);
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 15px, 28px);
+    @include fluid(padding, 30px, 60px);
+    border-radius: 40px;
+    overflow-x: hidden;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__target {
+    @include fluid(padding-top, 5px, 10px);
+    @include fluid(padding-bottom, 5px, 10px);
+    @include fluid(padding-left, 8px, 16px);
+    @include fluid(padding-right, 8px, 16px);
+    @include fluid(font-size, 12px, 14px);
+    border-radius: 58px;
+    background-color: #fff;
+    color: #AABAC2;
+    border: 1px solid #AABAC2;
+    transition: background-color .38s ease-in-out,
+      color .38s ease-in-out,
+      border .38s ease-in-out;
+    line-height: 1;
+    cursor: pointer;
+
+    &:hover,
+    &.tab__target--active {
+      border-color: transparent;
+      background-color: #7AC8C9;
+      color: #fff;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr .47fr;
+    @include fluid(column-gap, 15px, 30px);
+  }
+
+  .select2 {
+    &-selection__arrow {
+      &::before {
+        right: 23px;
+      }
+
+      &::after {
+        right: 20px;
+      }
+    }
+
+    &-container {
+      &--default {
+        .select2-selection--single {
+          border-radius: 30px;
+
+          .select2-selection__rendered {
+            border-radius: 30px;
+            @include fluid(padding-top, 8px, 15.5px);
+            @include fluid(padding-bottom, 8px, 15.5px);
+            @include fluid(padding-left, 10px, 20px);
+            @include fluid(padding-right, 10px, 20px);
+          }
+        }
+      }
+    }
+  }
+
+  .card {
+    grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+  }
+}

@@ -1,0 +1,25 @@
+.phone {
+  display: flex;
+  align-items: center;
+  @include fluid(gap, 10px, 15px);
+  @include fluid(font-size, 16px, 18px);
+  font-weight: 700;
+  line-height: 1;
+  color: inherit;
+  white-space: nowrap;
+  transition: color .38s ease-in-out;
+
+  &:hover {
+    color: #FF4B23;
+
+    .phone__icon {
+      color: #FF4B23;
+    }
+  }
+
+  &__icon {
+    transition: color .38s ease-in-out;
+    color: #7AC8C9;
+    @include fluid(font-size, 18px, 20px);
+  }
+}

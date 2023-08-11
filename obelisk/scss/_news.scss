@@ -1,0 +1,110 @@
+.news {
+  @include fluid(margin-top, 30px, 120px);
+  @include fluid(margin-bottom, 30px, 116px);
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include fluid(margin-bottom, 20px, 62px);
+  }
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-top: auto;
+    @include fluid(font-size, 12px, 14px);
+    line-height: 1.2;
+    color: #E2AD51;
+    padding-right: 15px;
+  }
+
+  &__icon {
+    margin-left: 5px;
+    font-size: 10px;
+    color: #E2AD51;
+    animation: arrow 1.3s linear infinite;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @include fluid(gap, 15px, 20px);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #B0B9C3;
+    border-radius: 20px;
+    transition: border-color .38s ease-in-out;
+
+    &:hover {
+      border-color: #E2AD51;
+    }
+
+    &-img {
+      border-radius: 20px 20px 0 0;
+      @include fluid(height, 180px, 220px);
+      object-fit: cover;
+    }
+
+    &-box {
+      display: flex;
+      flex-direction: column;
+      @include fluid(padding-top, 10px, 20px);
+      @include fluid(padding-bottom, 15px, 30px);
+      @include fluid(padding-left, 15px, 30px);
+      @include fluid(padding-right, 15px, 30px);
+      height: 100%;
+    }
+
+    &-time {
+      display: block;
+      @include fluid(font-size, 12px, 14px);
+      line-height: 1.2;
+      color: #B0B9C3;
+      @include fluid(margin-bottom, 10px, 15px);
+    }
+
+    &-text {
+      @include fluid(font-size, 12px, 14px);
+      line-height: 1.2;
+      font-weight: 300;
+      color: #3A3A3A;
+      @include fluid(margin-bottom, 15px, 25px);
+      width: 90%;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .news {
+    &__item {
+      &:hover {
+        border-color: #B0B9C3;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .news {
+    &__inner {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .news {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+  }
+}

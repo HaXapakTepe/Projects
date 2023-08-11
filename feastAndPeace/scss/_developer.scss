@@ -1,0 +1,25 @@
+.developer {
+  position: relative;
+  @include fluid(padding-right, 63px, 73px);
+  color: #fff;
+  font-family: 'Gotham Pro';
+  transition: color .38s ease-in-out;
+  font-size: 14px;
+
+  &:hover {
+    color: #F43E36;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 45%;
+    right: 0;
+    transform: translateY(-52%);
+    width: 53px;
+    height: 42px;
+    background-image: url("../images/icons/sa.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
