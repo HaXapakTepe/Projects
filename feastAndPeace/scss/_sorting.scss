@@ -30,4 +30,8 @@
       @include fluid(padding-right, 15px, 25px);
     }
   }
+
+  &__select {
+    position: relative;
+  }
 }
