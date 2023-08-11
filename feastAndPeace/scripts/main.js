@@ -6,7 +6,7 @@ $(document).ready(function () {
   $('.sorting__select-item').select2({
     placeholder: 'Выбор чего-то там',
     closeOnSelect: false,
-    dropdownParent: $('.sorting__select'),
+    dropdownParent: $('.sorting'),
   })
 
   Fancybox.bind('[data-fancybox]', {

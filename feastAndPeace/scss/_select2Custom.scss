@@ -106,7 +106,7 @@
   }
 }
 
-.sorting__select {
+.sorting {
   .select2 {
     &-search {
       &--dropdown {
@@ -114,7 +114,11 @@
       }
 
       &--inline {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
         @include fluid(margin-top, 4px, -3px);
+        padding: 0 10px;
       }
     }
 
