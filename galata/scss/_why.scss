@@ -1,0 +1,118 @@
+.why {
+  @include fluid(margin-top, 30px, 80px);
+  @include fluid(margin-bottom, 30px, 193px);
+
+  &__title {
+    max-width: 300px;
+    @include fluid(margin-bottom, 20px, 60px);
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    @include fluid(gap, 10px, 22px);
+    @include fluid(margin-bottom, 15px, 33px);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 20px, 60px);
+    border-radius: 24px;
+    background-color: #EEF1FB;
+    @include fluid(padding, 12px, 24px);
+
+    &-icon {
+      @include fluid(width, 40px, 50px);
+      @include fluid(height, 40px, 50px);
+    }
+
+    &-text {
+      color: #000;
+      font-weight: 500;
+      letter-spacing: -0.6px;
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    @include fluid(gap, 10px, 20px);
+    @include fluid(margin-bottom, 20px, 44px);
+
+    &-text {
+      @include fluid(padding-top, 12px, 24px);
+      @include fluid(padding-bottom, 12px, 24px);
+      @include fluid(padding-left, 16px, 32px);
+      @include fluid(padding-right, 16px, 32px);
+      border-radius: 40px;
+      font-weight: 500;
+
+      &--mint {
+        background-color: #B7E8DF;
+      }
+
+      &--orange {
+        background-color: #FEE8A9;
+      }
+
+      &--black {
+        background-color: #1E1E1E;
+        color: #fff;
+      }
+
+      &--pink {
+        background-color: #FBDFE3;
+      }
+    }
+  }
+
+  .btn {
+    @include fluid(margin-left, 10px, 15px);
+  }
+}
+
+@media (max-width: 992px) {
+  .why {
+    &__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__box {
+      justify-content: center;
+
+      &-text {
+        text-align: center;
+      }
+    }
+
+    .btn {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .why {
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .why {
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+
+    &__item {
+      align-items: center;
+
+      &-text {
+        text-align: center;
+      }
+    }
+  }
+}

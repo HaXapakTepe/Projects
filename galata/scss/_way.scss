@@ -1,0 +1,83 @@
+.way {
+  display: none;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    @include fluid(margin-bottom, 8px, 16px);
+  }
+
+  &__label {
+    position: relative;
+    @include fluid(padding-top, 4px, 8px);
+    @include fluid(padding-bottom, 4px, 8px);
+    @include fluid(padding-left, 6px, 12px);
+    @include fluid(padding-right, 6px, 12px);
+    border-radius: 8px;
+    border: 1px solid #000;
+    cursor: pointer;
+    overflow: hidden;
+
+    &-input {
+      &:checked {
+        +.way__label-inputCustom {
+          color: #fff;
+          background-color: #020202;
+          opacity: 1;
+
+          +.way__label-text {
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    &-inputCustom {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 102%;
+      height: 102%;
+      border-radius: 8px;
+      background-color: transparent;
+      transition: background-color 0.38s ease-in-out;
+      opacity: 0;
+      z-index: -1;
+    }
+
+    &-text {
+      @include fluid(font-size, 12px, 14px);
+      line-height: 1.4;
+      letter-spacing: -0.1px;
+      transition: color .38s ease-in-out;
+
+      span {
+        font-weight: 800;
+        line-height: 1.4;
+        letter-spacing: -0.1px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &__title {
+    @include fluid(font-size, 16px, 20px);
+    line-height: normal;
+  }
+
+  &__add {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    color: #999;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.38s ease-in-out;
+
+    &:hover {
+      color: #000;
+    }
+  }
+}

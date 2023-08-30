@@ -1,0 +1,47 @@
+.delivery {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &__fieldset {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+
+    &-box {
+      display: flex;
+      @include fluid(gap, 20px, 40px);
+    }
+  }
+
+  &__label {
+    color: #272937;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.3px;
+    cursor: text;
+
+    span {
+      color: #F73F1D;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    @include fluid(padding-top, 7px, 14px);
+    @include fluid(padding-bottom, 7px, 14px);
+    @include fluid(padding-left, 10px, 20px);
+    @include fluid(padding-right, 10px, 20px);
+    margin-top: 8px;
+    border-radius: 8px;
+    outline: 1px solid rgba(39, 41, 55, 0.12);
+    background-color: #fff;
+  }
+
+  &__flex {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+}

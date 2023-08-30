@@ -1,0 +1,65 @@
+.shopping {
+  @include fluid(padding-top, 30px, 80px);
+  @include fluid(padding-bottom, 30px, 104px);
+  background-color: #262739;
+  color: #fff;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr .95fr;
+    align-items: center;
+    @include fluid(gap, 35px, 73px);
+  }
+
+  &__title {
+    max-width: 300px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 15px, 32px);
+
+    &-box {
+      display: flex;
+      align-items: center;
+      @include fluid(gap, 10px, 16px);
+    }
+  }
+
+  &__img {
+    max-width: 426px;
+    margin-left: auto;
+    @include fluid(height, 240px, 258px);
+  }
+}
+
+@media (max-width: 768px) {
+  .shopping {
+    &__title {
+      max-width: unset;
+      text-align: center;
+    }
+
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+
+    &__item {
+      &-text {
+        text-align: center;
+      }
+
+      &-box {
+        justify-content: center;
+      }
+    }
+
+    &__img {
+      margin-left: auto;
+      margin-right: auto;
+      -o-object-fit: contain;
+      object-fit: contain;
+    }
+  }
+}

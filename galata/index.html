@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/dark-favicon.svg" type="x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="./css/icons.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css?v=0.0002">
+  <title>Главная</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="#">
+            <img class="logo__img" src="./images/logo-dark.svg" alt="">
+          </a>
+          <nav>
+            <ul class="menu menu--header">
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Как это работает?
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Магазины
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Отзывы
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  FAQ
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Контакты
+                </a>
+              </li>
+              <li class="menu__item menu__item--hidden">
+                <p class="currency">
+                  <span>
+                    1 ₺
+                  </span>
+                  Турецкая лира
+                  <span>
+                    =
+                    3,45 ₽
+                  </span>
+                </p>
+              </li>
+              <li class="menu__item menu__item--hidden">
+                <a class="link link--skyblue" href="">
+                  Войти
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <p class="currency">
+            <span>
+              1 ₺
+            </span>
+            Турецкая лира
+            <span>
+              =
+              3,45 ₽
+            </span>
+          </p>
+          <a class="link link--black" href="">
+            Войти
+          </a>
+          <div class="burger">
+            <div class="burger__line"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <main class="main">
+
+
+      <section class="top">
+        <div class="container">
+          <div class="top__inner">
+            <div class="top__item">
+              <p class="top__item-text">
+                Удобный сервис по заказу товаров от мировых брендов из Турции
+              </p>
+              <h1 class="top__item-title">
+                Заказывайте любимые бренды без комиссий
+              </h1>
+              <p class="top__item-text">
+                Оплачивайте только доставку
+              </p>
+              <form class="delivery" action="">
+                <fieldset class="delivery__fieldset">
+                  <div class="delivery__box">
+                    <select class="delivery__select">
+                      <option></option>
+                      <option value="1">Выбор 1</option>
+                      <option value="2">Выбор 2</option>
+                      <option value="3">Выбор 3</option>
+                      <option value="4">Выбор 4</option>
+                      <option value="5">Выбор 5</option>
+                      <option value="6">Выбор 6</option>
+                    </select>
+                  </div>
+                  <div class="delivery__fieldset-box">
+                    <label class="delivery__label">
+                      Вес (кг)<span>*</span>
+                      <input class="delivery__input" type="text" required>
+                    </label>
+                    <label class="delivery__label">
+                      Стоимость (руб)
+                      <input class="delivery__input" type="text">
+                    </label>
+                  </div>
+                </fieldset>
+                <div class="delivery__flex">
+                  <button class="btn">
+                    Рассчитать
+                  </button>
+                  <button class="btn btn--seawave">
+                    Оформить заказ
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="top__grid">
+              <img class="top__grid-img" data-fancybox="gallery" src="./images/top/1.jpg" alt="">
+              <img class="top__grid-img" data-fancybox="gallery" src="./images/top/2.jpg" alt="">
+              <img class="top__grid-img" data-fancybox="gallery" src="./images/top/3.jpg" alt="">
+              <img class="top__grid-img" data-fancybox="gallery" src="./images/top/4.jpg" alt="">
+              <img class="top__grid-img" data-fancybox="gallery" src="./images/top/5.jpg" alt="">
+              <img class="top__grid-img" data-fancybox="gallery" src="./images/top/6.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="why">
+        <div class="container">
+          <h2 class="why__title">
+            Почему
+            выбирают нас?
+          </h2>
+          <div class="why__grid">
+            <div class="why__item">
+              <div class="why__item-icon">
+                <img src="./images/why/ruble.svg" alt="">
+              </div>
+              <p class="why__item-text">
+                Мы принимаем карты любых российских банков
+              </p>
+            </div>
+            <div class="why__item">
+              <div class="why__item-icon">
+                <img src="./images/why/phone.svg" alt="">
+              </div>
+              <p class="why__item-text">
+                Мы не берем комиссию
+              </p>
+            </div>
+            <div class="why__item">
+              <div class="why__item-icon">
+                <img src="./images/why/track.svg" alt="">
+              </div>
+              <p class="why__item-text">
+                Мы отслеживаем весь путь заказа: от магазина до нашего склада
+              </p>
+            </div>
+            <div class="why__item">
+              <div class="why__item-icon">
+                <img src="./images/why/box.svg" alt="">
+              </div>
+              <p class="why__item-text">
+                Мы бесплатно храним, объединяем и упаковываем посылки
+              </p>
+            </div>
+            <div class="why__item">
+              <div class="why__item-icon">
+                <img src="./images/why/truck.svg" alt="">
+              </div>
+              <p class="why__item-text">
+                Мы доставляем ваши товары в кратчайшие сроки
+              </p>
+            </div>
+          </div>
+          <div class="why__box">
+            <p class="why__box-text why__box-text--mint">
+              Доступ к коллекциям популярных брендов, которых нет в России
+            </p>
+            <p class="why__box-text why__box-text--orange">
+              Экономьте своё время: шопинг на турецких сайтах в один клик
+            </p>
+            <p class="why__box-text why__box-text--black">
+              Объединяйте свои заказы из разных магазинов в одну посылку
+            </p>
+            <p class="why__box-text why__box-text--pink">
+              Приобретайте товары по текущему курсу без байерской комиссии
+            </p>
+          </div>
+          <button class="btn btn--seawave">
+            Оформить заказ
+          </button>
+        </div>
+      </section>
+
+
+      <section class="how">
+        <div class="container">
+          <h2 class="how__title">
+            Как работает наш сервис?
+          </h2>
+          <div class="how__inner">
+            <div class="how__item">
+              <div class="how__item-icon">
+                <span class="how__item-num"></span>
+                <img class="how__item-img" src="./images/how/1.svg" alt="">
+              </div>
+              <div class="how__item-title">
+                Регистрация на сайте
+              </div>
+              <div class="how__item-text">
+                Пройдите простую процедуру верификации с помощью электронной почты
+              </div>
+            </div>
+            <div class="how__item">
+              <div class="how__item-icon">
+                <span class="how__item-num"></span>
+                <img class="how__item-img" src="./images/how/2.svg" alt="">
+              </div>
+              <div class="how__item-title">
+                Оформление заказа
+              </div>
+              <div class="how__item-text">
+                Заполните необходимые поля в форме заказа и дождитесь уведомления на электронный ящик
+              </div>
+            </div>
+            <div class="how__item">
+              <div class="how__item-icon">
+                <span class="how__item-num"></span>
+                <img class="how__item-img" src="./images/how/3.svg" alt="">
+              </div>
+              <div class="how__item-title">
+                Оплата товара
+              </div>
+              <div class="how__item-text">
+                В личном кабинете оплатите ваш заказ(ы) любым, удобным способом
+              </div>
+            </div>
+            <div class="how__item">
+              <div class="how__item-icon">
+                <span class="how__item-num"></span>
+                <img class="how__item-img" src="./images/how/4.svg" alt="">
+              </div>
+              <div class="how__item-title">
+                Поступление на склад
+              </div>
+              <div class="how__item-text">
+                Ожидайте уведомление на электронную почту о поступлении вашего товара(ов) на наш склад в Турции
+              </div>
+            </div>
+            <div class="how__item">
+              <div class="how__item-icon">
+                <span class="how__item-num"></span>
+                <img class="how__item-img" src="./images/how/5.svg" alt="">
+              </div>
+              <div class="how__item-title">
+                Создание посылки
+              </div>
+              <div class="how__item-text">
+                В личном кабинете выберите нужный заказ и нажмите «создать посылку». Вы можете объединить несколько
+                своих заказов в одну посылку
+              </div>
+            </div>
+            <div class="how__item">
+              <div class="how__item-icon">
+                <span class="how__item-num"></span>
+                <img class="how__item-img" src="./images/how/6.svg" alt="">
+              </div>
+              <div class="how__item-title">
+                Оплата доставки
+              </div>
+              <div class="how__item-text">
+                Вам будет выставлен счёт. После оплаты доставки, посылке присваивается трек-номер. Статус отправления
+                можно отслеживать в личном кабинете
+              </div>
+            </div>
+          </div>
+          <button class="btn btn--seawave">
+            Оформить заказ
+          </button>
+        </div>
+      </section>
+
+
+      <section class="shopping">
+        <div class="container">
+          <div class="shopping__inner">
+            <div class="shopping__item">
+              <h2 class="shopping__title">
+                Шопинг в один клик с galata
+              </h2>
+              <p class="shopping__item-text">
+                Мы работаем с самыми известными и крупными брендами, которые ушли из России. С помощью нашей площадки вы
+                можете сделать заказ, практически, в любом онлайн магазине в Турции, в том числе и на крупнейшем
+                маркетплейсе trendyol
+              </p>
+              <p class="shopping__item-text">
+                Шопинг в один клик еще никогда не был таким быстрым и выгодным. Цены на одни и те же товары в Турции и
+                России могут отличаться по цене
+              </p>
+              <div class="shopping__item-box">
+                <a class="link link--transparent" href="#">
+                  Магазины
+                </a>
+                <a class="link" href="#">
+                  Узнать больше
+                </a>
+              </div>
+            </div>
+            <img class="shopping__img" src="./images/shopping/1.png" alt="">
+          </div>
+        </div>
+      </section>
+
+
+      <section class="loyalty">
+        <div class="container">
+          <div class="loyalty__inner">
+            <div class="loyalty__item">
+              <h2 class="loyalty__title">
+                Поднимай свой статус и экономь на доставке
+              </h2>
+              <p class="loyalty__item-text">
+                Программа лояльности GALATA STATUS – позволяет вам ещё больше экономить: чем больше вы приобретаете
+                товаров через нас, тем выше ваш СТАТУС и больше скидка на доставку
+              </p>
+              <div class="loyalty__item-box">
+                <button class="btn btn--seawave">
+                  Оформить заказ
+                </button>
+                <a class="link link--loyalty" href="#">
+                  Узнать больше
+                </a>
+              </div>
+            </div>
+            <img class="loyalty__img" src="./images/loyalty/1.png" alt="">
+          </div>
+        </div>
+      </section>
+
+
+      <section class="say">
+        <div class="container">
+          <h2 class="say__title">
+            Что говорят о нас клиенты
+          </h2>
+          <div class="say__inner">
+            <div class="say__swiper swiper">
+              <div class="say__wrapper swiper-wrapper">
+                <div class="say__slide swiper-slide">
+                  <div class="say__slide-box">
+                    <p class="say__slide-name">
+                      Екатерина
+                    </p>
+                    <div class="say__slide-rating">
+                      <div class="say__slide-star icon-star"></div>
+                      <div class="say__slide-star icon-star"></div>
+                      <div class="say__slide-star icon-star"></div>
+                      <div class="say__slide-star icon-star"></div>
+                      <div class="say__slide-star icon-star"></div>
+                    </div>
+                  </div>
+                  <time class="say__slide-date" datetime="2023-03-25">
+                    25.03.2023
+                  </time>
+                  <p class="say__slide-text">
+                    Спасибо сервису все доставили раньше времени, а так же было очень удобно следить за своим заказом
+                    в
+                    личном кабинете
+                  </p>
+                </div>
+                <div class="say__slide swiper-slide">
+                  <div class="say__slide-box">
+                    <p class="say__slide-name">
+                      Владимир
+                    </p>
+                    <div class="say__slide-rating">
+                      <div class="say__slide-star icon-star"></div>
+                      <div class="say__slide-star icon-star"></div>
+                      <div class="say__slide-star icon-star"></div>
+                      <div class="say__slide-star icon-star"></div>
+                      <div class="say__slide-star icon-star"></div>
+                    </div>
+                  </div>
+                  <time class="say__slide-date" datetime="2023-03-25">
+                    25.03.2023
+                  </time>
+                  <p class="say__slide-text">
+                    Спасибо сервису все доставили раньше времени, а так же было очень удобно следить за своим заказом
+                    в
+                    личном кабинете
+                  </p>
+                </div>
+                <div class="say__slide swiper-slide">
+                  <div class="say__slide-box">
+                    <p class="say__slide-name">
+                      Эрик
+                    </p>
+                    <div class="say__slide-rating">
+                      <div class="say__slide-star icon-star"></div>
+                      <div class="say__slide-star icon-star"></div>
+                      <div class="say__slide-star icon-star"></div>
+                      <div class="say__slide-star icon-star"></div>
+                      <div class="say__slide-star icon-star"></div>
+                    </div>
+                  </div>
+                  <time class="say__slide-date" datetime="2023-03-25">
+                    25.03.2023
+                  </time>
+                  <p class="say__slide-text">
+                    Спасибо сервису все доставили раньше времени, а так же было очень удобно следить за своим заказом
+                    в
+                    личном кабинете
+                  </p>
+                </div>
+                <div class="say__slide swiper-slide">
+                  <div class="say__slide-box">
+                    <p class="say__slide-name">
+                      Екатерина
+                    </p>
+                    <div class="say__slide-rating">
+                      <div class="say__slide-star icon-star"></div>
+                      <div class="say__slide-star icon-star"></div>
+                      <div class="say__slide-star icon-star"></div>
+                      <div class="say__slide-star icon-star"></div>
+                      <div class="say__slide-star icon-star"></div>
+                    </div>
+                  </div>
+                  <time class="say__slide-date" datetime="2023-03-25">
+                    25.03.2023
+                  </time>
+                  <p class="say__slide-text">
+                    Спасибо сервису все доставили раньше времени, а так же было очень удобно следить за своим заказом
+                    в
+                    личном кабинете
+                  </p>
+                </div>
+                <div class="say__slide swiper-slide">
+                  <div class="say__slide-box">
+                    <p class="say__slide-name">
+                      Владимир
+                    </p>
+                    <div class="say__slide-rating">
+                      <div class="say__slide-star icon-star"></div>
+                      <div class="say__slide-star icon-star"></div>
+                      <div class="say__slide-star icon-star"></div>
+                      <div class="say__slide-star icon-star"></div>
+                      <div class="say__slide-star icon-star"></div>
+                    </div>
+                  </div>
+                  <time class="say__slide-date" datetime="2023-03-25">
+                    25.03.2023
+                  </time>
+                  <p class="say__slide-text">
+                    Спасибо сервису все доставили раньше времени, а так же было очень удобно следить за своим заказом
+                    в
+                    личном кабинете
+                  </p>
+                </div>
+                <div class="say__slide swiper-slide">
+                  <div class="say__slide-box">
+                    <p class="say__slide-name">
+                      Эрик
+                    </p>
+                    <div class="say__slide-rating">
+                      <div class="say__slide-star icon-star"></div>
+                      <div class="say__slide-star icon-star"></div>
+                      <div class="say__slide-star icon-star"></div>
+                      <div class="say__slide-star icon-star"></div>
+                      <div class="say__slide-star icon-star"></div>
+                    </div>
+                  </div>
+                  <time class="say__slide-date" datetime="2023-03-25">
+                    25.03.2023
+                  </time>
+                  <p class="say__slide-text">
+                    Спасибо сервису все доставили раньше времени, а так же было очень удобно следить за своим заказом
+                    в
+                    личном кабинете
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="say__prev swiper-button-prev"></div>
+            <div class="say__next swiper-button-next"></div>
+          </div>
+          <button class="btn">
+            Добавить отзыв
+          </button>
+        </div>
+      </section>
+
+
+      <section class="faq">
+        <div class="container">
+          <h2 class="faq__title">
+            FAQ
+          </h2>
+          <div class="faq__inner">
+            <div class="faq__item">
+              <p class="faq__item-title">
+                Сколько стоит доставка
+              </p>
+              <div class="faq__item-hidden">
+                Мы работаем с самыми известными и крупными брендами, которые ушли из России. С помощью нашей площадки вы
+                можете сделать заказ, практически, в любом онлайн магазине в Турции, в том числе и на крупнейшем
+                маркетплейсе trendyol
+              </div>
+            </div>
+            <div class="faq__item">
+              <p class="faq__item-title">
+                Сколько стоит доставка
+              </p>
+              <div class="faq__item-hidden">
+                Мы работаем с самыми известными и крупными брендами, которые ушли из России. С помощью нашей площадки вы
+                можете сделать заказ, практически, в любом онлайн магазине в Турции, в том числе и на крупнейшем
+                маркетплейсе trendyol
+              </div>
+            </div>
+            <div class="faq__item">
+              <p class="faq__item-title">
+                Сколько стоит доставка
+              </p>
+              <div class="faq__item-hidden">
+                Мы работаем с самыми известными и крупными брендами, которые ушли из России. С помощью нашей площадки вы
+                можете сделать заказ, практически, в любом онлайн магазине в Турции, в том числе и на крупнейшем
+                маркетплейсе trendyol
+              </div>
+            </div>
+            <div class="faq__item">
+              <p class="faq__item-title">
+                Сколько стоит доставка
+              </p>
+              <div class="faq__item-hidden">
+                Мы работаем с самыми известными и крупными брендами, которые ушли из России. С помощью нашей площадки вы
+                можете сделать заказ, практически, в любом онлайн магазине в Турции, в том числе и на крупнейшем
+                маркетплейсе trendyol
+              </div>
+            </div>
+            <div class="faq__item">
+              <p class="faq__item-title">
+                Сколько стоит доставка
+              </p>
+              <div class="faq__item-hidden">
+                Мы работаем с самыми известными и крупными брендами, которые ушли из России. С помощью нашей площадки вы
+                можете сделать заказ, практически, в любом онлайн магазине в Турции, в том числе и на крупнейшем
+                маркетплейсе trendyol
+              </div>
+            </div>
+            <div class="faq__item">
+              <p class="faq__item-title">
+                Сколько стоит доставка
+              </p>
+              <div class="faq__item-hidden">
+                Мы работаем с самыми известными и крупными брендами, которые ушли из России. С помощью нашей площадки вы
+                можете сделать заказ, практически, в любом онлайн магазине в Турции, в том числе и на крупнейшем
+                маркетплейсе trendyol
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="connection">
+        <div class="container">
+          <form class="connection__form" action="">
+            <h2 class="connection__title">
+              Связаться с нами возможно через почту
+              <a href="mailto:hello@galata.com">
+                hello@galata.com
+              </a>
+            </h2>
+            <p class="connection__text">
+              или
+            </p>
+            <h2 class="connection__title">
+              Оставьте свой вопрос
+            </h2>
+            <textarea class="connection__textarea" rows=8" placeholder="Напишите свой вопрос"></textarea>
+            <button class="btn">
+              Отправить
+            </button>
+          </form>
+        </div>
+      </section>
+
+
+    </main>
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <a class="logo" href="#">
+            <img class="logo__img" src="./images/logo-white.svg" alt="">
+          </a>
+          <ul class="menu menu--footer">
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Как это работает?
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Магазины
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Отзывы
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                FAQ
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <a class="link link--skyblue" href="">
+            Войти
+          </a>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__text">
+            Galata 2023
+          </div>
+          <div class="footer__box">
+            <a class="footer__text" href="#">
+              Политика конфиденциальности и&nbsp;Условия&nbsp;использования
+            </a>
+            <a class="footer__text" href="#">
+              Политика отмены и возврата
+            </a>
+            <div class="footer__text">
+              All rights resereved ©
+            </div>
+          </div>
+          <a class="footer__link" href="mailto:hello@galata.com">
+            hello@galata.com
+          </a>
+        </div>
+      </div>
+    </footer>
+
+
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/0.9.0/jquery.mask.min.js
+"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="./scripts/scripts.js?v=0.0002"></script>
+
+
+</body>
+
+</html>

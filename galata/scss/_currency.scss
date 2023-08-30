@@ -1,0 +1,17 @@
+.currency {
+  padding: 4px 8px;
+  border-radius: 16px;
+  border: 1px solid #E6E6E6;
+  background-color: #B7E8DF;
+  font-size: 12px;
+
+
+  span {
+    @include fluid(font-size, 14px, 16px);
+    color: inherit;
+
+    &:first-child {
+      font-weight: 600;
+    }
+  }
+}

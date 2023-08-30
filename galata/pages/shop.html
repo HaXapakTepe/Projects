@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../images/dark-favicon.svg" type="x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="../css/icons.css">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css?v=0.0002">
+  <title>Магазины</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="#">
+            <img class="logo__img" src="../images/logo-dark.svg" alt="">
+          </a>
+          <nav>
+            <ul class="menu menu--header">
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Как это работает?
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Магазины
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Отзывы
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  FAQ
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Контакты
+                </a>
+              </li>
+              <li class="menu__item menu__item--hidden">
+                <p class="currency">
+                  <span>
+                    1 ₺
+                  </span>
+                  Турецкая лира
+                  <span>
+                    =
+                    3,45 ₽
+                  </span>
+                </p>
+              </li>
+              <li class="menu__item menu__item--hidden">
+                <a class="link link--skyblue" href="">
+                  Войти
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <p class="currency">
+            <span>
+              1 ₺
+            </span>
+            Турецкая лира
+            <span>
+              =
+              3,45 ₽
+            </span>
+          </p>
+          <button class="btn">
+            Войти
+          </button>
+          <div class="burger">
+            <div class="burger__line"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+
+      <section class="shop">
+        <div class="container">
+          <h2 class="shop__title">
+            Магазины
+          </h2>
+          <div class="shop__inner">
+            <div class="shop__item">
+              <div class="shop__item-title shop__item-title--orange">
+                Одежда
+              </div>
+              <a class="shop__item-link" href="#">
+                ACCESSORIZE
+              </a>
+              <a class="shop__item-link" href="#">
+                BADGIO
+              </a>
+              <a class="shop__item-link" href="#">
+                MONSTRA
+              </a>
+              <a class="shop__item-link" href="#">
+                ADIDAS
+              </a>
+              <a class="shop__item-link" href="#">
+                CARGHALOI
+              </a>
+              <a class="shop__item-link" href="#">
+                ORTEGOIO
+              </a>
+              <a class="shop__item-link" href="#">
+                AGL
+              </a>
+              <a class="shop__item-link" href="#">
+                LUI
+              </a>
+              <a class="shop__item-link" href="#">
+                VIVAN VILELDI
+              </a>
+              <div class="shop__item-title shop__item-title--mint">
+                Акссесуары
+              </div>
+              <a class="shop__item-link" href="#">
+                ACCESSORIZE
+              </a>
+              <a class="shop__item-link" href="#">
+                BADGIO
+              </a>
+              <a class="shop__item-link" href="#">
+                MONSTRA
+              </a>
+              <a class="shop__item-link" href="#">
+                ADIDAS
+              </a>
+              <a class="shop__item-link" href="#">
+                CARGHALOI
+              </a>
+              <a class="shop__item-link" href="#">
+                ORTEGOIO
+              </a>
+              <a class="shop__item-link" href="#">
+                AGL
+              </a>
+              <a class="shop__item-link" href="#">
+                LUI
+              </a>
+              <a class="shop__item-link" href="#">
+                VIVAN VILELDI
+              </a>
+              <div class="shop__item-title shop__item-title--pink">
+                Электроника
+              </div>
+              <a class="shop__item-link" href="#">
+                ACCESSORIZE
+              </a>
+              <a class="shop__item-link" href="#">
+                BADGIO
+              </a>
+              <a class="shop__item-link" href="#">
+                MONSTRA
+              </a>
+              <a class="shop__item-link" href="#">
+                ADIDAS
+              </a>
+              <a class="shop__item-link" href="#">
+                CARGHALOI
+              </a>
+              <a class="shop__item-link" href="#">
+                ORTEGOIO
+              </a>
+              <a class="shop__item-link" href="#">
+                AGL
+              </a>
+              <a class="shop__item-link" href="#">
+                LUI
+              </a>
+              <a class="shop__item-link" href="#">
+                VIVAN VILELDI
+              </a>
+            </div>
+            <div class="search">
+              <label class="search__label">
+                <input class="search__label-input" type="text" placeholder="Поиск">
+                <span class="search__label-icon">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.502 2C5.80753 2 2.00195 5.80558 2.00195 10.5C2.00195 15.1944 5.80753 19 10.502 19C12.4884 19 14.3169 18.3176 15.7637 17.176L20.5877 22C20.9783 22.3905 21.6114 22.3905 22.002 22C22.3925 21.6095 22.3925 20.9763 22.002 20.5858L17.1779 15.7618C18.3196 14.3149 19.002 12.4865 19.002 10.5C19.002 5.80558 15.1964 2 10.502 2ZM4.00195 10.5C4.00195 6.91015 6.9121 4 10.502 4C14.0918 4 17.002 6.91015 17.002 10.5C17.002 12.2952 16.2755 13.9188 15.0981 15.0962C13.9208 16.2736 12.2972 17 10.502 17C6.9121 17 4.00195 14.0899 4.00195 10.5Z"
+                      fill="#272937" fill-opacity="0.35" />
+                  </svg>
+                </span>
+              </label>
+              <div class="search__letters">
+                <div class="search__letters-item">
+                  A
+                </div>
+                <div class="search__letters-item">
+                  B
+                </div>
+                <div class="search__letters-item">
+                  C
+                </div>
+                <div class="search__letters-item">
+                  D
+                </div>
+                <div class="search__letters-item">
+                  E
+                </div>
+                <div class="search__letters-item">
+                  F
+                </div>
+                <div class="search__letters-item">
+                  G
+                </div>
+                <div class="search__letters-item">
+                  H
+                </div>
+                <div class="search__letters-item">
+                  I
+                </div>
+                <div class="search__letters-item">
+                  J
+                </div>
+                <div class="search__letters-item">
+                  K
+                </div>
+                <div class="search__letters-item">
+                  L
+                </div>
+                <div class="search__letters-item">
+                  M
+                </div>
+                <div class="search__letters-item">
+                  N
+                </div>
+                <div class="search__letters-item">
+                  O
+                </div>
+                <div class="search__letters-item">
+                  P
+                </div>
+                <div class="search__letters-item">
+                  Q
+                </div>
+                <div class="search__letters-item">
+                  R
+                </div>
+                <div class="search__letters-item">
+                  S
+                </div>
+                <div class="search__letters-item">
+                  T
+                </div>
+                <div class="search__letters-item">
+                  U
+                </div>
+                <div class="search__letters-item">
+                  V
+                </div>
+                <div class="search__letters-item">
+                  W
+                </div>
+                <div class="search__letters-item">
+                  X
+                </div>
+                <div class="search__letters-item">
+                  Y
+                </div>
+                <div class="search__letters-item">
+                  Z
+                </div>
+              </div>
+              <div class="search__box">
+                <select class="search__select" multiple="multiple">
+                  <option></option>
+                  <option value="1">Одежда</option>
+                  <option value="2">Акссесуары</option>
+                  <option value="3">Электроника</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <a class="logo" href="#">
+            <img class="logo__img" src="../images/logo-white.svg" alt="">
+          </a>
+          <ul class="menu menu--footer">
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Как это работает?
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Магазины
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Отзывы
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                FAQ
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <a class="link link--skyblue" href="">
+            Войти
+          </a>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__text">
+            Galata 2023
+          </div>
+          <div class="footer__box">
+            <a class="footer__text" href="#">
+              Политика конфиденциальности и&nbsp;Условия&nbsp;использования
+            </a>
+            <a class="footer__text" href="#">
+              Политика отмены и возврата
+            </a>
+            <div class="footer__text">
+              All rights resereved ©
+            </div>
+          </div>
+          <a class="footer__link" href="mailto:hello@galata.com">
+            hello@galata.com
+          </a>
+        </div>
+      </div>
+    </footer>
+
+
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/0.9.0/jquery.mask.min.js
+"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="../scripts/scripts.js?v=0.0002"></script>
+
+
+</body>
+
+</html>

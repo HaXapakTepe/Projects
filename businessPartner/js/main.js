@@ -2,7 +2,7 @@ $(document).ready(function () {
   $('input[name=phone]').mask('+7 (999) 999-99-99')
 
   if (window.innerWidth > 992) {
-    $('#pagepiling').pagepiling({
+    $('#pagepiling')?.pagepiling({
       navigation: false,
     })
   }

@@ -1,0 +1,100 @@
+.search {
+  display: flex;
+  flex-direction: column;
+  @include fluid(gap, 15px, 24px);
+
+  &__label {
+    display: grid;
+    grid-template-columns: 1fr 24px;
+    color: #272937;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.3px;
+    border-radius: 8px;
+    outline: 1px solid rgba(39, 41, 55, 0.12);
+    background-color: #fff;
+    @include fluid(padding-top, 7px, 12px);
+    @include fluid(padding-bottom, 7px, 12px);
+    @include fluid(padding-left, 10px, 20px);
+    @include fluid(padding-right, 10px, 20px);
+    cursor: text;
+
+    &-input {
+      width: 100%;
+
+      &::-webkit-input-placeholder {
+        color: rgba(39, 41, 55, 0.35);
+      }
+
+      &::-moz-placeholder {
+        color: rgba(39, 41, 55, 0.35);
+      }
+
+      &:-ms-input-placeholder {
+        color: rgba(39, 41, 55, 0.35);
+      }
+
+      &::-ms-input-placeholder {
+        color: rgba(39, 41, 55, 0.35);
+      }
+
+      &::placeholder {
+        color: rgba(39, 41, 55, 0.35);
+      }
+    }
+
+    &-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include fluid(width, 20px, 24px);
+      @include fluid(height, 20px, 24px);
+
+      svg {
+        path {
+          fill: rgba(39, 41, 55, 0.35);
+        }
+      }
+    }
+  }
+
+
+  &__letters {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    @include fluid(gap, 15px, 24px);
+
+    &-item {
+      text-align: center;
+      color: #999;
+      transition: color .38s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+
+  &__box {
+    position: relative;
+  }
+}
+
+@media (max-width: 992px) {
+  .search {
+    &__letters {
+      &-item {
+        &:hover {
+          color: #999;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .search {
+    order: -1;
+  }
+}

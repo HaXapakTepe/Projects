@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../images/dark-favicon.svg" type="x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="../css/icons.css">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css?v=0.0002">
+  <title>Магазины</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="#">
+            <img class="logo__img" src="../images/logo-dark.svg" alt="">
+          </a>
+          <nav>
+            <ul class="menu menu--header">
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Как это работает?
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Магазины
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Отзывы
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  FAQ
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Контакты
+                </a>
+              </li>
+              <li class="menu__item menu__item--hidden">
+                <p class="currency">
+                  <span>
+                    1 ₺
+                  </span>
+                  Турецкая лира
+                  <span>
+                    =
+                    3,45 ₽
+                  </span>
+                </p>
+              </li>
+              <li class="menu__item menu__item--hidden">
+                <a class="link link--skyblue" href="">
+                  Войти
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <p class="currency">
+            <span>
+              1 ₺
+            </span>
+            Турецкая лира
+            <span>
+              =
+              3,45 ₽
+            </span>
+          </p>
+          <button class="btn">
+            Войти
+          </button>
+          <div class="burger">
+            <div class="burger__line"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+
+      <section class="shop shop--alt">
+        <div class="container">
+          <div class="shop__box">
+            <h2 class="shop__title">
+              Магазины
+            </h2>
+            <div class="shop__box-block">
+              <a class="link link--icon link--transparent" href="#">
+                Оформить заказ
+                <span class="link__icon">
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8.50878 9.39534L5.92301 11.9811H15.5088C19.3748 11.9811 22.5088 15.1151 22.5088 18.9811C22.5088 19.5334 22.0611 19.9811 21.5088 19.9811C20.9565 19.9811 20.5088 19.5334 20.5088 18.9811C20.5088 16.2197 18.2702 13.9811 15.5088 13.9811H5.923L8.50878 16.5669C8.89931 16.9574 8.8993 17.5906 8.50878 17.9811C8.11825 18.3716 7.48509 18.3716 7.09456 17.9811L2.80168 13.6882C2.41116 13.2977 2.41116 12.6645 2.80168 12.274L7.09456 7.98113C7.48509 7.5906 8.11825 7.5906 8.50878 7.98113C8.55759 8.02994 8.60031 8.08255 8.63692 8.138C8.8932 8.52615 8.85049 9.05363 8.50878 9.39534Z"
+                      fill="white" />
+                  </svg>
+                </span>
+              </a>
+              <a class="link" href="#">
+                Посмотреть все бренды
+              </a>
+            </div>
+          </div>
+          <div class="shop__grid">
+            <div class="shop__grid-item">
+              <p class="shop__grid-title shop__grid-title--orange">
+                Одежда
+              </p>
+              <a class="shop__grid-link" href="#">
+                ACCESSORIZE
+              </a>
+              <a class="shop__grid-link" href="#">
+                ADIDAS
+              </a>
+              <a class="shop__grid-link" href="#">
+                AGL
+              </a>
+              <a class="shop__grid-link" href="#">
+                AXEL ARIGATO
+              </a>
+              <a class="shop__grid-link" href="#">
+                ARKET
+              </a>
+            </div>
+            <div class="shop__grid-item">
+              <p class="shop__grid-title shop__grid-title--pink">
+                Электроника
+              </p>
+              <a class="shop__grid-link" href="#">
+                XIAOMI
+              </a>
+              <a class="shop__grid-link" href="#">
+                APPLE
+              </a>
+              <a class="shop__grid-link" href="#">
+                SAMSUNG
+              </a>
+              <a class="shop__grid-link" href="#">
+                DYSON
+              </a>
+              <a class="shop__grid-link" href="#">
+                BORK
+              </a>
+            </div>
+            <div class="shop__grid-item">
+              <p class="shop__grid-title shop__grid-title--mint">
+                Акссесуары
+              </p>
+              <a class="shop__grid-link" href="#">
+                BALMAIN
+              </a>
+              <a class="shop__grid-link" href="#">
+                BERSHKA
+              </a>
+              <a class="shop__grid-link" href="#">
+                BORSIANALO
+              </a>
+              <a class="shop__grid-link" href="#">
+                BYREDO
+              </a>
+              <a class="shop__grid-link" href="#">
+                BATA
+              </a>
+            </div>
+            <div class="shop__grid-item">
+              <p class="shop__grid-title">
+                Другое
+              </p>
+              <a class="shop__grid-link" href="#">
+                CELINE
+              </a>
+              <a class="shop__grid-link" href="#">
+                COS
+              </a>
+              <a class="shop__grid-link" href="#">
+                CUPLE
+              </a>
+              <a class="shop__grid-link" href="#">
+                CASADEI
+              </a>
+              <a class="shop__grid-link" href="#">
+                CARVEN
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <a class="logo" href="#">
+            <img class="logo__img" src="../images/logo-white.svg" alt="">
+          </a>
+          <ul class="menu menu--footer">
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Как это работает?
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Магазины
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Отзывы
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                FAQ
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <a class="link link--skyblue" href="">
+            Войти
+          </a>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__text">
+            Galata 2023
+          </div>
+          <div class="footer__box">
+            <a class="footer__text" href="#">
+              Политика конфиденциальности и&nbsp;Условия&nbsp;использования
+            </a>
+            <a class="footer__text" href="#">
+              Политика отмены и возврата
+            </a>
+            <div class="footer__text">
+              All rights resereved ©
+            </div>
+          </div>
+          <a class="footer__link" href="mailto:hello@galata.com">
+            hello@galata.com
+          </a>
+        </div>
+      </div>
+    </footer>
+
+
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/0.9.0/jquery.mask.min.js
+"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="../scripts/scripts.js?v=0.0002"></script>
+
+
+</body>
+
+</html>

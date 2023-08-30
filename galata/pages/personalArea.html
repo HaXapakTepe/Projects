@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../images/dark-favicon.svg" type="x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="../css/icons.css">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css?v=0.0002">
+  <title>Личный кабинет</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="#">
+            <img class="logo__img" src="../images/logo-dark.svg" alt="">
+          </a>
+          <nav>
+            <ul class="menu menu--header">
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Как это работает?
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Магазины
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Отзывы
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  FAQ
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Контакты
+                </a>
+              </li>
+              <li class="menu__item menu__item--hidden">
+                <p class="currency">
+                  <span>
+                    1 ₺
+                  </span>
+                  Турецкая лира
+                  <span>
+                    =
+                    3,45 ₽
+                  </span>
+                </p>
+              </li>
+              <li class="menu__item menu__item--hidden">
+                <a class="link link--skyblue" href="">
+                  Войти
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <p class="currency">
+            <span>
+              1 ₺
+            </span>
+            Турецкая лира
+            <span>
+              =
+              3,45 ₽
+            </span>
+          </p>
+          <div class="header__box">
+            <a class="header__box-link" href="#">
+              <div class="header__box-icon">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M21 16.041V7.95896C21 7.24396 20.619 6.58396 20 6.22696L13 2.18596C12.381 1.82896 11.619 1.82896 11 2.18596L4 6.22596C3.381 6.58396 3 7.24396 3 7.95896V16.042C3 16.757 3.381 17.417 4 17.774L11 21.815C11.619 22.172 12.381 22.172 13 21.815L20 17.774C20.619 17.416 21 16.756 21 16.041Z"
+                    stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M12 22.08V12" stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M12 12L20.73 6.95996" stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M3.26953 6.95996L11.9995 12" stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+              <p class="header__box-text">
+                Мои заказы
+              </p>
+            </a>
+            <img class="header__box-img" src="../images/lk/human.png" alt="">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+
+      <section class="lk">
+        <div class="container">
+          <div class="lk__top">
+            <div class="lk__top-item">
+              <img class="lk__top-img" src="../images/lk/human.png" alt="">
+              <div class="lk__top-box">
+                <p class="lk__top-name">
+                  Alexander Zakharov
+                </p>
+                <p class="lk__top-who">
+                  Начинающий шоппер
+                </p>
+              </div>
+            </div>
+            <div class="lk__top-item">
+              <p class="lk__top-balance">
+                Ваш баланс
+                <span>
+                  15 000.00₽
+                </span>
+              </p>
+              <button class="btn btn--white">
+                Пополнить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="lk__wrapper">
+          <div class="container">
+            <div class="lk__inner">
+              <div class="lk__inner-item">
+                <div class="lk__box">
+                  <div data-target="target1" class="lk__box-item lk__box-item--active">
+                    <div class="lk__box-icon">
+                      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M21 16.041V7.95896C21 7.24396 20.619 6.58396 20 6.22696L13 2.18596C12.381 1.82896 11.619 1.82896 11 2.18596L4 6.22596C3.381 6.58396 3 7.24396 3 7.95896V16.042C3 16.757 3.381 17.417 4 17.774L11 21.815C11.619 22.172 12.381 22.172 13 21.815L20 17.774C20.619 17.416 21 16.756 21 16.041Z"
+                          stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 22.08V12" stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path d="M12 12L20.73 6.95996" stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path d="M3.26953 6.95996L11.9995 12" stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                    <p class="lk__box-text">
+                      Мои заказы
+                    </p>
+                  </div>
+                  <div data-target="target2" class="lk__box-item">
+                    <div class="lk__box-icon">
+                      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 20V19.25C20 16.9028 18.0972 15 15.75 15H8.25C5.90279 15 4 16.9028 4 19.25V20"
+                          stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <circle cx="12" cy="7" r="4" stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                    <p class="lk__box-text">
+                      Мои данные
+                    </p>
+                  </div>
+                  <div data-target="target3" class="lk__box-item">
+                    <div class="lk__box-icon">
+                      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M4 7.00012H18C19.105 7.00012 20 7.89512 20 9.00012V20.0001C20 21.1051 19.105 22.0001 18 22.0001H6C4.895 22.0001 4 21.1051 4 20.0001V7.05112C4 6.16812 4.579 5.39012 5.424 5.13612L15.712 2.04412C16.354 1.85012 17 2.33112 17 3.00112V7.00012"
+                          stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M13.7258 11C15.2068 11 16.2008 12.304 16.2008 13.518C16.2008 15.982 12.0758 18 12.0008 18C11.9258 18 7.80078 15.982 7.80078 13.518C7.80078 12.304 8.79478 11 10.2758 11C11.1228 11 11.6788 11.396 12.0008 11.748C12.3228 11.396 12.8788 11 13.7258 11Z"
+                          stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                    <p class="lk__box-text">
+                      Программа лояльности
+                    </p>
+                  </div>
+                </div>
+                <button data-target="target4" class="btn btn--seawave">
+                  Оформить заказ
+                </button>
+              </div>
+              <div class="lk__inner-item">
+                <div data-info="target1" class="lk__info lk__info--active lk__info--opacity">
+                  <div class="lk__orders">
+                    <button class="lk__orders-btnIcon">
+                      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 12.2529C3 14.7379 7.029 16.7529 12 16.7529" stroke="#323232" stroke-width="1.5"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M21 12.2529C21 13.8129 19.411 15.1869 17 15.9939C19.411 15.1869 21 13.8129 21 12.2529"
+                          stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M13 16.7529H12C7.029 16.7529 3 14.7379 3 12.2529" stroke="#323232" stroke-width="1.5"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M10.7539 18.9981L12.9999 16.7531L10.7539 14.5071" stroke="#323232" stroke-width="1.5"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M21 12.2531C21 10.2951 18.493 8.63509 15 8.01709" stroke="#323232" stroke-width="1.5"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9 8.01611C5.507 8.63411 3 10.2941 3 12.2521" stroke="#323232" stroke-width="1.5"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M11.8441 4.99512C11.8441 5.08512 11.9041 5.14512 11.9941 5.14512C12.0841 5.14512 12.1441 5.08512 12.1441 4.99512C12.1441 4.90512 12.0841 4.84512 11.9941 4.84512C11.9041 4.84512 11.8441 4.90512 11.8441 4.99512"
+                          stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M11.8441 7.99512C11.8441 8.08512 11.9041 8.14512 11.9941 8.14512C12.0841 8.14512 12.1441 8.08512 12.1441 7.99512C12.1441 7.90512 12.0841 7.84512 11.9941 7.84512C11.9041 7.84512 11.8441 7.90512 11.8441 7.99512"
+                          stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M11.8402 10.9951C11.8402 11.0851 11.9002 11.1451 11.9902 11.1451C12.0802 11.1451 12.1402 11.0851 12.1402 10.9951C12.1402 10.9051 12.0802 10.8451 11.9902 10.8451C11.9002 10.8451 11.8402 10.9051 11.8402 10.9951"
+                          stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </button>
+                    <div class="lk__orders-box">
+                      <p class="lk__orders-text">
+                        Вы можете объеденить все заказы в одну посылку, это удобно и бесплатно
+                      </p>
+                    </div>
+                    <label class="label">
+                      <input class="label__input check" type="checkbox">
+                      <span class="label__inputCustom"></span>
+                      Посылка №1
+                    </label>
+                    <div class="lk__order">
+                      <!-- 
+                        Если в заказе произошло изменение, ему приходит уведомление на почту и эта красная точка загорается. Подумали, если у человека несколько заказов, чтобы он зашёл в ЛК и ему было понятно. В каком заказе изменился статус.
+                        Добавить класс lk__order-item--changes для появления крассной точки
+                      -->
+                      <div class="lk__order-item lk__order-item--changes">
+                        <div class="lk__order-container">
+                          <div class="lk__order-box">
+                            <p class="lk__order-title">
+                              Заказ от 9.09.23
+                            </p>
+                            <p class="lk__order-num">
+                              №456-982
+                            </p>
+                          </div>
+                          <div class="lk__order-box">
+                            <div class="lk__order-swiper swiper">
+                              <div class="lk__order-wrapper swiper-wrapper">
+                                <div class="lk__order-slide swiper-slide">
+                                  <img class="lk__order-img" src="../images/order/1.jpg" alt="">
+                                </div>
+                                <div class="lk__order-slide swiper-slide">
+                                  <img class="lk__order-img" src="../images/order/3.jpg" alt="">
+                                </div>
+                                <div class="lk__order-slide swiper-slide">
+                                  <img class="lk__order-img" src="../images/order/2.jpg" alt="">
+                                </div>
+                                <div class="lk__order-slide swiper-slide">
+                                  <img class="lk__order-img" src="../images/order/1.jpg" alt="">
+                                </div>
+                                <div class="lk__order-slide swiper-slide">
+                                  <img class="lk__order-img" src="../images/order/3.jpg" alt="">
+                                </div>
+                              </div>
+                            </div>
+                            <p class="lk__order-length">
+                              Еще 3 товара
+                            </p>
+                          </div>
+                          <p class="lk__order-status">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M8.55691 3.68708C13.1479 1.78508 18.4109 3.96608 20.3129 8.55708C22.2149 13.1481 20.0339 18.4111 15.4429 20.3131C10.8519 22.2151 5.58891 20.0341 3.68691 15.4431C1.78591 10.8521 3.96591 5.58908 8.55691 3.68708"
+                                stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M11.7188 7.98511V12.6361L15.3747 14.8651" stroke="#323232" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Ожидает оплаты
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <label class="label">
+                      <input class="label__input check" type="checkbox">
+                      <span class="label__inputCustom"></span>
+                      Посылка №2
+                    </label>
+                    <div class="lk__order">
+                      <div class="lk__order-item">
+                        <div class="lk__order-container">
+                          <div class="lk__order-box">
+                            <p class="lk__order-title">
+                              Заказ от 9.09.23
+                            </p>
+                            <p class="lk__order-num">
+                              №456-982
+                            </p>
+                          </div>
+                          <div class="lk__order-box">
+                            <div class="lk__order-swiper swiper">
+                              <div class="lk__order-wrapper swiper-wrapper">
+                                <div class="lk__order-slide swiper-slide">
+                                  <img class="lk__order-img" src="../images/order/1.jpg" alt="">
+                                </div>
+                                <div class="lk__order-slide swiper-slide">
+                                  <img class="lk__order-img" src="../images/order/3.jpg" alt="">
+                                </div>
+                                <div class="lk__order-slide swiper-slide">
+                                  <img class="lk__order-img" src="../images/order/2.jpg" alt="">
+                                </div>
+                              </div>
+                            </div>
+                            <p class="lk__order-length">
+                              Еще 1 товара
+                            </p>
+                          </div>
+                          <p class="lk__order-status lk__order-status--paid">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M8.55691 3.68708C13.1479 1.78508 18.4109 3.96608 20.3129 8.55708C22.2149 13.1481 20.0339 18.4111 15.4429 20.3131C10.8519 22.2151 5.58891 20.0341 3.68691 15.4431C1.78591 10.8521 3.96591 5.58908 8.55691 3.68708"
+                                stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M11.7188 7.98511V12.6361L15.3747 14.8651" stroke="#323232" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Оплачен
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn btn--white">
+                      Объеденить
+                    </button>
+                  </div>
+                </div>
+                <div data-info="target2" class="lk__info">
+                  <form class="lk__details form" action="">
+                    <p class="lk__details-text">
+                      Адрес:
+                    </p>
+                    <div class="lk__details-block">
+                      <label class="lk__details-label">
+                        <input class="lk__details-input" type="text" placeholder="Введите адрес">
+                        <!-- <div class="lk__details-delete">
+                          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 12H8" stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M12 21V21C7.029 21 3 16.971 3 12V12C3 7.029 7.029 3 12 3V3C16.971 3 21 7.029 21 12V12C21 16.971 16.971 21 12 21Z"
+                              stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </div> -->
+                      </label>
+                      <label class="lk__details-label">
+                        <input class="lk__details-input" type="text" placeholder="Введите адрес">
+                        <div class="lk__details-delete">
+                          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 12H8" stroke="#323232" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M12 21V21C7.029 21 3 16.971 3 12V12C3 7.029 7.029 3 12 3V3C16.971 3 21 7.029 21 12V12C21 16.971 16.971 21 12 21Z"
+                              stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="lk__details-text lk__details-text--create">
+                      Добавить адрес +
+                    </div>
+                    <p class="lk__details-text">
+                      Основная информация:
+                    </p>
+                    <div class="lk__details-info">
+                      <input class="lk__details-input" type="text" name="name" placeholder="Имя">
+                      <input class="lk__details-input" type="email" name="email" placeholder="Email">
+                      <input class="lk__details-input" type="text" name="surname" placeholder="Фамилия">
+                      <label class="form__box">
+                        <div class="form__box-container">
+                          <div class="form__box-flag">
+                            <img class="form__box-flagImg form__box-flagImg--ru form__box-flagImg--active"
+                              src="../images/flag/ru.png" alt="">
+                            <img class="form__box-flagImg form__box-flagImg--ua" src="../images/flag/ua.png" alt="">
+                            <img class="form__box-flagImg form__box-flagImg--by" src="../images/flag/by.png" alt="">
+                          </div>
+                          <select class="form__select">
+                            <option value="ru" selected>+7</option>
+                            <option value="au">+380</option>
+                            <option value="by">+375</option>
+                          </select>
+                        </div>
+                        <input class="form__details-boxInput" type="text" name="phone">
+                      </label>
+                      <input class="lk__details-input" type="text" name="patronymic" placeholder="отчество">
+                      <input class="lk__details-input" type="password" name="password" placeholder="Пароль">
+                    </div>
+                    <button class="btn btn--seawave btn--disabled">
+                      Сохранить
+                    </button>
+                  </form>
+                </div>
+                <div data-info="target3" class="lk__info">
+                  <div class="lk__loyalty">
+                    <div class="lk__loyalty-item">
+                      <div class="lk__loyalty-block">
+                        <p class="lk__loyalty-text">
+                          Ваш статус
+                        </p>
+                        <h3 class="lk__loyalty-title lk__loyalty-title--pink">
+                          Начинающий шоппер
+                        </h3>
+                        <div class="lk__loyalty-scale">
+                          <div class="lk__loyalty-fon">
+                            <div class="lk__loyalty-fonElem" data-width="35"></div>
+                          </div>
+                          <div class="lk__loyalty-scaleBox">
+                            <p class="lk__loyalty-text">
+                              50 000 ₽
+                            </p>
+                            <p class="lk__loyalty-text">
+                              199 999 ₽
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="lk__loyalty-item">
+                      <div class="lk__loyalty-block">
+                        <p class="lk__loyalty-text">
+                          Следующий статус
+                        </p>
+                        <h3 class="lk__loyalty-title lk__loyalty-title--pink">
+                          Регулярный шоппер
+                        </h3>
+                        <p class="lk__loyalty-text lk__loyalty-text--grey">
+                          Условия:
+                        </p>
+                        <p class="lk__loyalty-text">
+                          Общая сумма покупок в рублях от 200.000 до 399.999 рублей
+                        </p>
+                      </div>
+                      <div class="lk__loyalty-discount lk__loyalty-discount--pink">
+                        <p class="lk__loyalty-discountText">
+                          Скидка
+                        </p>
+                        <p class="lk__loyalty-discountNum">
+                          2%
+                        </p>
+                      </div>
+                    </div>
+                    <div class="lk__loyalty-item">
+                      <div class="lk__loyalty-block">
+                        <p class="lk__loyalty-text">
+                          Статус далее
+                        </p>
+                        <h3 class="lk__loyalty-title lk__loyalty-title--mint">
+                          Продвинутый шоппер
+                        </h3>
+                        <p class="lk__loyalty-text lk__loyalty-text--grey">
+                          Условия:
+                        </p>
+                        <p class="lk__loyalty-text">
+                          Общая сумма покупок в рублях от 200.000 до 399.999 рублей
+                        </p>
+                      </div>
+                      <div class="lk__loyalty-discount lk__loyalty-discount--mint">
+                        <p class="lk__loyalty-discountText">
+                          Скидка
+                        </p>
+                        <p class="lk__loyalty-discountNum">
+                          4%
+                        </p>
+                      </div>
+                    </div>
+                    <div class="lk__loyalty-item">
+                      <div class="lk__loyalty-block">
+                        <p class="lk__loyalty-text">
+                          Статус далее
+                        </p>
+                        <h3 class="lk__loyalty-title lk__loyalty-title--mint">
+                          Профессиональный шоппер
+                        </h3>
+                        <p class="lk__loyalty-text lk__loyalty-text--grey">
+                          Условия:
+                        </p>
+                        <p class="lk__loyalty-text">
+                          Общая сумма покупок в рублях от 200.000 до 399.999 рублей
+                        </p>
+                      </div>
+                      <div class="lk__loyalty-discount lk__loyalty-discount--mint">
+                        <p class="lk__loyalty-discountText">
+                          Скидка
+                        </p>
+                        <p class="lk__loyalty-discountNum">
+                          6%
+                        </p>
+                      </div>
+                    </div>
+                    <div class="lk__loyalty-item">
+                      <div class="lk__loyalty-block">
+                        <p class="lk__loyalty-text">
+                          Статус далее
+                        </p>
+                        <h3 class="lk__loyalty-title lk__loyalty-title--orange">
+                          Гуру шоппинга
+                        </h3>
+                        <p class="lk__loyalty-text lk__loyalty-text--grey">
+                          Условия:
+                        </p>
+                        <p class="lk__loyalty-text">
+                          Общая сумма покупок в рублях от 200.000 до 399.999 рублей
+                        </p>
+                      </div>
+                      <div class="lk__loyalty-discount lk__loyalty-discount--orange">
+                        <p class="lk__loyalty-discountText">
+                          Скидка
+                        </p>
+                        <p class="lk__loyalty-discountNum">
+                          8%
+                        </p>
+                      </div>
+                    </div>
+                    <div class="lk__loyalty-item">
+                      <div class="lk__loyalty-block">
+                        <p class="lk__loyalty-text">
+                          Статус далее
+                        </p>
+                        <h3 class="lk__loyalty-title lk__loyalty-title--orange">
+                          Galata Premium
+                        </h3>
+                        <p class="lk__loyalty-text lk__loyalty-text--grey">
+                          Условия:
+                        </p>
+                        <p class="lk__loyalty-text">
+                          Общая сумма покупок в рублях от 200.000 до 399.999 рублей
+                        </p>
+                      </div>
+                      <div class="lk__loyalty-discount lk__loyalty-discount--orange">
+                        <p class="lk__loyalty-discountText">
+                          Скидка
+                        </p>
+                        <p class="lk__loyalty-discountNum">
+                          10%
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div data-info="target4" class="lk__info">
+                  <form class="lk__checkout" action="">
+                    <h3 class="lk__checkout-title">
+                      Оформление заказа
+                    </h3>
+                    <p class="lk__checkout-subtitle">
+                      Для точности скопируйте название товара на сайте интересующего вас бренда
+                    </p>
+                    <div class="lk__checkout-container">
+                      <div class="lk__checkout-item">
+                        <p class="lk__checkout-product">
+                          Товар 1
+                        </p>
+                        <div class="lk__checkout-grid">
+                          <label class="lk__checkout-label">
+                            Ссылка на товар*
+                            <input class="lk__checkout-input" type="text" required>
+                          </label>
+                          <div class="lk__checkout-grid">
+                            <label class="lk__checkout-label">
+                              Размер
+                              <input class="lk__checkout-input" type="text">
+                            </label>
+                            <div class="lk__checkout-box">
+                              Колличество
+                              <div class="lk__checkout-count count">
+                                <div class="count__minus"></div>
+                                <div class="count__num">1</div>
+                                <div class="count__plus"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <label class="lk__checkout-label">
+                            Наименование товара*
+                            <input class="lk__checkout-input" type="text" required>
+                          </label>
+                          <label class="lk__checkout-label">
+                            Цвет
+                            <input class="lk__checkout-input" type="text">
+                          </label>
+                          <label class="lk__checkout-label">
+                            Артикул*
+                            <input class="lk__checkout-input" type="text" required>
+                          </label>
+                          <label class="lk__checkout-label">
+                            Комментарий
+                            <textarea class="lk__checkout-textarea"></textarea>
+                          </label>
+                          <label class="lk__checkout-label">
+                            Цена*
+                            <input class="lk__checkout-input" type="text" required>
+                          </label>
+                          <div class="lk__checkout-create">
+                            Добавить еще один товар +
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn btn--seawave">
+                      Оформить заказ
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <a class="logo" href="#">
+            <img class="logo__img" src="../images/logo-white.svg" alt="">
+          </a>
+          <ul class="menu menu--footer">
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Как это работает?
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Магазины
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Отзывы
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                FAQ
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <a class="link link--skyblue" href="">
+            Войти
+          </a>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__text">
+            Galata 2023
+          </div>
+          <div class="footer__box">
+            <a class="footer__text" href="#">
+              Политика конфиденциальности и&nbsp;Условия&nbsp;использования
+            </a>
+            <a class="footer__text" href="#">
+              Политика отмены и возврата
+            </a>
+            <div class="footer__text">
+              All rights resereved ©
+            </div>
+          </div>
+          <a class="footer__link" href="mailto:hello@galata.com">
+            hello@galata.com
+          </a>
+        </div>
+      </div>
+    </footer>
+
+
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/0.9.0/jquery.mask.min.js
+"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="../scripts/scripts.js?v=0.0002"></script>
+
+
+</body>
+
+</html>
