@@ -62,6 +62,8 @@
 }
 
 .age {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   font-weight: 700;
   @include fluid(font-size, 16px, 26px);
@@ -77,6 +79,8 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   margin-top: auto;
   margin-bottom: auto;
@@ -95,6 +99,34 @@
     line-height: 1.1;
     background-color: transparent;
     color: #fff;
+
+    &::-webkit-input-placeholder {
+      @include fluid(font-size, 16px, 18px);
+      line-height: 1.1;
+      color: #FFFFFF;
+      opacity: 0.4;
+    }
+
+    &::-moz-placeholder {
+      @include fluid(font-size, 16px, 18px);
+      line-height: 1.1;
+      color: #FFFFFF;
+      opacity: 0.4;
+    }
+
+    &:-ms-input-placeholder {
+      @include fluid(font-size, 16px, 18px);
+      line-height: 1.1;
+      color: #FFFFFF;
+      opacity: 0.4;
+    }
+
+    &::-ms-input-placeholder {
+      @include fluid(font-size, 16px, 18px);
+      line-height: 1.1;
+      color: #FFFFFF;
+      opacity: 0.4;
+    }
 
     &::placeholder {
       @include fluid(font-size, 16px, 18px);

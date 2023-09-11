@@ -84,6 +84,24 @@ h3 {
   color: #257FCE;
 }
 
+.logo {
+  @include fluid(padding-top, 10px, 25px);
+  @include fluid(padding-bottom, 10px, 25px);
+  @include fluid(padding-right, 10px, 25px);
+  padding-left: 0;
+  opacity: .4;
+  transition: opacity 0.38s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &__img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
 .map {
   @include fluid(margin-top, 30px, 60px);
   @include fluid(margin-bottom, 25px, 60px);
@@ -304,6 +322,15 @@ h3 {
     &__item {
       height: 250px;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 0;
   }
 }
 
