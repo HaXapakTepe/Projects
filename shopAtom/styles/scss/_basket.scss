@@ -1,0 +1,210 @@
+.basket {
+  margin-top: 20px;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr .45fr;
+    @include fluid(gap, 30px, 90px);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 15px, 30px);
+
+    &-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      border-radius: 20px;
+      background-color: #FFF;
+      @include fluid(padding-top, 15px, 30px);
+      @include fluid(padding-bottom, 15px, 30px);
+      @include fluid(padding-left, 20px, 40px);
+      @include fluid(padding-right, 20px, 40px);
+    }
+
+    &-delete {
+      color: #E2007A;
+      @include fluid(font-size, 16px, 28px);
+      line-height: normal;
+      cursor: pointer;
+    }
+
+    &-card {
+      display: grid;
+      grid-template-columns: 20px 187px 1fr;
+      align-items: center;
+      @include fluid(gap, 20px, 40px);
+      border-radius: 20px;
+      background-color: #FFF;
+      @include fluid(padding-top, 25px, 45px);
+      @include fluid(padding-bottom, 25px, 45px);
+      @include fluid(padding-left, 20px, 40px);
+      @include fluid(padding-right, 20px, 40px);
+    }
+
+    &-block {
+      @include fluid(margin-left, 15px, 30px);
+    }
+
+    &-img {
+      @include fluid(height, 160px, 187px);
+      -o-object-fit: contain;
+      object-fit: contain;
+    }
+
+    &-title {
+      @include fluid(font-size, 22px, 30px);
+      @include fluid(margin-bottom, 10px, 15px);
+    }
+
+    &-price {
+      color: #E2007A;
+      @include fluid(font-size, 22px, 30px);
+      font-weight: 700;
+      @include fluid(margin-bottom, 25px, 50px);
+    }
+
+    &-elem {
+      display: flex;
+      align-items: center;
+      @include fluid(gap, 15px, 30px);
+    }
+
+    &-icon {
+      position: relative;
+      @include fluid(width, 26px, 31px);
+      @include fluid(height, 26px, 31px);
+      cursor: pointer;
+
+      svg {
+        path {
+          transition: fill .23s ease-in-out;
+        }
+
+        &:last-child {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 100%;
+          height: 100%;
+          transform: translate(-50%, -50%) scale(0);
+          transition: transform .23s ease-in-out;
+        }
+      }
+
+      &--accent {
+        svg {
+          path {
+            fill: #E20072;
+          }
+
+          &:last-child {
+            transform: translate(-50%, -50%) scale(1);
+          }
+        }
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 15px, 30px);
+    @include fluid(padding, 15px, 30px);
+    background-color: #FFF;
+    border-radius: 20px;
+
+    &-title {
+      @include fluid(font-size, 22px, 30px);
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    &-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 5px;
+
+      &--total {
+        .basket__info-text {
+          @include fluid(font-size, 20px, 25px);
+          line-height: normal;
+        }
+
+        .basket__info-price {
+          @include fluid(font-size, 18px, 22px);
+          font-weight: 700;
+          line-height: normal;
+        }
+      }
+    }
+
+    &-price,
+    &-text {
+      @include fluid(font-size, 16px, 18px);
+      line-height: normal;
+    }
+
+    &-price {
+      font-weight: 700;
+    }
+
+    &-border {
+      display: block;
+      flex-grow: 1;
+      margin-top: auto;
+      margin-bottom: 5px;
+      height: 1px;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 4 4'%3E%3Crect width='2' height='4' fill='%23000'/%3E%3C/svg%3E");
+    }
+
+    .link {
+      margin-top: auto;
+      width: 100%;
+    }
+  }
+}
+
+@media(max-width: 992px) {
+  .basket {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media(max-width: 576px) {
+  .basket {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+
+    &__item {
+      &-block {
+        margin-left: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &-card {
+        grid-template-columns: 1fr;
+
+        .label {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+
+      &-img {
+        height: 200px;
+      }
+
+    }
+  }
+}

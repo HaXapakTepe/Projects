@@ -1,0 +1,102 @@
+.worth {
+  position: relative;
+  @include fluid(margin-top, 30px, 120px);
+  @include fluid(margin-bottom, 30px, 120px);
+
+  &__title {
+    max-width: 700px;
+  }
+
+  &__text {
+    color: #000;
+    @include fluid(font-size, 18px, 24px);
+    line-height: 150%;
+    @include fluid(margin-bottom, 30px, 80px);
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include fluid(row-gap, 30px, 60px);
+    @include fluid(column-gap, 15px, 30px);
+
+    &--alt {
+      .worth__item-text {
+        max-width: 480px;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 15px, 20px);
+
+    &-img {
+      @include fluid(width, 90px, 120px);
+      @include fluid(height, 90px, 120px);
+      @include fluid(margin-bottom, 5px, 10px);
+    }
+
+    &-title {
+      color: #000;
+      @include fluid(font-size, 14px, 18px);
+      font-weight: 700;
+      line-height: 125%;
+    }
+
+    &-text {
+      color: #000;
+      @include fluid(font-size, 14px, 16px);
+      line-height: 150%;
+    }
+  }
+
+  &__mint {
+    position: absolute;
+    left: 0;
+    @include fluid(top, 120px, 210px);
+    z-index: -2;
+    @include fluid(width, 170px, 230px);
+    @include fluid(height, 103px, 163px);
+  }
+
+  &__fiol {
+    position: absolute;
+    @include fluid(top, -50px, -65px);
+    @include fluid(right, 0px, 250px);
+    z-index: -2;
+    @include fluid(width, 170px, 207px);
+    @include fluid(height, 170px, 207px);
+
+    &--alt {
+      @include fluid(right, 0px, 150px);
+      @include fluid(width, 300px, 411px);
+      @include fluid(height, 300px, 411px);
+    }
+
+    &--alt1 {
+      @include fluid(top, -75px, -100px);
+      @include fluid(right, 0px, 150px);
+      @include fluid(width, 300px, 411px);
+      @include fluid(height, 300px, 411px);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .worth {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+
+    &__item {
+      align-items: center;
+
+      &-title,
+      &-text {
+        text-align: center;
+      }
+    }
+  }
+}

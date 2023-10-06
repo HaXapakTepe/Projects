@@ -1,0 +1,256 @@
+.form {
+  margin-top: 0;
+  @include fluid(margin-bottom, 30px, 150px);
+  border-radius: 20px;
+  background: #FFF;
+  @include fluid(padding, 30px, 60px);
+
+  .btn {
+    @include fluid(margin-bottom, 20px, 30px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &--alt {
+
+    .form__wrapper {
+      padding: 0;
+      max-width: 550px;
+    }
+
+    .btn {
+      margin-left: unset;
+      @include fluid(margin-top, 30px, 50px);
+    }
+  }
+
+  &__subtitle {
+    width: 82%;
+    color: #E20072;
+    @include fluid(font-size, 26px, 35px);
+    @include fluid(padding-bottom, 10px, 20px);
+    border-bottom: 1px solid #E20072;
+    @include fluid(margin-bottom, 15px, 30px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__wrapper {
+    border-radius: 20px;
+    background: #FFF;
+    @include fluid(padding, 30px, 70px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__inner {
+    max-width: 670px;
+    width: 100%;
+  }
+
+  &__title {
+    @include fluid(font-size, 36px, 60px);
+    text-align: center;
+    @include fluid(margin-bottom, 40px, 70px);
+  }
+
+  &__label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 10px, 15px);
+
+    span {
+      span {
+        color: #F00;
+      }
+    }
+
+    .form__label-error {
+      display: none;
+      position: absolute;
+      bottom: -25px;
+      left: 5px;
+      color: #F00;
+      font-size: 16px;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    border-radius: 5px;
+    background: #F9F9F9;
+    @include fluid(padding-left, 10px, 20px);
+    @include fluid(padding-right, 10px, 20px);
+    @include fluid(padding-top, 15px, 21px);
+    @include fluid(padding-bottom, 15px, 21px);
+
+    &.input--invalid {
+      +.form__label-error {
+        display: initial;
+      }
+    }
+  }
+
+  &__fieldset {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 25px, 30px);
+    @include fluid(margin-bottom, 20px, 30px);
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    @include fluid(margin-bottom, 25px, 50px);
+
+    &-column {
+      display: flex;
+      flex-direction: column;
+      @include fluid(gap, 20px, 30px);
+    }
+  }
+
+  &__error {
+    display: none;
+    color: #F00;
+    font-size: 16px;
+    @include fluid(margin-bottom, 25px, 50px);
+    text-align: center;
+
+    &--invalid {
+      display: block;
+    }
+  }
+
+  &__text {
+    color: #868686;
+    font-size: 16px;
+    text-align: center;
+
+    a {
+      color: #E20072;
+    }
+  }
+
+  &__status {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      @include fluid(row-gap, 20px, 35px);
+
+      &:not(:first-child) {
+        @include fluid(padding-top, 30px, 60px);
+        border-top: 1px solid #868686;
+      }
+
+      &:not(:last-child) {
+        @include fluid(margin-bottom, 25px, 50px);
+      }
+    }
+
+    &-box {
+      display: grid;
+      grid-template-columns: .4fr 1fr;
+      align-items: center;
+      @include fluid(gap, 25px, 50px);
+
+      &:nth-last-child(2) {
+        @include fluid(margin-bottom, 10px, 25px);
+      }
+
+      &--alt {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+
+      &--flex {
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+      }
+    }
+
+    &-text {
+      @include fluid(font-size, 22px, 28px);
+      line-height: normal;
+
+      &--alt {
+        color: #868686;
+      }
+    }
+
+    &-state {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      color: #FFF;
+      @include fluid(padding-left, 20px, 41px);
+      @include fluid(padding-right, 20px, 41px);
+      @include fluid(padding-top, 7px, 12px);
+      @include fluid(padding-bottom, 9px, 14px);
+      @include fluid(font-size, 18px, 25px);
+      border-radius: 5px;
+      border: 1px solid #E20072;
+      transition: background-color .23s ease-in-out,
+        color .23s ease-in-out,
+        border-color .23s ease-in-out;
+      white-space: nowrap;
+      line-height: 1;
+      background-color: #fff;
+      color: #E20072;
+      border-color: #E20072;
+
+      &--accent {
+        color: #fff;
+        background-color: #E20072;
+      }
+
+      &--reset {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        color: #111;
+      }
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .form {
+    padding-left: 0;
+    padding-right: 0;
+
+    &__subtitle {
+      text-align: center;
+      width: 100%;
+    }
+
+    &__status {
+      width: 100%;
+
+      &-box {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      &-text {
+        text-align: center;
+      }
+    }
+
+    &__label {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}

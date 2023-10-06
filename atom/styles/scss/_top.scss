@@ -1,0 +1,193 @@
+.top {
+  @include fluid(margin-bottom, 30px, 80px);
+
+  &__slide {
+    position: relative;
+    border-radius: 20px;
+    @include fluid(padding-top, 110px, 160px);
+    @include fluid(padding-bottom, 110px, 158px);
+    @include fluid(padding-left, 100px, 118px);
+    @include fluid(padding-right, 100px, 118px);
+    overflow-x: hidden;
+  }
+
+  &__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 20px;
+    z-index: -1;
+  }
+
+  &__title {
+    @include fluid(margin-bottom, 15px, 20px);
+  }
+
+  &__text {
+    color: #FFF;
+    @include fluid(font-size, 16px, 24px);
+    line-height: 1;
+    @include fluid(margin-bottom, 35px, 40px);
+    width: 63%;
+  }
+
+  &__fon {
+    position: absolute;
+    width: 125%;
+    top: 50%;
+    left: 0;
+    @include fluid(left, -80px, -135px);
+    transform: translateY(-50%);
+    @include fluid(height, 313px, 451px);
+    z-index: -1;
+  }
+
+  &__box {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    height: 40px;
+    @include fluid(bottom, 70px, 90px);
+  }
+
+  &__next,
+  &__prev {
+    color: #fff;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .swiper {
+    .swiper-button {
+      &-prev {
+        left: 44%;
+      }
+
+      &-next {
+        right: 44%;
+      }
+    }
+
+    &-pagination {
+      pointer-events: none;
+      color: #FFF;
+      @include fluid(font-size, 18px, 20px);
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .top {
+    &__text {
+      width: 63%;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+
+  h1,
+  h2 {
+    font-size: 45px;
+  }
+
+  .top {
+    &__slide {
+      padding: 50px;
+    }
+
+    .swiper {
+      .swiper-button {
+        &-prev {
+          left: 40%;
+        }
+
+        &-next {
+          right: 40%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+
+  h1,
+  h2 {
+    font-size: 45px;
+  }
+
+  .top {
+    &__slide {
+      padding: 100px 20px;
+    }
+
+    .swiper {
+      .swiper-button {
+        &-prev {
+          left: 40%;
+        }
+
+        &-next {
+          right: 40%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .top {
+    .container {
+      padding: 0;
+    }
+
+    &__slide {
+      padding: 120px 20px 223px;
+      border-radius: 0;
+    }
+
+    &__img {
+      border-radius: 0;
+    }
+
+    &__box {
+      bottom: 60px;
+    }
+
+    &__fon {
+      position: absolute;
+      width: 597px;
+      top: 82%;
+      left: -70px;
+      @include fluid(left, -80px, -135px);
+      height: 152px;
+      z-index: -1;
+    }
+
+    &__text {
+      width: unset;
+    }
+
+    .swiper {
+      .swiper-button {
+        &-prev {
+          left: 35%;
+        }
+
+        &-next {
+          right: 35%;
+        }
+      }
+    }
+  }
+}

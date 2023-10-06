@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../img/favicon.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="../css/icon.css">
+  <link rel="stylesheet" href="../css/style.css?v=0.00010">
+  <title>Каталог</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <header class="header">
+      <img class="header__bg" src="../img/header/header-bg.svg" alt="">
+      <div class="container">
+        <div class="header__wrapper">
+          <a href="#" class="header__logo">
+            <img src="../img/logo.svg" alt="логотип">
+          </a>
+          <div class="header__content">
+            <div class="header__content-top">
+              <div class="header__search">
+                <input class="header__search-input" placeholder="Поиск по сайту">
+                <div class="header__search-icon icon-search"></div>
+              </div>
+              <div class="net net--header">
+                <a class="net__link" href="#">
+                  <svg class="net__link-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13.0718 18.9C4.87188 18.9 0.194878 13.4946 0 4.5H4.10743C4.24235 11.1018 7.27038 13.8982 9.66888 14.4748V4.5H13.5366V10.1937C15.9051 9.94865 18.3933 7.35405 19.2328 4.5H23.1004C22.4558 8.01712 19.7575 10.6117 17.8387 11.6784C19.7575 12.5432 22.8307 14.8063 24 18.9H19.7425C18.8281 16.1613 16.5497 14.0423 13.5366 13.7541V18.9H13.0718Z"
+                      fill="white" />
+                  </svg>
+                </a>
+                <a class="net__link" href="#">
+                  <svg class="net__link-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.4042 17.0954L5.81763 20.7398C5.08289 21.4848 5.08289 22.6946 5.81763 23.4404C6.55161 24.1861 7.74124 24.1861 8.47445 23.4404L12.0007 19.8592L15.524 23.4404C15.8913 23.8128 16.3727 23.9993 16.8541 23.9993C17.3347 23.9993 17.8153 23.8128 18.1827 23.4404C18.9167 22.6946 18.9167 21.4856 18.1835 20.7398L14.5965 17.0954C15.9025 16.7932 17.162 16.2674 18.322 15.5279C19.2 14.9655 19.4637 13.7872 18.9105 12.8945C18.3589 12.0005 17.1988 11.7314 16.3194 12.2938C13.6929 13.9725 10.3094 13.9729 7.68136 12.2938C6.80189 11.7314 5.6422 12.0005 5.08942 12.8945C4.53625 13.7865 4.80074 14.9655 5.67867 15.5279C6.83875 16.2682 8.09825 16.7932 9.4042 17.0954Z"
+                      fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M18.4323 6.1934C18.4323 9.60767 15.5548 12.385 12.0166 12.385C8.4776 12.385 5.60082 9.60767 5.60082 6.1934C5.60082 2.77803 8.4776 0 12.0166 0C15.5548 0 18.4323 2.77803 18.4323 6.1934ZM9.36027 6.19373C9.36027 4.77971 10.5518 3.62988 12.0167 3.62988C13.4804 3.62988 14.6731 4.77971 14.6731 6.19373C14.6731 7.60664 13.4804 8.75721 12.0167 8.75721C10.5518 8.75721 9.36027 7.60664 9.36027 6.19373Z"
+                      fill="white" />
+                  </svg>
+                </a>
+                <a class="net__link" href="#">
+                  <svg class="net__link-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.6282 23.9939C5.29627 23.8011 0.198365 18.7032 0.00566761 12.3713L5.35325 12.7963C8.47553 13.0444 10.955 15.5239 11.2032 18.6462L11.6282 23.9939Z"
+                      fill="white" />
+                    <path
+                      d="M0.00317383 11.7215C0.148335 5.33527 5.28265 0.181129 11.661 0.00420952L11.6286 0.0932007L11.2032 5.44644C10.955 8.56872 8.47552 11.0482 5.35325 11.2964L0.00317383 11.7215Z"
+                      fill="white" />
+                    <path
+                      d="M12.2444 0.00195312C18.6777 0.130478 23.869 5.32176 23.9976 11.7551L23.9063 11.7218L18.553 11.2964C15.4307 11.0482 12.9512 8.56871 12.7031 5.44644L12.2777 0.0932007L12.2444 0.00195312Z"
+                      fill="white" />
+                    <path
+                      d="M23.9953 12.3384C23.8185 18.7169 18.6642 23.8512 12.2779 23.9964L12.7031 18.6462C12.9512 15.5239 15.4308 13.0444 18.553 12.7963L23.9063 12.3709L23.9953 12.3384Z"
+                      fill="white" />
+                  </svg>
+                </a>
+              </div>
+              <a href="tel:+78452569499" class="phone">
+                <div class="phone__icon icon-phone"></div>
+                <div class="phone__value">+7 (8452) 56-94-99</div>
+              </a>
+              <div class="burger">
+                <span></span>
+              </div>
+            </div>
+            <div class="header__content-bottom">
+              <ul class="header__nav">
+                <li>
+                  <a href="#" class="header__nav-item">каталог</a>
+                </li>
+                <li>
+                  <a href="#" class="header__nav-item">о нас</a>
+                </li>
+                <li>
+                  <a href="#" class="header__nav-item">где купить</a>
+                </li>
+                <li>
+                  <a href="#" class="header__nav-item">Сотрудничество</a>
+                </li>
+                <li>
+                  <a href="#" class="header__nav-item">блог</a>
+                </li>
+                <li>
+                  <a href="#" class="header__nav-item">новинки</a>
+                </li>
+                <li>
+                  <a href="#" class="header__nav-item">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="menu">
+      <div class="container">
+        <div class="menu__inner">
+          <div class="menu__top">
+            <div class="menu__nav">
+              <a href="#" class="menu__nav-item">каталог</a>
+              <a href="#" class="menu__nav-item">о нас</a>
+              <a href="#" class="menu__nav-item">где купить</a>
+              <a href="#" class="menu__nav-item">Сотрудничество</a>
+              <a href="#" class="menu__nav-item">новости</a>
+              <a href="#" class="menu__nav-item">новинки</a>
+              <a href="#" class="menu__nav-item">Контакты</a>
+            </div>
+            <div class="burger">
+              <span></span>
+            </div>
+          </div>
+          <div class="menu__search">
+            <input type="text" class="menu__search-input" placeholder="Поиск по сайту">
+            <div class="menu__search-icon icon-search"></div>
+          </div>
+          <a href="tel:+78452569499" class="menu__phone">
+            <div class="menu__phone-icon icon-phone"></div>
+            <div class="menu__phone-value">+7 (8452) 56-94-99</div>
+          </a>
+          <div class="net">
+            <a class="net__link" href="#">
+              <svg class="net__link-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13.0718 18.9C4.87188 18.9 0.194878 13.4946 0 4.5H4.10743C4.24235 11.1018 7.27038 13.8982 9.66888 14.4748V4.5H13.5366V10.1937C15.9051 9.94865 18.3933 7.35405 19.2328 4.5H23.1004C22.4558 8.01712 19.7575 10.6117 17.8387 11.6784C19.7575 12.5432 22.8307 14.8063 24 18.9H19.7425C18.8281 16.1613 16.5497 14.0423 13.5366 13.7541V18.9H13.0718Z"
+                  fill="white" />
+              </svg>
+            </a>
+            <a class="net__link" href="#">
+              <svg class="net__link-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M9.4042 17.0954L5.81763 20.7398C5.08289 21.4848 5.08289 22.6946 5.81763 23.4404C6.55161 24.1861 7.74124 24.1861 8.47445 23.4404L12.0007 19.8592L15.524 23.4404C15.8913 23.8128 16.3727 23.9993 16.8541 23.9993C17.3347 23.9993 17.8153 23.8128 18.1827 23.4404C18.9167 22.6946 18.9167 21.4856 18.1835 20.7398L14.5965 17.0954C15.9025 16.7932 17.162 16.2674 18.322 15.5279C19.2 14.9655 19.4637 13.7872 18.9105 12.8945C18.3589 12.0005 17.1988 11.7314 16.3194 12.2938C13.6929 13.9725 10.3094 13.9729 7.68136 12.2938C6.80189 11.7314 5.6422 12.0005 5.08942 12.8945C4.53625 13.7865 4.80074 14.9655 5.67867 15.5279C6.83875 16.2682 8.09825 16.7932 9.4042 17.0954Z"
+                  fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M18.4323 6.1934C18.4323 9.60767 15.5548 12.385 12.0166 12.385C8.4776 12.385 5.60082 9.60767 5.60082 6.1934C5.60082 2.77803 8.4776 0 12.0166 0C15.5548 0 18.4323 2.77803 18.4323 6.1934ZM9.36027 6.19373C9.36027 4.77971 10.5518 3.62988 12.0167 3.62988C13.4804 3.62988 14.6731 4.77971 14.6731 6.19373C14.6731 7.60664 13.4804 8.75721 12.0167 8.75721C10.5518 8.75721 9.36027 7.60664 9.36027 6.19373Z"
+                  fill="white" />
+              </svg>
+            </a>
+            <a class="net__link" href="#">
+              <svg class="net__link-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.6282 23.9939C5.29627 23.8011 0.198365 18.7032 0.00566761 12.3713L5.35325 12.7963C8.47553 13.0444 10.955 15.5239 11.2032 18.6462L11.6282 23.9939Z"
+                  fill="white" />
+                <path
+                  d="M0.00317383 11.7215C0.148335 5.33527 5.28265 0.181129 11.661 0.00420952L11.6286 0.0932007L11.2032 5.44644C10.955 8.56872 8.47552 11.0482 5.35325 11.2964L0.00317383 11.7215Z"
+                  fill="white" />
+                <path
+                  d="M12.2444 0.00195312C18.6777 0.130478 23.869 5.32176 23.9976 11.7551L23.9063 11.7218L18.553 11.2964C15.4307 11.0482 12.9512 8.56871 12.7031 5.44644L12.2777 0.0932007L12.2444 0.00195312Z"
+                  fill="white" />
+                <path
+                  d="M23.9953 12.3384C23.8185 18.7169 18.6642 23.8512 12.2779 23.9964L12.7031 18.6462C12.9512 15.5239 15.4308 13.0444 18.553 12.7963L23.9063 12.3709L23.9953 12.3384Z"
+                  fill="white" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="main">
+
+      <section class="catalog catalog--alt">
+        <div class="container">
+          <h2 class="title title--yellow">
+            Каталог
+          </h2>
+          <div class="catalog__grid catalog__grid--two">
+            <a class="catalog__item" href="#">
+              <img class="catalog__item-img" src="../img/catalog/1.png" alt="">
+              <div class="catalog__item-box">
+                <p class="catalog__item-title">
+                  Приправы
+                </p>
+                <p class="catalog__item-link">
+                  Подробнее
+                  <span class="catalog__item-icon icon-arrow"></span>
+                </p>
+              </div>
+            </a>
+            <a class="catalog__item" href="#">
+              <img class="catalog__item-img" src="../img/catalog/2.png" alt="">
+              <div class="catalog__item-box">
+                <p class="catalog__item-title">
+                  Специи
+                </p>
+                <p class="catalog__item-link">
+                  Подробнее
+                  <span class="catalog__item-icon icon-arrow"></span>
+                </p>
+              </div>
+            </a>
+            <a class="catalog__item" href="#">
+              <img class="catalog__item-img" src="../img/catalog/3.png" alt="">
+              <div class="catalog__item-box">
+                <p class="catalog__item-title">
+                  Соль
+                </p>
+                <p class="catalog__item-link">
+                  Подробнее
+                  <span class="catalog__item-icon icon-arrow"></span>
+                </p>
+              </div>
+            </a>
+            <a class="catalog__item" href="#">
+              <img class="catalog__item-img" src="../img/catalog/4.png" alt="">
+              <div class="catalog__item-box">
+                <p class="catalog__item-title">
+                  Мельницы
+                </p>
+                <p class="catalog__item-link">
+                  Подробнее
+                  <span class="catalog__item-icon icon-arrow"></span>
+                </p>
+              </div>
+            </a>
+            <a class="catalog__item" href="#">
+              <img class="catalog__item-img" src="../img/catalog/5.png" alt="">
+              <div class="catalog__item-box">
+                <p class="catalog__item-title">
+                  Продукты быстрого
+                  приготовления
+                </p>
+                <p class="catalog__item-link">
+                  Подробнее
+                  <span class="catalog__item-icon icon-arrow"></span>
+                </p>
+              </div>
+            </a>
+            <a class="catalog__item" href="#">
+              <img class="catalog__item-img" src="../img/catalog/6.png" alt="">
+              <div class="catalog__item-box">
+                <p class="catalog__item-title">
+                  Кулинарные добавки
+                </p>
+                <p class="catalog__item-link">
+                  Подробнее
+                  <span class="catalog__item-icon icon-arrow"></span>
+                </p>
+              </div>
+            </a>
+            <a class="catalog__item" href="#">
+              <img class="catalog__item-img" src="../img/catalog/7.png" alt="">
+              <div class="catalog__item-box">
+                <p class="catalog__item-title">
+                  Спортивное питание
+                </p>
+                <p class="catalog__item-link">
+                  Подробнее
+                  <span class="catalog__item-icon icon-arrow"></span>
+                </p>
+              </div>
+            </a>
+            <a class="catalog__item" href="#">
+              <img class="catalog__item-img" src="../img/catalog/8.png" alt="">
+              <div class="catalog__item-box">
+                <p class="catalog__item-title">
+                  HoReCa
+                </p>
+                <p class="catalog__item-link">
+                  Подробнее
+                  <span class="catalog__item-icon icon-arrow"></span>
+                </p>
+              </div>
+            </a>
+          </div>
+          <img class="rellax catalog__staranise" src="../img/parallax/staranise.png" alt="">
+          <img class="rellax catalog__mint catalog__mint--alt" src="../img/parallax/mint.png" alt="">
+          <img class="rellax catalog__mint" src="../img/parallax/mint.png" alt="">
+          <img class="rellax catalog__klaus" src="../img/parallax/klaus.png" alt="">
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__top">
+            <div class="footer__top-left">
+              <a href="#">
+                <img class="footer__logo" src="../img/logo.svg" alt="">
+              </a>
+              <div class="footer__nav">
+                <div class="footer__nav-column">
+                  <a href="#" class="footer__nav-item">каталог</a>
+                  <a href="#" class="footer__nav-item">о нас</a>
+                  <a href="#" class="footer__nav-item">где купить</a>
+                </div>
+                <div class="footer__nav-column">
+                  <a href="#" class="footer__nav-item">партнерам</a>
+                  <a href="#" class="footer__nav-item">новости</a>
+                  <a href="#" class="footer__nav-item">новинки</a>
+                </div>
+              </div>
+            </div>
+            <div class="footer__top-right">
+              <a href="#" class="footer__phone">
+                <div class="footer__phone-icon icon-phone"></div>
+                <div class="footer__phone-value">8 800 1000 000</div>
+              </a>
+              <div class="net net--footer">
+                <a class="net__link" href="#">
+                  <svg class="net__link-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13.0718 18.9C4.87188 18.9 0.194878 13.4946 0 4.5H4.10743C4.24235 11.1018 7.27038 13.8982 9.66888 14.4748V4.5H13.5366V10.1937C15.9051 9.94865 18.3933 7.35405 19.2328 4.5H23.1004C22.4558 8.01712 19.7575 10.6117 17.8387 11.6784C19.7575 12.5432 22.8307 14.8063 24 18.9H19.7425C18.8281 16.1613 16.5497 14.0423 13.5366 13.7541V18.9H13.0718Z"
+                      fill="white" />
+                  </svg>
+                </a>
+                <a class="net__link" href="#">
+                  <svg class="net__link-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.4042 17.0954L5.81763 20.7398C5.08289 21.4848 5.08289 22.6946 5.81763 23.4404C6.55161 24.1861 7.74124 24.1861 8.47445 23.4404L12.0007 19.8592L15.524 23.4404C15.8913 23.8128 16.3727 23.9993 16.8541 23.9993C17.3347 23.9993 17.8153 23.8128 18.1827 23.4404C18.9167 22.6946 18.9167 21.4856 18.1835 20.7398L14.5965 17.0954C15.9025 16.7932 17.162 16.2674 18.322 15.5279C19.2 14.9655 19.4637 13.7872 18.9105 12.8945C18.3589 12.0005 17.1988 11.7314 16.3194 12.2938C13.6929 13.9725 10.3094 13.9729 7.68136 12.2938C6.80189 11.7314 5.6422 12.0005 5.08942 12.8945C4.53625 13.7865 4.80074 14.9655 5.67867 15.5279C6.83875 16.2682 8.09825 16.7932 9.4042 17.0954Z"
+                      fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M18.4323 6.1934C18.4323 9.60767 15.5548 12.385 12.0166 12.385C8.4776 12.385 5.60082 9.60767 5.60082 6.1934C5.60082 2.77803 8.4776 0 12.0166 0C15.5548 0 18.4323 2.77803 18.4323 6.1934ZM9.36027 6.19373C9.36027 4.77971 10.5518 3.62988 12.0167 3.62988C13.4804 3.62988 14.6731 4.77971 14.6731 6.19373C14.6731 7.60664 13.4804 8.75721 12.0167 8.75721C10.5518 8.75721 9.36027 7.60664 9.36027 6.19373Z"
+                      fill="white" />
+                  </svg>
+                </a>
+                <a class="net__link" href="#">
+                  <svg class="net__link-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.6282 23.9939C5.29627 23.8011 0.198365 18.7032 0.00566761 12.3713L5.35325 12.7963C8.47553 13.0444 10.955 15.5239 11.2032 18.6462L11.6282 23.9939Z"
+                      fill="white" />
+                    <path
+                      d="M0.00317383 11.7215C0.148335 5.33527 5.28265 0.181129 11.661 0.00420952L11.6286 0.0932007L11.2032 5.44644C10.955 8.56872 8.47552 11.0482 5.35325 11.2964L0.00317383 11.7215Z"
+                      fill="white" />
+                    <path
+                      d="M12.2444 0.00195312C18.6777 0.130478 23.869 5.32176 23.9976 11.7551L23.9063 11.7218L18.553 11.2964C15.4307 11.0482 12.9512 8.56871 12.7031 5.44644L12.2777 0.0932007L12.2444 0.00195312Z"
+                      fill="white" />
+                    <path
+                      d="M23.9953 12.3384C23.8185 18.7169 18.6642 23.8512 12.2779 23.9964L12.7031 18.6462C12.9512 15.5239 15.4308 13.0444 18.553 12.7963L23.9063 12.3709L23.9953 12.3384Z"
+                      fill="white" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__copyright">2023 © ТМ «Эстетика вкуса». Все права защищены</div>
+            <a href="#" class="footer__spaceapp">
+              <div class="footer__spaceapp-text">Разработка сайта</div>
+              <img src="../img/spaceapp.png" class="footer__spaceapp-icon">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+    type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="../js/script.js?v=0.00010"></script>
+</body>
+
+</html>

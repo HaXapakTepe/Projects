@@ -1,0 +1,17 @@
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &__icon {
+    @include fluid(width, 20px, 22px);
+    @include fluid(height, 20px, 22px);
+  }
+
+  &__num {
+    color: #000;
+    @include fluid(font-size, 18px, 22px);
+    font-weight: 700;
+    line-height: 125%;
+  }
+}

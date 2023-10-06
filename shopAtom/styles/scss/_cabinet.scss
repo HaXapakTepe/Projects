@@ -1,0 +1,46 @@
+.cabinet {
+  @include fluid(margin-bottom, 30px, 150px);
+
+  &__title {
+    @include fluid(margin-bottom, 30px, 70px);
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: .355fr 1fr;
+    @include fluid(gap, 20px, 40px);
+  }
+
+  &__tab {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 15px, 30px);
+
+    &-target {
+      border-radius: 20px;
+      background: #FFF;
+      text-align: center;
+      @include fluid(font-size, 22px, 28px);
+      @include fluid(padding-left, 25px, 50px);
+      @include fluid(padding-right, 25px, 50px);
+      padding-top: 18px;
+      padding-bottom: 18px;
+      transition: color .23s ease-in-out,
+        background-color .23s ease-in-out;
+
+      &:hover,
+      &.tab__target--active {
+        color: #FFF;
+        background-color: #E20072;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .cabinet {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+  }
+}

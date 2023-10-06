@@ -1,0 +1,214 @@
+.footer {
+  position: relative;
+  background-color: #060604;
+  @include fluid(padding-top, 20px, 39px);
+  @include fluid(padding-bottom, 30px, 55px);
+
+  .logo {
+    &__text {
+      letter-spacing: 5px;
+
+      &::after,
+      &::before {
+        width: 5px;
+        height: 5px;
+      }
+    }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    @include fluid(padding-bottom, 30px, 48px);
+    @include fluid(margin-bottom, 15px, 18px);
+    border-bottom: 1px solid #3E3E3E;
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include fluid(column-gap, 35px, 67px);
+    @include fluid(padding-top, 0px, 5px);
+    @include fluid(row-gap, 0px, 5px);
+
+    &-link {
+      position: relative;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      color: #fff;
+      @include fluid(font-size, 16px, 18px);
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0%;
+        height: 1px;
+        background-color: #fff;
+        transition: width .38s ease-in-out;
+      }
+
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    &-link,
+    &-copy,
+    &-text {
+      display: block;
+      @include fluid(font-size, 12px, 14px);
+      -webkit-text-decoration-line: underline;
+      text-decoration-line: underline;
+      color: #737373;
+      transition: color .38s ease-in-out;
+
+      &--notLine {
+        -webkit-text-decoration-line: unset;
+        text-decoration-line: unset;
+      }
+    }
+
+    &-link {
+      &:hover {
+        color: #fff;
+      }
+    }
+
+    &-box {
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+    }
+
+    &-block {
+      display: flex;
+      flex-direction: column;
+      @include fluid(gap, 10px, 18px);
+    }
+  }
+
+  &__form {
+    display: flex;
+    @include fluid(gap, 15px, 25px);
+
+    &-label {
+      position: relative;
+    }
+
+    &-icon {
+      position: absolute;
+      @include fluid(left, 15px, 30px);
+      top: 50%;
+      transform: translateY(-50%);
+      @include fluid(width, 21px, 25px);
+      @include fluid(height, 20px, 24px);
+    }
+
+    &-input {
+      @include fluid(padding-left, 45px, 55px);
+      height: 100%;
+    }
+
+    .btn {
+      display: flex;
+      @include fluid(padding-top, 25px, 30px);
+      @include fluid(padding-bottom, 25px, 30px);
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .footer {
+    .logo {
+      display: none;
+    }
+
+    &__box {
+      &-link {
+        &::after {
+          content: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .footer {
+    &__top {
+      padding-top: 110px;
+    }
+
+    &__bottom {
+      &-copy {
+        text-align: center;
+      }
+
+      &-item {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+
+  .footer {
+    &__top {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+
+      .contact {
+        align-items: center;
+
+        &__block {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+
+    &__box {
+      &-link {
+        text-align: center;
+      }
+    }
+
+    &__bottom {
+      &-text {
+        text-align: center;
+      }
+
+      &-item {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    &__form {
+      flex-direction: column;
+      align-items: center;
+
+      &-label,
+      &-input {
+        width: 100%;
+      }
+    }
+  }
+}

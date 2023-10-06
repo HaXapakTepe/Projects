@@ -1,0 +1,48 @@
+.net {
+  display: flex;
+  align-items: center;
+  @include fluid(gap, 20px, 40px);
+
+  &--header {
+    @include fluid(margin-right, 30px, 88px);
+    margin-left: auto;
+  }
+
+  &--footer {
+    align-self: flex-end;
+  }
+
+  &__link {
+    &-icon {
+      width: 24px;
+      height: 24px;
+
+      path {
+        fill: #fff;
+        transition: fill .38s ease-in-out;
+      }
+
+      &:hover {
+        path {
+          fill: #FF3D00;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .net {
+    &--header {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .net {
+    &--footer {
+      align-self: unset;
+    }
+  }
+}

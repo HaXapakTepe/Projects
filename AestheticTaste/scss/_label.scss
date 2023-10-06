@@ -1,0 +1,58 @@
+.check {
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  visibility: hidden;
+}
+
+.label {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 10px;
+  align-items: center;
+  color: #3E3535;
+  @include fluid(font-size, 14px, 16px);
+  line-height: normal;
+  white-space: nowrap;
+  cursor: pointer;
+
+  &__input {
+    &:checked+.label__inputCustom {
+      background-color: #ED3900;
+
+      &::after {
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+  }
+
+  &__inputCustom {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid #ED3900;
+    transition: background-color 0.38s ease-in-out;
+    border-radius: 5px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      width: 11px;
+      height: 8px;
+      background-image: url("../img/icons/check.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: transform 0.38s ease-in-out;
+    }
+  }
+}

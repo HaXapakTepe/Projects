@@ -1,0 +1,131 @@
+.menu {
+  position: fixed;
+  left: -100%;
+  z-index: 20;
+  width: 100%;
+  max-width: 100%;
+  background: #ffa800;
+  transition: left .38s ease-in-out;
+  padding-top: 10px;
+  height: 100%;
+
+  &--open {
+    left: 0;
+  }
+
+  &__inner {
+    padding-top: 45px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+
+    &-item {
+      color: #FFFFFF;
+      font-weight: 700;
+      transition: color 0.38s ease-in-out;
+      text-transform: uppercase;
+      @include fluid(font-size, 14px, 18px);
+      @include fluid(line-height, 15px, 17px);
+      @include fluid(margin-bottom, 20px, 40px);
+
+      &:hover {
+        color: #FF3D00;
+      }
+    }
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    &-input {
+      border: none;
+      outline: none;
+      background-color: transparent;
+      padding: 10px 0px;
+      padding-bottom: 8px;
+      color: #FFFFFF;
+      @include fluid(font-size, 14px, 16px);
+      @include fluid(line-height, 13px, 15px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+      @include fluid(width, 130px, 140px);
+
+      &:focus-visible {
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+        outline: none;
+      }
+
+      &::-webkit-input-placeholder {
+        color: #FFFFFF;
+        @include fluid(font-size, 14px, 16px);
+        @include fluid(line-height, 13px, 15px);
+      }
+
+      &::-moz-placeholder {
+        color: #FFFFFF;
+        @include fluid(font-size, 14px, 16px);
+        @include fluid(line-height, 13px, 15px);
+      }
+
+      &:-ms-input-placeholder {
+        color: #FFFFFF;
+        @include fluid(font-size, 14px, 16px);
+        @include fluid(line-height, 13px, 15px);
+      }
+
+      &::-ms-input-placeholder {
+        color: #FFFFFF;
+        @include fluid(font-size, 14px, 16px);
+        @include fluid(line-height, 13px, 15px);
+      }
+
+      &::placeholder {
+        color: #FFFFFF;
+        @include fluid(font-size, 14px, 16px);
+        @include fluid(line-height, 13px, 15px);
+      }
+    }
+  }
+
+  &__phone {
+    display: flex;
+    margin-bottom: 20px;
+
+    &:hover {
+      .menu__phone-icon {
+        color: #FF3D00;
+      }
+
+      .menu__phone-value {
+        color: #FF3D00;
+      }
+    }
+
+    &-icon {
+      margin-right: 20px;
+      font-size: 24px;
+      color: #FFFFFF;
+      transition: color 0.38s ease-in-out;
+      @include fluid(font-size, 22px, 24px);
+    }
+
+    &-value {
+      text-decoration: none;
+      font-weight: 700;
+      color: #FFFFFF;
+      transition: color 0.38s ease-in-out;
+      @include fluid(font-size, 18px, 24px);
+      @include fluid(line-height, 19px, 23px);
+    }
+  }
+}

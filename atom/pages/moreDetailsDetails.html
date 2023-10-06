@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/images/icons/logo.svg" type="x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/css/icons.css">
+  <link rel="stylesheet" href="../styles/css/calendar.css">
+  <link rel="stylesheet" href="../styles/css/normalize.css">
+  <link rel="stylesheet" href="../styles/css/style.css?v=0.0001">
+  <link rel="stylesheet" href="../styles/css/style.css?v=0.0001">
+  <title>Детская зона</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <div class="burger"></div>
+          <div class="header__box">
+            <a class="logo" href="#">
+              <img class="logo__img" src="../assets/images/icons/logo.svg" alt="Картинка с размерами">
+            </a>
+            <a class="header__link header__link--accent" href="#">
+              Павильон атомной энергии на ВДНХ
+            </a>
+          </div>
+          <a class="link link--pinkTransperent link-fz link--mla" href="#">
+            <span class="btn__icon">
+              <svg viewBox="0 0 22 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="path-1-inside-1_0_1348" fill="white">
+                  <rect y="7.66406" width="22" height="24.3349" rx="1" />
+                </mask>
+                <rect y="7.66406" width="22" height="24.3349" rx="1" stroke="white" stroke-width="4"
+                  mask="url(#path-1-inside-1_0_1348)" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M15.7409 6.07227C15.7403 6.07227 15.7398 6.07178 15.7398 6.07118C15.7398 3.58489 13.6569 1.5 11.0008 1.5C8.34464 1.5 6.26172 3.58489 6.26172 6.07118C6.26172 6.07178 6.26123 6.07227 6.26064 6.07227H4.7628C4.7622 6.07227 4.76172 6.07178 4.76172 6.07118C4.76172 2.71816 7.55504 0 11.0008 0C14.4465 0 17.2398 2.71816 17.2398 6.07118C17.2398 6.07178 17.2394 6.07227 17.2388 6.07227H15.7409Z"
+                  fill="white" />
+                <path
+                  d="M4.76172 13.0143C4.76172 13.4286 5.0975 13.7643 5.51172 13.7643C5.92593 13.7643 6.26172 13.4286 6.26172 13.0143L4.76172 13.0143ZM4.76172 6.07227L4.76172 13.0143L6.26172 13.0143L6.26172 6.07227L4.76172 6.07227Z"
+                  fill="white" />
+                <path
+                  d="M15.7422 13.0143C15.7422 13.4286 16.078 13.7643 16.4922 13.7643C16.9064 13.7643 17.2422 13.4286 17.2422 13.0143L15.7422 13.0143ZM15.7422 6.07227L15.7422 13.0143L17.2422 13.0143L17.2422 6.07227L15.7422 6.07227Z"
+                  fill="white" />
+              </svg>
+            </span>
+            Интернет‐магазин
+          </a>
+          <div class="header__block">
+            <a class="header__link" data-fancybox href="#search">
+              <span class="header__link-icon header__link--search">
+                <svg viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M18.8095 9.73913C18.8095 14.5498 14.8387 18.4783 9.90476 18.4783C4.97083 18.4783 1 14.5498 1 9.73913C1 4.92847 4.97083 1 9.90476 1C14.8387 1 18.8095 4.92847 18.8095 9.73913Z"
+                    stroke="#025EA1" stroke-width="2" />
+                  <path
+                    d="M26.0001 28.0033C26.3939 28.3906 27.0324 28.3906 27.4262 28.0033C27.82 27.6161 27.82 26.9883 27.4262 26.6011L26.0001 28.0033ZM14.8573 17.0468L26.0001 28.0033L27.4262 26.6011L16.2834 15.6446L14.8573 17.0468Z"
+                    fill="#025EA1" />
+                </svg>
+              </span>
+            </a>
+            <a class="header__link header__link--user" href="#">
+              <span class="header__link-icon">
+                <svg viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="path-1-inside-1_0_1357" fill="white">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0.0779463 29.9879C0.0157101 30.5536 0.473169 31.0293 1.04223 31.0293H29.9548C30.5239 31.0293 30.9813 30.5536 30.9191 29.9879C30.0652 22.227 23.4869 16.1895 15.4985 16.1895C7.51012 16.1895 0.93186 22.227 0.0779463 29.9879Z" />
+                  </mask>
+                  <path
+                    d="M0.0779463 29.9879L-1.91006 29.7692L0.0779463 29.9879ZM1.04223 33.0293H29.9548V29.0293H1.04223V33.0293ZM15.4985 18.1895C22.4558 18.1895 28.1875 23.4483 28.9311 30.2067L32.9071 29.7692C31.9429 21.0057 24.5181 14.1895 15.4985 14.1895V18.1895ZM2.06595 30.2067C2.80955 23.4483 8.54126 18.1895 15.4985 18.1895V14.1895C6.47898 14.1895 -0.945829 21.0057 -1.91006 29.7692L2.06595 30.2067ZM29.9548 33.0293C31.6248 33.0293 33.1093 31.6068 32.9071 29.7692L28.9311 30.2067C28.8534 29.5004 29.423 29.0293 29.9548 29.0293V33.0293ZM1.04223 29.0293C1.57411 29.0293 2.14366 29.5004 2.06595 30.2067L-1.91006 29.7692C-2.11224 31.6068 -0.627772 33.0293 1.04223 33.0293V29.0293Z"
+                    fill="#025EA1" mask="url(#path-1-inside-1_0_1357)" />
+                  <circle cx="15.4988" cy="6.74539" r="5.74539" stroke="#025EA1" stroke-width="2" />
+                </svg>
+              </span>
+              <p class="header__link-text">
+                Вход
+              </p>
+            </a>
+          </div>
+          <div class="header__lang header__lang--ru remove">
+            <div class="header__lang-block">
+              <div class="header__lang-country">
+                <img class="header__lang-icon" src="../assets/images/icons/ru.svg" alt="">
+                <img class="header__lang-icon" src="../assets/images/icons/usa.png" alt="">
+              </div>
+              <div class="header__lang-now">
+                Ru
+              </div>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item menu__item--hidden menu__item--flex">
+                <div class="header__box">
+                  <a class="logo" href="#">
+                    <img class="logo__img" src="../assets/images/icons/logo-white.svg" alt="">
+                  </a>
+                  <a class="header__link header__link--accent" href="#">
+                    Павильон атомной энергии на ВДНХ
+                  </a>
+                </div>
+                <div class="menu__box">
+                  <a class="header__link" data-fancybox href="#search">
+                    <span class="header__link-icon header__link--search">
+                      <svg viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M18.8095 9.73913C18.8095 14.5498 14.8387 18.4783 9.90476 18.4783C4.97083 18.4783 1 14.5498 1 9.73913C1 4.92847 4.97083 1 9.90476 1C14.8387 1 18.8095 4.92847 18.8095 9.73913Z"
+                          stroke="#fff" stroke-width="2" />
+                        <path
+                          d="M26.0001 28.0033C26.3939 28.3906 27.0324 28.3906 27.4262 28.0033C27.82 27.6161 27.82 26.9883 27.4262 26.6011L26.0001 28.0033ZM14.8573 17.0468L26.0001 28.0033L27.4262 26.6011L16.2834 15.6446L14.8573 17.0468Z"
+                          fill="#fff" />
+                      </svg>
+                    </span>
+                  </a>
+                  <a class="header__link header__link--user" href="#">
+                    <span class="header__link-icon">
+                      <svg viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <mask id="path-1-inside-1_0_1357" fill="white">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.0779463 29.9879C0.0157101 30.5536 0.473169 31.0293 1.04223 31.0293H29.9548C30.5239 31.0293 30.9813 30.5536 30.9191 29.9879C30.0652 22.227 23.4869 16.1895 15.4985 16.1895C7.51012 16.1895 0.93186 22.227 0.0779463 29.9879Z" />
+                        </mask>
+                        <path
+                          d="M0.0779463 29.9879L-1.91006 29.7692L0.0779463 29.9879ZM1.04223 33.0293H29.9548V29.0293H1.04223V33.0293ZM15.4985 18.1895C22.4558 18.1895 28.1875 23.4483 28.9311 30.2067L32.9071 29.7692C31.9429 21.0057 24.5181 14.1895 15.4985 14.1895V18.1895ZM2.06595 30.2067C2.80955 23.4483 8.54126 18.1895 15.4985 18.1895V14.1895C6.47898 14.1895 -0.945829 21.0057 -1.91006 29.7692L2.06595 30.2067ZM29.9548 33.0293C31.6248 33.0293 33.1093 31.6068 32.9071 29.7692L28.9311 30.2067C28.8534 29.5004 29.423 29.0293 29.9548 29.0293V33.0293ZM1.04223 29.0293C1.57411 29.0293 2.14366 29.5004 2.06595 30.2067L-1.91006 29.7692C-2.11224 31.6068 -0.627772 33.0293 1.04223 33.0293V29.0293Z"
+                          fill="#fff" mask="url(#path-1-inside-1_0_1357)" />
+                        <circle cx="15.4988" cy="6.74539" r="5.74539" stroke="#fff" stroke-width="2" />
+                      </svg>
+                    </span>
+                    <p class="header__link-text">
+                      Вход
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Экспозиция/Выставки
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  События
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Экскурсии
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  А ещё
+                </a>
+              </li>
+              <li class="menu__item menu__item--hidden">
+                <a class="menu__link" href="#">
+                  Интернет‐магазин
+                </a>
+              </li>
+              <li class="menu__item menu__item--hidden menu__item--flex">
+                <a class="menu__link" href="#">
+                  Язык
+                </a>
+                <div class="header__lang header__lang--ru">
+                  <div class="header__lang-block">
+                    <div class="header__lang-country">
+                      <img class="header__lang-icon" src="../assets/images/icons/ru.svg" alt="">
+                      <img class="header__lang-icon" src="../assets/images/icons/usa.png" alt="">
+                    </div>
+                    <div class="header__lang-now">
+                      Ru
+                    </div>
+                    <span></span>
+                  </div>
+                </div>
+              </li>
+              <li class="menu__item menu__item--hidden">
+                <a class="link link--fz link--white link--px" href="#">
+                  Купить билет
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a class="header__link" data-fancybox href="#search">
+            <span class="header__link-icon header__link--search">
+              <svg viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18.8095 9.73913C18.8095 14.5498 14.8387 18.4783 9.90476 18.4783C4.97083 18.4783 1 14.5498 1 9.73913C1 4.92847 4.97083 1 9.90476 1C14.8387 1 18.8095 4.92847 18.8095 9.73913Z"
+                  stroke="#025EA1" stroke-width="2" />
+                <path
+                  d="M26.0001 28.0033C26.3939 28.3906 27.0324 28.3906 27.4262 28.0033C27.82 27.6161 27.82 26.9883 27.4262 26.6011L26.0001 28.0033ZM14.8573 17.0468L26.0001 28.0033L27.4262 26.6011L16.2834 15.6446L14.8573 17.0468Z"
+                  fill="#025EA1" />
+              </svg>
+            </span>
+          </a>
+          <a class="link link--fz link--blue link--px link--higher" href="#">
+            Купить билет
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">
+              Главная
+            </a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">
+              А ещё
+            </a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">
+              Лаунж
+            </a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">
+              Детская зона
+            </a>
+          </li>
+        </ul>
+      </div>
+
+
+      <section class="detailsCard detailsCard--sea">
+        <div class="container">
+          <div class="detailsCard__top">
+            <div class="detailsCard__card">
+              <div class="detailsCard__card-top detailsCard__card-top--mb">
+                <h3 class="detailsCard__card-title title title--white">
+                  Детская зона
+                </h3>
+                <div class="detailsCard__card-age">
+                  7+
+                </div>
+              </div>
+              <div class="detailsCard__card-grid">
+                <div class="detailsCard__card-column">
+                  <p class="detailsCard__card-info">
+                    <span class="detailsCard__card-icon detailsCard__card-icon--mt">
+                      <img src="../assets/images/icons/circle-white.svg" alt="">
+                    </span>
+                    10:00-21:00
+                  </p>
+                  <p class="detailsCard__card-info">
+                    <span class="detailsCard__card-icon">
+                      <img src="../assets/images/icons/loca-white.svg" alt="">
+                    </span>
+                    Ежедневно по предварительным заявкам
+                  </p>
+                  <p class="detailsCard__card-info">
+                    <span class="detailsCard__card-icon">
+                      <img src="../assets/images/icons/square.svg" alt="">
+                    </span>
+                    80 м²
+                  </p>
+                </div>
+                <div class="detailsCard__card-flex">
+                  <a class="link link--seaTransperent  link--higher" href="#">
+                    Записаться
+                  </a>
+                </div>
+              </div>
+            </div>
+            <img class="detailsCard__top-img" src="../assets/images/excursion/13.jpg" alt="">
+          </div>
+          <div class="detailsCard__grid">
+            <div class="detailsCard__info">
+              <div class="detailsCard__info-box">
+                <p class="detailsCard__info-text">
+                  Экспозиция рассказывает, как в условиях военного и послевоенного времени развивалась советская атомная
+                  Научные бои с короткими 7-10 минутными презентациями результатов исследований, в которой победитель
+                  определится
+                  по громкости апплодисментов слушателей и голосованию онлайн-зрителей. Победители получат призы от
+                  павильона и партнеров, а также возможность стать спикером Лектория павильона.
+                </p>
+                <p class="detailsCard__why">
+                  Что внутри?
+                </p>
+                <ul class="detailsCard__list">
+                  <li class="detailsCard__list-item">
+                    Анализаторы
+                  </li>
+                  <li class="detailsCard__list-item">
+                    Лабораторные микроскопы
+                  </li>
+                  <li class="detailsCard__list-item">
+                    Столики инструментальные,манипуляционные, для анестезиолога
+                  </li>
+                  <li class="detailsCard__list-item">
+                    Столы для врача
+                  </li>
+                  <li class="detailsCard__list-item">
+                    Кушетки
+                  </li>
+                  <li class="detailsCard__list-item">
+                    Стулья и кресла
+                  </li>
+                  <li class="detailsCard__list-item">
+                    Холодильники фармацевтические
+                  </li>
+                  <li class="detailsCard__list-item">
+                    Облучатели-рециркуляторы
+                  </li>
+                  <li class="detailsCard__list-item">
+                    Ленты сантиметровые
+                  </li>
+                  <li class="detailsCard__list-item">
+                    Светильники
+                  </li>
+                  <li class="detailsCard__list-item">
+                    Комплект плакатовдля кабинета лаборатории
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="detailsCard__aside">
+              <div class="detailsCard__aside-column">
+                <p class="detailsCard__why">
+                  Соглашение пользователя
+                </p>
+                <a class="detailsCard__aside-pdf" href="#">
+                  <img class="detailsCard__aside-icon" src="../assets/images/icons/pdf-sea.svg" alt="">
+                </a>
+              </div>
+              <div class="detailsCard__aside-column">
+                <p class="detailsCard__why">
+                  Поделиться
+                </p>
+                <div class="footer__social social">
+                  <a class="social__icon" href="#">
+                    <img src="../assets/images/icons/tg-sea.svg" alt="">
+                  </a>
+                  <a class="social__icon" href="#">
+                    <img src="../assets/images/icons/vk-sea.svg" alt="">
+                  </a>
+                  <a class="social__icon" href="#">
+                    <img src="../assets/images/icons/ok-sea.svg" alt="">
+                  </a>
+                  <a class="social__icon" href="#">
+                    <img src="../assets/images/icons/share-sea.svg" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="detailsCard__aside-column">
+                <p class="detailsCard__why">
+                  Адрес
+                </p>
+                <p class="detailsCard__aside-text">
+                  Атом, просп. Мира, 119, стр. 228, Москва
+                </p>
+              </div>
+              <a class="link link--sea " href="#">
+                Записаться
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__inner">
+            <div class="footer__item">
+              <p class="footer__item-text">
+                О павильоне
+              </p>
+              <div class="footer__item-grid">
+                <a class="footer__item-link" href="#">
+                  О павильоне
+                </a>
+                <a class="footer__item-link" href="#">
+                  Документация
+                </a>
+                <a class="footer__item-link" href="#">
+                  Контакты
+                </a>
+                <a class="footer__item-link" href="#">
+                  Для СМИ
+                </a>
+                <a class="footer__item-link" href="#">
+                  Правила посещения
+                </a>
+                <a class="footer__item-link" href="#">
+                  Вакансии
+                </a>
+                <a class="footer__item-link" href="#">
+                  Партнёры
+                </a>
+              </div>
+            </div>
+            <div class="footer__item">
+              <p class="footer__item-text">
+                Контакты
+              </p>
+              <form class="footer__form" id="footer-form" action="" method="post">
+                <input class="footer__form-input form-input-email" id="footer-email-input" name="footer_form_email"
+                  type="text" placeholder="Ваш e-mail">
+                <span class="footer__form-error">
+                  Заполните поле
+                </span>
+                <button class="btn btn--transperent btn--higher">
+                  Подписаться
+                </button>
+              </form>
+              <div class="footer__item-box">
+                <a class="footer__item-phone" href="tel:+74959999999">
+                  + 7 (495) 999 99 99
+                </a>
+                <div class="footer__social social">
+                  <a class="social__icon" href="#">
+                    <img src="../assets/images/icons/tg.svg" alt="">
+                  </a>
+                  <a class="social__icon" href="#">
+                    <img src="../assets/images/icons/vk.svg" alt="">
+                  </a>
+                  <a class="social__icon" href="#">
+                    <img src="../assets/images/icons/ok.svg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="footer__copy">
+            © 2023 Фонд «АТОМ»
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <form class="search" id="search" action="">
+      <div class="search__inner">
+        <label class="search__label">
+          <input class="search__input" type="text" placeholder="Глава">
+          <button class="search__icon">
+            <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.5728 7.65621C14.5728 11.3165 11.5504 14.3124 7.78642 14.3124C4.02242 14.3124 1 11.3165 1 7.65621C1 3.99592 4.02242 1 7.78642 1C11.5504 1 14.5728 3.99592 14.5728 7.65621Z"
+                stroke="#171717" stroke-width="2" />
+              <path
+                d="M20.2889 22.164C20.6827 22.5512 21.3212 22.5512 21.715 22.164C22.1088 21.7768 22.1088 21.1489 21.715 20.7617L20.2889 22.164ZM11.5291 13.5507L20.2889 22.164L21.715 20.7617L12.9552 12.1485L11.5291 13.5507Z"
+                fill="#171717" />
+            </svg>
+          </button>
+        </label>
+        <div class="search__result">
+          <div class="search__result-text">
+            Глава 1. Советский атомный проект
+          </div>
+          <div class="search__result-text">
+            Глава 3. Современная атомная промышленность
+          </div>
+        </div>
+      </div>
+    </form>
+
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="../scripts/calendar.js"></script>
+  <script src="../scripts/valid.js?v=0.0001"></script>
+  <script src="../scripts/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+.scrollArrow {
+  position: fixed;
+  left: 20px;
+  bottom: 16px;
+  z-index: 15;
+  opacity: 0;
+  z-index: -1;
+
+  &--alt {
+    .scrollArrow__img {
+      transform: rotate(90deg);
+    }
+  }
+
+  &__img {
+    width: 54px;
+    height: 54px;
+    transform: rotate(-90deg);
+    transition: transform .38s ease-in-out;
+  }
+}
+
+@media (max-width: 992px) {
+  .scrollArrow {
+    opacity: 1;
+    z-index: 25;
+  }
+}

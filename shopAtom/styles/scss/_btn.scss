@@ -1,0 +1,124 @@
+.link,
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #FFF;
+  @include fluid(font-size, 16px, 20px);
+  @include fluid(padding-left, 20px, 41px);
+  @include fluid(padding-right, 20px, 41px);
+  @include fluid(padding-top, 4px, 6px);
+  @include fluid(padding-bottom, 7px, 9px);
+  border-radius: 5px;
+  border: 1px solid transparent;
+  transition: background-color .23s ease-in-out,
+    color .23s ease-in-out,
+    border-color .23s ease-in-out;
+  white-space: nowrap;
+  line-height: 1;
+  cursor: pointer;
+
+  &--mla {
+    margin-left: auto;
+  }
+
+  &--higher {
+    @include fluid(padding-top, 7px, 12px);
+    @include fluid(padding-bottom, 9px, 14px);
+    @include fluid(font-size, 18px, 25px);
+  }
+
+  &[disabled] {
+    background-color: #868686;
+
+    &:hover {
+      background-color: #868686;
+      color: #fff;
+      border-color: #868686;
+    }
+  }
+
+  &--transperent {
+    background-color: transparent;
+    border-color: #fff;
+
+    &:hover {
+      background-color: #fff;
+      color: #025EA1;
+      border-color: #025EA1;
+    }
+  }
+
+  &--pinkTransperent {
+    background-color: #E20072;
+    border-color: #fff;
+
+    &:hover {
+      background-color: #fff;
+      color: #E20072;
+    }
+  }
+
+  &--pinkTransperentAlt {
+    background-color: #E20072;
+    border-color: #fff;
+
+    &:hover {
+      background-color: transparent;
+      color: #E20072;
+      border-color: #E20072;
+    }
+  }
+
+  &--pink {
+    background-color: #E20072;
+
+    &:hover {
+      background-color: transparent;
+      color: #E20072;
+      border-color: #E20072;
+    }
+  }
+
+  &--pinkAlt {
+    background-color: #E20072;
+
+    &:hover {
+      background-color: #fff;
+      color: #E20072;
+      border-color: #E20072;
+    }
+  }
+
+  &--blue {
+    background-color: #025EA1;
+
+    &:hover {
+      background-color: transparent;
+      color: #025EA1;
+      border-color: #025EA1;
+    }
+  }
+
+  &--white {
+    color: #111;
+    background-color: #fff;
+    border-color: #fff;
+
+    &:hover {
+      background-color: #E20072;
+      color: #fff;
+      border-color: #fff;
+    }
+  }
+
+  &--brdNone {
+    &:hover {
+      border-color: transparent;
+    }
+  }
+}

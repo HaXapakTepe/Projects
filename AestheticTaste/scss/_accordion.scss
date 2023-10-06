@@ -1,0 +1,118 @@
+.accordion {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(252px, 1fr));
+
+  &--pos {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    z-index: 3;
+  }
+
+  &__item {
+    position: relative;
+    @include fluid(padding, 10px, 15px);
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      background-color: transparent;
+      transition: background-color .2s ease-in-out,
+        box-shadow .38s ease-in-out;
+      z-index: -1;
+    }
+
+    &:has(.accordion__item-text--active) {
+
+      &::after {
+        box-shadow: 0px 10px 30px 0px rgba(90, 94, 123, 0.10);
+        background-color: #FFF;
+      }
+
+      .accordion__item-icon {
+        transform: rotateX(180deg);
+      }
+    }
+
+    &-text {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #3E3535;
+      @include fluid(font-size, 14px, 16px);
+      line-height: normal;
+      @include fluid(padding-bottom, 5px, 10px);
+      border-bottom: 1px solid rgba(62, 53, 53, 0.35);
+      cursor: pointer;
+    }
+
+    &-hidden {
+      display: none;
+    }
+
+    &-block {
+      @include fluid(left, 10px, 15px);
+      @include fluid(margin-top, 15px, 20px);
+      display: flex;
+      flex-direction: column;
+      @include fluid(gap, 15px, 20px);
+      z-index: 2;
+      height: auto;
+    }
+
+    &-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      width: 11px;
+      height: 7px;
+      transition: transform .38s ease-in-out;
+    }
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+    @include fluid(margin-top, 5px, 10px);
+  }
+}
+
+@media (max-width: 992px) {
+  .accordion {
+    &--five {
+      height: 85px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .accordion {
+    &--five {
+      height: 125px;
+    }
+
+    &--three {
+      height: 85px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .accordion {
+    grid-template-columns: 1fr;
+
+    &--three,
+    &--five {
+      height: unset;
+    }
+  }
+}

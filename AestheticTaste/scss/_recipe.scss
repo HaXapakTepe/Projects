@@ -1,0 +1,138 @@
+.recipe {
+  @include fluid(margin-top, 30px, 80px);
+  @include fluid(margin-bottom, 30px, 120px);
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include fluid(gap, 15px, 30px);
+  }
+
+  &__item {
+    &-date {
+      display: block;
+      color: #7B7171;
+      @include fluid(font-size, 12px, 14px);
+      line-height: 135%;
+      @include fluid(margin-bottom, 15px, 30px);
+    }
+
+    &-title {
+      font-family: 'MADE Waffle Soft';
+      font-size: 30px;
+      @include fluid(font-size, 24px, 30px);
+      font-weight: 800;
+      line-height: normal;
+      text-transform: uppercase;
+      @include fluid(margin-bottom, 20px, 30px);
+
+      span {
+        color: #FFA800;
+      }
+
+      +.recipe__item-text {
+        @include fluid(margin-bottom, 30px, 83px);
+      }
+    }
+
+    &-text {
+      color: #000;
+      @include fluid(font-size, 16px, 18px);
+      line-height: 150%;
+    }
+
+    &-box {
+      display: flex;
+      flex-direction: column;
+      @include fluid(gap, 20px, 40px);
+    }
+
+    &-block {
+      display: flex;
+      align-items: center;
+      @include fluid(gap, 15px, 30px);
+    }
+
+    &-icon {
+      @include fluid(width, 50px, 64px);
+      @include fluid(height, 50px, 64px);
+    }
+  }
+
+  &__img {
+    @include fluid(height, 440px, 638px);
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    list-style: inside;
+
+    &-item {
+      color: #000;
+      @include fluid(font-size, 16px, 18px);
+      line-height: 150%;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    @include fluid(column-gap, 15px, 30px);
+    @include fluid(row-gap, 20px, 50px);
+    counter-reset: num;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      @include fluid(gap, 15px, 30px);
+    }
+
+    &-img {
+      @include fluid(height, 300px, 415px);
+      -o-object-fit: cover;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+
+    &-text {
+      position: relative;
+      color: #000;
+      @include fluid(font-size, 14px, 16px);
+      line-height: 150%;
+      @include fluid(padding-left, 20px, 25px);
+
+      &:before {
+        content: counter(num)'.';
+        counter-increment: num;
+        position: absolute;
+        left: 5px;
+        top: 0;
+      }
+    }
+  }
+
+  &__loaf {
+    position: absolute;
+    @include fluid(left, 0px, 20px);
+    top: 53%;
+    transform: translateY(-50%);
+    z-index: -1;
+    @include fluid(width, 199px, 239px);
+    @include fluid(height, 126px, 166px);
+  }
+}
+
+
+@media (max-width: 992px) {
+  .recipe {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+  }
+}
