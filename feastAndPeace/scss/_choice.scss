@@ -24,25 +24,30 @@
     @include fluid(margin-bottom, 20px, 60px);
   }
 
-  &__wrapper {
-    position: relative;
+  &__swiper {
+    overflow: visible;
 
-    &--width {
-      width: 95%;
-    }
+    .swiper-wrapper {
+      position: relative;
 
-    &::after {
-      content: '';
-      position: absolute;
-      top: 33%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 150%;
-      height: 1px;
-      background-color: #EBF2F5;
-      z-index: -1;
+      &--width {
+        width: 95%;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 33%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 150%;
+        height: 1px;
+        background-color: #EBF2F5;
+        z-index: -1;
+      }
     }
   }
+
 
   &__link {
     display: flex;
