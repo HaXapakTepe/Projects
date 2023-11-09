@@ -1,0 +1,170 @@
+.content {
+  @include fluid(margin-top, 20px, 30px);
+  margin-bottom: 32px;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include fluid(gap, 14px, 16px);
+  }
+
+  &__item {
+    border: 1px solid #CCC;
+    background: #FFF;
+    box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.25);
+
+    &-elem {
+      display: grid;
+      grid-template-columns: 1fr;
+      @include fluid(padding-left, 15px, 20px);
+      @include fluid(padding-right, 15px, 20px);
+      @include fluid(padding-top, 15px, 20px);
+      @include fluid(margin-bottom, 10px, 11px);
+
+      &--pb {
+        height: 100%;
+        @include fluid(padding-bottom, 29px, 37px);
+      }
+    }
+
+    &-container {
+      display: flex;
+
+      &--mb {
+        @include fluid(margin-bottom, 48px, 61px);
+      }
+    }
+
+    &-title {
+      @include fluid(max-width, 261px, 291px);
+      color: #0B6C72;
+      font-family: 'Raleway';
+      @include fluid(font-size, 22px, 24px);
+      font-weight: 600;
+      text-transform: capitalize;
+
+      span {
+        display: block;
+        @include fluid(font-size, 18px, 20px);
+        letter-spacing: -0.54px;
+        text-transform: initial;
+      }
+    }
+
+    &-box {
+      display: flex;
+      gap: 5px;
+      margin-right: 10px;
+      margin-left: auto;
+    }
+
+    &-icon {
+      @include fluid(width, 29px, 32px);
+      @include fluid(height, 29px, 32px);
+      -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.25));
+      filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.25));
+
+      svg {
+        @include fluid(width, 29px, 32px);
+        @include fluid(height, 29px, 32px);
+      }
+    }
+
+    &-textIcon {
+      color: #223736;
+      font-family: 'Raleway';
+      @include fluid(font-size, 8px, 9px);
+      font-weight: 700;
+    }
+
+    &-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include fluid(gap, 3px, 5px);
+    }
+
+    &-text {
+      @include fluid(font-size, 13px, 15px);
+      font-weight: 700;
+
+      .content__item-img {
+        margin-left: auto;
+        float: right;
+      }
+
+      span {
+        .content__item-quotes {
+          position: relative;
+          display: inline;
+          width: 24px;
+          height: 24px;
+          top: -5px;
+        }
+      }
+
+      &--tar {
+        text-align: right;
+      }
+    }
+
+    &-img {
+      width: 90px;
+      height: 120px;
+    }
+
+    &-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include fluid(gap, 12px, 14px);
+      padding: 8px 0;
+      border-top: 1px solid #AAA;
+      background: linear-gradient(180deg, #FFF 53.12%, #D9D9D9 100%);
+      box-shadow: 0px 0px 5px 3px #FFF inset,
+        0px -3px 6px 0px rgba(0, 0, 0, 0.10);
+      color: #0A5256;
+      font-family: 'Raleway';
+      @include fluid(font-size, 18px, 22px);
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .content {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+
+    &__item {
+      &-title {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .content {
+    &__item {
+      &-img {
+        width: 68px;
+        height: 76px;
+      }
+
+      &-text {
+        font-size: 12px;
+      }
+
+      &-textIcon {
+        display: none;
+      }
+
+      &-box {
+        margin-right: 5px;
+      }
+    }
+  }
+}

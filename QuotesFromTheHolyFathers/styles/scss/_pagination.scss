@@ -1,0 +1,48 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 15px;
+
+  &--jce {
+    justify-content: end;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #3FE0CC;
+    background-color: #FFF;
+    width: 32px;
+    height: 30px;
+
+    &--active {
+      background-color: #3FE0CC;
+    }
+
+    &:first-child,
+    &:last-child {
+      border: none;
+      background: transparent;
+
+      &--active {
+        background-color: transparent;
+      }
+    }
+  }
+
+  &__link {
+    font-family: 'PT Serif';
+    font-size: 18px;
+    font-weight: 700;
+    color: #223736;
+    width: 100%;
+    text-align: center;
+
+    &-icon {
+      width: 22;
+      height: 15px;
+    }
+  }
+}

@@ -1,0 +1,121 @@
+.link,
+.btn {
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: block;
+  border: 1px solid #CCC;
+  box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.25);
+  color: #FFF;
+  @include fluid(font-size, 17px, 18px);
+  font-weight: 700;
+  text-transform: uppercase;
+  @include fluid(padding-top, 10px, 17.5px);
+  @include fluid(padding-bottom, 10px, 16.5px);
+  @include fluid(padding-left, 27px, 30px);
+  @include fluid(padding-right, 27px, 30px);
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+
+  span {
+    position: relative;
+    z-index: 2;
+
+    .btn__icon {
+      position: absolute;
+      top: 10%;
+      transform: translateY(-50%);
+      @include fluid(right, -45px, -55px);
+      @include fluid(width, 28px, 30px);
+      @include fluid(height, 28px, 30px);
+    }
+  }
+
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: opacity 0.25s ease-in-out;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    background: linear-gradient(180deg, #37B87A 21.67%, #0B6C72 79.97%);
+  }
+
+  &:before {
+    opacity: 0;
+    background: linear-gradient(180deg, #00D1AC 0%, #0F6166 0.01%, #38C1B1 79.69%);
+  }
+
+  &:hover {
+    &::after {
+      opacity: 0;
+    }
+
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  &--gold {
+    @include fluid(padding-top, 12.5px, 18.5px);
+    @include fluid(padding-bottom, 10.5px, 18.5px);
+    @include fluid(padding-left, 5px, 30px);
+    @include fluid(padding-right, 5px, 30px);
+    color: #6C3526;
+    text-align: center;
+    font-family: 'Raleway';
+    @include fluid(font-size, 18px, 20px);
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 10px;
+    box-shadow: 6px 6px 12px 0px rgba(0, 0, 0, 0.15);
+    border: none;
+
+    &::after,
+    &::before {
+      border-radius: 10px;
+    }
+
+    &::after {
+      background: linear-gradient(180deg, #F9DE30 0%, #FFF572 27.69%, #F48C00 77.72%, #A35309 93.17%);
+    }
+
+    &:before {
+      background: linear-gradient(180deg, #F48C00 0%, #FFF572 39.55%, #F9DE30 77.72%, #a35309 93.17%);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+
+  .link,
+  .btn {
+    span {
+      position: relative;
+      z-index: 2;
+
+      .btn__icon {
+        width: 21px;
+        height: 21px;
+        top: 15%;
+        right: -25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+
+  .link,
+  .btn {
+    font-size: 14px;
+  }
+}
