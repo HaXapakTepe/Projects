@@ -299,12 +299,10 @@
 
   .choice {
     &__swiper {
-      overflow: visible;
-    }
-
-    &__wrapper {
-      &::after {
-        display: none;
+      .swiper-wrapper {
+        &::after {
+          display: none;
+        }
       }
     }
 

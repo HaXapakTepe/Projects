@@ -159,6 +159,13 @@ $(document).ready(function () {
     })
   }
 
+  if (document.querySelector('.top__swiper')) {
+    const projectsSwiper = new Swiper('.top__swiper', {
+      loop: true,
+      slidesPerView: 1,
+    })
+  }
+
   var points = [
     [
       '<div class="map-baloon"><p></p><p>г. Чистополь, К. Либкнехта, д. 22 Б</p></div>',
@@ -503,27 +510,19 @@ $(document).ready(function () {
         }
 
         $('.vertushka__item')
-        $('.vertushka__item[data-pos=' + oldPos + ']').animate(
-          position[newPos],
-          ANIM_RAND,
-          function () {
-            $('.vertushka__item[data-pos=' + oldPos + ']')
-            animations.pop()
-          }
-        )
+        $('.vertushka__item[data-pos=' + oldPos + ']').animate(position[newPos], ANIM_RAND, function () {
+          $('.vertushka__item[data-pos=' + oldPos + ']')
+          animations.pop()
+        })
         animations.push('GrowsImage' + oldPos)
         animations.pop()
       } else {
         if (oldPos == 'A' || oldPos == 'B' || oldPos == 'C') {
           //уменьшение
           animations.push('shrink' + oldPos)
-          $('.vertushka__item[data-pos=' + oldPos + ']').animate(
-            position[newPos],
-            ANIM_RAND,
-            function () {
-              animations.pop()
-            }
-          )
+          $('.vertushka__item[data-pos=' + oldPos + ']').animate(position[newPos], ANIM_RAND, function () {
+            animations.pop()
+          })
           if (!$(this).hasClass('vertushka__item--big')) {
             animations.push('shrinkImage' + oldPos)
             animations.pop()
@@ -531,13 +530,9 @@ $(document).ready(function () {
         } else {
           //перемещение
           animations.push('moving' + oldPos)
-          $('.vertushka__item[data-pos=' + oldPos + ']').animate(
-            position[newPos],
-            ANIM_RAND,
-            function () {
-              animations.pop()
-            }
-          )
+          $('.vertushka__item[data-pos=' + oldPos + ']').animate(position[newPos], ANIM_RAND, function () {
+            animations.pop()
+          })
         }
       }
 
