@@ -4,14 +4,13 @@
 
   &__inner {
     display: grid;
-    grid-template-columns: .853fr 1.147fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   &__item {
     position: relative;
 
     &-title {
-      @include fluid(margin-top, 70px, 145px);
       @include fluid(margin-bottom, 25px, 53px);
       @include fluid(font-size, 90px, 150px);
       line-height: 1.5;
@@ -21,6 +20,13 @@
       letter-spacing: 5px;
       -webkit-text-stroke: 2px #5E5E5E;
       -webkit-text-fill-color: transparent;
+      color: rgba(255, 255, 255, 0)
+    }
+
+    &-text {
+      @include fluid(font-size, 36px, 72px);
+      font-weight: 700;
+      white-space: nowrap;
     }
   }
 
@@ -51,7 +57,7 @@
         bottom: 0;
         width: 20px;
         height: 20px;
-        background-image: url("../../assets/images/icons/corner.svg");
+        background-image: url("/assets/images/icons/corner.svg");
         background-size: contain;
         background-repeat: no-repeat;
       }
@@ -190,7 +196,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url('../../assets/images/icons/ellipse-bg-left.png');
+      background-image: url('/assets/images/icons/ellipse-bg-left.png');
       background-repeat: no-repeat;
       background-size: contain;
       pointer-events: none;
@@ -205,6 +211,7 @@
     &__item {
       order: 1;
 
+      &-text,
       &-title {
         display: none;
       }

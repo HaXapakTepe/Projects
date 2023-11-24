@@ -1,5 +1,11 @@
 window.addEventListener('DOMContentLoaded', () => {
+  const token = '5647846048:AAEtCT5PVBEiUJ1J4ychhmHW77aopDENhho'
+  const chatId = '-1001909504521'
+  const urlApi = `https://api.telegram.org/bot${token}/sendMessage`
+
   const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
+
+  const success = document.querySelector('.success')
 
   const footerFormEl = document.querySelector('#footer-form')
   const formEl = document.querySelector('#form')
@@ -14,19 +20,23 @@ window.addEventListener('DOMContentLoaded', () => {
   const briefNameInputEl = briefEl?.querySelector('#brief-name-input')
   const briefEmailInputEl = briefEl?.querySelector('#brief-email-input')
   const briefTelInputEl = briefEl?.querySelector('#brief-tel-input')
+  const briefCheckboxEl = briefEl?.querySelector('#brief-input-checkbox')
+  const briefButton = briefEl?.querySelector('#brief-button')
   const applicationNameInputEl = applicationEl?.querySelector('#application-name-input')
   const applicationEmailInputEl = applicationEl?.querySelector('#application-email-input')
   const applicationTelInputEl = applicationEl?.querySelector('#application-tel-input')
+  const applicationCheckboxEl = applicationEl?.querySelector('#application-input-checkbox')
+  const applicationButton = applicationEl?.querySelector('#application-button')
   const outsourcingNameInputEl = outsourcingFormEl?.querySelector('#outsourcing-name-input')
-  const outsourcingNameCompanyInputEl = outsourcingFormEl?.querySelector('#outsourcing-nameCompany-input')
+  const outsourcingCompanyInputEl = outsourcingFormEl?.querySelector('#outsourcing-company-input')
   const outsourcingEmailInputEl = outsourcingFormEl?.querySelector('#outsourcing-email-input')
   const outsourcingTelInputEl = outsourcingFormEl?.querySelector('#outsourcing-tel-input')
 
   const checkInputValidity = (input) => input.value
 
-  const submitOutsourcingForm = (e) => {
+  const submitOutsourcingForm = async (e) => {
     e.preventDefault()
-    ;[outsourcingNameInputEl, outsourcingNameCompanyInputEl, outsourcingEmailInputEl, outsourcingTelInputEl].forEach(
+    ;[outsourcingNameInputEl, outsourcingCompanyInputEl, outsourcingEmailInputEl, outsourcingTelInputEl].forEach(
       (input) => {
         if (!checkInputValidity(input)) {
           input.classList.add('input--invalid')
@@ -44,11 +54,11 @@ window.addEventListener('DOMContentLoaded', () => {
       outsourcingNameInputEl.classList.remove('input--invalid')
     }
 
-    if (outsourcingNameCompanyInputEl.value.length < 2 || outsourcingNameCompanyInputEl.value.length > 30) {
-      outsourcingNameCompanyInputEl.classList.add('input--invalid')
+    if (outsourcingCompanyInputEl.value.length < 2 || outsourcingCompanyInputEl.value.length > 30) {
+      outsourcingCompanyInputEl.classList.add('input--invalid')
       return
     } else {
-      outsourcingNameCompanyInputEl.classList.remove('input--invalid')
+      outsourcingCompanyInputEl.classList.remove('input--invalid')
     }
 
     if (!emailRegex.test(outsourcingEmailInputEl.value)) {
@@ -65,10 +75,48 @@ window.addEventListener('DOMContentLoaded', () => {
       outsourcingTelInputEl.classList.remove('input--invalid')
     }
 
-    outsourcingFormEl.submit()
+    let message = `<b>Заявка с сайта:</b>\n`
+    message += `<b>Имя:</b> ${e.target.name.value}\n`
+    message += `<b>Название компании:</b> ${e.target.company.value}\n`
+    message += `<b>Телефон:</b> ${e.target.phone.value}\n`
+    message += `<b>Email:</b> ${e.target.email.value}\n`
+
+    const resp = await axios.post(urlApi, {
+      chat_id: chatId,
+      parse_mode: 'html',
+      text: message,
+    })
+
+    if (resp.data.ok) {
+      $.ajax({
+        url: '/send.php',
+        type: 'post',
+        data: {
+          name: outsourcingNameInputEl.value,
+          company: outsourcingCompanyInputEl.value,
+          phone: outsourcingTelInputEl.value,
+          email: outsourcingEmailInputEl.value,
+        },
+        cache: false,
+        dataType: 'html',
+        success: function (data) {
+          success.classList.add('success--visible')
+          if (success.classList.contains('success--visible')) {
+            setTimeout(() => {
+              success.classList.remove('success--visible')
+            }, 1500)
+          }
+        },
+      })
+
+      outsourcingNameInputEl.value = ''
+      outsourcingCompanyInputEl.value = ''
+      outsourcingTelInputEl.value = ''
+      outsourcingEmailInputEl.value = ''
+    }
   }
 
-  const submitForm = (e) => {
+  const submitForm = async (e) => {
     e.preventDefault()
     ;[formNameInputEl, formEmailInputEl, formTelInputEl].forEach((input) => {
       if (!checkInputValidity(input)) {
@@ -100,10 +148,51 @@ window.addEventListener('DOMContentLoaded', () => {
       formTelInputEl.classList.remove('input--invalid')
     }
 
+    if (!formCheckboxInputEl.checked) {
+      formButton.classList.add('btn--disabled')
+      return
+    } else {
+      formButton.classList.remove('btn--disabled')
+    }
+
     if (formButton.classList.contains('btn--disabled')) {
       return
     } else {
-      formEl.submit()
+      let message = `<b>Заявка с сайта:</b>\n`
+      message += `<b>Имя:</b> ${e.target.name.value}\n`
+      message += `<b>Телефон:</b> ${e.target.phone.value}\n`
+      message += `<b>Email:</b> ${e.target.email.value}\n`
+
+      const resp = await axios.post(urlApi, {
+        chat_id: chatId,
+        parse_mode: 'html',
+        text: message,
+      })
+      if (resp.data.ok) {
+        $.ajax({
+          url: '/send.php',
+          type: 'post',
+          data: {
+            name: formNameInputEl.value,
+            email: formEmailInputEl.value,
+            phone: formTelInputEl.value,
+          },
+          cache: false,
+          dataType: 'html',
+          success: function (data) {
+            success.classList.add('success--visible')
+            if (success.classList.contains('success--visible')) {
+              setTimeout(() => {
+                success.classList.remove('success--visible')
+              }, 1500)
+            }
+          },
+        })
+
+        formNameInputEl.value = ''
+        formEmailInputEl.value = ''
+        formTelInputEl.value = ''
+      }
     }
   }
 
@@ -126,10 +215,28 @@ window.addEventListener('DOMContentLoaded', () => {
       emailInput.classList.remove('input--invalid')
     }
 
-    footerFormEl.submit()
+    $.ajax({
+      url: '/send.php',
+      type: 'post',
+      data: {
+        email: emailInput.value,
+      },
+      cache: false,
+      dataType: 'html',
+      success: function (data) {
+        success.classList.add('success--visible')
+        if (success.classList.contains('success--visible')) {
+          setTimeout(() => {
+            success.classList.remove('success--visible')
+          }, 1500)
+        }
+      },
+    })
+
+    emailInput.value = ''
   }
 
-  const submitApplicationForm = (e) => {
+  const submitApplicationForm = async (e) => {
     e.preventDefault()
     ;[applicationNameInputEl, applicationEmailInputEl, applicationTelInputEl].forEach((input) => {
       if (!checkInputValidity(input)) {
@@ -161,10 +268,54 @@ window.addEventListener('DOMContentLoaded', () => {
       applicationTelInputEl.classList.remove('input--invalid')
     }
 
-    applicationEl.submit()
+    if (!applicationCheckboxEl.checked) {
+      applicationButton.classList.add('btn--disabled')
+      return
+    } else {
+      applicationButton.classList.remove('btn--disabled')
+    }
+
+    let message = `<b>Заявка с сайта:</b>\n`
+    message += `<b>Имя:</b> ${e.target.name.value}\n`
+    message += `<b>Телефон:</b> ${e.target.phone.value}\n`
+    message += `<b>Email:</b> ${e.target.email.value}\n`
+
+    const resp = await axios.post(urlApi, {
+      chat_id: chatId,
+      parse_mode: 'html',
+      text: message,
+    })
+
+    if (resp.data.ok) {
+      $.ajax({
+        url: '/send.php',
+        type: 'post',
+        data: {
+          name: applicationNameInputEl.value,
+          email: applicationEmailInputEl.value,
+          phone: applicationTelInputEl.value,
+        },
+        cache: false,
+        dataType: 'html',
+        success: function (data) {
+          success.classList.add('success--visible')
+          if (success.classList.contains('success--visible')) {
+            setTimeout(() => {
+              success.classList.remove('success--visible')
+            }, 1500)
+          }
+        },
+      })
+
+      applicationNameInputEl.value = ''
+      applicationEmailInputEl.value = ''
+      applicationTelInputEl.value = ''
+
+      Fancybox.close()
+    }
   }
 
-  const submitBriefForm = (e) => {
+  const submitBriefForm = async (e) => {
     e.preventDefault()
     ;[briefNameInputEl, briefEmailInputEl, briefTelInputEl].forEach((input) => {
       if (!checkInputValidity(input)) {
@@ -196,7 +347,51 @@ window.addEventListener('DOMContentLoaded', () => {
       briefTelInputEl.classList.remove('input--invalid')
     }
 
-    briefEl.submit()
+    if (!briefCheckboxEl.checked) {
+      briefButton.classList.add('btn--disabled')
+      return
+    } else {
+      briefButton.classList.remove('btn--disabled')
+    }
+
+    let message = `<b>Заявка с сайта:</b>\n`
+    message += `<b>Имя:</b> ${e.target.name.value}\n`
+    message += `<b>Телефон:</b> ${e.target.phone.value}\n`
+    message += `<b>Email:</b> ${e.target.email.value}\n`
+
+    const resp = await axios.post(urlApi, {
+      chat_id: chatId,
+      parse_mode: 'html',
+      text: message,
+    })
+
+    if (resp.data.ok) {
+      $.ajax({
+        url: '/send.php',
+        type: 'post',
+        data: {
+          name: briefNameInputEl.value,
+          email: briefEmailInputEl.value,
+          phone: briefTelInputEl.value,
+        },
+        cache: false,
+        dataType: 'html',
+        success: function (data) {
+          success.classList.add('success--visible')
+          if (success.classList.contains('success--visible')) {
+            setTimeout(() => {
+              success.classList.remove('success--visible')
+            }, 1500)
+          }
+        },
+      })
+
+      briefNameInputEl.value = ''
+      briefEmailInputEl.value = ''
+      briefTelInputEl.value = ''
+
+      Fancybox.close()
+    }
   }
 
   document.querySelectorAll('.form-input-name').forEach((input) => {
@@ -234,14 +429,6 @@ window.addEventListener('DOMContentLoaded', () => {
         input.classList.remove('input--invalid')
       }
     })
-  })
-
-  formCheckboxInputEl.addEventListener('change', function () {
-    if (formCheckboxInputEl.checked) {
-      formButton.classList.remove('btn--disabled')
-    } else {
-      formButton.classList.add('btn--disabled')
-    }
   })
 
   outsourcingFormEl?.addEventListener('submit', submitOutsourcingForm)

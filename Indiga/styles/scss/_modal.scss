@@ -5,23 +5,10 @@
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
-
-  &::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../../assets/images/modal/bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -2;
-  }
+  overflow-x: hidden;
 
   &.fancybox__content {
-    padding: 0;
+    padding: 0px 20px;
 
     >.f-button.is-close-btn {
       position: absolute;
@@ -43,7 +30,7 @@
     }
   }
 
-  &__bg {
+  &__circle {
     position: absolute;
     width: 100%;
     left: 0;
@@ -54,46 +41,64 @@
     z-index: -1;
   }
 
+  &__bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    z-index: -2;
+  }
+
   &__title {
     text-align: center;
     color: #FFF;
-    @include fluid(font-size, 56px, 106px);
+    @include fluid(font-size, 36px, 106px);
     letter-spacing: 2px;
-    text-transform: uppercase;
-    @include fluid(margin-bottom, 15px, 21px);
+    @include fluid(margin-bottom, 15px, 25px);
+    line-height: 1;
+
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  .logo {
+    position: static;
+    transform: unset;
   }
 
   .form {
-    position: absolute;
+    @include fluid(margin-top, 10px, 20px);
     width: 100%;
     max-width: unset;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     padding: 0 20px;
 
     &__box {
       grid-template-columns: 1fr;
       align-self: center;
+      gap: 10px;
+      margin-bottom: 0;
 
       &-label {
-        max-width: 400px;
+        @include fluid(max-width, 425px, 515px);
         margin-left: auto;
         margin-right: auto;
+        @include fluid(margin-bottom, 5px, 15px);
+      }
+
+      &-input {
+        @include fluid(padding-top, 15px, 24px);
+        @include fluid(padding-bottom, 15px, 24px);
       }
     }
-  }
-}
 
-@media (max-width: 992px) {
-  .modal {
-    &__bg {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      height: 100%;
-      -webkit-filter: blur(132px);
-      filter: blur(132px);
+    .btn {
+      @include fluid(padding-top, 15px, 35px);
+      @include fluid(padding-bottom, 15px, 35px);
+      @include fluid(font-size, 16px, 32px);
     }
   }
 }
@@ -105,9 +110,7 @@
     }
 
     &__bg {
-      height: 640px;
-      -webkit-filter: blur(82px);
-      filter: blur(102px);
+      height: 100%;
     }
 
     .form {

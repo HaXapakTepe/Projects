@@ -1,0 +1,15 @@
+.map {
+  overflow: hidden;
+
+  .ymaps-2-1-79-ground-pane {
+    -ms-filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    filter: grayscale(1);
+  }
+
+  &__item {
+    @include fluid(height, 380px, 523px);
+  }
+}

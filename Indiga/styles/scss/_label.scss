@@ -13,7 +13,6 @@
   width: -moz-fit-content;
   width: fit-content;
   display: flex;
-  // justify-content: center;
   @include fluid(gap, 5px, 10px);
   align-items: center;
   color: #FFF;
@@ -52,7 +51,7 @@
       height: 100%;
       width: 12px;
       height: 10px;
-      background-image: url("../../assets/images/icons/check.svg");
+      background-image: url("/assets/images/icons/check.svg");
       background-repeat: no-repeat;
       background-size: contain;
       transition: transform 0.38s ease-in-out;

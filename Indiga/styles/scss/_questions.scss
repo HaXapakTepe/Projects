@@ -3,6 +3,14 @@
   @include fluid(padding-top, 150px, 385px);
   @include fluid(padding-bottom, 130px, 232px);
 
+  &--ptSmall {
+    @include fluid(padding-top, 150px, 285px);
+
+    .questions__title {
+      line-height: 1.2;
+    }
+  }
+
   &__bg {
     position: absolute;
     left: 0;
@@ -23,8 +31,8 @@
 
 @media (max-width: 768px) {
   .questions {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
@@ -34,6 +42,12 @@
       height: 80%;
       -o-object-fit: cover;
       object-fit: cover;
+    }
+
+    &__title {
+      &--alt {
+        margin-bottom: 63px;
+      }
     }
   }
 }

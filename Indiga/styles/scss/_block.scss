@@ -1,0 +1,251 @@
+.block {
+  position: relative;
+  @include fluid(margin-top, 120px, 232px);
+  @include fluid(margin-bottom, 190px, 440px);
+
+  &--alt {
+    .block {
+
+      &__bg {
+        top: 80px;
+      }
+
+      &__title,
+      &__subtitle,
+      &__text {
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      &__title {
+        @include fluid(margin-bottom, 10px, 18px);
+      }
+
+      &__subtitle {
+        max-width: 841px;
+        line-height: 1.2;
+        margin-bottom: 5px;
+      }
+
+      &__text {
+        line-height: 1.6;
+      }
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include fluid(width, 306px, 430px);
+    @include fluid(height, 306px, 430px);
+    fill: #1B2231;
+    -webkit-filter: blur(102px);
+    filter: blur(102px);
+    pointer-events: none;
+    z-index: -2;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    &:has(+*) {
+      @include fluid(margin-bottom, 50px, 170px);
+    }
+  }
+
+  &__title {
+    font-size: 56px;
+    @include fluid(font-size, 36px, 56px);
+    text-transform: initial;
+  }
+
+  &__subtitle {
+    max-width: 465px;
+    text-align: center;
+    @include fluid(font-size, 40px, 75px);
+    line-height: 1;
+    @include fluid(margin-bottom, 5px, 12px);
+  }
+
+  &__text {
+    max-width: 541px;
+    text-align: center;
+    @include fluid(font-size, 28px, 41px);
+    font-weight: 700;
+    line-height: 1.13;
+    text-transform: lowercase;
+  }
+
+  &__card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @include fluid(gap, 30px, 215px);
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+
+      &:last-child {
+        .block__card-info {
+          right: 13px;
+        }
+      }
+    }
+
+    &-box {
+      position: relative;
+      @include fluid(margin-bottom, 15px, 23px);
+      height: 507px;
+    }
+
+    &-img {
+      border-radius: 30px;
+      -o-object-fit: cover;
+      object-fit: cover;
+      height: 100%;
+      -o-object-position: top;
+      object-position: top;
+    }
+
+    &-info {
+      position: absolute;
+      @include fluid(right, -10px, -51px);
+      @include fluid(bottom, 20px, 30px);
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      gap: 5px;
+      @include fluid(padding-top, 6px, 12px);
+      @include fluid(padding-bottom, 6px, 12px);
+      @include fluid(padding-left, 15px, 30px);
+      @include fluid(padding-right, 15px, 30px);
+      z-index: 1;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include fluid(width, 250px, 308px);
+        height: 100%;
+        background-color: #fff;
+        transform: skewX(-27deg);
+        border-radius: 15px;
+        z-index: -1;
+      }
+    }
+
+    &-name {
+      color: #000;
+      font-size: 19px;
+      @include fluid(font-size, 16px, 19px);
+    }
+
+    &-who {
+      color: #706F6F;
+      @include fluid(font-size, 12px, 13px);
+    }
+
+    &-text {
+      color: #FFF;
+      @include fluid(font-size, 16px, 20px);
+
+      span {
+        font-weight: 700;
+      }
+
+      &:last-child {
+        margin-top: auto;
+      }
+
+      &:has(+.block__card-text) {
+        @include fluid(margin-bottom, 10px, 26px);
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .block {
+    &--alt {
+      margin-top: 0;
+    }
+
+    &__card {
+      grid-template-columns: repeat(2, 1fr);
+
+      &-item {
+        &:last-child {
+          .block__card-info {
+            right: -10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .block {
+    &__card {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .block {
+    margin-top: 0px;
+    margin-bottom: 60px;
+
+    &__title {
+      font-size: 26px;
+    }
+
+    &__inner {
+      &:has(+*) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .block {
+
+    &__subtitle {
+      font-size: 30px;
+    }
+
+    &__card {
+      &-box {
+        height: 380px;
+      }
+
+      &-item {
+        &:last-child {
+          .block__card-info {
+            right: 0;
+          }
+        }
+      }
+
+      &-info {
+        right: 0;
+        padding-left: 45px;
+        padding-right: 45px;
+
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

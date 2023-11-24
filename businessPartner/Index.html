@@ -775,6 +775,14 @@
   <script src="./plugins/pagepiling/jquery.pagepiling.js"></script>
   <script src="./plugins/fancybox/jquery.fancybox.min.js"></script>
   <script src="./js/main.js?v=0.0002"></script>
+
+  <script>
+    if (window.innerWidth > 992) {
+      $('#pagepiling') ? .pagepiling({
+        navigation: false,
+      })
+    }
+  </script>
 </body>
 
 </html>

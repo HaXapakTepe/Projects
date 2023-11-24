@@ -1,12 +1,6 @@
 $(document).ready(function () {
   $('input[name=phone]').mask('+7 (999) 999-99-99')
 
-  if (window.innerWidth > 992) {
-    $('#pagepiling')?.pagepiling({
-      navigation: false,
-    })
-  }
-
   // if (window.innerWidth > 1200) {
   // $('#fullpage').fullpage({
   //   navigation: false,

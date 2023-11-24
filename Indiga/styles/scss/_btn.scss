@@ -11,12 +11,13 @@
   @include fluid(font-size, 20px, 32px);
   text-transform: uppercase;
   color: #FFFFFF;
-  @include fluid(padding-top, 20px, 30px);
-  @include fluid(padding-bottom, 20px, 30px);
+  @include fluid(padding-top, 20px, 40px);
+  @include fluid(padding-bottom, 20px, 40px);
   @include fluid(padding-left, 20px, 40px);
   @include fluid(padding-right, 20px, 40px);
   background-color: #4B0082;
   line-height: 1;
+  text-transform: uppercase;
   border-radius: 12px;
   transition: background-color .38s ease-in-out,
     color .38s ease-in-out, border .38s ease-in-out;
@@ -37,7 +38,6 @@
     border: 2px solid #BD83B8;
     background-color: transparent;
     letter-spacing: 1.3px;
-    // font-weight: 700;
     @include fluid(padding-top, 15px, 35px);
     @include fluid(padding-bottom, 15px, 35px);
     @include fluid(padding-left, 20px, 35px);

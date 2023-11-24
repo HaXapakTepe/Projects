@@ -2,7 +2,11 @@
   position: relative;
   @include fluid(padding-top, 60px, 171px);
   @include fluid(padding-bottom, 60px, 200px);
-  overflow: hidden;
+
+  &--alt {
+    padding-top: 70px;
+    padding-bottom: 110px;
+  }
 
   &__title {
     @include fluid(margin-bottom, 15px, 30px);
@@ -39,7 +43,7 @@
       z-index: 2;
       font-weight: 300;
       max-width: 805px;
-      @include fluid(margin-bottom, 8px, 35px);
+      @include fluid(margin-bottom, 30px, 59px);
     }
 
     &-block {
@@ -53,7 +57,6 @@
   }
 
   &__elem {
-
     &-swiper {
       overflow: unset;
     }
@@ -81,16 +84,22 @@
       transition: opacity .38s ease-in-out;
     }
 
+    &-block {
+      z-index: 2;
+      @include fluid(margin-bottom, 25px, 47px);
+    }
+
     &-box {
       display: flex;
       align-items: center;
       gap: 12px;
-      @include fluid(margin-bottom, 25px, 47px);
-      overflow-x: auto;
     }
 
     &-target {
       position: relative;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
       padding: 20px 30px;
       color: #F1EDF1;
       font-weight: 900;
@@ -101,6 +110,7 @@
       cursor: pointer;
       font-size: 18px;
       z-index: 2;
+      text-align: center;
 
       &:hover {
         background-color: rgba(9, 143, 186, 0.20);
@@ -170,6 +180,7 @@
       padding: 30px 20px;
       z-index: 1;
       height: 100%;
+      @include fluid(min-height, 315.54px, 408px);
     }
 
     &-text {
@@ -217,14 +228,14 @@
         @include fluid(left, 8px, 21px);
         width: 16px;
         height: 10px;
-        background-image: url('../../assets/images/icons/arrow-right.svg');
+        background-image: url('/assets/images/icons/arrow-right.svg');
       }
 
       &::before {
         @include fluid(left, -10px, -15px);
         @include fluid(width, 80px, 160px);
         @include fluid(height, 80px, 160px);
-        background-image: url('../../assets/images/icons/ellipse-link.png');
+        background-image: url('/assets/images/icons/ellipse-link.png');
         pointer-events: none;
       }
     }
@@ -271,6 +282,11 @@
     }
 
     &__elem {
+      &-block {
+        z-index: 10;
+        overflow: visible;
+      }
+
       &-swiper {
         overflow: visible;
       }
@@ -322,8 +338,31 @@
   }
 }
 
+@media (max-width: 768px) {
+  .info {
+    &__elem {
+      &-box {
+        gap: 0;
+      }
+
+      .swiper-pagination {
+        bottom: unset;
+      }
+    }
+  }
+}
+
 @media (max-width: 576px) {
   .info {
+    &--pt {
+      padding-top: 88px;
+    }
+
+    &--alt {
+      padding-top: 90px;
+      padding-bottom: 93px;
+    }
+
     &__box {
       &-picture {
         width: 100%;
@@ -336,8 +375,12 @@
     }
 
     &__elem {
+      &-wrapper {
+        margin-bottom: 50px;
+      }
+
       &-text {
-        bottom: -30px;
+        bottom: -45px;
         padding-left: 0;
         margin-left: auto;
         text-align: right;
@@ -376,6 +419,10 @@
 @media (max-width: 390px) {
   .info {
     &__box {
+      &-subtitle {
+        letter-spacing: -0.3px;
+      }
+
       &-img {
         width: 100%;
       }

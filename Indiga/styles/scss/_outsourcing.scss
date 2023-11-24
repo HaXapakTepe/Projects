@@ -68,7 +68,7 @@
 
     &-block {
       display: flex;
-      @include fluid(gap, 10px, 22px);
+      @include fluid(gap, 12px, 22px);
     }
 
     &-label {
