@@ -1,0 +1,52 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 29px;
+
+  &__img {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -o-object-fit: contain;
+    object-fit: contain;
+    height: 61px;
+  }
+
+  &__text {
+    position: relative;
+    padding-left: 24px;
+    color: #000;
+    font-weight: 500;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3px;
+      height: 100%;
+      background-color: #1BAFE5;
+      border-radius: 25px;
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .logo {
+    &__img {
+      height: 50px;
+    }
+
+    &__text {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .logo {
+    &__img {
+      height: 35px;
+    }
+  }
+}

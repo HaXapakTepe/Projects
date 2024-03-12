@@ -1,0 +1,26 @@
+.search {
+  margin-left: auto;
+
+  &__form {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+  }
+
+  &__input {
+    padding-left: 10px;
+    padding: 10px 15px;
+    background-color: transparent;
+  }
+
+  &__btn {
+    padding: 10px 44px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #1BAFE5;
+    cursor: pointer;
+  }
+}

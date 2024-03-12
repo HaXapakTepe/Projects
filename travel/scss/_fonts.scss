@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Aleo";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Aleo-Regular.woff") format("woff"),
+    url("../fonts/Aleo-Regular.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/JosefinSans-Regular.woff") format("woff"),
+    url("../fonts/JosefinSans-Regular.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Josefin Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/JosefinSans-Bold.woff") format("woff"),
+    url("../fonts/JosefinSans-Bold.ttf") format("ttf");
+  font-display: swap;
+}

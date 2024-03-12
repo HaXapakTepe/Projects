@@ -1,29 +1,4 @@
-@media (max-width: 1730px) {
-
-  .hits,
-  .new,
-  .addition,
-  .reviewProduct,
-  .recomend {
-    &__swiper {
-      width: 91%;
-      margin-left: auto;
-      margin-right: auto;
-
-      &-nav {
-        width: 100%;
-        max-width: unset;
-      }
-    }
-  }
-}
-
 @media (max-width: 1366px) {
-
-  .container {
-    width: 100%;
-  }
-
   .map {
     grid-column: 3/5;
   }
@@ -67,6 +42,10 @@
 }
 
 @media (max-width: 992px) {
+
+  .container {
+    width: 100%;
+  }
 
   .link {
     &:hover {
@@ -265,6 +244,7 @@
 
 
     &__image {
+      -webkit-filter: grayscale(0%);
       filter: grayscale(0%);
     }
 
@@ -347,6 +327,8 @@
 
     &__item {
       &:nth-child(1n) {
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
         height: fit-content;
         border: 1px solid #000;
       }
@@ -357,6 +339,7 @@
     }
 
     &__image {
+      -webkit-filter: grayscale(0%);
       filter: grayscale(0%);
     }
   }
@@ -437,6 +420,8 @@
       }
 
       &:last-child {
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
         height: fit-content;
         width: 100%;
       }
@@ -556,6 +541,7 @@
       display: grid;
       grid-template-columns: 1fr;
       row-gap: 30px;
+      -moz-column-gap: 15px;
       column-gap: 15px;
     }
 
@@ -875,6 +861,8 @@
     &__accordeon {
       position: absolute;
       width: 100%;
+      height: -webkit-fit-content;
+      height: -moz-fit-content;
       height: fit-content;
       background-color: #fff;
       top: 50px;

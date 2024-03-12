@@ -1,0 +1,27 @@
+.menu {
+  margin-left: auto;
+  @include fluid(margin-right, 0px, 24px);
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__link {
+    font-weight: 500;
+    color: #222;
+    letter-spacing: -0.16px;
+    transition: color .23s ease-in-out;
+
+    &:hover {
+      color: #FF7707;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .menu {
+    display: none;
+  }
+}

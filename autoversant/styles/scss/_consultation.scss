@@ -1,0 +1,55 @@
+.consultation {
+  &__wrapper {
+    @include fluid(margin-top, 60px, 80px);
+    @include fluid(margin-bottom, 60px, 80px);
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    @include fluid(gap, 48px, 87px);
+  }
+
+  &__title {
+    margin-bottom: 4px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &-subtitle {
+      color: var(--Text, #18191F);
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &-fieldset {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    &-text {
+      color: var(--Text, #5E5E63);
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  &__img {
+    @include fluid(height, 368px, 445px);
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 768px) {
+  .consultation {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+  }
+}

@@ -10,8 +10,8 @@ $(document).ready(function () {
   if (window.innerWidth > 1200) {
     const video = document.getElementById('video'),
       reverse = document.getElementById('reverse'),
-      timePoints = [5, 8, 13, 17, 21, 25, 30, 34, 38, 42, 46, 50, 54, 58]
-    timePointsReverse = [56, 53, 48, 44, 40, 36, 31, 27, 23, 19, 15, 11, 6, 2]
+      timePoints = [4, 9, 13, 17, 21, 25, 30, 34, 38, 42, 46, 50, 54, 58]
+    timePointsReverse = [56, 53, 48, 44, 40, 36, 31, 27, 23, 19, 15, 11, 9, 4]
     let currentSlideIndex = 0
 
     setTimeout(() => {

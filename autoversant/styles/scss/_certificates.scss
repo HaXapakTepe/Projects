@@ -1,0 +1,25 @@
+  .certificates {
+    &__wrapper {
+      @include fluid(margin-top, 60px, 80px);
+      @include fluid(margin-bottom, 60px, 80px);
+    }
+
+    &__box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    &__swiper {
+      &-img {
+        -o-object-fit: contain;
+        object-fit: contain;
+        height: 324px;
+        border-radius: 8px;
+        margin-bottom: 16px;
+        border: 1px solid #E3EAED;
+      }
+    }
+  }

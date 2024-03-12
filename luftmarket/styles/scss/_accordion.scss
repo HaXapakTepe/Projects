@@ -1,0 +1,22 @@
+.accordion {
+  position: relative;
+
+  &-content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.23s ease-in-out;
+  }
+}
+
+@media(max-width:992px) {
+  .accordionMenu {
+    position: relative;
+
+    &-content,
+    &__content {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.23s ease-in-out;
+    }
+  }
+}

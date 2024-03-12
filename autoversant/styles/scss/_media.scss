@@ -1,0 +1,128 @@
+.media {
+  &__wrapper {
+    @include fluid(margin-top, 60px, 80px);
+    @include fluid(margin-bottom, 60px, 80px);
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+
+    &:has(+*) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &-top {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--Text, #18191F);
+      @include fluid(font-size, 20px, 24px);
+      font-weight: 500;
+      transition: color .23s ease-in-out;
+
+      &:hover {
+        color: var(--Orange, #EF7F1A);
+
+        .media__item {
+          &-icon:last-child {
+            svg {
+              path {
+                fill: var(--Orange, #EF7F1A);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-icon {
+      svg {
+        path {
+          transition: fill .23s ease-in-out;
+        }
+      }
+    }
+
+    &-link {
+      display: flex;
+      flex-direction: column;
+      @include fluid(gap, 8px, 16px);
+
+      &:hover {
+        .media__item {
+          &-text {
+            color: var(--Orange, #EF7F1A);
+          }
+        }
+      }
+    }
+
+    &-accent {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      padding: 4px 12px;
+      color: var(--Orange, #EF7F1A);
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 18px;
+      border-radius: 36px;
+      background: rgba(239, 127, 26, 0.25);
+      box-shadow: 0px 1px 2px 0px rgba(105, 81, 255, 0.05);
+    }
+
+    &-text {
+      font-feature-settings: 'salt'on,
+        'liga'off;
+      font-size: 18px;
+      line-height: 28px;
+      color: var(--Text-Gray-900, var(--Text, #18191F));
+      transition: color .23s ease-in-out;
+    }
+
+    &-date {
+      display: block;
+      color: var(--Gray, #969BAB);
+      font-feature-settings: 'salt'on,
+        'liga'off;
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+  &__btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media(max-width:768px) {
+  .media {
+    &__inner {
+      grid-template-columns: 1fr;
+
+      &:has(+*) {
+        margin-bottom: 0;
+      }
+    }
+
+    &__btn {
+      display: none;
+    }
+  }
+}

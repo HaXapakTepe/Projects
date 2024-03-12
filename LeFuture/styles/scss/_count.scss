@@ -1,0 +1,31 @@
+.count {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  &__num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #D1B4A3;
+    border-radius: 5px;
+    border: 1px solid #1E1E1E;
+    background: #FFF;
+    width: 52px;
+    height: 30px;
+    line-height: 1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  &__plus,
+  &__minus {
+    cursor: pointer;
+  }
+
+  &__icon {
+    pointer-events: none;
+  }
+}

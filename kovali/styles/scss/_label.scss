@@ -1,0 +1,71 @@
+.check {
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  visibility: hidden;
+}
+
+.label {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 24px 1fr;
+  gap: 16px;
+  font-weight: 400;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+
+  &__input {
+    &:checked+.label__inputCustom {
+      background-color: #FF7707;
+
+      &::after {
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+  }
+
+  &__inputCustom {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    border: 2px solid #FF7707;
+    background-color: #FFF;
+    transition: background-color 0.23s ease-in-out,
+      border-color 0.23s ease-in-out;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      width: 20px;
+      height: 20px;
+      background-image: url("../../assets/images/icons/check.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: transform 0.23s ease-in-out;
+    }
+  }
+
+  a {
+    color: #FF7707;
+  }
+}
+
+@media (max-width: 576px) {
+  .label {
+    font-size: 12px;
+    letter-spacing: -0.24px;
+  }
+}

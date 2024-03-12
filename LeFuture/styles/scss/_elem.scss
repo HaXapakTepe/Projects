@@ -1,0 +1,123 @@
+.elem {
+
+  &__wrapper {
+    margin-top: 30px;
+    @include fluid(margin-bottom, 30px, 60px);
+  }
+
+  &__title {
+    @include fluid(margin-bottom, 20px, 40px);
+  }
+
+  &__form {
+    max-width: 600px;
+    margin-bottom: 40px;
+
+    &-input {
+      margin-bottom: 20px;
+
+      &:has(+.elem__form-text--error) {
+        margin-bottom: 6px;
+      }
+
+      &[type="password"] {
+        +.elem__form-icon {
+          svg {
+            &:first-child {
+              opacity: 1;
+            }
+
+            &:last-child {
+              opacity: 0;
+            }
+          }
+        }
+      }
+
+      &[type="text"] {
+        +.elem__form-icon {
+          svg {
+            &:first-child {
+              opacity: 0;
+            }
+
+            &:last-child {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+
+    &-text {
+      display: block;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      max-width: 412px;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 500;
+      margin-bottom: 24px;
+
+      &:has(+.elem__form-input),
+      &:has(+.elem__form-label) {
+        color: #344054;
+        margin-bottom: 6px;
+      }
+
+      span {
+        color: #F97066;
+      }
+    }
+
+    &-link {
+      display: block;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      color: #D1B4A3;
+      font-weight: 600;
+      margin-bottom: 0;
+      cursor: pointer;
+      margin-bottom: 24px;
+    }
+
+    &-label {
+      position: relative;
+      display: block;
+      margin-bottom: 4px;
+      margin-bottom: 20px;
+
+      .elem__form-input {
+        margin-bottom: 0;
+      }
+    }
+
+    &-icon {
+      position: absolute;
+      top: 12px;
+      right: 14px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      svg {
+        &:last-child {
+          position: absolute;
+        }
+      }
+    }
+
+    &-flex {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-bottom: 24px;
+
+      >* {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

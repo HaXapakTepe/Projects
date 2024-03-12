@@ -1,0 +1,76 @@
+.linkArrow {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  @include fluid(gap, 10px, 12px);
+  color: var(--Main-Go-Latam, #1F93CC);
+  font-weight: 600;
+  transition: color .23s ease-in-out,
+    border-color .23s ease-in-out;
+
+  &:hover {
+    color: #fff;
+
+    .linkArrow {
+      &__icon {
+        svg {
+          path {
+            fill: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  &--alt {
+    &:hover {
+      color: #0c0a1f;
+
+      .linkArrow {
+        &__icon {
+          svg {
+            path {
+              fill: #0c0a1f;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &--center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &--big {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    @include fluid(padding-left, 25px, 54px);
+    @include fluid(padding-right, 25px, 54px);
+    @include fluid(font-size, 16px, 20px);
+    font-weight: 600;
+    border-radius: 12px;
+    border: 2px solid var(--Main-Go-Latam, #1F93CC);
+    background: var(--White, #FFF);
+
+    &:hover {
+      border-color: #0c0a1f;
+    }
+  }
+
+  &__icon {
+    margin-top: 2px;
+
+    svg {
+      @include fluid(width, 20px, 24px);
+      @include fluid(height, 20px, 24px);
+
+      path {
+        transition: fill .23s ease-in-out;
+      }
+    }
+  }
+}

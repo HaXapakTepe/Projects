@@ -1,0 +1,155 @@
+.teams {
+  &__wrapper {
+    @include fluid(padding-top, 30px, 30px);
+    @include fluid(padding-bottom, 30px, 85px);
+    overflow-x: hidden;
+  }
+
+  &__title {
+    @include fluid(margin-bottom, 20px, 50px);
+  }
+
+  &__swiper {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      @include fluid(width, 280px, 367px);
+      background-image: linear-gradient(269deg, #F6F8FA 0.44%, rgba(246, 248, 250, 0.00) 95.46%);
+      z-index: 10;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity .23s ease-in-out;
+    }
+
+    &--fon {
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    &.swiper {
+      .swiper {
+        &-scrollbar {
+          opacity: 0;
+        }
+
+        &-button {
+
+          &-prev,
+          &-next {
+            z-index: 11;
+            transition: opacity .23s ease-in-out;
+            background-color: #fff;
+            border-radius: 40px;
+            background: var(--Black-and-white-White, #FFF);
+            box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.12);
+
+            &::after {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-52%, -52%);
+              font-size: 0;
+              background-image: url('../../assets/images/icons/arrow.svg');
+              background-repeat: no-repeat;
+            }
+          }
+
+          &-prev {
+            width: 36px;
+            height: 36px;
+            transform: rotateY(-180deg);
+
+            &::after {
+              width: 20px;
+              height: 20px;
+            }
+          }
+
+          &-next {
+            width: 36px;
+            height: 36px;
+
+            &::after {
+              width: 20px;
+              height: 20px;
+            }
+          }
+
+          &-disabled {
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+
+
+  &__slide {
+    border-radius: 16px;
+    background: var(--BG-Color, #F6F8FA);
+    overflow: hidden;
+
+    &-img {
+      @include fluid(height, 280px, 313px);
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+
+    &-box {
+      @include fluid(padding-top, 8px, 12px);
+      @include fluid(padding-bottom, 8px, 12px);
+      @include fluid(padding-left, 12px, 16px);
+      @include fluid(padding-right, 12px, 16px);
+    }
+
+    &-name {
+      @include fluid(font-size, 16px, 20px);
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    &-who {
+      color: var(--Main-Go-Latam, #1F93CC);
+      @include fluid(font-size, 14px, 16px);
+      font-weight: 500;
+      @include fluid(margin-bottom, 12px, 16px);
+    }
+
+    &-loca {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--Main-Go-Latam, #1F93CC);
+      @include fluid(font-size, 12px, 14px);
+      font-weight: 400;
+    }
+
+    &-flag {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .teams {
+    &__swiper {
+      overflow: visible;
+
+      &-next,
+      &-prev {
+        display: none;
+      }
+
+      &--fon {
+        &::after {
+          content: none;
+        }
+      }
+    }
+  }
+}

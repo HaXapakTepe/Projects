@@ -1,0 +1,139 @@
+.footer {
+  background-color: var(--Light-grey, #EBF3F6);
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include fluid(gap, 15px, 30px);
+    @include fluid(padding-bottom, 24px, 32px);
+    margin-bottom: 32px;
+    border-bottom: 1px solid #97A6B7;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 8px, 16px);
+
+    &-title {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    &-box {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      @include fluid(gap, 15px, 30px);
+    }
+
+    &-block {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    &-link {
+      color: var(--Text, #18191F);
+      transition: color .23s ease-in-out;
+
+      &:hover {
+        color: #EF7F1A;
+      }
+    }
+  }
+
+  &__item {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include fluid(column-gap, 15px, 30px);
+    @include fluid(row-gap, 16px, 24px);
+
+    &-link {
+      color: var(--Text, #18191F);
+      font-size: 16px;
+      font-weight: 500;
+      transition: color .23s ease-in-out;
+
+      &:hover {
+        color: #EF7F1A;
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+
+    &-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    &-img {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      height: 44px;
+    }
+
+    &-text {
+      max-width: 115px;
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .footer {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media (max-width:768px) {
+  .footer {
+    &__bottom {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+
+    .logo {
+      &__img {
+        height: 41px;
+      }
+    }
+
+    &__info {
+      &-box {
+        grid-template-columns: 1fr;
+      }
+
+      &-title,
+      &-link {
+        text-align: center;
+      }
+    }
+
+    &__item {
+      grid-template-columns: 1fr;
+
+      &-link {
+        text-align: center;
+      }
+    }
+  }
+}

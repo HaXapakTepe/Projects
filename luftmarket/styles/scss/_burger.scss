@@ -1,0 +1,106 @@
+.burger {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .burger {
+    position: relative;
+    width: 52px;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    z-index: 16;
+    border-radius: 10px;
+    padding: 16px 14px;
+    background-color: #1BAFE5;
+    cursor: pointer;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -13px;
+      left: -9px;
+      width: 9px;
+      height: 9px;
+      background-image: url("../../assets/images/icons/corner-blue.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.23s ease-in-out;
+    }
+
+    &__line {
+      display: block;
+      width: 24px;
+      height: 3px;
+      border-radius: 3px;
+      background: #fff;
+      transition: all .23s ease-in-out;
+
+      &::before,
+      &::after {
+        content: "";
+        width: 24px;
+        height: 3px;
+        position: absolute;
+        left: 50%;
+        background: #fff;
+        border-radius: 3px;
+        transition: all .23s ease-in-out;
+      }
+
+      &::before {
+        transform: translate(-50%, -6px)
+      }
+
+      &::after {
+        transform: translate(-50%, 6px)
+      }
+    }
+
+    &--active {
+      &::after {
+        opacity: 1;
+      }
+
+      .burger {
+        &__line {
+          background-color: transparent;
+
+          &::before {
+            left: 25%;
+            transform: rotate(45deg);
+          }
+
+          &::after {
+            left: 25%;
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 420px) {
+  .burger {
+    width: 40px;
+    padding: 16px 8px;
+
+    &--active {
+      .burger {
+        &__line {
+          &::before {
+            left: 20%;
+          }
+
+          &::after {
+            left: 20%;
+          }
+        }
+      }
+    }
+  }
+}

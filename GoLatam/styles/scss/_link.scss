@@ -1,0 +1,123 @@
+.link {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  color: var(--White, #FFF);
+  font-weight: 600;
+  @include fluid(padding-top, 8px, 10px);
+  @include fluid(padding-bottom, 8px, 10px);
+  @include fluid(padding-left, 18px, 24px);
+  @include fluid(padding-right, 18px, 24px);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: color .23s ease-in-out,
+    background-color .23s ease-in-out,
+    border-color .23s ease-in-out;
+
+  &--blur {
+    background: rgba(255, 255, 255, 0.10);
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.7);
+      background-color: #fff;
+    }
+  }
+
+  &--blue {
+    color: #1F93CC;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.7);
+      background-color: #fff;
+    }
+  }
+
+  &--main {
+    @include fluid(padding-left, 20px, 34px);
+    @include fluid(padding-right, 20px, 34px);
+    background: var(--Main-Go-Latam, #1F93CC);
+
+    &:hover {
+      background-color: #fff;
+      color: #1F93CC;
+      border-color: #1F93CC;
+
+      .link {
+        &__icon {
+          svg {
+            path {
+              fill: #1F93CC;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &--big {
+    @include fluid(font-size, 16px, 20px);
+    font-weight: 600;
+    border-radius: 12px;
+  }
+
+  &--center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &--width {
+    width: 100%;
+    max-width: 397px;
+  }
+
+  &--widthAlt {
+    width: 100%;
+    max-width: 336px;
+  }
+
+  &--white {
+    @include fluid(padding-left, 12px, 24px);
+    @include fluid(padding-right, 12px, 24px);
+    color: var(--Black, #070808);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 12px;
+    background-color: var(--White, #FFF);
+    box-shadow: 4px 4px 32px 0px rgba(13, 154, 255, 0.25);
+    -webkit-backdrop-filter: blur(10.6px);
+    backdrop-filter: blur(10.6px);
+
+    &:hover {
+      background-color: #1F93CC;
+      color: #FFF;
+      border-color: #FFF;
+
+      .link {
+        &__icon {
+          svg {
+            path {
+              fill: #FFF;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__icon {
+    @include fluid(width, 20px, 24px);
+    @include fluid(height, 20px, 24px);
+
+    svg {
+      path {
+        transition: fill .23s ease-in-out;
+      }
+    }
+  }
+}

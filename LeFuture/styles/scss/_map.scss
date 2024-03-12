@@ -1,0 +1,11 @@
+.map {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+
+  &__item {
+    display: block;
+    border-radius: 20px;
+    height: 330px;
+  }
+}
