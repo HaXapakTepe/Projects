@@ -67,7 +67,7 @@
         left: 0;
         @include fluid(width, 50px, 75px);
         @include fluid(height, 50px, 75px);
-        background-image: url('/assets/images/cases/arrow-right.png');
+        background-image: url('../../assets/images/cases/arrow-right.png');
         background-repeat: no-repeat;
         background-size: contain;
         opacity: 0;

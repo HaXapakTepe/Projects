@@ -228,14 +228,14 @@
         @include fluid(left, 8px, 21px);
         width: 16px;
         height: 10px;
-        background-image: url('/assets/images/icons/arrow-right.svg');
+        background-image: url('../../assets/images/icons/arrow-right.svg');
       }
 
       &::before {
         @include fluid(left, -10px, -15px);
         @include fluid(width, 80px, 160px);
         @include fluid(height, 80px, 160px);
-        background-image: url('/assets/images/icons/ellipse-link.png');
+        background-image: url('../../assets/images/icons/ellipse-link.png');
         pointer-events: none;
       }
     }
