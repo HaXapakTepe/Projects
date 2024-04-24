@@ -1,0 +1,251 @@
+.how {
+  &__wrapper {
+    position: relative;
+    padding-bottom: 60px;
+    margin-top: 20px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -10%;
+      top: -30%;
+      @include fluid(width, 300px, 414px);
+      @include fluid(height, 350px, 487px);
+      filter: blur(254.3px);
+      background: linear-gradient(225.00deg, rgb(244, 233, 255), rgb(221, 194, 252) 51%, rgb(194, 161, 231) 73.5%, rgb(136, 99, 196) 100%);
+      opacity: 0.9;
+      pointer-events: none;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: -10%;
+      bottom: -50%;
+      @include fluid(width, 300px, 414px);
+      @include fluid(height, 350px, 487px);
+      filter: blur(254.3px);
+      background: linear-gradient(225.00deg, rgb(244, 233, 255), rgb(221, 194, 252) 51%, rgb(194, 161, 231) 73.5%, rgb(136, 99, 196) 100%);
+      opacity: 0.9;
+      pointer-events: none;
+    }
+  }
+
+  &__top {
+    display: none;
+  }
+
+  &__left {
+    position: absolute;
+    @include fluid(left, -120px, -10px);
+    @include fluid(bottom, -30px, -65px);
+    width: unset;
+    @include fluid(height, 270px, 648px);
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  &__right {
+    position: absolute;
+    @include fluid(right, -200px, 20px);
+    @include fluid(bottom, 150px, 75px);
+    width: unset;
+    @include fluid(height, 360px, 718px);
+    pointer-events: none;
+    z-index: -2;
+  }
+
+  &__inner {
+    position: relative;
+    @include fluid(max-width, 660px, 740px);
+    margin-left: auto;
+    margin-right: auto;
+    @include fluid(padding-top, 50px, 40px);
+    @include fluid(padding-bottom, 100px, 100px);
+    @include fluid(padding-left, 90px, 85px);
+    @include fluid(padding-right, 90px, 80px);
+    margin-bottom: 5px;
+    z-index: 2;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      background-image: url("../../assets/images/how/bg.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: -2;
+      // border-radius: 25.67px;
+      // box-shadow: 0px 2.57px 8.15px 0px rgba(0, 0, 0, 0.07);
+      // backdrop-filter: blur(24.9px);
+      // background: rgba(255, 255, 255, 0.44);
+    }
+  }
+
+  &__title {
+    @include fluid(font-size, 18px, 26px);
+    text-align: center;
+    @include fluid(margin-bottom, 24px, 35px);
+    @include fluid(margin-left, 0px, 25px);
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: .8fr 1fr;
+    @include fluid(column-gap, 20px, 30px);
+    @include fluid(row-gap, 40px, 60px);
+    @include fluid(margin-left, 0px, 20px);
+
+    &-item {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+
+      &:nth-child(even) {
+        top: 40px;
+      }
+    }
+
+    &-ellipse {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include fluid(width, 55px, 60px);
+      @include fluid(height, 55px, 60px);
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        @include fluid(width, 80px, 94px);
+        @include fluid(height, 80px, 94px);
+        border-radius: 50%;
+        background: linear-gradient(225.00deg, rgb(151, 76, 238) 0.054%, rgb(118, 0, 255) 100.035%);
+        z-index: -1;
+      }
+    }
+
+    &-img {
+      @include fluid(width, 55px, 70px);
+      @include fluid(height, 55px, 70px);
+
+      &--big {
+        @include fluid(width, 92px, 110px);
+        @include fluid(height, 92px, 110px);
+        @include fluid(margin-top, 0px, -15px);
+        @include fluid(margin-right, 0px, -20px);
+      }
+    }
+
+    &-text {
+      font-weight: 500;
+      @include fluid(font-size, 13px, 15px);
+    }
+  }
+
+  &__bot {
+    position: relative;
+    @include fluid(right, 0px, -42px);
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &-title {
+      @include fluid(font-size, 32px, 46px);
+      margin-bottom: 7px;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    &-text {
+      @include fluid(font-size, 16px, 18px);
+      text-align: center;
+
+      span {
+        font-weight: 700;
+        color: #8427F8;
+      }
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .how {
+    &__wrapper {
+      margin-top: -30px;
+      padding-bottom: 0;
+    }
+
+    &__top {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 120px;
+      width: unset;
+      height: 140px;
+      z-index: -2;
+      pointer-events: none;
+    }
+
+    &__left {
+      bottom: -105px;
+      z-index: 3;
+      transform: rotate(25deg);
+    }
+
+    &__right {
+      bottom: unset;
+      top: 60px;
+      right: -230px;
+    }
+
+    &__inner {
+      padding-right: 0;
+      padding-left: 0;
+      padding-bottom: 80px;
+      margin-bottom: 0;
+
+      &::after {
+        width: 283px;
+        background-image: url("../../assets/images/how/mobile.png");
+      }
+    }
+
+    &__title {
+      max-width: 240px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 35px;
+    }
+
+    &__box {
+      grid-template-columns: 1fr;
+      row-gap: 42px;
+
+      &-item {
+        right: -20px;
+        width: 100%;
+        max-width: 245px;
+        margin-left: auto;
+        margin-right: auto;
+        column-gap: 25px;
+
+        &:nth-child(even) {
+          top: unset;
+        }
+      }
+    }
+
+    &__bot {
+      display: none;
+    }
+  }
+}

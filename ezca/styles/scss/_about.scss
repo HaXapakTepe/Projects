@@ -1,0 +1,117 @@
+.about {
+  &__wrapper {
+    @include fluid(margin-top, 70px, 190px);
+    @include fluid(margin-bottom, 102px, 206px);
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+
+    &-title {
+      max-width: 600px;
+      text-transform: uppercase;
+      text-wrap: balance;
+      font-weight: 700;
+      @include fluid(font-size, 30px, 45px);
+    }
+
+    &-box {
+      display: grid;
+      justify-content: space-between;
+      grid-template-columns: repeat(3, 1fr);
+      @include fluid(gap, 21px, 68px);
+    }
+
+    &-img {
+      @include fluid(width, 70px, 127px);
+      @include fluid(height, 70px, 127px);
+      -o-object-fit: contain;
+      object-fit: contain;
+    }
+  }
+
+  &__info {
+    &-title {
+      @include fluid(margin-bottom, 21px, 44px);
+    }
+
+    &-subtitle {
+      @include fluid(margin-bottom, 56px, 75px);
+      font-family: "Manrope";
+      font-weight: 500;
+      text-wrap: balance;
+      @include fluid(font-size, 18px, 24px);
+    }
+
+    &-box {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      @include fluid(margin-bottom, 56px, 100px);
+    }
+
+    &-num {
+      text-align: center;
+      font-weight: 700;
+      @include fluid(font-size, 35px, 72px);
+    }
+
+    &-text {
+      text-align: center;
+      font-weight: 500;
+      @include fluid(font-size, 18px, 24px);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+
+    &__item {
+      &-box {
+        display: flex;
+      }
+
+      &-img {
+        height: 44px;
+        width: 44px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .about {
+    &__info {
+
+      &-text,
+      &-subtitle {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .about {
+    &__item-box {
+      flex-wrap: wrap;
+    }
+
+    &__info-box {
+      flex-direction: column;
+    }
+  }
+}

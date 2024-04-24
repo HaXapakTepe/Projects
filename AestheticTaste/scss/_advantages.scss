@@ -1,0 +1,109 @@
+.advantages {
+  position: relative;
+  @include fluid(margin-bottom, 30px, 120px);
+
+  &--mt {
+    @include fluid(margin-top, 30px, 120px);
+  }
+
+  &__title {
+    @include fluid(max-width, 380px, 500px);
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+
+    &-item {
+      width: 32%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__number {
+    font-family: "MADE Waffle Soft";
+    color: #FFA800;
+    line-height: 100%;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    @include fluid(font-size, 70px, 120px);
+  }
+
+  &__text {
+    color: #3E3535;
+    font-weight: 700;
+    line-height: 135%;
+    text-align: center;
+    @include fluid(width, 200px, 250px);
+    @include fluid(font-size, 18px, 20px);
+  }
+
+  &__anise {
+    position: absolute;
+    left: 44%;
+    @include fluid(top, -55px, -90px);
+    z-index: -1;
+    @include fluid(width, 180px, 258px);
+    @include fluid(height, 160px, 227px);
+  }
+}
+
+@media (max-width: 992px) {
+  .advantages {
+    &__number {
+      font-size: 56px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .advantages {
+    &__title {
+      max-width: unset;
+    }
+
+    &__number {
+      font-size: 35px;
+    }
+
+    &__text {
+      width: 165px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .advantages {
+    &__list {
+      flex-direction: column;
+
+      &-item {
+        width: 100%;
+
+        &:not(:last-child) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    &__text {
+      width: 65%;
+    }
+
+    &__number {
+      margin-bottom: 0;
+      width: 116px;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .advantages {
+    &__text {
+      width: 71%;
+    }
+  }
+}

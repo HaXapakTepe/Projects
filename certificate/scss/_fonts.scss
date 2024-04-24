@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Proxima Nova";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/ProximaNova-Regular.woff") format("woff"),
+    url("../fonts/ProximaNova-Regular.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/ProximaNova-Bold.woff") format("woff"),
+    url("../fonts/ProximaNova-Bold.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Trajan Sans Pro";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/TrajanSansPro-Bold.woff") format("woff"),
+    url("../fonts/TrajanSansPro-Bold.ttf") format("ttf");
+  font-display: swap;
+}

@@ -1,0 +1,28 @@
+.block {
+  &__wrapper {
+    @include fluid(margin-top, 30px, 60px);
+    @include fluid(margin-bottom, 30px, 60px);
+  }
+
+  &__title {
+    @include fluid(margin-bottom, 10px, 27px);
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  &__text {
+    @include fluid(margin-bottom, 15px, 25px);
+
+    a {
+      color: #D1B4A3;
+      text-decoration: underline;
+    }
+
+    &:has(+.block__text) {
+      margin-bottom: 5px;
+    }
+  }
+}

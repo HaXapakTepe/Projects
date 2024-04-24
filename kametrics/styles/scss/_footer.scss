@@ -1,0 +1,124 @@
+.footer {
+  margin-bottom: 30px;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    @include fluid(gap, 20px, 150px);
+    @include fluid(margin-bottom, 25px, 50px);
+  }
+
+  .logo {
+    @include fluid(margin-bottom, 20px, 40px);
+
+    &__img {
+      @include fluid(height, 30px, 40px);
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+      @include fluid(padding-top, 5px, 10px);
+      @include fluid(margin-bottom, 20px, 45px);
+      font-family: 'SF Pro Display';
+      @include fluid(font-size, 20px, 26px);
+      font-weight: 500;
+    }
+
+    &-link {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      color: #d1d1d1;
+      @include fluid(font-size, 16px, 20px);
+      font-weight: 300;
+      transition: color .23s ease-in-out;
+
+      &:has(+*) {
+        @include fluid(margin-bottom, 10px, 15px);
+      }
+
+      &:hover {
+        color: rgb(95, 46, 234);
+      }
+    }
+  }
+
+  &__mail,
+  &__tel {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    color: rgb(255, 255, 255);
+    @include fluid(font-size, 20px, 26px);
+    transition: color .23s ease-in-out;
+
+    &:has(+*) {
+      @include fluid(margin-bottom, 15px, 23px);
+    }
+
+    &:hover {
+      color: rgb(95, 46, 234);
+    }
+  }
+
+  &__bot {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr .21fr;
+
+    &-link {
+      color: #5e5e5e;
+      @include fluid(font-size, 16px, 20px);
+      font-weight: 300;
+      transition: color .23s ease-in-out;
+
+      &:hover {
+        color: rgb(95, 46, 234);
+      }
+    }
+  }
+
+  &__copy {
+    width: 88%;
+    text-align: center;
+    color: #5e5e5e;
+    @include fluid(font-size, 16px, 20px);
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer {
+    &__inner {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__bot {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__copy {
+      width: unset;
+      text-align: left;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+
+    &__bot {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+}

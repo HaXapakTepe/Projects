@@ -1,0 +1,317 @@
+.top {
+  @include fluid(padding-top, 50px, 65px);
+  padding-bottom: 15px;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__item {
+    position: relative;
+
+    &-title {
+      @include fluid(margin-bottom, 25px, 53px);
+      @include fluid(font-size, 90px, 150px);
+      line-height: 1.5;
+      letter-spacing: .5px;
+      color: #5E5E5E;
+      font-weight: 900;
+      letter-spacing: 5px;
+      -webkit-text-stroke: 2px #5E5E5E;
+      -webkit-text-fill-color: transparent;
+      color: rgba(255, 255, 255, 0)
+    }
+
+    &-text {
+      @include fluid(font-size, 36px, 72px);
+      font-weight: 700;
+      white-space: nowrap;
+    }
+  }
+
+  &__info {
+    position: relative;
+
+    &-box {
+      display: flex;
+      flex-direction: column;
+      @include fluid(gap, 51px, 41px);
+      @include fluid(max-width, 400px, 520px);
+      @include fluid(margin-bottom, 73px, 61px);
+      @include fluid(margin-top, 0px, 11px);
+    }
+
+    &-text {
+      position: relative;
+      margin-left: auto;
+      @include fluid(font-size, 20px, 24px);
+      color: #FFFFFF;
+      padding-left: 8px;
+      padding-right: 70px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 20px;
+        height: 20px;
+        background-image: url("/assets/images/icons/corner.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 60px;
+        height: 1px;
+        background-color: rgb(57, 58, 55, );
+      }
+
+      &:first-child {
+        @include fluid(margin-right, 60px, 0px);
+      }
+
+      &:nth-child(2) {
+        @include fluid(margin-right, 100px, 137px);
+      }
+
+      &:last-child {
+        @include fluid(margin-right, 110px, 205px);
+      }
+    }
+
+    &-img {
+      position: absolute;
+      width: 64%;
+      top: -118px;
+      @include fluid(right, 0px, 30px);
+      -o-object-fit: contain;
+      object-fit: contain;
+      @include fluid(height, 500px, 682px);
+      z-index: -2;
+    }
+
+    &-who {
+      position: relative;
+      @include fluid(margin-left, 50px, 126px);
+      max-width: 300px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      @include fluid(padding-top, 10px, 13px);
+      @include fluid(padding-bottom, 10px, 13px);
+      @include fluid(padding-left, 25px, 50px);
+      @include fluid(padding-right, 25px, 50px);
+      @include fluid(margin-bottom, 35px, 70px);
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        transform: skewX(-27deg);
+        z-index: -1;
+      }
+    }
+
+    &-name {
+      @include fluid(font-size, 16px, 19px);
+      color: #000000;
+    }
+
+    &-job {
+      text-align: right;
+      font-size: 13px;
+      color: #706F6F;
+    }
+
+    &-title {
+      position: relative;
+      color: #FFF;
+      @include fluid(font-size, 110px, 163px);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: 4.972px;
+      opacity: 0.1;
+      @include fluid(right, 0px, -105px);
+    }
+  }
+
+  &__quote {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 5px, 10px);
+    @include fluid(padding-top, 30px, 60px);
+    @include fluid(padding-bottom, 20px, 30px);
+    @include fluid(padding-right, 15px, 28px);
+    @include fluid(padding-left, 25px, 45px);
+    background-color: #fff;
+    box-shadow: 0px 14px 34px rgba(0, 0, 0, 0.08);
+    margin-bottom: -50px;
+    margin-top: -12px;
+    border-radius: 12px;
+
+    &-text {
+      position: relative;
+      @include fluid(padding-left, 25px, 39px);
+      @include fluid(font-size, 16px, 18px);
+      margin-top: 13px;
+      color: #17171D;
+
+      span {
+        font-weight: 700;
+        color: #4B0082
+      }
+    }
+
+    &-mark {
+      position: absolute;
+      top: -33px;
+      left: 0;
+      line-height: 1;
+      @include fluid(font-size, 45px, 92px);
+      color: #4B0082;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .top {
+    position: relative;
+    padding-top: 165px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('/assets/images/icons/ellipse-bg-left.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      pointer-events: none;
+      z-index: -2;
+    }
+
+    &__inner {
+      position: relative;
+      grid-template-columns: 1fr;
+    }
+
+    &__item {
+      order: 1;
+
+      &-text,
+      &-title {
+        display: none;
+      }
+    }
+
+    &__info {
+      &-box {
+        margin-top: 26px;
+      }
+
+      &-title {
+        display: none;
+      }
+
+      &-img {
+        top: -80px;
+        height: 420px;
+        margin-right: -15px;
+      }
+
+      &-text {
+        padding-right: unset;
+        margin-right: unset;
+        margin-left: unset;
+
+        &::after {
+          content: none;
+        }
+
+        &:first-child,
+        &:nth-child(2),
+        &:last-child {
+          margin-right: unset;
+          padding-right: unset;
+        }
+      }
+
+      &-who {
+        margin-bottom: 30px;
+        margin-left: 0;
+      }
+    }
+
+    &__quote {
+      margin-top: 0;
+      margin-bottom: 30px;
+      padding: 16px 32px 23px 11px;
+      gap: 17px;
+
+      &-mark {
+        top: -10px;
+      }
+
+      &-text {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .top {
+    padding-top: 170px;
+
+    &__info {
+      &-img {
+        width: 285px;
+        height: 362px;
+        margin-right: -30px;
+      }
+
+      &-name {
+        font-size: 14px;
+      }
+
+      &-job {
+        font-size: 10px;
+      }
+
+      &-text {
+        font-size: 16px;
+      }
+
+      &-who {
+        max-width: 184px;
+        padding: 7px 20px 5px 17px;
+        gap: 0;
+        margin-left: 10px;
+      }
+    }
+
+    &__quote {
+      &-text {
+        font-size: 12px;
+      }
+    }
+
+    .link {
+      width: 100%;
+      letter-spacing: 5px;
+    }
+  }
+}

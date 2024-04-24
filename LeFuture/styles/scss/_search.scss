@@ -1,0 +1,60 @@
+.search {
+  width: 100%;
+  max-width: 668px;
+  font-family: 'Comfortaa';
+
+  &__label {
+    display: flex;
+    padding: 7px 23px;
+    border-radius: 8px;
+    border-radius: 8px;
+    border: 1px solid rgba(167, 158, 151, 0.54);
+    background: linear-gradient(90deg, rgba(167, 158, 151, 0.02) 0%, rgba(255, 255, 255, 0.00) 100%);
+  }
+
+  &__input {
+    all: unset;
+    width: 100%;
+    background-color: transparent;
+
+    &::-webkit-input-placeholder {
+      color: rgba(13, 13, 13, 0.50);
+      font-variant-numeric: lining-nums proportional-nums;
+      font-size: 16px;
+      @include fluid(font-size, 14px, 16px);
+      line-height: 175%;
+    }
+
+    &::-moz-placeholder {
+      color: rgba(13, 13, 13, 0.50);
+      font-variant-numeric: lining-nums proportional-nums;
+      font-size: 16px;
+      @include fluid(font-size, 14px, 16px);
+      line-height: 175%;
+    }
+
+    &:-ms-input-placeholder {
+      color: rgba(13, 13, 13, 0.50);
+      font-variant-numeric: lining-nums proportional-nums;
+      font-size: 16px;
+      @include fluid(font-size, 14px, 16px);
+      line-height: 175%;
+    }
+
+    &::-ms-input-placeholder {
+      color: rgba(13, 13, 13, 0.50);
+      font-variant-numeric: lining-nums proportional-nums;
+      font-size: 16px;
+      @include fluid(font-size, 14px, 16px);
+      line-height: 175%;
+    }
+
+    &::placeholder {
+      color: rgba(13, 13, 13, 0.50);
+      font-variant-numeric: lining-nums proportional-nums;
+      font-size: 16px;
+      @include fluid(font-size, 14px, 16px);
+      line-height: 175%;
+    }
+  }
+}

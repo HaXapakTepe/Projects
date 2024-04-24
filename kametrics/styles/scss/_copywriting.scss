@@ -1,0 +1,116 @@
+.copywriting {
+  &__wrapper {
+    @include fluid(margin-bottom, 60px, 160px);
+  }
+
+  &__inner {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include fluid(padding-top, 90px, 150px);
+    @include fluid(gap, 20px, 50px);
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    max-width: 593px;
+    max-height: 491px;
+    @include fluid(left, 50px, 106px);
+    -o-object-fit: cover;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  &__item {
+    &-title {
+      font-family: 'Red Hat Display';
+      font-size: 50px;
+      @include fluid(font-size, 24px, 50px);
+      font-weight: 700;
+      line-height: 110%;
+      @include fluid(margin-bottom, 30px, 90px);
+    }
+
+    &-text {
+      color: rgb(255, 255, 255);
+      font-family: 'Red Hat Display';
+      @include fluid(font-size, 18px, 22px);
+      @include fluid(margin-bottom, 15px, 30px);
+      @include fluid(margin-bottom, 25px, 68px);
+
+      &:has(+.copywriting__item-text) {
+        @include fluid(margin-bottom, 15px, 30px);
+      }
+    }
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: end;
+    @include fluid(gap, 20px, 80px);
+    @include fluid(margin-bottom, 15px, 30px);
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    &-title {
+      font-family: 'Red Hat Display';
+      @include fluid(font-size, 16px, 20px);
+      font-weight: 700;
+    }
+
+    &-block {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      align-items: center;
+      @include fluid(gap, 15px, 23px);
+    }
+
+    &-num {
+      color: #d1d1d1;
+      font-family: 'Red Hat Display';
+      @include fluid(font-size, 16px, 20px);
+      font-weight: 700;
+    }
+
+    &-text {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      color: #d1d1d1;
+      @include fluid(font-size, 14px, 16px);
+      white-space: nowrap;
+    }
+
+    &-icon {
+      @include fluid(margin-right, -5px, -10px);
+      @include fluid(width, 100px, 167px);
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .copywriting {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .copywriting {
+    &__box {
+      grid-template-columns: 1fr;
+
+      &-text {
+        display: flex;
+      }
+    }
+  }
+}

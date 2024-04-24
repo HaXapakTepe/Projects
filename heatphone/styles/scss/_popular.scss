@@ -1,0 +1,153 @@
+.popular {
+  &__wrapper {
+    @include fluid(margin-top, 60px, 120px);
+    @include fluid(margin-bottom, 30px, 60px);
+    overflow: hidden;
+  }
+
+  &__swiper {
+    overflow: visible;
+    padding-top: 40px;
+    padding-bottom: 45px;
+    @include fluid(margin-bottom, 15px, 75px);
+
+    &--mb {
+      @include fluid(margin-bottom, 0px, 15px);
+    }
+  }
+
+  &__title {
+    @include fluid(margin-bottom, 0px, 30px);
+
+    &--mbn {
+      margin-bottom: 0;
+    }
+  }
+
+  &__inner {
+    @include fluid(padding-bottom, 30px, 60px);
+    border-bottom: 1px solid #E3E3E3;
+  }
+
+  &__subtitle {
+    text-wrap: balance;
+    @include fluid(margin-bottom, 15px, 30px);
+
+    &--width {
+      max-width: 60%;
+    }
+  }
+
+  &__text {
+    &--width {
+      max-width: 62%;
+    }
+
+    &:has(+*) {
+      @include fluid(margin-bottom, 20px, 60px);
+    }
+
+    &:has(+.popular__text) {
+      @include fluid(margin-bottom, 10px, 20px);
+    }
+  }
+
+  &__elem {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    grid-auto-rows: 1fr;
+    justify-content: center;
+    @include fluid(gap, 15px, 30px);
+    @include fluid(margin-bottom, 30px, 60px);
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      @include fluid(gap, 15px, 20px);
+      @include fluid(padding-top, 20px, 30px);
+      @include fluid(padding-bottom, 20px, 30px);
+      @include fluid(padding-left, 15px, 20px);
+      @include fluid(padding-right, 15px, 20px);
+      background-color: #F4F6F8;
+      border-radius: 10px;
+    }
+
+    &-img {
+      -o-object-fit: contain;
+      object-fit: contain;
+      @include fluid(height, 48px, 64px);
+    }
+
+    &-text {
+      text-align: center;
+    }
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: 1fr .65fr;
+    @include fluid(gap, 15px, 20px);
+    @include fluid(margin-bottom, 20px, 40px);
+
+    &-img {
+      -o-object-fit: contain;
+      object-fit: contain;
+      @include fluid(height, 300px, 506px);
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include fluid(gap, 15px, 30px);
+    @include fluid(margin-bottom, 20px, 40px);
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      @include fluid(gap, 10px, 20px);
+      list-style: disc;
+      padding-left: 15px;
+    }
+  }
+
+  &__block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include fluid(gap, 15px, 30px);
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      @include fluid(gap, 20px, 40px);
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .popular {
+
+    &__subtitle,
+    &__text {
+      &--width {
+        max-width: unset;
+      }
+    }
+
+    &__box {
+      grid-template-columns: 1fr;
+    }
+
+    &__block {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .popular {
+    &__list {
+      grid-template-columns: 1fr;
+    }
+  }
+}

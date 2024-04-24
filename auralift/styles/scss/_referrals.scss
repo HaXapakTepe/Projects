@@ -1,0 +1,170 @@
+.referrals {
+  margin: 60px 0;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: .35fr 1fr;
+    gap: 44px;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__actions {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 16px;
+    border-radius: 16px;
+    background: #FFF;
+
+    &-title {
+      color: #101828;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 30px;
+      margin-bottom: 8px;
+    }
+
+    &-text {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 16px;
+
+      &--purple {
+        margin-top: 16px;
+        border-radius: 8px;
+        background-color: #F9F5FF;
+        padding: 10px 16px;
+        color: #7F56D9;
+      }
+    }
+  }
+
+  &__block {
+    max-width: 718px;
+
+    &-title {
+      color: #101828;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 32px;
+      margin-bottom: 8px;
+    }
+
+    &-text {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__user {
+    border-radius: 16px;
+    margin-bottom: 24px;
+
+    &-item {
+      display: grid;
+      grid-template-columns: 1fr .4fr .4fr .4fr;
+      background: #fff;
+      padding: 12px 20px;
+
+      &:first-child {
+        border-bottom: 1px solid #EAECF0;
+        background: #F2F4F7;
+      }
+    }
+
+    &-earned,
+    &-actions,
+    &-sum,
+    &-mail,
+    &-title {
+      color: #344054;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+    }
+
+    &-profile {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    &-img {
+      width: 24px;
+      height: 24px;
+      -o-object-fit: contain;
+      object-fit: contain;
+      border-radius: 50%;
+    }
+
+    &-sum {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      height: -webkit-fit-content;
+      height: -moz-fit-content;
+      height: fit-content;
+      padding: 2px 10px;
+      border-radius: 16px;
+      background: #F2F4F7;
+      color: #475467;
+    }
+
+    &-earned {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      height: -webkit-fit-content;
+      height: -moz-fit-content;
+      height: fit-content;
+      padding: 2px 10px;
+      border-radius: 16px;
+      background: #E8FAF4;
+      color: #12A87A;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .referrals {
+    &__inner {
+      grid-template-columns: 100%;
+    }
+
+    &__block {
+      max-width: unset;
+    }
+
+    &__user {
+      overflow: auto;
+
+      &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+        background-color: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        border-radius: 25px;
+      }
+
+      &-item {
+        width: 728px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .referrals {
+    margin-top: 40px;
+    margin-bottom: 120px;
+  }
+}

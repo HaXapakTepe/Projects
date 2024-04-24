@@ -1,0 +1,130 @@
+.top {
+  &__wrapper {
+    position: relative;
+    background-color: #A8C8FF;
+    overflow-x: hidden;
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  &__inner {
+    position: relative;
+    @include fluid(padding-top, 30px, 64px);
+    @include fluid(padding-bottom, 35px, 74px);
+    z-index: 1;
+  }
+
+  &__item {
+    @include fluid(padding-top, 35px, 67px);
+    @include fluid(max-width, 545px, 785px);
+
+    &-title {
+      color: #373737;
+      font-family: 'Montserrat Alternates';
+      @include fluid(font-size, 30px, 51px);
+      font-weight: 700;
+      line-height: 1.3;
+      letter-spacing: 0.51px;
+      @include fluid(margin-bottom, 10px, 27px);
+
+      span {
+        color: #D1B4A3;
+      }
+    }
+
+    &-text {
+      color: #373737;
+      @include fluid(font-size, 14px, 16px);
+      line-height: 2.1;
+      @include fluid(margin-bottom, 25px, 67px);
+    }
+  }
+
+  &__box {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #FFF;
+      -webkit-filter: blur(100px);
+      filter: blur(100px);
+      z-index: -1;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      bottom: 0;
+      left: 0;
+      background-color: #FFF;
+      -webkit-filter: blur(100px);
+      filter: blur(100px);
+      z-index: -1;
+    }
+  }
+
+  &__img {
+    @include fluid(width, 450px, 603px);
+    @include fluid(height, 350px, 519px);
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 992px) {
+  .top {
+    &__inner {
+      padding: 30px 0;
+      grid-template-columns: 1fr;
+    }
+
+    &__item {
+      position: relative;
+      z-index: 1;
+      padding-top: 0;
+      width: unset;
+    }
+
+    &__box,
+    &__img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 0;
+      height: 100%;
+      width: 100%;
+      opacity: .7;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .top {
+    &__item {
+      &-title {
+        font-size: 24px;
+      }
+
+      &-text {
+        font-size: 14px;
+        line-height: 1.8;
+      }
+    }
+  }
+}

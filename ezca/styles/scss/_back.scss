@@ -1,0 +1,47 @@
+.back {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  @include fluid(margin-top, 10px, 40px);
+  @include fluid(margin-bottom, 40px, 70px);
+  @include fluid(padding-top, 8px, 12px);
+  @include fluid(padding-bottom, 8px, 12px);
+  @include fluid(padding-left, 27px, 56px);
+  @include fluid(padding-right, 27px, 56px);
+  @include fluid(font-size, 15px, 25px);
+  font-weight: 700;
+  background-color: #131313;
+  border: 2px solid transparent;
+  border-radius: 100px;
+  color: #fff;
+  transition: color .23s ease-in-out, background-color .23s ease-in-out, border-color .23s ease-in-out;
+
+  &:hover {
+    background-color: #fff;
+    color: #131313;
+    border-color: #131313;
+
+    .back__icon {
+      svg {
+        path {
+          fill: #131313;
+        }
+      }
+    }
+  }
+
+  &__icon {
+    svg {
+      @include fluid(width, 13px, 22px);
+      @include fluid(height, 10px, 17px);
+
+      path {
+        transition: fill .23s ease-in-out;
+      }
+    }
+  }
+}

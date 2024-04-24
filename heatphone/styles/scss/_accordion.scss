@@ -1,0 +1,37 @@
+.accordion,
+.accordionAlt {
+  &-content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.23s ease-in-out;
+
+    &--pos {
+      opacity: 0;
+      z-index: -1;
+      visibility: hidden;
+      transition: max-height 0.23s ease-in-out, opacity 0.23s ease-in-out,
+        visibility 0.23s ease-in-out,
+        z-index 0.23s ease-in-out;
+    }
+  }
+
+  &--active {
+
+    .accordion-content,
+    +.accordion-content {
+      &--pos {
+        opacity: 1;
+        z-index: 5;
+        visibility: visible;
+      }
+    }
+  }
+}
+
+.accordionAlt {
+  +* {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.23s ease-in-out;
+  }
+}

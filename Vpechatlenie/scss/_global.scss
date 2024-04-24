@@ -1,0 +1,92 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #F5F5F5;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  @include fluid(font-size, 16px, 18px);
+  @include fluid(line-height, 20px, 25.2px);
+  color: #222222;
+}
+
+.container {
+  max-width: 1870px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.newContainer {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.link {
+  color: #222222;
+  transition: all 0.38s;
+
+  &:hover {
+    color: #FF3D54;
+  }
+}
+
+.button {
+  @include fluid(padding-top, 14px, 15px);
+  @include fluid(padding-bottom, 14px, 15px);
+  @include fluid(line-height, 18px, 22px);
+  @include fluid(font-size, 14px, 16px);
+  border-radius: 10px;
+  background-color: #FF3D54;
+  text-align: center;
+  color: #FFFFFF;
+  transition: all 0.38s;
+
+  &:hover {
+    box-shadow: 0 0 15px #FF3D54;
+  }
+}
+
+.title {
+  @include fluid(margin-bottom, 25px, 50px);
+  font-weight: 700;
+  @include fluid(font-size, 32px, 44px);
+  @include fluid(line-height, 44px, 61px);
+}

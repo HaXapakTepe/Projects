@@ -1,0 +1,115 @@
+.select2 {
+  &-search {
+    &--dropdown {
+      display: none;
+    }
+  }
+
+  &-selection__arrow {
+    top: 50%;
+    transform: translateY(-50%);
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 8px;
+      height: 1.5px;
+      background-color: #E20072;
+      transition: transform 0.23s ease-in-out;
+      border-radius: 5px;
+      pointer-events: none;
+      z-index: 3;
+    }
+
+    &::before {
+      right: -5px;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      right: -10px;
+      transform: rotate(-45deg);
+    }
+  }
+
+  &-results {
+    width: 102%;
+    margin-top: -2px;
+    margin-left: -1px;
+    background-color: #fff;
+    border-radius: 5px;
+    background: #E20072;
+
+    &__option {
+      color: #fff;
+      font-size: 14px;
+      padding: 10px;
+      padding-left: 20px;
+    }
+  }
+
+  &-container {
+    width: 100% !important;
+    // @include fluid(min-width, 250px, 180px);
+
+    &.select2-container--open {
+      .select2-dropdown--below {
+        border: 1px solid transparent;
+      }
+
+      .select2-selection__arrow::before {
+        transform: rotate(-45deg);
+      }
+
+      .select2-selection__arrow::after {
+        transform: rotate(45deg);
+      }
+    }
+
+    &--default {
+      .select2-results__option--highlighted.select2-results__option--selectable {
+        background-color: transparent;
+        color: #fff;
+      }
+
+      .select2-results__option--selected {
+        color: #fff;
+        background-color: transparent;
+      }
+
+      .select2-selection--single {
+        outline: none;
+        line-height: 1;
+        padding: 0;
+        border: none;
+        height: auto;
+        background-color: transparent;
+
+        .select2-selection__arrow {
+          top: 50%;
+          right: 10px;
+        }
+
+        .select2-selection__rendered {
+          width: -webkit-fit-content;
+          width: -moz-fit-content;
+          width: fit-content;
+          outline: none;
+          padding: 11px 22px 11px 15px;
+          color: #E20072;
+          @include fluid(font-size, 18px, 24px);
+          font-weight: 400;
+          line-height: normal;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  b {
+    display: none;
+  }
+}

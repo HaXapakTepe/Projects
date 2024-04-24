@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/images/favicon.png" type="x-icon">
+  <link rel="stylesheet" href="./styles/css/normalize.css">
+  <link rel="stylesheet" href="./styles/css/style.css?v=0.0001">
+  <title>KOVALI</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="container">
+          <div class="header__inner">
+            <a class="logo" href="#">
+              <img class="logo__img" src="./assets/images/logo.png" alt="">
+            </a>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link" data-goto=".item1" href="#">
+                    Сотрудничество
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" data-goto=".item2" href="#">
+                    Продукты
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" data-goto=".item3" href="#">
+                    О нас
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <a class="header__phone" href="tel:+79105504289">
+              <i class="header__phone-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <path
+                    d="M5.99805 34L7.9712 26.8104C6.75221 24.7013 6.11191 22.3088 6.11486 19.874C6.11807 12.2238 12.3564 6 20.0224 6C23.7424 6.00189 27.2341 7.44663 29.8601 10.0692C32.4862 12.6918 33.931 16.1777 33.9297 19.8851C33.9263 27.5348 27.687 33.7597 20.0222 33.7597H20.0161C17.6888 33.7587 15.4018 33.176 13.3705 32.0707L5.99805 34Z"
+                    fill="#24D366" />
+                  <path
+                    d="M20.0273 8.3438C13.6512 8.3438 8.4659 13.5167 8.46364 19.875C8.46049 22.0461 9.07314 24.1739 10.2308 26.0122L10.5058 26.4485L9.33784 30.7037L13.7128 29.5588L14.1353 29.8086C15.9096 30.8595 17.944 31.4152 20.0186 31.4163H20.023C26.3942 31.4163 31.5795 26.2428 31.5819 19.8842C31.5868 18.3686 31.2903 16.8672 30.7097 15.4668C30.1291 14.0663 29.2759 12.7947 28.1995 11.7256C27.1291 10.6506 25.8556 9.79825 24.4529 9.21775C23.0501 8.63726 21.5459 8.34021 20.0273 8.3438Z"
+                    fill="white" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.5437 14.0737C16.2832 13.4963 16.0092 13.4846 15.7617 13.4746L15.0956 13.4665C14.8639 13.4665 14.4874 13.5533 14.1691 13.9003C13.8508 14.2474 12.9528 15.0863 12.9528 16.7925C12.9528 18.4987 14.198 20.1473 14.3715 20.379C14.545 20.6106 16.7754 24.2235 20.3076 25.6135C23.2429 26.7687 23.8402 26.539 24.4775 26.4812C25.1149 26.4235 26.5335 25.6424 26.8228 24.8326C27.1122 24.0228 27.1124 23.329 27.0257 23.1839C26.9389 23.0389 26.7072 22.9527 26.3594 22.7791C26.0116 22.6056 24.3034 21.7667 23.9849 21.6509C23.6664 21.5351 23.4349 21.4776 23.203 21.8246C22.971 22.1717 22.3059 22.9525 22.1031 23.1839C21.9003 23.4154 21.6978 23.4444 21.35 23.2711C21.0022 23.0977 19.8833 22.7314 18.5556 21.55C17.5226 20.6308 16.8253 19.4956 16.6223 19.1487C16.4193 18.8018 16.6008 18.6139 16.7751 18.4411C16.931 18.2857 17.1225 18.0361 17.2966 17.8337C17.4706 17.6313 17.5279 17.4866 17.6436 17.2556C17.7593 17.0245 17.7016 16.8215 17.6147 16.6482C17.5277 16.4748 16.8526 14.7598 16.5437 14.0739"
+                    fill="#24D366" />
+                </svg>
+              </i>
+              +7 910 550-42-89
+            </a>
+            <button class="link callback-open">
+              Обратный звонок
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+
+      <section class="top">
+        <div class="top__wrapper">
+          <div class="container">
+            <div class="top__inner">
+              <picture class="top__bg">
+                <source srcset="./assets/images/top/bg-mobile.svg" media="(max-width: 992px)">
+                <img src="./assets/images/top/bg.svg" alt="">
+              </picture>
+              <div class="top__item">
+                <p class="top__title">
+                  Расчет стоимости ЛКМ в день обращения
+                </p>
+                <ul class="top__list">
+                  <li class="top__list-item">
+                    Фиксированная смета
+                  </li>
+                  <li class="top__list-item">
+                    Бесплатный выезд технолога
+                  </li>
+                  <li class="top__list-item">
+                    Индивидуальный подбор характеристик краски
+                  </li>
+                  <li class="top__list-item">
+                    Сопровождение на протяжении всей работы
+                  </li>
+                </ul>
+                <button class="link link--uppercase getCP-open">
+                  запросить кп
+                </button>
+              </div>
+              <div class="top__block">
+                <div class="video">
+                  <div class="video__wrapper">
+                    <div class="video__box">
+                      <video preload="auto" muted="muted">
+                        <source src="./assets/video/3.mp4" type="video/mp4">
+                        </source>
+                        <source src="./assets/video/3.webm" type="video/webm">
+                        </source>
+                      </video>
+                      <img class="video__line" src="./assets/images/video/line.svg" alt="">
+                    </div>
+                    <img class="video__icon video__icon--port" src="./assets/images/video/1.png" alt="">
+                    <img class="video__icon video__icon--box" src="./assets/images/video/2.png" alt="">
+                    <img class="video__icon video__icon--brush" src="./assets/images/video/3.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="stage item1">
+        <div class="stage__wrapper">
+          <div class="container">
+            <div class="stage__inner">
+              <img class="stage__bg" src="./assets/images/stage/bg-x2.png" alt="">
+              <h2 class="stage__title title">
+                Этапы сотрудничества
+              </h2>
+              <div class="stage__box">
+                <div class="stage__item">
+                  <img class="stage__item-img" src="./assets/images/stage/1.png" alt="">
+                  <div class="stage__item-box">
+                    <p class="stage__item-num"></p>
+                    <p class="stage__item-text">
+                      Изучим
+                      <span>
+                        <i class="stage__item-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 154 6" fill="none">
+                            <path d="M1 4.50006C44.5 2.50006 135.8 -0.299941 153 4.50006" stroke="#FF8B3C"
+                              stroke-width="3" />
+                          </svg>
+                        </i>
+                        ваши объекты
+                      </span>
+                      и условия покраски
+                    </p>
+                  </div>
+                </div>
+                <div class="stage__item">
+                  <img class="stage__item-img" src="./assets/images/stage/2.png" alt="">
+                  <div class="stage__item-box">
+                    <p class="stage__item-num"></p>
+                    <p class="stage__item-text">
+                      Подберем готовое решение или разработаем
+                      <span>
+                        <i class="stage__item-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 9" fill="none">
+                            <path d="M1 7.06784C83.5 -1.9321 230.6 3.2 271 4" stroke="#FF8B3C" stroke-width="3" />
+                          </svg>
+                        </i>
+                        индивидуальный состав
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="stage__item">
+                  <img class="stage__item-img" src="./assets/images/stage/3.png" alt="">
+                  <div class="stage__item-box">
+                    <p class="stage__item-num"></p>
+                    <p class="stage__item-text">
+                      Проведем
+                      <span>
+                        <i class="stage__item-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 165 6" fill="none">
+                            <path d="M0.5 4C50.1667 2.83334 152.4 1.2 164 4" stroke="#FF8B3C" stroke-width="3" />
+                          </svg>
+                        </i>
+                        консультацию
+                      </span>
+                      с технологом по всем процессам покраски
+                    </p>
+                  </div>
+                </div>
+                <div class="stage__item">
+                  <img class="stage__item-img" src="./assets/images/stage/4.png" alt="">
+                  <div class="stage__item-box">
+                    <p class="stage__item-num"></p>
+                    <p class="stage__item-text">
+                      Сделаем все необходимые
+                      <span>
+                        <i class="stage__item-icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153 7" fill="none">
+                            <path d="M1.00117 4.99982C45.0118 4.08337 136.933 2.2874 152.532 2.43518" stroke="#FF8B3C"
+                              stroke-width="3" />
+                          </svg>
+                        </i>
+                        тест-выкрасы
+                      </span>
+                      на ваших объектах
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="arsenal item2">
+        <div class="arsenal__wrapper">
+          <div class="container">
+            <div class="arsenal__box">
+              <h2 class="arsenal__title title">
+                В нашем арсенале: <span class="arsenal__swap">Грунт-эмали</span>
+              </h2>
+              <button class="link link--uppercase consultation-open">
+                консультация
+              </button>
+            </div>
+            <div class="arsenal__inner">
+              <a class="arsenal__link" href="#">
+                <img class="arsenal__link-img" src="./assets/images/arsenal/1.png" alt="">
+                <p class="arsenal__link-title">
+                  Грунт-эмаль 3в1
+                </p>
+              </a>
+              <a class="arsenal__link" href="#">
+                <img class="arsenal__link-img" src="./assets/images/arsenal/2.png" alt="">
+                <p class="arsenal__link-title">
+                  Цинконаполненный грунт 2К
+                </p>
+              </a>
+              <a class="arsenal__link" href="#">
+                <img class="arsenal__link-img" src="./assets/images/arsenal/3.png" alt="">
+                <p class="arsenal__link-title">
+                  Эмаль термостойкая
+                </p>
+              </a>
+              <a class="arsenal__link" href="#">
+                <img class="arsenal__link-img" src="./assets/images/arsenal/4.png" alt="">
+                <p class="arsenal__link-title">
+                  Эпоксидный грунт
+                </p>
+              </a>
+              <a class="arsenal__link" href="#">
+                <img class="arsenal__link-img" src="./assets/images/arsenal/5.png" alt="">
+                <p class="arsenal__link-title">
+                  Грунт-эмаль полиуретановая 2К
+                </p>
+              </a>
+              <a class="arsenal__link" href="#">
+                <img class="arsenal__link-img" src="./assets/images/arsenal/6.png" alt="">
+                <p class="arsenal__link-title">
+                  Грунт-эмаль 3в1 молотковая
+                </p>
+              </a>
+              <button class="arsenal__btn link link--uppercase consultation-open">
+                консультация
+              </button>
+            </div>
+            <div class="arsenal__info item3">
+              <div class="arsenal__item">
+                <p class="arsenal__item-title arsenal__item-title--big">
+                  <span><span class="arsenal__item-num arsenal__item-num--year" data-num="15"></span> лет</span>
+                  <span class="arsenal__item-accent">успешной работы</span>
+                </p>
+              </div>
+              <div class="arsenal__item">
+                <div class="arsenal__item-box">
+                  <p class="arsenal__item-title">
+                    <span class="arsenal__item-num arsenal__item-num--product" data-num="296"></span>
+                    SKU
+                  </p>
+                  <p class="arsenal__item-text">в ассортименте</p>
+                </div>
+              </div>
+              <div class="arsenal__item">
+                <div class="arsenal__item-box">
+                  <p class="arsenal__item-title">
+                    <span class="arsenal__item-num arsenal__item-num--clients" data-num="78"></span>
+                  </p>
+                  <p class="arsenal__item-text">Корпоративных клиентов по всей России</p>
+                </div>
+              </div>
+              <div class="arsenal__item arsenal__item--area arsenal__item--mla">
+                <div class="arsenal__item-box">
+                  <p class="arsenal__item-title arsenal__item-title--small">
+                    Производитель с собственным
+                    <span class="arsenal__item-accent">брендом</span>
+                  </p>
+                </div>
+              </div>
+              <div class="arsenal__item arsenal__item--areaLast">
+                <div class="arsenal__item-box">
+                  <p class="arsenal__item-title arsenal__item-title--small">
+                    Собственная лаборатория
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="arsenal__bot">
+              <p class="arsenal__bot-text">
+                <span>Фабрика Ковали </span>— завод-производитель высококачественных покрытий по металлу под брендом
+                «KOVALI». Наши
+                решения предназначены для антикоррозионной защиты металлических изделий любых форм и размеров,
+                требующих лучших декоративных свойств и длительного срока службы
+              </p>
+              <div class="video video--alt">
+                <div class="video__wrapper">
+                  <div class="video__box">
+                    <video preload="auto" muted="muted">
+                      <source src="./assets/video/1.mp4" type="video/mp4">
+                      </source>
+                      <source src="./assets/video/1.webm" type="video/webm">
+                      </source>
+                    </video>
+                    <img class="video__line" src="./assets/images/video/line-right.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="delivery">
+        <div class="delivery__wrapper">
+          <div class="video video--bg">
+            <div class="video__wrapper">
+              <div class="video__box">
+                <video preload="auto" muted="muted">
+                  <source src="./assets/video/2.mp4" type="video/mp4">
+                  </source>
+                  <source src="./assets/video/2.webm" type="video/webm">
+                  </source>
+                </video>
+                <img class="video__line" src="./assets/images/video/line-right.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="delivery__inner">
+              <div class="delivery__box">
+                <p class="delivery__box-text">
+                  Бесплатная доставка оптовых заказов по Москве и МО
+                </p>
+                <a class="link link--uppercase" href="#">
+                  заказать
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__item">
+              <div class="footer__item-top">
+                <p class="footer__item-title">
+                  Головной офис
+                </p>
+                <p class="footer__item-text footer__item-text--big">
+                  г. Тула, ул. Луначарского, дом 25
+                </p>
+              </div>
+              <div class="footer__item-box">
+                <p class="footer__item-title">
+                  Телефон
+                </p>
+                <a class="footer__item-link" href="tel:+74954773777">
+                  +7 495 477-37-77
+                </a>
+                <a class="footer__item-link" href="tel:+78005002682">
+                  8 800 500-26-82
+                </a>
+              </div>
+              <div class="footer__item-box">
+                <p class="footer__item-title">
+                  Режим работы
+                </p>
+                <p class="footer__item-text">
+                  Пн – Пт: <span>08:30 — 17:30</span>
+                </p>
+                <p class="footer__item-text">
+                  Сб – Вс: Выходные
+                </p>
+              </div>
+              <div class="footer__item-box">
+                <p class="footer__item-title">
+                  Email
+                </p>
+                <a class="footer__item-link" href="mailto:info@kovali.ru">
+                  info@kovali.ru
+                </a>
+              </div>
+              <div class="footer__item-box">
+                <p class="footer__item-title">
+                  Социальные сети
+                </p>
+                <div class="social">
+                  <a class="social__link" href="#">
+                    <i class="social__icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path
+                          d="M20.9388 26.9131C13.2719 26.9131 8.90038 21.6673 8.72104 12.9243H12.5769C12.7002 19.3358 15.5249 22.0484 17.7667 22.6088V12.9243H21.3872V18.4503C23.5954 18.2149 25.9268 15.6929 26.7115 12.9131H30.3208C30.0265 14.3521 29.4386 15.7149 28.5938 16.9164C27.7491 18.1179 26.6657 19.1323 25.4112 19.8963C26.8111 20.593 28.0475 21.5787 29.0386 22.7882C30.0298 23.9977 30.7533 25.4035 31.1614 26.9131H27.1822C26.3304 24.2566 24.2007 22.1941 21.3872 21.9139V26.9131H20.95H20.9388Z"
+                          fill="#222222" />
+                      </svg>
+                    </i>
+                  </a>
+                  <a class="social__link" href="#">
+                    <i class="social__icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path
+                          d="M10.4931 18.749C16.3235 16.2088 20.2113 14.5341 22.1566 13.725C27.7108 11.4148 28.8649 11.0135 29.6172 11.0001C29.7826 10.9974 30.1525 11.0384 30.3922 11.2328C30.5945 11.397 30.6502 11.6188 30.6768 11.7744C30.7034 11.9301 30.7366 12.2847 30.7102 12.5617C30.4093 15.7242 29.1069 23.3986 28.4444 26.9406C28.164 28.4394 27.612 28.9419 27.0775 28.9911C25.9161 29.098 25.0342 28.2235 23.9093 27.4861C22.149 26.3323 21.1546 25.614 19.446 24.488C17.4713 23.1868 18.7514 22.4716 19.8767 21.3028C20.1712 20.9969 25.2885 16.3423 25.3876 15.9201C25.4 15.8673 25.4115 15.6705 25.2945 15.5665C25.1776 15.4626 25.005 15.4981 24.8804 15.5264C24.7039 15.5665 21.8919 17.4251 16.4443 21.1023C15.6462 21.6504 14.9232 21.9174 14.2754 21.9035C13.5613 21.888 12.1877 21.4997 11.1665 21.1678C9.91404 20.7606 8.91858 20.5454 9.00526 19.8539C9.05041 19.4938 9.54637 19.1255 10.4931 18.749Z"
+                          fill="#222222" />
+                      </svg>
+                    </i>
+                  </a>
+                  <a class="social__link" href="#">
+                    <i class="social__icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path
+                          d="M9 31L10.5502 25.351C9.59249 23.6939 9.08946 21.814 9.09177 19.901C9.0943 13.8901 13.9953 9 20.0178 9C22.9404 9.00148 25.6836 10.1366 27.7466 12.1972C29.8097 14.2578 30.9448 16.9968 30.9438 19.9097C30.9411 25.9202 26.0394 30.8112 20.0177 30.8112H20.0129C18.1845 30.8104 16.3878 30.3526 14.792 29.4841L9 31Z"
+                          fill="#222222" />
+                        <path
+                          d="M20.0222 10.8413C15.013 10.8413 10.9393 14.9058 10.9375 19.9015C10.935 21.6075 11.4163 23.2792 12.3258 24.7236L12.5418 25.0664L11.6243 28.4098L15.0614 27.5103L15.3933 27.7065C16.7872 28.5322 18.3855 28.9688 20.0154 28.9697H20.0188C25.0241 28.9697 29.0978 24.9049 29.0998 19.9088C29.1035 18.718 28.8706 17.5383 28.4145 16.4379C27.9584 15.3376 27.2881 14.3385 26.4424 13.4985C25.6015 12.6539 24.601 11.9841 23.499 11.528C22.3969 11.0719 21.2152 10.8385 20.0222 10.8413Z"
+                          fill="#222222" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M17.2873 15.3438C17.0827 14.8901 16.8673 14.8809 16.673 14.8731L16.1497 14.8667C15.9676 14.8667 15.6718 14.9349 15.4217 15.2076C15.1717 15.4803 14.4662 16.1394 14.4662 17.48C14.4662 18.8206 15.4445 20.1159 15.5808 20.2979C15.7171 20.4799 17.4693 23.3186 20.2443 24.4108C22.5503 25.3185 23.0195 25.1379 23.5203 25.0926C24.021 25.0472 25.1355 24.4335 25.3628 23.7972C25.5902 23.1609 25.5903 22.6158 25.5222 22.5018C25.454 22.3879 25.2719 22.3201 24.9987 22.1838C24.7255 22.0474 23.3835 21.3883 23.1333 21.2973C22.8831 21.2063 22.7012 21.1611 22.519 21.4338C22.3368 21.7065 21.8142 22.32 21.6549 22.5018C21.4955 22.6837 21.3365 22.7065 21.0633 22.5703C20.79 22.4341 19.9109 22.1463 18.8679 21.218C18.0564 20.4958 17.5085 19.6039 17.3491 19.3313C17.1896 19.0587 17.3321 18.9111 17.469 18.7753C17.5916 18.6532 17.742 18.4571 17.8788 18.2981C18.0155 18.1391 18.0605 18.0254 18.1514 17.8438C18.2423 17.6623 18.197 17.5028 18.1287 17.3666C18.0604 17.2304 17.5299 15.8828 17.2873 15.3439"
+                          fill="white" />
+                      </svg>
+                    </i>
+                  </a>
+                  <a class="social__link" href="#">
+                    <i class="social__icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path
+                          d="M21.7357 21.7357C20.3214 23.195 20.2186 25.0143 20.0964 29C23.8121 29 26.3771 28.9871 27.7014 27.7014C28.9871 26.3771 29 23.69 29 20.0964C25.0143 20.225 23.195 20.3214 21.7357 21.7357ZM11 20.0964C11 23.69 11.0129 26.3771 12.2986 27.7014C13.6229 28.9871 16.1878 29 19.9036 29C19.775 25.0143 19.6786 23.195 18.2643 21.7357C16.805 20.3214 14.9857 20.2186 11 20.0964ZM19.9036 11C16.1943 11 13.6229 11.0129 12.2986 12.2986C11.0129 13.6229 11 16.31 11 19.9036C14.9857 19.775 16.805 19.6786 18.2643 18.2643C19.6786 16.805 19.7814 14.9857 19.9036 11ZM21.7357 18.2643C20.3214 16.805 20.2186 14.9857 20.0964 11C23.8121 11 26.3771 11.0129 27.7014 12.2986C28.9871 13.6229 29 16.31 29 19.9036C25.0143 19.775 23.195 19.6786 21.7357 18.2643Z"
+                          fill="#222222" />
+                        <path
+                          d="M29 20.0964V19.9036C25.0143 19.775 23.195 19.6786 21.7357 18.2643C20.3214 16.805 20.2186 14.9857 20.0964 11H19.9036C19.775 14.9857 19.6786 16.805 18.2643 18.2643C16.805 19.6786 14.9857 19.7814 11 19.9036V20.0964C14.9857 20.225 16.805 20.3214 18.2643 21.7357C19.6786 23.195 19.7814 25.0143 19.9036 29H20.0964C20.225 25.0143 20.3214 23.195 21.7357 21.7357C23.195 20.3214 25.0143 20.2186 29 20.0964Z"
+                          fill="white" />
+                      </svg>
+                    </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="map">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A7622f6c925f3a3416e4a9026f7deb8904339b6a5173ba439f86a5aad258f7539&source=constructor"
+                frameborder="0"></iframe>
+            </div>
+            <div class="footer__accordion">
+              <div class="footer__accordion-top accordion">
+                <p class="footer__accordion-title">
+                  Реквизиты
+                </p>
+                <i class="footer__accordion-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                    <path d="M5.81 9.40479L11 14.5948L16.19 9.40479" stroke="#999999" stroke-width="1.34206"
+                      stroke-linecap="square" stroke-linejoin="round" />
+                  </svg>
+                </i>
+              </div>
+              <div class="accordion-content">
+                <div class="footer__accordion-content">
+                  <p class="footer__accordion-title">
+                    Наименование
+                  </p>
+                  <p class="footer__accordion-text">
+                    Общество с ограниченной ответственностью «КОВАЛИ»
+                  </p>
+                  <p class="footer__accordion-title">
+                    ИНН
+                  </p>
+                  <p class="footer__accordion-text">
+                    7106528393
+                  </p>
+                  <p class="footer__accordion-title">
+                    КПП
+                  </p>
+                  <p class="footer__accordion-text">
+                    710601001
+                  </p>
+                  <p class="footer__accordion-title">
+                    ОГРН
+                  </p>
+                  <p class="footer__accordion-text">
+                    1137154034203
+                  </p>
+                  <p class="footer__accordion-title">
+                    Телефон/факс
+                  </p>
+                  <p class="footer__accordion-text">
+                    +7 495 477-37-77
+                  </p>
+                  <p class="footer__accordion-title">
+                    Реквизиты банка
+                  </p>
+                  <p class="footer__accordion-text">
+                    ФИЛИАЛ «ЦЕНТРАЛЬНЫЙ» БАНКА ВТБ (ПАО) Г, МОСКВА
+                  </p>
+                  <p class="footer__accordion-title">
+                    Юр. адрес
+                  </p>
+                  <p class="footer__accordion-text">
+                    300002, г. Тула, ул. Луначарского, дом №25, офис 8
+                  </p>
+                  <p class="footer__accordion-title">
+                    БИК
+                  </p>
+                  <p class="footer__accordion-text">
+                    044525411
+                  </p>
+                  <p class="footer__accordion-title">
+                    р/с
+                  </p>
+                  <p class="footer__accordion-text">
+                    40702810600320003882
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="container">
+            <div class="footer__bottom-inner">
+              <p class="footer__bottom-text">
+                KOVALI, 2023
+              </p>
+              <a class="footer__bottom-link" href="#">
+                Политика Конфиденциальности
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+
+    <div class="modal getCP">
+      <div class="modal__wrapper">
+        <form class="modal__form" id="getCP" action="./send.php" method="post">
+          <i class="modal__close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+              <path d="M18 6L6 18" stroke="#999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M6 6L18 18" stroke="#999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </i>
+          <p class="modal__title">
+            Получить КП
+          </p>
+          <p class="modal__subtitle">
+            Ваше имя
+          </p>
+          <input class="input form-input-name" id="getCP-name-input" name="name" type="text">
+          <p class="modal__subtitle">
+            Ваша почта
+          </p>
+          <input class="input form-input-email" id="getCP-email-input" type="text" name="email">
+          <label class="modal__label label">
+            <input class="label__input check" id="getCP-checkbox-input" type="checkbox">
+            <span class="label__inputCustom"></span>
+            <span>Я согласен на <a href="#">обработку персональных данных</a></span>
+          </label>
+          <button class="link link--uppercase" id="getCP-button" type="submit">
+            Отправить
+          </button>
+        </form>
+      </div>
+    </div>
+
+
+    <div class="modal callback">
+      <div class="modal__wrapper">
+        <form class="modal__form" id="callback" action="./send.php" method="post">
+          <i class="modal__close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+              <path d="M18 6L6 18" stroke="#999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M6 6L18 18" stroke="#999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </i>
+          <p class="modal__title">
+            Заказать обратный звонок
+          </p>
+          <p class="modal__subtitle">
+            Ваше имя
+          </p>
+          <input class="input form-input-name" id="callback-name-input" name="name" type="text">
+          <p class="modal__subtitle">
+            Номер телефона
+          </p>
+          <input class="input form-input-phone" id="callback-phone-input" type="text" name="phone">
+          <label class="modal__label label">
+            <input class="label__input check" id="callback-checkbox-input" type="checkbox">
+            <span class="label__inputCustom"></span>
+            <span>Я согласен на <a href="#">обработку персональных данных</a></span>
+          </label>
+          <button class="link link--uppercase" id="callback-button" type="submit">
+            Отправить
+          </button>
+        </form>
+      </div>
+    </div>
+
+
+    <div class="modal consultation">
+      <div class="modal__wrapper">
+        <form class="modal__form" id="consultation" action="./send.php" method="post">
+          <i class="modal__close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+              <path d="M18 6L6 18" stroke="#999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M6 6L18 18" stroke="#999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </i>
+          <p class="modal__title">
+            Получить консультацию
+          </p>
+          <p class="modal__subtitle">
+            Ваше имя
+          </p>
+          <input class="input form-input-name" id="consultation-name-input" name="name" type="text">
+          <p class="modal__subtitle">
+            Номер телефона
+          </p>
+          <input class="input form-input-phone" id="consultation-phone-input" type="text" name="phone">
+          <label class="modal__label label">
+            <input class="label__input check" id="consultation-checkbox-input" type="checkbox">
+            <span class="label__inputCustom"></span>
+            <span>Я согласен на <a href="#">обработку персональных данных</a></span>
+          </label>
+          <button class="link link--uppercase" id="consultation-button" type="submit">
+            Отправить
+          </button>
+        </form>
+      </div>
+    </div>
+
+
+    <!-- <div class="modal getCP-success">
+      <div class="modal__wrapper">
+        <i class="modal__close">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+            <path d="M18 6L6 18" stroke="#999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M6 6L18 18" stroke="#999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </i>
+        <p class="modal__title">
+          Спасибо!
+        </p>
+        <p class="modal__text">
+          Мы отправили коммерческое предложение на почту <span id="getCP-success-mail">test@mail.ru</span>
+        </p>
+      </div>
+    </div> -->
+
+
+    <!-- <div class="modal callback-success">
+      <div class="modal__wrapper">
+        <i class="modal__close">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+            <path d="M18 6L6 18" stroke="#999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M6 6L18 18" stroke="#999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </i>
+        <p class="modal__title">
+          Спасибо, скоро Вам позвонят
+        </p>
+        <p class="modal__text">
+          Мы позвоним на номер <span id="callback-success-phone">+7 900 000-00-00</span> как можно скорее
+        </p>
+      </div>
+    </div> -->
+
+
+    <!-- <div class="modal consultation-success">
+      <div class="modal__wrapper">
+        <i class="modal__close">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+            <path d="M18 6L6 18" stroke="#999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M6 6L18 18" stroke="#999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </i>
+        <p class="modal__title">
+          Спасибо, скоро Вам позвонят
+        </p>
+        <p class="modal__text">
+          Мы позвоним на номер <span id="consultation-success-phone">+7 900 000-00-00</span>
+        </p>
+      </div>
+    </div> -->
+
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="./scripts/valid-ajax.js"> </script>
+  <script src="./scripts/scripts.js"></script>
+</body>
+
+</html>

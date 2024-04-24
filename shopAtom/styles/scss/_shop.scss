@@ -1,0 +1,284 @@
+.shop {
+  @include fluid(margin-top, 30px, 70px);
+
+  &--mb {
+    margin-bottom: 70px;
+  }
+
+  &--white {
+    @include fluid(padding-top, 30px, 80px);
+    @include fluid(padding-bottom, 30px, 80px);
+    background-color: #fff;
+  }
+
+  &__title {
+    @include fluid(margin-bottom, 20px, 35px);
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include fluid(margin-bottom, 20px, 40px);
+
+    &-block {
+      display: flex;
+      align-items: center;
+      @include fluid(gap, 15px, 25px);
+    }
+
+    &-arrow {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 105px;
+      margin-top: 5px;
+    }
+
+    &-text {
+      color: #111;
+      @include fluid(font-size, 22px, 28px);
+    }
+
+    &-link {
+      position: relative;
+      color: #111;
+      text-align: right;
+      @include fluid(font-size, 18px, 24px);
+      @include fluid(padding-right, 10px, 15px);
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 60%;
+        transform: translateY(-50%);
+        right: 0;
+        width: 7px;
+        height: 12px;
+        background-image: url('../../assets/images/icons/arrow-right.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+
+    .title {
+      margin-bottom: 0;
+    }
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    @include fluid(gap, 15px, 30px);
+
+    +.link {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &:has(+.link) {
+      @include fluid(margin-bottom, 35px, 70px);
+    }
+
+    &--twoCard {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__next,
+  &__prev {
+    font-size: 16px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 0;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .swiper-button {
+    &-prev {
+      color: #111;
+      transform: translateY(-50%);
+    }
+
+    &-next {
+      color: #111;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__slide {
+    height: auto;
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: transparent;
+
+    &-icon {
+      position: relative;
+      position: absolute;
+      @include fluid(top, 11px, 19px);
+      @include fluid(right, 15px, 20px);
+      @include fluid(width, 28px, 36px);
+      @include fluid(height, 28px, 36px);
+      cursor: pointer;
+
+      svg {
+        path {
+          transition: fill .23s ease-in-out;
+        }
+
+        &:last-child {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 100%;
+          height: 100%;
+          transform: translate(-50%, -50%) scale(0);
+          transition: transform .23s ease-in-out;
+        }
+      }
+
+      &--accent {
+        svg {
+          &:last-child {
+            transform: translate(-50%, -50%) scale(1);
+          }
+        }
+      }
+    }
+
+    &-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include fluid(padding-top, 15px, 30px);
+      @include fluid(padding-bottom, 10px, 20px);
+      @include fluid(padding-left, 10px, 22px);
+      @include fluid(padding-right, 10px, 22px);
+      @include fluid(min-height, 220px, 272px);
+      border-radius: 20px 20px 0px 0px;
+      background: #F9F9F9;
+    }
+
+    &-img {
+      -o-object-fit: contain;
+      object-fit: contain;
+      @include fluid(height, 170px, 230px);
+    }
+
+    &-block {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      @include fluid(padding, 15px, 30px);
+      background-color: #fff;
+    }
+
+    &-title {
+      color: #171717;
+      @include fluid(margin-bottom, 20px, 60px);
+      font-weight: 400;
+      max-width: 90%;
+    }
+
+    &-info {
+      color: #868686;
+      @include fluid(font-size, 12px, 20px);
+      @include fluid(margin-bottom, 10px, 15px);
+    }
+
+    &-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: auto;
+    }
+
+    &-price {
+      color: #111;
+      @include fluid(font-size, 20px, 25px);
+      font-style: normal;
+      font-weight: 700;
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    @include fluid(padding, 20px, 30px);
+    border-radius: 20px;
+    background: #F9F9F9;
+
+    &--white {
+      background-color: #fff;
+    }
+
+    &-box {
+      @include fluid(bottom, 20px, 40px);
+      @include fluid(right, 15px, 30px);
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      @include fluid(gap, 10px, 15px);
+    }
+
+    &-title {
+      @include fluid(margin-bottom, 15px, 30px);
+    }
+
+    &-price {
+      color: #111;
+      @include fluid(font-size, 20px, 25px);
+      font-style: normal;
+      font-weight: 700;
+    }
+
+    &-img {
+      max-width: 70%;
+      margin-right: auto;
+      -o-object-fit: contain;
+      object-fit: contain;
+      @include fluid(height, 280px, 320px);
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .shop {
+    overflow-x: hidden;
+
+    &__inner {
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+
+      &--twoCard {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    &__swiper {
+      overflow: visible;
+    }
+
+    &__box {
+
+      &-link,
+      &-arrow {
+        display: none;
+      }
+    }
+  }
+}

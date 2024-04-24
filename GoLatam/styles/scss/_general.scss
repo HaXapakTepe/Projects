@@ -1,0 +1,257 @@
+// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+input {
+  outline: none;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+fieldset {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 300;
+  @include fluid(font-size, 14px, 16px);
+  line-height: normal;
+  color: #070808;
+  background-color: #fff;
+
+  &.no-scroll {
+    overflow-y: hidden;
+  }
+}
+
+.wrapper {
+  // min-height: 100vh;
+  min-width: 320px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  // контейнер + padding с двух сторон
+  @include fluid(width, 962px, 1110px);
+  @include container;
+}
+
+[class$="__icon"],
+[class$="-icon"] {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  @include fluid(gap, 10px, 12px);
+  color: var(--Main-Go-Latam, #1F93CC);
+  font-family: 'SF Pro Rounded';
+  @include fluid(font-size, 26px, 35.56px);
+  font-weight: 600;
+
+  &--white {
+    color: var(--Main-Go-Latam, #fff);
+  }
+
+  &__icon {
+    svg {
+      @include fluid(width, 35px, 44px);
+      @include fluid(height, 27px, 34px);
+    }
+  }
+}
+
+.fon {
+  position: relative;
+  color: #fff;
+  background-color: #0c0a1f;
+
+  &--alt {
+    overflow: hidden;
+    @include fluid(padding-top, 110px, 140px);
+    background-color: unset;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      width: 120%;
+      height: 851px;
+      z-index: -1;
+      background-color: #0c0a1f;
+      transform: translateX(-50%) rotate(-1.5deg)
+    }
+  }
+}
+
+.title {
+  @include fluid(font-size, 42px, 52px);
+  font-weight: 700;
+
+  &--alt {
+    @include fluid(font-size, 32px, 42px);
+    font-weight: 700;
+  }
+
+  &--small {
+    text-align: center;
+    @include fluid(font-size, 24px, 32px);
+  }
+
+  &--blue {
+    color: var(--Main-Go-Latam, #1F93CC);
+  }
+
+  &--pink {
+    color: var(--Danger, #FD397A);
+  }
+}
+
+span {
+  &.blue {
+    color: var(--Main-Go-Latam, #1F93CC);
+  }
+
+  &.pink {
+    color: var(--Danger, #FD397A);
+  }
+}
+
+.ellipse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  @include fluid(width, 180px, 208px);
+  @include fluid(height, 180px, 208px);
+  -webkit-filter: blur(144px);
+  filter: blur(144px);
+  background-color: #290E3B;
+  z-index: -1;
+
+  &--right {
+    left: unset;
+    right: 0;
+  }
+
+  &--alt {
+    @include fluid(width, 60px, 80px);
+    @include fluid(height, 450px, 60px);
+    background-color: var(--Main-Go-Latam, #1F93CC);
+    -webkit-filter: blur(94px);
+    filter: blur(94px);
+  }
+
+  &--opacity {
+    background-color: #E8C6FF;
+    opacity: .2;
+  }
+}
+
+.qutes {
+  position: relative;
+  width: 19px;
+  @include fluid(height, 15px, 19px);
+  @include fluid(margin-top, 20px, 22px);
+
+  &::after {
+    content: '”';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--Main-Go-Latam, #1F93CC);
+    font-family: 'Scada';
+    @include fluid(font-size, 42px, 52px);
+    font-weight: 400;
+    line-height: .6;
+  }
+
+  &--alt {
+    &:after {
+      content: '“'
+    }
+  }
+}
+
+input {
+  @include fluid(padding-left, 10px, 16px);
+  @include fluid(padding-right, 10px, 16px);
+  @include fluid(padding-top, 10px, 12px);
+  @include fluid(padding-bottom, 10px, 12px);
+  border-radius: 12px;
+  border: 1px solid var(--Dark-Gray, #B4B6BA);
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 36px;
+
+    &--alt {
+      font-size: 32px;
+    }
+
+    &--small {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 28px;
+
+    &--alt {
+      font-size: 24px;
+    }
+
+    &--small {
+      font-size: 22px;
+    }
+  }
+}
+
+@media (max-width: 576px) {}

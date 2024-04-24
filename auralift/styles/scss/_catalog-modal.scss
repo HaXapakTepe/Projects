@@ -1,0 +1,138 @@
+.catalog-modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background: rgba(16, 24, 40, 0.10);
+  opacity: 0;
+  z-index: -1;
+  visibility: hidden;
+  transition: opacity .23s ease-out,
+    z-index .23s ease-out,
+    visibility .23s ease-in-out;
+
+  &--active {
+    opacity: 1;
+    z-index: 100;
+    visibility: visible;
+  }
+
+  &__inner {
+    position: fixed;
+    top: 76px;
+    left: 0;
+    bottom: 0;
+    max-width: 383px;
+    height: 100%;
+    padding: 40px;
+    background: #FFF;
+    z-index: 100;
+    overflow-y: auto;
+  }
+
+  &__title {
+    color: #101828;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 16px;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 6px 12px;
+      font-weight: 500;
+      line-height: 24px;
+      transition: color .23s ease-in-out,
+        background-color .23s ease-in-out;
+      border-radius: 6px;
+      margin-bottom: 6px;
+      cursor: pointer;
+
+      &.accordion--active,
+      &:hover {
+        background-color: #E8FAF4;
+        color: #0E835F;
+
+        .catalog-modal__box-arrow {
+
+          svg {
+            path {
+              stroke: #0E835F;
+            }
+          }
+        }
+      }
+
+      &.accordion--active {
+        .catalog-modal__box {
+          &-arrow {
+            transform: rotateX(180deg);
+          }
+
+          &-elem {
+            overflow: visible;
+          }
+        }
+      }
+    }
+
+    &-arrow {
+      transition: transform 0.23s ease-in-out;
+
+      svg {
+        path {
+          transition: stroke .23s ease-in-out;
+        }
+      }
+    }
+
+    &-elem {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      padding-left: 20px;
+      margin-bottom: 4px;
+      max-height: 0;
+      transition: max-height .23s ease-in-out,
+        overflow .23s ease-in-out;
+      overflow: hidden;
+    }
+
+    &-link {
+      padding: 12px 6px;
+      color: #667085;
+      font-weight: 500;
+      transition: color .23s ease-in-out;
+
+      &:hover {
+        color: #0E835F;
+      }
+    }
+  }
+}
+
+@media(max-width:767px) {
+  .catalog-modal {
+    &__inner {
+      top: 60px;
+    }
+  }
+}
+
+@media(max-width:539px) {
+  .catalog-modal {
+    &__inner {
+      padding: 20px;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,149 @@
+.btn {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  transition: all 0.38s ease-in-out;
+  border-radius: 40px;
+  z-index: 11;
+  color: #fff;
+  @include fluid(padding, 16px, 17px);
+  @include fluid(padding-left, 30px, 48px);
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    border-radius: 40px;
+    transition: opacity 0.38s ease-out;
+    opacity: 1;
+    background: linear-gradient(96.57deg, #FF3D00 0.98%, #E93901 100.12%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    transition: opacity 0.38s ease-in-out;
+    border-radius: 40px;
+    opacity: 0;
+    background: linear-gradient(96.57deg, #FF3D00 0.98%, #FF612F 100.12%);
+  }
+
+  &--wb {
+    &::before {
+      background: linear-gradient(106deg, #BB3C95 24.98%, #7C2570 100%);
+    }
+
+    &::after {
+      background: linear-gradient(106deg, #7C2570 24.98%, #BB3C95 100%);
+    }
+  }
+
+  &--form,
+  &--alt {
+    font-weight: 700;
+    line-height: 1.6;
+    white-space: nowrap;
+    @include fluid(padding-top, 10px, 15px);
+    @include fluid(padding-bottom, 10px, 15px);
+
+    .btn__text {
+      text-transform: unset;
+      margin-right: 0;
+    }
+  }
+
+  &--form {
+    @include fluid(padding-left, 10px, 20px);
+    @include fluid(padding-right, 10px, 20px);
+  }
+
+  &--alt {
+    @include fluid(padding-left, 25px, 50px);
+    @include fluid(padding-right, 25px, 50px);
+  }
+
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+
+    &::before {
+      opacity: 0;
+    }
+  }
+
+  &--small {
+    @include fluid(padding, 12px, 14px);
+    @include fluid(padding-left, 24px, 32px);
+  }
+
+  &__text {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    z-index: 5;
+    margin-right: 20px;
+    @include fluid(font-size, 14px, 16px);
+    @include fluid(line-height, 13px, 15px);
+
+    &--small {
+      text-transform: unset;
+    }
+  }
+
+  &__icon {
+    position: relative;
+    z-index: 5;
+    font-size: 32px;
+    border-radius: 50%;
+    border: 2px solid #FF3D00;
+    color: #fff;
+    background-color: #E93901;
+  }
+}
+
+@media (max-width: 992px) {
+  .btn {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn {
+    padding: 8px;
+    padding-left: 12px;
+
+    &__text {
+      margin-right: 5px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .btn {
+    &--small {
+      padding: 3px;
+      padding-left: 10px;
+    }
+
+    &__text {
+      font-size: 12px;
+    }
+
+    &__icon {
+      font-size: 25px;
+    }
+  }
+}

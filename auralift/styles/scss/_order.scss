@@ -1,0 +1,146 @@
+.order {
+  max-width: 612px;
+
+  .search {
+    margin-bottom: 20px;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    position: relative;
+
+
+    &--viewed,
+    &:hover {
+
+      .order {
+        &__item {
+          &-block {
+            opacity: 0.75;
+          }
+
+          &-title {
+            .order__icon {
+              display: none;
+            }
+          }
+
+          &-hidden {
+            opacity: 1;
+            z-index: 1;
+            visibility: visible;
+          }
+        }
+      }
+    }
+
+    &-block {
+      padding: 16px;
+      border-radius: 16px;
+      background: var(--White, #FFF);
+      transition: opacity 0.23s ease-in-out;
+    }
+
+    &-hidden {
+      position: absolute;
+      top: 0;
+      right: -44px;
+      display: flex;
+      align-items: center;
+      padding: 8px;
+      border-radius: 8px;
+      background: #FFF;
+      opacity: 0;
+      z-index: -1;
+      visibility: hidden;
+      transition: opacity 0.23s ease-in-out, visibility 0.23s ease-in-out, z-index 0.23s ease-in-out;
+    }
+
+    &-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+
+      &:has(+*) {
+        margin-bottom: 12px;
+      }
+    }
+
+    &-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--gray-900, #101828);
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 30px
+    }
+
+    &-price {
+      color: var(--gray-900, #101828);
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 28px;
+    }
+
+    &-text {
+      margin-bottom: 16px;
+    }
+
+    &-info {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--gray-900, #101828);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      margin-bottom: 12px;
+
+      &:has(+.order__item-info) {
+        margin-bottom: 8px;
+      }
+    }
+
+    &-profile {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    &-user {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+
+    &-name {
+      color: var(--gray-900, #101828);
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+    }
+
+    &-date {
+      display: block;
+      color: var(--gray-400, #98A2B3);
+      /* Text sm/Medium */
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+    }
+  }
+}

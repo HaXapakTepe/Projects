@@ -1,0 +1,42 @@
+.header {
+  &__wrapper {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #fff;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #FF7707;
+    font-weight: 500;
+    letter-spacing: -0.16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    &__phone {
+      margin-left: auto;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    &__phone {
+      display: none;
+    }
+
+    .link {
+      margin-left: auto;
+    }
+  }
+}

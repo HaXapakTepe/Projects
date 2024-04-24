@@ -1,0 +1,184 @@
+.target {
+  &__wrapper {
+    @include fluid(margin-top, 30px, 38px);
+    @include fluid(margin-bottom, 60px, 127px);
+  }
+
+  &__title {
+    @include fluid(margin-bottom, 20px, 34px);
+  }
+
+  &__top {
+    @include fluid(padding-top, 20px, 34px);
+    @include fluid(padding-bottom, 25px, 44px);
+    @include fluid(padding-left, 20px, 40px);
+    @include fluid(padding-right, 20px, 40px);
+    border-radius: 50px;
+    background-color: #131313;
+
+    &:has(+*) {
+      @include fluid(margin-bottom, 30px, 77px);
+    }
+
+    &-box {
+      display: grid;
+      grid-template-columns: 1fr .92fr;
+      grid-auto-rows: 1fr;
+      align-items: center;
+    }
+
+    &-item {
+      &:nth-child(even) {
+        border-left: 1px solid #fff;
+      }
+    }
+
+    &-text {
+      position: relative;
+      max-width: 77%;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: "Manrope";
+      font-weight: 500;
+      @include fluid(font-size, 16px, 20px);
+      text-align: center;
+      color: #fff;
+
+      &:has(+*) {
+        @include fluid(margin-bottom, 15px, 25px);
+      }
+
+      &--accent {
+        max-width: 76%;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        background-color: #C4FF02;
+        color: #131313;
+        padding: 8px 15px;
+        border-radius: 31px;
+      }
+    }
+  }
+
+  &__bot {
+    display: grid;
+    grid-template-columns: 1fr .92fr;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 16px, 24px);
+
+    &-box {
+      max-width: 685px;
+      display: grid;
+      grid-template-columns: .8fr 1fr;
+      @include fluid(gap, 15px, 60px);
+      @include fluid(padding-bottom, 16px, 20px);
+      border-bottom: 1px solid #000;
+    }
+
+    &-title {
+      font-weight: 700;
+      @include fluid(font-size, 20px, 25px);
+      color: #000;
+    }
+
+    &-text {
+      font-family: "Manrope";
+      font-weight: 500;
+      @include fluid(font-size, 16px, 20px);
+    }
+  }
+
+  &__elem {
+    max-width: 540px;
+    display: flex;
+    flex-wrap: wrap;
+    @include fluid(column-gap, 10px, 17px);
+    @include fluid(row-gap, 12px, 20px);
+    margin-left: auto;
+
+    &-text {
+      height: -webkit-fit-content;
+      height: -moz-fit-content;
+      height: fit-content;
+      font-family: "Manrope";
+      font-weight: 500;
+      background-color: #131313;
+      color: #fff;
+      padding: 12px 15px;
+      border-radius: 25px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .target {
+    &__top {
+      border-radius: 30px;
+
+      &-box {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        gap: 15px;
+      }
+
+      &-item {
+        &:nth-child(even) {
+          border-left: unset;
+        }
+
+        &:not(:last-child) {
+          border-bottom: 1px solid #fff;
+          padding-bottom: 10px;
+        }
+      }
+
+      &-text {
+        max-width: unset;
+      }
+    }
+
+    &__bot {
+      grid-template-columns: 1fr;
+    }
+
+    &__elem {
+      max-width: unset;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .target {
+    &__top {
+      &-text {
+        font-size: 14px;
+      }
+    }
+
+    &__item {
+      &-title {
+        font-size: 16px;
+      }
+
+      &-text {
+        font-size: 14px;
+      }
+    }
+
+    &__elem {
+      &-text {
+        font-size: 12px;
+      }
+    }
+  }
+}

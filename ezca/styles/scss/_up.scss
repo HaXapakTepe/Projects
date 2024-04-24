@@ -1,0 +1,20 @@
+.up {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+
+  &:hover {
+    .up__text {
+      color: #C4FF02;
+    }
+  }
+
+  &__text {
+    @include fluid(font-size, 15px, 24px);
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: underline;
+    transition: color .23s ease-in-out;
+  }
+}

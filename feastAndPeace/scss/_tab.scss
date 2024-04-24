@@ -1,0 +1,21 @@
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include fluid(gap, 10px, 15px);
+  flex-wrap: wrap;
+
+  &__info {
+    display: none;
+    opacity: 0;
+    transition: opacity .38s ease-in-out;
+
+    &--active {
+      display: block;
+    }
+
+    &--opacity {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.fon {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -60px;
+    top: 60px;
+    @include fluid(width, 300px, 414px);
+    @include fluid(height, 600px, 877px);
+    filter: blur(404.3px);
+    background: linear-gradient(225.00deg, rgb(244, 233, 255) 0%, rgb(221, 194, 252) 51%, rgb(194, 161, 231) 73.5%, rgb(136, 99, 196) 100%);
+    opacity: 0.85;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: -150px;
+    top: 75px;
+    @include fluid(width, 300px, 414px);
+    @include fluid(height, 350px, 487px);
+    filter: blur(254.3px);
+    background: linear-gradient(225.00deg, rgb(244, 233, 255), rgb(221, 194, 252) 51%, rgb(194, 161, 231) 73.5%, rgb(136, 99, 196) 100%);
+    opacity: 0.9;
+    pointer-events: none;
+  }
+}

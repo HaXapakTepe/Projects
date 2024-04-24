@@ -1,0 +1,17 @@
+.accordion {
+  position: relative;
+
+  &__content {
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    max-height: 0;
+    z-index: 5;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.23s ease-in-out;
+  }
+}

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../assets/images/favicon.svg" type="x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="../styles/css/normalize.css" />
+  <link rel="stylesheet" href="../styles/css/style.css?v=0.0001" />
+  <title>Агенство</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <header class="header">
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <img class="menu__item-img" src="../assets/images/menu/1.jpg" alt="">
+            <a class="menu__link" href="/agency/">
+              <div class="menu__link-box">
+                <p class="menu__link-title">
+                  Агентство
+                </p>
+                <p class="menu__link-text">
+                  Эффективные
+                  маркетинговые
+                  решения для
+                  привлечения клиентов
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="menu__item">
+            <img class="menu__item-img" src="../assets/images/menu/2.jpg" alt="">
+            <a class="menu__link" href="/services/">
+              <div class="menu__link-box">
+                <p class="menu__link-title">
+                  Услуги
+                </p>
+                <p class="menu__link-text">
+                  Точечные инструменты
+                  интернет-маркетинга
+                  для увеличения прибыли
+                  вашего бизнеса
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="menu__item">
+            <img class="menu__item-img" src="../assets/images/menu/3.jpg" alt="">
+            <a class="menu__link" href="/partners/">
+              <div class="menu__link-box">
+                <p class="menu__link-title">
+                  Партнеры
+                </p>
+                <p class="menu__link-text">
+                  Надежные партнеры
+                  в достижении ваших
+                  бизнес-целей
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="menu__item">
+            <img class="menu__item-img" src="../assets/images/menu/4.jpg" alt="">
+            <a class="menu__link" href="/articles/">
+              <div class="menu__link-box">
+                <p class="menu__link-title">
+                  Блог
+                </p>
+                <p class="menu__link-text">
+                  Честно пишем
+                  о рекламе и будущем
+                  интернет-маркетинга
+                  просто, доступно
+                  и понятно
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="menu__item">
+            <img class="menu__item-img" src="../assets/images/menu/5.jpg" alt="">
+            <a class="menu__link" href="/contacts/">
+              <div class="menu__link-box">
+                <p class="menu__link-title">
+                  Контакты
+                </p>
+                <p class="menu__link-text">
+                  Предоставляем
+                  наши контакты:
+                  куда писать и как
+                  c нами связаться
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="burger">
+        <span class="burger__text">
+          Меню
+        </span>
+        <div class="burger__box">
+          <div class="burger__line"></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="promo">
+      <div class="promo__wrapper">
+        <picture>
+          <source srcset="../assets/images/promo/mobile.png" media="(max-width: 576px)">
+          <img class="promo__bg" src="../assets/images/promo/bg.png" alt="Картинка с размерами">
+        </picture>
+        <div class="container">
+          <div class="promo__inner">
+            <p class="promo__subtitle">
+              Spivakov Marketing Group
+            </p>
+            <p class="promo__title">
+              В 2024 году, если вашего бизнеса нет в Интернете, вы
+              автоматически теряете огромную долю потенциального рынка
+            </p>
+            <p class="promo__text">
+              и клиентов, которые уже готовы купить ваш продукт/услугу
+            </p>
+            <a class="btn" href="#">
+              Исправить ситуацию
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="main main--scroll">
+
+      <div class="fon">
+
+        <section class="who">
+          <div class="who__wrapper">
+            <picture class="who__left">
+              <source srcset="../assets/images/who/mobile.png" media="(max-width: 576px)">
+              <img class="who__left" src="../assets/images/who/left.png" alt="Картинка с размерами">
+            </picture>
+            <img class="who__right" src="../assets/images/who/right.png" alt="">
+            <div class="container">
+              <div class="who__inner">
+                <h2 class="who__title title">
+                  Кто мы?
+                </h2>
+                <p class="who__text">
+                  Spivakov Marketing Group - это команда специалистов в области
+                  интернет-маркетинга. Каждый владеет актуальными знаниями рынка
+                  и работающими стратегиями почти под любой проект.
+                </p>
+                <p class="who__text who__text--accent">
+                  Но нет предела совершенству
+                </p>
+                <div class="who__swiper swiper">
+                  <div class="who__swiper-wrapper swiper-wrapper">
+                    <div class="who__swiper-slide swiper-slide">
+                      <div class="who__slide">
+                        <img class="who__slide-img" src="../assets/images/who/1.png" alt="">
+                        <div class="who__slide-box">
+                          <p class="who__slide-name">
+                            Лео Дикаприо
+                          </p>
+                          <p class="who__slide-post">
+                            Co-Founder SMG
+                            <br>
+                            Генеральный директор
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="who__swiper-slide swiper-slide swiper-slide-active">
+                      <div class="who__slide">
+                        <img class="who__slide-img" src="../assets/images/who/1.png" alt="">
+                        <div class="who__slide-box">
+                          <p class="who__slide-name">
+                            Лео Дикаприо
+                          </p>
+                          <p class="who__slide-post">
+                            Co-Founder SMG
+                            <br>
+                            Генеральный директор
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="who__swiper-slide swiper-slide">
+                      <div class="who__slide">
+                        <img class="who__slide-img" src="../assets/images/who/1.png" alt="">
+                        <div class="who__slide-box">
+                          <p class="who__slide-name">
+                            Лео Дикаприо
+                          </p>
+                          <p class="who__slide-post">
+                            Co-Founder SMG
+                            <br>
+                            Генеральный директор
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="who__swiper-slide swiper-slide">
+                      <div class="who__slide">
+                        <img class="who__slide-img" src="../assets/images/who/1.png" alt="">
+                        <div class="who__slide-box">
+                          <p class="who__slide-name">
+                            Лео Дикаприо
+                          </p>
+                          <p class="who__slide-post">
+                            Co-Founder SMG
+                            <br>
+                            Генеральный директор
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="who__pagination swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="marquee">
+          <div class="marquee__wrapper marquee__wrapper--rotateLeft">
+            <div class="marquee__inner">
+              <img class="marquee__img" src="../assets/images/marquee/1.svg" alt="" />
+              <img class="marquee__img" src="../assets/images/marquee/1.svg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section class="how">
+          <div class="how__wrapper">
+            <img class="how__top" src="../assets/images/how/top.png" alt="">
+            <img class="how__left" src="../assets/images/how/left.png" alt="">
+            <img class="how__right" src="../assets/images/how/right.png" alt="">
+            <div class="container">
+              <div class="how__inner">
+                <h2 class="how__title title">
+                  Как мы приведем клиентов в ваш бизнес?
+                </h2>
+                <div class="how__box">
+                  <div class="how__box-item">
+                    <div class="how__box-ellipse">
+                      <img class="how__box-img" src="../assets/images/how/1.svg" alt="">
+                    </div>
+                    <p class="how__box-text">
+                      Вы оставляете <br> заявку
+                    </p>
+                  </div>
+                  <div class="how__box-item">
+                    <div class="how__box-ellipse">
+                      <img class="how__box-img" src="../assets/images/how/2.svg" alt="">
+                    </div>
+                    <p class="how__box-text">
+                      Мы связываемся <br> с вами
+                    </p>
+                  </div>
+                  <div class="how__box-item">
+                    <div class="how__box-ellipse">
+                      <img class="how__box-img how__box-img--big" src="../assets/images/how/3.svg" alt="">
+                    </div>
+                    <p class="how__box-text">
+                      Проводим аудит <br>
+                      вашего бизнеса
+                    </p>
+                  </div>
+                  <div class="how__box-item">
+                    <div class="how__box-ellipse">
+                      <img class="how__box-img" src="../assets/images/how/4.svg" alt="">
+                    </div>
+                    <p class="how__box-text">
+                      Составляем пошаговый <br>
+                      план действий
+                    </p>
+                  </div>
+                  <div class="how__box-item">
+                    <div class="how__box-ellipse">
+                      <img class="how__box-img" src="../assets/images/how/5.svg" alt="">
+                    </div>
+                    <p class="how__box-text">
+                      Подписываем <br>
+                      договор
+                    </p>
+                  </div>
+                  <div class="how__box-item">
+                    <div class="how__box-ellipse">
+                      <img class="how__box-img" src="../assets/images/how/6.svg" alt="">
+                    </div>
+                    <p class="how__box-text">
+                      Подбираем под вас <br>
+                      инструменты и каналы
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="how__bot">
+                <p class="how__bot-title">
+                  PROFIT
+                </p>
+                <p class="how__bot-text">
+                  <span>Ваш бизнес получает клиентов,</span> а мы добавляем
+                  вашу компанию в наши успешные кейсы
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="marquee ">
+          <div class="marquee__wrapper marquee__wrapper--rotateRight">
+            <div class="marquee__inner">
+              <img class="marquee__img" src="../assets/images/marquee/1.svg" alt="" />
+              <img class="marquee__img" src="../assets/images/marquee/1.svg" alt="" />
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <section class="form">
+        <div class="form__wrapper">
+          <div class="form__container container">
+            <div class="form__inner">
+              <img class="form__imgLeft" src="../assets/images/form/left.png" alt="">
+              <img class="form__imgRight" src="../assets/images/form/right.png" alt="">
+              <p class="form__text">
+                <span>Оставьте заявку и мы проведем комплексный аудит,</span>
+                после которого вы получите понятную, экспертную оценку
+                и способы решения ваших проблем
+              </p>
+              <form class="form__box" action="" method="post">
+                <input class="form__input" type="text" name="name" placeholder="Ваше имя" required>
+                <input class="form__input" type="text" name="phone" placeholder="+380" required>
+                <button class="btn btn--form">Получить аудит</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="why">
+        <div class="why__wrapper">
+          <img class="why__left" src="../assets/images/why/left.png" alt="">
+          <img class="why__center" src="../assets/images/why/center.png" alt="">
+          <img class="why__right" src="../assets/images/why/right.png" alt="">
+          <img class="why__mobile" src="../assets/images/why/right.png" alt="">
+          <p class="why__title">
+            Почему мы?
+          </p>
+          <div class="container">
+            <div class="why__inner">
+              <div class="why__item">
+                <p class="why__item-title">
+                  Избирательность
+                </p>
+                <p class="why__item-text">
+                  Используем для продвижения
+                  проектов только те, методики
+                  и инструменты, которые приносят
+                  реальную прибыль,
+                  а не “видимость” работы
+                </p>
+              </div>
+              <div class="why__item">
+                <p class="why__item-title">
+                  Глубокая
+                  аналитика
+                </p>
+                <p class="why__item-text">
+                  Мы точно знаем в цифрах<span> почему,</span>
+                  <span>как</span> и <span>зачем</span> нужно использовать
+                  тот или иной инструмент
+                  для продвижения проекта.
+                  Бизнес любит цифры. Мы - тоже
+                </p>
+              </div>
+              <div class="why__item">
+                <p class="why__item-title">
+                  Креативность
+                </p>
+                <p class="why__item-text">
+                  Создаем и генерируем идеи
+                  продвижения проектов, к которым
+                  “конкуренты” придут еще не скоро,
+                  а потенциальные клиенты
+                  запомнят надолго
+                </p>
+              </div>
+              <div class="why__item">
+                <p class="why__item-title">
+                  Профильность
+                  команды
+                </p>
+                <p class="why__item-text">
+                  Каждый специалист занимается
+                  только своим направлением.
+                  Мы не держим у себя
+                  “универсальных” сотрудников
+                  на все случаи жизни
+                </p>
+              </div>
+              <div class="why__item">
+                <p class="why__item-title">
+                  Человеческий
+                  подход
+                </p>
+                <p class="why__item-text">
+                  В коммуникации с нашими
+                  клиентами мы, нацелены быть
+                  в первую очередь людьми,
+                  а потом уже компанией
+                  и штатом сотрудников
+                </p>
+              </div>
+              <div class="why__item">
+                <p class="why__item-title">
+                  Современность
+                </p>
+                <p class="why__item-text">
+                  В своей работе, мы используем
+                  только актуальные и гибкие
+                  инструменты продвижения.
+                  Мы не создаем рекламные
+                  баннеры/видео в Paint
+                  на Windows 95
+                </p>
+              </div>
+            </div>
+            <div class="why__block">
+              <p class="why__block-title">
+                Вам может быть полезно:
+              </p>
+              <div class="why__arrow">
+                <div class="why__arrow-prev swiper-button-prev"></div>
+                <div class="why__arrow-next swiper-button-next"></div>
+              </div>
+              <div class="why__swiper swiper">
+                <div class="why__swiper-wrapper swiper-wrapper">
+                  <a class="why__swiper-slide swiper-slide" href="#">
+                    <img class="why__swiper-img" src="../assets/images/why/1.png" alt="">
+                    <p class="why__swiper-title">
+                      Статья с произвольной темой
+                    </p>
+                    <p class="why__swiper-text">
+                      Lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip
+                    </p>
+                  </a>
+                  <a class="why__swiper-slide swiper-slide" href="#">
+                    <img class="why__swiper-img" src="../assets/images/why/2.png" alt="">
+                    <p class="why__swiper-title">
+                      Статья с произвольной темой
+                    </p>
+                    <p class="why__swiper-text">
+                      Lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip
+                    </p>
+                  </a>
+                  <a class="why__swiper-slide swiper-slide" href="#">
+                    <img class="why__swiper-img" src="../assets/images/why/3.png" alt="">
+                    <p class="why__swiper-title">
+                      Статья с произвольной темой
+                    </p>
+                    <p class="why__swiper-text">
+                      Lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip
+                    </p>
+                  </a>
+                  <a class="why__swiper-slide swiper-slide" href="#">
+                    <img class="why__swiper-img" src="../assets/images/why/3.png" alt="">
+                    <p class="why__swiper-title">
+                      Статья с произвольной темой
+                    </p>
+                    <p class="why__swiper-text">
+                      Lorem ipsum dolor sit amet, consectetur
+                      adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="up up--right">
+        <img class="up__img" src="../assets/images/up/up.png" alt="">
+        <p class="up__text">
+          Нажмите чтобы вернуться наверх
+        </p>
+        <img class="up__img" src="../assets/images/up/up.png" alt="">
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="socials">
+              <p class="socials__title">
+                Мы в соц. сетях
+              </p>
+              <div class="socials__box">
+                <a class="social__link" href="#">
+                  <img class="socials__link-img" src="../assets/images/socials/inst.png" alt="">
+                </a>
+                <a class="socials__link" href="#">
+                  <img class="socials__link-img" src="../assets/images/socials/yt.png" alt="">
+                </a>
+                <a class="socials__link" href="#">
+                  <img class="socials__link-img" src="../assets/images/socials/f.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="footer__item">
+              <a class="footer__item-link" href="#">
+                SMM продвижение
+              </a>
+              <a class="footer__item-link" href="#">
+                Графический дизайн
+              </a>
+              <a class="footer__item-link" href="#">
+                Разрабокта логотипа
+                и фирменного стиля
+              </a>
+            </div>
+            <div class="footer__item">
+              <a class="footer__item-link" href="#">
+                Реклама
+              </a>
+              <a class="footer__item-link" href="#">
+                Рекламные креативы
+              </a>
+              <a class="footer__item-link" href="#">
+                Контексная реклама
+              </a>
+            </div>
+            <div class="footer__item">
+              <a class="footer__item-link" href="#">
+                SEO аудит
+              </a>
+              <a class="footer__item-link" href="#">
+                Технический аудит
+              </a>
+              <a class="footer__item-link" href="#">
+                СЕО продвижение
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </main>
+
+    <div class="language">
+      <div class="language__hidden">
+        <div class="language__item">
+          <img class="language__item-img" src="../assets/images/language/ru.png" alt="">
+        </div>
+        <div class="language__item">
+          <img class="language__item-img" src="../assets/images/language/is.png" alt="">
+        </div>
+        <div class="language__item">
+          <img class="language__item-img" src="../assets/images/language/en.png" alt="">
+        </div>
+      </div>
+      <div class="language__item language__item--active">
+        <img class="language__item-img" src="../assets/images/language/all.png" alt="">
+      </div>
+    </div>
+
+    <div class="cookie">
+      <div class="cookie__wrapper">
+        <img class="cookie__img" src="../assets/images/cookie/1.png" alt="">
+        <p class="cookie__text">
+          <span>Для обеспечения наилучшего опыта мы используем
+            такие технологии, как файлы cookie,</span> для хранения
+          и/или доступа к информации об устройстве. Согласие
+          на использование этих технологий позволит нам
+          обрабатывать такие данные, как поведение браузера или
+          уникальные идентификаторы на этом сайте.
+          Отказ или отзыв согласия может отрицательно повлиять
+          на определенные характеристики и функции.
+        </p>
+        <button class="btn btn--cookie">Хорошо</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="../scripts/scripts.js"></script>
+</body>
+
+</html>

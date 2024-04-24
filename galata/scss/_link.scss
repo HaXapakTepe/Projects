@@ -1,0 +1,197 @@
+.link {
+  @include fluid(padding-top, 7px, 14px);
+  @include fluid(padding-bottom, 7px, 14px);
+  @include fluid(padding-left, 10px, 20px);
+  @include fluid(padding-right, 10px, 20px);
+  @include fluid(font-size, 14px, 16px);
+  line-height: 1.4;
+  letter-spacing: -0.1px;
+  border-radius: 24px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid transparent;
+  transition: background-color .38s ease-in-out,
+    color .38s ease-in-out,
+    border .38s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+
+  &--loyalty {
+    &:hover {
+      color: #fff;
+      background-color: #020202;
+      border-color: #fff;
+    }
+  }
+
+  &--transparent {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+
+    &:hover {
+      color: #000;
+      background-color: #fff;
+
+      .link__icon {
+        svg {
+          path {
+            fill: #000;
+          }
+        }
+      }
+    }
+  }
+
+  &--black {
+    @include fluid(padding-top, 5px, 8px);
+    @include fluid(padding-bottom, 5px, 8px);
+    @include fluid(padding-left, 7px, 14px);
+    @include fluid(padding-right, 7px, 14px);
+    background-color: #020202;
+    color: #fff;
+
+    &:hover {
+      color: #020202;
+      background-color: #fff;
+      border-color: #020202;
+    }
+  }
+
+  &--skyblue {
+    @include fluid(padding-top, 5px, 8px);
+    @include fluid(padding-bottom, 5px, 8px);
+    @include fluid(padding-left, 7px, 14px);
+    @include fluid(padding-right, 7px, 14px);
+    background-color: #EEF1FB;
+    color: #020202;
+
+    &:hover {
+      color: #EEF1FB;
+      background-color: #020202;
+      border-color: #EEF1FB;
+    }
+  }
+
+  &--reg {
+    position: relative;
+    padding: 0;
+    background-color: #fff;
+    color: #020202;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      border-radius: 25px;
+      background-color: #020202;
+      transition: width .38s ease-in-out;
+    }
+
+    &:hover {
+      color: #000;
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  &--content {
+    max-width: 260px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #020202;
+    color: #fff;
+
+    &:hover {
+      color: #020202;
+      background-color: #fff;
+      border-color: #020202;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    @include fluid(right, 5px, 15px);
+    transform: translateY(-50%);
+    @include fluid(width, 20px, 25px);
+    @include fluid(height, 20px, 25px);
+
+    svg {
+      path {
+        transition: fill .38s ease-in-out;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .link {
+    &:hover {
+      background-color: #fff;
+      color: #000;
+      border: 1px solid transparent;
+    }
+
+    &--transparent {
+      &:hover {
+        border: 1px solid #fff;
+        color: #fff;
+        background-color: transparent;
+
+        .link__icon {
+          svg {
+            path {
+              fill: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    &--skyblue {
+      &:hover {
+        color: #020202;
+        background-color: #EEF1FB;
+        border-color: #EEF1FB;
+      }
+    }
+
+    &--reg {
+      &::after {
+        content: none;
+      }
+    }
+
+    &--loyalty {
+      &:hover {
+        color: #020202;
+        background-color: #fff;
+        border-color: #fff;
+      }
+    }
+
+    &-content {
+      background-color: #020202;
+      color: #fff;
+
+      &:hover {
+        background-color: #020202;
+        color: #fff;
+      }
+    }
+  }
+}

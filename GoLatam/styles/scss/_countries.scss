@@ -1,0 +1,223 @@
+.countries {
+  &__wrapper {
+    @include fluid(padding-bottom, 30px, 98px);
+  }
+
+  &__title {
+    @include fluid(margin-bottom, 12px, 16px);
+  }
+
+  &__subtitle {
+    @include fluid(font-size, 16px, 20px);
+    font-weight: 500;
+    @include fluid(margin-bottom, 30px, 94px);
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 30px, 71px);
+    @include fluid(margin-bottom, 30px, 118px);
+  }
+
+  &__box {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr .53fr;
+    @include fluid(gap, 30px, 70px);
+    margin-right: auto;
+
+    &--alt {
+      grid-template-columns: .5fr 1fr;
+      margin-right: unset;
+      margin-left: auto;
+
+      .countries__icon {
+        order: -1;
+        margin-left: auto;
+      }
+    }
+
+    &:first-child {
+      .ellipse {
+        @include fluid(top, -35px, -70px);
+        @include fluid(left, 25px, 50px);
+      }
+    }
+
+    &:last-child {
+
+      .ellipse:first-child {
+        @include fluid(top, -35px, -70px);
+        @include fluid(left, 25px, 50px);
+        z-index: 0;
+      }
+
+      .countries__item {
+        .ellipse {
+          @include fluid(top, -20px, -40px);
+          @include fluid(right, 25px, 50px);
+          left: unset;
+        }
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    @include fluid(padding-top, 15px, 24px);
+    @include fluid(padding-bottom, 15px, 24px);
+    @include fluid(padding-left, 20px, 32px);
+    @include fluid(padding-right, 20px, 32px);
+    border-radius: 40px;
+    border: 1px solid rgba(255, 231, 231, 0.46);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 8px 8px 32px 0px rgba(0, 0, 0, 0.16);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+
+    &-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      @include fluid(margin-bottom, 10px, 12px);
+    }
+
+    &-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      @include fluid(font-size, 20px, 24px);
+      font-weight: 700;
+    }
+
+    &-country {
+      @include fluid(width, 25px, 30px);
+      @include fluid(height, 25px, 30px);
+      -o-object-fit: contain;
+      object-fit: contain;
+    }
+  }
+
+  &__icon {
+    @include fluid(margin-top, 0px, -10px);
+
+    &--center {
+      display: flex;
+      justify-content: center;
+      @include fluid(margin-top, 0px, 12px);
+    }
+  }
+
+  &__block {
+    &-title {
+      @include fluid(margin-bottom, 20px, 42px);
+      @include fluid(font-size, 24px, 32px);
+      font-weight: 700;
+    }
+
+    &-box {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      @include fluid(gap, 15px, 24px);
+    }
+
+    &-item {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 24px;
+      @include fluid(font-size, 20px, 24px);
+      font-weight: 700;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 231, 231, 0.46);
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 8px 8px 32px 0px rgba(0, 0, 0, 0.16);
+      -webkit-backdrop-filter: blur(25px);
+      backdrop-filter: blur(25px);
+      @include fluid(padding-top, 25px, 40px);
+      @include fluid(padding-bottom, 25px, 40px);
+      @include fluid(padding-left, 20px, 32px);
+      @include fluid(padding-right, 20px, 32px);
+      font-size: 24px;
+      @include fluid(font-size, 20px, 24px);
+      font-weight: 700;
+
+      &:first-child {
+        .ellipse {
+          @include fluid(top, 35px, 70px);
+        }
+      }
+
+      &:last-child {
+        .ellipse {
+          @include fluid(top, -20px, -40px);
+          @include fluid(right, 25px, 50px);
+        }
+      }
+    }
+
+    &-country {
+      @include fluid(width, 25px, 30px);
+      @include fluid(height, 25px, 30px);
+      -o-object-fit: contain;
+      object-fit: contain;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .countries {
+    &__block {
+      &-box {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .countries {
+    &__box {
+      display: flex;
+      flex-direction: column;
+
+      &--alt {
+        .countries__icon {
+          order: unset;
+          margin-left: unset;
+        }
+      }
+    }
+
+    &__icon {
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .countries {
+    &__item {
+      &-box {
+        flex-direction: column;
+      }
+
+      &-text {
+        text-align: center;
+      }
+    }
+
+    &__block {
+      &-box {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}

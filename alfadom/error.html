@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Error</title>
+  <link rel="stylesheet" type="text/css" href="./plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/icons.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__inner">
+        <a class="logo" href="#">
+          <img class="logo__image" src="./images/logo.png" alt="">
+          <p class="logo__text">Альфа Дом</p>
+        </a>
+        <div class="header__item">
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Абонентам
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Провайдерам
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Партнерам
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Поддержка
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <div class="header__burger">
+            <div class="header__burger-line"></div>
+          </div>
+          <a class="header__city link" data-fancybox href="#city">
+            <div class="icon-loca header__loca"></div>
+            <p class="header__city-text">Москва</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="mask"></div>
+
+      <div class="yourCity" id="yourCity">
+        <p class="yourCity__title">
+          Ваш город
+          <span class="yourCity__span">Москва</span>
+          ?
+        </p>
+        <div class="yourCity__inner">
+          <div class="icon-close yourCity__icon"></div>
+          <button id="yes" class="yourCity__btn btn" type="submit">
+            <span>да</span>
+          </button>
+          <button id="no" class="yourCity__btn btn" type="submit">
+            <span>нет</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="notFound">
+    <div class="container">
+      <div class="notFound__inner">
+        <div class="notFound__content">
+          <h1 class="notFound__title">
+            Страница не найдена или еще не создана
+          </h1>
+          <a class="notFound__link link" href="#">
+            Вернуться назад
+          </a>
+        </div>
+        <div class="notFound__box">
+          <img class="notFound__image" src="./images/error/error.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__item">
+          <a class="logo" href="#">
+            <img class="logo__image" src="./images/logo.png" alt="">
+            <p class="logo__text">Альфа Дом</p>
+          </a>
+          <p class="footer__text">
+            © 2022 «Альфа Дом». Все права защищены.
+            Сайт не является публичной офертой.
+          </p>
+        </div>
+        <div class="footer__item">
+          <div class="footer__item-box">
+            <a class="footer__link" href="#">Абонентам</a>
+            <a class="footer__link" href="#">Провайдерам</a>
+            <a class="footer__link" href="#">Партнерам</a>
+          </div>
+          <div class="footer__item-box">
+            <a class="footer__link" href="#">Поддержка</a>
+            <a class="footer__link" href="#">Политики и оферты</a>
+            <a class="footer__link" href="#">Документация API</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <section id="city" class="city">
+    <div class="city__inner">
+      <p class="city__title">Выберите город</p>
+      <div id="cities" class="search">
+        <div class="search__icon icon-search"></div>
+        <input class="search__input typeahead" type="text" placeholder="Поиск по организациям?">
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"></script>
+  <script src="./plugins/typeahead/bloodhound.min.js"></script>
+  <script src="./plugins/typeahead/typeahead.jquery.min.js"></script>
+  <script src="./plugins/typeahead/typeahead.bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="./plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

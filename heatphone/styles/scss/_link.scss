@@ -1,0 +1,50 @@
+.link {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #495057;
+  white-space: nowrap;
+  transition: color 0.23s ease-in-out;
+
+  &--mla {
+    margin-left: auto;
+  }
+
+  &:hover {
+    color: #D9291D;
+
+    .link__icon {
+      svg {
+        path {
+          fill: #D9291D
+        }
+      }
+    }
+  }
+
+  &__icon {
+    svg {
+      path {
+        transition: fill 0.23s ease-in-out;
+      }
+    }
+  }
+
+  &--white {
+    color: #fff;
+
+    &:hover {
+      color: #D9291D;
+    }
+  }
+
+  &--alt {
+    @include fluid(gap, 10px, 12px);
+    align-items: baseline;
+    color: #9FA3A8;
+  }
+}

@@ -1,0 +1,145 @@
+.box {
+  @include fluid(margin-bottom, 30px, 60px);
+
+  &__title {
+    @include fluid(margin-bottom, 25px, 50px);
+  }
+
+  &__subtitle,
+  &__name {
+    font-family: 'Georgia Pro', sans-serif;
+    @include fluid(font-size, 24px, 36px);
+    line-height: 1.14;
+    color: #257FCE;
+    font-weight: 400;
+    @include fluid(margin-bottom, 15px, 30px);
+  }
+
+  &__bgMap {
+    object-fit: contain;
+    cursor: pointer;
+  }
+
+  &__img {
+    max-width: 31.8%;
+    @include fluid(height, 483px, 527px);
+    @include fluid(margin-right, 20px, 35px);
+    margin-bottom: 10px;
+    float: left;
+    object-fit: cover;
+
+    &--service {
+      max-width: 50%;
+      @include fluid(height, 202px, 308px);
+    }
+
+    &--arhipastor {
+      max-width: 34.1%;
+      @include fluid(height, 300px, 425px);
+    }
+
+    &--saints {
+      max-width: 35.5%;
+      @include fluid(height, 250px, 366px);
+    }
+
+    &--right {
+      @include fluid(height, 280px, 395px);
+      @include fluid(margin-left, 20px, 35px);
+      margin-right: 0;
+      float: right;
+    }
+
+    +.box__text {
+      @include fluid(margin-top, 10px, 17px);
+    }
+  }
+
+  &__text {
+    @include fluid(font-size, 14px, 18px);
+    line-height: 1.33;
+
+    &--mb {
+      @include fluid(margin-bottom, 20px, 35px);
+    }
+
+    &--bold,
+    span {
+      font-weight: 700;
+    }
+
+    &--db {
+      span {
+        display: block;
+      }
+    }
+
+    +.box__text,
+    +.box__date,
+    +.box__img {
+      @include fluid(margin-top, 10px, 17px);
+    }
+
+    &:has(+.box__audio) {
+      @include fluid(margin-bottom, 15px, 30px);
+    }
+
+    &:has(+.box__subtitle) {
+      @include fluid(margin-bottom, 25px, 50px);
+    }
+
+    a {
+      @include fluid(font-size, 14px, 18px);
+      line-height: 1.33;
+      color: #257FCE;
+      transition: color .38s ease-in-out;
+      font-weight: 700;
+
+      &:hover {
+        color: #065D79;
+      }
+    }
+  }
+
+  &__date {
+    display: block;
+    line-height: 1.12;
+    color: #BABABA;
+  }
+
+  &__audio {
+    @include fluid(margin-bottom, 20px, 40px);
+  }
+}
+
+@media (max-width: 992px) {
+  .box {
+    &__img {
+      max-width: 50%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .box {
+    &__text {
+      span {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+    &__img {
+      max-width: unset;
+    }
+
+    &__text {
+      span {
+        display: inline;
+      }
+    }
+  }
+}

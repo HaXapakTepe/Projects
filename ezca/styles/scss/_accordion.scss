@@ -1,0 +1,11 @@
+@media(max-width:992px) {
+  .accordion {
+    position: relative;
+
+    &-content {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.23s ease-in-out;
+    }
+  }
+}

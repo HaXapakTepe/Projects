@@ -1,0 +1,140 @@
+.check {
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  visibility: hidden;
+}
+
+.label {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 16px 1fr;
+  gap: 10px;
+  font-weight: 400;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+
+  &--flag {
+    display: flex;
+    align-items: center;
+    // grid-template-columns: 16px 1fr 16px;
+  }
+
+  &--alt {
+    &.label {
+      width: 100%;
+      max-width: 336px;
+      display: flex;
+      align-items: center;
+      @include fluid(padding-left, 10px, 16px);
+      @include fluid(padding-right, 10px, 16px);
+      @include fluid(padding-top, 10px, 12px);
+      @include fluid(padding-bottom, 10px, 12px);
+      border-radius: 12px;
+      border: 1px solid var(--Dark-Gray, #B4B6BA);
+      background: var(--BG-Color, #F6F8FA);
+      cursor: text;
+      color: #070808;
+
+      .label {
+        &__input {
+          all: unset;
+          width: 100%;
+        }
+
+        &__icon {
+          @include fluid(width, 20px, 24px);
+          @include fluid(height, 20px, 24px);
+        }
+      }
+    }
+  }
+
+  &__input {
+    &:checked+.label__inputCustom {
+      border-color: #1F93CC;
+
+      &::after {
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+  }
+
+  &__inputCustom {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    border: 2px solid #B4B6BA;
+    background-color: #FFF;
+    transition: background-color 0.23s ease-in-out,
+      border-color 0.23s ease-in-out;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      width: 20px;
+      height: 20px;
+      background-image: url("../../assets/images/icons/check.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: transform 0.23s ease-in-out;
+    }
+  }
+
+  &__flag {
+    @include fluid(width, 16px, 20px);
+    @include fluid(height, 16px, 20px);
+  }
+
+  &--radio {
+    @include fluid(gap, 12px, 24px);
+    color: var(--Dark, #5F5F69);
+    font-weight: 400;
+
+    .label {
+      &__input {
+        &:checked+.label__inputCustom {
+          background-color: #E8FAF4;
+          border-color: #1F93CC;
+
+          &::after {
+            transform: translate(-50%, -50%) scale(1);
+          }
+        }
+      }
+
+      &__inputCustom {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+        border: 2px solid #D0D5DD;
+        background-color: #FFF;
+        transition: background-color 0.23s ease-in-out,
+          border-color 0.23s ease-in-out;
+        border-radius: 50%;
+
+        &::after {
+          width: 12px;
+          height: 12px;
+          background-image: unset;
+          background-color: #1F93CC;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+.how {
+  &__wrapper {
+    @include fluid(padding-top, 30px, 72px);
+    @include fluid(padding-bottom, 30px, 32px);
+    overflow-x: hidden;
+  }
+
+  &__bg {
+    position: absolute;
+    left: -50%;
+    top: 50%;
+    transform: translate(40%, -50%);
+    @include fluid(width, 420px, 558px);
+    @include fluid(height, 420px, 558px);
+  }
+
+  &__title {
+    @include fluid(margin-bottom, 20px, 63px);
+  }
+
+  &__inner {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    @include fluid(gap, 20px, 32px);
+  }
+
+  &__item {
+    max-width: 716px;
+    display: flex;
+    align-items: center;
+    @include fluid(gap, 12px, 16px);
+    @include fluid(padding-top, 8px, 12px);
+    @include fluid(padding-bottom, 8px, 12px);
+    @include fluid(padding-left, 12px, 16px);
+    @include fluid(padding-right, 12px, 16px);
+    border-radius: 1250px;
+    background: var(--White, #FFF);
+    box-shadow: 4px 4px 32px 0px rgba(13, 154, 255, 0.25);
+    -webkit-backdrop-filter: blur(10.59999942779541px);
+    backdrop-filter: blur(10.59999942779541px);
+
+    &--one {
+      @include fluid(margin-left, 0px, 184px);
+    }
+
+    &--two {
+      @include fluid(margin-left, 72px, 256px);
+    }
+
+    &--three {
+      @include fluid(margin-left, 109px, 312px);
+    }
+
+    &-month {
+      @include fluid(padding, 12px, 16px);
+      color: var(--White, #FFF);
+      @include fluid(font-size, 16px, 20px);
+      font-weight: 600;
+      border-radius: 30px;
+      background: var(--Main-Go-Latam, #1F93CC);
+      white-space: nowrap;
+    }
+
+    &-text {
+      color: #000;
+      @include fluid(font-size, 16px, 20px);
+    }
+
+    &-link {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      display: block;
+      margin-left: auto;
+      color: var(--Main-Go-Latam, #1F93CC);
+      text-align: right;
+      @include fluid(font-size, 14px, 16px);
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .how {
+    &__bg {
+      transform: translate(0%, -50%);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .how {
+
+    &__bg {
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &__item {
+
+      &--two,
+      &--three {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .how {
+    &__item {
+      display: flex;
+      flex-direction: column;
+
+      &-link {
+        margin-left: unset;
+      }
+    }
+  }
+}

@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,viewport-fit=cover,maximum-scale=1,user-scalable=0">
+  <link rel="stylesheet" href="./css/style.css?v=0.0001">
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <header class="header"></header>
+
+    <main class="main">
+
+      <div class="doc">
+        <div class="container">
+          <div class="doc__box">
+            <p class="doc__box-title">
+              Наименование учреждения
+              (штамп)
+              (Полное наименование организации)
+            </p>
+            <p class="doc__box-text">
+              Форма N 027-1/У
+            </p>
+          </div>
+          <h1 class="doc__title">
+            Выписка
+            из медицинской карты стационарного больного злокачественным
+            новообразованием (заполняется всеми стационарами)
+          </h1>
+          <ul class="doc__list">
+            <li class="doc__list-item">
+              <div class="doc__list-text">
+                01. Название и адрес учреждения, выдавшего выписку
+              </div>
+              <p class="doc__list-textarea">
+                ____________________________________________________________________________________________________________________________
+              </p>
+            </li>
+            <li class="doc__list-item">
+              <div class="doc__list-text">
+                02. Название и адрес учреждения, куда направляется выписка
+              </div>
+              <p class="doc__list-textarea">
+                ____________________________________________________________________________________________________________________________
+              </p>
+            </li>
+            <li class="doc__list-item">
+              <div class="doc__list-text">
+                03. Фамилия <input class="doc__text-surname" type="text">
+                Имя <input class="doc__text-name" type="text">
+                Отчество <input class="doc__text-patronymic" type="text">
+                больного
+              </div>
+            </li>
+            <li class="doc__list-item">
+              <div class="doc__list-text">
+                04. Дата рождения:
+                число <input class="doc__text-day">
+                месяц <input class="doc__text-mount">
+                год <input class="doc__text-year">
+              </div>
+            </li>
+            <li class="doc__list-item">
+              <div class="doc__list-text">
+                05. Пол:
+                мужской <input class="doc__text-man">
+                женский <input class="doc__text-woman">
+              </div>
+            </li>
+            <li class="doc__list-item">
+              <div class="doc__list-text">
+                06. Этническая группа
+                <input class="doc__input" type="text">
+              </div>
+            </li>
+            <li class="doc__list-item">
+              <div class="doc__list-text">
+                07. Адрес больного: область, край, республика,
+                <input class="doc__input" type="text">
+                район
+                <input class="doc__input" type="text">
+                населенный пункт
+                <input class="doc__input" type="text">
+                улица
+                <input class="doc__input" type="text">
+                дом N
+                <input class="doc__input" type="text">
+                кв. N
+                <input class="doc__input" type="text">
+                почтовый индекс
+                <input class="doc__input" type="text">
+                телефон
+                <input class="doc__input" type="text">
+              </div>
+            </li>
+            <li class="doc__list-item">
+              <div class="doc__list-text">
+                08. Житель:
+                <div class="doc__list-box doc__list-box--columnThree">
+                  <div>
+                    <label>
+                      <input class="doc__input" type="checkbox" name="">
+                      города
+                    </label>
+                  </div>
+                  <div>
+                    <label>
+                      <input class="doc__input" type="checkbox" name="">
+                      села
+                    </label>
+                  </div>
+                  <div>
+                    <label>
+                      <input class="doc__input" type="checkbox" name="">
+                      неизвестно
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="doc__list-item">
+              <div class="doc__list-text">
+                09. Социально-профессиональная группа
+              </div>
+              <p class="doc__list-textarea">
+                ____________________________________________________________________________________________________________________________
+              </p>
+            </li>
+            <li class="doc__list-item">
+              <div class="doc__list-text">
+                10. Дата поступления в стационар:
+                число
+                <input class="doc__input" type="text">
+                месяц
+                <input class="doc__input" type="text">
+                год
+                <input class="doc__input" type="text">
+              </div>
+            </li>
+            <li class="doc__list-item">
+              <div class="doc__list-text">
+                11. Дата выписки из стационара или смерти:
+                число <input class="doc__input" type="text">
+                месяц <input class="doc__input" type="text">
+                год <input class="doc__input" type="text">
+              </div>
+            </li>
+            <li class="doc__list-item">
+              <div class="doc__list-text">
+                12. Длительность пребывания в стационаре в днях
+              </div>
+              <p class="doc__list-textarea">
+                ____________________________________________________________________________________________________________________________
+              </p>
+            </li>
+            <li class="doc__list-item">
+              <div class="doc__list-text">
+                13. Диагноз данного злокачественного новообразования установлен впервые в жизни в период данной
+                госпитализации.
+                <label>
+                  <input class="doc__input" type="checkbox" name="first"> Да \
+                </label>
+                <label>
+                  <input class="doc__input" type="checkbox" name="first"> Нет
+                </label>
+              </div>
+            </li>
+            <li class="doc__list-item">
+              <div class="doc__list-text">
+                14. Цель госпитализации:
+                <div class="doc__list-box">
+                  <div>
+                    <label>
+                      <input class="doc__input" type="checkbox" name="">
+                      лечение первичной опухоли
+                    </label>
+                  </div>
+                  <div>
+                    <label>
+                      <input class="doc__input" type="checkbox" name="">
+                      реабилитация
+                    </label>
+                  </div>
+                  <div>
+                    <label>
+                      <input class="doc__input" type="checkbox" name="">
+                      продолжение лечения первичной опухоли
+                    </label>
+                  </div>
+                  <div>
+                    <label>
+                      <input class="doc__input" type="checkbox" name="">
+                      лечение поздних осложнений
+                    </label>
+                  </div>
+                  <div>
+                    <label>
+                      <input class="doc__input" type="checkbox" name="">
+                      лечение рецидива заболевания
+                    </label>
+                  </div>
+                  <div>
+                    <label>
+                      <input class="doc__input" type="checkbox" name="">
+                      симптоматическое лечение
+                    </label>
+                  </div>
+                  <div>
+                    <label>
+                      <input class="doc__input" type="checkbox" name="">
+                      продолжение лечения рецидива заболевания
+                    </label>
+                  </div>
+                  <div>
+                    <label>
+                      <input class="doc__input" type="checkbox" name="">
+                      лечение сопутствующих заболеваний
+                    </label>
+                  </div>
+                  <div>
+                    <label>
+                      <input class="doc__input" type="checkbox" name="">
+                      дообследование
+                    </label>
+                  </div>
+                  <div>
+                    <label>
+                      <input class="doc__input" type="checkbox" name="">
+                      другая
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="doc__list-item mt">
+              <div class="doc__list-text">
+                15. Заключительный диагноз
+                <p class="doc__list-textarea">
+                  ____________________________________________________________________________________________________________________________
+                  ____________________________________________________________________________________________________________________________
+                </p>
+              </div>
+              <div class="doc__list-text">
+                Стадия опухолевого процесса:
+                <p class="doc__list-textarea">
+                  ____________________________________________________________________________________________________________________________
+                </p>
+              </div>
+              <div class="doc__list-text">
+                Локализация отдаленных метастазов (при IV стадии заболевания):
+              </div>
+              <div class="doc__list-box doc__list-box--columnThree">
+                <div>
+                  <label>
+                    <input class="doc__input" type="checkbox" name="">
+                    отдаленные лимфатич. узлы
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <input class="doc__input" type="checkbox" name="">
+                    кожа
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <input class="doc__input" type="checkbox" name="">
+                    другие органы
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <input class="doc__input" type="checkbox" name="">
+                    кости
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <input class="doc__input" type="checkbox" name="">
+                    почки
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <input class="doc__input" type="checkbox" name="">
+                    множественные
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <input class="doc__input" type="checkbox" name="">
+                    печень
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <input class="doc__input" type="checkbox" name="">
+                    яичники
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <input class="doc__input" type="checkbox" name="">
+                    неизвестна
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <input class="doc__input" type="checkbox" name="">
+                    легкие и/или плевра
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <input class="doc__input" type="checkbox" name="">
+                    брюшина
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <input class="doc__input" type="checkbox" name="">
+                    головной мозг
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <input class="doc__input" type="checkbox" name="">
+                    костный мозг
+                  </label>
+                </div>
+              </div>
+              <div class="doc__list-text">
+                Метод подтверждения диагноза:
+                <div class="doc__list-box">
+                  <div>
+                    <label>
+                      <input class="doc__input" type="checkbox" name="">
+                      морфологический
+                    </label>
+                  </div>
+                  <div>
+                    <label>
+                      <input class="doc__input" type="checkbox" name="">
+                      лабораторно-инструментальный
+                    </label>
+                  </div>
+                  <div>
+                    <label>
+                      <input class="doc__input" type="checkbox" name="">
+                      цитологический
+                    </label>
+                  </div>
+                  <div>
+                    <label>
+                      <input class="doc__input" type="checkbox" name="">
+                      только клинический
+                    </label>
+                  </div>
+                  <div>
+                    <label>
+                      <input class="doc__input" type="checkbox" name="">
+                      эксплоративная операция
+                    </label>
+                  </div>
+                  <div>
+                    <label>
+                      <input class="doc__input" type="checkbox" name="">
+                      неизвестен
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="doc__list-item">
+              <div class="doc__list-text">
+                16. Сопутствующие заболевания:
+                <p class="doc__list-textarea">
+                  ____________________________________________________________________________________________________________________________
+                  ____________________________________________________________________________________________________________________________
+                </p>
+              </div>
+            </li>
+            <li class="doc__list-item">
+              <div class="doc__list-text">
+                17. Характер проведенного за период данной госпитализации лечения
+              </div>
+              <div class="doc__list-box">
+                <div>
+                  <label>
+                    <input class="doc__input" type="checkbox" name="">
+                    радикальное, полное
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <input class="doc__input" type="checkbox" name="">
+                    соматические противопоказания
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <input class="doc__input" type="checkbox" name="">
+                    радикальное, неполное
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <input class="doc__input" type="checkbox" name="">
+                    отказ больного от лечения
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <input class="doc__input" type="checkbox" name="">
+                    паллиативное
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <input class="doc__input" type="checkbox" name="">
+                    симптоматическое
+                  </label>
+                </div>
+              </div>
+            </li>
+            <li class="doc__list-item">
+              <div class="doc__list-text">
+                18. Причина незавершенности радикального лечения
+              </div>
+              <div class="doc__list-box">
+                <div>
+                  <label>
+                    <input class="doc__input" type="checkbox" name="">
+                    отказ больного от продолжения лечения
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <input class="doc__input" type="checkbox" name="">
+                    запланированный перерыв
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <input class="doc__input" type="checkbox" name="">
+                    осложнения лечения
+                </div>
+                <div>
+                  <label>
+                    <input class="doc__input" type="checkbox" name="">
+                    другая
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <input class="doc__input" type="checkbox" name="">
+                    отриц. динамика заболевания на фоне лечения
+                  </label>
+                </div>
+              </div>
+            </li>
+            <li class="doc__list-item">
+              <div class="doc__list-text">
+                19. Хирургическое лечение
+                <div class="pl">
+                  <div class="doc__list-text">
+                    19.1. Дата операции:
+                    число <input class="doc__input" type="text">
+                    месяц <input class="doc__input" type="text">
+                    год <input class="doc__input" type="text">
+                  </div>
+                  <div class="doc__list-text">
+                    19.2. Название операции
+                  </div>
+                  <div class="doc__list-text">
+                    19.3. Осложнения хирургического лечения:
+                    <p class="doc__list-textarea">
+                      ____________________________________________________________________________________________________________________________
+                      ____________________________________________________________________________________________________________________________
+                      ____________________________________________________________________________________________________________________________
+                      ____________________________________________________________________________________________________________________________
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="doc__list-item">
+              <div class="doc__list-text">
+                20. Лучевое лечение
+                <div class="pl">
+                  <div class="doc__list-text">
+                    20.1. Дата начала курса лучевой терапии:
+                    число <input class="doc__input" type="text">
+                    месяц <input class="doc__input" type="text">
+                    год <input class="doc__input" type="text">
+                  </div>
+                  <div class="doc__list-text">
+                    20.2. Способ облучения
+                    <div class="doc__list-box doc__list-box--columnThree">
+                      <div>
+                        <div class="doc__list-text">
+                          Облучение внешнее:
+                        </div>
+                      </div>
+                      <div>
+                        <label>
+                          <input class="doc__input" type="checkbox" name="">
+                          дистанционное
+                        </label>
+                      </div>
+                      <div>
+                        <label>
+                          <input class="doc__input" type="checkbox" name="">
+                          аппликационное
+                        </label>
+                      </div>
+                    </div>
+                    <div class="doc__list-box doc__list-box--columnThree">
+                      <div>
+                        <div class="doc__list-text">
+                          Облучение внутриполостное:
+                        </div>
+                      </div>
+                      <div>
+                        <label>
+                          <input class="doc__input" type="checkbox" name="">
+                          закрытыми источниками
+                        </label>
+                      </div>
+                      <div>
+                        <label>
+                          <input class="doc__input" type="checkbox" name="">
+                          открытыми источниками
+                        </label>
+                      </div>
+                    </div>
+                    <label>
+                      Облучение внутритканевое
+                      <input class="doc__input" type="checkbox" name="">
+                    </label>
+                    <div class="doc__list-text">
+                      Облучение сочетанное:
+                    </div>
+                    <div class="doc__list-box">
+                      <div class="doc__list-text">
+                        закрытыми
+                      </div>
+                      <div>
+                        <label>
+                          <input class="doc__input" type="checkbox" name="">
+                          дистанционное+внутриполостное
+                        </label>
+                        <label>
+                          <input class="doc__input" type="checkbox" name="">
+                          источниками;
+                        </label>
+                      </div>
+                    </div>
+                    <div class="doc__list-box">
+                      <div class="doc__list-text">
+                        открытыми
+                      </div>
+                      <div>
+                        <label>
+                          <input class="doc__input" type="checkbox" name="">
+                          дистанционное+внутриполостное
+                        </label>
+                        <label>
+                          <input class="doc__input" type="checkbox" name="">
+                          источниками;
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="doc__list-text">
+                    Другое
+                    <p class="doc__list-textarea">
+                      ____________________________________________________________________________________________________________________________
+                      ____________________________________________________________________________________________________________________________
+                    </p>
+                  </div>
+                  <div class="doc__list-text">
+                    20.3. Вид лучевой терапии:
+                    <div class="doc__list-box">
+                      <div>
+                        <label>
+                          <input class="doc__input" type="checkbox" name="">
+                          рентгеновская близкофокусная;
+                        </label>
+                      </div>
+                      <div>
+                        <label>
+                          <input class="doc__input" type="checkbox" name="">
+                          рентгеновская глубокая;
+                        </label>
+                      </div>
+                      <div>
+                        <label>
+                          <input class="doc__input" type="checkbox" name="">
+                          тормозное излучение высоких энергий;
+                        </label>
+                      </div>
+                      <div>
+                        <label>
+                          <input class="doc__input" type="checkbox" name="">
+                          электроны;
+                        </label>
+                      </div>
+                      <div>
+                        <label>
+                          <input class="doc__input" type="checkbox" name="">
+                          тяжелые заряженные частицы;
+                        </label>
+                      </div>
+                      <div>
+                        <label>
+                          <input class="doc__input" type="checkbox" name="">
+                          нейроны;
+                        </label>
+                      </div>
+                      <div>
+                        <label>
+                          <input class="doc__input" type="checkbox" name="">
+                          Гамматерапия
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="doc__list-text">
+                    Сочетанная:
+                    <div class="doc__list-box">
+                      <div>
+                        <label>
+                          <input class="doc__input" type="checkbox" name="">
+                          фотонная+электроны;
+                        </label>
+                      </div>
+                      <div>
+                        <label>
+                          <input class="doc__input" type="checkbox" name="">
+                          протоны+гамма;
+                        </label>
+                      </div>
+                      <div>
+                        <label>
+                          <input class="doc__input" type="checkbox" name="">
+                          нейтроны+гамма
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="doc__list-text">
+                    Другая
+                  </div>
+                  <p class="doc__list-textarea">
+                    ____________________________________________________________________________________________________________________________
+                  </p>
+                  <div class="doc__list-text">
+                    20.4. Методы лучевой терапии
+                    <div class="doc__list-text">
+                      Фракционирование:
+                      <div class="doc__list-box">
+                        <div>
+                          <label>
+                            <input class="doc__input" type="checkbox" name="">
+                            традиционное;
+                          </label>
+                        </div>
+                        <div>
+                          <label>
+                            <input class="doc__input" type="checkbox" name="">
+                            со сквозным курсом;
+                          </label>
+                        </div>
+                        <div>
+                          <label>
+                            <input class="doc__input" type="checkbox" name="">
+                            с расщепленным курсом;
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="doc__list-text">
+                      Фракционирование нетрадиционное:
+                      <div class="doc__list-box">
+                        <div>
+                          <label>
+                            <input class="doc__input" type="checkbox" name="">
+                            дневное дробление дозы;
+                          </label>
+                        </div>
+                        <div>
+                          <label>
+                            <input class="doc__input" type="checkbox" name="">
+                            укрупненное;
+                          </label>
+                        </div>
+                        <div>
+                          <label>
+                            <input class="doc__input" type="checkbox" name="">
+                            крупное;
+                          </label>
+                        </div>
+                        <div>
+                          <label>
+                            <input class="doc__input" type="checkbox" name="">
+                            динамическое;
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="doc__list-text">
+                      Лучевая терапия:
+                      <div class="doc__list-box">
+                        <div>
+                          <label>
+                            <input class="doc__input" type="checkbox" name="">
+                            тотальная;
+                          </label>
+                        </div>
+                        <div>
+                          <label>
+                            <input class="doc__input" type="checkbox" name="">
+                            субтотальная;
+                          </label>
+                        </div>
+                        <div>
+                          <label>
+                            <input class="doc__input" type="checkbox" name="">
+                            с неравномерным облучением мишени
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="doc__list-text">
+                      20.5. Радиомодификаторы, применявшиеся при проведении лучевой терапии
+                      <div class="doc__list-box">
+                        <div>
+                          <label>
+                            <input class="doc__input" type="checkbox" name="">
+                            не применялись
+                          </label>
+                        </div>
+                        <div>
+                          <label>
+                            <input class="doc__input" type="checkbox" name="">
+                            лекарственные препараты
+                          </label>
+                        </div>
+                        <div>
+                          <label>
+                            <input class="doc__input" type="checkbox" name="">
+                            гипербарическая оксигенация
+                          </label>
+                        </div>
+                        <div>
+                          <label>
+                            <input class="doc__input" type="checkbox" name="">
+                            иммуномодуляторы
+                          </label>
+                        </div>
+                        <div>
+                          <label>
+                            <input class="doc__input" type="checkbox" name="">
+                            электронакцепторные соединения
+                          </label>
+                        </div>
+                        <div>
+                          <label>
+                            <input class="doc__input" type="checkbox" name="">
+                            радиофармпрепараты
+                          </label>
+                        </div>
+                        <div>
+                          <label>
+                            <input class="doc__input" type="checkbox" name="">
+                            гипертермия
+                          </label>
+                        </div>
+                        <div>
+                          <label>
+                            <input class="doc__input" type="checkbox" name="">
+                            актиоксидантный комплекс
+                          </label>
+                        </div>
+                        <div>
+                          <label>
+                            <input class="doc__input" type="checkbox" name="">
+                            гипергликемия
+                          </label>
+                        </div>
+                        <div>
+                          <label>
+                            <input class="doc__input" type="checkbox" name="">
+                            сочетание радиомодификаторов
+                          </label>
+                        </div>
+                        <div>
+                          <label>
+                            <input class="doc__input" type="checkbox" name="">
+                            гипоксия
+                          </label>
+                        </div>
+                        <div>
+                          <label>
+                            <input class="doc__input" type="checkbox" name="">
+                            другие
+                          </label>
+                        </div>
+                        <div>
+                          <label>
+                            <input class="doc__input" type="checkbox" name="">
+                            гипотермия
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="doc__list-text">
+                      20.6. Поля облучения
+                    </div>
+                    <p class="doc__list-textarea">
+                      ____________________________________________________________________________________________________________________________
+                      ____________________________________________________________________________________________________________________________
+                    </p>
+                    <div class="doc__list-text">
+                      20.7. Суммарная доза на опухоль <input class="doc__input" type="text" name=""> (Гр);
+                    </div>
+                    <div class="doc__list-text">
+                      Суммарная доза на зоны регионарного метастазирования
+                      <input class="doc__input" type="text" name=""> (Гр);
+                    </div>
+                    <div class="doc__list-text">
+                      20.8. Осложнения лучевого лечения:
+                    </div>
+                    <p class="doc__list-textarea">
+                      ____________________________________________________________________________________________________________________________
+                      ____________________________________________________________________________________________________________________________
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="doc__list-item">
+              <div class="doc__list-text">
+                20. Лучевое лечение
+                <div class="pl">
+                  <div class="doc__list-text">
+                    21.1. Дата начала курса химиотерапии
+                    число <input class="doc__input" type="text">
+                    месяц <input class="doc__input" type="text">
+                    год <input class="doc__input" type="text">
+                  </div>
+                  <div class="doc__list-text">
+                    21.2. Вид химиотерапии:
+                    <div class="doc__list-box doc__list-box--columnThree">
+                      <div>
+                        <label>
+                          <input class="doc__input" type="checkbox" name="">
+                          самостоятельная;
+                        </label>
+                      </div>
+                      <div>
+                        <label>
+                          <input class="doc__input" type="checkbox" name="">
+                          адъювантная;
+                        </label>
+                      </div>
+                      <div>
+                        <label>
+                          <input class="doc__input" type="checkbox" name="">
+                          неоадъювантная
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="doc__list-text">
+                    21.3. Препараты, суммарные дозы:
+                    <p class="doc__list-textarea">
+                      ____________________________________________________________________________________________________________________________
+                      ____________________________________________________________________________________________________________________________
+                    </p>
+                  </div>
+                  <div class="doc__list-text">
+                    21.4. Осложнения химиотерапевтического лечения:
+                    <p class="doc__list-textarea">
+                      ____________________________________________________________________________________________________________________________
+                      ____________________________________________________________________________________________________________________________
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="doc__list-item">
+              <div class="doc__list-text">
+                23. Другие виды специального лечения:
+                <p class="doc__list-textarea">
+                  ____________________________________________________________________________________________________________________________
+                  ____________________________________________________________________________________________________________________________
+                </p>
+              </div>
+            </li>
+            <li class="doc__list-item">
+              <div class="doc__list-text">
+                24. Особенности случая:
+                <p class="doc__list-textarea">
+                  ____________________________________________________________________________________________________________________________
+                  ____________________________________________________________________________________________________________________________
+                </p>
+              </div>
+            </li>
+            <li class="doc__list-item">
+              <div class="doc__list-text">
+                25. Лечебные и трудовые рекомендации:
+                <p class="doc__list-textarea">
+                  ____________________________________________________________________________________________________________________________
+                  ____________________________________________________________________________________________________________________________
+                </p>
+              </div>
+            </li>
+            <li class="doc__list-item">
+              <div class="doc__list-text">
+                26. Фамилия и инициалы, телефон врача, заполнившего выписку
+                <p class="doc__list-textarea">
+                  ____________________________________________________________________________________________________________________________
+                  ____________________________________________________________________________________________________________________________
+                </p>
+              </div>
+            </li>
+            <li class="doc__list-item">
+              <div class="doc__list-text">
+                Дата заполнения выписки "____" _______19____ г.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+
+    </footer>
+
+  </div>
+</body>
+
+</html>

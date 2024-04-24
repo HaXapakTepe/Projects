@@ -1,0 +1,143 @@
+.burger {
+  position: fixed;
+  @include fluid(right, 16px, 90px);
+  @include fluid(top, 35px, 90px);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  cursor: pointer;
+  z-index: 10;
+  transition: overflow 0.23s .23s ease-in-out;
+
+  &--active,
+  &:hover {
+    overflow: visible;
+
+    .burger {
+      &__box {
+        background-color: #7A58B0;
+      }
+
+      &__line {
+        background-color: #fff;
+
+        &::before,
+        &::after {
+          background: #fff;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    .burger {
+      &__text {
+        transform: translateX(-100%) scaleX(1);
+        color: #7A58B0;
+      }
+    }
+  }
+
+  &__box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 41px;
+    height: 41px;
+    display: flex;
+    z-index: 5;
+    border-radius: 4.12px;
+    padding: 12px;
+    background-color: #fff;
+    transition: background-color .23s ease-in-out;
+  }
+
+  &__line {
+    display: block;
+    width: 2px;
+    height: 16px;
+    border-radius: 3px;
+    background: #000;
+    transition: all .23s ease-in-out;
+
+    &::before,
+    &::after {
+      content: "";
+      width: 2px;
+      height: 16px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      background: #000;
+      border-radius: 3px;
+      transition: all .23s ease-in-out;
+    }
+
+    &::before {
+      transform: translate(-8px, -50%)
+    }
+
+    &::after {
+      transform: translate(6px, -50%)
+    }
+  }
+
+  &__text {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    padding: 11px 15px 12px 10px;
+    font-weight: 700;
+    color: #7A58B0;
+    font-size: 15.19px;
+    transition: color .23s ease-in-out, transform .23s ease-in-out, background-color .23s ease-in-out;
+    transform: translateX(0%) scaleX(0);
+    background-color: #fff;
+    border-radius: 4.12px;
+  }
+}
+
+@media (max-width: 992px) {
+  .burger {
+    box-shadow: 0px 0.82px 1.64px 0px rgba(0, 0, 0, 0.1), 0px 2.87px 2.87px 0px rgba(0, 0, 0, 0.09), 0px 6.98px 4.11px 0px rgba(0, 0, 0, 0.05), 0px 12.32px 4.93px 0px rgba(0, 0, 0, 0.01), 0px 19.3px 5.34px 0px rgba(0, 0, 0, 0);
+
+    &:hover {
+      .burger {
+        &__box {
+          background-color: #fff;
+        }
+
+        &__line {
+          background-color: #7A58B0;
+
+          &::before,
+          &::after {
+            background: #7A58B0;
+          }
+        }
+      }
+    }
+
+    &.burger--active {
+      .burger {
+        &__box {
+          background-color: #7A58B0;
+        }
+
+        &__line {
+          background-color: #fff;
+
+          &::before,
+          &::after {
+            background: #fff;
+          }
+        }
+      }
+    }
+
+    &__text {
+      display: none;
+    }
+  }
+}

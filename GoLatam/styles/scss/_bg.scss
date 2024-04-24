@@ -1,0 +1,7 @@
+.bg {
+  &__img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    @include fluid(height, 380px, 454px);
+  }
+}

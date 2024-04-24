@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/images/favicon.svg" type="x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="../styles/css/normalize.css">
+  <link rel="stylesheet" href="../styles/css/style.css?v=0.0001">
+  <title>Каталог</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="/">
+            <img class="logo__img" src="../assets/images/logo.png" alt="">
+            <p class="logo__text">
+              Комплексная поставка
+              <br>
+              строительных
+              <br>
+              материалов
+            </p>
+          </a>
+          <div class="loca">
+            <i class="loca__icon">
+              <svg width="30" height="35" viewBox="0 0 30 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15 0.866669C9.00233 0.866669 4 5.698 4 11.8667C4 14.2135 4.7052 16.3061 6.0586 18.2671L14.1582 30.9057C14.5511 31.5201 15.4497 31.5189 15.8418 30.9057L23.9765 18.2241C25.3008 16.352 26 14.1538 26 11.8667C26 5.80127 21.0654 0.866669 15 0.866669ZM15 16.8667C12.2431 16.8667 10 14.6235 10 11.8667C10 9.1098 12.2431 6.86667 15 6.86667C17.7569 6.86667 20 9.1098 20 11.8667C20 14.6235 17.7569 16.8667 15 16.8667Z"
+                  fill="#1BAFE5" />
+                <path
+                  d="M22.8176 23.8463L17.7822 31.7188C16.4788 33.7509 13.5139 33.7443 12.2168 31.7207L7.1732 23.8484C2.7356 24.8744 0 26.7539 0 29C0 32.8975 7.72853 35 15 35C22.2715 35 30 32.8975 30 29C30 26.7523 27.2606 24.8718 22.8176 23.8463Z"
+                  fill="#1BAFE5" />
+              </svg>
+            </i>
+            <div class="loca__box">
+              <p class="loca__bold">
+                Адрес склада
+              </p>
+              <p class="loca__text">
+                г. Реутов, Фабричная, 6
+              </p>
+              <a class="loca__link" href="#">
+                 Схема проезда
+              </a>
+            </div>
+          </div>
+          <div class="contact">
+            <div class="contact__box">
+              <i class="contact__icon">
+                <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M24.2289 16.7341C22.9082 15.6867 21.6967 15.1776 20.5251 15.1776C18.8303 15.1776 17.61 16.2415 16.5052 17.3313C16.3782 17.4568 16.2243 17.5153 16.0212 17.5153C15.0902 17.5154 13.4524 16.3649 11.1533 14.0958C8.44849 11.4265 7.42585 9.72877 8.11349 9.04992C9.97761 7.211 10.5596 5.36753 7.70547 1.86481C6.68373 0.609906 5.68407 0 4.64939 0C3.25401 0 2.19327 1.10069 1.25741 2.0719C1.09561 2.23978 0.942773 2.39837 0.79292 2.54625C-0.264834 3.58996 -0.264291 5.86653 0.794458 8.63638C1.9561 11.6755 4.24969 14.9815 7.25283 17.9454C9.57529 20.2371 12.1023 22.0891 14.5607 23.3326C16.7071 24.4183 18.789 25 20.423 25C20.4232 25 20.4234 25 20.4237 25C21.4462 25 22.2768 24.7799 22.8254 24.3322C23.9397 23.4231 26.0138 21.7391 25.9999 19.7388C25.9923 18.666 25.3966 17.6606 24.2289 16.7341Z"
+                    fill="#1BAFE5" />
+                </svg>
+              </i>
+              <a class="contact__phone" href="tel:+74951034068">
+                +7 (495) 103-40-68
+              </a>
+            </div>
+            <a class="contact__link" href="mailto:ak@luftmarket.ru">ak@luftmarket.ru</a>
+          </div>
+          <button class="btn" data-fancybox data-src="#form">
+            Заказать звонок
+          </button>
+          <div class="burger">
+            <div class="burger__line"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <section class="menu">
+        <div class="menu__wrapper">
+          <div class="container">
+            <ul class="menu__list">
+              <li class="menu__item accordionMenu">
+                <i class="menu__icon">
+                  <svg viewBox="0 0 114 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.9252 79.0424L2.0001 35.6586C1.99221 35.2886 2.46265 34.8261 3.11022 34.5486C3.62828 34.3265 43.9691 31.681 64.0747 30.3859V37.3236V85.7026C51.4932 87.9843 25.5718 92.6773 22.5374 93.1953C21.2853 93.4091 20.3892 93.4097 19.762 93.3063C18.8693 93.1591 18.5213 92.8013 18.467 92.5478C14.9516 89.8344 7.42122 84.0005 5.42299 82.3725C3.42476 80.7444 2.9252 79.4741 2.9252 79.0424Z"
+                      fill="white" />
+                    <path
+                      d="M64.0747 37.3236V85.7026C51.4932 87.9843 25.5718 92.6773 22.5374 93.1953C21.2853 93.4091 20.3892 93.4097 19.762 93.3063M64.0747 37.3236V30.3859C43.9691 31.681 3.62828 34.3265 3.11022 34.5486M64.0747 37.3236L19.762 40.5612M3.11022 34.5486C2.46265 34.8261 1.99221 35.2886 2.0001 35.6586L2.9252 79.0424C2.9252 79.4741 3.42476 80.7444 5.42299 82.3725C7.42122 84.0005 14.9516 89.8344 18.467 92.5478C18.5213 92.8013 18.8693 93.1591 19.762 93.3063M3.11022 34.5486C8.29078 36.1519 18.8739 39.5992 19.762 40.5612M19.762 40.5612C20.8722 41.7638 21.3347 72.2897 21.1497 76.8223C21.0017 80.4484 20.1629 89.3225 19.762 93.3063"
+                      stroke="#52ACE0" stroke-width="4" />
+                    <path
+                      d="M64.0742 88.1257V4.95157V4.48691L107.067 3L112 7.56432V84.2448L71.3771 91.0913L64.0742 88.1257Z"
+                      fill="white" />
+                    <path
+                      d="M71.3771 91.0913L64.0742 88.1257V4.95157V4.48691M71.3771 91.0913V8.93361M71.3771 91.0913L112 84.2448V7.56432M71.3771 8.93361L64.0742 4.48691M71.3771 8.93361L112 7.56432M64.0742 4.48691L107.067 3L112 7.56432"
+                      stroke="#52ACE0" stroke-width="4" />
+                  </svg>
+                </i>
+                <p class="menu__text">
+                  Теплоизоляция
+                  <i class="menu__text-icon">
+                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.36603 13.5C7.98113 14.1667 7.01888 14.1667 6.63398 13.5L0.138786 2.25C-0.246114 1.58333 0.235009 0.749999 1.00481 0.749999L13.9952 0.75C14.765 0.75 15.2461 1.58333 14.8612 2.25L8.36603 13.5Z"
+                        fill="#1BAFE5" />
+                    </svg>
+                  </i>
+                </p>
+                <div class="accordionMenu__content">
+                  <div class="menu__item-hidden">
+                    <a class="menu__item-link" href="#">
+                      Минеральная вата
+                    </a>
+                    <a class="menu__item-link" href="#">
+                      Экструдированный пенополистерол
+                    </a>
+                    <a class="menu__item-link" href="#">
+                      Пенопласт
+                    </a>
+                    <a class="menu__item-link" href="#">
+                      Вспененный полиэтилен
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="menu__item accordionMenu">
+                <i class="menu__icon">
+                  <svg viewBox="0 0 128 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_37_5)">
+                      <path
+                        d="M22.7768 27.1839L97.8868 7.25613C100.446 6.63197 106.914 6.75674 112.318 12.2494C115.389 15.3703 119.998 20.3636 120.762 26.4492C121.683 33.7831 119.841 39.4005 116.77 42.8334C114.324 45.5689 71.4805 75.498 51.0617 91.3621C46.8653 93.0265 38.0102 94.0106 32.1781 91.3621C24.9624 88.0852 19.282 84.8084 13.2945 76.0701C10.1153 71.4302 6.99997 67.1758 7 53.4442V53.4442C7.00001 49.205 7.00005 32.8468 17.9003 28.4777C19.2761 27.8297 20.9375 27.3732 22.7768 27.1839Z"
+                        fill="white" />
+                      <path
+                        d="M17.9003 28.4777L97.8868 7.25613C100.446 6.63197 106.914 6.75674 112.318 12.2494C115.389 15.3703 119.998 20.3636 120.762 26.4492C121.683 33.7831 119.841 39.4005 116.77 42.8334C114.324 45.5689 71.4805 75.498 51.0617 91.3621M17.9003 28.4777C7 32.8468 7.00001 49.2052 7 53.4442C6.99997 67.1758 10.1153 71.4302 13.2945 76.0701C19.282 84.8084 24.9624 88.0852 32.1781 91.3621C38.0102 94.0106 46.8653 93.0265 51.0617 91.3621M17.9003 28.4777C22.0966 26.5012 28.9501 26.3069 35.4022 30.0381C44.3066 35.1874 49.68 38.4643 55.5139 53.4442C57.5818 58.7539 59.6591 63.738 58.2774 75.2899C57.172 84.5314 53.0064 89.8553 51.0617 91.3621M13.2945 47.0465C15.5974 41.557 24.3716 40.6277 28.6471 44.3938C33.2528 48.4509 34.481 49.6992 37.705 55.4727C40.3225 60.16 43.2319 68.2681 42.1573 75.2899C41.0068 82.8072 35.4021 85.4325 29.5682 83.404C22.9666 81.1086 18.8314 76.0701 16.9792 72.6372C14.3692 67.8 7.73052 60.31 13.2945 47.0465Z"
+                        stroke="#52ACE0" stroke-width="4" />
+                    </g>
+                    <defs>
+                      <filter id="filter0_d_37_5" x="0" y="0.00131226" width="128" height="99.9987"
+                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha" />
+                        <feOffset />
+                        <feGaussianBlur stdDeviation="2.5" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.77 0" />
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_37_5" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_37_5" result="shape" />
+                      </filter>
+                    </defs>
+                  </svg>
+                </i>
+                <p class="menu__text">
+                  Техническая изоляция
+                  <i class="menu__text-icon">
+                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.36603 13.5C7.98113 14.1667 7.01888 14.1667 6.63398 13.5L0.138786 2.25C-0.246114 1.58333 0.235009 0.749999 1.00481 0.749999L13.9952 0.75C14.765 0.75 15.2461 1.58333 14.8612 2.25L8.36603 13.5Z"
+                        fill="#1BAFE5" />
+                    </svg>
+                  </i>
+                </p>
+                <div class="accordionMenu__content">
+                  <div class="menu__item-hidden">
+                    <a class="menu__item-link" href="#">
+                      Минеральная вата
+                    </a>
+                    <a class="menu__item-link" href="#">
+                      Экструдированный пенополистерол
+                    </a>
+                    <a class="menu__item-link" href="#">
+                      Пенопласт
+                    </a>
+                    <a class="menu__item-link" href="#">
+                      Вспененный полиэтилен
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="menu__item accordionMenu">
+                <i class="menu__icon">
+                  <svg viewBox="0 0 146 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_37_3)">
+                      <path
+                        d="M7 60.4263V56.706C11.683 55.1116 21.7382 51.7101 24.495 50.8598C27.2518 50.0094 37.6604 47.3166 42.5202 46.0765C41.99 45.6336 40.6646 44.5352 39.6043 43.6849C38.279 42.6219 38.0139 41.559 36.9536 36.7757C35.8933 31.9924 36.6885 29.8665 36.9536 25.8805C37.2187 21.8944 39.6043 17.9084 40.9297 15.251C42.2551 12.5936 45.1709 10.202 47.5566 8.34188C49.9423 6.48172 54.9787 7.0132 56.3041 7.27893C57.6295 7.54467 124.429 18.7056 127.875 19.5028C128.755 19.7065 129.549 19.9274 130.26 20.1569C132.335 20.8257 133.712 21.5666 134.502 22.1602C135.562 22.9574 137.682 25.6148 138.478 28.0064C139.273 30.398 139.273 39.6988 137.682 47.4052C136.41 53.5703 131.851 60.9578 129.73 63.8809L122.838 67.5173L114.621 71.853L84.1371 87L7 60.4263Z"
+                        fill="white" />
+                      <path
+                        d="M42.5202 46.0765C41.99 45.6336 40.6646 44.5352 39.6043 43.6849C38.279 42.6219 38.0139 41.559 36.9536 36.7757C35.8933 31.9924 36.6885 29.8665 36.9536 25.8805C37.2187 21.8944 39.6043 17.9084 40.9297 15.251C42.2551 12.5936 45.1709 10.202 47.5566 8.34188C49.9423 6.48172 54.9787 7.0132 56.3041 7.27893C57.6295 7.54467 124.429 18.7056 127.875 19.5028C128.755 19.7065 129.549 19.9274 130.26 20.1569M42.5202 46.0765C37.6604 47.3166 27.2518 50.0094 24.495 50.8598C21.7382 51.7101 11.683 55.1116 7 56.706V60.4263L84.1371 87L114.621 71.853L122.838 67.5173M42.5202 46.0765L118.067 66.2436M122.838 67.5173L129.73 63.8809C131.851 60.9578 136.41 53.5703 137.682 47.4052C139.273 39.6988 139.273 30.398 138.478 28.0064C137.682 25.6148 135.562 22.9574 134.502 22.1602C133.712 21.5666 132.335 20.8257 130.26 20.1569M122.838 67.5173L118.067 66.2436M118.067 66.2436C113.295 59.3502 111.97 58.0083 111.705 52.7067C111.44 47.4052 111.97 43.9374 112.5 42.343C113.03 40.7486 114.886 34.9024 116.211 32.245C117.537 29.5876 118.067 28.5247 119.392 26.9303C120.718 25.3358 121.778 23.2363 123.898 22.1602C125.595 21.2993 128.847 20.466 130.26 20.1569"
+                        stroke="#52ACE0" stroke-width="4" />
+                    </g>
+                    <defs>
+                      <filter id="filter0_d_37_3" x="0" y="1.52588e-05" width="146" height="94.1636"
+                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha" />
+                        <feOffset />
+                        <feGaussianBlur stdDeviation="2.5" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.77 0" />
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_37_3" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_37_3" result="shape" />
+                      </filter>
+                    </defs>
+                  </svg>
+                </i>
+                <p class="menu__text">
+                  Гидроизоляция
+                  <i class="menu__text-icon">
+                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.36603 13.5C7.98113 14.1667 7.01888 14.1667 6.63398 13.5L0.138786 2.25C-0.246114 1.58333 0.235009 0.749999 1.00481 0.749999L13.9952 0.75C14.765 0.75 15.2461 1.58333 14.8612 2.25L8.36603 13.5Z"
+                        fill="#1BAFE5" />
+                    </svg>
+                  </i>
+                </p>
+                <div class="accordionMenu__content">
+                  <div class="menu__item-hidden">
+                    <a class="menu__item-link" href="#">
+                      Минеральная вата
+                    </a>
+                    <a class="menu__item-link" href="#">
+                      Экструдированный пенополистерол
+                    </a>
+                    <a class="menu__item-link" href="#">
+                      Пенопласт
+                    </a>
+                    <a class="menu__item-link" href="#">
+                      Вспененный полиэтилен
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="menu__item accordionMenu">
+                <i class="menu__icon">
+                  <svg viewBox="0 0 128 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_37_4)">
+                      <path
+                        d="M12 27.5166L51.2633 11L63.1381 23.5298L77.3112 11L116 27.5166L104.125 38.9073L116 54.2848L104.125 58.5384V85.2296L63.1381 97L23.8748 85.2296V56.7633L13.3407 52.3863L23.8748 38.9073L12 27.5166Z"
+                        fill="white" />
+                      <path
+                        d="M63.1381 23.5298L51.2633 11L12 27.5166L23.8748 38.9073M63.1381 23.5298L23.8748 38.9073M63.1381 23.5298L77.3112 11L116 27.5166L104.125 38.9073M63.1381 23.5298L104.125 38.9073M23.8748 38.9073L63.1381 56.9426M23.8748 38.9073L13.3407 52.3863L23.8748 56.7633M104.125 38.9073L116 54.2848L104.125 58.5384M104.125 38.9073L63.1381 56.9426M63.1381 56.9426L77.3112 68.1435L104.125 58.5384M63.1381 56.9426L51.2633 68.1435L23.8748 56.7633M63.1381 56.9426V97M63.1381 97L104.125 85.2296V58.5384M63.1381 97L23.8748 85.2296V56.7633"
+                        stroke="#52ACE0" stroke-width="4" />
+                    </g>
+                    <defs>
+                      <filter id="filter0_d_37_4" x="0.418945" y="0.619965" width="127.149" height="106.464"
+                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha" />
+                        <feOffset />
+                        <feGaussianBlur stdDeviation="4" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.49 0" />
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_37_4" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_37_4" result="shape" />
+                      </filter>
+                    </defs>
+                  </svg>
+                </i>
+                <p class="menu__text">
+                  Комплектующие
+                  <i class="menu__text-icon">
+                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.36603 13.5C7.98113 14.1667 7.01888 14.1667 6.63398 13.5L0.138786 2.25C-0.246114 1.58333 0.235009 0.749999 1.00481 0.749999L13.9952 0.75C14.765 0.75 15.2461 1.58333 14.8612 2.25L8.36603 13.5Z"
+                        fill="#1BAFE5" />
+                    </svg>
+                  </i>
+                </p>
+                <div class="accordionMenu__content">
+                  <div class="menu__item-hidden">
+                    <a class="menu__item-link" href="#">
+                      Минеральная вата
+                    </a>
+                    <a class="menu__item-link" href="#">
+                      Экструдированный пенополистерол
+                    </a>
+                    <a class="menu__item-link" href="#">
+                      Пенопласт
+                    </a>
+                    <a class="menu__item-link" href="#">
+                      Вспененный полиэтилен
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="menu__item accordionMenu">
+                <i class="menu__icon">
+                  <svg viewBox="0 0 91 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_37_9)">
+                      <path
+                        d="M7.02269 23.2256C7.02269 18.4837 7.02269 13.1633 8.76032 9.55063C10.1256 6.71209 18.2263 6.86209 20.7623 7.14213C23.2983 7.42216 60.3745 6.302 63.895 8.85054C68.0701 11.8729 67.64 15.3169 67.64 17.4639C67.64 19.6108 67.7809 33.2433 67.64 37.6772C67.4991 42.1111 67.64 79.8694 67.64 87.9955C67.64 90.9826 65.2849 93.5865 62.4792 93.5865C58.2651 93.5865 19.7028 97.5404 19.1862 97.027C18.6696 96.5136 8.43158 92.9542 7.44535 91.3674C6.45913 89.7805 7.35143 72.7451 7.82106 68.2645C8.29069 63.784 7.02269 29.153 7.02269 23.2256Z"
+                        fill="white" />
+                      <path
+                        d="M19.1862 97.027C18.6696 96.5136 8.43158 92.9542 7.44535 91.3674C6.45913 89.7805 7.35143 72.7451 7.82106 68.2645C8.29069 63.784 7.02269 29.153 7.02269 23.2256C7.02269 18.4837 7.02269 13.1633 8.76032 9.55063C10.1256 6.71209 18.2263 6.86209 20.7623 7.14213M19.1862 97.027C19.7028 97.5404 58.2651 93.5865 62.4792 93.5865C65.2849 93.5865 67.64 90.9826 67.64 87.9955C67.64 79.8694 67.4991 42.1111 67.64 37.6772C67.7809 33.2433 67.64 19.6108 67.64 17.4639C67.64 15.3169 68.0701 11.8729 63.895 8.85054C60.3745 6.302 23.2983 7.42216 20.7623 7.14213M19.1862 97.027C19.421 95.9691 19.7497 92.5342 19.1862 89.1738C18.4817 84.9733 19.1862 61.4504 19.1862 59.1634C19.1862 56.8765 19.3271 28.453 19.1862 23.2256C19.0735 19.0438 20.3553 9.69356 20.7623 7.14213"
+                        stroke="#52ACE0" stroke-width="4" />
+                    </g>
+                    <g filter="url(#filter1_d_37_9)">
+                      <path
+                        d="M41.2575 51.8914C41.9799 50.3401 41.5585 46.6708 41.2575 45.03L76.3253 43.9859C76.18 44.9223 76.9224 48.0696 77.0989 49.3976C77.8113 49.8646 78.291 50.9097 79.3355 51.8914C80.991 53.4475 81.5931 63.2275 82.1951 65.1666C82.3252 65.5856 82.4763 66.9097 82.6349 68.7464C83.2102 75.4106 84.0012 88.8173 84.0012 90.2255C84.0012 93.4441 81.2921 97.3851 79.3355 97.9818C77.3789 98.5784 52.8462 102.307 51.0402 102.457C50.5489 102.497 49.6011 102.472 48.4815 102.392C48.3968 102.386 48.3116 102.379 48.226 102.372C48.0177 102.358 47.8019 102.347 47.5862 102.311C44.8014 102.009 41.7878 101.25 41.2575 100.816C40.1342 99.8951 36.7373 93.5485 36.7373 90.8637C36.7373 88.1788 36.742 86.1329 36.742 82.6183C36.742 81.7153 37.0112 78.3419 37.3106 74.2654C37.7191 68.703 38.1837 62.3385 38.0968 61.7359C37.9463 60.6918 40.3544 53.8305 41.2575 51.8914Z"
+                        fill="white" />
+                      <path
+                        d="M41.2575 51.8914C41.9799 50.3401 41.5585 46.6708 41.2575 45.03L76.3253 43.9859C76.1729 44.9676 76.9962 48.3788 77.1203 49.5768M41.2575 51.8914C40.3544 53.8305 37.9463 60.6918 38.0968 61.7359C38.1837 62.3385 37.7191 68.703 37.3106 74.2654M41.2575 51.8914C42.4612 53.2338 42.2682 58.6235 42.4612 59.946C43.1447 64.6293 44.3645 69.5419 44.9327 74.2654M41.5063 52.2598C41.9578 51.3648 77.9469 49.5768 77.1203 49.5768M77.1203 49.5768C79.3003 51.4613 76.0282 49.1468 76.2602 49.1468C77.5504 49.1468 77.936 50.5759 79.3355 51.8914C80.991 53.4475 81.5931 63.2275 82.1951 65.1666C82.3252 65.5856 82.4763 66.9097 82.6349 68.7464M48.4815 102.392C45.485 102.178 41.8454 101.298 41.2575 100.816C40.1342 99.8951 36.7373 93.5485 36.7373 90.8637C36.7373 88.1788 36.742 86.1329 36.742 82.6183C36.742 81.7153 37.0112 78.3419 37.3106 74.2654M48.4815 102.392C49.6011 102.472 50.5489 102.497 51.0402 102.457C52.8462 102.307 77.3789 98.5784 79.3355 97.9818C81.2921 97.3851 84.0012 93.4441 84.0012 90.2255C84.0012 88.8173 83.2102 75.4106 82.6349 68.7464M48.4815 102.392C47.6287 102.308 46.5853 102.457 45.9229 100.816C45.4265 99.5861 45.1704 96.341 45.9229 92.9103C46.6754 89.4797 45.1704 79.3368 45.1704 76.9502C45.1704 76.4575 45.0806 75.4943 44.9327 74.2654M37.3106 74.2654C39.8513 74.2654 44.9327 74.2654 44.9327 74.2654M44.9327 74.2654C49.9285 74.5637 61.0639 74.9813 65.6393 74.2654C71.3586 73.3704 82.8214 70.6855 82.6349 68.7464"
+                        stroke="#52ACE0" stroke-width="4" />
+                    </g>
+                    <defs>
+                      <filter id="filter0_d_37_9" x="0" y="0" width="74.7021" height="104.073"
+                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha" />
+                        <feOffset />
+                        <feGaussianBlur stdDeviation="2.5" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.77 0" />
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_37_9" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_37_9" result="shape" />
+                      </filter>
+                      <filter id="filter1_d_37_9" x="29.7373" y="36.9152" width="61.2637" height="72.5602"
+                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha" />
+                        <feOffset />
+                        <feGaussianBlur stdDeviation="2.5" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.77 0" />
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_37_9" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_37_9" result="shape" />
+                      </filter>
+                    </defs>
+                  </svg>
+                </i>
+                <p class="menu__text">
+                  Смеси, сыпучка
+                  <i class="menu__text-icon">
+                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.36603 13.5C7.98113 14.1667 7.01888 14.1667 6.63398 13.5L0.138786 2.25C-0.246114 1.58333 0.235009 0.749999 1.00481 0.749999L13.9952 0.75C14.765 0.75 15.2461 1.58333 14.8612 2.25L8.36603 13.5Z"
+                        fill="#1BAFE5" />
+                    </svg>
+                  </i>
+                </p>
+                <div class="accordionMenu__content">
+                  <div class="menu__item-hidden">
+                    <a class="menu__item-link" href="#">
+                      Минеральная вата
+                    </a>
+                    <a class="menu__item-link" href="#">
+                      Экструдированный пенополистерол
+                    </a>
+                    <a class="menu__item-link" href="#">
+                      Пенопласт
+                    </a>
+                    <a class="menu__item-link" href="#">
+                      Вспененный полиэтилен
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="menu__item accordionMenu">
+                <i class="menu__icon">
+                  <svg viewBox="0 0 145 133" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_37_12)">
+                      <path
+                        d="M24.4092 97.6615C24.4095 91.8237 29.4359 89.2316 36.5403 87.6714C36.5403 87.2522 37.3116 86.2323 40.3968 85.5057C44.2533 84.5975 67.8992 81.4892 79.2902 85.5057C88.6596 88.8094 95.1621 92.617 92.665 97.6615C88.4668 106.142 86.157 100.738 76.0991 106.456C69.9327 109.962 58.2358 115.638 40.3968 110.629C28.168 107.195 24.4089 103.013 24.4092 97.6615Z"
+                        fill="white" stroke="#52ACE0" stroke-width="5" stroke-linejoin="round" />
+                      <path
+                        d="M22.161 34.1266C25.7542 28.9402 36.0679 29.0608 41.1671 28.8196V35.8152C38.1539 35.8152 31.3109 36.6595 30.7372 37.9862C30.1635 39.313 28.9991 40.3985 30.7372 44.0169C31.8154 46.2617 37.6518 48.158 41.1671 47.1529V54.2691C40.1241 54.3495 32.8236 54.5103 28.9991 54.2691C25.1747 54.0279 22.1609 51.9774 20.8869 47.9972C19.5082 43.6896 19.5951 37.8301 22.161 34.1266Z"
+                        fill="white" stroke="#52ACE0" stroke-width="5" stroke-linejoin="round" />
+                      <path
+                        d="M112.319 40.5386L60.5713 28.8196V36.6994C84.2168 42.8698 104.557 45.9473 115.769 49.8537C119.475 51.1448 113.898 42.6649 112.319 40.5386Z"
+                        fill="white" stroke="#52ACE0" stroke-width="5" stroke-linejoin="round" />
+                      <path
+                        d="M115.03 47.142L60.5713 46.4587V54.2024C76.832 54.582 110.39 54.4301 114.536 53.5191C118.682 52.6081 116.757 48.6983 115.03 47.142Z"
+                        fill="white" stroke="#52ACE0" stroke-width="5" stroke-linejoin="round" />
+                      <path
+                        d="M109.96 59.2473V44.2539C109.96 42.062 111.737 40.2851 113.929 40.2851C116.121 40.2851 117.898 42.062 117.898 44.2539V59.2473C117.898 61.4392 116.121 63.2161 113.929 63.2161C111.737 63.2161 109.96 61.4392 109.96 59.2473Z"
+                        fill="white" stroke="#52ACE0" stroke-width="5" stroke-linejoin="round" />
+                      <path
+                        d="M105.109 71.1538L122.748 71.1538C123.966 71.1538 124.953 72.141 124.953 73.3587C124.953 74.5765 123.966 75.5637 122.748 75.5637L105.109 75.5637C103.891 75.5637 102.904 74.5765 102.904 73.3587C102.904 72.141 103.891 71.1538 105.109 71.1538Z"
+                        fill="white" stroke="#52ACE0" stroke-width="5" stroke-linejoin="round" />
+                      <path
+                        d="M102.884 71.99L112.033 58.0767C112.807 56.9006 114.387 56.5741 115.563 57.3475C116.739 58.121 117.066 59.7014 116.292 60.8775L107.143 74.7908C106.37 75.967 104.789 76.2934 103.613 75.52C102.437 74.7466 102.11 73.1661 102.884 71.99Z"
+                        fill="white" stroke="#52ACE0" stroke-width="5" stroke-linejoin="round" />
+                      <path
+                        d="M116.685 57.475L125.011 71.8961C125.715 73.1152 125.297 74.674 124.078 75.3778C122.859 76.0817 121.3 75.664 120.596 74.4449L112.27 60.0238C111.566 58.8047 111.984 57.2459 113.203 56.5421C114.422 55.8383 115.981 56.256 116.685 57.475Z"
+                        fill="white" stroke="#52ACE0" stroke-width="5" stroke-linejoin="round" />
+                      <path
+                        d="M38.5215 90.557V32.3475C38.5215 25.5282 44.0496 20 50.869 20C57.6883 20 63.2164 25.5281 63.2164 32.3475V90.557C63.2164 97.3764 57.6883 102.905 50.869 102.905C44.0496 102.905 38.5215 97.3764 38.5215 90.557Z"
+                        fill="white" stroke="#52ACE0" stroke-width="5" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                      <filter id="filter0_d_37_12" x="0.5" y="0.5" width="144.354" height="131.607"
+                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha" />
+                        <feOffset />
+                        <feGaussianBlur stdDeviation="8.5" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.56 0" />
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_37_12" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_37_12" result="shape" />
+                      </filter>
+                    </defs>
+                  </svg>
+                </i>
+                <p class="menu__text">
+                  Общестрой
+                  <i class="menu__text-icon">
+                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.36603 13.5C7.98113 14.1667 7.01888 14.1667 6.63398 13.5L0.138786 2.25C-0.246114 1.58333 0.235009 0.749999 1.00481 0.749999L13.9952 0.75C14.765 0.75 15.2461 1.58333 14.8612 2.25L8.36603 13.5Z"
+                        fill="#1BAFE5" />
+                    </svg>
+                  </i>
+                </p>
+                <div class="accordionMenu__content">
+                  <div class="menu__item-hidden">
+                    <a class="menu__item-link" href="#">
+                      Минеральная вата
+                    </a>
+                    <a class="menu__item-link" href="#">
+                      Экструдированный пенополистерол
+                    </a>
+                    <a class="menu__item-link" href="#">
+                      Пенопласт
+                    </a>
+                    <a class="menu__item-link" href="#">
+                      Вспененный полиэтилен
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="menu__item">
+                <div class="menu__burger">
+                  <div class="menu__burger-line"></div>
+                </div>
+                <div class="menu__item-hidden">
+                  <a class="menu__item-link" href="#">
+                    Дополнительный пункт меню
+                  </a>
+                  <a class="menu__item-link" href="#">
+                    Дополнительный пункт
+                  </a>
+                  <a class="menu__item-link" href="#">
+                    Дополнительный пункт
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="breadcrumbs">
+        <div class="breadcrumbs__wrapper">
+          <div class="container">
+            <div class="breadcrumbs__inner">
+              <h2 class="popular__title title title--mbAlt title--borderNone">
+                ЭКСТРУДИРОВАННЫЙ ПЕНОПОЛИСТЕРОЛ
+              </h2>
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__list-item">
+                  <a class="breadcrumbs__list-link" href="/">
+                    Главная
+                  </a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                  <a class="breadcrumbs__list-link" href="#">
+                    Каталог продукции
+                  </a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                  <a class="breadcrumbs__list-link" href="#">
+                    Теплоизоляция
+                  </a>
+                </li>
+                <li class="breadcrumbs__list-item">
+                  <a class="breadcrumbs__list-link" href="#">
+                    Экструдированный пенополистерол
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="filter">
+        <div class="filter__wrapper">
+          <div class="container">
+            <div class="filter__inner">
+              <div class="filter__accordion">
+                <div class="filter__accordion-item accordion">
+                  <p class="filter__accordion-title">
+                    Теплоизоляция
+                  </p>
+                  <i class="filter__accordion-icon">
+                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.36603 13.5C7.98113 14.1667 7.01888 14.1667 6.63398 13.5L0.138786 2.25C-0.246114 1.58333 0.235009 0.749999 1.00481 0.749999L13.9952 0.75C14.765 0.75 15.2461 1.58333 14.8612 2.25L8.36603 13.5Z"
+                        fill="white" />
+                    </svg>
+                  </i>
+                </div>
+                <div class="accordion-content">
+                  <div class="filter__accordion-hidden">
+                    <a class="filter__accordion-link" href="#">
+                      Минеральная вата
+                    </a>
+                    <a class="filter__accordion-link" href="#">
+                      Экструдированный пенополистирол
+                    </a>
+                    <a class="filter__accordion-link" href="#">
+                      Пенопласт
+                    </a>
+                    <a class="filter__accordion-link" href="#">
+                      Вспененный полиэтилен
+                    </a>
+                  </div>
+                </div>
+                <div class="filter__accordion-item accordion">
+                  <p class="filter__accordion-title">
+                    Техническая изоляция
+                  </p>
+                  <i class="filter__accordion-icon">
+                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.36603 13.5C7.98113 14.1667 7.01888 14.1667 6.63398 13.5L0.138786 2.25C-0.246114 1.58333 0.235009 0.749999 1.00481 0.749999L13.9952 0.75C14.765 0.75 15.2461 1.58333 14.8612 2.25L8.36603 13.5Z"
+                        fill="white" />
+                    </svg>
+                  </i>
+                </div>
+                <div class="accordion-content">
+                  <div class="filter__accordion-hidden">
+                    <a class="filter__accordion-link" href="#">
+                      Минеральная вата
+                    </a>
+                    <a class="filter__accordion-link" href="#">
+                      Экструдированный пенополистирол
+                    </a>
+                    <a class="filter__accordion-link" href="#">
+                      Пенопласт
+                    </a>
+                    <a class="filter__accordion-link" href="#">
+                      Вспененный полиэтилен
+                    </a>
+                  </div>
+                </div>
+                <div class="filter__accordion-item accordion">
+                  <p class="filter__accordion-title">
+                    Гидроизоляция
+                  </p>
+                  <i class="filter__accordion-icon">
+                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.36603 13.5C7.98113 14.1667 7.01888 14.1667 6.63398 13.5L0.138786 2.25C-0.246114 1.58333 0.235009 0.749999 1.00481 0.749999L13.9952 0.75C14.765 0.75 15.2461 1.58333 14.8612 2.25L8.36603 13.5Z"
+                        fill="white" />
+                    </svg>
+                  </i>
+                </div>
+                <div class="accordion-content">
+                  <div class="filter__accordion-hidden">
+                    <a class="filter__accordion-link" href="#">
+                      Минеральная вата
+                    </a>
+                    <a class="filter__accordion-link" href="#">
+                      Экструдированный пенополистирол
+                    </a>
+                    <a class="filter__accordion-link" href="#">
+                      Пенопласт
+                    </a>
+                    <a class="filter__accordion-link" href="#">
+                      Вспененный полиэтилен
+                    </a>
+                  </div>
+                </div>
+                <div class="filter__accordion-item accordion">
+                  <p class="filter__accordion-title">
+                    Комплектующие
+                  </p>
+                  <i class="filter__accordion-icon">
+                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.36603 13.5C7.98113 14.1667 7.01888 14.1667 6.63398 13.5L0.138786 2.25C-0.246114 1.58333 0.235009 0.749999 1.00481 0.749999L13.9952 0.75C14.765 0.75 15.2461 1.58333 14.8612 2.25L8.36603 13.5Z"
+                        fill="white" />
+                    </svg>
+                  </i>
+                </div>
+                <div class="accordion-content">
+                  <div class="filter__accordion-hidden">
+                    <a class="filter__accordion-link" href="#">
+                      Минеральная вата
+                    </a>
+                    <a class="filter__accordion-link" href="#">
+                      Экструдированный пенополистирол
+                    </a>
+                    <a class="filter__accordion-link" href="#">
+                      Пенопласт
+                    </a>
+                    <a class="filter__accordion-link" href="#">
+                      Вспененный полиэтилен
+                    </a>
+                  </div>
+                </div>
+                <div class="filter__accordion-item accordion">
+                  <p class="filter__accordion-title">
+                    Смеси
+                  </p>
+                  <i class="filter__accordion-icon">
+                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.36603 13.5C7.98113 14.1667 7.01888 14.1667 6.63398 13.5L0.138786 2.25C-0.246114 1.58333 0.235009 0.749999 1.00481 0.749999L13.9952 0.75C14.765 0.75 15.2461 1.58333 14.8612 2.25L8.36603 13.5Z"
+                        fill="white" />
+                    </svg>
+                  </i>
+                </div>
+                <div class="accordion-content">
+                  <div class="filter__accordion-hidden">
+                    <a class="filter__accordion-link" href="#">
+                      Минеральная вата
+                    </a>
+                    <a class="filter__accordion-link" href="#">
+                      Экструдированный пенополистирол
+                    </a>
+                    <a class="filter__accordion-link" href="#">
+                      Пенопласт
+                    </a>
+                    <a class="filter__accordion-link" href="#">
+                      Вспененный полиэтилен
+                    </a>
+                  </div>
+                </div>
+                <div class="filter__accordion-item accordion">
+                  <p class="filter__accordion-title">
+                    Общестрой
+                  </p>
+                  <i class="filter__accordion-icon">
+                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.36603 13.5C7.98113 14.1667 7.01888 14.1667 6.63398 13.5L0.138786 2.25C-0.246114 1.58333 0.235009 0.749999 1.00481 0.749999L13.9952 0.75C14.765 0.75 15.2461 1.58333 14.8612 2.25L8.36603 13.5Z"
+                        fill="white" />
+                    </svg>
+                  </i>
+                </div>
+                <div class="accordion-content">
+                  <div class="filter__accordion-hidden">
+                    <a class="filter__accordion-link" href="#">
+                      Минеральная вата
+                    </a>
+                    <a class="filter__accordion-link" href="#">
+                      Экструдированный пенополистирол
+                    </a>
+                    <a class="filter__accordion-link" href="#">
+                      Пенопласт
+                    </a>
+                    <a class="filter__accordion-link" href="#">
+                      Вспененный полиэтилен
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="popular">
+                <div class="popular__sort">
+                  <p class="popular__sort-text popular__sort-text--cheap">Сначала
+                    дешевле</p>
+                  <p class="popular__sort-text popular__sort-text--expensive">Сначала дороже</p>
+                  <p class="popular__sort-text popular__sort-text--promotion popular__sort-text--active ">Акция</p>
+                  <search class="search">
+                    <form class="search__form" action="">
+                      <input class="search__input" type="text">
+                      <button class="search__btn">
+                        Найти
+                      </button>
+                    </form>
+                  </search>
+                </div>
+                <div class="popular__inner popular__inner--three">
+                  <a class="popular__card" href="#">
+                    <div class="popular__card-top">
+                      <p class="popular__card-text popular__card-text--promotion">Акция</p>
+                      <p class="popular__card-text popular__card-text--hit">Хит продаж</p>
+                      <p class="popular__card-text popular__card-text--recommended">Рекомендуем</p>
+                    </div>
+                    <div class="popular__card-block">
+                      <img class="popular__card-img" src="../assets/images/popular/1.jpg" alt="">
+                    </div>
+                    <p class="popular__card-title">
+                      XPS ТЕХНОНИКОЛЬ CARBON ECO SP (шведская плита)
+                    </p>
+                    <p class="popular__card-price">
+                      2 730 ₽/м3
+                    </p>
+                  </a>
+                  <a class="popular__card" href="#">
+                    <div class="popular__card-top">
+                      <p class="popular__card-text popular__card-text--promotion">Акция</p>
+                    </div>
+                    <div class="popular__card-block">
+                      <img class="popular__card-img" src="../assets/images/popular/2.jpg" alt="">
+                    </div>
+                    <p class="popular__card-title">
+                      XPS ТЕХНОНИКОЛЬ CARBON ECO SP
+                    </p>
+                    <p class="popular__card-price">
+                      2 541 ₽/м3
+                    </p>
+                  </a>
+                  <a class="popular__card" href="#">
+                    <div class="popular__card-top">
+                      <p class="popular__card-text popular__card-text--hit">Хит продаж</p>
+                    </div>
+                    <div class="popular__card-block">
+                      <img class="popular__card-img" src="../assets/images/popular/3.jpg" alt="">
+                    </div>
+                    <p class="popular__card-title">
+                      XPS ТЕХНОНИКОЛЬ
+                    </p>
+                    <p class="popular__card-price">
+                      2 681 ₽/м3
+                    </p>
+                  </a>
+                  <a class="popular__card" href="#">
+                    <div class="popular__card-top">
+                      <p class="popular__card-text popular__card-text--recommended">Рекомендуем</p>
+                    </div>
+                    <div class="popular__card-block">
+                      <img class="popular__card-img" src="../assets/images/popular/4.jpg" alt="">
+                    </div>
+                    <p class="popular__card-title">
+                      XPS ТЕХНОНИКОЛЬ CARBON ECO SP (шведская плита)
+                    </p>
+                    <p class="popular__card-price">
+                      2 132 ₽/м3
+                    </p>
+                  </a>
+                  <a class="popular__card" href="#">
+                    <div class="popular__card-top">
+                      <p class="popular__card-text popular__card-text--promotion">Акция</p>
+                      <p class="popular__card-text popular__card-text--hit">Хит продаж</p>
+                      <p class="popular__card-text popular__card-text--recommended">Рекомендуем</p>
+                    </div>
+                    <div class="popular__card-block">
+                      <img class="popular__card-img" src="../assets/images/popular/1.jpg" alt="">
+                    </div>
+                    <p class="popular__card-title">
+                      XPS ТЕХНОНИКОЛЬ CARBON ECO SP (шведская плита)
+                    </p>
+                    <p class="popular__card-price">
+                      2 984 ₽/м3
+                    </p>
+                  </a>
+                  <a class="popular__card" href="#">
+                    <div class="popular__card-top">
+                      <p class="popular__card-text popular__card-text--promotion">Акция</p>
+                    </div>
+                    <div class="popular__card-block">
+                      <img class="popular__card-img" src="../assets/images/popular/2.jpg" alt="">
+                    </div>
+                    <p class="popular__card-title">
+                      XPS ТЕХНОНИКОЛЬ CARBON ECO SP
+                    </p>
+                    <p class="popular__card-price">
+                      2 248 ₽/м3
+                    </p>
+                  </a>
+                  <a class="popular__card" href="#">
+                    <div class="popular__card-top">
+                      <p class="popular__card-text popular__card-text--hit">Хит продаж</p>
+                    </div>
+                    <div class="popular__card-block">
+                      <img class="popular__card-img" src="../assets/images/popular/3.jpg" alt="">
+                    </div>
+                    <p class="popular__card-title">
+                      XPS ТЕХНОНИКОЛЬ
+                    </p>
+                    <p class="popular__card-price">
+                      2 864 ₽/м3
+                    </p>
+                  </a>
+                  <a class="popular__card" href="#">
+                    <div class="popular__card-top">
+                      <p class="popular__card-text popular__card-text--recommended">Рекомендуем</p>
+                    </div>
+                    <div class="popular__card-block">
+                      <img class="popular__card-img" src="../assets/images/popular/4.jpg" alt="">
+                    </div>
+                    <p class="popular__card-title">
+                      XPS ТЕХНОНИКОЛЬ CARBON ECO SP (шведская плита)
+                    </p>
+                    <p class="popular__card-price">
+                      2 186 ₽/м3
+                    </p>
+                  </a>
+                  <a class="popular__card" href="#">
+                    <div class="popular__card-top">
+                      <p class="popular__card-text popular__card-text--promotion">Акция</p>
+                      <p class="popular__card-text popular__card-text--hit">Хит продаж</p>
+                      <p class="popular__card-text popular__card-text--recommended">Рекомендуем</p>
+                    </div>
+                    <div class="popular__card-block">
+                      <img class="popular__card-img" src="../assets/images/popular/1.jpg" alt="">
+                    </div>
+                    <p class="popular__card-title">
+                      XPS ТЕХНОНИКОЛЬ CARBON ECO SP (шведская плита)
+                    </p>
+                    <p class="popular__card-price">
+                      2 871 ₽/м3
+                    </p>
+                  </a>
+                </div>
+                <div class="pagination">
+                  <ul class="pagination__list">
+                    <li class="pagination__list-item">
+                      <a class="pagination__list-link pagination__list-link--active" href="#">
+                        <span>1</span>
+                      </a>
+                    </li>
+                    <li class="pagination__list-item">
+                      <a class="pagination__list-link" href="#">
+                        <span> 2</span>
+                      </a>
+                    </li>
+                    <li class="pagination__list-item">
+                      <a class="pagination__list-link" href="#">
+                        <span>3</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__item">
+            <a class="footer__item-link" href="#">О компании</a>
+            <a class="footer__item-link" href="#">Акции</a>
+            <a class="footer__item-link" href="#">Новости</a>
+            <a class="footer__item-link" href="#">Контакты</a>
+          </div>
+          <div class="socials">
+            <a class="socials__link" href="#">
+              <i class="socials__icon">
+                <svg width="19" height="28" viewBox="0 0 19 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.49976 0C5.75502 0 2.70966 3.04536 2.70966 6.7901C2.70966 10.5348 5.75502 13.5802 9.49976 13.5802C13.2445 13.5802 16.2899 10.5348 16.2899 6.7901C16.2899 3.04536 13.2445 0 9.49976 0ZM9.49976 10.1852C7.62739 10.1852 6.10471 8.66247 6.10471 6.7901C6.10471 4.91773 7.62739 3.39505 9.49976 3.39505C11.3721 3.39505 12.8948 4.91773 12.8948 6.7901C12.8948 8.66247 11.3721 10.1852 9.49976 10.1852Z"
+                    fill="white" />
+                  <path
+                    d="M18.5035 13.3918C17.8397 12.7281 16.7669 12.7281 16.1032 13.3918C12.4637 17.0313 6.53929 17.0313 2.8981 13.3918C2.23437 12.7281 1.16153 12.7281 0.497799 13.3918C-0.165933 14.0556 -0.165933 15.1284 0.497799 15.7938C2.60952 17.9056 5.28652 19.1091 8.0467 19.4232L3.20705 24.2628C2.54332 24.9265 2.54332 25.9994 3.20705 26.6631C3.87078 27.3268 4.94362 27.3268 5.60735 26.6631L9.49978 22.7707L13.3922 26.6631C13.7232 26.9941 14.1578 27.1605 14.5924 27.1605C15.0269 27.1605 15.4615 26.9941 15.7925 26.6631C16.4562 25.9994 16.4562 24.9265 15.7925 24.2628L10.9529 19.4232C13.713 19.1091 16.39 17.9056 18.5018 15.7938C19.1655 15.1301 19.1655 14.0556 18.5035 13.3918Z"
+                    fill="white" />
+                </svg>
+              </i>
+            </a>
+            <a class="socials__link" href="#">
+              <i class="socials__icon">
+                <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M24.3151 12.5955C24.2855 12.5317 24.2579 12.4788 24.2323 12.4364C23.8082 11.6726 22.9977 10.735 21.8014 9.62343L21.7761 9.59798L21.7634 9.5855L21.7506 9.5727H21.7378C21.1948 9.05511 20.851 8.70709 20.707 8.52891C20.4436 8.18949 20.3845 7.84593 20.5285 7.49782C20.6302 7.23481 21.0124 6.67937 21.674 5.83074C22.022 5.38099 22.2976 5.02053 22.5012 4.74897C23.9692 2.79734 24.6056 1.55023 24.4104 1.00713L24.3345 0.88022C24.2836 0.803814 24.1521 0.733915 23.9402 0.670168C23.7278 0.606556 23.4564 0.596036 23.1254 0.638429L19.46 0.663749C19.4007 0.642709 19.3159 0.64467 19.2054 0.670168C19.0951 0.695667 19.0399 0.708461 19.0399 0.708461L18.9761 0.740335L18.9255 0.778627C18.883 0.803947 18.8363 0.848481 18.7854 0.912138C18.7347 0.975573 18.6923 1.05002 18.6584 1.13485C18.2594 2.16152 17.8057 3.11607 17.2964 3.99845C16.9825 4.5246 16.6941 4.98059 16.4308 5.36668C16.1679 5.75264 15.9472 6.037 15.7692 6.21928C15.5909 6.40174 15.43 6.54791 15.2854 6.65833C15.1411 6.76879 15.031 6.81547 14.9547 6.79839C14.8783 6.78132 14.8063 6.76438 14.7381 6.74744C14.6194 6.67103 14.5239 6.56712 14.4519 6.43562C14.3796 6.30411 14.3309 6.13859 14.3055 5.9392C14.2802 5.73967 14.2652 5.56804 14.2609 5.42374C14.2569 5.27962 14.2588 5.07577 14.2674 4.81276C14.2762 4.54961 14.2802 4.37157 14.2802 4.27822C14.2802 3.95574 14.2864 3.60576 14.2991 3.22819C14.3119 2.85061 14.3223 2.55145 14.331 2.33105C14.3396 2.11044 14.3436 1.87703 14.3436 1.63096C14.3436 1.38489 14.3287 1.19191 14.2991 1.05185C14.2698 0.911959 14.2249 0.776175 14.1658 0.644536C14.1063 0.513031 14.0192 0.411304 13.9049 0.339088C13.7903 0.266961 13.648 0.209723 13.4785 0.167195C13.0288 0.0654237 12.4561 0.0103699 11.7602 0.00181093C10.1821 -0.0151287 9.16804 0.0867764 8.71834 0.307393C8.54016 0.400605 8.37892 0.527965 8.23476 0.689069C8.08199 0.875807 8.06068 0.977712 8.17097 0.994474C8.68014 1.07075 9.04059 1.2532 9.25274 1.54167L9.32919 1.69453C9.38866 1.80481 9.44804 2.00006 9.50746 2.28001C9.56679 2.55996 9.60509 2.86965 9.62194 3.20888C9.66429 3.82839 9.66429 4.35869 9.62194 4.79983C9.57945 5.24115 9.53933 5.58471 9.50104 5.83078C9.46275 6.07685 9.40551 6.27625 9.32919 6.42893C9.25274 6.58166 9.20188 6.675 9.17638 6.70888C9.15093 6.74276 9.12971 6.76411 9.11286 6.77249C9.00257 6.81475 8.88787 6.83628 8.76916 6.83628C8.65027 6.83628 8.5061 6.77682 8.33644 6.65797C8.16682 6.53913 7.99078 6.37588 7.80833 6.16797C7.62587 5.96002 7.4201 5.66941 7.19092 5.29612C6.96192 4.92282 6.72432 4.48163 6.47825 3.97255L6.27466 3.60336C6.14739 3.36584 5.97354 3.02001 5.75292 2.56616C5.53217 2.11213 5.33706 1.67295 5.16744 1.2487C5.09963 1.07052 4.99777 0.934873 4.86203 0.841527L4.79833 0.803234C4.75598 0.769355 4.688 0.73338 4.59474 0.695043C4.50135 0.65675 4.4039 0.62929 4.302 0.612395L0.814707 0.637716C0.458351 0.637716 0.21656 0.718446 0.0892451 0.879685L0.0382925 0.955958C0.0128385 0.998441 0 1.06629 0 1.15968C0 1.25303 0.025454 1.36759 0.0764067 1.50324C0.585487 2.69972 1.1391 3.85362 1.73725 4.96512C2.3354 6.07663 2.85518 6.97198 3.29627 7.65037C3.73746 8.32925 4.18717 8.96997 4.64538 9.57221C5.1036 10.1747 5.40691 10.5608 5.55531 10.7304C5.70389 10.9003 5.82059 11.0274 5.90542 11.1122L6.22367 11.4176C6.4273 11.6213 6.72633 11.8652 7.12089 12.1494C7.51554 12.4338 7.95245 12.7137 8.43184 12.9897C8.91132 13.2652 9.46912 13.4901 10.1056 13.664C10.7419 13.8381 11.3613 13.9079 11.9638 13.8742H13.4274C13.7243 13.8486 13.9492 13.7552 14.102 13.5941L14.1527 13.5303C14.1867 13.4797 14.2186 13.401 14.248 13.2951C14.2778 13.1891 14.2926 13.0723 14.2926 12.9452C14.2839 12.5804 14.3117 12.2516 14.3752 11.9589C14.4386 11.6663 14.5109 11.4457 14.5918 11.2971C14.6726 11.1487 14.7638 11.0234 14.8653 10.9219C14.967 10.8201 15.0395 10.7584 15.082 10.7372C15.1243 10.7159 15.158 10.7014 15.1835 10.6927C15.3871 10.6248 15.6268 10.6905 15.9028 10.8901C16.1786 11.0895 16.4373 11.3357 16.6793 11.6283C16.9211 11.9212 17.2117 12.2498 17.551 12.6146C17.8905 12.9795 18.1874 13.2507 18.4419 13.4292L18.6963 13.5819C18.8663 13.6838 19.0869 13.7772 19.3584 13.862C19.6295 13.9468 19.867 13.968 20.071 13.9256L23.329 13.8748C23.6513 13.8748 23.902 13.8214 24.0799 13.7156C24.2581 13.6095 24.364 13.4927 24.3982 13.3656C24.4322 13.2384 24.434 13.094 24.4046 12.9326C24.3744 12.7717 24.3447 12.6591 24.3151 12.5955Z"
+                    fill="white" />
+                </svg>
+              </i>
+            </a>
+          </div>
+          <div class="loca loca--white">
+            <i class="loca__icon">
+              <svg width="30" height="35" viewBox="0 0 30 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15 0.866669C9.00233 0.866669 4 5.698 4 11.8667C4 14.2135 4.7052 16.3061 6.0586 18.2671L14.1582 30.9057C14.5511 31.5201 15.4497 31.5189 15.8418 30.9057L23.9765 18.2241C25.3008 16.352 26 14.1538 26 11.8667C26 5.80127 21.0654 0.866669 15 0.866669ZM15 16.8667C12.2431 16.8667 10 14.6235 10 11.8667C10 9.1098 12.2431 6.86667 15 6.86667C17.7569 6.86667 20 9.1098 20 11.8667C20 14.6235 17.7569 16.8667 15 16.8667Z"
+                  fill="#1BAFE5" />
+                <path
+                  d="M22.8176 23.8463L17.7822 31.7188C16.4788 33.7509 13.5139 33.7443 12.2168 31.7207L7.1732 23.8484C2.7356 24.8744 0 26.7539 0 29C0 32.8975 7.72853 35 15 35C22.2715 35 30 32.8975 30 29C30 26.7523 27.2606 24.8718 22.8176 23.8463Z"
+                  fill="#1BAFE5" />
+              </svg>
+            </i>
+            <div class="loca__box">
+              <p class="loca__bold">
+                Адрес склада
+              </p>
+              <p class="loca__text">
+                г. Реутов, Фабричная, 6
+              </p>
+              <a class="loca__link" href="#">
+                 Схема проезда
+              </a>
+            </div>
+          </div>
+          <div class="contact contact--white">
+            <div class="contact__box">
+              <i class="contact__icon">
+                <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M24.2289 16.7341C22.9082 15.6867 21.6967 15.1776 20.5251 15.1776C18.8303 15.1776 17.61 16.2415 16.5052 17.3313C16.3782 17.4568 16.2243 17.5153 16.0212 17.5153C15.0902 17.5154 13.4524 16.3649 11.1533 14.0958C8.44849 11.4265 7.42585 9.72877 8.11349 9.04992C9.97761 7.211 10.5596 5.36753 7.70547 1.86481C6.68373 0.609906 5.68407 0 4.64939 0C3.25401 0 2.19327 1.10069 1.25741 2.0719C1.09561 2.23978 0.942773 2.39837 0.79292 2.54625C-0.264834 3.58996 -0.264291 5.86653 0.794458 8.63638C1.9561 11.6755 4.24969 14.9815 7.25283 17.9454C9.57529 20.2371 12.1023 22.0891 14.5607 23.3326C16.7071 24.4183 18.789 25 20.423 25C20.4232 25 20.4234 25 20.4237 25C21.4462 25 22.2768 24.7799 22.8254 24.3322C23.9397 23.4231 26.0138 21.7391 25.9999 19.7388C25.9923 18.666 25.3966 17.6606 24.2289 16.7341Z"
+                    fill="#1BAFE5" />
+                </svg>
+              </i>
+              <a class="contact__phone" href="tel:+74951034068">
+                +7 (495) 103-40-68
+              </a>
+            </div>
+            <a class="contact__link" href="mailto:ak@luftmarket.ru">ak@luftmarket.ru</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+
+  <div class="form" id="form">
+    <div class="form__wrapper">
+      <form class="form__inner" action="" method="post">
+        <p class="form__title">
+          заказать товар
+        </p>
+        <div class="form__box">
+          <div class="form__block">
+            <label class="form__subtitle" for="">Ваше имя<span>*</span></label>
+            <input class="input" type="text" name="name" required>
+          </div>
+          <div class="form__block">
+            <label class="form__subtitle" for="">Телефон<span>*</span></label>
+            <input class="input" type="text" name="phone" required>
+          </div>
+          <div class="form__block">
+            <label class="form__subtitle" for="">E-mail<span>*</span></label>
+            <input class="input" type="email" name="email" required>
+          </div>
+          <div class="form__block">
+            <label class="form__subtitle" for="">Товар<span>*</span></label>
+            <input class="input" type="text" name="product" placeholder="HOTROCK SMART" required>
+          </div>
+          <div class="form__block form__block--alt">
+            <label class="form__subtitle" for="">Комментарий<span>*</span></label>
+            <textarea class="textarea" name="website" rows="3" name="comment" required></textarea>
+          </div>
+        </div>
+        <label class="form__label label">
+          <input class="label__input check" id="form-input-checkbox" type="checkbox">
+          <span class="label__inputCustom"></span>
+          <div class="label__box">
+            Я согласен(на) с <a href="#">политикой обработки персональных данных </a>
+          </div>
+        </label>
+        <button class="btn btn--center">
+          Отправить
+        </button>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="../scripts/scripts.js"></script>
+</body>
+
+</html>

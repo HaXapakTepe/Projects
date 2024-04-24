@@ -1,0 +1,297 @@
+.popular {
+  &__wrapper {
+    margin-top: 65px;
+    margin-bottom: 30px;
+    overflow: hidden;
+
+    @media screen and (max-width: 1600px) and (min-width: 993px) {
+      margin-top: calc(32px + (65 - 32) * ((100vw - 992px) / (1600 - 992)));
+      margin-bottom: calc(0px + (30 - 0) * ((100vw - 992px) / (1600 - 992)));
+    }
+  }
+
+  &__type {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+
+    @media screen and (max-width: 1600px) and (min-width: 993px) {
+      margin-bottom: calc(20px + (45 - 20) * ((100vw - 992px) / (1600 - 992)));
+    }
+
+    &-text {
+      font-weight: 700;
+      border-radius: 10px;
+      padding: 12px 32px;
+      color: #000;
+      transition: background-color 0.23s ease-in-out,
+        color 0.23s ease-in-out;
+      cursor: pointer;
+
+      @media screen and (max-width: 1600px) and (min-width: 993px) {
+        padding-top: calc(5px + (12 - 5) * ((100vw - 992px) / (1600 - 992)));
+        padding-bottom: calc(5px + (12 - 5) * ((100vw - 992px) / (1600 - 992)));
+        padding-right: calc(19px + (32 - 19) * ((100vw - 992px) / (1600 - 992)));
+        padding-left: calc(19px + (32 - 19) * ((100vw - 992px) / (1600 - 992)));
+        font-size: calc(14px + (18 - 14) * ((100vw - 992px) / (1600 - 992)));
+      }
+
+      &--active {
+        background-color: #1BAFE5;
+        color: #fff;
+      }
+    }
+  }
+
+  &__sort {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 41px;
+
+    @media screen and (max-width: 1600px) and (min-width: 993px) {
+      margin-bottom: calc(20px + (41 - 20) * ((100vw - 992px) / (1600 - 992)));
+    }
+
+    &-text {
+      font-weight: 500;
+      border-radius: 10px;
+      padding: 10px 26px;
+      color: #000;
+      background-color: #F1F1F1;
+      transition: background-color 0.23s ease-in-out,
+        color 0.23s ease-in-out;
+      cursor: pointer;
+      font-size: 16px;
+
+      @media screen and (max-width: 1600px) and (min-width: 993px) {
+        padding-top: calc(5px + (10 - 5) * ((100vw - 992px) / (1600 - 992)));
+        padding-bottom: calc(5px + (10 - 5) * ((100vw - 992px) / (1600 - 992)));
+        padding-right: calc(19px + (26 - 19) * ((100vw - 992px) / (1600 - 992)));
+        padding-left: calc(19px + (26 - 19) * ((100vw - 992px) / (1600 - 992)));
+      }
+
+      &--active {
+        background-color: #1BAFE5;
+        color: #fff;
+      }
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 40px;
+
+    &--three {
+      .popular__card {
+        width: 31%;
+        flex: unset;
+      }
+    }
+  }
+
+  &__card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 23px 17px 50px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 51.4px 4px rgba(0, 0, 0, 0.1);
+    transition: order .23s ease-in-out;
+
+    &:hover {
+      .popular__card-img {
+        transform: scale(1.1);
+      }
+    }
+
+    &--active {
+      order: 1;
+    }
+
+    &-top {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 11px;
+      margin-bottom: 3px;
+      min-height: 64.5px;
+    }
+
+    &-text {
+      height: -webkit-fit-content;
+      height: -moz-fit-content;
+      height: fit-content;
+      padding: 5px 19px;
+      border-radius: 5px;
+      font-weight: 700;
+      font-size: 14px;
+      color: #fff;
+
+      &--promotion {
+        background-color: #1BAFE5;
+      }
+
+      &--hit {
+        background-color: #1B54E5;
+      }
+
+      &--recommended {
+        background-color: #E5941B;
+      }
+    }
+
+    &-block {
+      overflow: hidden;
+    }
+
+    &-img {
+      height: 221px;
+      margin-left: auto;
+      margin-right: auto;
+      -o-object-fit: contain;
+      object-fit: contain;
+      margin-bottom: 25px;
+      transition: transform .23s ease-in-out;
+    }
+
+    &-title {
+      max-width: 267px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 21px;
+      font-weight: 700;
+      font-size: 18px;
+      text-align: center;
+      color: #333;
+    }
+
+    &-price {
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+      margin-top: auto;
+      color: #333;
+    }
+  }
+
+  &__box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+
+    @media screen and (max-width: 1600px) and (min-width: 993px) {
+      margin-bottom: calc(20px + (40 - 20) * ((100vw - 992px) / (1600 - 992)));
+    }
+  }
+
+  &__swiper {
+    overflow: visible;
+    padding-bottom: 40px;
+
+    .swiper-slide {
+      height: auto;
+      opacity: 0;
+      transition: opacity 0.23s ease-in-out;
+      pointer-events: none;
+
+      &-active {
+        opacity: 1;
+        pointer-events: auto;
+
+        +.swiper-slide {
+          opacity: 1;
+          pointer-events: auto;
+
+          +.swiper-slide {
+            opacity: 1;
+            pointer-events: auto;
+          }
+        }
+      }
+    }
+
+    .popular__card {
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .popular {
+    &__sort {
+      justify-content: end;
+    }
+
+    &__inner {
+      &--three {
+        .popular__card {
+          width: 47%;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .popular {
+    &__card {
+      flex: unset;
+      width: 48%;
+    }
+
+    &__swiper {
+      .popular__card {
+        width: unset;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .popular {
+    &__wrapper {
+      margin-top: 32px;
+      margin-bottom: 0px;
+    }
+
+    &__type {
+      margin-bottom: 32px;
+
+      &-text {
+        padding: 5px 19px;
+        font-size: 14px;
+      }
+    }
+
+    &__card {
+      width: 47%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .popular {
+    &__inner {
+      &--three {
+        .popular__card {
+          width: 100%;
+        }
+      }
+    }
+
+    &__card {
+      width: 100%;
+    }
+  }
+}

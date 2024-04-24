@@ -1,0 +1,10 @@
+.map {
+  border-radius: 4px;
+  overflow: hidden;
+
+  &__item {
+    display: block;
+    border-radius: 4px;
+    @include fluid(height, 280px, 440px);
+  }
+}

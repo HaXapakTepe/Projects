@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icons/icomoon.eot');
+  src: url('../fonts/icons/icomoon.eot') format('embedded-opentype'),
+    url('../fonts/icons/icomoon.ttf') format('truetype'),
+    url('../fonts/icons/icomoon.woff') format('woff'),
+    url('../fonts/icons/icomoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-vk-logo .path1:before {
+  content: '\e900';
+  color: rgb(0, 119, 255);
+}
+.icon-vk-logo .path2:before {
+  content: '\e901';
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-ok-logo .path1:before {
+  content: '\e902';
+  color: rgb(255, 122, 0);
+}
+.icon-ok-logo .path2:before {
+  content: '\e903';
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-ok-logo .path3:before {
+  content: '\e904';
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-arrow-black .path1:before {
+  content: '\e905';
+  color: rgb(62, 53, 53);
+}
+.icon-arrow-black .path2:before {
+  content: '\e906';
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-arrow:before {
+  content: '\e907';
+}
+.icon-arrow-red .path1:before {
+  content: '\e90a';
+  color: rgb(233, 57, 1);
+}
+.icon-arrow-red .path2:before {
+  content: '\e90b';
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-ok:before {
+  content: '\e90c';
+}
+.icon-vk:before {
+  content: '\e90d';
+}
+.icon-tg:before {
+  content: '\e90e';
+}
+.icon-search:before {
+  content: '\e90f';
+  color: #fff;
+}
+.icon-phone:before {
+  content: '\e910';
+}

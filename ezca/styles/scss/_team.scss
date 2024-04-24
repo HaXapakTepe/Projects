@@ -1,0 +1,137 @@
+.team {
+  &__wrapper {
+    position: relative;
+    background-color: #131313;
+    @include fluid(margin-top, 108px, 216px);
+    @include fluid(padding-top, 56px, 149px);
+    @include fluid(padding-bottom, 60px, 85px);
+  }
+
+  &__title {
+    @include fluid(margin-bottom, 20px, 50px);
+  }
+
+  &__swiper {
+    &-slide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+
+    &-img {
+      @include fluid(width, 250px, 322px);
+      @include fluid(height, 250px, 322px);
+      @include fluid(margin-bottom, 20px, 25px);
+      margin-left: auto;
+      margin-right: auto;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+
+    &-name {
+      font-weight: 700;
+      @include fluid(margin-bottom, 15px, 20px);
+      text-transform: uppercase;
+      @include fluid(font-size, 25px, 35px);
+      text-align: center;
+    }
+
+    &-who {
+      font-weight: 700;
+      text-transform: uppercase;
+      @include fluid(font-size, 18px, 25px);
+      @include fluid(margin-bottom, 25px, 35px);
+      text-align: center;
+    }
+
+    &-text {
+      font-family: "Manrope";
+      @include fluid(margin-bottom, 66px, 103px);
+      @include fluid(font-size, 16px, 20px);
+      text-align: center;
+    }
+
+    &.swiper {
+      .swiper {
+        .swiper-slide {
+          opacity: 0;
+          transition: opacity 0.23s ease-in-out;
+
+          &.swiper-slide-active {
+            opacity: 1;
+          }
+        }
+
+        &-pagination {
+          position: relative;
+          bottom: 0;
+          top: unset;
+
+          &-bullet {
+            background-color: #86F9D7;
+            margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 12px);
+            width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 22px));
+            height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 22px));
+            opacity: var(--swiper-pagination-bullet-inactive-opacity, 0);
+
+            &-active {
+              opacity: unset;
+
+              &-prev,
+              &-next {
+                opacity: var(--swiper-pagination-bullet-inactive-opacity, .6);
+                transform: scale(.55);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .team {
+    &__wrapper {
+      overflow: hidden;
+    }
+
+    &__swiper {
+      overflow: visible;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .team {
+    &__wrapper {
+      background-color: #000;
+    }
+
+    &__swiper {
+
+      &-name {
+        font-size: 20px;
+      }
+
+      &-who,
+      &-text {
+        font-size: 12px;
+      }
+
+      &.swiper {
+        .swiper {
+          &-pagination {
+            &-bullet {
+              margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 5px);
+              width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
+              height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
+            }
+          }
+        }
+      }
+    }
+  }
+}

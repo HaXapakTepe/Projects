@@ -1,0 +1,24 @@
+.social {
+  display: flex;
+  gap: 15px;
+
+  &__icon {
+    svg {
+      path {
+        transition: fill .23s ease-in-out;
+      }
+    }
+
+    &:hover {
+      svg {
+        path {
+
+          &:not(:last-child),
+          &:first-child {
+            fill: #E15900;
+          }
+        }
+      }
+    }
+  }
+}

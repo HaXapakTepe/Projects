@@ -1,0 +1,45 @@
+.icons {
+  display: flex;
+  align-items: center;
+  @include fluid(gap, 10px, 28px);
+
+  &__box {
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__num {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -2px;
+    right: -1px;
+    color: #F5F5F5;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1;
+    z-index: 1;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -52%);
+      width: 20px;
+      height: 20px;
+      background-color: #D1B4A3;
+      border-radius: 50%;
+      z-index: -1;
+    }
+  }
+
+  &__icon {
+    svg {
+      width: 26px;
+      height: 26px;
+    }
+  }
+}

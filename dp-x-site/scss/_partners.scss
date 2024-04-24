@@ -1,0 +1,42 @@
+.partners {
+  margin-top: 30px;
+  @include fluid(margin-bottom, 30px, 130px);
+
+  &__title {
+    @include fluid(margin-bottom, 25px, 50px);
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    @include fluid(gap, 20px, 40px);
+  }
+
+  &__box {
+    @include fluid(padding-top, 20px, 35px);
+    @include fluid(padding-bottom, 20px, 35px);
+  }
+
+  &__img {
+    object-fit: contain;
+    height: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .partners {
+    &__title {
+      text-align: center;
+    }
+
+    &__inner {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__box {
+      @include fluid(padding-top, 20px, 35px);
+      @include fluid(padding-bottom, 20px, 35px);
+    }
+  }
+}

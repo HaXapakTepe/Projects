@@ -1,0 +1,199 @@
+.footer {
+  &__wrapper {
+    border-radius: 20px 20px 0px 0px;
+    background: #E20072;
+    @include fluid(padding-top, 60px, 40px);
+    @include fluid(padding-left, 90px, 100px);
+    @include fluid(padding-right, 90px, 100px);
+    padding-bottom: 40px;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr .8fr;
+    @include fluid(column-gap, 30px, 50px);
+    @include fluid(margin-bottom, 50px, 70px);
+  }
+
+  &__item {
+    &-text {
+      color: #FFF;
+      @include fluid(font-size, 16px, 20px);
+      font-weight: 700;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #fff;
+      @include fluid(margin-bottom, 25px, 30px);
+    }
+
+    &-link {
+      position: relative;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      color: #FFF;
+      @include fluid(font-size, 16px, 20px);
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #fff;
+        border-radius: 25px;
+        transition: .23s ease-in-out;
+      }
+
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+
+    &-grid {
+      display: grid;
+      grid-template-columns: .7fr 1fr;
+      @include fluid(column-gap, 10px, 20px);
+      @include fluid(row-gap, 15px, 20px);
+    }
+
+    &-box {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      @include fluid(gap, 30px, 50px);
+      @include fluid(margin-right, 18px, 44px);
+    }
+
+    &-phone {
+      color: #F9F9F9;
+      @include fluid(font-size, 22px, 24px);
+    }
+  }
+
+  &__form {
+    position: relative;
+    display: grid;
+    grid-template-columns: .67fr .5fr;
+    align-items: center;
+    @include fluid(gap, 15px, 10px);
+    @include fluid(margin-bottom, 20px, 40px);
+
+    &-input {
+      @include fluid(padding-top, 11px, 14px);
+      @include fluid(padding-bottom, 12px, 15px);
+      @include fluid(padding-left, 10px, 20px);
+      @include fluid(padding-right, 10px, 20px);
+      border-radius: 5px;
+      background: #F9F9F9;
+
+      &.input--invalid {
+        +.footer__form-error {
+          display: initial;
+        }
+      }
+    }
+
+    &-error {
+      display: none;
+      position: absolute;
+      bottom: -25px;
+      left: 5px;
+      color: #fff;
+      font-size: 16px;
+    }
+
+    .btn {
+      width: 100%;
+      max-width: 200px;
+      height: 100%;
+    }
+  }
+
+  &__copy {
+    @include fluid(padding-top, 10px, 20px);
+    border-top: 1px solid #fff;
+    color: #F9F9F9;
+    @include fluid(font-size, 12px, 16px);
+  }
+}
+
+.social {
+  display: flex;
+  @include fluid(gap, 10px, 15px);
+
+  &__icon {
+    @include fluid(width, 30px, 42px);
+    @include fluid(height, 30px, 42px);
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer {
+    &__inner {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    &__item {
+      &-phone {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    background-color: #E20072;
+
+    &__wrapper {
+      padding-top: 40px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &__item {
+
+      &-link {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      &-link,
+      &-text {
+        text-align: center;
+      }
+
+      &-grid {
+        grid-template-columns: 1fr;
+      }
+
+      &-box {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    &__copy {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 389px) {
+  .footer {
+    &__form {
+      grid-template-columns: 1fr;
+      justify-items: center;
+
+      &-input {
+        width: 100%;
+      }
+    }
+  }
+}

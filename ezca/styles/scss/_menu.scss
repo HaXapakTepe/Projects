@@ -1,0 +1,258 @@
+.menu {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__item {
+    position: relative;
+
+    &:hover {
+      >.dropdown {
+        opacity: 1;
+        z-index: 5;
+        visibility: visible;
+      }
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    @include fluid(font-size, 20px, 25px);
+    color: #fff;
+    transition: color .23s ease-in-out;
+
+    &:hover {
+      color: #C4FF02;
+    }
+
+    &--bold {
+      font-weight: 800;
+      color: #C4FF02;
+    }
+  }
+}
+
+.dropdown {
+  position: absolute;
+  top: 110%;
+  left: -23px;
+  min-width: 218px;
+  display: flex;
+  flex-direction: column;
+  @include fluid(gap, 20px, 35px);
+  padding: 18px 0;
+  border-radius: 20px;
+  background-color: #131313;
+  opacity: 0;
+  z-index: -1;
+  visibility: hidden;
+  transition: opacity .23s ease-in-out, visibility .23s ease-in-out, z-index .23s ease-in-out;
+
+  &__item {
+    position: relative;
+
+    .dropdown {
+      top: -15px;
+      left: 100%;
+      min-width: unset;
+      opacity: 0;
+      z-index: -1;
+      @include fluid(gap, 24px, 40px);
+      visibility: hidden;
+      transition: opacity .23s ease-in-out,
+        visibility .23s ease-in-out,
+        z-index .23s ease-in-out;
+
+      &__item {
+        .dropdown {
+          &__link {
+            font-weight: 400;
+            display: flex;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    &:hover {
+      >.dropdown {
+        opacity: 1;
+        z-index: 5;
+        visibility: visible;
+      }
+
+      .dropdown__link {
+        color: #C4FF02;
+      }
+
+      .dropdown__icon {
+        svg {
+          path {
+            fill: #C4FF02;
+          }
+        }
+      }
+
+      >.accordion-content {
+        .dropdown {
+          opacity: 1;
+          z-index: 5;
+          visibility: visible;
+
+          &__link {
+            color: #fff;
+
+            &:hover {
+              color: #C4FF02;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  &__link {
+    font-size: 20px;
+    white-space: nowrap;
+    color: #fff;
+    transition: color .23s ease-in-out;
+    padding: 0 23px;
+  }
+
+  &__icon {
+    svg {
+      transition: transform .23s ease-in-out;
+
+      path {
+        transition: stroke .23s ease-in-out, fill .23s ease-in-out;
+      }
+    }
+
+    &.accordion--active {
+      svg {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .menu {
+    position: fixed;
+    top: -32px;
+    left: -1px;
+    width: 50%;
+    height: 100dvh;
+    transform: translateX(-200%);
+    flex-direction: column;
+    padding: 20px 20px 20px 20px;
+    background-color: #222;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    flex-shrink: unset;
+    transition: transform .23s ease-in-out, opacity .23s ease-in-out, visibility .23s ease-in-out, z-index .23s ease-in-out;
+    overflow-y: auto;
+
+    &__list {
+      flex-direction: column;
+    }
+
+    &--active {
+      opacity: 1;
+      visibility: visible;
+      z-index: 3;
+      transform: translateX(0%);
+      transition: transform .23s ease-in-out, opacity .23s ease-in-out,
+        visibility .23s ease-in-out,
+        z-index .23s ease-in-out;
+      justify-content: unset;
+    }
+
+    &__item {
+      width: 100%;
+    }
+
+    &__link {
+      width: 100%;
+
+      &:has(+.dropdown) {
+        margin-bottom: 24px;
+      }
+
+      &--accordion {
+        +.dropdown {
+          overflow: hidden;
+          max-height: 0;
+          transition: max-height 0.23s ease-in-out;
+        }
+      }
+    }
+  }
+
+  .dropdown {
+    position: static;
+    z-index: 1;
+    opacity: 1;
+    visibility: visible;
+    padding: 0;
+    gap: 0;
+    background-color: transparent;
+    min-width: unset;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      .dropdown {
+        z-index: 1;
+        opacity: 1;
+        visibility: visible;
+        gap: 0;
+
+        &__item {
+          margin-left: 23px;
+          margin-bottom: 24px;
+        }
+
+        &__link {
+          padding-left: 23px;
+        }
+      }
+    }
+
+    &__link {
+      width: 90%;
+      padding-left: 23px;
+      padding-right: 0;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .menu {
+    width: 100.2%;
+
+    &__list {
+      margin-top: 60px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .menu {
+    top: -15px;
+  }
+}

@@ -1,0 +1,229 @@
+.log {
+  overflow-x: hidden;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    @include fluid(margin-bottom, 10px, 16px);
+
+    &-title {
+      @include fluid(margin-bottom, 15px, 30px);
+    }
+
+    .link {
+      @include fluid(margin-right, 20px, 65px);
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include fluid(gap, 105px, 210px);
+    @include fluid(row-gap, 25px, 50px);
+  }
+
+  &__slide {
+    position: relative;
+    flex-direction: column;
+    @include fluid(padding-top, 20px, 39px);
+    @include fluid(padding-left, 25px, 50px);
+    @include fluid(padding-right, 25px, 50px);
+    @include fluid(padding-bottom, 80px, 118px);
+    border-radius: 14px;
+    height: auto;
+    transition: opacity .38s ease-in-out;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 50%;
+      border-radius: 14px;
+      background: #17171D;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    &--last {
+      display: none;
+
+      &.log__slide {
+        @include fluid(padding-left, 15px, 30px);
+        @include fluid(padding-right, 15px, 30px);
+        @include fluid(padding-top, 30px, 60px);
+        @include fluid(padding-bottom, 30px, 60px);
+
+        &::after {
+          width: 100%;
+        }
+
+        .log__slide-title {
+          font-size: 24px;
+          max-width: 275px;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+          margin-bottom: 40px;
+        }
+
+        .link {
+          padding-top: 36px;
+          padding-bottom: 36px;
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+
+    &-date {
+      display: block;
+      color: #898989;
+      @include fluid(font-size, 16px, 19px);
+      letter-spacing: 3px;
+      @include fluid(margin-bottom, 7px, 14px);
+    }
+
+    &-box {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      max-width: 598px;
+      @include fluid(padding-top, 30px, 64px);
+      @include fluid(padding-bottom, 16px, 26px);
+      @include fluid(padding-left, 20px, 42px);
+      @include fluid(padding-right, 25px, 60px);
+      border-radius: 14px;
+      background: #FFF;
+      box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.08)
+    }
+
+    &-title {
+      color: #000;
+      @include fluid(margin-bottom, 10px, 15px);
+      @include fluid(font-size, 18px, 24px);
+
+      &--white {
+        color: #fff;
+      }
+    }
+
+    &-text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      white-space: normal;
+      color: #17171D;
+      @include fluid(margin-bottom, 15px, 26px);
+      line-height: 1.5;
+      @include fluid(font-size, 16px, 19px);
+    }
+
+    &-link {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      color: #4B0082;
+      @include fluid(font-size, 16px, 19px);
+      font-weight: 700;
+      line-height: 150%;
+      margin-top: auto;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .log {
+    &__box {
+      margin-bottom: 40px;
+
+      .link {
+        display: none;
+      }
+    }
+
+    &__swiper {
+      overflow: visible;
+    }
+
+    &__wrapper {
+      display: flex;
+      gap: 0;
+      margin-bottom: 75px;
+    }
+
+    &__slide {
+      padding-right: 0;
+      padding-bottom: 55px;
+
+      &-title {
+        min-height: 50.38px;
+      }
+
+      &::after {
+        width: 90%;
+      }
+
+      &-box {
+        padding-right: 15px;
+        padding-left: 10px;
+      }
+
+      &--last {
+        display: block;
+      }
+
+      &.swiper-slide {
+        z-index: 3;
+
+        &-active {
+          z-index: 2;
+        }
+
+        &-next {
+          z-index: 1;
+
+          +.swiper-slide {
+            z-index: 0;
+          }
+        }
+      }
+
+      &-text {
+        -webkit-line-clamp: 5;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .log {
+    &__slide {
+      &.swiper-slide-prev {
+        &:has(+.log__slide--last) {
+          opacity: 0;
+        }
+      }
+
+      &--last.swiper-slide-active {
+        display: block;
+        margin-left: -25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .log {
+    &__slide {
+      &--last.swiper-slide-active {
+        margin-left: -12px;
+      }
+    }
+  }
+}

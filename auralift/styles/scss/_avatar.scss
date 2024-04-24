@@ -1,0 +1,49 @@
+.avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  cursor: pointer;
+
+  &:hover {
+    .avatar__name {
+      color: #12A87A;
+    }
+  }
+
+  &__img {
+    width: 24px;
+    height: 24px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  &__name {
+    color: #344054;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    transition: color 0.23s ease-in-out;
+  }
+}
+
+@media (max-width: 768px) {
+  .avatar {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .avatar {
+    &__img {
+      width: 32px;
+      height: 32px;
+    }
+
+    &__name {
+      display: none;
+    }
+  }
+}

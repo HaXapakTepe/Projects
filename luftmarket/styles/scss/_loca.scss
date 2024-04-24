@@ -1,0 +1,58 @@
+.loca {
+  display: flex;
+  gap: 21px;
+
+  &--white {
+    .loca {
+
+      &__bold,
+      &__text {
+        color: #fff;
+      }
+    }
+  }
+
+  &__icon {
+    align-items: start;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  &__bold {
+    font-weight: 700;
+  }
+
+  &__link {
+    position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-bottom: 2px;
+    font-size: 14px;
+    color: #7E7E7E;
+    transition: color .23s ease-in-out;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #7E7E7E;
+      transition: background-color .23s ease-in-out;
+    }
+
+    &:hover {
+      color: #1BAFE5;
+
+      &::after {
+        background-color: #1BAFE5;
+      }
+    }
+  }
+}

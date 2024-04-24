@@ -1,0 +1,80 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    @include fluid(gap, 5px, 9px);
+    color: #8E8C8C;
+    transition: color .38s ease-in-out;
+
+    &-icon {
+      font-size: 17px;
+    }
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &__phone {
+    @include fluid(font-size, 18px, 24px);
+    font-weight: 700;
+    color: #fff;
+  }
+
+  &__mail {
+    @include fluid(font-size, 16px, 20px);
+    letter-spacing: .2px;
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+    @include fluid(gap, 10px, 12px);
+  }
+
+  &__icon {
+    position: relative;
+    @include fluid(padding, 12px, 13px);
+    color: #fff;
+    font-size: 15px;
+
+    &.icon-tg {
+      @include fluid(padding-left, 10px, 11px);
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 43px;
+      height: 43px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 1px solid rgba(217, 217, 217, .3);
+      border-radius: 50%;
+      transition: border .38s ease-in-out;
+    }
+
+    &:hover {
+      &::after {
+        border-color: #fff;
+      }
+    }
+
+    &.icon-wa {
+      font-size: 23px;
+    }
+  }
+}

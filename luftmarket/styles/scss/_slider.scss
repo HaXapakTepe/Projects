@@ -1,0 +1,107 @@
+.slider {
+  &__wrapper {
+    margin-top: 40px;
+    margin-bottom: 65px;
+
+    @media screen and (max-width: 1600px) and (min-width: 993px) {
+      margin-bottom: calc(32px + (65 - 32) * ((100vw - 992px) / (1600 - 992)));
+    }
+  }
+
+  &__swiper {
+    &-slide {
+      height: auto;
+    }
+  }
+
+  &__slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 170px;
+    padding-bottom: 150px;
+
+    @media screen and (max-width: 1600px) and (min-width: 993px) {
+      padding-top: calc(100px + (170 - 100) * ((100vw - 992px) / (1600 - 992)));
+      padding-bottom: calc(100px + (150 - 100) * ((100vw - 992px) / (1600 - 992)));
+    }
+
+    &-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      border-radius: 20px;
+      -o-object-fit: cover;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    &-box {
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &-title {
+      margin-bottom: 12px;
+      color: #fff;
+      font-weight: 700;
+      font-size: 26px;
+
+      @media screen and (max-width: 1600px) and (min-width: 993px) {
+        font-size: calc(18px + (26 - 18) * ((100vw - 992px) / (1600 - 992)));
+      }
+    }
+
+    &-text {
+      max-width: 460px;
+      margin-bottom: 20px;
+      font-weight: 500px;
+      color: #fff;
+      font-size: 22px;
+
+      @media screen and (max-width: 1600px) and (min-width: 993px) {
+        font-size: calc(16px + (22 - 16) * ((100vw - 992px) / (1600 - 992)));
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .slider {
+    &__wrapper {
+      margin-top: 0;
+      margin-bottom: 32px;
+    }
+
+    &__slide {
+      padding-top: 100px;
+      padding-bottom: 100px;
+
+      &-title {
+        font-size: 18px;
+      }
+
+      &-text {
+        font-size: 16px;
+        margin-bottom: 13px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .slider {
+    &__slide {
+      padding-top: 50px;
+      padding-bottom: 22px;
+
+      &-box {
+        width: unset;
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+    }
+  }
+}

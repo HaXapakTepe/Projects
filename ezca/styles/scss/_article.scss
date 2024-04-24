@@ -1,0 +1,139 @@
+.article {
+  &__wrapper {
+    @include fluid(margin-top, 40px, 88px);
+    @include fluid(margin-bottom, 60px, 110px);
+  }
+
+  &__inner {
+    position: relative;
+    counter-reset: title;
+  }
+
+  &__title {
+    text-wrap: balance;
+    text-transform: initial;
+    color: rgb(19, 19, 19);
+
+    &:has(+*) {
+      @include fluid(margin-bottom, 30px, 55px);
+    }
+
+    &--alt {
+      text-wrap: unset;
+      @include fluid(padding-left, 70px, 247px);
+
+      &:before {
+        content: '/'counter(title, decimal-leading-zero);
+        position: absolute;
+        left: 0;
+        right: 0;
+        counter-increment: title;
+        color: rgb(19, 19, 19);
+        @include fluid(font-size, 30px, 65px);
+      }
+    }
+  }
+
+  &__text {
+    color: rgb(19, 19, 19);
+    font-family: 'Manrope';
+    @include fluid(font-size, 16px, 24px);
+    font-weight: 500;
+    line-height: 160%;
+
+    &--bold {
+      font-weight: 800;
+    }
+
+    a {
+      color: rgb(19, 19, 19);
+      padding: 2px 10px;
+      font-weight: 800;
+      border-radius: 100px;
+      background-color: rgb(196, 255, 2);
+      text-decoration: underline;
+    }
+
+    &:has(+*) {
+      @include fluid(margin-bottom, 15px, 30px);
+    }
+
+    &:has(+.title) {
+      @include fluid(margin-bottom, 30px, 100px);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 10px, 15px);
+    list-style: inside;
+    background-color: rgb(19, 19, 19);
+    @include fluid(border-radius, 30px, 50px);
+    @include fluid(padding-top, 30px, 80px);
+    @include fluid(padding-bottom, 30px, 55px);
+    @include fluid(padding-left, 20px, 44px);
+    @include fluid(padding-right, 20px, 44px);
+
+    &--alt {
+      list-style: none;
+      counter-reset: num;
+      @include fluid(gap, 30px, 80px);
+
+      .article__list-text {
+        position: relative;
+        max-width: 1180px;
+        @include fluid(padding-left, 70px, 160px);
+
+        &:before {
+          content: '/'counter(num, decimal-leading-zero);
+          position: absolute;
+          left: 0;
+          right: 0;
+          counter-increment: num;
+          color: rgb(196, 255, 2);
+          font-family: 'Manrope';
+          @include fluid(font-size, 24px, 45px);
+          font-weight: 800;
+          line-height: 160%;
+        }
+      }
+    }
+
+    &:has(+*) {
+      @include fluid(margin-bottom, 30px, 70px);
+    }
+
+    &-text {
+      color: #fff;
+      font-family: 'Manrope';
+      @include fluid(font-size, 18px, 24px);
+      font-weight: 500;
+      line-height: 160%;
+
+      a {
+        font-weight: 800;
+        text-decoration: underline;
+        color: rgb(196, 255, 2);
+      }
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: .9fr 1fr;
+    align-items: center;
+    @include fluid(gap, 20px, 140px);
+    @include fluid(padding-bottom, 30px, 74px);
+    @include fluid(margin-bottom, 30px, 80px);
+    border-bottom: 1px solid #000;
+  }
+}
+
+@media (max-width: 576px) {
+  .article {
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}

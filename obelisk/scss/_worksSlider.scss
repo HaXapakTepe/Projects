@@ -1,0 +1,142 @@
+.worksSlider {
+  @include fluid(padding-top, 30px, 120px);
+  @include fluid(padding-bottom, 30px, 108px);
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__img {
+    border-radius: 20px;
+    object-fit: cover;
+    @include fluid(height, 300px, 450px);
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include fluid(margin-bottom, 20px, 57px);
+  }
+
+  &__wrapper {
+    @include fluid(margin-bottom, 30px, 55px);
+  }
+
+  &__arrow {
+    position: relative;
+    flex-direction: row-reverse;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include fluid(gap, 10px, 20px);
+
+    &-prev,
+    &-next {
+      position: static;
+      color: #E2AD51;
+      width: unset;
+      height: unset;
+      margin-top: 0;
+      border-radius: 50%;
+      border: 1px solid #E2AD51;
+      background-color: transparent;
+      @include fluid(padding-top, 12px, 16px);
+      @include fluid(padding-bottom, 12px, 16px);
+      @include fluid(padding-left, 15.9px, 20.39px);
+      @include fluid(padding-right, 15.9px, 20.39px);
+      transition: opacity .38s ease-in-out,
+        border .38s ease-in-out,
+        color .38s ease-in-out;
+      transform: rotate(180deg);
+
+      &::after {
+        @include fluid(font-size, 16px, 18px);
+      }
+
+      &.swiper-button-disabled {
+        border-color: #707070;
+        opacity: 1;
+        color: #707070;
+      }
+    }
+  }
+
+  &__pagination {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 22px;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 7px);
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    @include fluid(bottom, 25px, 50px);
+  }
+
+  .swiper-pagination-bullet {
+    position: relative;
+    background-color: #E2AD51;
+    opacity: 1;
+    width: 14px;
+    height: 14px;
+    transition: all .38s ease-in-out;
+
+    &-active {
+      width: 6px;
+      height: 6px;
+      background-color: #E2AD51;
+      margin: 0 14px !important;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(226, 173, 81, .5);
+        border-radius: 50%;
+        z-index: -1;
+      }
+    }
+  }
+
+  &.fon {
+    .swiper-pagination-bullet {
+      background-color: #EAEAEA;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .worksSlider {
+    &__arrow {
+
+      &-prev,
+      &-next {
+        padding: 10px 12px;
+
+        &::after {
+          font-size: 8px;
+        }
+      }
+    }
+
+    &__slide {
+      &-price {
+        font-size: 32px;
+        margin-bottom: 25px;
+      }
+    }
+  }
+}

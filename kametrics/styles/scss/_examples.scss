@@ -1,0 +1,130 @@
+.examples {
+  &__wrapper {
+    @include fluid(margin-top, 60px, 150px);
+    @include fluid(margin-bottom, 60px, 270px);
+  }
+
+  &__title {
+    max-width: 1180px;
+    font-family: 'Red Hat Display';
+    @include fluid(font-size, 26px, 60px);
+    font-weight: 700;
+    line-height: 110%;
+    @include fluid(margin-bottom, 30px, 110px);
+  }
+
+  &__inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    @include fluid(row-gap, 25px, 50px);
+    @include fluid(margin-bottom, 60px, 170px);
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      @include fluid(bottom, -30px, -57px);
+      background: linear-gradient(149.25deg, rgb(99, 206, 198) 24.17%, rgb(137, 146, 250) 85.662%);
+      @include fluid(width, 350px, 500px);
+      @include fluid(height, 250px, 325px);
+      -webkit-filter: blur(80px);
+      filter: blur(80px);
+      z-index: -1;
+      opacity: .8;
+    }
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &:has(+.examples__text) {
+      @include fluid(margin-bottom, 35px, 120px);
+    }
+
+    &--reverse {
+      .examples__item:last-child {
+        background-image: linear-gradient(to left, rgba(194, 194, 194, 0.18), rgba(25, 25, 25, 0) 80%);
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 15px, 21px);
+    @include fluid(padding-top, 30px, 69px);
+    @include fluid(padding-bottom, 30px, 78px);
+    @include fluid(padding-left, 25px, 51px);
+    @include fluid(padding-right, 25px, 51px);
+    border-radius: 30px;
+    background-image: linear-gradient(to right, rgba(194, 194, 194, 0.18), rgba(25, 25, 25, 0) 80%);
+
+    &--alt {
+      background-image: unset;
+      padding: 0;
+    }
+
+    &--reverse {
+      background-image: linear-gradient(to left, rgba(194, 194, 194, 0.18), rgba(25, 25, 25, 0) 80%);
+    }
+
+    &--gradient {
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(149.25deg, rgb(99, 206, 198) 24.17%, rgb(137, 146, 250) 85.662%);
+        @include fluid(width, 350px, 500px);
+        @include fluid(height, 250px, 325px);
+        -webkit-filter: blur(80px);
+        filter: blur(80px);
+        z-index: -1;
+        opacity: .8;
+      }
+    }
+
+    &-title {
+      font-family: 'Manrope';
+      @include fluid(font-size, 22px, 40px);
+      font-weight: 700;
+    }
+
+    &-text {
+      font-family: 'Manrope';
+      @include fluid(font-size, 16px, 20px);
+    }
+
+    &-img {
+      height: 100%;
+      -o-object-fit: contain;
+      object-fit: contain;
+      border-radius: 30px;
+    }
+  }
+
+  &__text {
+    max-width: 1176px;
+    font-family: "Manrope";
+    font-size: 35px;
+    @include fluid(font-size, 22px, 35px);
+    font-weight: 700;
+  }
+}
+
+@media(max-width: 768px) {
+  .examples {
+    &__box {
+      grid-template-columns: 1fr;
+      gap: 20px;
+
+      &--reverse {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}

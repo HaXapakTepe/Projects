@@ -1,0 +1,55 @@
+.socials {
+  display: flex;
+  align-items: center;
+  margin-bottom: 39px;
+  @include fluid(gap, 27px, 55px);
+
+  &__icon {
+    svg {
+      @include fluid(width, 31px, 45px);
+      @include fluid(height, 31px, 45px);
+
+      path {
+        transition: fill .23s ease-in-out;
+      }
+    }
+
+    &:hover {
+      svg {
+        path {
+          fill: #C4FF02;
+        }
+      }
+    }
+  }
+
+  &--right {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 21px;
+
+    .socials {
+      &__icon {
+        &:hover {
+          svg {
+            path {
+              fill: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &--alt {
+    .socials {
+      &__icon {
+        svg {
+          @include fluid(width, 33px, 55px);
+          @include fluid(height, 33px, 55px);
+        }
+      }
+    }
+  }
+}

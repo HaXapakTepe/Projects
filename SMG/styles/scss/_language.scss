@@ -1,0 +1,53 @@
+.language {
+  position: fixed;
+  transform: translateY(-50%);
+  @include fluid(right, 16px, 90px);
+  @include fluid(bottom, 35px, 90px);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 0px 0.82px 1.64px 0px rgba(0, 0, 0, 0.1), 0px 2.87px 2.87px 0px rgba(0, 0, 0, 0.09), 0px 6.98px 4.11px 0px rgba(0, 0, 0, 0.05), 0px 12.32px 4.93px 0px rgba(0, 0, 0, 0.01), 0px 19.3px 5.34px 0px rgba(0, 0, 0, 0);
+
+  &:hover {
+    .language {
+      &__hidden {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  &__hidden {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    z-index: -1;
+    border-radius: 4px 0 0 4px;
+    background: rgb(240, 240, 240);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.23s ease-in-out, visibility 0.23s ease-in-out;
+  }
+
+  &__item {
+    border-radius: 4px;
+    padding: 9px;
+    transition: background-color .23s ease-in-out, transform .38s ease-in-out;
+    cursor: pointer;
+
+    &:hover,
+    &--active {
+      background-color: #7a58b0;
+    }
+
+    &-img {
+      width: 22.63px;
+      height: 22.63px;
+      object-fit: contain;
+    }
+  }
+}

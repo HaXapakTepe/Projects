@@ -1,0 +1,71 @@
+.header {
+  padding-top: 12px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ececec;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    @include fluid(gap, 15px, 24px);
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    @include fluid(gap, 15px, 24px);
+
+    &-link {
+      display: flex;
+      align-items: center;
+      @include fluid(gap, 10px, 12px);
+
+    }
+
+    &-icon {
+      display: flex;
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    &-text {
+      color: #000;
+      @include fluid(font-size, 12px, 14px);
+      line-height: 1.4;
+      letter-spacing: -0.1px;
+    }
+
+    &-img {
+      border-radius: 50%;
+      @include fluid(width, 30px, 36px);
+      @include fluid(height, 30px, 36px);
+      -o-object-fit: cover;
+      object-fit: cover
+    }
+  }
+
+  .btn {
+    @include fluid(font-size, 12px, 14px);
+    @include fluid(padding-top, 5px, 8px);
+    @include fluid(padding-bottom, 5px, 8px);
+    @include fluid(padding-left, 10px, 14px);
+    @include fluid(padding-right, 10px, 14px);
+    @include fluid(font-size, 12px, 14px);
+  }
+
+  nav {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+
+    .currency,
+    .btn {
+      display: none;
+    }
+  }
+}

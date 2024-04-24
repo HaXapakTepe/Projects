@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/favicon.svg" type="x-icon">
+  <link rel="stylesheet" href="./css/style3.css?v=1">
+  <title>Certificate</title>
+</head>
+
+<body>
+
+  <header class="header"></header>
+
+
+  <section class="certificate">
+    <div class="container">
+      <div class="certificate__inner">
+        <div class="certificate__box">
+          <div class="certificate__box-title">
+            Подарочный сертификат
+          </div>
+          <div class="certificate__box-text">
+            Сертификат позволяет посетить все мероприятия Особняка Мясникова в рамках предоплаченного номинала.
+          </div>
+          <div class="certificate__box-subtitle">
+            Активировать сертификат
+          </div>
+        </div>
+        <div class="certificate__item">
+          <div class="certificate__item-wrapper certificate__item-wrapper--brt">
+            <div class="certificate__item-box">
+              <div data-target="target1" class="certificate__item-name certificate__item-name--active">От меня</div>
+              <div data-target="target2" class="certificate__item-name">От компании</div>
+            </div>
+          </div>
+          <div data-info="target1"
+            class="certificate__item-inner certificate__item-inner--active certificate__item-inner--opacity">
+            <div class="certificate__item-container certificate__item-container--clone">
+              <div class="certificate__item-content">
+                <div class="certificate__item-elem">
+                  <div class="certificate__item-title">Номинал сертификата:</div>
+                  <div class="certificate__item-priceBox">
+                    <label class="label">
+                      <input class="label__input check" type="radio" name="qwe" checked>
+                      <span data-price="price1" class="label__inputCustom">1000 ₽</span>
+                    </label>
+                    <label class="label">
+                      <input class="label__input check" type="radio" name="qwe">
+                      <span data-price="price2" class="label__inputCustom">2000 ₽</span>
+                    </label>
+                    <label class="label">
+                      <input class="label__input check" type="radio" name="qwe">
+                      <span data-price="price3" class="label__inputCustom">5000 ₽</span>
+                    </label>
+                    <label class="label">
+                      <input class="label__input check" type="radio" name="qwe">
+                      <span data-price="price4" class="label__inputCustom">10000 ₽</span>
+                    </label>
+                    <label class="label">
+                      <input class="label__input check" type="radio" name="qwe">
+                      <span data-price="price5" class="label__inputCustom">15000 ₽</span>
+                    </label>
+                    <label class="label">
+                      <input class="label__input check" type="radio" name="qwe">
+                      <span data-price="price6" class="label__inputCustom">20000 ₽</span>
+                    </label>
+                    <label class="label">
+                      <input class="label__input check" type="radio" name="qwe">
+                      <span data-price="price7" class="label__inputCustom">30000 ₽</span>
+                    </label>
+                    <label class="label">
+                      <input class="label__input check" type="radio" name="qwe">
+                      <span data-price="price8" class="label__inputCustom">Свой номинал</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="certificate__item-elem">
+                  <div class="certificate__item-title">Количество:</div>
+                  <div class="certificate__item-counter">
+                    <button class="certificate__item-minus" type="button"></button>
+                    <div class="certificate__item-amount">
+                      <input class="certificate__item-num" type="text" name="number" value="1" min="1">сертификат
+                    </div>
+                    <button class="certificate__item-plus" type="button"></button>
+                  </div>
+                </div>
+                <div class="certificate__item-elem">
+                  <div class="certificate__item-title">Доставка:</div>
+                  <div class="certificate__item-box certificate__item-box--mb">
+                    <div data-where="where1" class="certificate__item-where certificate__item-where--active">На E-mail
+                    </div>
+                    <div data-where="where2" class="certificate__item-where">На адрес</div>
+                  </div>
+                  <div class="certificate__item-boxInput">
+                    <input data-input="where1"
+                      class="certificate__item-input certificate__item-input--active certificate__item-input--opacity"
+                      type="text" placeholder="E-mail получателя">
+                    <input data-input="where2" class="certificate__item-input" type="text"
+                      placeholder="Адрес получателя">
+                  </div>
+                </div>
+                <div class="certificate__item-elem">
+                  <div class="certificate__item-title">Получатель:</div>
+                  <input class="certificate__item-input" type="text" placeholder="От кого">
+                  <input class="certificate__item-input" type="text" placeholder="Кому">
+                  <input class="certificate__item-input" type="text" placeholder="Телефон получателя">
+                  <textarea class="certificate__item-textarea" name="" id="" cols="30" rows="4"
+                    placeholder="Текст поздравления"></textarea>
+                </div>
+              </div>
+              <div class="certificate__item-content">
+                <div class="close"></div>
+                <div data-img="price1"
+                  class="certificate__item-boxImage certificate__item-boxImage--active certificate__item-boxImage--opacity">
+                  <img class="certificate__item-image" src="./img/picture/10k.png" alt="">
+                  <div class="certificate__item-block">
+                    <p class="certificate__item-titleImg">Подарочный сертификат</p>
+                    <p class="certificate__item-textImg">1000</p>
+                    <p class="certificate__item-titleImg">рублей</p>
+                  </div>
+                </div>
+                <div data-img="price2" class="certificate__item-boxImage">
+                  <img class="certificate__item-image" src="./img/picture/10k.png" alt="">
+                  <div class="certificate__item-block">
+                    <p class="certificate__item-titleImg">Подарочный сертификат</p>
+                    <p class="certificate__item-textImg">2000</p>
+                    <p class="certificate__item-titleImg">рублей</p>
+                  </div>
+                </div>
+                <div data-img="price3" class="certificate__item-boxImage">
+                  <img class="certificate__item-image" src="./img/picture/10k.png" alt="">
+                  <div class="certificate__item-block">
+                    <p class="certificate__item-titleImg">Подарочный сертификат</p>
+                    <p class="certificate__item-textImg">5000</p>
+                    <p class="certificate__item-titleImg">рублей</p>
+                  </div>
+                </div>
+                <div data-img="price4" class="certificate__item-boxImage">
+                  <img class="certificate__item-image" src="./img/picture/10k.png" alt="">
+                  <div class="certificate__item-block">
+                    <p class="certificate__item-titleImg">Подарочный сертификат</p>
+                    <p class="certificate__item-textImg">10000</p>
+                    <p class="certificate__item-titleImg">рублей</p>
+                  </div>
+                </div>
+                <div data-img="price5" class="certificate__item-boxImage">
+                  <img class="certificate__item-image" src="./img/picture/10k.png" alt="">
+                  <div class="certificate__item-block">
+                    <p class="certificate__item-titleImg">Подарочный сертификат</p>
+                    <p class="certificate__item-textImg">15000</p>
+                    <p class="certificate__item-titleImg">рублей</p>
+                  </div>
+                </div>
+                <div data-img="price6" class="certificate__item-boxImage">
+                  <img class="certificate__item-image" src="./img/picture/10k.png" alt="">
+                  <div class="certificate__item-block">
+                    <p class="certificate__item-titleImg">Подарочный сертификат</p>
+                    <p class="certificate__item-textImg">20000</p>
+                    <p class="certificate__item-titleImg">рублей</p>
+                  </div>
+                </div>
+                <div data-img="price7" class="certificate__item-boxImage">
+                  <img class="certificate__item-image" src="./img/picture/10k.png" alt="">
+                  <div class="certificate__item-block">
+                    <p class="certificate__item-titleImg">Подарочный сертификат</p>
+                    <p class="certificate__item-textImg">30000</p>
+                    <p class="certificate__item-titleImg">рублей</p>
+                  </div>
+                </div>
+                <div data-img="price8" class="certificate__item-boxImage">
+                  <img class="certificate__item-image" src="./img/picture/10k.png" alt="">
+                  <div class="certificate__item-block">
+                    <p class="certificate__item-titleImg">Подарочный сертификат</p>
+                    <p class="certificate__item-textImg">Свой номинал</p>
+                    <p class="certificate__item-titleImg">рублей</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-info="target2" class="certificate__item-inner">
+            <div class="certificate__item-container certificate__item-container--hidden">
+              <div class="certificate__item-content">
+                <div class="certificate__item-textCompany">
+                  Сделайте подарок сотрудникам вашей компании — поздравьте
+                  с важной датой или поблагодарите за отличную работу.
+                </div>
+                <div class="certificate__item-elem">
+                  <div class="certificate__item-title">Оставьте заявку, и с вами свяжется менеджер:</div>
+                  <input class="certificate__item-input" type="text" placeholder="От кого">
+                  <input class="certificate__item-input" type="text" placeholder="Номер телефона">
+                  <input class="certificate__item-input" type="text" placeholder="Название компании">
+                  <input class="certificate__item-input" type="text" placeholder="Email">
+                  <textarea class="certificate__item-textarea" name="" id="" cols="30" rows="4"
+                    placeholder="Сообщение"></textarea>
+                </div>
+              </div>
+              <div class="certificate__item-content">
+                <img class="certificate__item-image" src="./img/picture/10k.png" alt="">
+                <div class="certificate__item-block">
+                  <p class="certificate__item-titleImg">Подарочный сертификат</p>
+                  <p class="certificate__item-textImg">30000</p>
+                  <p class="certificate__item-titleImg">рублей</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="certificate__item-wrapper certificate__item-wrapper--brb">
+            <div class="certificate__item-add" id="certificateAddBtn">
+              <p class="certificate__item-addText">Добавить сертификат с другим номиналом</p>
+            </div>
+            <div class="certificate__item-copy">
+              <button class="certificate__item-btn" type="submit">Оплатить</button>
+              <div class="certificate__item-text">Я соглашаюсь с <span>Условиями обработки персональных данных</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer"></footer>
+
+  <script src="./js/main.js?v=1"></script>
+</body>
+
+</html>

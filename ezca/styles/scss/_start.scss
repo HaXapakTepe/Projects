@@ -1,0 +1,53 @@
+.start {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  @include fluid(padding-top, 8px, 12px);
+  @include fluid(padding-bottom, 8px, 12px);
+  @include fluid(padding-left, 27px, 56px);
+  @include fluid(padding-right, 27px, 56px);
+  @include fluid(font-size, 15px, 25px);
+  font-weight: 700;
+  background-color: #C4FF02;
+  border-radius: 100px;
+  color: #000;
+  border: 2px solid transparent;
+  transition: color .23s ease-in-out,
+    background-color .23s ease-in-out,
+    border-color .23s ease-in-out;
+
+  &:hover {
+    background-color: #131313;
+    color: #C4FF02;
+    border-color: #C4FF02;
+
+    .start__icon {
+      svg {
+        path {
+          fill: #C4FF02;
+        }
+      }
+    }
+  }
+
+  &__icon {
+    svg {
+      @include fluid(width, 13px, 22px);
+      @include fluid(height, 10px, 17px);
+
+      path {
+        transition: fill .23s ease-in-out;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .start {
+    margin-left: auto;
+  }
+}

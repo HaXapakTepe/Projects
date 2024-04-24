@@ -1,0 +1,87 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	width: 100%;
+	display: block;
+}
+
+input,
+button {
+	font: inherit;
+}
+
+fieldset {
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+html,
+body {
+	position: relative;
+	height: 100%;
+}
+
+body {
+	background-color: #32332f;
+	font-family: 'Philosopher';
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.12;
+	color: #F4CF8B;
+}
+
+.wrapper {
+	min-width: 320px;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.main {
+	flex-grow: 1;
+}
+
+.container {
+	// контейнер + padding с двух сторон
+	@include fluid(width, 962px, 1170px);
+	@include container;
+}
+
+[class$='__icon'],
+[class$='-icon'] {
+	display: flex;
+	align-items: center;
+
+	svg {
+		path {
+			transition: fill 0.23s ease-in-out, stroke 0.23s ease-in-out;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.container {
+		width: 100%;
+	}
+}
+
+@media (max-width: 767px) {
+	.container {
+		max-width: 350px;
+	}
+}

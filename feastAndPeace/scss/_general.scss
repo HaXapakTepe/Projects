@@ -1,0 +1,112 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+fieldset {
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+input,
+button {
+  font: inherit;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Gotham Pro";
+  font-weight: 400;
+  @include fluid(font-size, 12px, 16px);
+  line-height: 1.5;
+  color: #343A3D;
+  background-color: #fff;
+  overflow-x: hidden;
+
+
+  &.no-scroll {
+    overflow-y: hidden;
+  }
+}
+
+.wrapper {
+  min-width: 320px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  @include container;
+  @include fluid(width, 962px, 1336px);
+}
+
+h1,
+h2 {
+  font-family: 'Hermes';
+  @include fluid(font-size, 44px, 64px);
+  line-height: 1.17;
+  font-weight: 400;
+
+  span {
+    color: #7AC8C9;
+  }
+}
+
+h3 {
+  font-family: 'Inter';
+  @include fluid(font-size, 20px, 24px);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.fancybox__backdrop {
+  opacity: var(--fancybox-opacity, 0.8);
+}
+
+.fancybox__content {
+  border-radius: 40px;
+  padding: 0;
+
+  .f-button.is-close-btn {
+    @include fluid(top, 15px, 30px);
+    @include fluid(right, 15px, 30px);
+    opacity: 1;
+    color: #AABAC2;
+    border: 1px solid #AABAC2;
+    border-radius: 50%;
+    padding: 15px;
+    width: 44px;
+    height: 44px;
+
+    svg {
+      width: 12px;
+      height: 12px;
+    }
+  }
+}

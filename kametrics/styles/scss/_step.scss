@@ -1,0 +1,76 @@
+.step {
+  &__wrapper {
+    @include fluid(margin-top, 60px, 150px);
+    @include fluid(margin-bottom, 60px, 130px);
+  }
+
+  &__title {
+    max-width: 1180px;
+    font-family: 'Red Hat Display';
+    @include fluid(font-size, 26px, 60px);
+    font-weight: 700;
+    line-height: 110%;
+    @include fluid(margin-bottom, 30px, 60px);
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 20px, 48px);
+    max-width: 995px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 15px, 26px);
+
+    &-title {
+      position: relative;
+      display: flex;
+      align-items: center;
+      @include fluid(gap, 15px, 20px);
+      @include fluid(padding-top, 5px, 10px);
+      @include fluid(padding-bottom, 5px, 10px);
+      font-family: 'Manrope';
+      @include fluid(font-size, 20px, 30px);
+      font-weight: 700;
+      @include fluid(padding-left, 10px, 20px);
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        @include fluid(width, 200px, 250px);
+        height: 100%;
+        border-radius: 100px;
+        background: linear-gradient(to right, rgba(140, 142, 253, 0.3), rgba(25, 25, 25, 0) 85%);
+      }
+    }
+
+    &-icon {
+      svg {
+        @include fluid(width, 30px, 36px);
+        @include fluid(height, 30px, 36px);
+      }
+    }
+
+    &-num {
+      @include fluid(margin-left, 8px, 10px);
+      margin-left: 10px;
+      text-align: center;
+      font-family: 'Manrope';
+      @include fluid(font-size, 20px, 30px);
+      font-weight: 700;
+    }
+
+    &-text {
+      font-family: "Manrope";
+      font-size: 20px;
+      @include fluid(font-size, 16px, 20px);
+      @include fluid(margin-left, 55px, 82px);
+    }
+  }
+}

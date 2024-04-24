@@ -1,0 +1,218 @@
+.menu {
+  min-height: 100dvh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  transition: z-index 1.5s ease-in-out;
+
+  &--active {
+    transition: z-index .23s ease-in-out;
+    z-index: 9;
+
+    .menu {
+      &__item {
+        transform: translateY(-100%);
+        animation: menuAnimation 0.5s forwards;
+      }
+    }
+  }
+
+  &__list {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    counter-reset: num;
+    min-height: 100dvh;
+    width: 100%;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    transition: box-shadow 0.23s ease-in-out;
+    animation: menuAnimationPrev 0.5s forwards;
+
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    &::after {
+      background-color: #F1E5FE;
+      transition: transform 0.33s ease-in-out;
+    }
+
+    &::before {
+      background-color: #aeacb2;
+      transition: transform 0.33s 0.08s ease-in-out;
+    }
+
+    &:hover {
+      box-shadow: inset 0px -14px 51.9px 0px rgba(0, 0, 0, 0.15);
+
+      &::after,
+      &::before {
+        transform: translate(-100%, 0);
+      }
+    }
+
+    &:not(:last-child) {
+      border-right: 1px solid #3C1E5B;
+    }
+
+    &-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      height: 100%;
+      z-index: -2;
+    }
+  }
+
+  &__link {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    @include fluid(padding-left, 15px, 60px);
+    @include fluid(padding-right, 15px, 30px);
+
+    &:hover {
+      .menu__link-text {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    &-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      @include fluid(margin-top, 240px, 373px);
+    }
+
+    &-title {
+      position: relative;
+      font-weight: 800;
+      @include fluid(font-size, 25px, 39px);
+      color: #3C1E5B;
+      @include fluid(margin-bottom, 4px, 7.5px);
+      text-transform: uppercase;
+
+      &:before {
+        content: '//'counter(num, decimal-leading-zero);
+        counter-increment: num;
+        position: absolute;
+        @include fluid(left, 2px, 1px);
+        top: -70%;
+        font-weight: 400;
+        color: #3C1E5B;
+        @include fluid(font-size, 15px, 23px);
+      }
+    }
+
+    &-text {
+      position: relative;
+      padding-left: 13px;
+      color: #000000;
+      @include fluid(font-size, 13px, 18px);
+      text-wrap: balance;
+      max-width: 220px;
+      opacity: 0;
+      transition: opacity 0.23s .3s ease-in-out, transform .23s .3s ease-in-out;
+      transform: translateY(30px);
+      line-height: 1.25;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background-color: #3C1E5B;
+        border-radius: 25px;
+      }
+    }
+  }
+}
+
+@media(max-width:992px) {
+  .menu {
+
+    &--active {
+      .menu {
+        &__item {
+          transform: translateX(0);
+          animation: unset;
+        }
+      }
+    }
+
+    &__list {
+      grid-template-columns: 1fr;
+      min-height: 100dvh;
+    }
+
+    &__item {
+      transform: translateX(-100%);
+      height: unset;
+      animation: unset;
+      transition: transform 0.23s ease-in-out, box-shadow .23s ease-in-out;
+
+      &:not(:last-child) {
+        border-right: unset;
+        border-bottom: 1px solid #3C1E5B;
+      }
+    }
+
+    &__link {
+      &-box {
+        margin-top: unset;
+        padding: 35px 0 20px;
+      }
+
+      &-text {
+        max-width: 280px;
+        opacity: 1;
+        transform: translateY(0);
+        padding-left: 0;
+
+        &::after {
+          content: none;
+        }
+      }
+    }
+  }
+}
+
+@keyframes menuAnimation {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes menuAnimationPrev {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}

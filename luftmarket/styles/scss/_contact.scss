@@ -1,0 +1,43 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  &--white {
+    .contact {
+
+      &__phone,
+      &__link {
+        color: #fff;
+      }
+    }
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+  }
+
+  &__phone {
+    font-weight: 700;
+  }
+
+  &__phone,
+  &__link {
+    color: #000;
+    transition: color .23s ease-in-out;
+
+    &:hover {
+      color: #1BAFE5;
+    }
+  }
+
+  &__link {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    text-align: right;
+  }
+}

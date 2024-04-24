@@ -1,0 +1,144 @@
+.studies {
+  &__wrapper {
+    @include fluid(margin-top, 48px, 161px);
+    @include fluid(margin-bottom, 112px, 111px);
+  }
+
+  &__top {
+    display: grid;
+    grid-template-columns: 1fr .85fr;
+    justify-content: space-between;
+    @include fluid(margin-bottom, 35px, 90px);
+  }
+
+  &__title {
+    display: flex;
+    @include fluid(gap, 17px, 24px);
+  }
+
+  &__text {
+    font-family: "Poppins";
+    @include fluid(font-size, 20px, 30px);
+    text-transform: uppercase;
+    text-wrap: balance;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    @include fluid(gap, 7px, 15px);
+    @include fluid(margin-bottom, 30px, 60px);
+    grid-auto-flow: dense;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    @include fluid(padding-left, 18px, 42px);
+    @include fluid(padding-right, 18px, 42px);
+    @include fluid(padding-top, 22px, 55px);
+    @include fluid(padding-bottom, 22px, 55px);
+    @include fluid(min-height, 187px, 281px);
+    color: #000;
+
+    &:nth-child(4n-3) {
+      @include fluid(min-height, 380px, 570px);
+      background-color: #C4FF02;
+      grid-area: span 2 / span 11;
+    }
+
+    &:nth-child(4n-2) {
+      color: #fff;
+      background-color: #000;
+      grid-area: span 1 / span 13;
+      min-height: 226px;
+    }
+
+    &:nth-child(4n-1) {
+      background-color: #86F9D7;
+      grid-area: span 1 / span 6;
+    }
+
+    &:nth-child(4n) {
+      background-color: #DCDCDC;
+      grid-area: span 1 / span 7;
+    }
+
+    &-title {
+      font-weight: 700;
+      @include fluid(font-size, 17px, 20px);
+      @include fluid(margin-bottom, 16px, 32px);
+    }
+
+    &-text {
+      font-family: "Manrope";
+      font-weight: 500;
+      @include fluid(font-size, 14px, 18px);
+      @include fluid(margin-bottom, 16px, 32px);
+    }
+
+    &-bot {
+      margin-top: auto;
+      font-family: "Manrope";
+      font-weight: 700;
+      @include fluid(font-size, 14px, 18px);
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .studies {
+    &__top {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    &__text {
+      padding-left: 55px;
+    }
+
+    &__inner {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(10);
+    }
+
+    &__item {
+      border-radius: 20px;
+
+      &:nth-child(4n-3) {
+        min-height: 187px;
+        grid-area: span 5 / span 2;
+      }
+
+      &:nth-child(4n-2) {
+        min-height: 339px;
+        grid-area: span 10 / span 1;
+      }
+
+      &:nth-child(4n-1) {
+        grid-area: span 4 / span 1;
+      }
+
+      &:nth-child(4n) {
+        grid-area: span 6 / span 1;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {
+  .studies {
+    &__text {
+      font-size: 12px;
+    }
+
+    &__item {
+      &-text {
+        font-size: 10px;
+      }
+    }
+  }
+}

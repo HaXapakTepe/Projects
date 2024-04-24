@@ -1,0 +1,33 @@
+.header {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 5;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px 0px rgba(138, 145, 251, 0.5);
+    background-color: rgb(25, 25, 25);
+    @include fluid(padding-top, 10px, 13px);
+    @include fluid(padding-bottom, 10px, 14px);
+    @include fluid(padding-left, 50px, 103px);
+    @include fluid(padding-right, 50px, 150px);
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    .logo {
+      margin-right: auto;
+    }
+
+    .btn {
+      display: none;
+    }
+  }
+}

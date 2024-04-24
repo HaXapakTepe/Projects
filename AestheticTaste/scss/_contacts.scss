@@ -1,0 +1,88 @@
+.contacts {
+  @include fluid(margin-top, 30px, 80px);
+  @include fluid(margin-bottom, 30px, 100px);
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 30px, 80px);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 15px, 30px);
+
+    &-link,
+    &-text {
+      display: flex;
+      align-items: center;
+      @include fluid(gap, 15px, 20px);
+      color: #000;
+      @include fluid(font-size, 14px, 18px);
+      line-height: normal;
+    }
+
+    &-link {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+
+      &--phone {
+        @include fluid(font-size, 18px, 24px);
+        font-weight: 700;
+        line-height: normal;
+      }
+
+      &--mail {
+        color: #FFA800;
+      }
+    }
+
+    &-icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    @include fluid(column-gap, 15px, 30px);
+    @include fluid(row-gap, 20px, 60px);
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      @include fluid(gap, 15px, 20px);
+    }
+
+    &-title {
+      @include fluid(margin-bottom, 5px, 10px);
+      font-weight: 700;
+      @include fluid(font-size, 14px, 16px);
+    }
+
+    &-link {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      @include fluid(gap, 15px, 20px);
+      color: #000;
+      @include fluid(font-size, 14px, 18px);
+      line-height: normal;
+
+      &--mail {
+        @include fluid(font-size, 14px, 16px);
+        color: #FFA800;
+      }
+    }
+
+    &-icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/images/favicon.svg" type="x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="../styles/css/normalize.css">
+  <link rel="stylesheet" href="../styles/css/style.css?v=0.0001">
+  <title>Новая форма ввода заявок с картой</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <a class="phone" href="tel:+78552782878">
+            <i class="phone__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M14.6467 12.2199C14.6467 12.4599 14.5934 12.7066 14.48 12.9466C14.3667 13.1866 14.22 13.4133 14.0267 13.6266C13.7 13.9866 13.34 14.2466 12.9334 14.4133C12.5334 14.5799 12.1 14.6666 11.6334 14.6666C10.9534 14.6666 10.2267 14.5066 9.46004 14.1799C8.69338 13.8533 7.92671 13.4133 7.16671 12.8599C6.40004 12.2999 5.67337 11.6799 4.98004 10.9933C4.29337 10.2999 3.67337 9.57325 3.12004 8.81325C2.57337 8.05325 2.13337 7.29325 1.81337 6.53992C1.49337 5.77992 1.33337 5.05325 1.33337 4.35992C1.33337 3.90659 1.41337 3.47325 1.57337 3.07325C1.73337 2.66659 1.98671 2.29325 2.34004 1.95992C2.76671 1.53992 3.23337 1.33325 3.72671 1.33325C3.91337 1.33325 4.10004 1.37325 4.26671 1.45325C4.44004 1.53325 4.59337 1.65325 4.71337 1.82659L6.26004 4.00659C6.38004 4.17325 6.46671 4.32659 6.52671 4.47325C6.58671 4.61325 6.62004 4.75325 6.62004 4.87992C6.62004 5.03992 6.57338 5.19992 6.48004 5.35325C6.39338 5.50659 6.26671 5.66659 6.10671 5.82659L5.60004 6.35325C5.52671 6.42659 5.49337 6.51325 5.49337 6.61992C5.49337 6.67325 5.50004 6.71992 5.51338 6.77325C5.53338 6.82659 5.55338 6.86659 5.56671 6.90659C5.68671 7.12659 5.89337 7.41325 6.18671 7.75992C6.48671 8.10659 6.80671 8.45992 7.15338 8.81325C7.51337 9.16659 7.86004 9.49325 8.21338 9.79325C8.56004 10.0866 8.84671 10.2866 9.07338 10.4066C9.10671 10.4199 9.14671 10.4399 9.19338 10.4599C9.24671 10.4799 9.30004 10.4866 9.36004 10.4866C9.47338 10.4866 9.56004 10.4466 9.63338 10.3733L10.14 9.87325C10.3067 9.70659 10.4667 9.57992 10.62 9.49992C10.7734 9.40659 10.9267 9.35992 11.0934 9.35992C11.22 9.35992 11.3534 9.38659 11.5 9.44659C11.6467 9.50659 11.8 9.59325 11.9667 9.70659L14.1734 11.2733C14.3467 11.3933 14.4667 11.5333 14.54 11.6999C14.6067 11.8666 14.6467 12.0333 14.6467 12.2199Z"
+                  fill="#EF7F1A" />
+              </svg>
+            </i>
+            +7 (8552) 78-28-78
+          </a>
+          <div class="header__top-text">
+            Обратный звонок
+          </div>
+        </div>
+        <div class="header__inner">
+          <a class="logo" href="#">
+            <img class="logo__img" src="../assets/images/logo.svg" alt="">
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Решения
+                </a>
+                <div class="menu__dropdown">
+                  <div class="menu__dropdown-wrapper">
+                    <div class="container">
+                      <div class="menu__dropdown-inner">
+                        <div class="menu__dropdown-item">
+                          <a class="menu__dropdown-link" href="#">
+                            Экономьте на топливе
+                          </a>
+                          <a class="menu__dropdown-link" href="#">
+                            Экономьте на штрафах
+                          </a>
+                          <a class="menu__dropdown-link" href="#">
+                            Отслеживайте каждый рейс
+                          </a>
+                        </div>
+                        <div class="menu__dropdown-item">
+                          <a class="menu__dropdown-link" href="#">
+                            Контролируйте ремонты
+                          </a>
+                          <a class="menu__dropdown-link" href="#">
+                            Автоматическая загрузка данных о прочих расходах
+                          </a>
+                        </div>
+                        <div class="menu__dropdown-item">
+                          <a class="menu__dropdown-link" href="#">
+                            Контролируйте каждый литр
+                          </a>
+                          <a class="menu__dropdown-link" href="#">
+                            Управляйте автопарком в уникальных условиях
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Контакты
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Блог
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  О компании
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Наши клиенты
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Документация
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Цены
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="burger">
+            <div class="burger__line"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+
+      <section class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__list-item">
+              <a class="breadcrumbs__list-link" href="#">
+                Главная
+              </a>
+            </li>
+            <li class="breadcrumbs__list-item">
+              <a class="breadcrumbs__list-link" href="#">
+                Блог
+              </a>
+            </li>
+            <li class="breadcrumbs__list-item">
+              <a class="breadcrumbs__list-link" href="#">
+                Новая форма ввода заявок с картой
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+      <section class="details">
+        <div class="details__wrapper">
+          <div class="container">
+            <div class="details__inner">
+              <div class="details__top">
+                <div class="details__top-box">
+                  <img class="details__top-img" src="../assets/images/details/1.png" alt="">
+                  <div class="details__top-block">
+                    <p class="details__top-accent">
+                      Новые функции
+                    </p>
+                    <time class="details__top-date" datetime="2024-01-19">
+                      19.01.2024
+                    </time>
+                    <h1 class="details__top-title title">
+                      Новая форма ввода заявок с картой
+                    </h1>
+                    <p class="details__top-text">
+                      Разработана альтернативная форма ввода заявок по перевозкам с картой. Пользователи могут выбирать
+                      ее
+                      на свое усмотрение.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <p class="details__inner-text">
+                Разработана альтернативная форма ввода заявок по перевозкам с картой. Пользователи могут выбирать ее на
+                свое усмотрение.
+              </p>
+              <div class="details__info">
+                <h2 class="details__info-title title">
+                  Преимущества использования формы с картой
+                </h2>
+                <p class="details__info-text">
+                  Опасные, хрупкие или скоропортящиеся товары вы можете без опаски доверить нашим специалистам. Каким бы
+                  транспортом не осуществлялась перевозка, вы можете быть уверены, груз будет находиться под присмотром
+                  наших логистов на протяжении всего пути. Для вашей полной уверенности, мы можем его застраховать.
+                </p>
+                <blockquote class="details__blockquote">
+                  <p class="details__blockquote-text">
+                    Учитывая, как интенсивно развиваются международные экономические связи, все актуальнее становиться
+                    вопрос транспортировки товаров из страны в страну.
+                  </p>
+                  <p class="details__blockquote-author">
+                    — Михайл Иванов, CEO & Founder
+                  </p>
+                </blockquote>
+                <p class="details__info-text">
+                  Опасные, хрупкие или скоропортящиеся товары вы можете без опаски доверить нашим специалистам. Каким бы
+                  транспортом не осуществлялась перевозка, вы можете быть уверены, груз будет находиться под присмотром
+                  наших логистов на протяжении всего пути. Для вашей полной уверенности, мы можем его застраховать.
+                </p>
+              </div>
+              <div class="details__bot">
+                <img class="details__bot-img" src="../assets/images/details/2.jpg" alt="">
+                <p class="details__bot-text">
+                  Основным преимуществом грузоперевозок автомобильным транспортом является скорость
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="application application--alt">
+        <div class="application__wrapper">
+          <div class="container">
+            <div class="application__inner">
+              <div class="application__item">
+                <h2 class="application__title title title--center">
+                  Будьте в курсе всех новостей
+                </h2>
+                <p class="application__item-text">
+                  Узнавайте о событиях первым!
+                </p>
+                <form class="form form--alt" action="">
+                  <div class="form__box">
+                    <input class="form__input input" type="email" name="email" placeholder="Введите ваш e-mail">
+                    <button class="form__btn btn" type="submit">
+                      Подписаться
+                    </button>
+                  </div>
+                  <p class="form__text">
+                    Нажимая на кнопку «Отправить», я даю согласие на обработку персональных данных и соглашаюсь c
+                    политикой конфиденциальности
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="blog">
+        <div class="blog__wrapper">
+          <div class="container">
+            <div class="blog__box">
+              <h2 class="blog__title title">
+                Читайте также
+              </h2>
+              <div class="blog__arrow arrow arrow--width">
+                <div class="blog__arrow-prev arrow__prev swiper-button-prev"></div>
+                <div class="blog__arrow-next arrow__next swiper-button-next"></div>
+              </div>
+            </div>
+            <div class="blog__swiper swiper">
+              <div class="blog__swiper-wrapper swiper-wrapper">
+                <a class="blog__link swiper-slide" href="#">
+                  <img class="blog__link-img" src="../assets/images/blog/1.png" alt="">
+                  <p class="blog__link-accent">
+                    Новые функции
+                  </p>
+                  <time class="blog__link-date" datetime="2024-01-19">
+                    19.01.2024
+                  </time>
+                  <p class="blog__link-title">
+                    Новая форма ввода заявок с картой
+                  </p>
+                  <p class="blog__link-text">
+                    Разработана альтернативная форма ввода заявок по перевозкам с картой. Пользователи могут выбирать ее
+                    на свое усмотрение.
+                  </p>
+                  <div class="blog__link-bot">
+                    Читать статью
+                    <i class="blog__link-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="12" viewBox="0 0 22 12" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M16.4386 0.238643L21.7553 5.42386C22.0816 5.74206 22.0816 6.25795 21.7553 6.57614L16.4386 11.7614C16.1123 12.0795 15.5833 12.0795 15.2571 11.7614C14.9308 11.4432 14.9308 10.9273 15.2571 10.6091L19.1476 6.81478L0 6.81478L0 5.18522L19.1476 5.18522L15.2571 1.39092C14.9308 1.07272 14.9308 0.556835 15.2571 0.238643C15.5833 -0.0795478 16.1123 -0.0795478 16.4386 0.238643Z"
+                          fill="#EF7F1A" />
+                      </svg>
+                    </i>
+                  </div>
+                </a>
+                <a class="blog__link swiper-slide" href="#">
+                  <img class="blog__link-img" src="../assets/images/blog/2.png" alt="">
+                  <p class="blog__link-accent">
+                    Новые функции
+                  </p>
+                  <time class="blog__link-date" datetime="2024-01-18">
+                    18.01.2024
+                  </time>
+                  <p class="blog__link-title">
+                    Новая форма ввода заявок с картой
+                  </p>
+                  <p class="blog__link-text">
+                    Разработана альтернативная форма ввода заявок по перевозкам с картой. Пользователи могут выбирать ее
+                    на свое усмотрение.
+                  </p>
+                  <div class="blog__link-bot">
+                    Читать статью
+                    <i class="blog__link-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="12" viewBox="0 0 22 12" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M16.4386 0.238643L21.7553 5.42386C22.0816 5.74206 22.0816 6.25795 21.7553 6.57614L16.4386 11.7614C16.1123 12.0795 15.5833 12.0795 15.2571 11.7614C14.9308 11.4432 14.9308 10.9273 15.2571 10.6091L19.1476 6.81478L0 6.81478L0 5.18522L19.1476 5.18522L15.2571 1.39092C14.9308 1.07272 14.9308 0.556835 15.2571 0.238643C15.5833 -0.0795478 16.1123 -0.0795478 16.4386 0.238643Z"
+                          fill="#EF7F1A" />
+                      </svg>
+                    </i>
+                  </div>
+                </a>
+                <a class="blog__link swiper-slide" href="#">
+                  <img class="blog__link-img" src="../assets/images/blog/3.png" alt="">
+                  <p class="blog__link-accent">
+                    Новые функции
+                  </p>
+                  <time class="blog__link-date" datetime="2024-01-17">
+                    17.01.2024
+                  </time>
+                  <p class="blog__link-title">
+                    Отслеживание почтовых отправлений DHL
+                  </p>
+                  <p class="blog__link-text">
+                    В список сервисов поддерживающих автоматическое отслеживание почтовых отправлений прибавилась
+                    курьерская служба "DHL".
+                  </p>
+                  <div class="blog__link-bot">
+                    Читать статью
+                    <i class="blog__link-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="12" viewBox="0 0 22 12" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M16.4386 0.238643L21.7553 5.42386C22.0816 5.74206 22.0816 6.25795 21.7553 6.57614L16.4386 11.7614C16.1123 12.0795 15.5833 12.0795 15.2571 11.7614C14.9308 11.4432 14.9308 10.9273 15.2571 10.6091L19.1476 6.81478L0 6.81478L0 5.18522L19.1476 5.18522L15.2571 1.39092C14.9308 1.07272 14.9308 0.556835 15.2571 0.238643C15.5833 -0.0795478 16.1123 -0.0795478 16.4386 0.238643Z"
+                          fill="#EF7F1A" />
+                      </svg>
+                    </i>
+                  </div>
+                </a>
+                <a class="blog__link swiper-slide" href="#">
+                  <img class="blog__link-img" src="../assets/images/blog/4.png" alt="">
+                  <p class="blog__link-accent">
+                    Новые функции
+                  </p>
+                  <time class="blog__link-date" datetime="2024-01-16">
+                    16.01.2024
+                  </time>
+                  <p class="blog__link-title">
+                    Отслеживание почтовых отправлений DHL
+                  </p>
+                  <p class="blog__link-text">
+                    Теперь сервис автоматического отслеживания курьерских отправлений поддерживает курьерскую компанию
+                    MBE
+                    (Mail Boxes Etc).
+                  </p>
+                  <div class="blog__link-bot">
+                    Читать статью
+                    <i class="blog__link-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="12" viewBox="0 0 22 12" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M16.4386 0.238643L21.7553 5.42386C22.0816 5.74206 22.0816 6.25795 21.7553 6.57614L16.4386 11.7614C16.1123 12.0795 15.5833 12.0795 15.2571 11.7614C14.9308 11.4432 14.9308 10.9273 15.2571 10.6091L19.1476 6.81478L0 6.81478L0 5.18522L19.1476 5.18522L15.2571 1.39092C14.9308 1.07272 14.9308 0.556835 15.2571 0.238643C15.5833 -0.0795478 16.1123 -0.0795478 16.4386 0.238643Z"
+                          fill="#EF7F1A" />
+                      </svg>
+                    </i>
+                  </div>
+                </a>
+                <a class="blog__link swiper-slide" href="#">
+                  <img class="blog__link-img" src="../assets/images/blog/1.png" alt="">
+                  <p class="blog__link-accent">
+                    Компания
+                  </p>
+                  <time class="blog__link-date" datetime="2024-01-15">
+                    15.01.2024
+                  </time>
+                  <p class="blog__link-title">
+                    Новая форма ввода заявок с картой
+                  </p>
+                  <p class="blog__link-text">
+                    Разработана альтернативная форма ввода заявок по перевозкам с картой. Пользователи могут выбирать ее
+                    на свое усмотрение.
+                  </p>
+                  <div class="blog__link-bot">
+                    Читать статью
+                    <i class="blog__link-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="12" viewBox="0 0 22 12" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M16.4386 0.238643L21.7553 5.42386C22.0816 5.74206 22.0816 6.25795 21.7553 6.57614L16.4386 11.7614C16.1123 12.0795 15.5833 12.0795 15.2571 11.7614C14.9308 11.4432 14.9308 10.9273 15.2571 10.6091L19.1476 6.81478L0 6.81478L0 5.18522L19.1476 5.18522L15.2571 1.39092C14.9308 1.07272 14.9308 0.556835 15.2571 0.238643C15.5833 -0.0795478 16.1123 -0.0795478 16.4386 0.238643Z"
+                          fill="#EF7F1A" />
+                      </svg>
+                    </i>
+                  </div>
+                </a>
+                <a class="blog__link swiper-slide" href="#">
+                  <img class="blog__link-img" src="../assets/images/blog/2.png" alt="">
+                  <p class="blog__link-accent">
+                    Компания
+                  </p>
+                  <time class="blog__link-date" datetime="2024-01-14">
+                    14.01.2024
+                  </time>
+                  <p class="blog__link-title">
+                    Новая форма ввода заявок с картой
+                  </p>
+                  <p class="blog__link-text">
+                    Разработана альтернативная форма ввода заявок по перевозкам с картой. Пользователи могут выбирать ее
+                    на свое усмотрение.
+                  </p>
+                  <div class="blog__link-bot">
+                    Читать статью
+                    <i class="blog__link-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="12" viewBox="0 0 22 12" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M16.4386 0.238643L21.7553 5.42386C22.0816 5.74206 22.0816 6.25795 21.7553 6.57614L16.4386 11.7614C16.1123 12.0795 15.5833 12.0795 15.2571 11.7614C14.9308 11.4432 14.9308 10.9273 15.2571 10.6091L19.1476 6.81478L0 6.81478L0 5.18522L19.1476 5.18522L15.2571 1.39092C14.9308 1.07272 14.9308 0.556835 15.2571 0.238643C15.5833 -0.0795478 16.1123 -0.0795478 16.4386 0.238643Z"
+                          fill="#EF7F1A" />
+                      </svg>
+                    </i>
+                  </div>
+                </a>
+                <a class="blog__link swiper-slide" href="#">
+                  <img class="blog__link-img" src="../assets/images/blog/3.png" alt="">
+                  <p class="blog__link-accent">
+                    Компания
+                  </p>
+                  <time class="blog__link-date" datetime="2024-01-13">
+                    13.01.2024
+                  </time>
+                  <p class="blog__link-title">
+                    Отслеживание почтовых отправлений DHL
+                  </p>
+                  <p class="blog__link-text">
+                    Разработана альтернативная форма ввода заявок по перевозкам с картой. Пользователи могут выбирать ее
+                    на свое усмотрение.
+                  </p>
+                  <div class="blog__link-bot">
+                    Читать статью
+                    <i class="blog__link-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="12" viewBox="0 0 22 12" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M16.4386 0.238643L21.7553 5.42386C22.0816 5.74206 22.0816 6.25795 21.7553 6.57614L16.4386 11.7614C16.1123 12.0795 15.5833 12.0795 15.2571 11.7614C14.9308 11.4432 14.9308 10.9273 15.2571 10.6091L19.1476 6.81478L0 6.81478L0 5.18522L19.1476 5.18522L15.2571 1.39092C14.9308 1.07272 14.9308 0.556835 15.2571 0.238643C15.5833 -0.0795478 16.1123 -0.0795478 16.4386 0.238643Z"
+                          fill="#EF7F1A" />
+                      </svg>
+                    </i>
+                  </div>
+                </a>
+                <a class="blog__link swiper-slide" href="#">
+                  <img class="blog__link-img" src="../assets/images/blog/4.png" alt="">
+                  <p class="blog__link-accent">
+                    Компания
+                  </p>
+                  <time class="blog__link-date" datetime="2024-01-12">
+                    12.01.2024
+                  </time>
+                  <p class="blog__link-title">
+                    Отслеживание почтовых отправлений DHL
+                  </p>
+                  <p class="blog__link-text">
+                    Служба экспресс доставки Mail Boxes Etc
+                  </p>
+                  <div class="blog__link-bot">
+                    Читать статью
+                    <i class="blog__link-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="12" viewBox="0 0 22 12" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M16.4386 0.238643L21.7553 5.42386C22.0816 5.74206 22.0816 6.25795 21.7553 6.57614L16.4386 11.7614C16.1123 12.0795 15.5833 12.0795 15.2571 11.7614C14.9308 11.4432 14.9308 10.9273 15.2571 10.6091L19.1476 6.81478L0 6.81478L0 5.18522L19.1476 5.18522L15.2571 1.39092C14.9308 1.07272 14.9308 0.556835 15.2571 0.238643C15.5833 -0.0795478 16.1123 -0.0795478 16.4386 0.238643Z"
+                          fill="#EF7F1A" />
+                      </svg>
+                    </i>
+                  </div>
+                </a>
+                <a class="blog__link swiper-slide" href="#">
+                  <img class="blog__link-img" src="../assets/images/blog/1.png" alt="">
+                  <p class="blog__link-accent">
+                    Логистика
+                  </p>
+                  <time class="blog__link-date" datetime="2024-01-11">
+                    11.01.2024
+                  </time>
+                  <p class="blog__link-title">
+                    Новая форма ввода заявок с картой
+                  </p>
+                  <p class="blog__link-text">
+                    Разработана альтернативная форма ввода заявок по перевозкам с картой. Пользователи могут выбирать ее
+                    на свое усмотрение.
+                  </p>
+                  <div class="blog__link-bot">
+                    Читать статью
+                    <i class="blog__link-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="12" viewBox="0 0 22 12" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M16.4386 0.238643L21.7553 5.42386C22.0816 5.74206 22.0816 6.25795 21.7553 6.57614L16.4386 11.7614C16.1123 12.0795 15.5833 12.0795 15.2571 11.7614C14.9308 11.4432 14.9308 10.9273 15.2571 10.6091L19.1476 6.81478L0 6.81478L0 5.18522L19.1476 5.18522L15.2571 1.39092C14.9308 1.07272 14.9308 0.556835 15.2571 0.238643C15.5833 -0.0795478 16.1123 -0.0795478 16.4386 0.238643Z"
+                          fill="#EF7F1A" />
+                      </svg>
+                    </i>
+                  </div>
+                </a>
+                <a class="blog__link swiper-slide" href="#">
+                  <img class="blog__link-img" src="../assets/images/blog/2.png" alt="">
+                  <p class="blog__link-accent">
+                    Логистика
+                  </p>
+                  <time class="blog__link-date" datetime="2024-01-10">
+                    10.01.2024
+                  </time>
+                  <p class="blog__link-title">
+                    Новая форма ввода заявок с картой
+                  </p>
+                  <p class="blog__link-text">
+                    Разработана альтернативная форма ввода заявок по перевозкам с картой. Пользователи могут выбирать ее
+                    на свое усмотрение.
+                  </p>
+                  <div class="blog__link-bot">
+                    Читать статью
+                    <i class="blog__link-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="12" viewBox="0 0 22 12" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M16.4386 0.238643L21.7553 5.42386C22.0816 5.74206 22.0816 6.25795 21.7553 6.57614L16.4386 11.7614C16.1123 12.0795 15.5833 12.0795 15.2571 11.7614C14.9308 11.4432 14.9308 10.9273 15.2571 10.6091L19.1476 6.81478L0 6.81478L0 5.18522L19.1476 5.18522L15.2571 1.39092C14.9308 1.07272 14.9308 0.556835 15.2571 0.238643C15.5833 -0.0795478 16.1123 -0.0795478 16.4386 0.238643Z"
+                          fill="#EF7F1A" />
+                      </svg>
+                    </i>
+                  </div>
+                </a>
+                <a class="blog__link swiper-slide" href="#">
+                  <img class="blog__link-img" src="../assets/images/blog/3.png" alt="">
+                  <p class="blog__link-accent">
+                    Логистика
+                  </p>
+                  <time class="blog__link-date" datetime="2024-01-9">
+                    9.01.2024
+                  </time>
+                  <p class="blog__link-title">
+                    Отслеживание почтовых отправлений DHL
+                  </p>
+                  <p class="blog__link-text">
+                    Разработана альтернативная форма ввода заявок по перевозкам с картой. Пользователи могут выбирать ее
+                    на свое усмотрение.
+                  </p>
+                  <div class="blog__link-bot">
+                    Читать статью
+                    <i class="blog__link-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="12" viewBox="0 0 22 12" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M16.4386 0.238643L21.7553 5.42386C22.0816 5.74206 22.0816 6.25795 21.7553 6.57614L16.4386 11.7614C16.1123 12.0795 15.5833 12.0795 15.2571 11.7614C14.9308 11.4432 14.9308 10.9273 15.2571 10.6091L19.1476 6.81478L0 6.81478L0 5.18522L19.1476 5.18522L15.2571 1.39092C14.9308 1.07272 14.9308 0.556835 15.2571 0.238643C15.5833 -0.0795478 16.1123 -0.0795478 16.4386 0.238643Z"
+                          fill="#EF7F1A" />
+                      </svg>
+                    </i>
+                  </div>
+                </a>
+                <a class="blog__link swiper-slide" href="#">
+                  <img class="blog__link-img" src="../assets/images/blog/4.png" alt="">
+                  <p class="blog__link-accent">
+                    Логистика
+                  </p>
+                  <time class="blog__link-date" datetime="2024-01-8">
+                    8.01.2024
+                  </time>
+                  <p class="blog__link-title">
+                    Отслеживание почтовых отправлений DHL
+                  </p>
+                  <p class="blog__link-text">
+                    Служба экспресс доставки Mail Boxes Etc
+                  </p>
+                  <div class="blog__link-bot">
+                    Читать статью
+                    <i class="blog__link-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="12" viewBox="0 0 22 12" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M16.4386 0.238643L21.7553 5.42386C22.0816 5.74206 22.0816 6.25795 21.7553 6.57614L16.4386 11.7614C16.1123 12.0795 15.5833 12.0795 15.2571 11.7614C14.9308 11.4432 14.9308 10.9273 15.2571 10.6091L19.1476 6.81478L0 6.81478L0 5.18522L19.1476 5.18522L15.2571 1.39092C14.9308 1.07272 14.9308 0.556835 15.2571 0.238643C15.5833 -0.0795478 16.1123 -0.0795478 16.4386 0.238643Z"
+                          fill="#EF7F1A" />
+                      </svg>
+                    </i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__info">
+              <p class="footer__info-title">
+                Решения
+              </p>
+              <div class="footer__info-box">
+                <div class="footer__info-block">
+                  <a class="footer__info-link" href="#">
+                    Экономьте на топливе
+                  </a>
+                  <a class="footer__info-link" href="#">
+                    Экономьте на штрафах
+                  </a>
+                  <a class="footer__info-link" href="#">
+                    Отслеживайте каждый рейс
+                  </a>
+                  <a class="footer__info-link" href="#">
+                    Ускорьте денежный оборот компании
+                  </a>
+                  <a class="footer__info-link" href="#">
+                    Напоминайте об оплате
+                  </a>
+                  <a class="footer__info-link" href="#">
+                    Контролируйте ремонты
+                  </a>
+                </div>
+                <div class="footer__info-block">
+                  <a class="footer__info-link" href="#">
+                    Автоматическая загрузка данных о прочих расходах
+                  </a>
+                  <a class="footer__info-link" href="#">
+                    Контролируйте каждый литр
+                  </a>
+                  <a class="footer__info-link" href="#">
+                    Управляйте автопарком в уникальных условиях
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="footer__item">
+              <a class="footer__item-link" href="#">
+                Контакты
+              </a>
+              <a class="footer__item-link" href="#">
+                Наши клиенты
+              </a>
+              <a class="footer__item-link" href="#">
+                Блог
+              </a>
+              <a class="footer__item-link" href="#">
+                Документация
+              </a>
+              <a class="footer__item-link" href="#">
+                О компании
+              </a>
+              <a class="footer__item-link" href="#">
+                Цены
+              </a>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <a class="logo" href="#">
+              <img class="logo__img" src="../assets/images/logo.svg" alt="">
+            </a>
+            <div class="footer__bottom-box">
+              <p class="footer__bottom-text">
+                Внесено в реестр Российского ПО
+              </p>
+              <img class="footer__bottom-img" src="../assets/images/icons/footer.svg" alt="">
+            </div>
+            <a class="phone" href="tel:+78552782878">
+              <i class="phone__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path
+                    d="M14.6467 12.2199C14.6467 12.4599 14.5934 12.7066 14.48 12.9466C14.3667 13.1866 14.22 13.4133 14.0267 13.6266C13.7 13.9866 13.34 14.2466 12.9334 14.4133C12.5334 14.5799 12.1 14.6666 11.6334 14.6666C10.9534 14.6666 10.2267 14.5066 9.46004 14.1799C8.69338 13.8533 7.92671 13.4133 7.16671 12.8599C6.40004 12.2999 5.67337 11.6799 4.98004 10.9933C4.29337 10.2999 3.67337 9.57325 3.12004 8.81325C2.57337 8.05325 2.13337 7.29325 1.81337 6.53992C1.49337 5.77992 1.33337 5.05325 1.33337 4.35992C1.33337 3.90659 1.41337 3.47325 1.57337 3.07325C1.73337 2.66659 1.98671 2.29325 2.34004 1.95992C2.76671 1.53992 3.23337 1.33325 3.72671 1.33325C3.91337 1.33325 4.10004 1.37325 4.26671 1.45325C4.44004 1.53325 4.59337 1.65325 4.71337 1.82659L6.26004 4.00659C6.38004 4.17325 6.46671 4.32659 6.52671 4.47325C6.58671 4.61325 6.62004 4.75325 6.62004 4.87992C6.62004 5.03992 6.57338 5.19992 6.48004 5.35325C6.39338 5.50659 6.26671 5.66659 6.10671 5.82659L5.60004 6.35325C5.52671 6.42659 5.49337 6.51325 5.49337 6.61992C5.49337 6.67325 5.50004 6.71992 5.51338 6.77325C5.53338 6.82659 5.55338 6.86659 5.56671 6.90659C5.68671 7.12659 5.89337 7.41325 6.18671 7.75992C6.48671 8.10659 6.80671 8.45992 7.15338 8.81325C7.51337 9.16659 7.86004 9.49325 8.21338 9.79325C8.56004 10.0866 8.84671 10.2866 9.07338 10.4066C9.10671 10.4199 9.14671 10.4399 9.19338 10.4599C9.24671 10.4799 9.30004 10.4866 9.36004 10.4866C9.47338 10.4866 9.56004 10.4466 9.63338 10.3733L10.14 9.87325C10.3067 9.70659 10.4667 9.57992 10.62 9.49992C10.7734 9.40659 10.9267 9.35992 11.0934 9.35992C11.22 9.35992 11.3534 9.38659 11.5 9.44659C11.6467 9.50659 11.8 9.59325 11.9667 9.70659L14.1734 11.2733C14.3467 11.3933 14.4667 11.5333 14.54 11.6999C14.6067 11.8666 14.6467 12.0333 14.6467 12.2199Z"
+                    fill="#EF7F1A" />
+                </svg>
+              </i>
+              +7 (8552) 78-28-78
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="../scripts/scripts.js"></script>
+</body>
+
+</html>

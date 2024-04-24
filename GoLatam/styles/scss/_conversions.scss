@@ -1,0 +1,128 @@
+.conversions {
+  &__wrapper {
+    @include fluid(padding-bottom, 30px, 86px);
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    @include fluid(margin-bottom, 20px, 64px);
+  }
+
+  &__inner {
+    display: grid;
+    @include fluid(gap, 25px, 56px);
+    max-width: 994px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__emoji {
+    align-items: center;
+    @include fluid(width, 25px, 30px);
+    @include fluid(height, 25px, 30px);
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+
+  &__item {
+    position: relative;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    max-width: 700px;
+    width: 100%;
+    @include fluid(padding, 15px, 24px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 231, 231, 0.46);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 8px 8px 32px 0px rgba(0, 0, 0, 0.16);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    color: #d1d1d5;
+
+    &--ml {
+      margin-left: auto;
+    }
+
+    &-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    &-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      @include fluid(font-size, 16px, 20px);
+      font-weight: 700;
+    }
+
+    &-country {
+      @include fluid(width, 25px, 30px);
+      @include fluid(height, 25px, 30px);
+      -o-object-fit: contain;
+      object-fit: contain;
+    }
+
+    &-text {
+      @include fluid(margin-bottom, 20px, 32px);
+    }
+  }
+
+  &__block {
+    display: grid;
+    grid-template-columns: .45fr 1fr;
+    @include fluid(column-gap, 20px, 32px);
+    @include fluid(row-gap, 10px, 12px);
+
+    &-text {
+      color: var(--Main-Go-Latam, #1F93CC);
+      font-weight: 600;
+    }
+
+    &-num {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      border-radius: 4px;
+      background: var(--Main-Go-Latam, #1F93CC);
+      color: #fff;
+
+      &--one {
+        width: 92%;
+      }
+
+      &--two {
+        width: 62%;
+      }
+
+      &--three {
+        width: 40%;
+      }
+
+      &--four {
+        width: 9%;
+      }
+    }
+  }
+}
+
+@media(max-width:768px) {
+  .conversions {
+    &__block {
+      grid-template-columns: 1fr;
+
+      &-text {
+        text-align: center;
+      }
+    }
+  }
+}

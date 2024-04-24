@@ -1,0 +1,35 @@
+.doc {
+  @include fluid(margin-top, 30px, 120px);
+  @include fluid(margin-bottom, 30px, 120px);
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 15px, 20px);
+  }
+
+  &__link {
+    position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    @include fluid(padding-left, 32px, 42px);
+    color: #000;
+    @include fluid(font-size, 14px, 16px);
+    font-weight: 400;
+    line-height: 150%;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      @include fluid(width, 26px, 32px);
+      @include fluid(height, 26px, 32px);
+      background-image: url('../img/icons/doc.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}

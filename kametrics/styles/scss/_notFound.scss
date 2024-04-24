@@ -1,0 +1,76 @@
+.notFound {
+  &__wrapper {
+    position: relative;
+    @include fluid(margin-top, 120px, 140px);
+    @include fluid(padding-bottom, 30px, 100px);
+    @include fluid(margin-bottom, 60px, 130px);
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      @include fluid(height, 160px, 280px);
+      background: linear-gradient(to top, rgba(130, 157, 241, 0.29), rgba(25, 25, 25, 0) 100%);
+      pointer-events: none;
+      z-index: -1;
+    }
+  }
+
+  &__inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__bg {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    max-width: 415px;
+    max-height: 429px;
+  }
+
+  &__smile {
+    font-family: "Manrope";
+    font-weight: 700;
+    @include fluid(font-size, 30px, 50px);
+  }
+
+  &__gradient {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    background-image: linear-gradient(85.24deg, rgb(96, 210, 195), rgb(140, 143, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-family: 'Red Hat Display';
+    font-weight: 700;
+    line-height: 110%;
+    @include fluid(font-size, 200px, 400px);
+  }
+
+  &__text {
+    font-family: "Manrope";
+    font-weight: 700;
+    @include fluid(font-size, 22px, 30px);
+    @include fluid(margin-bottom, 20px, 60px);
+  }
+
+  &__btn {
+    @include fluid(margin-bottom, 20px, 60px);
+  }
+}
+
+@media (max-width:576px) {
+  .notFound {
+    &__gradient {
+      font-size: 150px;
+    }
+  }
+}

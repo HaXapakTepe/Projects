@@ -1,0 +1,130 @@
+.content {
+
+  &__wrapper {
+    @include fluid(margin-top, 30px, 67px);
+    @include fluid(margin-bottom, 60px, 160px);
+    overflow-x: hidden;
+  }
+
+  &__inner {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 12px;
+
+    &:has(+*) {
+      @include fluid(margin-bottom, 30px, 61px);
+    }
+
+    &--alt {
+
+      .content {
+        &__title {
+          margin-left: auto;
+
+          &-img {
+            left: unset;
+            right: 0;
+          }
+        }
+
+        &__img {
+          order: -1;
+        }
+      }
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    pointer-events: none;
+    z-index: -1;
+
+    // &--stepOne {
+    //   @include fluid(left, 230px, 250px);
+    //   @include fluid(top, 25px, 30px);
+    //   @include fluid(width, 440px, 548px);
+    //   @include fluid(height, 325px, 426px);
+    // }
+
+    // &--stepTwo {
+    //   @include fluid(right, -157px, -137px);
+    //   @include fluid(top, 150px, 30px);
+    //   @include fluid(width, 880px, 1090px);
+    //   @include fluid(height, 980px, 1049px);
+    // }
+
+    // &--stepThree {
+    //   left: -37px;
+    //   @include fluid(top, 165px, 45px);
+    //   @include fluid(width, 730px, 943px);
+    //   @include fluid(height, 800px, 944px);
+    // }
+
+    // &--stepFour {
+    //   @include fluid(right, -214px, -194px);
+    //   @include fluid(top, 40px, 30px);
+    //   @include fluid(width, 880px, 992px);
+    //   @include fluid(height, 480px, 487px);
+    // }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 15px, 20px);
+  }
+
+  &__title {
+    position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+
+    &-img {
+      position: absolute;
+      @include fluid(width, 230px, 255px);
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      @include fluid(height, 45px, 63px);
+      z-index: -1;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+
+    &:has(+.content__text) {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__img {
+    border-radius: 8px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .content {
+    &__icon {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+
+    &__img {
+      order: -1;
+    }
+  }
+}

@@ -1,0 +1,273 @@
+.footer {
+  @include fluid(padding-top, 20px, 35px);
+  @include fluid(padding-bottom, 20px, 50px);
+
+  &__inner {
+    display: flex;
+    @include fluid(gap, 15px, 20px);
+    @include fluid(margin-bottom, 30px, 65px);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 15px, 20px);
+
+    &-box,
+    &-slide {
+      display: flex;
+      flex-direction: column;
+      @include fluid(gap, 15px, 20px);
+    }
+
+    &:first-child {
+      @include fluid(margin-right, 45px, 90px);
+    }
+
+    &:nth-child(2) {
+      @include fluid(margin-right, 20px, 40px);
+    }
+
+    &:nth-child(3) {
+      @include fluid(margin-right, 45px, 100px);
+    }
+
+    &:not(:first-child) {
+      @include fluid(padding-top, 20px, 30px);
+    }
+
+    .logo {
+      width: fit-content;
+      @include fluid(height, 75px, 90px);
+      @include fluid(margin-bottom, 5px, 26px);
+      object-fit: contain;
+    }
+
+    &-img {
+      width: fit-content;
+      object-fit: contain;
+      @include fluid(height, 180px, 217px);
+    }
+
+    &-title {
+      @include fluid(margin-bottom, 5px, 10px);
+      font-weight: 500;
+      color: #FFFFFF;
+    }
+
+    &-text,
+    &-link {
+      @include fluid(font-size, 12px, 14px);
+      line-height: 1.2;
+      color: #FFFFFF;
+    }
+
+    &-link {
+      position: relative;
+      width: fit-content;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 1px;
+        background-color: #fff;
+        transition: width .38s ease-in-out;
+      }
+
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  &__copy {
+    @include fluid(font-size, 12px, 14px);
+    line-height: 1.2;
+    color: #FFFFFF;
+  }
+
+  .social {
+    &__icon {
+      @include fluid(font-size, 20px, 23px);
+    }
+  }
+}
+
+.developer {
+  position: relative;
+  @include fluid(padding-right, 63px, 73px);
+  color: #919191;
+  font-family: 'Gotham Pro', sans-serif;
+  transition: color .38s ease-in-out;
+
+  &:hover {
+    color: #F43E36;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 45%;
+    right: 0;
+    transform: translateY(-52%);
+    width: 53px;
+    height: 42px;
+    background-image: url("../images/icons/sa.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer {
+    &__inner {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    &__item {
+
+      &:first-child,
+      &:nth-child(2),
+      &:nth-child(3) {
+        margin-right: unset;
+      }
+
+      &-link {
+        &::after {
+          content: none;
+        }
+      }
+    }
+  }
+
+  .developer {
+    &:hover {
+      color: #919191;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    &__inner {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__item {
+      order: 1;
+
+      &:first-child {
+        order: 0;
+      }
+
+      &:last-child {
+        order: 0;
+      }
+
+      &:not(:first-child) {
+        padding-top: unset;
+      }
+
+      &-title {
+        font-size: 16px;
+      }
+    }
+
+    &__bottom {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    .logo {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__inner {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    &__item {
+      align-items: center;
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        padding-right: 15px;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+
+        &::before,
+        &::after {
+          content: '';
+          position: absolute;
+          right: 0;
+          top: 10px;
+          width: 6px;
+          height: 1.5px;
+          background-color: #D0DAE4;
+          transition: transform .38s ease-in-out,
+            color .38s ease-in-out;
+        }
+
+        &::before {
+          right: 4px;
+          transform: rotate(45deg);
+        }
+
+        &::after {
+          right: 1px;
+          transform: rotate(-45deg);
+        }
+      }
+
+      &-title {
+        margin-bottom: 0;
+      }
+
+      &-box {
+        display: none;
+      }
+
+      &-slide {
+        align-items: center;
+      }
+
+      &-img {
+        margin-left: auto;
+        margin-right: auto;
+        height: 120px;
+      }
+
+      &-title,
+      &-text,
+      &-link,
+      &-copy {
+        text-align: center;
+      }
+    }
+
+    &__copy {
+      text-align: center;
+    }
+  }
+}

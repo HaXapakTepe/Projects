@@ -1,0 +1,61 @@
+.way {
+  &__wrapper {
+    @include fluid(margin-top, 30px, 80px);
+    @include fluid(margin-bottom, 60px, 150px);
+  }
+
+  &__inner {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      @include fluid(bottom, 20px, 50px);
+      @include fluid(right, 30px, 97px);
+      background: linear-gradient(149.25deg, rgb(99, 206, 198) 24.17%, rgb(137, 146, 250) 85.662%);
+      @include fluid(width, 430px, 540px);
+      @include fluid(height, 300px, 375px);
+      -webkit-filter: blur(80px);
+      filter: blur(80px);
+      z-index: -1;
+      opacity: .8;
+    }
+  }
+
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    @include fluid(gap, 20px, 38px);
+    @include fluid(margin-bottom, 20px, 60px);
+
+    &-text {
+      @include fluid(margin-right, 20px, 60px);
+    }
+  }
+
+  &__title {
+    max-width: 1108px;
+    text-wrap: balance;
+    @include fluid(margin-bottom, 30px, 70px);
+  }
+
+  &__box {
+    max-width: 1180px;
+    @include fluid(margin-bottom, 20px, 40px);
+  }
+
+  &__img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    @include fluid(height, 280px, 355px);
+    @include fluid(border-radius, 30px, 40px);
+  }
+
+  &__text {
+    max-width: 1171px;
+    font-family: "Manrope";
+    text-wrap: balance;
+    @include fluid(font-size, 16px, 20px);
+  }
+}

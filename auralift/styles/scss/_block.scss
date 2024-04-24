@@ -1,0 +1,123 @@
+.block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  &__form {
+    position: relative;
+    flex-direction: column;
+    gap: 9px;
+
+    .link {
+      width: 100%;
+      justify-content: center;
+      padding: 8px 14px;
+    }
+  }
+
+  &__item {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    justify-content: space-between;
+    padding: 4px 12px;
+    color: #475467;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    border-radius: 6px;
+    background: #F2F4F7;
+    cursor: pointer;
+
+    &--active {
+      .block__item {
+        &-icon {
+          transform: rotateX(-180deg);
+        }
+      }
+
+      +.block__elem {
+        visibility: visible;
+        z-index: 10;
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    &-icon {
+      display: flex;
+      align-items: center;
+      transition: transform .23s ease-in-out;
+    }
+  }
+
+  &__elem {
+    position: absolute;
+    top: 120%;
+    left: 0;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 4px;
+    padding: 12px 0;
+    border-radius: 8px;
+    border: 1px solid #F2F4F7;
+    background: #fff;
+    box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.03),
+      0px 12px 16px -4px rgba(16, 24, 40, 0.08);
+    transform: translateY(-15px);
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+    transition: opacity .23s ease-in-out, z-index .23s ease-in-out, visibility .23s ease-in-out, transform .23s ease-in-out;
+
+    &-box {
+      height: 310px;
+      overflow-y: auto;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #F2F4F7;
+    }
+
+    &-block {
+      padding: 0 16px;
+
+      .search {
+        &__label {
+          color: #98A2B3;
+          font-size: 14px;
+          line-height: 20px;
+          padding: 7px 11px;
+        }
+
+        &__icon {
+          cursor: pointer;
+        }
+      }
+    }
+
+    &-color {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+    }
+
+    .label {
+      padding: 8px 16px;
+      width: 100%;
+    }
+  }
+}
+
+@media(max-width:767px) {
+  .block {
+    .link {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}

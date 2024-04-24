@@ -1,0 +1,18 @@
+.thanks {
+  @include fluid(margin-top, 30px, 40px);
+  @include fluid(margin-bottom, 30px, 80px);
+  max-width: 324px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  @include fluid(gap, 15px, 16px);
+  @include fluid(padding, 15px, 32px);
+  border-radius: 16px;
+  border: 1px solid rgba(39, 41, 55, 0.12);
+
+  &__text {
+    color: rgba(39, 41, 55, 0.35);
+  }
+}

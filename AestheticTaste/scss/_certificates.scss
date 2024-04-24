@@ -1,0 +1,17 @@
+.certificates {
+  @include fluid(margin-top, 30px, 120px);
+  @include fluid(margin-bottom, 30px, 120px);
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    @include fluid(gap, 30px, 60px);
+  }
+
+  &__img {
+    @include fluid(height, 280px, 320px);
+    -o-object-fit: contain;
+    object-fit: contain;
+    cursor: pointer;
+  }
+}

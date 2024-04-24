@@ -1,0 +1,44 @@
+.formReviews {
+  display: none;
+  max-width: 850px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  @include fluid(padding, 30px, 60px);
+  border-radius: 20px;
+  background: linear-gradient(270deg, #524848 0%, #3E3535 100%, #3E3535 100%);
+
+  &__fieldset {
+    &-box {
+      display: flex;
+      flex-direction: column;
+      @include fluid(gap, 15px, 30px);
+      @include fluid(margin-bottom, 15px, 30px);
+    }
+
+    &-textarea,
+    &-input {
+      width: 100%;
+      background-color: #fff;
+      @include fluid(padding-left, 10px, 20px);
+      @include fluid(padding-right, 10px, 20px);
+      @include fluid(padding-top, 10px, 15px);
+      @include fluid(padding-bottom, 10px, 15px);
+      color: #3E3535;
+      @include fluid(font-size, 14px, 18px);
+      line-height: 150%;
+      border-radius: 20px;
+    }
+
+    &-textarea {
+      @include fluid(margin-bottom, 15px, 30px);
+    }
+
+    &-text {
+      color: #FFF;
+      @include fluid(font-size, 12px, 14px);
+      font-weight: 400;
+      line-height: 125%;
+    }
+  }
+}

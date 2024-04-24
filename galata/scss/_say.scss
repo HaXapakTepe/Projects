@@ -1,0 +1,89 @@
+.say {
+  @include fluid(margin-top, 30px, 80px);
+  @include fluid(margin-bottom, 30px, 80px);
+
+  &__title {
+    @include fluid(margin-bottom, 30px, 60px);
+    text-align: center;
+  }
+
+  &__inner {
+    position: relative;
+    @include fluid(margin-bottom, 30px, 80px);
+  }
+
+  &__swiper {
+    width: 83%;
+  }
+
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-name {
+      @include fluid(font-size, 18px, 20px);
+      font-weight: 500;
+      line-height: 1.4;
+      letter-spacing: -0.8px;
+    }
+
+    &-rating {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    &-star {
+      color: #EC643A;
+    }
+
+    &-date {
+      display: block;
+      @include fluid(font-size, 12px, 14px);
+      font-weight: 500;
+    }
+
+    &-text {
+      color: rgba(39, 41, 55, 0.75);
+    }
+  }
+
+  &__next,
+  &__prev {
+    transition: opacity 0.38s ease-in-out;
+
+    &::after {
+      font-size: 20px;
+      font-weight: 600;
+      color: #000;
+    }
+  }
+
+  .btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .say {
+    overflow-x: hidden;
+
+    &__swiper {
+      width: 100%;
+      overflow-x: visible;
+    }
+
+    &__prev,
+    &__next {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/images/icons/logo.svg" type="x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../styles/css/icons.css">
+  <link rel="stylesheet" href="../styles/css/normalize.css">
+  <link rel="stylesheet" href="../styles/css/style.css?v=0.0001">
+  <title>Личный кабинет</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="burger"></div>
+          <a class="logo" href="#">
+            <img class="logo__img" src="../assets/images/icons/logo.svg" alt="logo">
+          </a>
+          <ul class="menu">
+            <li class="menu__item menu__item--hidden">
+              <a class="logo" href="#">
+                <img class="logo__img" src="../assets/images/icons/logo-white.svg" alt="">
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Доставка
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Способы оплаты
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                О возврате
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Контакты
+              </a>
+            </li>
+            <li class="menu__item menu__item--hidden">
+              <div class="menu__box">
+                <a class="menu__link" href="#">
+                  Книги
+                </a>
+                <span class="menu__arrow">
+                  <svg viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.46967 6.53033C5.76256 6.82322 6.23744 6.82322 6.53033 6.53033L11.3033 1.75736C11.5962 1.46447 11.5962 0.989592 11.3033 0.696699C11.0104 0.403806 10.5355 0.403806 10.2426 0.696699L6 4.93934L1.75736 0.696699C1.46447 0.403806 0.989592 0.403806 0.696699 0.696699C0.403806 0.989593 0.403806 1.46447 0.696699 1.75736L5.46967 6.53033ZM5.25 5L5.25 6L6.75 6L6.75 5L5.25 5Z"
+                      fill="white" />
+                  </svg>
+                </span>
+              </div>
+              <ul class="menu__dropdown">
+                <li class="menu__dropdown-item">
+                  <a class="menu__dropdown-link" href="#">
+                    Доставка
+                  </a>
+                </li>
+                <li class="menu__dropdown-item">
+                  <a class="menu__dropdown-link" href="#">
+                    Аксессуары
+                  </a>
+                </li>
+                <li class="menu__dropdown-item">
+                  <a class="menu__dropdown-link" href="#">
+                    Детям
+                  </a>
+                </li>
+                <li class="menu__dropdown-item">
+                  <a class="menu__dropdown-link" href="#">
+                    Купить
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item menu__item--hidden">
+              <div class="menu__box">
+                <a class="menu__link" href="#">
+                  Сувениры
+                </a>
+                <span class="menu__arrow">
+                  <svg viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.46967 6.53033C5.76256 6.82322 6.23744 6.82322 6.53033 6.53033L11.3033 1.75736C11.5962 1.46447 11.5962 0.989592 11.3033 0.696699C11.0104 0.403806 10.5355 0.403806 10.2426 0.696699L6 4.93934L1.75736 0.696699C1.46447 0.403806 0.989592 0.403806 0.696699 0.696699C0.403806 0.989593 0.403806 1.46447 0.696699 1.75736L5.46967 6.53033ZM5.25 5L5.25 6L6.75 6L6.75 5L5.25 5Z"
+                      fill="white" />
+                  </svg>
+                </span>
+              </div>
+              <ul class="menu__dropdown">
+                <li class="menu__dropdown-item">
+                  <a class="menu__dropdown-link" href="#">
+                    Доставка
+                  </a>
+                </li>
+                <li class="menu__dropdown-item">
+                  <a class="menu__dropdown-link" href="#">
+                    Аксессуары
+                  </a>
+                </li>
+                <li class="menu__dropdown-item">
+                  <a class="menu__dropdown-link" href="#">
+                    Детям
+                  </a>
+                </li>
+                <li class="menu__dropdown-item">
+                  <a class="menu__dropdown-link" href="#">
+                    Купить
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item menu__item--hidden">
+              <div class="menu__box">
+                <a class="menu__link" href="#">
+                  Аксессуары
+                </a>
+                <span class="menu__arrow">
+                  <svg viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.46967 6.53033C5.76256 6.82322 6.23744 6.82322 6.53033 6.53033L11.3033 1.75736C11.5962 1.46447 11.5962 0.989592 11.3033 0.696699C11.0104 0.403806 10.5355 0.403806 10.2426 0.696699L6 4.93934L1.75736 0.696699C1.46447 0.403806 0.989592 0.403806 0.696699 0.696699C0.403806 0.989593 0.403806 1.46447 0.696699 1.75736L5.46967 6.53033ZM5.25 5L5.25 6L6.75 6L6.75 5L5.25 5Z"
+                      fill="white" />
+                  </svg>
+                </span>
+              </div>
+              <ul class="menu__dropdown">
+                <li class="menu__dropdown-item">
+                  <a class="menu__dropdown-link" href="#">
+                    Доставка
+                  </a>
+                </li>
+                <li class="menu__dropdown-item">
+                  <a class="menu__dropdown-link" href="#">
+                    Аксессуары
+                  </a>
+                </li>
+                <li class="menu__dropdown-item">
+                  <a class="menu__dropdown-link" href="#">
+                    Детям
+                  </a>
+                </li>
+                <li class="menu__dropdown-item">
+                  <a class="menu__dropdown-link" href="#">
+                    Купить
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item menu__item--hidden">
+              <div class="menu__box">
+                <a class="menu__link" href="#">
+                  Одежда
+                </a>
+                <span class="menu__arrow">
+                  <svg viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.46967 6.53033C5.76256 6.82322 6.23744 6.82322 6.53033 6.53033L11.3033 1.75736C11.5962 1.46447 11.5962 0.989592 11.3033 0.696699C11.0104 0.403806 10.5355 0.403806 10.2426 0.696699L6 4.93934L1.75736 0.696699C1.46447 0.403806 0.989592 0.403806 0.696699 0.696699C0.403806 0.989593 0.403806 1.46447 0.696699 1.75736L5.46967 6.53033ZM5.25 5L5.25 6L6.75 6L6.75 5L5.25 5Z"
+                      fill="white" />
+                  </svg>
+                </span>
+              </div>
+              <ul class="menu__dropdown">
+                <li class="menu__dropdown-item">
+                  <a class="menu__dropdown-link" href="#">
+                    Доставка
+                  </a>
+                </li>
+                <li class="menu__dropdown-item">
+                  <a class="menu__dropdown-link" href="#">
+                    Аксессуары
+                  </a>
+                </li>
+                <li class="menu__dropdown-item">
+                  <a class="menu__dropdown-link" href="#">
+                    Детям
+                  </a>
+                </li>
+                <li class="menu__dropdown-item">
+                  <a class="menu__dropdown-link" href="#">
+                    Купить
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item menu__item--hidden">
+              <div class="menu__box">
+                <a class="menu__link" href="#">
+                  Канцелярия
+                </a>
+                <span class="menu__arrow">
+                  <svg viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.46967 6.53033C5.76256 6.82322 6.23744 6.82322 6.53033 6.53033L11.3033 1.75736C11.5962 1.46447 11.5962 0.989592 11.3033 0.696699C11.0104 0.403806 10.5355 0.403806 10.2426 0.696699L6 4.93934L1.75736 0.696699C1.46447 0.403806 0.989592 0.403806 0.696699 0.696699C0.403806 0.989593 0.403806 1.46447 0.696699 1.75736L5.46967 6.53033ZM5.25 5L5.25 6L6.75 6L6.75 5L5.25 5Z"
+                      fill="white" />
+                  </svg>
+                </span>
+              </div>
+              <ul class="menu__dropdown">
+                <li class="menu__dropdown-item">
+                  <a class="menu__dropdown-link" href="#">
+                    Доставка
+                  </a>
+                </li>
+                <li class="menu__dropdown-item">
+                  <a class="menu__dropdown-link" href="#">
+                    Аксессуары
+                  </a>
+                </li>
+                <li class="menu__dropdown-item">
+                  <a class="menu__dropdown-link" href="#">
+                    Детям
+                  </a>
+                </li>
+                <li class="menu__dropdown-item">
+                  <a class="menu__dropdown-link" href="#">
+                    Купить
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item menu__item--hidden">
+              <div class="menu__box">
+                <a class="menu__link" href="#">
+                  Детям
+                </a>
+                <span class="menu__arrow">
+                  <svg viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.46967 6.53033C5.76256 6.82322 6.23744 6.82322 6.53033 6.53033L11.3033 1.75736C11.5962 1.46447 11.5962 0.989592 11.3033 0.696699C11.0104 0.403806 10.5355 0.403806 10.2426 0.696699L6 4.93934L1.75736 0.696699C1.46447 0.403806 0.989592 0.403806 0.696699 0.696699C0.403806 0.989593 0.403806 1.46447 0.696699 1.75736L5.46967 6.53033ZM5.25 5L5.25 6L6.75 6L6.75 5L5.25 5Z"
+                      fill="white" />
+                  </svg>
+                </span>
+              </div>
+              <ul class="menu__dropdown">
+                <li class="menu__dropdown-item">
+                  <a class="menu__dropdown-link" href="#">
+                    Доставка
+                  </a>
+                </li>
+                <li class="menu__dropdown-item">
+                  <a class="menu__dropdown-link" href="#">
+                    Аксессуары
+                  </a>
+                </li>
+                <li class="menu__dropdown-item">
+                  <a class="menu__dropdown-link" href="#">
+                    Детям
+                  </a>
+                </li>
+                <li class="menu__dropdown-item">
+                  <a class="menu__dropdown-link" href="#">
+                    Купить
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item menu__item--hidden">
+              <a class="link link--blue link--mla link--higher" href="#">
+                О павильоне
+              </a>
+            </li>
+          </ul>
+          <a class="link link--blue link--mla link--higher" href="#">
+            О павильоне
+          </a>
+          <div class="header__block">
+            <a class="header__icon header__icon--search" data-fancybox href="#search">
+              <svg viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18.8095 9.73913C18.8095 14.5498 14.8387 18.4783 9.90476 18.4783C4.97083 18.4783 1 14.5498 1 9.73913C1 4.92847 4.97083 1 9.90476 1C14.8387 1 18.8095 4.92847 18.8095 9.73913Z"
+                  stroke="#111111" stroke-width="2" />
+                <path
+                  d="M24.2866 26.6988C24.6726 27.0939 25.3057 27.1012 25.7008 26.7153C26.0958 26.3294 26.1032 25.6962 25.7173 25.3012L24.2866 26.6988ZM14.855 17.0445L24.2866 26.6988L25.7173 25.3012L16.2856 15.6469L14.855 17.0445Z"
+                  fill="#111111" />
+              </svg>
+            </a>
+            <a class="header__icon" href="#">
+              <svg viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="path-1-inside-1_5_4222" fill="white">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M31 31.0283H0C0.353168 22.7729 7.15765 16.1885 15.5 16.1885C23.8424 16.1885 30.6468 22.7729 31 31.0283Z" />
+                </mask>
+                <path
+                  d="M0 31.0283L-1.99817 30.9428L-2.08739 33.0283H0V31.0283ZM31 31.0283V33.0283H33.0874L32.9982 30.9428L31 31.0283ZM0 33.0283H31V29.0283H0V33.0283ZM1.99817 31.1138C2.30575 23.9241 8.23358 18.1885 15.5 18.1885V14.1885C6.08171 14.1885 -1.59941 21.6217 -1.99817 30.9428L1.99817 31.1138ZM15.5 18.1885C22.7664 18.1885 28.6943 23.9241 29.0018 31.1138L32.9982 30.9428C32.5994 21.6217 24.9183 14.1885 15.5 14.1885V18.1885Z"
+                  fill="#111111" mask="url(#path-1-inside-1_5_4222)" />
+                <circle cx="15.5005" cy="6.74539" r="5.74539" stroke="#111111" stroke-width="2" />
+              </svg>
+            </a>
+            <a class="header__icon" href="#">
+              <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M32.788 5.25621C30.7134 3.18154 27.955 2.03906 25.021 2.03906C22.4262 2.03906 19.9686 2.93285 17.9999 4.57455C16.0314 2.93285 13.5738 2.03906 10.979 2.03906C8.04501 2.03906 5.28663 3.18161 3.21196 5.25621C-1.07065 9.5389 -1.07065 16.5075 3.21196 20.7903L15.2563 32.8347C15.987 33.5652 16.9613 33.9675 18 33.9675C19.0387 33.9675 20.013 33.5652 20.7437 32.8346L32.788 20.7903C37.0706 16.5075 37.0706 9.53883 32.788 5.25621ZM31.296 19.2983L19.2517 31.3426C18.9196 31.6747 18.4751 31.8575 18 31.8575C17.5249 31.8575 17.0804 31.6747 16.7483 31.3426L4.704 19.2984C1.24406 15.8382 1.24406 10.2082 4.70393 6.74818C6.3801 5.07201 8.60865 4.14897 10.979 4.14897C13.3493 4.14897 15.5779 5.07201 17.254 6.74811C17.6659 7.16012 18.3339 7.16012 18.746 6.74811C20.4221 5.07194 22.6507 4.1489 25.0211 4.1489C27.3915 4.1489 29.62 5.07194 31.2961 6.74804C34.756 10.2082 34.756 15.8382 31.296 19.2983Z"
+                  fill="#111111" />
+              </svg>
+              <span class="header__num">
+                <p class="header__num-text">
+                  0
+                </p>
+              </span>
+            </a>
+            <a class="header__icon" href="#">
+              <svg viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M24.1958 5.50452H22.9958C22.9798 5.44759 22.9583 5.39234 22.9318 5.33952L19.7958 0.460516C19.6527 0.237203 19.4267 0.0798776 19.1677 0.0231478C18.9086 -0.033582 18.6376 0.0149316 18.4143 0.158016C18.191 0.3011 18.0336 0.527034 17.9769 0.786116C17.9202 1.0452 17.9687 1.3162 18.1118 1.53952L20.6528 5.50452H6.53676L9.07776 1.53952C9.20819 1.31672 9.24741 1.05212 9.18719 0.801072C9.12698 0.550026 8.97202 0.331994 8.75472 0.192598C8.53742 0.0532024 8.27464 0.00324568 8.02135 0.0531816C7.76806 0.103118 7.54389 0.249076 7.39576 0.460516L4.26776 5.33952C4.24119 5.39234 4.21976 5.44759 4.20376 5.50452H2.99576C2.55796 5.50513 2.1256 5.60157 1.72902 5.78705C1.33245 5.97253 0.981279 6.24256 0.700161 6.57819C0.419042 6.91381 0.21479 7.3069 0.10174 7.72986C-0.0113089 8.15281 -0.0304147 8.59539 0.0457637 9.02652L2.33876 22.0175C2.46154 22.7124 2.8253 23.3417 3.36611 23.7949C3.90692 24.2481 4.59017 24.4962 5.29576 24.4955H21.8958C22.6012 24.4957 23.2841 24.2472 23.8245 23.7939C24.3649 23.3405 24.7283 22.7112 24.8508 22.0165L27.1438 9.02652C27.2199 8.59556 27.2009 8.15315 27.0879 7.73034C26.975 7.30753 26.7709 6.91454 26.49 6.57895C26.2091 6.24336 25.8582 5.97329 25.4619 5.78768C25.0655 5.60207 24.6334 5.50543 24.1958 5.50452ZM25.1808 8.67952L22.8828 21.6685C22.8421 21.9002 22.721 22.1101 22.5409 22.2614C22.3607 22.4126 22.133 22.4955 21.8978 22.4955H5.29576C5.06053 22.4955 4.83283 22.4126 4.65268 22.2614C4.47252 22.1101 4.35146 21.9002 4.31076 21.6685L2.01476 8.67952C1.98924 8.53593 1.99543 8.38849 2.03291 8.24755C2.07038 8.10661 2.13823 7.97557 2.2317 7.86362C2.32517 7.75167 2.44199 7.66152 2.57398 7.59948C2.70597 7.53745 2.84993 7.50504 2.99576 7.50452H24.1958C24.3419 7.50445 24.4864 7.53644 24.6188 7.59822C24.7513 7.66 24.8686 7.75007 24.9625 7.86209C25.0565 7.97411 25.1247 8.10536 25.1624 8.24659C25.2001 8.38782 25.2063 8.5356 25.1808 8.67952Z"
+                  fill="#111111" />
+                <path
+                  d="M7.20714 11.2938C6.94686 11.3423 6.71648 11.4922 6.5665 11.7104C6.41653 11.9286 6.35922 12.1974 6.40714 12.4578L7.40714 17.9038C7.44942 18.1335 7.57076 18.3411 7.75013 18.4907C7.9295 18.6403 8.15558 18.7224 8.38914 18.7228C8.45022 18.723 8.51117 18.7173 8.57114 18.7058C8.83142 18.6572 9.06181 18.5074 9.21178 18.2891C9.36175 18.0709 9.41906 17.8022 9.37114 17.5418L8.37114 12.0968C8.32325 11.8359 8.17372 11.6048 7.95543 11.4542C7.73714 11.3036 7.46798 11.2459 7.20714 11.2938Z"
+                  fill="#111111" />
+                <path
+                  d="M13.5938 11.2773C13.3285 11.2773 13.0742 11.3827 12.8866 11.5702C12.6991 11.7578 12.5938 12.0121 12.5938 12.2773V17.7223C12.5938 17.9876 12.6991 18.2419 12.8866 18.4295C13.0742 18.617 13.3285 18.7223 13.5938 18.7223C13.859 18.7223 14.1133 18.617 14.3009 18.4295C14.4884 18.2419 14.5938 17.9876 14.5938 17.7223V12.2773C14.5938 12.0121 14.4884 11.7578 14.3009 11.5702C14.1133 11.3827 13.859 11.2773 13.5938 11.2773Z"
+                  fill="#111111" />
+                <path
+                  d="M19.9852 11.2939C19.7248 11.2459 19.456 11.3033 19.2378 11.4532C19.0196 11.6032 18.8698 11.8336 18.8212 12.0939L17.8212 17.5389C17.7733 17.7993 17.8306 18.068 17.9806 18.2862C18.1305 18.5045 18.3609 18.6543 18.6212 18.7029C18.6812 18.7144 18.7421 18.7201 18.8032 18.7199C19.0368 18.7195 19.2628 18.6374 19.4422 18.4878C19.6216 18.3382 19.7429 18.1306 19.7852 17.9009L20.7852 12.4549C20.8322 12.1949 20.7745 11.9269 20.6246 11.7094C20.4747 11.4919 20.2449 11.3425 19.9852 11.2939Z"
+                  fill="#111111" />
+              </svg>
+              <span class="header__num">
+                <p class="header__num-text">
+                  0
+                </p>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <main class="main">
+
+      <section class="block">
+        <div class="container">
+          <div class="block__inner">
+            <ul class="block__list">
+              <li class="block__item">
+                <p class="block__text">
+                  Книги
+                  <span class="block__arrow">
+                    <svg viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5.46967 6.53033C5.76256 6.82322 6.23744 6.82322 6.53033 6.53033L11.3033 1.75736C11.5962 1.46447 11.5962 0.989592 11.3033 0.696699C11.0104 0.403806 10.5355 0.403806 10.2426 0.696699L6 4.93934L1.75736 0.696699C1.46447 0.403806 0.989592 0.403806 0.696699 0.696699C0.403806 0.989593 0.403806 1.46447 0.696699 1.75736L5.46967 6.53033ZM5.25 5L5.25 6L6.75 6L6.75 5L5.25 5Z"
+                        fill="white" />
+                    </svg>
+                  </span>
+                </p>
+                <ul class="block__dropdown">
+                  <li class="block__dropdown-item">
+                    <a class="block__dropdown-link" href="#">
+                      Доставка
+                    </a>
+                  </li>
+                  <li class="block__dropdown-item">
+                    <a class="block__dropdown-link" href="#">
+                      Аксессуары
+                    </a>
+                  </li>
+                  <li class="block__dropdown-item">
+                    <a class="block__dropdown-link" href="#">
+                      Детям
+                    </a>
+                  </li>
+                  <li class="block__dropdown-item">
+                    <a class="block__dropdown-link" href="#">
+                      Купить
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="block__item">
+                <p class="block__text">
+                  Сувениры
+                  <span class="block__arrow">
+                    <svg viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5.46967 6.53033C5.76256 6.82322 6.23744 6.82322 6.53033 6.53033L11.3033 1.75736C11.5962 1.46447 11.5962 0.989592 11.3033 0.696699C11.0104 0.403806 10.5355 0.403806 10.2426 0.696699L6 4.93934L1.75736 0.696699C1.46447 0.403806 0.989592 0.403806 0.696699 0.696699C0.403806 0.989593 0.403806 1.46447 0.696699 1.75736L5.46967 6.53033ZM5.25 5L5.25 6L6.75 6L6.75 5L5.25 5Z"
+                        fill="white" />
+                    </svg>
+                  </span>
+                </p>
+                <ul class="block__dropdown">
+                  <li class="block__dropdown-item">
+                    <a class="block__dropdown-link" href="#">
+                      Доставка
+                    </a>
+                  </li>
+                  <li class="block__dropdown-item">
+                    <a class="block__dropdown-link" href="#">
+                      Аксессуары
+                    </a>
+                  </li>
+                  <li class="block__dropdown-item">
+                    <a class="block__dropdown-link" href="#">
+                      Детям
+                    </a>
+                  </li>
+                  <li class="block__dropdown-item">
+                    <a class="block__dropdown-link" href="#">
+                      Купить
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="block__item">
+                <p class="block__text">
+                  Аксессуары
+                  <span class="block__arrow">
+                    <svg viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5.46967 6.53033C5.76256 6.82322 6.23744 6.82322 6.53033 6.53033L11.3033 1.75736C11.5962 1.46447 11.5962 0.989592 11.3033 0.696699C11.0104 0.403806 10.5355 0.403806 10.2426 0.696699L6 4.93934L1.75736 0.696699C1.46447 0.403806 0.989592 0.403806 0.696699 0.696699C0.403806 0.989593 0.403806 1.46447 0.696699 1.75736L5.46967 6.53033ZM5.25 5L5.25 6L6.75 6L6.75 5L5.25 5Z"
+                        fill="white" />
+                    </svg>
+                  </span>
+                </p>
+                <ul class="block__dropdown">
+                  <li class="block__dropdown-item">
+                    <a class="block__dropdown-link" href="#">
+                      Доставка
+                    </a>
+                  </li>
+                  <li class="block__dropdown-item">
+                    <a class="block__dropdown-link" href="#">
+                      Аксессуары
+                    </a>
+                  </li>
+                  <li class="block__dropdown-item">
+                    <a class="block__dropdown-link" href="#">
+                      Детям
+                    </a>
+                  </li>
+                  <li class="block__dropdown-item">
+                    <a class="block__dropdown-link" href="#">
+                      Купить
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="block__item">
+                <p class="block__text">
+                  Одежда
+                  <span class="block__arrow">
+                    <svg viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5.46967 6.53033C5.76256 6.82322 6.23744 6.82322 6.53033 6.53033L11.3033 1.75736C11.5962 1.46447 11.5962 0.989592 11.3033 0.696699C11.0104 0.403806 10.5355 0.403806 10.2426 0.696699L6 4.93934L1.75736 0.696699C1.46447 0.403806 0.989592 0.403806 0.696699 0.696699C0.403806 0.989593 0.403806 1.46447 0.696699 1.75736L5.46967 6.53033ZM5.25 5L5.25 6L6.75 6L6.75 5L5.25 5Z"
+                        fill="white" />
+                    </svg>
+                  </span>
+                </p>
+                <ul class="block__dropdown">
+                  <li class="block__dropdown-item">
+                    <a class="block__dropdown-link" href="#">
+                      Доставка
+                    </a>
+                  </li>
+                  <li class="block__dropdown-item">
+                    <a class="block__dropdown-link" href="#">
+                      Аксессуары
+                    </a>
+                  </li>
+                  <li class="block__dropdown-item">
+                    <a class="block__dropdown-link" href="#">
+                      Детям
+                    </a>
+                  </li>
+                  <li class="block__dropdown-item">
+                    <a class="block__dropdown-link" href="#">
+                      Купить
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="block__item">
+                <p class="block__text">
+                  Канцелярия
+                  <span class="block__arrow">
+                    <svg viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5.46967 6.53033C5.76256 6.82322 6.23744 6.82322 6.53033 6.53033L11.3033 1.75736C11.5962 1.46447 11.5962 0.989592 11.3033 0.696699C11.0104 0.403806 10.5355 0.403806 10.2426 0.696699L6 4.93934L1.75736 0.696699C1.46447 0.403806 0.989592 0.403806 0.696699 0.696699C0.403806 0.989593 0.403806 1.46447 0.696699 1.75736L5.46967 6.53033ZM5.25 5L5.25 6L6.75 6L6.75 5L5.25 5Z"
+                        fill="white" />
+                    </svg>
+                  </span>
+                </p>
+                <ul class="block__dropdown">
+                  <li class="block__dropdown-item">
+                    <a class="block__dropdown-link" href="#">
+                      Доставка
+                    </a>
+                  </li>
+                  <li class="block__dropdown-item">
+                    <a class="block__dropdown-link" href="#">
+                      Аксессуары
+                    </a>
+                  </li>
+                  <li class="block__dropdown-item">
+                    <a class="block__dropdown-link" href="#">
+                      Детям
+                    </a>
+                  </li>
+                  <li class="block__dropdown-item">
+                    <a class="block__dropdown-link" href="#">
+                      Купить
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="block__item">
+                <p class="block__text">
+                  Детям
+                  <span class="block__arrow">
+                    <svg viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5.46967 6.53033C5.76256 6.82322 6.23744 6.82322 6.53033 6.53033L11.3033 1.75736C11.5962 1.46447 11.5962 0.989592 11.3033 0.696699C11.0104 0.403806 10.5355 0.403806 10.2426 0.696699L6 4.93934L1.75736 0.696699C1.46447 0.403806 0.989592 0.403806 0.696699 0.696699C0.403806 0.989593 0.403806 1.46447 0.696699 1.75736L5.46967 6.53033ZM5.25 5L5.25 6L6.75 6L6.75 5L5.25 5Z"
+                        fill="white" />
+                    </svg>
+                  </span>
+                </p>
+                <ul class="block__dropdown">
+                  <li class="block__dropdown-item">
+                    <a class="block__dropdown-link" href="#">
+                      Доставка
+                    </a>
+                  </li>
+                  <li class="block__dropdown-item">
+                    <a class="block__dropdown-link" href="#">
+                      Аксессуары
+                    </a>
+                  </li>
+                  <li class="block__dropdown-item">
+                    <a class="block__dropdown-link" href="#">
+                      Детям
+                    </a>
+                  </li>
+                  <li class="block__dropdown-item">
+                    <a class="block__dropdown-link" href="#">
+                      Купить
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">
+              Главная –
+            </a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">
+              Личный кабинет
+            </a>
+          </li>
+        </ul>
+      </div>
+
+
+      <section class="cabinet">
+        <div class="container">
+          <h2 class="cabinet__title title title--fw">
+            Личный кабинет
+          </h2>
+          <div class="cabinet__inner tab">
+            <div class="cabinet__tab">
+              <div data-target="target1" class="cabinet__tab-target tab__target  tab__target--active">
+                Персональные данные
+              </div>
+              <div data-target="target2" class="cabinet__tab-target tab__target">
+                Мои билеты
+              </div>
+            </div>
+            <div class="cabinet__info">
+              <div data-info="target1" class="tab__info tab__info--active tab__info--opacity">
+                <div class="form form--alt">
+                  <p class="form__subtitle">
+                    Персональные данные
+                  </p>
+                  <div class="form__wrapper">
+                    <form class="form__inner" id="form-registration" action="" method="post">
+                      <fieldset class="form__fieldset">
+                        <label class="form__label">
+                          <span class="form__label-text">
+                            Имя
+                            <span>
+                              *
+                            </span>
+                          </span>
+                          <input class="form__input form-input-name" id="form-name-input" type="text" name="name">
+                          <span class="form__label-error">
+                            Заполните поле
+                          </span>
+                        </label>
+                        <label class="form__label">
+                          <span class="form__label-text">
+                            Фамилия
+                            <span>
+                              *
+                            </span>
+                          </span>
+                          <input class="form__input form-input-name" id="form-surname-input" type="text" name="surname">
+                          <span class="form__label-error">
+                            Заполните поле
+                          </span>
+                        </label>
+                        <label class="form__label">
+                          <span class="form__label-text">
+                            E-mail
+                            <span>
+                              *
+                            </span>
+                          </span>
+                          <input class="form__input form-input-email" id="form-email-input" type="email" name="email">
+                          <span class="form__label-error">
+                            Заполните поле
+                          </span>
+                        </label>
+                        <label class="form__label">
+                          <span class="form__label-text">
+                            Телефон
+                            <span>
+                              *
+                            </span>
+                          </span>
+                          <input class="form__input form-input-tel" id="form-tel-input" type="text" name="phone">
+                          <span class="form__label-error">
+                            Заполните поле
+                          </span>
+                        </label>
+                        <label class="form__label">
+                          <span class="form__label-text">
+                            Пароль
+                            <span>
+                              *
+                            </span>
+                          </span>
+                          <input class="form__input form-input-password" id="form-password-input" type="password"
+                            name="password">
+                          <span class="form__label-error">
+                            Заполните поле
+                          </span>
+                        </label>
+                        <label class="form__label">
+                          <span class="form__label-text">
+                            Повторить пароль
+                            <span>
+                              *
+                            </span>
+                          </span>
+                          <input class="form__input form-input-password" id="form-password-input-repeat" type="password"
+                            name="password">
+                          <span class="form__label-error">
+                            Заполните поле
+                          </span>
+                        </label>
+                      </fieldset>
+                      <button class="btn btn--pink btn--higher">
+                        Сохранить
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div data-info="target2" class="tab__info">
+                <div class="form form--alt">
+                  <p class="form__subtitle">
+                    Мои заказы
+                  </p>
+                  <div class="form__status">
+                    <div class="form__status-item">
+                      <div class="form__status-box">
+                        <h4 class="form__status-title">
+                          Номер заказа:
+                        </h4>
+                        <p class="form__status-text">
+                          №423113
+                        </p>
+                      </div>
+                      <div class="form__status-box">
+                        <h4 class="form__status-title">
+                          Дата заказа:
+                        </h4>
+                        <p class="form__status-text">
+                          10 сентября 2023
+                        </p>
+                      </div>
+                      <div class="form__status-box">
+                        <h4 class="form__status-title">
+                          Сумма заказа:
+                        </h4>
+                        <p class="form__status-text">
+                          1990 руб.
+                        </p>
+                      </div>
+                      <div class="form__status-box form__status-box--alt">
+                        <h4 class="form__status-title">
+                          Товары в заказе:
+                        </h4>
+                        <p class="form__status-text form__status-text--alt">
+                          Фирменный значок павильона «Атом»
+                        </p>
+                      </div>
+                      <div class="form__status-box">
+                        <h4 class="form__status-title">
+                          Статус заказа:
+                        </h4>
+                        <p class="form__status-state">
+                          Новый
+                        </p>
+                      </div>
+                    </div>
+                    <div class="form__status-item">
+                      <div class="form__status-box">
+                        <h4 class="form__status-title">
+                          Номер заказа:
+                        </h4>
+                        <p class="form__status-text">
+                          №423113
+                        </p>
+                      </div>
+                      <div class="form__status-box">
+                        <h4 class="form__status-title">
+                          Дата заказа:
+                        </h4>
+                        <p class="form__status-text">
+                          10 сентября 2023
+                        </p>
+                      </div>
+                      <div class="form__status-box">
+                        <h4 class="form__status-title">
+                          Сумма заказа:
+                        </h4>
+                        <p class="form__status-text">
+                          1990 руб.
+                        </p>
+                      </div>
+                      <div class="form__status-box form__status-box--alt">
+                        <h4 class="form__status-title">
+                          Товары в заказе:
+                        </h4>
+                        <p class="form__status-text form__status-text--alt">
+                          Фирменный значок павильона «Атом»
+                        </p>
+                      </div>
+                      <div class="form__status-box form__status-box--flex">
+                        <h4 class="form__status-title">
+                          Статус заказа:
+                        </h4>
+                        <p class="form__status-state form__status-state--reset">
+                          Новый
+                        </p>
+                        <p class="form__status-state form__status-state--reset">
+                          Передан в доставку
+                        </p>
+                        <p class="form__status-state form__status-state--accent">
+                          Завершен
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__inner">
+            <div class="footer__item">
+              <p class="footer__item-text">
+                О павильоне
+              </p>
+              <div class="footer__item-grid">
+                <a class="footer__item-link" href="#">
+                  О магазине
+                </a>
+                <a class="footer__item-link" href="#">
+                  Пользовательское соглашение и оферта
+                </a>
+                <a class="footer__item-link" href="#">
+                  Обмен и возврат товара
+                </a>
+                <a class="footer__item-link" href="#">
+                  Обработка персональных данных
+                </a>
+                <a class="footer__item-link" href="#">
+                  Оплата и доставка
+                </a>
+                <a class="footer__item-link" href="#">
+                  Сертификаты соответствия и декларации
+                </a>
+              </div>
+            </div>
+            <div class="footer__item">
+              <p class="footer__item-text">
+                Контакты
+              </p>
+              <form class="footer__form" id="footer-form" action="" method="post">
+                <input class="footer__form-input form-input-email" id="footer-email-input" name="footer_form_email"
+                  type="text" placeholder="Ваш e-mail">
+                <span class="footer__form-error">
+                  Заполните поле
+                </span>
+                <button class="btn btn--pinkTransperent btn--higher">
+                  Подписаться
+                </button>
+              </form>
+              <div class="footer__item-box">
+                <a class="footer__item-phone" href="tel:+74959999999">
+                  + 7 (495) 999 99 99
+                </a>
+                <div class="footer__social social">
+                  <a class="social__icon" href="#">
+                    <img src="../assets/images/icons/tg.svg" alt="">
+                  </a>
+                  <a class="social__icon" href="#">
+                    <img src="../assets/images/icons/vk.svg" alt="">
+                  </a>
+                  <a class="social__icon" href="#">
+                    <img src="../assets/images/icons/ok.svg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="footer__copy">
+            © 2023 Фонд «АТОМ»
+          </p>
+        </div>
+      </div>
+    </footer>
+
+
+    <form class="search" id="search" action="">
+      <div class="search__inner">
+        <label class="search__label">
+          <input class="search__input" type="text" placeholder="Глава">
+          <button class="search__icon">
+            <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.5728 7.65621C14.5728 11.3165 11.5504 14.3124 7.78642 14.3124C4.02242 14.3124 1 11.3165 1 7.65621C1 3.99592 4.02242 1 7.78642 1C11.5504 1 14.5728 3.99592 14.5728 7.65621Z"
+                stroke="#171717" stroke-width="2" />
+              <path
+                d="M20.2889 22.164C20.6827 22.5512 21.3212 22.5512 21.715 22.164C22.1088 21.7768 22.1088 21.1489 21.715 20.7617L20.2889 22.164ZM11.5291 13.5507L20.2889 22.164L21.715 20.7617L12.9552 12.1485L11.5291 13.5507Z"
+                fill="#171717" />
+            </svg>
+          </button>
+        </label>
+        <div class="search__result">
+          <div class="search__result-text">
+            Глава 1. Советский атомный проект
+          </div>
+          <div class="search__result-text">
+            Глава 3. Современная атомная промышленность
+          </div>
+        </div>
+      </div>
+    </form>
+
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="../scripts/valid.js"></script>
+  <script src="../scripts/scripts.js"></script>
+</body>
+
+</html>

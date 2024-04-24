@@ -1,0 +1,50 @@
+.breadcrumbs {
+  &__wrapper {
+    @include fluid(margin-top, 30px, 52px);
+    @include fluid(margin-bottom, 30px, 60px);
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      position: relative;
+      @include fluid(padding-right, 12px, 17px);
+      @include fluid(margin-right, 5px, 10px);
+
+      &::after {
+        content: '/';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        color: #9FA3A8;
+        font-size: 12px;
+        text-align: center;
+        font-weight: 700;
+      }
+    }
+
+    &:last-child {
+      pointer-events: none;
+    }
+  }
+
+  &__link {
+    color: #CDCDCD;
+    font-size: 14px;
+    transition: color .23s ease-in-out;
+
+    &:hover {
+      color: #D9291D;
+    }
+
+    &--active {
+      color: #4B4444;
+    }
+  }
+}

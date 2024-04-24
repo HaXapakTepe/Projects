@@ -1,0 +1,30 @@
+.projects {
+  @include fluid(margin-top, 30px, 75px);
+  @include fluid(margin-bottom, 30px, 120px);
+
+  &__title {
+    @include fluid(margin-bottom, 20px, 75px);
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @include fluid(column-gap, 10px, 20px);
+    @include fluid(row-gap, 20px, 40px);
+  }
+
+  &__img {
+    @include fluid(height, 180px, 270px);
+    object-fit: cover;
+    border-radius: 20px;
+    width: 100%;
+  }
+}
+
+@media(max-width: 768px) {
+  .projects {
+    &__inner {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

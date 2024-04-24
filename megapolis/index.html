@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,viewport-fit=cover,maximum-scale=1,user-scalable=0">
+  <link rel="shortcut icon" href="./images/favicon.svg" type="x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="./plugins/daterangepicker/daterangepicker.css" />
+  <link rel="stylesheet" href="./plugins/selectize/css/selectize.css">
+  <link rel="stylesheet" href="./plugins/noUislider/nouislider.min.css">
+  <link rel="stylesheet" href="./css/icons.css">
+  <link rel="stylesheet" href="./css/style.css?v=1">
+  <title>Мегаполис</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <a class="logo" href="#">
+          <img class="logo__img" src="./images/logo.svg" alt="">
+        </a>
+        <div class="search header__search">
+          <input class="search__input" type="text" placeholder="Я ищу...">
+          <div class="icon-search search__icon"></div>
+        </div>
+        <div class="header__item">
+          <a class="header__item-link" href="#">Контакты</a>
+          <div class="menu__item-box">
+            <div class="icon-phone menu__item-icon"></div>
+            <a class="menu__item-link menu__item-link--phone" href="tel:+78008008000" target="_blank">8 800 800 80
+              00</a>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="search header__bottom-search">
+          <input class="search__input" type="text" placeholder="Я ищу...">
+          <div class="icon-search search__icon"></div>
+        </div>
+        <div class="header__burger">
+          <div class="header__burger-line"></div>
+        </div>
+      </div>
+    </div>
+    <div class="header__block">
+      <div class="header__block-container">
+        <ul class="menu">
+          <li class="menu__item menu__item--hidden">
+            <a class="menu__item-link" href="#">
+              <img class="logo__img" src="./images/logo.svg" alt="">
+            </a>
+          </li>
+          <li class="menu__item dropdown-js">
+            <div class="menu__item-link">Автомобили</div>
+            <div class="menu__dropdown menu__dropdown--menu">
+              <div class="menu__dropdown-wrapper">
+                <div class="menu__dropdown-container">
+                  <div class="menu__dropdown-back"></div>
+                  <div class="menu__dropdown-item">
+                    <h3 class="menu__dropdown-title">Автомобили</h3>
+                    <ul class="menu__dropdown-list">
+                      <li class="menu__dropdown-elem">
+                        <a class="menu__dropdown-link" href="#">КАСКО</a>
+                      </li>
+                      <li class="menu__dropdown-elem">
+                        <a class="menu__dropdown-link" href="#">ОСАГО</a>
+                      </li>
+                      <li class="menu__dropdown-elem">
+                        <a class="menu__dropdown-link" href="#">Продление КАСКО</a>
+                      </li>
+                      <li class="menu__dropdown-elem">
+                        <a class="menu__dropdown-link" href="#">Продление ОСАГО</a>
+                      </li>
+                      <li class="menu__dropdown-elem">
+                        <a class="menu__dropdown-link" href="#">Продлённая гарантия на автомобиль старше трёх лет</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <img class="menu__dropdown-img" src="./images/buy/dashboard.png" alt="">
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="menu__item dropdown-js">
+            <a class="menu__item-link" href="#">Имущество</a>
+            <div class="menu__dropdown menu__dropdown--menu">
+              <div class="menu__dropdown-wrapper">
+                <div class="menu__dropdown-container">
+                  <div class="menu__dropdown-back"></div>
+                  <div class="menu__dropdown-item">
+                    <h3 class="menu__dropdown-title">Имущество</h3>
+                    <ul class="menu__dropdown-list">
+                      <li class="menu__dropdown-elem">
+                        <a class="menu__dropdown-link" href="#">Страхование квартиры</a>
+                      </li>
+                      <li class="menu__dropdown-elem">
+                        <a class="menu__dropdown-link" href="#">Страхование дачи</a>
+                      </li>
+                      <li class="menu__dropdown-elem">
+                        <a class="menu__dropdown-link" href="#">Страхование ипотеки</a>
+                      </li>
+                      <li class="menu__dropdown-elem">
+                        <a class="menu__dropdown-link" href="#">Страхование права собственности</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <img class="menu__dropdown-img" src="./images/buy/tv.png" alt="">
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="menu__item dropdown-js">
+            <a class="menu__item-link" href="#">Здоровье</a>
+            <div class="menu__dropdown menu__dropdown--menu">
+              <div class="menu__dropdown-wrapper">
+                <div class="menu__dropdown-container">
+                  <div class="menu__dropdown-back"></div>
+                  <div class="menu__dropdown-item">
+                    <h3 class="menu__dropdown-title">Здоровье</h3>
+                    <ul class="menu__dropdown-list">
+                      <li class="menu__dropdown-elem">
+                        <a class="menu__dropdown-link" href="#">ДМС</a>
+                      </li>
+                      <li class="menu__dropdown-elem">
+                        <a class="menu__dropdown-link" href="#">ОМС</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <img class="menu__dropdown-img" src="./images/buy/lifebuoy.png" alt="">
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="menu__item dropdown-js">
+            <a class="menu__item-link" href="#">Кредитование</a>
+            <div class="menu__dropdown menu__dropdown--menu">
+              <div class="menu__dropdown-wrapper">
+                <div class="menu__dropdown-container">
+                  <div class="menu__dropdown-back"></div>
+                  <div class="menu__dropdown-item">
+                    <h3 class="menu__dropdown-title">Кредитование</h3>
+                    <ul class="menu__dropdown-list">
+                      <li class="menu__dropdown-elem">
+                        <a class="menu__dropdown-link" href="#">На любые цели</a>
+                      </li>
+                      <li class="menu__dropdown-elem">
+                        <a class="menu__dropdown-link" href="#">Наличными под залог</a>
+                      </li>
+                      <li class="menu__dropdown-elem">
+                        <a class="menu__dropdown-link" href="#">Под залог квартиры</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <img class="menu__dropdown-img" src="./images/buy/atmcard.png" alt="">
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="menu__item dropdown-js">
+            <a class="menu__item-link" href="#">Автокредитование</a>
+            <div class="menu__dropdown menu__dropdown--menu">
+              <div class="menu__dropdown-wrapper">
+                <div class="menu__dropdown-container">
+                  <div class="menu__dropdown-back"></div>
+                  <div class="menu__dropdown-item">
+                    <h3 class="menu__dropdown-title">Автокредитование</h3>
+                    <ul class="menu__dropdown-list">
+                      <li class="menu__dropdown-elem">
+                        <a class="menu__dropdown-link" href="#">На покупку Б/У автомобиля</a>
+                      </li>
+                      <li class="menu__dropdown-elem">
+                        <a class="menu__dropdown-link" href="#">На покупку нового автомобиля</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <img class="menu__dropdown-img" src="./images/buy/car.png" alt="">
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="menu__item dropdown-js">
+            <a class="menu__item-link" href="#">Ипотека</a>
+            <div class="menu__dropdown menu__dropdown--menu">
+              <div class="menu__dropdown-wrapper">
+                <div class="menu__dropdown-container">
+                  <div class="menu__dropdown-back"></div>
+                  <div class="menu__dropdown-item">
+                    <h3 class="menu__dropdown-title">Ипотека</h3>
+                    <ul class="menu__dropdown-list">
+                      <li class="menu__dropdown-elem">
+                        <a class="menu__dropdown-link" href="#">Семейная</a>
+                      </li>
+                      <li class="menu__dropdown-elem">
+                        <a class="menu__dropdown-link" href="#">Льготная на новостройку</a>
+                      </li>
+                      <li class="menu__dropdown-elem">
+                        <a class="menu__dropdown-link" href="#">На вторичное жильё</a>
+                      </li>
+                      <li class="menu__dropdown-elem">
+                        <a class="menu__dropdown-link" href="#">Для IT-специалистов</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <img class="menu__dropdown-img" src="./images/buy/house.png" alt="">
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="menu__item dropdown-js">
+            <a class="menu__item-link" href="#">Рефинансирование</a>
+            <div class="menu__dropdown menu__dropdown--menu">
+              <div class="menu__dropdown-wrapper">
+                <div class="menu__dropdown-container">
+                  <div class="menu__dropdown-back"></div>
+                  <div class="menu__dropdown-item">
+                    <h3 class="menu__dropdown-title">Рефинансирование</h3>
+                    <ul class="menu__dropdown-list">
+                      <li class="menu__dropdown-elem">
+                        <a class="menu__dropdown-link" href="#">Рефинансирование</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <img class="menu__dropdown-img" src="./images/buy/calc.png" alt="">
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="menu__item dropdown-js">
+            <a class="menu__item-link" href="#">Лизинг</a>
+            <div class="menu__dropdown menu__dropdown--menu">
+              <div class="menu__dropdown-wrapper">
+                <div class="menu__dropdown-container">
+                  <div class="menu__dropdown-back"></div>
+                  <div class="menu__dropdown-item">
+                    <h3 class="menu__dropdown-title">Лизинг</h3>
+                    <ul class="menu__dropdown-list">
+                      <li class="menu__dropdown-elem">
+                        <a class="menu__dropdown-link" href="#">Подбор авто по всей России</a>
+                      </li>
+                      <li class="menu__dropdown-elem">
+                        <a class="menu__dropdown-link" href="#">Возвратный лизинг</a>
+                      </li>
+                      <li class="menu__dropdown-elem">
+                        <a class="menu__dropdown-link" href="#">Подбор авто для таксопарка</a>
+                      </li>
+                      <li class="menu__dropdown-elem">
+                        <a class="menu__dropdown-link" href="#">Суперлайт</a>
+                      </li>
+                      <li class="menu__dropdown-elem">
+                        <a class="menu__dropdown-link" href="#">Форсаж</a>
+                      </li>
+                      <li class="menu__dropdown-elem">
+                        <a class="menu__dropdown-link" href="#">Драйв</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <img class="menu__dropdown-img" src="./images/buy/steering.png" alt="">
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="menu__item menu__item--hidden">
+            <a class="menu__item-link" href="#">Контакты</a>
+          </li>
+          <li class="menu__item menu__item--hidden">
+            <div class="menu__item-box">
+              <div class="icon-phone menu__item-icon"></div>
+              <a class="menu__item-link menu__item-link--phone" href="tel:+78008008000" target="_blank">8 800 800 80
+                00</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </header>
+
+  <div class="wrapperBox">
+
+
+    <section class="card">
+      <div class="container">
+        <div class="card__inner">
+          <a class="card__link" href="#">
+            <p class="card__link-type card__link-type--color">Страхование</p>
+            <h3 class="card__link-title card__link-title--color">
+              Мы - агрегатор страховых компаний
+            </h3>
+            <p class="card__link-text card__link-text--color">Ипотечное страхование</p>
+            <p class="card__link-text card__link-text--color">КАСКО, ОСАГО</p>
+            <p class="card__link-text card__link-text--color">Страхование имущества</p>
+            <img class="card__link-img" src="/images/card/1.jpg" alt="">
+          </a>
+          <a class="card__link" href="#">
+            <p class="card__link-type">Кредитование</p>
+            <h3 class="card__link-title">
+              Подберём самое выгодное предложение по кредиту
+            </h3>
+            <p class="card__link-text">%</p>
+            <img class="card__link-img" src="/images/card/2.jpg" alt="">
+          </a>
+          <a class="card__link" href="#">
+            <p class="card__link-type">Лизинг</p>
+            <h3 class="card__link-title">
+              Подбор легковых авто, спецтехники в лизинг
+            </h3>
+            <p class="card__link-text">Оформление лизинга</p>
+            <img class="card__link-img" src="/images/card/3.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="calc">
+      <div class="container calc__container">
+        <h1 class="calc__title title title--center">Быстрый расчёт страховки</h1>
+        <div class="calc__target">
+          <div data-target="target1" class="calc__target-item tabjs-active">
+            Страхование
+            имущества
+          </div>
+          <div data-target="target2" class="calc__target-item">ОСАГО</div>
+          <div data-target="target3" class="calc__target-item">КАСКО</div>
+          <div data-target="target4" class="calc__target-item">Ипотечное страхование</div>
+        </div>
+        <div data-info="target1" class="calc__inner tabjs-info tabjs-info-active tabjs-info-opacity">
+          <div class="calc__item">
+            <h3 class="calc__item-title">
+              Страховка для всей семьи
+              от несчастного случая
+            </h3>
+            <p class="calc__item-text">Расчёт стоимости страховки на онлайн-калькуляторе за пару минут.</p>
+            <img class="calc__item-img" src="/images/calc/shield.png" alt="">
+          </div>
+          <div class="calc__item calculator">
+            <h4 class="calculator__title">Тип полиса</h4>
+            <div class="calculator__box">
+              <p data-type="type1" class="calculator__time tabjs-active">Годовой</p>
+              <p data-type="type2" class="calculator__time">Краткосрочный</p>
+            </div>
+            <h4 class="calculator__title">Тип полиса</h4>
+            <div data-list="type1" class="calculator__tab tabjs-list tabjs-info-active tabjs-info-opacity">
+              <div class="calculator__block">
+                <input class="calculator__input calcInput calcInput--pr" type="text" name="daterangeFrom" value="">
+                <div class="icon-calendar calculator__icon"></div>
+              </div>
+              <div class="calculator__block calculator__block--disabled">
+                <input class="calculator__input calcInput calcInput--pr" name="daterangeTo" type="text" value="">
+                <div class="icon-calendar calculator__icon"></div>
+              </div>
+            </div>
+            <div data-list="type2" class="calculator__tab tabjs-list">
+              <div class="calculator__block">
+                <input class="calculator__input calcInput calcInput--pr" name="daterange" type="text">
+                <div class="icon-calendar calculator__icon"></div>
+              </div>
+              <div class="calculator__block">
+                <input class="calculator__input calcInput calcInput--pr" name="daterangeMonth" type="text">
+                <div class="icon-calendar calculator__icon"></div>
+              </div>
+            </div>
+            <a class="calculator__link link" href="#">Рассчитать стоимость</a>
+          </div>
+        </div>
+        <div data-info="target2" class="calc__inner tabjs-info">
+          <div class="calc__item">
+            <h3 class="calc__item-title">
+              Страховка для всей семьи
+              от несчастного случая
+            </h3>
+            <p class="calc__item-text">Расчёт стоимости страховки на онлайн-калькуляторе за пару минут.</p>
+            <img class="calc__item-img" src="/images/calc/shield.png" alt="">
+          </div>
+          <div class="calc__item calculator">
+            <h4 class="calculator__title">Тип полиса</h4>
+            <div class="calculator__box">
+              <p data-osago="osago1" class="calculator__time osago-active">Годовой</p>
+              <p data-osago="osago2" class="calculator__time">Краткосрочный</p>
+            </div>
+            <h4 class="calculator__title">Тип полиса</h4>
+            <div data-item="osago1" class="calculator__tab osago-list osago-info-active osago-info-opacity">
+              <div class="calculator__block">
+                <input class="calculator__input calcInput calcInput--pr" type="text" name="daterangeFrom" value="">
+                <div class="icon-calendar calculator__icon"></div>
+              </div>
+              <div class="calculator__block calculator__block--disabled">
+                <input class="calculator__input calcInput calcInput--pr" name="daterangeTo" type="text" value="">
+                <div class="icon-calendar calculator__icon"></div>
+              </div>
+            </div>
+            <div data-item="osago2" class="calculator__tab osago-list">
+              <div class="calculator__block">
+                <input class="calculator__input calcInput calcInput--pr" name="daterange" type="text">
+                <div class="icon-calendar calculator__icon"></div>
+              </div>
+              <div class="calculator__block">
+                <input class="calculator__input calcInput calcInput--pr" name="daterangeMonth" type="text">
+                <div class="icon-calendar calculator__icon"></div>
+              </div>
+            </div>
+            <a class="calculator__link link" href="#">Рассчитать стоимость</a>
+          </div>
+        </div>
+        <div data-info="target3" class="calc__inner tabjs-info">
+          <div class="calc__item">
+            <h3 class="calc__item-title">
+              Страховка для всей семьи
+              от несчастного случая
+            </h3>
+            <p class="calc__item-text">Расчёт стоимости страховки на онлайн-калькуляторе за пару минут.</p>
+            <img class="calc__item-img" src="/images/calc/shield.png" alt="">
+          </div>
+          <div class="calc__item calculator">
+            <h4 class="calculator__title">Тип полиса</h4>
+            <div class="calculator__box">
+              <p data-accident="accident1" class="calculator__time accident-active">Годовой</p>
+              <p data-accident="accident2" class="calculator__time">Краткосрочный</p>
+            </div>
+            <h4 class="calculator__title">Тип полиса</h4>
+            <div data-elem="accident1" class="calculator__tab accident-list accident-info-active accident-info-opacity">
+              <div class="calculator__block">
+                <input class="calculator__input calcInput calcInput--pr" type="text" name="daterangeFrom" value="">
+                <div class="icon-calendar calculator__icon"></div>
+              </div>
+              <div class="calculator__block calculator__block--disabled">
+                <input class="calculator__input calcInput calcInput--pr" name="daterangeTo" type="text" value="">
+                <div class="icon-calendar calculator__icon"></div>
+              </div>
+            </div>
+            <div data-elem="accident2" class="calculator__tab accident-list">
+              <div class="calculator__block">
+                <input class="calculator__input calcInput calcInput--pr" name="daterange" type="text">
+                <div class="icon-calendar calculator__icon"></div>
+              </div>
+              <div class="calculator__block">
+                <input class="calculator__input calcInput calcInput--pr" name="daterangeMonth" type="text">
+                <div class="icon-calendar calculator__icon"></div>
+              </div>
+            </div>
+            <a class="calculator__link link" href="#">Рассчитать стоимость</a>
+          </div>
+        </div>
+        <div data-info="target4" class="calc__inner tabjs-info">
+          <div class="calc__item">
+            <h3 class="calc__item-title">
+              Страховка для всей семьи
+              от несчастного случая
+            </h3>
+            <p class="calc__item-text">Расчёт стоимости страховки на онлайн-калькуляторе за пару минут.</p>
+            <img class="calc__item-img" src="/images/calc/shield.png" alt="">
+          </div>
+          <div class="calc__item calculator">
+            <h4 class="calculator__title">Тип полиса</h4>
+            <div class="calculator__box">
+              <p data-mortgage="mortgage1" class="calculator__time mortgage-active">Годовой</p>
+              <p data-mortgage="mortgage2" class="calculator__time">Краткосрочный</p>
+            </div>
+            <h4 class="calculator__title">Тип полиса</h4>
+            <div data-element="mortgage1"
+              class="calculator__tab mortgage-list mortgage-info-active mortgage-info-opacity">
+              <div class="calculator__block">
+                <input class="calculator__input calcInput calcInput--pr" type="text" name="daterangeFrom" value="">
+                <div class="icon-calendar calculator__icon"></div>
+              </div>
+              <div class="calculator__block calculator__block--disabled">
+                <input class="calculator__input calcInput calcInput--pr" name="daterangeTo" type="text" value="">
+                <div class="icon-calendar calculator__icon"></div>
+              </div>
+            </div>
+            <div data-element="mortgage2" class="calculator__tab mortgage-list">
+              <div class="calculator__block">
+                <input class="calculator__input calcInput calcInput--pr" name="daterange" type="text">
+                <div class="icon-calendar calculator__icon"></div>
+              </div>
+              <div class="calculator__block">
+                <input class="calculator__input calcInput calcInput--pr" name="daterangeMonth" type="text">
+                <div class="icon-calendar calculator__icon"></div>
+              </div>
+            </div>
+            <a class="calculator__link link" href="#">Рассчитать стоимость</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="buy">
+      <div class="container">
+        <h2 class="buy__title title title--center">Рассчитать стоимость страховки и купить</h2>
+        <div class="buy__inner">
+          <div class="buy__inner-box">
+            <div class="buy__item section-auto">
+              <div class="buy__item-hidden">
+                <a class="buy__item-link" href="#">От несчастного случая</a>
+                <a class="buy__item-link" href="#">Спортсмены и дети</a>
+                <a class="buy__item-link" href="#">Страхование жизни</a>
+                <a class="buy__item-link" href="#">От укуса клещей</a>
+                <a class="buy__item-link" href="#">ДМС</a>
+                <a class="buy__item-link" href="#">ОМС</a>
+                <a class="buy__item-link" href="#">ДМС в клиниках РЖД</a>
+              </div>
+              <h3 class="buy__item-title">Автомобили</h3>
+              <p class="buy__item-text">КАСКО, ОСАГО, продление, гарантия</p>
+              <img class="buy__item-img" src="./images/buy/dashboard-color.png" alt="">
+            </div>
+            <div class="buy__item section-property">
+              <div class="buy__item-hidden">
+                <a class="buy__item-link" href="#">От несчастного случая</a>
+                <a class="buy__item-link" href="#">Спортсмены и дети</a>
+                <a class="buy__item-link" href="#">Страхование жизни</a>
+                <a class="buy__item-link" href="#">От укуса клещей</a>
+                <a class="buy__item-link" href="#">ДМС</a>
+                <a class="buy__item-link" href="#">ОМС</a>
+                <a class="buy__item-link" href="#">ДМС в клиниках РЖД</a>
+              </div>
+              <h3 class="buy__item-title">Имущество</h3>
+              <p class="buy__item-text">Страхование квартиры, дачи, ипотеки,
+                права собственности</p>
+              <img class="buy__item-img" src="./images/buy/tv-color.png" alt="">
+            </div>
+          </div>
+          <div class="buy__item section-health">
+            <div class="buy__item-hidden">
+              <a class="buy__item-link" href="#">От несчастного случая</a>
+              <a class="buy__item-link" href="#">Спортсмены и дети</a>
+              <a class="buy__item-link" href="#">Страхование жизни</a>
+              <a class="buy__item-link" href="#">От укуса клещей</a>
+              <a class="buy__item-link" href="#">ДМС</a>
+              <a class="buy__item-link" href="#">ОМС</a>
+              <a class="buy__item-link" href="#">ДМС в клиниках РЖД</a>
+            </div>
+            <h3 class="buy__item-title">Путешествия</h3>
+            <p class="buy__item-text">Страхование от несчастного случая, спортсменов, детей, жизни, от клещей, ДМС, ОМС,
+              РДЖ ДМС</p>
+            <img class="buy__item-img" src="./images/buy/lifebuoy-color.png" alt="">
+          </div>
+          <div class="buy__item section-crediting">
+            <div class="buy__item-hidden">
+              <a class="buy__item-link" href="#">От несчастного случая</a>
+              <a class="buy__item-link" href="#">Спортсмены и дети</a>
+              <a class="buy__item-link" href="#">Страхование жизни</a>
+              <a class="buy__item-link" href="#">От укуса клещей</a>
+              <a class="buy__item-link" href="#">ДМС</a>
+              <a class="buy__item-link" href="#">ОМС</a>
+              <a class="buy__item-link" href="#">ДМС в клиниках РЖД</a>
+            </div>
+            <h3 class="buy__item-title">Кредитование</h3>
+            <p class="buy__item-text">Страхование от несчастного случая, спортсменов, детей, жизни, от клещей, ДМС, ОМС,
+              РДЖ ДМС</p>
+            <img class="buy__item-img" src="./images/buy/atmcard-color.png" alt="">
+          </div>
+          <div class="buy__item section-carLoans">
+            <div class="buy__item-hidden">
+              <a class="buy__item-link" href="#">От несчастного случая</a>
+              <a class="buy__item-link" href="#">Спортсмены и дети</a>
+              <a class="buy__item-link" href="#">Страхование жизни</a>
+              <a class="buy__item-link" href="#">От укуса клещей</a>
+              <a class="buy__item-link" href="#">ДМС</a>
+              <a class="buy__item-link" href="#">ОМС</a>
+              <a class="buy__item-link" href="#">ДМС в клиниках РЖД</a>
+            </div>
+            <h3 class="buy__item-title">Автокредитование</h3>
+            <p class="buy__item-text">Страхование от несчастного случая, спортсменов, детей, жизни, от клещей, ДМС, ОМС,
+              РДЖ ДМС</p>
+            <img class="buy__item-img" src="./images/buy/calc-color.png" alt="">
+          </div>
+          <div class="buy__item section-mortgage">
+            <div class="buy__item-hidden">
+              <a class="buy__item-link" href="#">От несчастного случая</a>
+              <a class="buy__item-link" href="#">Спортсмены и дети</a>
+              <a class="buy__item-link" href="#">Страхование жизни</a>
+              <a class="buy__item-link" href="#">От укуса клещей</a>
+              <a class="buy__item-link" href="#">ДМС</a>
+              <a class="buy__item-link" href="#">ОМС</a>
+              <a class="buy__item-link" href="#">ДМС в клиниках РЖД</a>
+            </div>
+            <h3 class="buy__item-title">Ипотека</h3>
+            <p class="buy__item-text">Страхование от несчастного случая, спортсменов, детей, жизни, от клещей, ДМС, ОМС,
+              РДЖ ДМС</p>
+            <img class="buy__item-img" src="./images/buy/house-color.png" alt="">
+          </div>
+          <div class="buy__item section-refinancing">
+            <div class="buy__item-hidden">
+              <a class="buy__item-link" href="#">От несчастного случая</a>
+              <a class="buy__item-link" href="#">Спортсмены и дети</a>
+              <a class="buy__item-link" href="#">Страхование жизни</a>
+              <a class="buy__item-link" href="#">От укуса клещей</a>
+              <a class="buy__item-link" href="#">ДМС</a>
+              <a class="buy__item-link" href="#">ОМС</a>
+              <a class="buy__item-link" href="#">ДМС в клиниках РЖД</a>
+            </div>
+            <h3 class="buy__item-title">Рефинансирование</h3>
+            <p class="buy__item-text">Страхование от несчастного случая, спортсменов, детей, жизни, от клещей, ДМС, ОМС,
+              РДЖ ДМС</p>
+            <img class="buy__item-img" src="./images/buy/calc-color.png" alt="">
+          </div>
+          <div class="buy__item section-leasing">
+            <div class="buy__item-hidden">
+              <a class="buy__item-link" href="#">От несчастного случая</a>
+              <a class="buy__item-link" href="#">Спортсмены и дети</a>
+              <a class="buy__item-link" href="#">Страхование жизни</a>
+              <a class="buy__item-link" href="#">От укуса клещей</a>
+              <a class="buy__item-link" href="#">ДМС</a>
+              <a class="buy__item-link" href="#">ОМС</a>
+              <a class="buy__item-link" href="#">ДМС в клиниках РЖД</a>
+            </div>
+            <h3 class="buy__item-title">Лизинг</h3>
+            <p class="buy__item-text">Страхование от несчастного случая, спортсменов, детей, жизни, от клещей, ДМС, ОМС,
+              РДЖ ДМС</p>
+            <img class="buy__item-img" src="./images/buy/steering-color.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+
+  <section class="searchSite">
+    <div class="container">
+      <h3 class="searchSite__title">Поиск по сайту</h3>
+      <div class="search search--site">
+        <input class="search__input" type="text" placeholder="Я ищу...">
+        <div class="icon-search search__icon"></div>
+        <a class="link" href="#">Искать</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="quiz">
+    <div class="quiz__wrapperBox">
+      <div class="container">
+        <div class="quiz__inner">
+          <div class="quiz__item">
+            <img class="quiz__item-img" src="./images/quiz/car.png" alt="">
+          </div>
+          <div class="quiz__item quiz__item--border">
+            <h2 class="quiz__item-title">Квиз по КАСКО</h2>
+            <p class="quiz__item-text">Уделите квизу 3 минуты, тогда мы сможем подобрать для вас лучший тариф</p>
+            <a class="link" href="#">Начать</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="news">
+    <div class="container news__container">
+      <div class="news__inner">
+        <h3 class="news__title"><a class="news__link" href="#">Новости</a></h3>
+        <div class="news__swiper swiper">
+          <div class="news__wrapperBox swiper-wrapperBox">
+            <div class="news__slide swiper-slide" href="#">
+              <time class="news__slide-time" datetime="2022-10-12">12 октября 2022</time>
+              <a class="news__slide-link" href="#" target="_blank">8,5 миллионов за поездку в МЕГУ: «Мегаполис»
+                возместил по КАСКО ущерб
+                водителю
+                Lamborghini</a>
+            </div>
+            <div class="news__slide swiper-slide" href="#">
+              <time class="news__slide-time" datetime="2022-10-12">12 октября 2022</time>
+              <a class="news__slide-link" href="#" target="_blank">«Мегаполис» защитил опасные объекты Управления
+                мелиорации земель и
+                сельхозводоснабжения по Оренбургской области</a>
+            </div>
+            <div class="news__slide swiper-slide" href="#">
+              <time class="news__slide-time" datetime="2022-10-12">12 октября 2022</time>
+              <a class="news__slide-link" href="#" target="_blank">8,5 миллионов за поездку в МЕГУ: «Мегаполис»
+                возместил по КАСКО ущерб
+                водителю
+                Lamborghini</a>
+            </div>
+            <div class="news__slide swiper-slide" href="#">
+              <time class="news__slide-time" datetime="2022-10-12">12 октября 2022</time>
+              <a class="news__slide-link" href="#" target="_blank">«Мегаполис» защитил опасные объекты Управления
+                мелиорации земель и
+                сельхозводоснабжения по Оренбургской области</a>
+            </div>
+            <div class="news__slide swiper-slide" href="#">
+              <time class="news__slide-time" datetime="2022-10-12">12 октября 2022</time>
+              <a class="news__slide-link" href="#" target="_blank">8,5 миллионов за поездку в МЕГУ: «Мегаполис»
+                возместил по КАСКО ущерб
+                водителю
+                Lamborghini</a>
+            </div>
+            <div class="news__slide swiper-slide" href="#">
+              <time class="news__slide-time" datetime="2022-10-12">12 октября 2022</time>
+              <a class="news__slide-link" href="#" target="_blank">«Мегаполис» защитил опасные объекты Управления
+                мелиорации земель и
+                сельхозводоснабжения по Оренбургской области</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news__arrow">
+        <div class="swiper-button-prev news__prev"></div>
+        <div class="swiper-button-next news__next"></div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <section class="company">
+    <div class="company__wrapperBox">
+      <div class="container">
+        <div class="company__inner">
+          <div class="company__item">
+            <h3 class="company__title">Страховая компания «Мегаполис»</h3>
+            <p class="company__text">«Мегаполис» — крупнейшая частная страховая компания России с универсальным
+              портфелем
+              страховых услуг, включающим как комплексные программы защиты интересов бизнеса, так и широкий спектр
+              страховых продуктов для частных лиц. Компания предлагает более 200 решений по всем ключевым видам
+              страхования.
+              Кредитные Рейтинги» (НКР).</p>
+            <p class="company__text">Региональная сеть насчитывает 270 филиалов и отделений по всей стране.</p>
+            <p class="company__text">Клиентами «АльфаСтрахование» уже являются более 16 млн человек и свыше 113 тыс.
+              предприятий.</p>
+            <p class="company__text">Надежность и финансовую устойчивость компании подтверждают рейтинги ведущих
+              рейтинговых агентств: ruАAA по
+              шкале «Эксперт РА», ААА|ru| по шкале «Национального Рейтингового Агентства» и AAA.ru по шкале
+              «Национальные
+            </p>
+          </div>
+          <div class="company__content">
+            <h3 class="company__title">Наши услуги</h3>
+            <div class="company__content-box">
+              <p class="company__content-title">
+                Автострахование
+              </p>
+              <p class="company__content-text">Надежность и финансовую устойчивость компании подтверждают рейтинги
+                ведущих
+                рейтинговых агентств: ruАAA по
+                шкале «Эксперт РА», ААА|ru| по шкале «Национального Рейтингового Агентства» и AAA.ru по шкале
+                «Национальные</p>
+            </div>
+            <div class="company__content-box">
+              <p class="company__content-title">
+                Страхование недвижимости
+              </p>
+              <p class="company__content-text">Надежность и финансовую устойчивость компании подтверждают рейтинги
+                ведущих
+                рейтинговых агентств: ruАAA по
+                шкале «Эксперт РА», ААА|ru| по шкале «Национального Рейтингового Агентства» и AAA.ru по шкале
+                «Национальные</p>
+            </div>
+            <div class="company__content-box">
+              <p class="company__content-title">
+                Страхование здоровья
+              </p>
+              <p class="company__content-text">Надежность и финансовую устойчивость компании подтверждают рейтинги
+                ведущих
+                рейтинговых агентств: ruАAA по
+                шкале «Эксперт РА», ААА|ru| по шкале «Национального Рейтингового Агентства» и AAA.ru по шкале
+                «Национальные</p>
+            </div>
+            <div class="company__content-box">
+              <p class="company__content-title">
+                Страхование движимого имущества
+              </p>
+              <p class="company__content-text">Надежность и финансовую устойчивость компании подтверждают рейтинги
+                ведущих
+                рейтинговых агентств: ruАAA по
+                шкале «Эксперт РА», ААА|ru| по шкале «Национального Рейтингового Агентства» и AAA.ru по шкале
+                «Национальные</p>
+            </div>
+            <div class="company__content-box">
+              <p class="company__content-title">
+                Страхование путешественников
+              </p>
+              <p class="company__content-text">Надежность и финансовую устойчивость компании подтверждают рейтинги
+                ведущих
+                рейтинговых агентств: ruАAA по
+                шкале «Эксперт РА», ААА|ru| по шкале «Национального Рейтингового Агентства» и AAA.ru по шкале
+                «Национальные</p>
+            </div>
+            <div class="company__content-box">
+              <p class="company__content-title">
+                Страхование кредитов и финансирования
+              </p>
+              <p class="company__content-text">Надежность и финансовую устойчивость компании подтверждают рейтинги
+                ведущих
+                рейтинговых агентств: ruАAA по
+                шкале «Эксперт РА», ААА|ru| по шкале «Национального Рейтингового Агентства» и AAA.ru по шкале
+                «Национальные</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer section-footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__item">
+          <a class="logo footer__logo" href="#">
+            <img class="logo__img" src="./images/logo.svg" alt="">
+          </a>
+          <div class="footer__box">
+            <a class="footer__icon icon-tg" href="#" target="_blank"></a>
+            <a class="footer__icon icon-wa" href="#" target="_blank"></a>
+            <a class="footer__icon icon-vb" href="#" target="_blank"></a>
+          </div>
+          <a class="footer__item-link" href="mailto:info@megapolis.ru" target="_blank">info@megapolis.ru</a>
+        </div>
+        <div class="footer__content">
+          <div class="footer__content-box">
+            <div class="footer__content-item">
+              <p class="footer__content-title">Автомобили</p>
+              <a class="footer__content-link" href="#">ОСАГО</a>
+              <a class="footer__content-link" href="#">КАСКО</a>
+              <a class="footer__content-link" href="#">Продление КАСКО</a>
+              <a class="footer__content-link" href="#">Подление ОСАГО</a>
+              <a class="footer__content-link" href="#">Продленная гарантия</a>
+            </div>
+            <div class="footer__content-item">
+              <p class="footer__content-title">Имущество</p>
+              <a class="footer__content-link" href="#">Страхование квартиры</a>
+              <a class="footer__content-link" href="#">Страхование дачи</a>
+              <a class="footer__content-link" href="#">Страхование ипотеки</a>
+              <a class="footer__content-link" href="#">Страхование права собственности</a>
+            </div>
+          </div>
+          <div class="footer__content-box">
+            <div class="footer__content-item">
+              <p class="footer__content-title">Здоровье</p>
+              <a class="footer__content-link" href="#">От несчастного случая</a>
+              <a class="footer__content-link" href="#">Спортсмены и дети</a>
+              <a class="footer__content-link" href="#">Страхование жизни</a>
+              <a class="footer__content-link" href="#">От укуса клещей</a>
+              <a class="footer__content-link" href="#">ДМС</a>
+              <a class="footer__content-link" href="#">ОМС</a>
+              <a class="footer__content-link" href="#">ДМС в клиниках РЖД</a>
+            </div>
+            <div class="footer__content-item">
+              <p class="footer__content-title">Кредитование</p>
+              <a class="footer__content-link" href="#">На любые цели</a>
+              <a class="footer__content-link" href="#">Наличными под залог</a>
+              <a class="footer__content-link" href="#">Под залог квартиры</a>
+            </div>
+          </div>
+          <div class="footer__content-box">
+            <div class="footer__content-item">
+              <p class="footer__content-title">Автокредитование</p>
+              <a class="footer__content-link" href="#">На покупку Б/У автомобиля</a>
+              <a class="footer__content-link" href="#">На покупку нового автомобиля</a>
+            </div>
+            <div class="footer__content-item">
+              <p class="footer__content-title">Ипотека</p>
+              <a class="footer__content-link" href="#">Семейная</a>
+              <a class="footer__content-link" href="#">Льготная на новостройку</a>
+              <a class="footer__content-link" href="#">На вторичное жильё</a>
+              <a class="footer__content-link" href="#">Для IT-специалистов</a>
+            </div>
+          </div>
+          <div class="footer__content-box">
+            <div class="footer__content-item">
+              <p class="footer__content-title">Лизинг</p>
+              <a class="footer__content-link" href="#">Подбор авто по всей России</a>
+              <a class="footer__content-link" href="#">Возвратный лизинг</a>
+              <a class="footer__content-link" href="#">Подбор авто для таксопарка</a>
+              <a class="footer__content-link" href="#">Суперлайт</a>
+              <a class="footer__content-link" href="#">Форсаж</a>
+              <a class="footer__content-link" href="#">Драйв</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__bottom-text">© 2022 «Мегаполис»</p>
+        <a class="footer__development" href="#" target="_blank">
+          <p class="footer__development-text">Разработка сайта</p>
+          <img class="footer__development-image" src="./images/icons/spaceapp.svg" alt="">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="./plugins/daterangepicker/moment.min.js"></script>
+  <script type="text/javascript" src="./plugins/daterangepicker/daterangepicker.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+    type="text/javascript"></script>
+  <script src="./plugins/selectize/js/selectize.js"></script>
+  <script src="./plugins/noUislider/nouislider.min.js"></script>
+  <script src="./plugins/noUislider/wNumb.min.js"></script>
+  <script src="./js/main.js?v=1"></script>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+.blog {
+  &__wrapper {
+    margin-top: 24px;
+    @include fluid(margin-bottom, 60px, 80px);
+    overflow: hidden;
+  }
+
+  &__title {
+    margin-bottom: 28px;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 24px;
+
+    .title {
+      margin-bottom: 0;
+    }
+  }
+
+  &__target {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 28px;
+    overflow-x: auto;
+
+    &-item {
+      padding: 4px 12px;
+      color: var(--Orange, #EF7F1A);
+      font-size: 12px;
+      white-space: nowrap;
+      font-weight: 500;
+      line-height: 18px;
+      border-radius: 36px;
+      background-color: rgba(239, 127, 26, 0.25);
+      box-shadow: 0px 1px 2px 0px rgba(105, 81, 255, 0.05);
+      transition: color .23s ease-in-out,
+        background-color .23s ease-in-out,
+        box-shadow .23s ease-in-out;
+      cursor: pointer;
+
+      &--active {
+        background: var(--Orange, #EF7F1A);
+        box-shadow: 0px 1px 2px 0px rgba(105, 81, 255, 0.05);
+        color: var(--White, #FFF);
+        pointer-events: none;
+      }
+    }
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-bottom: 36px;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+
+    &-img {
+      @include fluid(height, 280px, 312px);
+      -o-object-fit: cover;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 24px;
+    }
+
+    &-accent {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      padding: 4px 12px;
+      color: var(--Orange, #EF7F1A);
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 18px;
+      border-radius: 36px;
+      background-color: rgba(239, 127, 26, 0.25);
+      box-shadow: 0px 1px 2px 0px rgba(105, 81, 255, 0.05);
+      margin-bottom: 12px;
+    }
+
+    &-title {
+      @include fluid(font-size, 20px, 24px);
+      font-weight: 500;
+      line-height: 1.3;
+      margin-bottom: 8px;
+      color: var(--Text, #18191F);
+    }
+
+    &-text {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 8px;
+      color: #5E5E63;
+      margin-top: auto;
+    }
+
+    &-date {
+      display: block;
+      color: var(--Gray, #969BAB);
+      font-feature-settings: 'salt'on,
+        'liga'off;
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 12px;
+    }
+
+    &-bot {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--Orange, #EF7F1A);
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 28px;
+    }
+  }
+
+  &__btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media(max-width:768px) {
+  .blog {
+    &__inner {
+      grid-template-columns: 1fr;
+      margin-bottom: 0;
+    }
+
+    &__btn {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.header {
+  position: relative;
+  background: var(--White, #FFF);
+  z-index: 5;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+
+    .phone {
+      margin-left: auto;
+    }
+
+    &-text {
+      color: var(--Orange, #EF7F1A);
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 14px;
+    border-bottom: 2px solid var(--Orange, #EF7F1A);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    &__top {
+      display: none;
+    }
+
+    &__inner {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.partners {
+  &__wrapper {
+    @include fluid(margin-top, 60px, 66px);
+    @include fluid(margin-bottom, 60px, 120px);
+  }
+
+  &__title {
+    @include fluid(font-size, 26px, 50px);
+    font-weight: 700;
+    text-align: center;
+    @include fluid(margin-bottom, 20px, 35px);
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    @include fluid(gap, 10px, 14px);
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__img {
+    width: 100%;
+    border-radius: 4px;
+    @include fluid(height, 130px, 157px);
+    object-fit: cover;
+  }
+}

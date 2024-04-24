@@ -1,0 +1,75 @@
+.card {
+  position: relative;
+  @include fluid(height, 331px, 408px);
+  transition: z-index 0.23s ease-in-out;
+  z-index: 1;
+
+  &:hover {
+    z-index: 5;
+
+    .card {
+
+      &__body {
+        box-shadow: 0px 20px 50px rgb(75, 68, 68, 0.1);
+      }
+
+      &__btn {
+        @include fluid(max-height, 42px, 52px);
+        @include fluid(margin-top, 15px, 30px);
+        opacity: 1;
+      }
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    @include fluid(padding, 15px, 20px);
+    border-radius: 10px;
+    border: 1px solid #e3e3e3;
+    transition: box-shadow 0.23s ease-in-out;
+    background-color: #fff;
+  }
+
+  &__img {
+    border-radius: 10px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    @include fluid(height, 180px, 208px);
+    @include fluid(margin-bottom, 15px, 30px);
+  }
+
+  &__title {
+    @include fluid(margin-bottom, 10px, 15px);
+    color: #434242;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &__price {
+    @include fluid(margin-bottom, 10px, 15px);
+    @include fluid(font-size, 18px, 24px);
+    font-weight: 700;
+  }
+
+  &__state {
+    font-size: 14px;
+    color: #67B437;
+  }
+
+  &__btn {
+    max-height: 0;
+    margin-top: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height .23s ease-in-out, margin .23s ease-in-out, opacity .23s ease-in-out;
+  }
+
+  &__date {
+    display: block;
+    font-size: 14px;
+    color: #9FA3A8;
+  }
+}

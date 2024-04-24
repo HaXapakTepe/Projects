@@ -1,0 +1,100 @@
+.features {
+  &__title {
+    @include fluid(margin-bottom, 30px, 117px);
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    @include fluid(gap, 10px, 15px);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    border-radius: 44px;
+    background-color: #5F2EEA;
+    transition: background-color .23s ease-in-out;
+
+    &.accordion--active {
+      background-color: rgba(0, 0, 0, 0.2);
+
+      .features__item-img {
+        opacity: 1;
+      }
+    }
+
+    &:first-child,
+    &:nth-child(2) {
+      width: 44%;
+    }
+
+    &-title {
+      display: flex;
+      align-items: center;
+      @include fluid(gap, 15px, 20px);
+      font-family: 'SF Pro Display';
+      @include fluid(font-size, 20px, 30px);
+      font-weight: 500;
+      @include fluid(padding-top, 10px, 15px);
+      @include fluid(padding-bottom, 10px, 15px);
+      @include fluid(padding-left, 15px, 30px);
+      @include fluid(padding-right, 15px, 30px);
+      @include fluid(margin-bottom, 12px, 16px);
+      background-color: #5F2EEA;
+      border-radius: 44px;
+    }
+
+    &-icon {
+      svg {
+        @include fluid(width, 32px, 43px);
+        @include fluid(height, 32px, 43px);
+      }
+    }
+
+    &-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-grow: 1;
+      @include fluid(padding-top, 15px, 20px);
+      @include fluid(padding-bottom, 25px, 48px);
+      @include fluid(padding-left, 15px, 30px);
+      @include fluid(padding-right, 15px, 30px);
+    }
+
+    &-text {
+      font-weight: 300;
+      text-wrap: balance;
+
+      &:has(+*) {
+        @include fluid(margin-bottom, 15px, 28px);
+      }
+    }
+
+    &-img {
+      @include fluid(height, 220px, 262px);
+      -o-object-fit: contain;
+      object-fit: contain;
+      opacity: 0;
+      transition: opacity 0.38s ease-in-out;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .features {
+    &__item {
+      width: 100%;
+      border-radius: 20px;
+
+      &:first-child,
+      &:nth-child(2) {
+        width: 100%;
+      }
+    }
+  }
+}

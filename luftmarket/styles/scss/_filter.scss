@@ -1,0 +1,123 @@
+.filter {
+
+  .details,
+  .popular {
+    width: 75%;
+  }
+
+  &__wrapper {
+    margin-top: 56px;
+    margin-bottom: 90px;
+
+    @media screen and (max-width: 1600px) and (min-width: 993px) {
+      margin-top: calc(25px + (57 - 25) * ((100vw - 992px) / (1600 - 992)));
+      margin-top: calc(50px + (90 - 50) * ((100vw - 992px) / (1600 - 992)));
+    }
+  }
+
+  &__inner {
+    display: flex;
+    gap: 35px;
+
+    @media screen and (max-width: 1600px) and (min-width: 993px) {
+      gap: calc(20px + (35 - 20) * ((100vw - 992px) / (1600 - 992)));
+    }
+  }
+
+  &__accordion {
+    width: 25%;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 23px;
+      margin-bottom: 10px;
+      background-color: #1BAFE5;
+      border-radius: 10px;
+      cursor: pointer;
+
+      &.accordion--active {
+        .filter__accordion-icon {
+          transform: rotateX(-180deg);
+        }
+      }
+    }
+
+    &-title {
+      font-weight: 700;
+      color: #fff;
+    }
+
+    &-link {
+      position: relative;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      font-weight: 500;
+      color: #333;
+      padding-bottom: 7px;
+      transition: color .23s ease-in-out, border-color .23s ease-in-out;
+      border-bottom: 1px solid transparent;
+      margin-left: 38px;
+
+      @media screen and (max-width: 1600px) and (min-width: 993px) {
+        margin-left: calc(15px + (38 - 15) * ((100vw - 992px) / (1600 - 992)));
+      }
+
+      &:hover {
+        color: #1BAFE5;
+        border-color: #1BAFE5;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 21px;
+      }
+    }
+
+    &-icon {
+      transition: transform .23s ease-in-out;
+    }
+
+    &-hidden {
+      display: flex;
+      flex-direction: column;
+      margin-top: 13px;
+      margin-bottom: 11px;
+    }
+  }
+
+}
+
+@media (max-width: 1366px) {
+  .filter {
+
+    .details,
+    .popular {
+      width: 74%;
+    }
+
+    &__accordion {
+      width: 35%;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .filter {
+
+    &__wrapper {
+      margin-top: 25px;
+    }
+
+    .details,
+    .popular,
+    &__accordion {
+      width: unset;
+    }
+
+    &__inner {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,278 @@
+.infoPart {
+  &__wrapper {
+    margin-top: 24px;
+    @include fluid(margin-bottom, 30px, 65px);
+  }
+
+  &__top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    @include fluid(margin-bottom, 30px, 66px);
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      @include fluid(gap, 20px, 45px);
+    }
+
+    &-title {
+      font-weight: 700;
+      @include fluid(font-size, 24px, 45px);
+      text-transform: uppercase;
+    }
+
+    &-icon {
+      svg {
+        @include fluid(width, 40px, 58px);
+        @include fluid(height, 40px, 58px);
+      }
+    }
+
+    &-box {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @include fluid(gap, 8px, 12px);
+    }
+
+    &-accent {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      font-weight: 700;
+      @include fluid(font-size, 24px, 45px);
+      @include fluid(padding-left, 10px, 15px);
+      @include fluid(padding-right, 10px, 15px);
+      background-color: #C4FF02;
+      border-radius: 28px;
+    }
+
+    &-text {
+      font-weight: 500;
+      @include fluid(font-size, 20px, 25px);
+      @include fluid(padding-left, 10px, 15px);
+
+      &--alt {
+        font-weight: 600;
+      }
+
+      &--bold {
+        font-weight: 700;
+      }
+    }
+
+    &-best {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        @include fluid(width, 363px, 545px);
+        @include fluid(height, 184px, 276px);
+      }
+    }
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr .84fr;
+    align-items: center;
+    @include fluid(gap, 20px, 80px);
+    @include fluid(margin-bottom, 60px, 170px);
+
+    &-text {
+      @include fluid(font-size, 20px, 30px);
+
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 10px, 20px);
+    border-radius: 50px;
+    @include fluid(padding-top, 30px, 90px);
+    @include fluid(padding-bottom, 30px, 90px);
+    @include fluid(padding-left, 20px, 73px);
+    @include fluid(padding-right, 20px, 73px);
+    background-color: #131313;
+    color: #fff;
+
+    &-picture {
+      position: relative;
+      height: 200px;
+    }
+
+    &-img {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      -o-object-fit: contain;
+      object-fit: contain;
+      margin-left: auto;
+      margin-right: auto;
+      @include fluid(width, 290px, 385px);
+      @include fluid(height, 280px, 360px);
+    }
+
+    &-text {
+      font-family: 'Manrope';
+      font-weight: 500;
+      @include fluid(font-size, 20px, 24px);
+
+      span {
+        font-weight: 800;
+      }
+    }
+  }
+
+  &__elem {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 25px, 50px);
+
+    &-text {
+      font-family: 'Manrope';
+      font-weight: 500;
+      @include fluid(font-size, 20px, 24px);
+
+      &--bold,
+      span {
+        font-weight: 800;
+      }
+    }
+
+    &-box {
+      display: flex;
+      align-items: center;
+      @include fluid(gap, 20px, 54px);
+    }
+
+    &-img {
+      @include fluid(width, 75px, 100px);
+      @include fluid(height, 75px, 100px);
+    }
+
+    &-icon {
+      margin-left: auto;
+
+      svg {
+        @include fluid(width, 75px, 100px);
+        @include fluid(height, 75px, 100px);
+      }
+    }
+  }
+
+  &__img {
+    -o-object-fit: contain;
+    object-fit: contain;
+    @include fluid(height, 195px, 350px);
+  }
+
+  &__bot {
+    background-color: #C4FF02;
+    border-radius: 50px;
+    @include fluid(padding-top, 30px, 100px);
+    @include fluid(padding-bottom, 30px, 100px);
+    @include fluid(padding-left, 30px, 70px);
+    @include fluid(padding-right, 30px, 70px);
+
+    &-text {
+      text-align: center;
+      @include fluid(font-size, 20px, 30px);
+
+      a {
+        font-weight: 900;
+        color: #000;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .infoPart {
+    &__top {
+      &-box {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width:768px) {
+  .infoPart {
+    &__top {
+      grid-template-columns: 1fr;
+
+      &-box {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    &__inner {
+      position: relative;
+      grid-template-columns: 1fr;
+
+      &-text {
+        text-align: center;
+      }
+    }
+
+    &__img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+  }
+}
+
+@media (max-width:576px) {
+  .infoPart {
+    &__top {
+      &-box {
+        grid-template-columns: 1fr;
+      }
+
+      &-best {
+        svg {
+          width: 100%;
+          @include fluid(height, 184px, 276px);
+        }
+      }
+    }
+
+    &__item {
+      &-img {
+        width: 250px;
+      }
+    }
+
+    &__top,
+    &__item,
+    &__elem,
+    &__bot,
+    &__inner {
+      &-text {
+        font-size: 16px;
+      }
+    }
+
+    &__item,
+    &__bot {
+      border-radius: 30px;
+    }
+  }
+}

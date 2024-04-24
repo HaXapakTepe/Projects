@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/images/star.svg" type="x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../styles/css/normalize.css">
+  <link rel="stylesheet" href="../styles/css/style.css?v=0.0001">
+  <title>Каталог товаров</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-box">
+            <a class="link" href="#">
+              <i class="link__icon">
+                <svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5.99984 0.666565C2.779 0.666565 0.166504 3.27906 0.166504 6.4999C0.166504 10.8749 5.99984 17.3332 5.99984 17.3332C5.99984 17.3332 11.8332 10.8749 11.8332 6.4999C11.8332 3.27906 9.22067 0.666565 5.99984 0.666565ZM5.99984 8.58323C4.84984 8.58323 3.9165 7.6499 3.9165 6.4999C3.9165 5.3499 4.84984 4.41656 5.99984 4.41656C7.14984 4.41656 8.08317 5.3499 8.08317 6.4999C8.08317 7.6499 7.14984 8.58323 5.99984 8.58323Z"
+                    fill="#9FA3A8" />
+                </svg>
+              </i>
+              Отслеживание заказа
+            </a>
+            <a class="link link--mla" href="mailto:info@pkfes.ru">
+              <i class="link__icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_3_905)">
+                    <path
+                      d="M19.8239 3.97241L13.7583 9.99894L19.8239 16.0255C19.9335 15.7963 20.0001 15.5429 20.0001 15.2724V4.7255C20.0001 4.45491 19.9335 4.20159 19.8239 3.97241Z"
+                      fill="#9FA3A8" />
+                    <path
+                      d="M18.2419 2.96851H1.75748C1.48689 2.96851 1.23357 3.03503 1.00439 3.14468L8.75686 10.8581C9.44232 11.5436 10.557 11.5436 11.2425 10.8581L18.9949 3.14468C18.7658 3.03503 18.5124 2.96851 18.2419 2.96851Z"
+                      fill="#9FA3A8" />
+                    <path
+                      d="M0.176172 3.97241C0.0665235 4.20159 0 4.45491 0 4.7255V15.2724C0 15.543 0.0665235 15.7963 0.176172 16.0255L6.24176 9.99894L0.176172 3.97241Z"
+                      fill="#9FA3A8" />
+                    <path
+                      d="M12.9294 10.8293L12.071 11.6877C10.9289 12.8298 9.07041 12.8298 7.92826 11.6877L7.06998 10.8293L1.00439 16.8559C1.23357 16.9655 1.48689 17.032 1.75748 17.032H18.2419C18.5124 17.032 18.7658 16.9655 18.9949 16.8559L12.9294 10.8293Z"
+                      fill="#9FA3A8" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_3_905">
+                      <rect width="20" height="20" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </i>
+              info@pkfes.ru
+            </a>
+            <div class="socials">
+              <a href="#" class="socials__icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10.8931 16C4.0599 16 0.162399 11.4955 0 4H3.42286C3.53529 9.5015 6.05865 11.8318 8.0574 12.3123V4H11.2805V8.74475C13.2543 8.54054 15.3278 6.37838 16.0273 4H19.2504C18.7131 6.93092 16.4646 9.09309 14.8656 9.98199C16.4646 10.7027 19.0256 12.5886 20 16H16.4521C15.6901 13.7178 13.7915 11.9519 11.2805 11.7117V16H10.8931Z"
+                    fill="#9FA3A8" />
+                </svg>
+              </a>
+              <a href="#" class="socials__icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_3_937)">
+                    <path
+                      d="M17.5563 1.94742C17.0389 1.49325 14.9433 0.0332547 10.2763 0.014088C10.2763 0.014088 4.76937 -0.301745 2.08676 2.05742C0.594584 3.48742 0.0719747 5.58159 0.0119747 8.17909C-0.0480253 10.7766 -0.114982 15.6449 4.78154 16.9683H4.78589L4.78154 18.9841C4.78154 18.9841 4.74937 19.8008 5.30937 19.9649C5.98589 20.1683 6.38589 19.5466 7.03371 18.8783C7.3885 18.5107 7.87719 17.9724 8.2485 17.5616C8.77024 17.6108 9.37545 17.6383 9.9885 17.6383C11.5772 17.6383 13.1207 17.4508 14.5955 17.0974L14.465 17.1241C15.1415 16.9133 18.9694 16.4441 19.5885 11.5766C20.2355 6.55159 19.2807 3.38159 17.5563 1.94742ZM18.1233 11.2099C17.5955 15.2724 14.4946 15.5308 13.9241 15.7058C12.6789 16.0091 11.2494 16.1824 9.77719 16.1824C9.35458 16.1824 8.93545 16.1683 8.52067 16.1399L8.57632 16.1433C8.57632 16.1433 6.45632 18.5924 5.79632 19.2291C5.58067 19.4358 5.34328 19.4191 5.34763 19.0066C5.34763 18.7374 5.36415 15.6583 5.36415 15.6583C1.21893 14.5566 1.45893 10.4099 1.50763 8.24409C1.55632 6.07825 1.98067 4.29825 3.24415 3.10325C5.51545 1.13075 10.1911 1.42325 10.1911 1.42325C14.1415 1.43909 16.0328 2.57992 16.4728 2.96242C17.9285 4.15825 18.6702 7.01909 18.1233 11.2099ZM12.4615 8.05325V8.06492C12.4615 8.20492 12.3433 8.31825 12.1972 8.31825C12.0555 8.31825 11.9398 8.21159 11.9337 8.07742C11.9372 8.04242 11.9398 7.99992 11.9398 7.95909C11.9398 7.29159 11.3755 6.75075 10.6789 6.75075C10.6528 6.75075 10.6268 6.75159 10.6015 6.75325H10.605C10.465 6.74575 10.3546 6.63575 10.3546 6.50075C10.3546 6.36075 10.4728 6.24742 10.6189 6.24742H10.6337H10.6328C10.6502 6.24659 10.672 6.24659 10.6928 6.24659C11.672 6.24659 12.465 7.00659 12.465 7.94492C12.465 7.98325 12.4633 8.02159 12.4607 8.05909V8.05409L12.4615 8.05325ZM13.2885 8.49575C13.3294 6.83909 12.2494 5.54242 10.1989 5.39742C10.0607 5.38825 9.95284 5.27825 9.95284 5.14492C9.95284 5.00492 10.0711 4.89159 10.2172 4.89159C10.2233 4.89159 10.2302 4.89159 10.2363 4.89242H10.2355H10.2502C12.2215 4.89242 13.8207 6.42409 13.8207 8.31409C13.8207 8.38159 13.8189 8.44909 13.8146 8.51575L13.8155 8.50659C13.812 8.64409 13.6955 8.75325 13.552 8.75325C13.4059 8.75325 13.2876 8.63992 13.2876 8.49992C13.2876 8.49742 13.2876 8.49575 13.2876 8.49325L13.2885 8.49575ZM15.2015 9.01992V9.02159C15.2015 9.16159 15.0833 9.27492 14.9372 9.27492C14.7911 9.27492 14.6746 9.16242 14.6737 9.02409C14.6528 5.83909 12.4363 4.10492 9.75024 4.08659C9.60415 4.08659 9.48676 3.97325 9.48676 3.83409C9.48676 3.69492 9.60502 3.58159 9.75024 3.58159C12.7581 3.60159 15.1755 5.59075 15.1998 9.01909L15.2015 9.01992ZM14.745 12.8516V12.8591C14.305 13.6016 13.4815 14.4216 12.6337 14.1599L12.6259 14.1483C11.0328 13.5783 9.65545 12.8333 8.42502 11.9158L8.46067 11.9408C7.81458 11.4474 7.24676 10.9033 6.7485 10.3049L6.73197 10.2841C6.28937 9.75242 5.87458 9.15742 5.51284 8.52909L5.47806 8.46325C5.08067 7.84159 4.72154 7.12325 4.44067 6.36909L4.41458 6.28742C4.14154 5.47492 4.99284 4.68575 5.77197 4.26409H5.7798C5.89284 4.19492 6.03024 4.15325 6.17806 4.15325C6.41024 4.15325 6.61719 4.25575 6.75371 4.41492L6.75458 4.41659C6.75458 4.41659 7.2598 4.99409 7.47632 5.27992C7.6798 5.54575 7.95371 5.97159 8.09545 6.20909C8.17719 6.33159 8.22502 6.48159 8.22502 6.64242C8.22502 6.88242 8.11719 7.09825 7.94502 7.24742L7.94415 7.24825L7.45545 7.62325C7.32067 7.74825 7.23719 7.92325 7.23719 8.11659C7.23719 8.13575 7.23806 8.15409 7.2398 8.17242V8.16992C7.74328 9.75575 9.02067 10.9799 10.6398 11.4541L10.6763 11.4633C10.6928 11.4649 10.7128 11.4658 10.732 11.4658C10.9337 11.4658 11.1163 11.3858 11.2468 11.2574L11.6381 10.7891C11.7946 10.6233 12.0198 10.5199 12.2702 10.5199C12.4381 10.5199 12.5937 10.5666 12.7259 10.6466L12.7224 10.6449C13.4294 11.0308 14.0407 11.4549 14.5981 11.9358L14.5885 11.9274C14.7555 12.0558 14.8607 12.2516 14.8607 12.4708C14.8607 12.6116 14.8172 12.7424 14.7415 12.8524L14.7433 12.8499L14.745 12.8516Z"
+                      fill="#9FA3A8" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_3_937">
+                      <rect width="20" height="20" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a href="#" class="socials__icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M5.11313 17.4171C6.52321 18.3415 8.19791 18.8889 10.0041 18.8889C14.9023 18.8889 18.8891 14.8881 18.8891 9.98514C18.8891 9.77062 18.8891 9.534 18.8744 9.29743C18.5148 4.72723 14.6743 1.11108 10.0041 1.11108C5.40721 1.11108 1.60336 4.63106 1.17005 9.13473C1.13329 9.42313 1.11133 9.69672 1.11133 9.98516C1.11133 11.93 1.74298 13.7493 2.80779 15.1987L1.7062 18.5043L5.11313 17.4171ZM12.8341 11.2264C12.8461 11.2298 12.8583 11.2332 12.8707 11.2367C12.8707 11.2382 12.9569 11.2817 13.0949 11.3514C13.635 11.6243 14.9691 12.2982 15.0366 12.4266C15.1078 12.5416 15.1078 13.0868 14.9023 13.7085C14.69 14.3533 13.6637 14.9523 13.2173 14.9905C13.1387 14.9972 13.0738 15.0136 13.0067 15.0305C12.6873 15.111 12.3209 15.2033 10.209 14.3152C7.81441 13.3022 6.25536 10.7621 5.98321 10.3187C5.96658 10.2916 5.95475 10.2724 5.94784 10.2617C5.94175 10.2525 5.9333 10.2399 5.92277 10.2242C5.7853 10.0199 5.29258 9.28761 5.06262 8.39631C4.97784 8.11231 4.92087 7.7898 4.92087 7.49042C4.92087 5.99355 5.57203 4.92648 6.95988 4.92648C6.97589 4.92648 6.99302 4.92517 7.01111 4.92379C7.14473 4.91356 7.33102 4.8993 7.51203 5.37938C7.69779 5.84287 8.10583 6.92346 8.23812 7.27379C8.25702 7.32384 8.2703 7.35899 8.27649 7.3753C8.34705 7.50582 8.38231 7.65933 8.29753 7.8436C8.20483 8.04728 8.05424 8.2388 7.91061 8.42146C7.65907 8.74136 7.42887 9.03411 7.56833 9.31754C7.70331 9.57854 8.21272 10.446 8.95616 11.1676C9.78161 11.9632 10.4907 12.2836 10.8374 12.4402C10.8921 12.465 10.9378 12.4856 10.9735 12.5034C11.4822 12.7793 12.0045 11.8813 12.2677 11.4288C12.2753 11.4155 12.2828 11.4027 12.2901 11.3903C12.4582 11.1204 12.6068 11.1623 12.8341 11.2264Z"
+                    fill="#9FA3A8" />
+                </svg>
+              </a>
+              <a href="#" class="socials__icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M13.8093 7.49167C14.3204 6.98056 14.8278 5.78797 12.6982 7.23612C10.7088 8.60526 8.70595 9.95471 6.68988 11.2843C6.38288 11.4231 6.05099 11.4984 5.71414 11.5057C5.37729 11.5131 5.04244 11.4522 4.7297 11.3269C3.45192 10.9435 1.96025 10.4324 1.96025 10.4324C1.96025 10.4324 0.941735 9.7926 2.68525 9.11112C2.68525 9.11112 10.0565 6.08612 12.613 5.02038C13.5927 4.59445 16.9158 3.23149 16.9158 3.23149C16.9158 3.23149 18.4501 2.63426 18.3223 4.08334C18.2797 4.67963 17.939 6.76852 17.5982 9.02593C17.0862 12.2213 16.5325 15.7157 16.5325 15.7157C16.5325 15.7157 16.4473 16.6954 15.7232 16.8657C14.9481 16.8526 14.1992 16.583 13.5936 16.0991C13.4232 15.9713 10.3982 14.0537 9.28988 13.1167C9.17714 13.0403 9.08555 12.9366 9.02362 12.8154C8.9617 12.6941 8.93145 12.5591 8.9357 12.423C8.93995 12.2869 8.97856 12.1541 9.04793 12.0369C9.1173 11.9197 9.21519 11.822 9.33248 11.7528C10.8526 10.362 12.3452 8.94132 13.8093 7.49167Z"
+                    fill="#9FA3A8" />
+                </svg>
+              </a>
+            </div>
+            <a class="link" href="#">
+              <i class="link__icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_3_958)">
+                    <path
+                      d="M9.99984 12.5C12.5311 12.5 14.5832 10.448 14.5832 7.91671C14.5832 5.3854 12.5311 3.33337 9.99984 3.33337C7.46853 3.33337 5.4165 5.3854 5.4165 7.91671C5.4165 10.448 7.46853 12.5 9.99984 12.5Z"
+                      fill="#9FA3A8" />
+                    <path
+                      d="M17.825 16.2084C18.8196 14.9584 19.5003 13.4884 19.8101 11.9213C20.1199 10.3543 20.0498 8.7358 19.6057 7.20141C19.1615 5.66702 18.3563 4.26135 17.2573 3.10208C16.1583 1.94281 14.7976 1.06368 13.2891 0.538277C11.7806 0.0128751 10.1682 -0.143506 8.58687 0.0822244C7.00552 0.307955 5.50125 0.909229 4.2 1.83571C2.89875 2.76219 1.83837 3.98692 1.10765 5.40737C0.376927 6.82782 -0.00288306 8.40265 1.64776e-05 10C0.00139872 12.2535 0.768303 14.4396 2.17502 16.2C3.11196 17.3695 4.29974 18.3134 5.65056 18.962C7.00138 19.6107 8.4807 19.9474 9.97918 19.9474C11.4777 19.9474 12.957 19.6107 14.3078 18.962C15.6586 18.3134 16.8464 17.3695 17.7833 16.2L17.825 16.2084ZM10 1.66669C11.5476 1.66669 13.0646 2.09765 14.3811 2.91127C15.6976 3.72489 16.7615 4.88903 17.4536 6.27325C18.1457 7.65746 18.4387 9.20706 18.2997 10.7484C18.1607 12.2898 17.5952 13.7619 16.6667 15C14.5949 13.9587 12.3181 13.3895 10 13.3334C7.68195 13.3895 5.40514 13.9587 3.33335 15C2.40479 13.7619 1.83934 12.2898 1.70036 10.7484C1.56137 9.20706 1.85435 7.65746 2.54646 6.27325C3.23856 4.88903 4.30246 3.72489 5.61892 2.91127C6.93539 2.09765 8.45242 1.66669 10 1.66669Z"
+                      fill="#9FA3A8" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_3_958">
+                      <rect width="20" height="20" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </i>
+              Авторизация
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="#">
+            <img class="logo__img" src="../assets/images/logo.svg" alt="">
+          </a>
+          <form class="search search--center" action="">
+            <label class="search__label">
+              <input class="search__input" type="search" placeholder="Поиск по сайту">
+              <button class="search__icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.66146 1C4.98843 1 1.2002 4.78824 1.2002 9.46126C1.2002 14.1343 4.98843 17.9225 9.66146 17.9225C11.6517 17.9225 13.4815 17.2354 14.9265 16.0853L17.6508 18.8027C17.915 19.0662 18.3428 19.0657 18.6062 18.8015C18.8697 18.5373 18.8692 18.1096 18.605 17.8461L15.9141 15.162C17.2861 13.6581 18.1227 11.6574 18.1227 9.46126C18.1227 4.78824 14.3345 1 9.66146 1ZM2.55136 9.46126C2.55136 5.53447 5.73466 2.35117 9.66146 2.35117C13.5883 2.35117 16.7715 5.53447 16.7715 9.46126C16.7715 13.3881 13.5883 16.5714 9.66146 16.5714C5.73466 16.5714 2.55136 13.3881 2.55136 9.46126Z"
+                    fill="#9FA3A8" />
+                </svg>
+              </button>
+            </label>
+          </form>
+          <div class="phone">
+            <a class="phone__link" href="tel:87213958888"><span>8 (7213)</span> 95-88-88</a>
+            <a class="phone__link" href="tel:88005052625">8 (800) 505-26-25</a>
+          </div>
+          <a class="btn" href="">
+            Обратный звонок
+          </a>
+        </div>
+      </div>
+      <div class="header__bot">
+        <div class="container">
+          <div class="header__bot">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item menu__item--hidden">
+                  <div class="menu__close"></div>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">
+                    Каталог товаров
+                  </a>
+                  <i class="menu__icon accordion">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.1382 7.93103L10.0002 12.069L5.8623 7.93103" stroke="#9FA3A8" stroke-width="2"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </i>
+                  <div class="accordion-content accordion-content--pos">
+                    <div class="menu__dropdown">
+                      <a class="menu__dropdown-link" href="#">Товар</a>
+                      <a class="menu__dropdown-link" href="#">Товар</a>
+                      <a class="menu__dropdown-link" href="#">Товар</a>
+                      <a class="menu__dropdown-link" href="#">Товар</a>
+                      <a class="menu__dropdown-link" href="#">Товар</a>
+                      <a class="menu__dropdown-link" href="#">Товар</a>
+                      <a class="menu__dropdown-link" href="#">Товар</a>
+                      <a class="menu__dropdown-link" href="#">Товар</a>
+                      <a class="menu__dropdown-link" href="#">Товар</a>
+                      <a class="menu__dropdown-link" href="#">Товар</a>
+                      <a class="menu__dropdown-link" href="#">Товар</a>
+                      <a class="menu__dropdown-link" href="#">Товар</a>
+                      <a class="menu__dropdown-link" href="#">Товар</a>
+                      <a class="menu__dropdown-link" href="#">Товар</a>
+                      <a class="menu__dropdown-link" href="#">Товар</a>
+                      <a class="menu__dropdown-link" href="#">Товар</a>
+                      <a class="menu__dropdown-link" href="#">Товар</a>
+                      <a class="menu__dropdown-link" href="#">Товар</a>
+                      <a class="menu__dropdown-link" href="#">Товар</a>
+                      <a class="menu__dropdown-link" href="#">Товар</a>
+                      <a class="menu__dropdown-link" href="#">Товар</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">
+                    Услуги
+                  </a>
+                  <i class="menu__icon accordion">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.1382 7.93103L10.0002 12.069L5.8623 7.93103" stroke="#9FA3A8" stroke-width="2"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </i>
+                  <div class="accordion-content accordion-content--pos">
+                    <div class="menu__dropdown">
+                      <a class="menu__dropdown-link" href="#">Услуга</a>
+                      <a class="menu__dropdown-link" href="#">Услуга</a>
+                      <a class="menu__dropdown-link" href="#">Услуга</a>
+                      <a class="menu__dropdown-link" href="#">Услуга</a>
+                      <a class="menu__dropdown-link" href="#">Услуга</a>
+                      <a class="menu__dropdown-link" href="#">Услуга</a>
+                      <a class="menu__dropdown-link" href="#">Услуга</a>
+                      <a class="menu__dropdown-link" href="#">Услуга</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">
+                    Информация
+                  </a>
+                  <i class="menu__icon accordion">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.1382 7.93103L10.0002 12.069L5.8623 7.93103" stroke="#9FA3A8" stroke-width="2"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </i>
+                  <div class="accordion-content accordion-content--pos">
+                    <div class="menu__dropdown">
+                      <a class="menu__dropdown-link" href="#">Информация</a>
+                      <a class="menu__dropdown-link" href="#">Информация</a>
+                      <a class="menu__dropdown-link" href="#">Информация</a>
+                      <a class="menu__dropdown-link" href="#">Информация</a>
+                      <a class="menu__dropdown-link" href="#">Информация</a>
+                      <a class="menu__dropdown-link" href="#">Информация</a>
+                      <a class="menu__dropdown-link" href="#">Информация</a>
+                      <a class="menu__dropdown-link" href="#">Информация</a>
+                      <a class="menu__dropdown-link" href="#">Информация</a>
+                      <a class="menu__dropdown-link" href="#">Информация</a>
+                      <a class="menu__dropdown-link" href="#">Информация</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">
+                    Новости
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">
+                    Вопрос-ответ
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">
+                    Оплата и доставка
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <a class="header__busket" href="#">
+              <i class="header__busket-icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10.6 23.6C9.16988 23.6 8 24.7699 8 26.2001C8 27.6302 9.16988 28.8001 10.6 28.8001C12.0301 28.8001 13.2001 27.6302 13.2001 26.2001C13.2 24.7698 12.0301 23.6 10.6 23.6ZM4.3 3.20001C3.58203 3.20001 3 3.78204 3 4.50001C3 5.21798 3.58203 5.80001 4.3 5.80001H5.6L10.2802 15.2801L8.32344 18.4648C8.12856 18.7898 7.99844 19.2449 7.99844 19.7001C7.99844 21.4407 9.1875 22.3001 10.8 22.3001H24.75C25.4404 22.3001 26 21.7404 26 21.0501C26 20.3597 25.4404 19.8001 24.75 19.8001H11.1183C10.9234 19.8001 10.7933 19.6699 10.7933 19.4751C10.7933 19.4103 10.9313 19.1501 10.9313 19.1501L12.2301 17.1001H21.9147C22.8898 17.1001 23.7353 16.5803 24.1898 15.7353L28.8699 7.68532C28.9472 7.53151 29 7.29495 29 7.03539C29 6.32001 28.4148 5.80007 27.7 5.80007H8.46025L7.65895 4.11342C7.3939 3.55553 6.8314 3.20001 6.21375 3.20001H4.3ZM23.3999 23.6C21.9698 23.6 20.7999 24.7699 20.7999 26.2001C20.7999 27.6302 21.9698 28.8001 23.3999 28.8001C24.8301 28.8001 26 27.6301 26 26.2C26 24.7698 24.8301 23.6 23.3999 23.6Z"
+                    fill="#9FA3A8" />
+                </svg>
+              </i>
+              <div class="header__busket-column">
+                <p class="header__busket-price">435 890 ₸</p>
+                <p class="header__busket-product">8 товаров</p>
+              </div>
+            </a>
+            <div class="burger">
+              <div class="burger__line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <section class="breadcrumbs">
+        <div class="breadcrumbs__wrapper">
+          <div class="container">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">
+                  Главная
+                </a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link breadcrumbs__link--active" href="#">
+                  Каталог товаров
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="details">
+        <div class="details__wrapper">
+          <div class="container">
+            <div class="details__inner">
+              <div class="details__box">
+                <div class="details__swiperBig swiper mySwiper2">
+                  <div class="details__swiperBig-wrapper swiper-wrapper">
+                    <div class="details__swiperBig-slide swiper-slide">
+                      <img class="details__swiperBig-img" src="../assets/images/details/1.png" alt="">
+                    </div>
+                    <div class="details__swiperBig-slide swiper-slide">
+                      <img class="details__swiperBig-img" src="../assets/images/details/1.png" alt="">
+                    </div>
+                    <div class="details__swiperBig-slide swiper-slide">
+                      <img class="details__swiperBig-img" src="../assets/images/details/1.png" alt="">
+                    </div>
+                    <div class="details__swiperBig-slide swiper-slide">
+                      <img class="details__swiperBig-img" src="../assets/images/details/1.png" alt="">
+                    </div>
+                    <div class="details__swiperBig-slide swiper-slide">
+                      <img class="details__swiperBig-img" src="../assets/images/details/1.png" alt="">
+                    </div>
+                    <div class="details__swiperBig-slide swiper-slide">
+                      <img class="details__swiperBig-img" src="../assets/images/details/1.png" alt="">
+                    </div>
+                    <div class="details__swiperBig-slide swiper-slide">
+                      <img class="details__swiperBig-img" src="../assets/images/details/1.png" alt="">
+                    </div>
+                    <div class="details__swiperBig-slide swiper-slide">
+                      <img class="details__swiperBig-img" src="../assets/images/details/1.png" alt="">
+                    </div>
+                    <div class="details__swiperBig-slide swiper-slide">
+                      <img class="details__swiperBig-img" src="../assets/images/details/1.png" alt="">
+                    </div>
+                    <div class="details__swiperBig-slide swiper-slide">
+                      <img class="details__swiperBig-img" src="../assets/images/details/1.png" alt="">
+                    </div>
+                    <div class="details__swiperBig-slide swiper-slide">
+                      <img class="details__swiperBig-img" src="../assets/images/details/1.png" alt="">
+                    </div>
+                    <div class="details__swiperBig-slide swiper-slide">
+                      <img class="details__swiperBig-img" src="../assets/images/details/1.png" alt="">
+                    </div>
+                    <div class="details__swiperBig-slide swiper-slide">
+                      <img class="details__swiperBig-img" src="../assets/images/details/1.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div thumbsSlider="" class="details__swiperSmall swiper mySwiper">
+                  <div class="details__swiperSmall-wrapper swiper-wrapper">
+                    <div class="details__swiperSmall-slide swiper-slide">
+                      <img class="details__swiperSmall-img" src="../assets/images/details/1.png" alt="">
+                    </div>
+                    <div class="details__swiperSmall-slide swiper-slide">
+                      <img class="details__swiperSmall-img" src="../assets/images/details/1.png" alt="">
+                    </div>
+                    <div class="details__swiperSmall-slide swiper-slide">
+                      <img class="details__swiperSmall-img" src="../assets/images/details/1.png" alt="">
+                    </div>
+                    <div class="details__swiperSmall-slide swiper-slide">
+                      <img class="details__swiperSmall-img" src="../assets/images/details/1.png" alt="">
+                    </div>
+                    <div class="details__swiperSmall-slide swiper-slide">
+                      <img class="details__swiperSmall-img" src="../assets/images/details/1.png" alt="">
+                    </div>
+                    <div class="details__swiperSmall-slide swiper-slide">
+                      <img class="details__swiperSmall-img" src="../assets/images/details/1.png" alt="">
+                    </div>
+                    <div class="details__swiperSmall-slide swiper-slide">
+                      <img class="details__swiperSmall-img" src="../assets/images/details/1.png" alt="">
+                    </div>
+                    <div class="details__swiperSmall-slide swiper-slide">
+                      <img class="details__swiperSmall-img" src="../assets/images/details/1.png" alt="">
+                    </div>
+                    <div class="details__swiperSmall-slide swiper-slide">
+                      <img class="details__swiperSmall-img" src="../assets/images/details/1.png" alt="">
+                    </div>
+                    <div class="details__swiperSmall-slide swiper-slide">
+                      <img class="details__swiperSmall-img" src="../assets/images/details/1.png" alt="">
+                    </div>
+                    <div class="details__swiperSmall-slide swiper-slide">
+                      <img class="details__swiperSmall-img" src="../assets/images/details/1.png" alt="">
+                    </div>
+                    <div class="details__swiperSmall-slide swiper-slide">
+                      <img class="details__swiperSmall-img" src="../assets/images/details/1.png" alt="">
+                    </div>
+                    <div class="details__swiperSmall-slide swiper-slide">
+                      <img class="details__swiperSmall-img" src="../assets/images/details/1.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="details__info">
+                <p class="details__info-title title title--small">
+                  Инфракрасный обогреватель Теплофон-IR/IT ЭРГУС-2.0/220
+                </p>
+                <div class="details__info-box">
+                  <div class="details__info-block">
+                    <div class="details__info-top">
+                      <p class="details__info-price">
+                        35 890 ₸
+                      </p>
+                      <p class="details__info-price details__info-price--old">
+                        35 890 ₸
+                      </p>
+                      <p class="details__info-discount">
+                        -10%
+                      </p>
+                    </div>
+                    <p class="details__info-state">В наличии</p>
+                    <div class="details__info-flex">
+                      <div class="count">
+                        <div class="count__minus">
+                          -
+                        </div>
+                        <div class="count__num">1</div>
+                        <div class="count__plus">
+                          +
+                        </div>
+                      </div>
+                      <a class="btn btn--orange" href="#">
+                        <i class="btn__icon">
+                          <svg width="20" height="20" viewBox="0 0 32 32" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M10.6 23.6C9.16988 23.6 8 24.7699 8 26.2001C8 27.6302 9.16988 28.8001 10.6 28.8001C12.0301 28.8001 13.2001 27.6302 13.2001 26.2001C13.2 24.7698 12.0301 23.6 10.6 23.6ZM4.3 3.20001C3.58203 3.20001 3 3.78204 3 4.50001C3 5.21798 3.58203 5.80001 4.3 5.80001H5.6L10.2802 15.2801L8.32344 18.4648C8.12856 18.7898 7.99844 19.2449 7.99844 19.7001C7.99844 21.4407 9.1875 22.3001 10.8 22.3001H24.75C25.4404 22.3001 26 21.7404 26 21.0501C26 20.3597 25.4404 19.8001 24.75 19.8001H11.1183C10.9234 19.8001 10.7933 19.6699 10.7933 19.4751C10.7933 19.4103 10.9313 19.1501 10.9313 19.1501L12.2301 17.1001H21.9147C22.8898 17.1001 23.7353 16.5803 24.1898 15.7353L28.8699 7.68532C28.9472 7.53151 29 7.29495 29 7.03539C29 6.32001 28.4148 5.80007 27.7 5.80007H8.46025L7.65895 4.11342C7.3939 3.55553 6.8314 3.20001 6.21375 3.20001H4.3ZM23.3999 23.6C21.9698 23.6 20.7999 24.7699 20.7999 26.2001C20.7999 27.6302 21.9698 28.8001 23.3999 28.8001C24.8301 28.8001 26 27.6301 26 26.2C26 24.7698 24.8301 23.6 23.3999 23.6Z"
+                              fill="#FFFFFF" />
+                          </svg>
+                        </i>
+                        Купить
+                      </a>
+                    </div>
+                  </div>
+                  <div class="details__info-block">
+                    <p class="details__info-subtitle">
+                      Расчёт стоимости доставки
+                    </p>
+                    <form class="search" action="">
+                      <label class="search__label">
+                        <input class="search__input" type="search" placeholder="Укажите ваш населённый пункт или адрес">
+                        <button class="search__icon">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M9.66146 1C4.98843 1 1.2002 4.78824 1.2002 9.46126C1.2002 14.1343 4.98843 17.9225 9.66146 17.9225C11.6517 17.9225 13.4815 17.2354 14.9265 16.0853L17.6508 18.8027C17.915 19.0662 18.3428 19.0657 18.6062 18.8015C18.8697 18.5373 18.8692 18.1096 18.605 17.8461L15.9141 15.162C17.2861 13.6581 18.1227 11.6574 18.1227 9.46126C18.1227 4.78824 14.3345 1 9.66146 1ZM2.55136 9.46126C2.55136 5.53447 5.73466 2.35117 9.66146 2.35117C13.5883 2.35117 16.7715 5.53447 16.7715 9.46126C16.7715 13.3881 13.5883 16.5714 9.66146 16.5714C5.73466 16.5714 2.55136 13.3881 2.55136 9.46126Z"
+                              fill="#9FA3A8" />
+                          </svg>
+                        </button>
+                      </label>
+                    </form>
+                    <p class="details__info-delivery">
+                      Бесплатные доставки: <a href="#">Караганда/Темиртау</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="details__tab tab">
+                  <div class="details__target">
+                    <div class="details__target-item tab__target tab__target--active">
+                      Описание
+                    </div>
+                    <div class="details__target-item tab__target">
+                      Характеристики
+                    </div>
+                    <div class="details__target-item tab__target">
+                      Отзывы
+                    </div>
+                    <div class="details__target-item tab__target">
+                      Документация
+                    </div>
+                  </div>
+                  <div class="tab__info tab__info--active tab__info--opacity">
+                    <div class="details__info-column">
+                      <p class="details__info-text">
+                        Обогреватели совмещенного действия "Теплофон "Бриз" предназначены для основного или
+                        дополнительного обогрева жилья, общественных помещений.
+                      </p>
+                      <p class="details__info-text">
+                        Обогреватели совмещенного действия обладают преимуществами обеих типов обогрева (инфракрасный и
+                        конвективный). Быстрый эффект от конвекции и достижение комфортных условий за счет инфракрасного
+                        отопления.
+                      </p>
+                      <p class="details__info-text">
+                        Обогреватели оснащены встроенным механическим терморегулятором.
+                      </p>
+                      <p class="details__info-text">
+                        Продукция запатентована.
+                      </p>
+                      <p class="details__info-text">
+                        Основные преимущества обогревателей "Теплофон "Бриз"
+                      </p>
+                      <ul class="details__list">
+                        <li class="details__list-item">
+                          Высокая эффективность (особая конструкция нагревательного элемента);
+                        </li>
+                        <li class="details__list-item">
+                          Встроенный механический терморегулятор;
+                        </li>
+                        <li class="details__list-item">
+                          Современный дизайн.
+                        </li>
+                      </ul>
+                      <p class="details__info-text">
+                        Электрообогреватели "Теплофон Бриз" выполнены из экологически чистых материалов,
+                        пожаробезопасны, стойки к механическим повреждениям, разрешены в качестве основного отопления
+                        без надзора и имеют все необходимые сертификаты.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tab__info">
+                    <div class="details__info-column">
+                      <p class="details__info-text">
+                        Обогреватели совмещенного действия "Теплофон "Бриз" предназначены для основного или
+                        дополнительного обогрева жилья, общественных помещений.
+                      </p>
+                      <p class="details__info-text">
+                        Обогреватели совмещенного действия обладают преимуществами обеих типов обогрева (инфракрасный и
+                        конвективный). Быстрый эффект от конвекции и достижение комфортных условий за счет инфракрасного
+                        отопления.
+                      </p>
+                      <p class="details__info-text">
+                        Обогреватели оснащены встроенным механическим терморегулятором.
+                      </p>
+                      <p class="details__info-text">
+                        Продукция запатентована.
+                      </p>
+                      <p class="details__info-text">
+                        Основные преимущества обогревателей "Теплофон "Бриз"
+                      </p>
+                      <ul class="details__list">
+                        <li class="details__list-item">
+                          Высокая эффективность (особая конструкция нагревательного элемента);
+                        </li>
+                        <li class="details__list-item">
+                          Встроенный механический терморегулятор;
+                        </li>
+                        <li class="details__list-item">
+                          Современный дизайн.
+                        </li>
+                      </ul>
+                      <p class="details__info-text">
+                        Электрообогреватели "Теплофон Бриз" выполнены из экологически чистых материалов,
+                        пожаробезопасны, стойки к механическим повреждениям, разрешены в качестве основного отопления
+                        без надзора и имеют все необходимые сертификаты.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tab__info">
+                    <div class="details__info-column">
+                      <p class="details__info-text">
+                        Обогреватели совмещенного действия "Теплофон "Бриз" предназначены для основного или
+                        дополнительного обогрева жилья, общественных помещений.
+                      </p>
+                      <p class="details__info-text">
+                        Обогреватели совмещенного действия обладают преимуществами обеих типов обогрева (инфракрасный и
+                        конвективный). Быстрый эффект от конвекции и достижение комфортных условий за счет инфракрасного
+                        отопления.
+                      </p>
+                      <p class="details__info-text">
+                        Обогреватели оснащены встроенным механическим терморегулятором.
+                      </p>
+                      <p class="details__info-text">
+                        Продукция запатентована.
+                      </p>
+                      <p class="details__info-text">
+                        Основные преимущества обогревателей "Теплофон "Бриз"
+                      </p>
+                      <ul class="details__list">
+                        <li class="details__list-item">
+                          Высокая эффективность (особая конструкция нагревательного элемента);
+                        </li>
+                        <li class="details__list-item">
+                          Встроенный механический терморегулятор;
+                        </li>
+                        <li class="details__list-item">
+                          Современный дизайн.
+                        </li>
+                      </ul>
+                      <p class="details__info-text">
+                        Электрообогреватели "Теплофон Бриз" выполнены из экологически чистых материалов,
+                        пожаробезопасны, стойки к механическим повреждениям, разрешены в качестве основного отопления
+                        без надзора и имеют все необходимые сертификаты.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="tab__info">
+                    <div class="details__info-column">
+                      <p class="details__info-text">
+                        Обогреватели совмещенного действия "Теплофон "Бриз" предназначены для основного или
+                        дополнительного обогрева жилья, общественных помещений.
+                      </p>
+                      <p class="details__info-text">
+                        Обогреватели совмещенного действия обладают преимуществами обеих типов обогрева (инфракрасный и
+                        конвективный). Быстрый эффект от конвекции и достижение комфортных условий за счет инфракрасного
+                        отопления.
+                      </p>
+                      <p class="details__info-text">
+                        Обогреватели оснащены встроенным механическим терморегулятором.
+                      </p>
+                      <p class="details__info-text">
+                        Продукция запатентована.
+                      </p>
+                      <p class="details__info-text">
+                        Основные преимущества обогревателей "Теплофон "Бриз"
+                      </p>
+                      <ul class="details__list">
+                        <li class="details__list-item">
+                          Высокая эффективность (особая конструкция нагревательного элемента);
+                        </li>
+                        <li class="details__list-item">
+                          Встроенный механический терморегулятор;
+                        </li>
+                        <li class="details__list-item">
+                          Современный дизайн.
+                        </li>
+                      </ul>
+                      <p class="details__info-text">
+                        Электрообогреватели "Теплофон Бриз" выполнены из экологически чистых материалов,
+                        пожаробезопасны, стойки к механическим повреждениям, разрешены в качестве основного отопления
+                        без надзора и имеют все необходимые сертификаты.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="popular">
+        <div class="popular__wrapper">
+          <div class="container">
+            <h2 class="popular__title popular__title--mbn title title--small">
+              С этим товаром смотрят
+            </h2>
+            <div class="popular__swiper popular__swiper--mb swiper">
+              <div class="popular__swiper-wrapper swiper-wrapper">
+                <div class=" swiper-slide">
+                  <div class="card">
+                    <div class="card__body">
+                      <img class="card__img" src="../assets/images/card/1.png" alt="">
+                      <div class="card__box">
+                        <p class="card__title">
+                          Инфракрасный обогреватель Теплофон-IR/IT ЭРГУС-2.0/220
+                        </p>
+                        <p class="card__price">
+                          35 890 ₸
+                        </p>
+                        <p class="card__state">
+                          В наличии
+                        </p>
+                        <div class="card__btn">
+                          <div class="btn btn--alt">
+                            <i class="btn__icon">
+                              <svg width="20" height="20" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M10.6 23.6C9.16988 23.6 8 24.7699 8 26.2001C8 27.6302 9.16988 28.8001 10.6 28.8001C12.0301 28.8001 13.2001 27.6302 13.2001 26.2001C13.2 24.7698 12.0301 23.6 10.6 23.6ZM4.3 3.20001C3.58203 3.20001 3 3.78204 3 4.50001C3 5.21798 3.58203 5.80001 4.3 5.80001H5.6L10.2802 15.2801L8.32344 18.4648C8.12856 18.7898 7.99844 19.2449 7.99844 19.7001C7.99844 21.4407 9.1875 22.3001 10.8 22.3001H24.75C25.4404 22.3001 26 21.7404 26 21.0501C26 20.3597 25.4404 19.8001 24.75 19.8001H11.1183C10.9234 19.8001 10.7933 19.6699 10.7933 19.4751C10.7933 19.4103 10.9313 19.1501 10.9313 19.1501L12.2301 17.1001H21.9147C22.8898 17.1001 23.7353 16.5803 24.1898 15.7353L28.8699 7.68532C28.9472 7.53151 29 7.29495 29 7.03539C29 6.32001 28.4148 5.80007 27.7 5.80007H8.46025L7.65895 4.11342C7.3939 3.55553 6.8314 3.20001 6.21375 3.20001H4.3ZM23.3999 23.6C21.9698 23.6 20.7999 24.7699 20.7999 26.2001C20.7999 27.6302 21.9698 28.8001 23.3999 28.8001C24.8301 28.8001 26 27.6301 26 26.2C26 24.7698 24.8301 23.6 23.3999 23.6Z"
+                                  fill="#9FA3A8" />
+                              </svg>
+                            </i>
+                            В корзину
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class=" swiper-slide">
+                  <div class="card">
+                    <div class="card__body">
+                      <img class="card__img" src="../assets/images/card/2.png" alt="">
+                      <div class="card__box">
+                        <p class="card__title">
+                          Инфракрасный обогреватель Теплофон-IR/IT ЭРГУС-2.0/220
+                        </p>
+                        <p class="card__price">
+                          35 890 ₸
+                        </p>
+                        <p class="card__state">
+                          В наличии
+                        </p>
+                        <div class="card__btn">
+                          <div class="btn btn--alt">
+                            <i class="btn__icon">
+                              <svg width="20" height="20" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M10.6 23.6C9.16988 23.6 8 24.7699 8 26.2001C8 27.6302 9.16988 28.8001 10.6 28.8001C12.0301 28.8001 13.2001 27.6302 13.2001 26.2001C13.2 24.7698 12.0301 23.6 10.6 23.6ZM4.3 3.20001C3.58203 3.20001 3 3.78204 3 4.50001C3 5.21798 3.58203 5.80001 4.3 5.80001H5.6L10.2802 15.2801L8.32344 18.4648C8.12856 18.7898 7.99844 19.2449 7.99844 19.7001C7.99844 21.4407 9.1875 22.3001 10.8 22.3001H24.75C25.4404 22.3001 26 21.7404 26 21.0501C26 20.3597 25.4404 19.8001 24.75 19.8001H11.1183C10.9234 19.8001 10.7933 19.6699 10.7933 19.4751C10.7933 19.4103 10.9313 19.1501 10.9313 19.1501L12.2301 17.1001H21.9147C22.8898 17.1001 23.7353 16.5803 24.1898 15.7353L28.8699 7.68532C28.9472 7.53151 29 7.29495 29 7.03539C29 6.32001 28.4148 5.80007 27.7 5.80007H8.46025L7.65895 4.11342C7.3939 3.55553 6.8314 3.20001 6.21375 3.20001H4.3ZM23.3999 23.6C21.9698 23.6 20.7999 24.7699 20.7999 26.2001C20.7999 27.6302 21.9698 28.8001 23.3999 28.8001C24.8301 28.8001 26 27.6301 26 26.2C26 24.7698 24.8301 23.6 23.3999 23.6Z"
+                                  fill="#9FA3A8" />
+                              </svg>
+                            </i>
+                            В корзину
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class=" swiper-slide">
+                  <div class="card">
+                    <div class="card__body">
+                      <img class="card__img" src="../assets/images/card/1.png" alt="">
+                      <div class="card__box">
+                        <p class="card__title">
+                          Инфракрасный обогреватель Теплофон-IR/IT ЭРГУС-2.0/220
+                        </p>
+                        <p class="card__price">
+                          35 890 ₸
+                        </p>
+                        <p class="card__state">
+                          В наличии
+                        </p>
+                        <div class="card__btn">
+                          <div class="btn btn--alt">
+                            <i class="btn__icon">
+                              <svg width="20" height="20" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M10.6 23.6C9.16988 23.6 8 24.7699 8 26.2001C8 27.6302 9.16988 28.8001 10.6 28.8001C12.0301 28.8001 13.2001 27.6302 13.2001 26.2001C13.2 24.7698 12.0301 23.6 10.6 23.6ZM4.3 3.20001C3.58203 3.20001 3 3.78204 3 4.50001C3 5.21798 3.58203 5.80001 4.3 5.80001H5.6L10.2802 15.2801L8.32344 18.4648C8.12856 18.7898 7.99844 19.2449 7.99844 19.7001C7.99844 21.4407 9.1875 22.3001 10.8 22.3001H24.75C25.4404 22.3001 26 21.7404 26 21.0501C26 20.3597 25.4404 19.8001 24.75 19.8001H11.1183C10.9234 19.8001 10.7933 19.6699 10.7933 19.4751C10.7933 19.4103 10.9313 19.1501 10.9313 19.1501L12.2301 17.1001H21.9147C22.8898 17.1001 23.7353 16.5803 24.1898 15.7353L28.8699 7.68532C28.9472 7.53151 29 7.29495 29 7.03539C29 6.32001 28.4148 5.80007 27.7 5.80007H8.46025L7.65895 4.11342C7.3939 3.55553 6.8314 3.20001 6.21375 3.20001H4.3ZM23.3999 23.6C21.9698 23.6 20.7999 24.7699 20.7999 26.2001C20.7999 27.6302 21.9698 28.8001 23.3999 28.8001C24.8301 28.8001 26 27.6301 26 26.2C26 24.7698 24.8301 23.6 23.3999 23.6Z"
+                                  fill="#9FA3A8" />
+                              </svg>
+                            </i>
+                            В корзину
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class=" swiper-slide">
+                  <div class="card">
+                    <div class="card__body">
+                      <img class="card__img" src="../assets/images/card/2.png" alt="">
+                      <div class="card__box">
+                        <p class="card__title">
+                          Инфракрасный обогреватель Теплофон-IR/IT ЭРГУС-2.0/220
+                        </p>
+                        <p class="card__price">
+                          35 890 ₸
+                        </p>
+                        <p class="card__state">
+                          В наличии
+                        </p>
+                        <div class="card__btn">
+                          <div class="btn btn--alt">
+                            <i class="btn__icon">
+                              <svg width="20" height="20" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M10.6 23.6C9.16988 23.6 8 24.7699 8 26.2001C8 27.6302 9.16988 28.8001 10.6 28.8001C12.0301 28.8001 13.2001 27.6302 13.2001 26.2001C13.2 24.7698 12.0301 23.6 10.6 23.6ZM4.3 3.20001C3.58203 3.20001 3 3.78204 3 4.50001C3 5.21798 3.58203 5.80001 4.3 5.80001H5.6L10.2802 15.2801L8.32344 18.4648C8.12856 18.7898 7.99844 19.2449 7.99844 19.7001C7.99844 21.4407 9.1875 22.3001 10.8 22.3001H24.75C25.4404 22.3001 26 21.7404 26 21.0501C26 20.3597 25.4404 19.8001 24.75 19.8001H11.1183C10.9234 19.8001 10.7933 19.6699 10.7933 19.4751C10.7933 19.4103 10.9313 19.1501 10.9313 19.1501L12.2301 17.1001H21.9147C22.8898 17.1001 23.7353 16.5803 24.1898 15.7353L28.8699 7.68532C28.9472 7.53151 29 7.29495 29 7.03539C29 6.32001 28.4148 5.80007 27.7 5.80007H8.46025L7.65895 4.11342C7.3939 3.55553 6.8314 3.20001 6.21375 3.20001H4.3ZM23.3999 23.6C21.9698 23.6 20.7999 24.7699 20.7999 26.2001C20.7999 27.6302 21.9698 28.8001 23.3999 28.8001C24.8301 28.8001 26 27.6301 26 26.2C26 24.7698 24.8301 23.6 23.3999 23.6Z"
+                                  fill="#9FA3A8" />
+                              </svg>
+                            </i>
+                            В корзину
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class=" swiper-slide">
+                  <div class="card">
+                    <div class="card__body">
+                      <img class="card__img" src="../assets/images/card/1.png" alt="">
+                      <div class="card__box">
+                        <p class="card__title">
+                          Инфракрасный обогреватель Теплофон-IR/IT ЭРГУС-2.0/220
+                        </p>
+                        <p class="card__price">
+                          35 890 ₸
+                        </p>
+                        <p class="card__state">
+                          В наличии
+                        </p>
+                        <div class="card__btn">
+                          <div class="btn btn--alt">
+                            <i class="btn__icon">
+                              <svg width="20" height="20" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M10.6 23.6C9.16988 23.6 8 24.7699 8 26.2001C8 27.6302 9.16988 28.8001 10.6 28.8001C12.0301 28.8001 13.2001 27.6302 13.2001 26.2001C13.2 24.7698 12.0301 23.6 10.6 23.6ZM4.3 3.20001C3.58203 3.20001 3 3.78204 3 4.50001C3 5.21798 3.58203 5.80001 4.3 5.80001H5.6L10.2802 15.2801L8.32344 18.4648C8.12856 18.7898 7.99844 19.2449 7.99844 19.7001C7.99844 21.4407 9.1875 22.3001 10.8 22.3001H24.75C25.4404 22.3001 26 21.7404 26 21.0501C26 20.3597 25.4404 19.8001 24.75 19.8001H11.1183C10.9234 19.8001 10.7933 19.6699 10.7933 19.4751C10.7933 19.4103 10.9313 19.1501 10.9313 19.1501L12.2301 17.1001H21.9147C22.8898 17.1001 23.7353 16.5803 24.1898 15.7353L28.8699 7.68532C28.9472 7.53151 29 7.29495 29 7.03539C29 6.32001 28.4148 5.80007 27.7 5.80007H8.46025L7.65895 4.11342C7.3939 3.55553 6.8314 3.20001 6.21375 3.20001H4.3ZM23.3999 23.6C21.9698 23.6 20.7999 24.7699 20.7999 26.2001C20.7999 27.6302 21.9698 28.8001 23.3999 28.8001C24.8301 28.8001 26 27.6301 26 26.2C26 24.7698 24.8301 23.6 23.3999 23.6Z"
+                                  fill="#9FA3A8" />
+                              </svg>
+                            </i>
+                            В корзину
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class=" swiper-slide">
+                  <div class="card">
+                    <div class="card__body">
+                      <img class="card__img" src="../assets/images/card/2.png" alt="">
+                      <div class="card__box">
+                        <p class="card__title">
+                          Инфракрасный обогреватель Теплофон-IR/IT ЭРГУС-2.0/220
+                        </p>
+                        <p class="card__price">
+                          35 890 ₸
+                        </p>
+                        <p class="card__state">
+                          В наличии
+                        </p>
+                        <div class="card__btn">
+                          <div class="btn btn--alt">
+                            <i class="btn__icon">
+                              <svg width="20" height="20" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M10.6 23.6C9.16988 23.6 8 24.7699 8 26.2001C8 27.6302 9.16988 28.8001 10.6 28.8001C12.0301 28.8001 13.2001 27.6302 13.2001 26.2001C13.2 24.7698 12.0301 23.6 10.6 23.6ZM4.3 3.20001C3.58203 3.20001 3 3.78204 3 4.50001C3 5.21798 3.58203 5.80001 4.3 5.80001H5.6L10.2802 15.2801L8.32344 18.4648C8.12856 18.7898 7.99844 19.2449 7.99844 19.7001C7.99844 21.4407 9.1875 22.3001 10.8 22.3001H24.75C25.4404 22.3001 26 21.7404 26 21.0501C26 20.3597 25.4404 19.8001 24.75 19.8001H11.1183C10.9234 19.8001 10.7933 19.6699 10.7933 19.4751C10.7933 19.4103 10.9313 19.1501 10.9313 19.1501L12.2301 17.1001H21.9147C22.8898 17.1001 23.7353 16.5803 24.1898 15.7353L28.8699 7.68532C28.9472 7.53151 29 7.29495 29 7.03539C29 6.32001 28.4148 5.80007 27.7 5.80007H8.46025L7.65895 4.11342C7.3939 3.55553 6.8314 3.20001 6.21375 3.20001H4.3ZM23.3999 23.6C21.9698 23.6 20.7999 24.7699 20.7999 26.2001C20.7999 27.6302 21.9698 28.8001 23.3999 28.8001C24.8301 28.8001 26 27.6301 26 26.2C26 24.7698 24.8301 23.6 23.3999 23.6Z"
+                                  fill="#9FA3A8" />
+                              </svg>
+                            </i>
+                            В корзину
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class=" swiper-slide">
+                  <div class="card">
+                    <div class="card__body">
+                      <img class="card__img" src="../assets/images/card/1.png" alt="">
+                      <div class="card__box">
+                        <p class="card__title">
+                          Инфракрасный обогреватель Теплофон-IR/IT ЭРГУС-2.0/220
+                        </p>
+                        <p class="card__price">
+                          35 890 ₸
+                        </p>
+                        <p class="card__state">
+                          В наличии
+                        </p>
+                        <div class="card__btn">
+                          <div class="btn btn--alt">
+                            <i class="btn__icon">
+                              <svg width="20" height="20" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M10.6 23.6C9.16988 23.6 8 24.7699 8 26.2001C8 27.6302 9.16988 28.8001 10.6 28.8001C12.0301 28.8001 13.2001 27.6302 13.2001 26.2001C13.2 24.7698 12.0301 23.6 10.6 23.6ZM4.3 3.20001C3.58203 3.20001 3 3.78204 3 4.50001C3 5.21798 3.58203 5.80001 4.3 5.80001H5.6L10.2802 15.2801L8.32344 18.4648C8.12856 18.7898 7.99844 19.2449 7.99844 19.7001C7.99844 21.4407 9.1875 22.3001 10.8 22.3001H24.75C25.4404 22.3001 26 21.7404 26 21.0501C26 20.3597 25.4404 19.8001 24.75 19.8001H11.1183C10.9234 19.8001 10.7933 19.6699 10.7933 19.4751C10.7933 19.4103 10.9313 19.1501 10.9313 19.1501L12.2301 17.1001H21.9147C22.8898 17.1001 23.7353 16.5803 24.1898 15.7353L28.8699 7.68532C28.9472 7.53151 29 7.29495 29 7.03539C29 6.32001 28.4148 5.80007 27.7 5.80007H8.46025L7.65895 4.11342C7.3939 3.55553 6.8314 3.20001 6.21375 3.20001H4.3ZM23.3999 23.6C21.9698 23.6 20.7999 24.7699 20.7999 26.2001C20.7999 27.6302 21.9698 28.8001 23.3999 28.8001C24.8301 28.8001 26 27.6301 26 26.2C26 24.7698 24.8301 23.6 23.3999 23.6Z"
+                                  fill="#9FA3A8" />
+                              </svg>
+                            </i>
+                            В корзину
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class=" swiper-slide">
+                  <div class="card">
+                    <div class="card__body">
+                      <img class="card__img" src="../assets/images/card/2.png" alt="">
+                      <div class="card__box">
+                        <p class="card__title">
+                          Инфракрасный обогреватель Теплофон-IR/IT ЭРГУС-2.0/220
+                        </p>
+                        <p class="card__price">
+                          35 890 ₸
+                        </p>
+                        <p class="card__state">
+                          В наличии
+                        </p>
+                        <div class="card__btn">
+                          <div class="btn btn--alt">
+                            <i class="btn__icon">
+                              <svg width="20" height="20" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M10.6 23.6C9.16988 23.6 8 24.7699 8 26.2001C8 27.6302 9.16988 28.8001 10.6 28.8001C12.0301 28.8001 13.2001 27.6302 13.2001 26.2001C13.2 24.7698 12.0301 23.6 10.6 23.6ZM4.3 3.20001C3.58203 3.20001 3 3.78204 3 4.50001C3 5.21798 3.58203 5.80001 4.3 5.80001H5.6L10.2802 15.2801L8.32344 18.4648C8.12856 18.7898 7.99844 19.2449 7.99844 19.7001C7.99844 21.4407 9.1875 22.3001 10.8 22.3001H24.75C25.4404 22.3001 26 21.7404 26 21.0501C26 20.3597 25.4404 19.8001 24.75 19.8001H11.1183C10.9234 19.8001 10.7933 19.6699 10.7933 19.4751C10.7933 19.4103 10.9313 19.1501 10.9313 19.1501L12.2301 17.1001H21.9147C22.8898 17.1001 23.7353 16.5803 24.1898 15.7353L28.8699 7.68532C28.9472 7.53151 29 7.29495 29 7.03539C29 6.32001 28.4148 5.80007 27.7 5.80007H8.46025L7.65895 4.11342C7.3939 3.55553 6.8314 3.20001 6.21375 3.20001H4.3ZM23.3999 23.6C21.9698 23.6 20.7999 24.7699 20.7999 26.2001C20.7999 27.6302 21.9698 28.8001 23.3999 28.8001C24.8301 28.8001 26 27.6301 26 26.2C26 24.7698 24.8301 23.6 23.3999 23.6Z"
+                                  fill="#9FA3A8" />
+                              </svg>
+                            </i>
+                            В корзину
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="popular__block">
+              <div class="popular__block-item">
+                <p class="popular__block-text">
+                  Инфракрасные электрообогреватели "Теплофон" обогревают помещение посредством инфракрасного излучения,
+                  электромагнитная частота которого находится в том же диапазоне, что и излучение человеческого тела,
+                  являясь таким образом "родным" и безопасным теплом для организма человека.
+                </p>
+                <p class="popular__text">
+                  ИК нагреватели ТЕПЛОФОН бесшумно излучают тепло, которое незаметно "впитывается" телом и предметами
+                  окружающими человека, аккумулируясь для последующей отдачи избытка тепла в окружающую среду.
+                </p>
+              </div>
+              <div class="popular__block-item">
+                <p class="popular__block-text">
+                  С помощью инфракрасных обогревателей становиться возможным с относительно небольшими материальными
+                  затратами добиться эффекта "теплых полов", заключающемся в рациональном распределении тепла по высоте
+                  помещения. При этом воздух на высоте до 2 м прогревается до комфортной температуры, а на большей
+                  высоте,
+                  ближе к потолку, не перегревается, как происходит при любом виде традиционного конвекционного
+                  отопления.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__column">
+            <a class="logo" href="#">
+              <img class="logo__img" src="../assets/images/logo-white.svg" alt="">
+            </a>
+            <p class="footer__text">
+              Проектирование, продажа и монтаж систем инфракрасного отопления. Инфракрасные обогреватели «ТЕПЛОФОН» в
+              Казахстане.
+            </p>
+          </div>
+          <div class="footer__menu">
+            <a class="footer__menu-link" href="#">Каталог товаров</a>
+            <a class="footer__menu-link" href="#">Вопрос-ответ</a>
+            <a class="footer__menu-link" href="#">Услуги</a>
+            <a class="footer__menu-link" href="#">Оплата и доставка</a>
+            <a class="footer__menu-link" href="#">Информация</a>
+            <a class="footer__menu-link" href="#">Контакты</a>
+            <a class="footer__menu-link" href="#">Новости</a>
+          </div>
+          <div class="footer__item">
+            <div class="footer__item-box">
+              <div class="phone phone--white phone--mla">
+                <a class="phone__link" href="tel:87213958888"><span>8 (7213)</span> 95-88-88</a>
+                <a class="phone__link" href="tel:88005052625">8 (800) 505-26-25</a>
+              </div>
+              <a class="btn" href="">
+                Обратный звонок
+              </a>
+            </div>
+            <div class="footer__item-box footer__item-box--alt">
+              <a class="link link--white" href="#">
+                <i class="link__icon">
+                  <svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.99984 0.666565C2.779 0.666565 0.166504 3.27906 0.166504 6.4999C0.166504 10.8749 5.99984 17.3332 5.99984 17.3332C5.99984 17.3332 11.8332 10.8749 11.8332 6.4999C11.8332 3.27906 9.22067 0.666565 5.99984 0.666565ZM5.99984 8.58323C4.84984 8.58323 3.9165 7.6499 3.9165 6.4999C3.9165 5.3499 4.84984 4.41656 5.99984 4.41656C7.14984 4.41656 8.08317 5.3499 8.08317 6.4999C8.08317 7.6499 7.14984 8.58323 5.99984 8.58323Z"
+                      fill="#9FA3A8" />
+                  </svg>
+                </i>
+                Отслеживание заказа
+              </a>
+              <a class="link link--white link--mla" href="mailto:info@pkfes.ru">
+                <i class="link__icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_3_905)">
+                      <path
+                        d="M19.8239 3.97241L13.7583 9.99894L19.8239 16.0255C19.9335 15.7963 20.0001 15.5429 20.0001 15.2724V4.7255C20.0001 4.45491 19.9335 4.20159 19.8239 3.97241Z"
+                        fill="#9FA3A8" />
+                      <path
+                        d="M18.2419 2.96851H1.75748C1.48689 2.96851 1.23357 3.03503 1.00439 3.14468L8.75686 10.8581C9.44232 11.5436 10.557 11.5436 11.2425 10.8581L18.9949 3.14468C18.7658 3.03503 18.5124 2.96851 18.2419 2.96851Z"
+                        fill="#9FA3A8" />
+                      <path
+                        d="M0.176172 3.97241C0.0665235 4.20159 0 4.45491 0 4.7255V15.2724C0 15.543 0.0665235 15.7963 0.176172 16.0255L6.24176 9.99894L0.176172 3.97241Z"
+                        fill="#9FA3A8" />
+                      <path
+                        d="M12.9294 10.8293L12.071 11.6877C10.9289 12.8298 9.07041 12.8298 7.92826 11.6877L7.06998 10.8293L1.00439 16.8559C1.23357 16.9655 1.48689 17.032 1.75748 17.032H18.2419C18.5124 17.032 18.7658 16.9655 18.9949 16.8559L12.9294 10.8293Z"
+                        fill="#9FA3A8" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_3_905">
+                        <rect width="20" height="20" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </i>
+                info@pkfes.ru
+              </a>
+            </div>
+            <div class="socials socials--mla">
+              <a href="#" class="socials__icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10.8931 16C4.0599 16 0.162399 11.4955 0 4H3.42286C3.53529 9.5015 6.05865 11.8318 8.0574 12.3123V4H11.2805V8.74475C13.2543 8.54054 15.3278 6.37838 16.0273 4H19.2504C18.7131 6.93092 16.4646 9.09309 14.8656 9.98199C16.4646 10.7027 19.0256 12.5886 20 16H16.4521C15.6901 13.7178 13.7915 11.9519 11.2805 11.7117V16H10.8931Z"
+                    fill="#9FA3A8" />
+                </svg>
+              </a>
+              <a href="#" class="socials__icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_3_937)">
+                    <path
+                      d="M17.5563 1.94742C17.0389 1.49325 14.9433 0.0332547 10.2763 0.014088C10.2763 0.014088 4.76937 -0.301745 2.08676 2.05742C0.594584 3.48742 0.0719747 5.58159 0.0119747 8.17909C-0.0480253 10.7766 -0.114982 15.6449 4.78154 16.9683H4.78589L4.78154 18.9841C4.78154 18.9841 4.74937 19.8008 5.30937 19.9649C5.98589 20.1683 6.38589 19.5466 7.03371 18.8783C7.3885 18.5107 7.87719 17.9724 8.2485 17.5616C8.77024 17.6108 9.37545 17.6383 9.9885 17.6383C11.5772 17.6383 13.1207 17.4508 14.5955 17.0974L14.465 17.1241C15.1415 16.9133 18.9694 16.4441 19.5885 11.5766C20.2355 6.55159 19.2807 3.38159 17.5563 1.94742ZM18.1233 11.2099C17.5955 15.2724 14.4946 15.5308 13.9241 15.7058C12.6789 16.0091 11.2494 16.1824 9.77719 16.1824C9.35458 16.1824 8.93545 16.1683 8.52067 16.1399L8.57632 16.1433C8.57632 16.1433 6.45632 18.5924 5.79632 19.2291C5.58067 19.4358 5.34328 19.4191 5.34763 19.0066C5.34763 18.7374 5.36415 15.6583 5.36415 15.6583C1.21893 14.5566 1.45893 10.4099 1.50763 8.24409C1.55632 6.07825 1.98067 4.29825 3.24415 3.10325C5.51545 1.13075 10.1911 1.42325 10.1911 1.42325C14.1415 1.43909 16.0328 2.57992 16.4728 2.96242C17.9285 4.15825 18.6702 7.01909 18.1233 11.2099ZM12.4615 8.05325V8.06492C12.4615 8.20492 12.3433 8.31825 12.1972 8.31825C12.0555 8.31825 11.9398 8.21159 11.9337 8.07742C11.9372 8.04242 11.9398 7.99992 11.9398 7.95909C11.9398 7.29159 11.3755 6.75075 10.6789 6.75075C10.6528 6.75075 10.6268 6.75159 10.6015 6.75325H10.605C10.465 6.74575 10.3546 6.63575 10.3546 6.50075C10.3546 6.36075 10.4728 6.24742 10.6189 6.24742H10.6337H10.6328C10.6502 6.24659 10.672 6.24659 10.6928 6.24659C11.672 6.24659 12.465 7.00659 12.465 7.94492C12.465 7.98325 12.4633 8.02159 12.4607 8.05909V8.05409L12.4615 8.05325ZM13.2885 8.49575C13.3294 6.83909 12.2494 5.54242 10.1989 5.39742C10.0607 5.38825 9.95284 5.27825 9.95284 5.14492C9.95284 5.00492 10.0711 4.89159 10.2172 4.89159C10.2233 4.89159 10.2302 4.89159 10.2363 4.89242H10.2355H10.2502C12.2215 4.89242 13.8207 6.42409 13.8207 8.31409C13.8207 8.38159 13.8189 8.44909 13.8146 8.51575L13.8155 8.50659C13.812 8.64409 13.6955 8.75325 13.552 8.75325C13.4059 8.75325 13.2876 8.63992 13.2876 8.49992C13.2876 8.49742 13.2876 8.49575 13.2876 8.49325L13.2885 8.49575ZM15.2015 9.01992V9.02159C15.2015 9.16159 15.0833 9.27492 14.9372 9.27492C14.7911 9.27492 14.6746 9.16242 14.6737 9.02409C14.6528 5.83909 12.4363 4.10492 9.75024 4.08659C9.60415 4.08659 9.48676 3.97325 9.48676 3.83409C9.48676 3.69492 9.60502 3.58159 9.75024 3.58159C12.7581 3.60159 15.1755 5.59075 15.1998 9.01909L15.2015 9.01992ZM14.745 12.8516V12.8591C14.305 13.6016 13.4815 14.4216 12.6337 14.1599L12.6259 14.1483C11.0328 13.5783 9.65545 12.8333 8.42502 11.9158L8.46067 11.9408C7.81458 11.4474 7.24676 10.9033 6.7485 10.3049L6.73197 10.2841C6.28937 9.75242 5.87458 9.15742 5.51284 8.52909L5.47806 8.46325C5.08067 7.84159 4.72154 7.12325 4.44067 6.36909L4.41458 6.28742C4.14154 5.47492 4.99284 4.68575 5.77197 4.26409H5.7798C5.89284 4.19492 6.03024 4.15325 6.17806 4.15325C6.41024 4.15325 6.61719 4.25575 6.75371 4.41492L6.75458 4.41659C6.75458 4.41659 7.2598 4.99409 7.47632 5.27992C7.6798 5.54575 7.95371 5.97159 8.09545 6.20909C8.17719 6.33159 8.22502 6.48159 8.22502 6.64242C8.22502 6.88242 8.11719 7.09825 7.94502 7.24742L7.94415 7.24825L7.45545 7.62325C7.32067 7.74825 7.23719 7.92325 7.23719 8.11659C7.23719 8.13575 7.23806 8.15409 7.2398 8.17242V8.16992C7.74328 9.75575 9.02067 10.9799 10.6398 11.4541L10.6763 11.4633C10.6928 11.4649 10.7128 11.4658 10.732 11.4658C10.9337 11.4658 11.1163 11.3858 11.2468 11.2574L11.6381 10.7891C11.7946 10.6233 12.0198 10.5199 12.2702 10.5199C12.4381 10.5199 12.5937 10.5666 12.7259 10.6466L12.7224 10.6449C13.4294 11.0308 14.0407 11.4549 14.5981 11.9358L14.5885 11.9274C14.7555 12.0558 14.8607 12.2516 14.8607 12.4708C14.8607 12.6116 14.8172 12.7424 14.7415 12.8524L14.7433 12.8499L14.745 12.8516Z"
+                      fill="#9FA3A8" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_3_937">
+                      <rect width="20" height="20" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a href="#" class="socials__icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M5.11313 17.4171C6.52321 18.3415 8.19791 18.8889 10.0041 18.8889C14.9023 18.8889 18.8891 14.8881 18.8891 9.98514C18.8891 9.77062 18.8891 9.534 18.8744 9.29743C18.5148 4.72723 14.6743 1.11108 10.0041 1.11108C5.40721 1.11108 1.60336 4.63106 1.17005 9.13473C1.13329 9.42313 1.11133 9.69672 1.11133 9.98516C1.11133 11.93 1.74298 13.7493 2.80779 15.1987L1.7062 18.5043L5.11313 17.4171ZM12.8341 11.2264C12.8461 11.2298 12.8583 11.2332 12.8707 11.2367C12.8707 11.2382 12.9569 11.2817 13.0949 11.3514C13.635 11.6243 14.9691 12.2982 15.0366 12.4266C15.1078 12.5416 15.1078 13.0868 14.9023 13.7085C14.69 14.3533 13.6637 14.9523 13.2173 14.9905C13.1387 14.9972 13.0738 15.0136 13.0067 15.0305C12.6873 15.111 12.3209 15.2033 10.209 14.3152C7.81441 13.3022 6.25536 10.7621 5.98321 10.3187C5.96658 10.2916 5.95475 10.2724 5.94784 10.2617C5.94175 10.2525 5.9333 10.2399 5.92277 10.2242C5.7853 10.0199 5.29258 9.28761 5.06262 8.39631C4.97784 8.11231 4.92087 7.7898 4.92087 7.49042C4.92087 5.99355 5.57203 4.92648 6.95988 4.92648C6.97589 4.92648 6.99302 4.92517 7.01111 4.92379C7.14473 4.91356 7.33102 4.8993 7.51203 5.37938C7.69779 5.84287 8.10583 6.92346 8.23812 7.27379C8.25702 7.32384 8.2703 7.35899 8.27649 7.3753C8.34705 7.50582 8.38231 7.65933 8.29753 7.8436C8.20483 8.04728 8.05424 8.2388 7.91061 8.42146C7.65907 8.74136 7.42887 9.03411 7.56833 9.31754C7.70331 9.57854 8.21272 10.446 8.95616 11.1676C9.78161 11.9632 10.4907 12.2836 10.8374 12.4402C10.8921 12.465 10.9378 12.4856 10.9735 12.5034C11.4822 12.7793 12.0045 11.8813 12.2677 11.4288C12.2753 11.4155 12.2828 11.4027 12.2901 11.3903C12.4582 11.1204 12.6068 11.1623 12.8341 11.2264Z"
+                    fill="#9FA3A8" />
+                </svg>
+              </a>
+              <a href="#" class="socials__icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M13.8093 7.49167C14.3204 6.98056 14.8278 5.78797 12.6982 7.23612C10.7088 8.60526 8.70595 9.95471 6.68988 11.2843C6.38288 11.4231 6.05099 11.4984 5.71414 11.5057C5.37729 11.5131 5.04244 11.4522 4.7297 11.3269C3.45192 10.9435 1.96025 10.4324 1.96025 10.4324C1.96025 10.4324 0.941735 9.7926 2.68525 9.11112C2.68525 9.11112 10.0565 6.08612 12.613 5.02038C13.5927 4.59445 16.9158 3.23149 16.9158 3.23149C16.9158 3.23149 18.4501 2.63426 18.3223 4.08334C18.2797 4.67963 17.939 6.76852 17.5982 9.02593C17.0862 12.2213 16.5325 15.7157 16.5325 15.7157C16.5325 15.7157 16.4473 16.6954 15.7232 16.8657C14.9481 16.8526 14.1992 16.583 13.5936 16.0991C13.4232 15.9713 10.3982 14.0537 9.28988 13.1167C9.17714 13.0403 9.08555 12.9366 9.02362 12.8154C8.9617 12.6941 8.93145 12.5591 8.9357 12.423C8.93995 12.2869 8.97856 12.1541 9.04793 12.0369C9.1173 11.9197 9.21519 11.822 9.33248 11.7528C10.8526 10.362 12.3452 8.94132 13.8093 7.49167Z"
+                    fill="#9FA3A8" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bot">
+          <p class="footer__copy">© 2009-2024, Компания «Теплофон»</p>
+          <div class="footer__bot-box">
+            <a class="footer__bot-link" href="#">Пользовательское соглашение</a>
+            <a class="footer__bot-link" href="#">Обработка персональных данных</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="../scripts/scripts.js"></script>
+</body>
+
+</html>

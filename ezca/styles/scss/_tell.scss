@@ -1,0 +1,44 @@
+.tell {
+  .btn {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  &__wrapper {
+    @include fluid(padding-top, 51px, 115px);
+    @include fluid(padding-bottom, 54px, 115px);
+    background-color: #C4FF02;
+
+    &--mb {
+      @include fluid(margin-bottom, 60px, 110px);
+    }
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    align-items: center;
+    gap: 59px;
+  }
+
+  &__text {
+    font-weight: 700;
+    @include fluid(font-size, 30px, 60px);
+    text-align: center;
+    text-wrap: balance;
+  }
+}
+
+@media (max-width: 768px) {
+  .tell {
+    .btn {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+  }
+}

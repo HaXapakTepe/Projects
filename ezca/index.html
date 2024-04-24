@@ -1,0 +1,1547 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/images/favicon.svg" type="x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./styles/css/normalize.css">
+  <link rel="stylesheet" href="./styles/css/style.css?v=0.0001">
+  <title>EZCA</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <div class="gradient">
+
+      <header class="header">
+        <div class="header__inner">
+          <a class="logo" href="/">
+            <img class="logo__img" src="./assets/images/logo.svg" alt="">
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link menu__link--bold" href="#">
+                  Services
+                  <i class="menu__icon">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M15 17.5887L10.2237 12.8124C9.70625 12.2949 8.86625 12.2949 8.34875 12.8124C7.83125 13.3299 7.83125 14.1699 8.34875 14.6874L14.1163 20.4549C14.605 20.9437 15.3962 20.9437 15.8837 20.4549L21.6512 14.6874C22.1687 14.1699 22.1687 13.3299 21.6512 12.8124C21.1337 12.2949 20.2937 12.2949 19.7762 12.8124L15 17.5887Z"
+                        fill="#C4FF02" />
+                    </svg>
+                  </i>
+                </a>
+                <div class="dropdown">
+                  <div class="dropdown__item">
+                    <div class="dropdown__box">
+                      <a class="dropdown__link" href="#">
+                        Services 1
+                      </a>
+                      <i class="dropdown__icon accordion">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M17.5888 15.0002L12.8125 19.7764C12.295 20.2939 12.295 21.1339 12.8125 21.6514C13.33 22.1689 14.17 22.1689 14.6875 21.6514L20.455 15.8839C20.9438 15.3952 20.9438 14.6039 20.455 14.1164L14.6875 8.34893C14.17 7.83143 13.33 7.83143 12.8125 8.34893C12.295 8.86643 12.295 9.70643 12.8125 10.2239L17.5888 15.0002Z"
+                            fill="white" />
+                        </svg>
+                      </i>
+                    </div>
+                    <div class="accordion-content">
+                      <div class="dropdown">
+                        <div class="dropdown__item">
+                          <a class="dropdown__link" href="#">
+                            Services 1
+                          </a>
+                        </div>
+                        <div class="dropdown__item">
+                          <a class="dropdown__link" href="#">
+                            Services 2
+                          </a>
+                        </div>
+                        <div class="dropdown__item">
+                          <a class="dropdown__link" href="#">
+                            Services 3
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown__item">
+                    <div class="dropdown__box">
+                      <a class="dropdown__link" href="#">
+                        Services 2
+                      </a>
+                      <i class="dropdown__icon accordion">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M17.5888 15.0002L12.8125 19.7764C12.295 20.2939 12.295 21.1339 12.8125 21.6514C13.33 22.1689 14.17 22.1689 14.6875 21.6514L20.455 15.8839C20.9438 15.3952 20.9438 14.6039 20.455 14.1164L14.6875 8.34893C14.17 7.83143 13.33 7.83143 12.8125 8.34893C12.295 8.86643 12.295 9.70643 12.8125 10.2239L17.5888 15.0002Z"
+                            fill="white" />
+                        </svg>
+                      </i>
+                    </div>
+                    <div class="accordion-content">
+                      <div class="dropdown">
+                        <div class="dropdown__item">
+                          <a class="dropdown__link" href="#">
+                            Services 1
+                          </a>
+                        </div>
+                        <div class="dropdown__item">
+                          <a class="dropdown__link" href="#">
+                            Services 2
+                          </a>
+                        </div>
+                        <div class="dropdown__item">
+                          <a class="dropdown__link" href="#">
+                            Services 3
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown__item">
+                    <div class="dropdown__box">
+                      <a class="dropdown__link" href="#">
+                        Services 3
+                      </a>
+                      <i class="dropdown__icon accordion">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M17.5888 15.0002L12.8125 19.7764C12.295 20.2939 12.295 21.1339 12.8125 21.6514C13.33 22.1689 14.17 22.1689 14.6875 21.6514L20.455 15.8839C20.9438 15.3952 20.9438 14.6039 20.455 14.1164L14.6875 8.34893C14.17 7.83143 13.33 7.83143 12.8125 8.34893C12.295 8.86643 12.295 9.70643 12.8125 10.2239L17.5888 15.0002Z"
+                            fill="white" />
+                        </svg>
+                      </i>
+                    </div>
+                    <div class="accordion-content">
+                      <div class="dropdown">
+                        <div class="dropdown__item">
+                          <a class="dropdown__link" href="#">
+                            Services 1
+                          </a>
+                        </div>
+                        <div class="dropdown__item">
+                          <a class="dropdown__link" href="#">
+                            Services 2
+                          </a>
+                        </div>
+                        <div class="dropdown__item">
+                          <a class="dropdown__link" href="#">
+                            Services 3
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown__item">
+                    <div class="dropdown__box ">
+                      <a class="dropdown__link" href="#">
+                        Services 4
+                      </a>
+                      <i class="dropdown__icon accordion">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M17.5888 15.0002L12.8125 19.7764C12.295 20.2939 12.295 21.1339 12.8125 21.6514C13.33 22.1689 14.17 22.1689 14.6875 21.6514L20.455 15.8839C20.9438 15.3952 20.9438 14.6039 20.455 14.1164L14.6875 8.34893C14.17 7.83143 13.33 7.83143 12.8125 8.34893C12.295 8.86643 12.295 9.70643 12.8125 10.2239L17.5888 15.0002Z"
+                            fill="white" />
+                        </svg>
+                      </i>
+                    </div>
+                    <div class="accordion-content">
+                      <div class="dropdown">
+                        <div class="dropdown__item">
+                          <a class="dropdown__link" href="#">
+                            Services 1
+                          </a>
+                        </div>
+                        <div class="dropdown__item">
+                          <a class="dropdown__link" href="#">
+                            Services 2
+                          </a>
+                        </div>
+                        <div class="dropdown__item">
+                          <a class="dropdown__link" href="#">
+                            Services 3
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Case Studies
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  About
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Clients
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Blog
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a class="start" data-fancybox href="#form">
+            Start
+            <i class="start__icon">
+              <svg viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M16.6627 12.4518L3.27668 21.4324C2.00266 22.3698 0.55339 21.2261 0.55339 20.0047L0.55339 1.97106C0.55339 1.36724 0.866975 0.765908 1.44196 0.442948C2.02793 0.113818 2.71797 0.168558 3.23399 0.514733L16.6628 9.52397C17.236 9.90053 17.4466 10.5088 17.4466 10.9879C17.4466 11.467 17.236 12.0753 16.6627 12.4518ZM14.7622 12.4156L14.7882 12.4331C14.7795 12.4273 14.7708 12.4215 14.7622 12.4156ZM14.7882 9.54273L14.7622 9.56013C14.7708 9.55428 14.7794 9.54848 14.7882 9.54273ZM12.6341 10.9879L3.98522 16.7903L3.98523 5.18544L12.6341 10.9879ZM1.3131 18.583C1.33293 18.5691 1.35288 18.5557 1.37292 18.5429L1.3131 18.583Z"
+                  fill="#131313" />
+              </svg>
+            </i>
+          </a>
+          <div class="burger">
+            <div class="burger__line"></div>
+          </div>
+        </div>
+      </header>
+
+      <section class="top top--pt">
+        <div class="top__wrapper">
+          <div class="container">
+            <div class="socials socials--right">
+              <a class="socials__link" href="#">
+                <i class="socials__icon">
+                  <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M22.5 0C10.0958 0 0 10.0958 0 22.5C0 34.9042 10.0958 45 22.5 45C34.9042 45 45 34.9042 45 22.5C45 10.0958 34.9042 0 22.5 0ZM22.5 3.75C32.8775 3.75 41.25 12.1225 41.25 22.5C41.25 31.9263 34.3344 39.6774 25.2905 41.0229V27.9675H30.6299L31.4685 22.5439H25.2905V19.5813C25.2905 17.3294 26.0304 15.3296 28.136 15.3296H31.5198V10.5981C30.9254 10.5175 29.6675 10.3418 27.29 10.3418C22.325 10.3418 19.4165 12.963 19.4165 18.9368V22.5439H14.3115V27.9675H19.4165V40.9753C10.5166 39.5075 3.75 31.8245 3.75 22.5C3.75 12.1225 12.1225 3.75 22.5 3.75Z"
+                      fill="black" />
+                  </svg>
+                </i>
+              </a>
+              <a class="socials__link" href="#">
+                <i class="socials__icon">
+                  <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0C5.6075 0 0 5.6075 0 12.5V32.5C0 39.3925 5.6075 45 12.5 45H32.5C39.3925 45 45 39.3925 45 32.5V12.5C45 5.6075 39.3925 0 32.5 0H12.5ZM12.5 5H32.5C36.635 5 40 8.365 40 12.5V32.5C40 36.635 36.635 40 32.5 40H12.5C8.365 40 5 36.635 5 32.5V12.5C5 8.365 8.365 5 12.5 5ZM35 7.5C34.337 7.5 33.7011 7.76339 33.2322 8.23223C32.7634 8.70107 32.5 9.33696 32.5 10C32.5 10.663 32.7634 11.2989 33.2322 11.7678C33.7011 12.2366 34.337 12.5 35 12.5C35.663 12.5 36.2989 12.2366 36.7678 11.7678C37.2366 11.2989 37.5 10.663 37.5 10C37.5 9.33696 37.2366 8.70107 36.7678 8.23223C36.2989 7.76339 35.663 7.5 35 7.5ZM22.5 10C15.6075 10 10 15.6075 10 22.5C10 29.3925 15.6075 35 22.5 35C29.3925 35 35 29.3925 35 22.5C35 15.6075 29.3925 10 22.5 10ZM22.5 15C26.635 15 30 18.365 30 22.5C30 26.635 26.635 30 22.5 30C18.365 30 15 26.635 15 22.5C15 18.365 18.365 15 22.5 15Z"
+                      fill="black" />
+                  </svg>
+                </i>
+              </a>
+              <a class="socials__link" href="#">
+                <i class="socials__icon">
+                  <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M22 0C9.86939 0 0 9.86843 0 22C0 34.1316 9.86939 44 22 44C34.1306 44 44 34.1316 44 22C44 9.86843 34.1306 0 22 0ZM15.3043 31.5652H11.4783V17.2174H15.3043V31.5652ZM13.3913 14.3478C12.3343 14.3478 11.4783 13.4917 11.4783 12.4348C11.4783 11.3778 12.3343 10.5217 13.3913 10.5217C14.4483 10.5217 15.3043 11.3778 15.3043 12.4348C15.3043 13.4917 14.4483 14.3478 13.3913 14.3478ZM33.4783 31.5652H29.6522V26.7826V24.3913C29.6522 22.55 28.1457 21.0435 26.3043 21.0435C24.463 21.0435 22.9565 22.55 22.9565 24.3913V31.5652H19.1304V17.2174H22.9565V18.9544C24.0737 17.8812 25.5889 17.2174 27.2609 17.2174C30.6948 17.2174 33.4783 20.0009 33.4783 23.4348V31.5652Z"
+                      fill="black" />
+                  </svg>
+                </i>
+              </a>
+            </div>
+            <div class="top__box top__box--alt">
+              <i class="top__icon top__icon--left">
+                <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M38.4075 5.0955L32.281 36.1995C31.813 39.2748 28.2071 39.6997 26.5085 38.0012L1.43016 12.9228C0.590461 12.0831 0.190303 10.8108 0.540777 9.56207C0.89795 8.28949 1.93367 7.40601 3.13268 7.16982L34.336 1.02381C35.6568 0.750258 36.7955 1.30331 37.4618 1.96957C38.128 2.63586 38.6811 3.77457 38.4075 5.0955ZM35.7141 7.68807L35.7747 7.67614C35.7545 7.68031 35.7343 7.68429 35.7141 7.68807ZM31.7552 3.6568L31.7433 3.71705C31.7471 3.69701 31.751 3.67693 31.7552 3.6568ZM30.7693 8.66204L26.8109 28.7587L10.6727 12.6204L30.7693 8.66204ZM25.588 34.9676C25.5962 34.9207 25.6053 34.8744 25.6153 34.8286L25.588 34.9676Z"
+                    fill="#131313" />
+                </svg>
+              </i>
+              <i class="top__icon top__icon--right">
+                <svg width="39" height="40" viewBox="0 0 39 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M5.37038 1.00857L35.8486 9.73024C38.8737 10.4554 38.9937 14.0843 37.1582 15.6339L10.0588 38.5133C9.15147 39.2794 7.84999 39.5711 6.63518 39.1168C5.39717 38.6538 4.60396 37.5475 4.46948 36.3328L0.97057 4.72309C0.809116 3.38388 1.45601 2.29579 2.17596 1.68795C2.89595 1.08008 4.07715 0.624782 5.37038 1.00857ZM7.72715 3.9105L7.72036 3.84916C7.72281 3.86967 7.72508 3.89011 7.72715 3.9105ZM3.37709 7.51627L3.43612 7.53317C3.41647 7.52773 3.39679 7.5221 3.37709 7.51627ZM8.28163 8.91976L27.974 14.5549L10.5351 29.2782L8.28163 8.91976ZM34.058 16.296C34.012 16.2838 33.9666 16.2708 33.9218 16.257L34.058 16.296Z"
+                    fill="#131313" />
+                </svg>
+              </i>
+              <p class="top__box-title top__box-title--width title title--fw">
+                We’ll grow your business like it’s our own
+              </p>
+              <p class="top__box-text top__box-text--mb">
+                Entrust your marketing to someone who gets the grind
+              </p>
+              <button class="top__btn btn btn--width btn--brdn">
+                Work with us
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="partners">
+        <div class="partners__wrapper">
+          <div class="container">
+            <h2 class="partners__title title">
+              trusted us
+            </h2>
+            <div class="partners__swiper swiper">
+              <div class="partners__swiper-wrapper swiper-wrapper">
+                <a class="swiper-slide" href="#">
+                  <img class="partners__img" src="./assets/images/partners/1.png" alt="">
+                </a>
+                <a class="swiper-slide" href="#">
+                  <img class="partners__img" src="./assets/images/partners/2.svg" alt="">
+                </a>
+                <a class="swiper-slide" href="#">
+                  <img class="partners__img" src="./assets/images/partners/3.svg" alt="">
+                </a>
+                <a class="swiper-slide" href="#">
+                  <img class="partners__img" src="./assets/images/partners/4.svg" alt="">
+                </a>
+                <a class="swiper-slide" href="#">
+                  <img class="partners__img" src="./assets/images/partners/5.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <main class="main">
+
+
+      <section class="services">
+        <div class="services__wrapper services__wrapper--ptn">
+          <div class="container">
+            <div class="services__top">
+              <h2 class="services__title title">
+                <i class="title__icon">
+                  <svg viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M29.5 58.4271C45.7924 58.4271 59 45.476 59 29.4999C59 13.5239 45.7924 0.572754 29.5 0.572754C13.2076 0.572754 0 13.5239 0 29.4999C0 45.476 13.2076 58.4271 29.5 58.4271Z"
+                      fill="#C4FF02" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M32.6415 12.4252L50.3033 38.751C52.1469 41.2566 49.8976 44.1068 47.4955 44.1068H12.0293C10.8418 44.1068 9.65918 43.4901 9.02403 42.3593C8.37674 41.2069 8.48439 39.8498 9.1652 38.835L26.8834 12.4251C27.6239 11.2976 28.8202 10.8835 29.7624 10.8835C30.7047 10.8835 31.9009 11.2977 32.6415 12.4252ZM32.5702 16.1629L32.6046 16.1116C32.5933 16.1289 32.5818 16.146 32.5702 16.1629ZM26.9203 16.1118L26.9545 16.1628C26.943 16.1459 26.9316 16.1289 26.9203 16.1118ZM29.7624 20.3481L41.1739 37.3576H18.3509L29.7624 20.3481ZM44.6995 42.6128C44.6722 42.5737 44.6459 42.5345 44.6206 42.4951L44.6995 42.6128Z"
+                      fill="#131313" />
+                  </svg>
+                </i>
+                our services
+              </h2>
+              <p class="services__text">
+                We successfully partnered with Ecom, FinTech, EdTech projects, Saas platforms and mobile apps.
+              </p>
+            </div>
+            <div class="services__inner">
+              <a class="services__card" href="#">
+                <img class="services__card-img" src="./assets/images/services/1.png" alt="">
+                <div class="services__card-box">
+                  <i class="services__card-icon">
+                    <svg viewBox="0 0 43 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M24.0493 1.54163L41.711 27.8675C43.5547 30.3731 41.3054 33.2233 38.9032 33.2233H3.43709C2.24958 33.2233 1.06696 32.6066 0.431802 31.4758C-0.215488 30.3234 -0.107833 28.9663 0.572978 27.9515L18.2911 1.54152C19.0317 0.414084 20.2279 0 21.1702 0C22.1124 0 23.3087 0.414113 24.0493 1.54163ZM23.978 5.27934L24.0124 5.22809C24.001 5.24534 23.9896 5.26243 23.978 5.27934ZM18.328 5.22823L18.3623 5.27922C18.3507 5.26239 18.3393 5.2454 18.328 5.22823ZM21.1702 9.46458L32.5816 26.474H9.75869L21.1702 9.46458ZM36.1073 31.7292C36.0799 31.6902 36.0536 31.651 36.0284 31.6116L36.1073 31.7292Z"
+                        fill="#131313" />
+                    </svg>
+                  </i>
+                  <p class="services__card-title">
+                    Paid Search Management
+                  </p>
+                  <p class="services__card-text">
+                    Making Google and other search engines work for you
+                  </p>
+                </div>
+                <div class="services__card-link">
+                  <span>read more</span>
+                  <i class="services__card-arrow">
+                    <svg viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect rx="29" fill="#C4FF02" />
+                      <path
+                        d="M15.5 28.9999C15.5 29.8279 16.172 30.4999 17 30.4999L36.6055 30.4999L30.8105 36.2949C30.224 36.8814 30.224 37.831 30.8105 38.416L30.9395 38.5449C31.526 39.1314 32.4755 39.1314 33.0605 38.5449L41.5449 30.0605C42.1314 29.474 42.1314 28.5244 41.5449 27.9394L33.0605 19.455C32.474 18.8685 31.5245 18.8685 30.9395 19.455L30.8105 19.5839C30.224 20.1704 30.224 21.12 30.8105 21.705L36.6055 27.4999L17 27.4999C16.172 27.4999 15.5 28.1719 15.5 28.9999Z"
+                        fill="black" />
+                    </svg>
+                  </i>
+                </div>
+              </a>
+              <a class="services__card" href="#">
+                <img class="services__card-img" src="./assets/images/services/1.png" alt="">
+                <div class="services__card-box">
+                  <i class="services__card-icon">
+                    <svg viewBox="0 0 43 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M24.0493 1.54163L41.711 27.8675C43.5547 30.3731 41.3054 33.2233 38.9032 33.2233H3.43709C2.24958 33.2233 1.06696 32.6066 0.431802 31.4758C-0.215488 30.3234 -0.107833 28.9663 0.572978 27.9515L18.2911 1.54152C19.0317 0.414084 20.2279 0 21.1702 0C22.1124 0 23.3087 0.414113 24.0493 1.54163ZM23.978 5.27934L24.0124 5.22809C24.001 5.24534 23.9896 5.26243 23.978 5.27934ZM18.328 5.22823L18.3623 5.27922C18.3507 5.26239 18.3393 5.2454 18.328 5.22823ZM21.1702 9.46458L32.5816 26.474H9.75869L21.1702 9.46458ZM36.1073 31.7292C36.0799 31.6902 36.0536 31.651 36.0284 31.6116L36.1073 31.7292Z"
+                        fill="#131313" />
+                    </svg>
+                  </i>
+                  <p class="services__card-title">
+                    Paid Social Media Advertising
+                  </p>
+                  <p class="services__card-text">
+                    Targeting on Facebook, Youtube, or any other platform where you customers live
+                  </p>
+                </div>
+                <div class="services__card-link">
+                  <span>read more</span>
+                  <i class="services__card-arrow">
+                    <svg viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect rx="29" fill="#C4FF02" />
+                      <path
+                        d="M15.5 28.9999C15.5 29.8279 16.172 30.4999 17 30.4999L36.6055 30.4999L30.8105 36.2949C30.224 36.8814 30.224 37.831 30.8105 38.416L30.9395 38.5449C31.526 39.1314 32.4755 39.1314 33.0605 38.5449L41.5449 30.0605C42.1314 29.474 42.1314 28.5244 41.5449 27.9394L33.0605 19.455C32.474 18.8685 31.5245 18.8685 30.9395 19.455L30.8105 19.5839C30.224 20.1704 30.224 21.12 30.8105 21.705L36.6055 27.4999L17 27.4999C16.172 27.4999 15.5 28.1719 15.5 28.9999Z"
+                        fill="black" />
+                    </svg>
+                  </i>
+                </div>
+              </a>
+              <a class="services__card" href="#">
+                <img class="services__card-img" src="./assets/images/services/1.png" alt="">
+                <div class="services__card-box">
+                  <i class="services__card-icon">
+                    <svg viewBox="0 0 43 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M24.0493 1.54163L41.711 27.8675C43.5547 30.3731 41.3054 33.2233 38.9032 33.2233H3.43709C2.24958 33.2233 1.06696 32.6066 0.431802 31.4758C-0.215488 30.3234 -0.107833 28.9663 0.572978 27.9515L18.2911 1.54152C19.0317 0.414084 20.2279 0 21.1702 0C22.1124 0 23.3087 0.414113 24.0493 1.54163ZM23.978 5.27934L24.0124 5.22809C24.001 5.24534 23.9896 5.26243 23.978 5.27934ZM18.328 5.22823L18.3623 5.27922C18.3507 5.26239 18.3393 5.2454 18.328 5.22823ZM21.1702 9.46458L32.5816 26.474H9.75869L21.1702 9.46458ZM36.1073 31.7292C36.0799 31.6902 36.0536 31.651 36.0284 31.6116L36.1073 31.7292Z"
+                        fill="#131313" />
+                    </svg>
+                  </i>
+                  <p class="services__card-title">
+                    Social Media Management
+                  </p>
+                  <p class="services__card-text">
+                    Elevating your social media presence with lively and engaging content
+                  </p>
+                </div>
+                <div class="services__card-link">
+                  <span>read more</span>
+                  <i class="services__card-arrow">
+                    <svg viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect rx="29" fill="#C4FF02" />
+                      <path
+                        d="M15.5 28.9999C15.5 29.8279 16.172 30.4999 17 30.4999L36.6055 30.4999L30.8105 36.2949C30.224 36.8814 30.224 37.831 30.8105 38.416L30.9395 38.5449C31.526 39.1314 32.4755 39.1314 33.0605 38.5449L41.5449 30.0605C42.1314 29.474 42.1314 28.5244 41.5449 27.9394L33.0605 19.455C32.474 18.8685 31.5245 18.8685 30.9395 19.455L30.8105 19.5839C30.224 20.1704 30.224 21.12 30.8105 21.705L36.6055 27.4999L17 27.4999C16.172 27.4999 15.5 28.1719 15.5 28.9999Z"
+                        fill="black" />
+                    </svg>
+                  </i>
+                </div>
+              </a>
+              <a class="services__card" href="#">
+                <img class="services__card-img" src="./assets/images/services/1.png" alt="">
+                <div class="services__card-box">
+                  <i class="services__card-icon">
+                    <svg viewBox="0 0 43 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M24.0493 1.54163L41.711 27.8675C43.5547 30.3731 41.3054 33.2233 38.9032 33.2233H3.43709C2.24958 33.2233 1.06696 32.6066 0.431802 31.4758C-0.215488 30.3234 -0.107833 28.9663 0.572978 27.9515L18.2911 1.54152C19.0317 0.414084 20.2279 0 21.1702 0C22.1124 0 23.3087 0.414113 24.0493 1.54163ZM23.978 5.27934L24.0124 5.22809C24.001 5.24534 23.9896 5.26243 23.978 5.27934ZM18.328 5.22823L18.3623 5.27922C18.3507 5.26239 18.3393 5.2454 18.328 5.22823ZM21.1702 9.46458L32.5816 26.474H9.75869L21.1702 9.46458ZM36.1073 31.7292C36.0799 31.6902 36.0536 31.651 36.0284 31.6116L36.1073 31.7292Z"
+                        fill="#131313" />
+                    </svg>
+                  </i>
+                  <p class="services__card-title">
+                    Search Engine Optimization
+                  </p>
+                  <p class="services__card-text">
+                    Ensure that whoever is searching finds you. Rank #1 on Google, App store and other platforms
+                  </p>
+                </div>
+                <div class="services__card-link">
+                  <span>read more</span>
+                  <i class="services__card-arrow">
+                    <svg viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect rx="29" fill="#C4FF02" />
+                      <path
+                        d="M15.5 28.9999C15.5 29.8279 16.172 30.4999 17 30.4999L36.6055 30.4999L30.8105 36.2949C30.224 36.8814 30.224 37.831 30.8105 38.416L30.9395 38.5449C31.526 39.1314 32.4755 39.1314 33.0605 38.5449L41.5449 30.0605C42.1314 29.474 42.1314 28.5244 41.5449 27.9394L33.0605 19.455C32.474 18.8685 31.5245 18.8685 30.9395 19.455L30.8105 19.5839C30.224 20.1704 30.224 21.12 30.8105 21.705L36.6055 27.4999L17 27.4999C16.172 27.4999 15.5 28.1719 15.5 28.9999Z"
+                        fill="black" />
+                    </svg>
+                  </i>
+                </div>
+              </a>
+              <a class="services__card" href="#">
+                <img class="services__card-img" src="./assets/images/services/1.png" alt="">
+                <div class="services__card-box">
+                  <i class="services__card-icon">
+                    <svg viewBox="0 0 43 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M24.0493 1.54163L41.711 27.8675C43.5547 30.3731 41.3054 33.2233 38.9032 33.2233H3.43709C2.24958 33.2233 1.06696 32.6066 0.431802 31.4758C-0.215488 30.3234 -0.107833 28.9663 0.572978 27.9515L18.2911 1.54152C19.0317 0.414084 20.2279 0 21.1702 0C22.1124 0 23.3087 0.414113 24.0493 1.54163ZM23.978 5.27934L24.0124 5.22809C24.001 5.24534 23.9896 5.26243 23.978 5.27934ZM18.328 5.22823L18.3623 5.27922C18.3507 5.26239 18.3393 5.2454 18.328 5.22823ZM21.1702 9.46458L32.5816 26.474H9.75869L21.1702 9.46458ZM36.1073 31.7292C36.0799 31.6902 36.0536 31.651 36.0284 31.6116L36.1073 31.7292Z"
+                        fill="#131313" />
+                    </svg>
+                  </i>
+                  <p class="services__card-title">
+                    Copywriting and Content
+                  </p>
+                  <p class="services__card-text">
+                    Amplify your brand's impact with our sharp Copywriting and Content Marketing, crafted to captivate
+                    and convert
+                  </p>
+                </div>
+                <div class="services__card-link">
+                  <span>read more</span>
+                  <i class="services__card-arrow">
+                    <svg viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect rx="29" fill="#C4FF02" />
+                      <path
+                        d="M15.5 28.9999C15.5 29.8279 16.172 30.4999 17 30.4999L36.6055 30.4999L30.8105 36.2949C30.224 36.8814 30.224 37.831 30.8105 38.416L30.9395 38.5449C31.526 39.1314 32.4755 39.1314 33.0605 38.5449L41.5449 30.0605C42.1314 29.474 42.1314 28.5244 41.5449 27.9394L33.0605 19.455C32.474 18.8685 31.5245 18.8685 30.9395 19.455L30.8105 19.5839C30.224 20.1704 30.224 21.12 30.8105 21.705L36.6055 27.4999L17 27.4999C16.172 27.4999 15.5 28.1719 15.5 28.9999Z"
+                        fill="black" />
+                    </svg>
+                  </i>
+                </div>
+              </a>
+              <a class="services__card" href="#">
+                <img class="services__card-img" src="./assets/images/services/1.png" alt="">
+                <div class="services__card-box">
+                  <i class="services__card-icon">
+                    <svg viewBox="0 0 43 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M24.0493 1.54163L41.711 27.8675C43.5547 30.3731 41.3054 33.2233 38.9032 33.2233H3.43709C2.24958 33.2233 1.06696 32.6066 0.431802 31.4758C-0.215488 30.3234 -0.107833 28.9663 0.572978 27.9515L18.2911 1.54152C19.0317 0.414084 20.2279 0 21.1702 0C22.1124 0 23.3087 0.414113 24.0493 1.54163ZM23.978 5.27934L24.0124 5.22809C24.001 5.24534 23.9896 5.26243 23.978 5.27934ZM18.328 5.22823L18.3623 5.27922C18.3507 5.26239 18.3393 5.2454 18.328 5.22823ZM21.1702 9.46458L32.5816 26.474H9.75869L21.1702 9.46458ZM36.1073 31.7292C36.0799 31.6902 36.0536 31.651 36.0284 31.6116L36.1073 31.7292Z"
+                        fill="#131313" />
+                    </svg>
+                  </i>
+                  <p class="services__card-title">
+                    E-mail marketing
+                  </p>
+                  <p class="services__card-text">
+                    Reach your audience directly with targeted email campaigns
+                  </p>
+                </div>
+                <div class="services__card-link">
+                  <span>read more</span>
+                  <i class="services__card-arrow">
+                    <svg viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect rx="29" fill="#C4FF02" />
+                      <path
+                        d="M15.5 28.9999C15.5 29.8279 16.172 30.4999 17 30.4999L36.6055 30.4999L30.8105 36.2949C30.224 36.8814 30.224 37.831 30.8105 38.416L30.9395 38.5449C31.526 39.1314 32.4755 39.1314 33.0605 38.5449L41.5449 30.0605C42.1314 29.474 42.1314 28.5244 41.5449 27.9394L33.0605 19.455C32.474 18.8685 31.5245 18.8685 30.9395 19.455L30.8105 19.5839C30.224 20.1704 30.224 21.12 30.8105 21.705L36.6055 27.4999L17 27.4999C16.172 27.4999 15.5 28.1719 15.5 28.9999Z"
+                        fill="black" />
+                    </svg>
+                  </i>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="about">
+        <div class="about__wrapper">
+          <div class="container">
+            <div class="about__inner">
+              <div class="about__item">
+                <p class="about__item-title">
+                  Our mission is to maximize your ROI
+                  at every step
+                </p>
+                <div class="about__item-box">
+                  <img class="about__item-img" src="./assets/images/about/1.png" alt="">
+                  <img class="about__item-img" src="./assets/images/about/2.png" alt="">
+                  <img class="about__item-img" src="./assets/images/about/3.png" alt="">
+                  <img class="about__item-img" src="./assets/images/about/4.png" alt="">
+                  <img class="about__item-img" src="./assets/images/about/5.png" alt="">
+                  <img class="about__item-img" src="./assets/images/about/6.png" alt="">
+                </div>
+              </div>
+              <div class="about__info">
+                <h2 class="about__info-title title">
+                  <i class="title__icon">
+                    <svg viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M29.5 58.4271C45.7924 58.4271 59 45.476 59 29.4999C59 13.5239 45.7924 0.572754 29.5 0.572754C13.2076 0.572754 0 13.5239 0 29.4999C0 45.476 13.2076 58.4271 29.5 58.4271Z"
+                        fill="#86F9D7" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M32.6415 12.4252L50.3033 38.751C52.1469 41.2566 49.8976 44.1068 47.4955 44.1068H12.0293C10.8418 44.1068 9.65918 43.4901 9.02403 42.3593C8.37674 41.2069 8.48439 39.8498 9.1652 38.835L26.8834 12.4251C27.6239 11.2976 28.8202 10.8835 29.7624 10.8835C30.7047 10.8835 31.9009 11.2977 32.6415 12.4252ZM32.5702 16.1629L32.6046 16.1116C32.5933 16.1289 32.5818 16.146 32.5702 16.1629ZM26.9203 16.1118L26.9545 16.1628C26.943 16.1459 26.9316 16.1289 26.9203 16.1118ZM29.7624 20.3481L41.1739 37.3576H18.3509L29.7624 20.3481ZM44.6995 42.6128C44.6722 42.5737 44.6459 42.5345 44.6206 42.4951L44.6995 42.6128Z"
+                        fill="#131313" />
+                    </svg>
+                  </i>
+                  about ezca
+                </h2>
+                <p class="about__info-subtitle">
+                  We are on a mission to empower growing businesses with exceptional marketing guidance and execution
+                </p>
+                <div class="about__info-box">
+                  <div class="about__info-block">
+                    <p class="about__info-num">
+                      6
+                    </p>
+                    <p class="about__info-text">
+                      Years
+                      Experience
+                    </p>
+                  </div>
+                  <div class="about__info-block">
+                    <p class="about__info-num">
+                      100+
+                    </p>
+                    <p class="about__info-text">
+                      Projects with
+                      ROMI >200%
+                    </p>
+                  </div>
+                  <div class="about__info-block">
+                    <p class="about__info-num">
+                      $20+
+                    </p>
+                    <p class="about__info-text">
+                      Million in Managed Ad Spend
+                    </p>
+                  </div>
+                </div>
+                <a class="btn btn--white" href="#">
+                  Work with us
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="why">
+        <div class="why__wrapper">
+          <div class="container">
+            <h2 class="why__title title">
+              <i class="title__icon">
+                <svg viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M29.5 58.4271C45.7924 58.4271 59 45.476 59 29.4999C59 13.5239 45.7924 0.572754 29.5 0.572754C13.2076 0.572754 0 13.5239 0 29.4999C0 45.476 13.2076 58.4271 29.5 58.4271Z"
+                    fill="#C4FF02" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M32.6415 12.4252L50.3033 38.751C52.1469 41.2566 49.8976 44.1068 47.4955 44.1068H12.0293C10.8418 44.1068 9.65918 43.4901 9.02403 42.3593C8.37674 41.2069 8.48439 39.8498 9.1652 38.835L26.8834 12.4251C27.6239 11.2976 28.8202 10.8835 29.7624 10.8835C30.7047 10.8835 31.9009 11.2977 32.6415 12.4252ZM32.5702 16.1629L32.6046 16.1116C32.5933 16.1289 32.5818 16.146 32.5702 16.1629ZM26.9203 16.1118L26.9545 16.1628C26.943 16.1459 26.9316 16.1289 26.9203 16.1118ZM29.7624 20.3481L41.1739 37.3576H18.3509L29.7624 20.3481ZM44.6995 42.6128C44.6722 42.5737 44.6459 42.5345 44.6206 42.4951L44.6995 42.6128Z"
+                    fill="#131313" />
+                </svg>
+              </i>
+              why choose us
+            </h2>
+            <p class="why__subtitle">
+              We embrace the entrepreneurial spirit - and aspire to work with dynamic companies that share our values of
+              curiosity, experimentation, and flexibility
+            </p>
+            <div class="why__inner">
+              <div class="why__item">
+                <i class="why__item-icon">
+                  <svg viewBox="0 0 133 133" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="66.5" cy="66.5" r="66.5" fill="#131313" />
+                    <path
+                      d="M80.375 31.5C76.377 31.5 72.4463 33.0498 69.4141 36.082L42.4609 63.0352C33.9146 71.5815 33.9146 85.4849 42.4609 94.0312C51.0073 102.578 64.9106 102.578 73.457 94.0312L91.4258 76.0625L87.3828 72.0195L69.4141 89.9883C63.0688 96.3335 52.8491 96.3335 46.5039 89.9883C40.1587 83.6431 40.1587 73.4233 46.5039 67.0781L73.457 40.125C77.3203 36.2617 83.5195 36.2617 87.3828 40.125C91.2461 43.9883 91.2461 50.1875 87.3828 54.0508L60.4297 81.0039C59.0483 82.3853 56.8696 82.3853 55.4883 81.0039C54.1069 79.6226 54.1069 77.4438 55.4883 76.0625L80.1953 51.3555L76.1523 47.3125L51.4453 72.0195C47.8628 75.6021 47.8628 81.4644 51.4453 85.0469C55.0278 88.6294 60.8901 88.6294 64.4727 85.0469L91.4258 58.0938C97.4902 52.0293 97.4902 42.1465 91.4258 36.082C88.3936 33.0498 84.373 31.5 80.375 31.5Z"
+                      fill="white" />
+                  </svg>
+                </i>
+                <div class="why__item-box">
+                  <p class="why__item-title">
+                    Asking the right questions
+                  </p>
+                  <p class="why__item-text">
+                    No two businesses are alike. Our team is experienced at asking critical questions before jumping
+                    into execution.
+                  </p>
+                </div>
+              </div>
+              <div class="why__item">
+                <i class="why__item-icon">
+                  <svg viewBox="0 0 133 133" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="66.5" cy="66.5" r="66.5" fill="#131313" />
+                    <path
+                      d="M42.0957 30.3916L38.3604 34.127L43.9219 39.6885L47.6572 35.9531L42.0957 30.3916ZM90.9043 30.3916L85.3428 35.9531L89.0781 39.6885L94.6396 34.127L90.9043 30.3916ZM66.5 32.0518C65.6284 32.0621 64.7361 32.114 63.8438 32.2178C63.8126 32.2178 63.7919 32.2178 63.7607 32.2178C52.9905 33.4525 44.4199 42.158 42.9258 52.8867C41.7325 61.5195 45.2915 69.343 51.2266 74.3857C53.7687 76.5647 55.3354 79.47 55.875 82.4375V98.375H61.9346C62.858 99.9625 64.5389 101.031 66.5 101.031C68.4611 101.031 70.142 99.9625 71.0654 98.375H77.125V87.75H77.374V84.5957C77.374 80.7047 79.3973 76.7722 82.6865 73.7217C87.0859 69.3223 90.4062 63.0656 90.4062 55.875C90.4062 42.7494 79.6049 31.9272 66.5 32.0518ZM66.5 37.3643C76.7618 37.219 85.0938 45.6235 85.0938 55.875C85.0938 61.4365 82.5205 66.334 78.9512 69.9033L79.0342 69.9863C75.4648 73.317 73.1821 77.6749 72.5596 82.4375H60.9385C60.3574 77.8824 58.3964 73.483 54.7129 70.3184C50.0229 66.3236 47.2214 60.3263 48.1553 53.5508C49.3174 45.1774 56.1033 38.4537 64.4248 37.5303C65.12 37.4473 65.8152 37.3746 66.5 37.3643ZM29.3125 55.875V61.1875H37.2812V55.875H29.3125ZM95.7188 55.875V61.1875H103.688V55.875H95.7188ZM43.9219 77.374L38.3604 82.9355L42.0957 86.6709L47.6572 81.1094L43.9219 77.374ZM89.0781 77.374L85.3428 81.1094L90.9043 86.6709L94.6396 82.9355L89.0781 77.374ZM61.1875 87.75H71.8125V93.0625H61.1875V87.75Z"
+                      fill="white" />
+                  </svg>
+                </i>
+                <div class="why__item-box">
+                  <p class="why__item-title">
+                    Strategy comes first
+                  </p>
+                  <p class="why__item-text">
+                    Strategy is the cornerstone of growth, and we take it seriously. We’ll either review your existing
+                    strategy or build a new one.
+                  </p>
+                </div>
+              </div>
+              <div class="why__item">
+                <i class="why__item-icon">
+                  <svg viewBox="0 0 133 133" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="66.5" cy="66.5" r="66.5" fill="#131313" />
+                    <path
+                      d="M66.5312 43C57.8172 43 50.6875 50.1297 50.6875 58.8438C50.6875 63.6464 52.9279 67.9168 56.3318 70.8256C52.9527 72.5956 49.9943 75.2693 47.9148 78.4504C46.7885 76.8165 45.3031 75.3064 43.6568 74.1924C46.0086 71.8901 47.5188 68.709 47.5188 65.1812C47.5188 58.2125 41.8125 52.5063 34.8438 52.5063C27.875 52.5063 22.1688 58.2125 22.1688 65.1812C22.1688 68.709 23.6789 71.8901 26.0307 74.1924C21.8098 77.0517 19 81.9286 19 87.3625H25.3375C25.3375 82.1143 29.5955 77.8563 34.8438 77.8563C40.092 77.8563 44.35 82.1143 44.35 87.3625V90.5312H50.6875C50.6875 81.8048 57.8048 74.6875 66.5312 74.6875C75.2577 74.6875 82.375 81.8048 82.375 90.5312H88.7125V87.3625C88.7125 82.1143 92.9705 77.8563 98.2188 77.8563C103.467 77.8563 107.725 82.1143 107.725 87.3625H114.062C114.062 81.9286 111.253 77.0517 107.032 74.1924C109.384 71.8901 110.894 68.709 110.894 65.1812C110.894 58.2125 105.188 52.5063 98.2188 52.5063C91.25 52.5063 85.5438 58.2125 85.5438 65.1812C85.5438 68.709 87.0539 71.8901 89.4057 74.1924C87.7594 75.3064 86.274 76.8165 85.1477 78.4504C83.0682 75.2693 80.1098 72.5956 76.7307 70.8256C80.1346 67.9168 82.375 63.6464 82.375 58.8438C82.375 50.1297 75.2453 43 66.5312 43ZM66.5312 49.3375C71.8166 49.3375 76.0375 53.5584 76.0375 58.8438C76.0375 64.1291 71.8166 68.35 66.5312 68.35C61.2459 68.35 57.025 64.1291 57.025 58.8438C57.025 53.5584 61.2459 49.3375 66.5312 49.3375ZM34.8438 58.8438C38.3838 58.8438 41.1812 61.6412 41.1812 65.1812C41.1812 68.7213 38.3838 71.5188 34.8438 71.5188C31.3037 71.5188 28.5063 68.7213 28.5063 65.1812C28.5063 61.6412 31.3037 58.8438 34.8438 58.8438ZM98.2188 58.8438C101.759 58.8438 104.556 61.6412 104.556 65.1812C104.556 68.7213 101.759 71.5188 98.2188 71.5188C94.6787 71.5188 91.8812 68.7213 91.8812 65.1812C91.8812 61.6412 94.6787 58.8438 98.2188 58.8438Z"
+                      fill="white" />
+                  </svg>
+
+                </i>
+                <div class="why__item-box">
+                  <p class="why__item-title">
+                    Speaking the same language
+                  </p>
+                  <p class="why__item-text">
+                    Sure, we deliver excellent performance results. But we also care about your Product/Market Fit, ICP,
+                    and MRR
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="info">
+        <div class="info__wrapper">
+          <img class="info__bg" src="./assets/images/info/bg.png" alt="">
+          <img class="info__fon" src="./assets/images/info/fon.png" alt="">
+          <div class="container">
+            <p class="info__text">
+              We’ll fit seamlessly into your routine. Agile, sprints, and rapid experiments are where our team brings
+              their A-game
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="how">
+        <div class="how__wrapper">
+          <div class="container">
+            <h2 class="how__title title title--white">
+              <i class="title__icon">
+                <svg viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M29.5 58.4271C45.7924 58.4271 59 45.476 59 29.4999C59 13.5239 45.7924 0.572754 29.5 0.572754C13.2076 0.572754 0 13.5239 0 29.4999C0 45.476 13.2076 58.4271 29.5 58.4271Z"
+                    fill="#C4FF02" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M32.6415 12.4252L50.3033 38.751C52.1469 41.2566 49.8976 44.1068 47.4955 44.1068H12.0293C10.8418 44.1068 9.65918 43.4901 9.02403 42.3593C8.37674 41.2069 8.48439 39.8498 9.1652 38.835L26.8834 12.4251C27.6239 11.2976 28.8202 10.8835 29.7624 10.8835C30.7047 10.8835 31.9009 11.2977 32.6415 12.4252ZM32.5702 16.1629L32.6046 16.1116C32.5933 16.1289 32.5818 16.146 32.5702 16.1629ZM26.9203 16.1118L26.9545 16.1628C26.943 16.1459 26.9316 16.1289 26.9203 16.1118ZM29.7624 20.3481L41.1739 37.3576H18.3509L29.7624 20.3481ZM44.6995 42.6128C44.6722 42.5737 44.6459 42.5345 44.6206 42.4951L44.6995 42.6128Z"
+                    fill="#131313" />
+                </svg>
+              </i>
+              how it works
+            </h2>
+            <div class="how__inner">
+              <div class="how__item">
+                <i class="how__item-icon">
+                  <svg viewBox="0 0 46 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M19.9016 1.67048L0.735025 30.1966C-1.2657 32.9115 1.17527 36 3.78205 36L42.27 36C43.5587 36 44.8421 35.3317 45.5314 34.1064C46.2338 32.8577 46.117 31.3872 45.3782 30.2875L26.1504 1.67035C25.3467 0.44869 24.0486 -1.91906e-06 23.026 -2.00845e-06C22.0035 -2.09784e-06 20.7053 0.448721 19.9016 1.67048ZM19.979 5.72057L19.9417 5.66504C19.954 5.68373 19.9664 5.70224 19.979 5.72057ZM26.1103 5.66519L26.0732 5.72044C26.0857 5.7022 26.0981 5.68379 26.1103 5.66519ZM23.026 10.2556L10.6423 28.6866L35.4098 28.6866L23.026 10.2556ZM6.81623 34.381C6.84591 34.3388 6.87445 34.2963 6.90188 34.2535L6.81623 34.381Z"
+                      fill="#C4FF02" />
+                  </svg>
+                </i>
+                <div class="how__item-box">
+                  <p class="how__item-title">
+                    Planning
+                    <i class="how__item-arrow">
+                      <svg viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.75 27C6.75 28.242 7.758 29.25 9 29.25L38.4082 29.25L29.7158 37.9424C28.8361 38.8221 28.8361 40.2465 29.7158 41.124L29.9092 41.3174C30.7889 42.1971 32.2133 42.1971 33.0908 41.3174L45.8174 28.5908C46.6971 27.711 46.6971 26.2867 45.8174 25.4092L33.0908 12.6826C32.2111 11.8028 30.7867 11.8028 29.9092 12.6826L29.7158 12.876C28.8361 13.7557 28.8361 15.1801 29.7158 16.0576L38.4082 24.75L9 24.75C7.758 24.75 6.75 25.758 6.75 27Z"
+                          fill="white" />
+                      </svg>
+                    </i>
+                  </p>
+                  <p class="how__item-text">
+                    Understand objectives, conduct market research, define target audience
+                  </p>
+                </div>
+              </div>
+              <div class="how__item">
+                <i class="how__item-icon how__item-icon--right">
+                  <svg viewBox="0 0 36 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M34.3295 19.9016L5.80342 0.735029C3.08844 -1.26569 1.85535e-06 1.17527 1.96929e-06 3.78206L3.65166e-06 42.2701C3.70799e-06 43.5587 0.668262 44.8421 1.89357 45.5314C3.1423 46.2338 4.6128 46.117 5.71245 45.3782L34.3296 26.1504C35.5513 25.3467 36 24.0486 36 23.026C36 22.0035 35.5513 20.7053 34.3295 19.9016ZM30.2794 19.979L30.335 19.9417C30.3163 19.954 30.2978 19.9664 30.2794 19.979ZM30.3348 26.1103L30.2796 26.0732C30.2978 26.0857 30.3162 26.0981 30.3348 26.1103ZM25.7444 23.026L7.31336 10.6423L7.31336 35.4098L25.7444 23.026ZM1.61897 6.81623C1.66123 6.84591 1.70374 6.87446 1.74645 6.90189L1.61897 6.81623Z"
+                      fill="#C4FF02" />
+                  </svg>
+                </i>
+                <div class="how__item-box">
+                  <p class="how__item-title">
+                    Processing
+                    <i class="how__item-arrow">
+                      <svg viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.75 27C6.75 28.242 7.758 29.25 9 29.25L38.4082 29.25L29.7158 37.9424C28.8361 38.8221 28.8361 40.2465 29.7158 41.124L29.9092 41.3174C30.7889 42.1971 32.2133 42.1971 33.0908 41.3174L45.8174 28.5908C46.6971 27.711 46.6971 26.2867 45.8174 25.4092L33.0908 12.6826C32.2111 11.8028 30.7867 11.8028 29.9092 12.6826L29.7158 12.876C28.8361 13.7557 28.8361 15.1801 29.7158 16.0576L38.4082 24.75L9 24.75C7.758 24.75 6.75 25.758 6.75 27Z"
+                          fill="white" />
+                      </svg>
+                    </i>
+                  </p>
+                  <p class="how__item-text">
+                    Develop strategies, create content,
+                    determine channels, set budget
+                  </p>
+                </div>
+              </div>
+              <div class="how__item">
+                <i class="how__item-icon">
+                  <svg viewBox="0 0 46 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M26.0984 34.3295L45.265 5.80342C47.2657 3.08845 44.8247 3.8147e-06 42.2179 3.8147e-06L3.72995 3.8147e-06C2.44126 3.8147e-06 1.15787 0.668262 0.468593 1.89357C-0.233848 3.1423 -0.117021 4.6128 0.621799 5.71245L19.8496 34.3296C20.6533 35.5513 21.9514 36 22.974 36C23.9965 36 25.2947 35.5513 26.0984 34.3295ZM26.021 30.2794L26.0583 30.335C26.046 30.3163 26.0336 30.2978 26.021 30.2794ZM19.8897 30.3348L19.9268 30.2796C19.9143 30.2978 19.9019 30.3162 19.8897 30.3348ZM22.974 25.7444L35.3577 7.31336L10.5902 7.31336L22.974 25.7444ZM39.1838 1.61897C39.1541 1.66123 39.1255 1.70374 39.0981 1.74645L39.1838 1.61897Z"
+                      fill="#C4FF02" />
+                  </svg>
+                </i>
+                <div class="how__item-box">
+                  <p class="how__item-title">
+                    Result
+                    <i class="how__item-arrow">
+                      <svg viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.75 27C6.75 28.242 7.758 29.25 9 29.25L38.4082 29.25L29.7158 37.9424C28.8361 38.8221 28.8361 40.2465 29.7158 41.124L29.9092 41.3174C30.7889 42.1971 32.2133 42.1971 33.0908 41.3174L45.8174 28.5908C46.6971 27.711 46.6971 26.2867 45.8174 25.4092L33.0908 12.6826C32.2111 11.8028 30.7867 11.8028 29.9092 12.6826L29.7158 12.876C28.8361 13.7557 28.8361 15.1801 29.7158 16.0576L38.4082 24.75L9 24.75C7.758 24.75 6.75 25.758 6.75 27Z"
+                          fill="white" />
+                      </svg>
+                    </i>
+                  </p>
+                  <p class="how__item-text">
+                    Implement, measure, and refine.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="studies">
+        <div class="studies__wrapper">
+          <div class="container">
+            <div class="studies__top">
+              <h2 class="studies__title title">
+                <i class="title__icon">
+                  <svg viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M29.5 58.4271C45.7924 58.4271 59 45.476 59 29.4999C59 13.5239 45.7924 0.572754 29.5 0.572754C13.2076 0.572754 0 13.5239 0 29.4999C0 45.476 13.2076 58.4271 29.5 58.4271Z"
+                      fill="#86F9D7" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M32.6415 12.4252L50.3033 38.751C52.1469 41.2566 49.8976 44.1068 47.4955 44.1068H12.0293C10.8418 44.1068 9.65918 43.4901 9.02403 42.3593C8.37674 41.2069 8.48439 39.8498 9.1652 38.835L26.8834 12.4251C27.6239 11.2976 28.8202 10.8835 29.7624 10.8835C30.7047 10.8835 31.9009 11.2977 32.6415 12.4252ZM32.5702 16.1629L32.6046 16.1116C32.5933 16.1289 32.5818 16.146 32.5702 16.1629ZM26.9203 16.1118L26.9545 16.1628C26.943 16.1459 26.9316 16.1289 26.9203 16.1118ZM29.7624 20.3481L41.1739 37.3576H18.3509L29.7624 20.3481ZM44.6995 42.6128C44.6722 42.5737 44.6459 42.5345 44.6206 42.4951L44.6995 42.6128Z"
+                      fill="#131313" />
+                  </svg>
+                </i>
+                case studies
+              </h2>
+              <p class="studies__text">
+                Let's talk numbers. See what our favorite clients managed to achieve
+              </p>
+            </div>
+            <div class="studies__inner">
+              <div class="studies__item">
+                <p class="studies__item-title">Naming</p>
+                <p class="studies__item-text">Описательная часть как на нынешнем сайте</p>
+                <p class="studies__item-bot">#SEO Optimization</p>
+              </div>
+              <div class="studies__item">
+                <p class="studies__item-title">Naming</p>
+                <p class="studies__item-text">Описательная часть как на нынешнем сайте</p>
+                <p class="studies__item-bot">#SEO Optimization</p>
+              </div>
+              <div class="studies__item">
+                <p class="studies__item-title">Naming</p>
+                <p class="studies__item-bot">#SEO Optimization</p>
+              </div>
+              <div class="studies__item">
+                <p class="studies__item-title">Naming</p>
+                <p class="studies__item-bot">#SEO Optimization</p>
+              </div>
+            </div>
+            <a class="link" href="#">
+              see more
+              <i class="link__icon">
+                <svg viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="31" cy="31" r="31" fill="#86F9D7" />
+                  <path
+                    d="M20.8282 15.9765C20.1602 16.365 19.7583 17.0677 19.7583 17.8501L19.7583 44.8979C19.7583 45.6458 20.1522 46.3218 20.8096 46.7024C21.4829 47.0936 22.2866 47.1016 22.96 46.7157L46.7396 33.0201C47.3357 32.6714 47.6924 32.0434 47.6924 31.3407C47.6924 30.6381 47.3357 30.01 46.7369 29.6614L22.9573 15.9632C22.292 15.5826 21.4962 15.5879 20.8282 15.9765ZM41.5578 31.3407L23.8462 41.5392L23.8462 21.1396L41.5578 31.3407Z"
+                    fill="black" />
+                </svg>
+
+              </i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="pricing">
+        <div class="pricing__wrapper">
+          <div class="container">
+            <h2 class="pricing__title title">
+              <i class="title__icon">
+                <svg viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M29.5 58.4271C45.7924 58.4271 59 45.476 59 29.4999C59 13.5239 45.7924 0.572754 29.5 0.572754C13.2076 0.572754 0 13.5239 0 29.4999C0 45.476 13.2076 58.4271 29.5 58.4271Z"
+                    fill="#C4FF02" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M32.6415 12.4252L50.3033 38.751C52.1469 41.2566 49.8976 44.1068 47.4955 44.1068H12.0293C10.8418 44.1068 9.65918 43.4901 9.02403 42.3593C8.37674 41.2069 8.48439 39.8498 9.1652 38.835L26.8834 12.4251C27.6239 11.2976 28.8202 10.8835 29.7624 10.8835C30.7047 10.8835 31.9009 11.2977 32.6415 12.4252ZM32.5702 16.1629L32.6046 16.1116C32.5933 16.1289 32.5818 16.146 32.5702 16.1629ZM26.9203 16.1118L26.9545 16.1628C26.943 16.1459 26.9316 16.1289 26.9203 16.1118ZM29.7624 20.3481L41.1739 37.3576H18.3509L29.7624 20.3481ZM44.6995 42.6128C44.6722 42.5737 44.6459 42.5345 44.6206 42.4951L44.6995 42.6128Z"
+                    fill="#131313" />
+                </svg>
+              </i>
+              pricing plan
+            </h2>
+            <div class="pricing__inner">
+              <div class="pricing__item">
+                <p class="pricing__item-text">
+                  We take accountability seriously. Every decision comes with its assessed impact on ROI.
+                </p>
+                <div class="pricing__item-bot">
+                  <p class="pricing__item-textAlt pricing__item-textAlt--right">/month</p>
+                  <p class="pricing__item-textAlt">
+                    from
+                    <span class="pricing__item-num">3 500 $</span>
+                  </p>
+                  <a class="btn btn--alt" href="#">
+                    get started
+                  </a>
+                </div>
+              </div>
+              <div class="pricing__info">
+                <p class="pricing__info-title">
+                  What’s included:
+                </p>
+                <div class="pricing__info-box">
+                  <div class="pricing__info-item">
+                    <i class="pricing__info-icon">
+                      <svg viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M17.5 34.5834C26.9351 34.5834 34.5833 26.9352 34.5833 17.5001C34.5833 8.06496 26.9351 0.416748 17.5 0.416748C8.06487 0.416748 0.416664 8.06496 0.416664 17.5001C0.416664 26.9352 8.06487 34.5834 17.5 34.5834ZM26.6755 12.0932C26.7554 12.0109 26.8179 11.9133 26.8593 11.8063C26.9006 11.6992 26.92 11.585 26.9163 11.4703C26.9125 11.3556 26.8857 11.2429 26.8374 11.1388C26.7891 11.0347 26.7204 10.9414 26.6352 10.8645C26.5501 10.7876 26.4503 10.7286 26.3419 10.6911C26.2335 10.6535 26.1186 10.6382 26.0041 10.6461C25.8896 10.6539 25.7779 10.6848 25.6756 10.7368C25.5733 10.7887 25.4826 10.8608 25.4087 10.9486L15.1767 22.2552L9.54771 16.8817C9.38392 16.7251 9.16465 16.6401 8.93815 16.6452C8.71164 16.6503 8.49645 16.7452 8.33991 16.909C8.18338 17.0728 8.09831 17.292 8.10344 17.5186C8.10857 17.7451 8.20346 17.9603 8.36725 18.1168L14.6317 24.096L15.2664 24.7024L15.8549 24.0515L26.6755 12.0932Z"
+                          fill="#C4FF02" />
+                      </svg>
+                    </i>
+                    <div class="pricing__info-block">
+                      <p class="pricing__info-subtitle">
+                        Brainstorming companions
+                      </p>
+                      <p class="pricing__info-text">
+                        We know how important it is to have a fresh perspective. Being in charge is tough, but we are
+                        here to help
+                      </p>
+                    </div>
+                  </div>
+                  <div class="pricing__info-item">
+                    <i class="pricing__info-icon">
+                      <svg viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M17.5 34.5834C26.9351 34.5834 34.5833 26.9352 34.5833 17.5001C34.5833 8.06496 26.9351 0.416748 17.5 0.416748C8.06487 0.416748 0.416664 8.06496 0.416664 17.5001C0.416664 26.9352 8.06487 34.5834 17.5 34.5834ZM26.6755 12.0932C26.7554 12.0109 26.8179 11.9133 26.8593 11.8063C26.9006 11.6992 26.92 11.585 26.9163 11.4703C26.9125 11.3556 26.8857 11.2429 26.8374 11.1388C26.7891 11.0347 26.7204 10.9414 26.6352 10.8645C26.5501 10.7876 26.4503 10.7286 26.3419 10.6911C26.2335 10.6535 26.1186 10.6382 26.0041 10.6461C25.8896 10.6539 25.7779 10.6848 25.6756 10.7368C25.5733 10.7887 25.4826 10.8608 25.4087 10.9486L15.1767 22.2552L9.54771 16.8817C9.38392 16.7251 9.16465 16.6401 8.93815 16.6452C8.71164 16.6503 8.49645 16.7452 8.33991 16.909C8.18338 17.0728 8.09831 17.292 8.10344 17.5186C8.10857 17.7451 8.20346 17.9603 8.36725 18.1168L14.6317 24.096L15.2664 24.7024L15.8549 24.0515L26.6755 12.0932Z"
+                          fill="#C4FF02" />
+                      </svg>
+                    </i>
+                    <div class="pricing__info-block">
+                      <p class="pricing__info-subtitle">
+                        Advanced tools
+                      </p>
+                      <p class="pricing__info-text">
+                        Buying marketing subscriptions can get expensive. Get unlimited access to the hottest marketing
+                        and analytics tools
+                      </p>
+                    </div>
+                  </div>
+                  <div class="pricing__info-item">
+                    <i class="pricing__info-icon">
+                      <svg viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M17.5 34.5834C26.9351 34.5834 34.5833 26.9352 34.5833 17.5001C34.5833 8.06496 26.9351 0.416748 17.5 0.416748C8.06487 0.416748 0.416664 8.06496 0.416664 17.5001C0.416664 26.9352 8.06487 34.5834 17.5 34.5834ZM26.6755 12.0932C26.7554 12.0109 26.8179 11.9133 26.8593 11.8063C26.9006 11.6992 26.92 11.585 26.9163 11.4703C26.9125 11.3556 26.8857 11.2429 26.8374 11.1388C26.7891 11.0347 26.7204 10.9414 26.6352 10.8645C26.5501 10.7876 26.4503 10.7286 26.3419 10.6911C26.2335 10.6535 26.1186 10.6382 26.0041 10.6461C25.8896 10.6539 25.7779 10.6848 25.6756 10.7368C25.5733 10.7887 25.4826 10.8608 25.4087 10.9486L15.1767 22.2552L9.54771 16.8817C9.38392 16.7251 9.16465 16.6401 8.93815 16.6452C8.71164 16.6503 8.49645 16.7452 8.33991 16.909C8.18338 17.0728 8.09831 17.292 8.10344 17.5186C8.10857 17.7451 8.20346 17.9603 8.36725 18.1168L14.6317 24.096L15.2664 24.7024L15.8549 24.0515L26.6755 12.0932Z"
+                          fill="#C4FF02" />
+                      </svg>
+                    </i>
+                    <div class="pricing__info-block">
+                      <p class="pricing__info-subtitle">
+                        Pause or cancel any time
+                      </p>
+                      <p class="pricing__info-text">
+                        We love working with like-minded people. If you feel that we are no longer on the same page,
+                        give us a stop sign.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="pricing__info-item">
+                    <i class="pricing__info-icon">
+                      <svg viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M17.5 34.5834C26.9351 34.5834 34.5833 26.9352 34.5833 17.5001C34.5833 8.06496 26.9351 0.416748 17.5 0.416748C8.06487 0.416748 0.416664 8.06496 0.416664 17.5001C0.416664 26.9352 8.06487 34.5834 17.5 34.5834ZM26.6755 12.0932C26.7554 12.0109 26.8179 11.9133 26.8593 11.8063C26.9006 11.6992 26.92 11.585 26.9163 11.4703C26.9125 11.3556 26.8857 11.2429 26.8374 11.1388C26.7891 11.0347 26.7204 10.9414 26.6352 10.8645C26.5501 10.7876 26.4503 10.7286 26.3419 10.6911C26.2335 10.6535 26.1186 10.6382 26.0041 10.6461C25.8896 10.6539 25.7779 10.6848 25.6756 10.7368C25.5733 10.7887 25.4826 10.8608 25.4087 10.9486L15.1767 22.2552L9.54771 16.8817C9.38392 16.7251 9.16465 16.6401 8.93815 16.6452C8.71164 16.6503 8.49645 16.7452 8.33991 16.909C8.18338 17.0728 8.09831 17.292 8.10344 17.5186C8.10857 17.7451 8.20346 17.9603 8.36725 18.1168L14.6317 24.096L15.2664 24.7024L15.8549 24.0515L26.6755 12.0932Z"
+                          fill="#C4FF02" />
+                      </svg>
+                    </i>
+                    <div class="pricing__info-block">
+                      <p class="pricing__info-subtitle">
+                        Full-stack team
+                      </p>
+                      <p class="pricing__info-text">
+                        We work with growing teams, and we know what they tipycally need. The odds are, we have the
+                        right specialist for you
+                      </p>
+                    </div>
+                  </div>
+                  <div class="pricing__info-item">
+                    <i class="pricing__info-icon">
+                      <svg viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M17.5 34.5834C26.9351 34.5834 34.5833 26.9352 34.5833 17.5001C34.5833 8.06496 26.9351 0.416748 17.5 0.416748C8.06487 0.416748 0.416664 8.06496 0.416664 17.5001C0.416664 26.9352 8.06487 34.5834 17.5 34.5834ZM26.6755 12.0932C26.7554 12.0109 26.8179 11.9133 26.8593 11.8063C26.9006 11.6992 26.92 11.585 26.9163 11.4703C26.9125 11.3556 26.8857 11.2429 26.8374 11.1388C26.7891 11.0347 26.7204 10.9414 26.6352 10.8645C26.5501 10.7876 26.4503 10.7286 26.3419 10.6911C26.2335 10.6535 26.1186 10.6382 26.0041 10.6461C25.8896 10.6539 25.7779 10.6848 25.6756 10.7368C25.5733 10.7887 25.4826 10.8608 25.4087 10.9486L15.1767 22.2552L9.54771 16.8817C9.38392 16.7251 9.16465 16.6401 8.93815 16.6452C8.71164 16.6503 8.49645 16.7452 8.33991 16.909C8.18338 17.0728 8.09831 17.292 8.10344 17.5186C8.10857 17.7451 8.20346 17.9603 8.36725 18.1168L14.6317 24.096L15.2664 24.7024L15.8549 24.0515L26.6755 12.0932Z"
+                          fill="#C4FF02" />
+                      </svg>
+                    </i>
+                    <div class="pricing__info-block">
+                      <p class="pricing__info-subtitle">
+                        24/7 Full Support
+                      </p>
+                      <p class="pricing__info-text">
+                        Communication is key, and our team respects your time
+                      </p>
+                    </div>
+                  </div>
+                  <div class="pricing__info-item">
+                    <i class="pricing__info-icon">
+                      <svg viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M17.5 34.5834C26.9351 34.5834 34.5833 26.9352 34.5833 17.5001C34.5833 8.06496 26.9351 0.416748 17.5 0.416748C8.06487 0.416748 0.416664 8.06496 0.416664 17.5001C0.416664 26.9352 8.06487 34.5834 17.5 34.5834ZM26.6755 12.0932C26.7554 12.0109 26.8179 11.9133 26.8593 11.8063C26.9006 11.6992 26.92 11.585 26.9163 11.4703C26.9125 11.3556 26.8857 11.2429 26.8374 11.1388C26.7891 11.0347 26.7204 10.9414 26.6352 10.8645C26.5501 10.7876 26.4503 10.7286 26.3419 10.6911C26.2335 10.6535 26.1186 10.6382 26.0041 10.6461C25.8896 10.6539 25.7779 10.6848 25.6756 10.7368C25.5733 10.7887 25.4826 10.8608 25.4087 10.9486L15.1767 22.2552L9.54771 16.8817C9.38392 16.7251 9.16465 16.6401 8.93815 16.6452C8.71164 16.6503 8.49645 16.7452 8.33991 16.909C8.18338 17.0728 8.09831 17.292 8.10344 17.5186C8.10857 17.7451 8.20346 17.9603 8.36725 18.1168L14.6317 24.096L15.2664 24.7024L15.8549 24.0515L26.6755 12.0932Z"
+                          fill="#C4FF02" />
+                      </svg>
+                    </i>
+                    <div class="pricing__info-block">
+                      <p class="pricing__info-subtitle">
+                        Free Consultation
+                      </p>
+                      <p class="pricing__info-text">
+                        We make sure you don't leave here empty-handed. Even if we part ways
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="reviews">
+        <div class="reviews__wrapper">
+          <img class="reviews__bg" src="./assets/images/reviews/bg.png" alt="">
+          <div class="container">
+            <div class="reviews__top">
+              <h2 class="reviews__title title">
+                <i class="title__icon">
+                  <svg viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M29.5 58.4271C45.7924 58.4271 59 45.476 59 29.4999C59 13.5239 45.7924 0.572754 29.5 0.572754C13.2076 0.572754 0 13.5239 0 29.4999C0 45.476 13.2076 58.4271 29.5 58.4271Z"
+                      fill="#C4FF02" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M32.6415 12.4252L50.3033 38.751C52.1469 41.2566 49.8976 44.1068 47.4955 44.1068H12.0293C10.8418 44.1068 9.65918 43.4901 9.02403 42.3593C8.37674 41.2069 8.48439 39.8498 9.1652 38.835L26.8834 12.4251C27.6239 11.2976 28.8202 10.8835 29.7624 10.8835C30.7047 10.8835 31.9009 11.2977 32.6415 12.4252ZM32.5702 16.1629L32.6046 16.1116C32.5933 16.1289 32.5818 16.146 32.5702 16.1629ZM26.9203 16.1118L26.9545 16.1628C26.943 16.1459 26.9316 16.1289 26.9203 16.1118ZM29.7624 20.3481L41.1739 37.3576H18.3509L29.7624 20.3481ZM44.6995 42.6128C44.6722 42.5737 44.6459 42.5345 44.6206 42.4951L44.6995 42.6128Z"
+                      fill="#131313" />
+                  </svg>
+                </i>
+                copymonkey
+              </h2>
+              <p class="reviews__subtitle">
+                Customer testimonials
+              </p>
+            </div>
+            <div class="reviews__swiper swiper">
+              <div class="reviews__swiper-wrapper swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <div class="reviews__swiper-slide">
+                      <img class="reviews__swiper-img" src="./assets/images/reviews/1.png" alt="">
+                      <p class="reviews__swiper-text">
+                        “I really enjoyed working with you guys, you guys are are very communicative and quick to do the
+                        job. I really can`t wait to work with you again!”
+                      </p>
+                      <p class="reviews__swiper-name">
+                        Leo White
+                      </p>
+                      <p class="reviews__swiper-who">
+                        CEO
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <div class="reviews__swiper-slide">
+                      <img class="reviews__swiper-img" src="./assets/images/reviews/1.png" alt="">
+                      <p class="reviews__swiper-text">
+                        “I really enjoyed working with you guys, you guys are are very communicative and quick to do the
+                        job. I really can`t wait to work with you again!”
+                      </p>
+                      <p class="reviews__swiper-name">
+                        Leo White
+                      </p>
+                      <p class="reviews__swiper-who">
+                        CEO
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <div class="reviews__swiper-slide">
+                      <img class="reviews__swiper-img" src="./assets/images/reviews/1.png" alt="">
+                      <p class="reviews__swiper-text">
+                        “I really enjoyed working with you guys, you guys are are very communicative and quick to do the
+                        job. I really can`t wait to work with you again!”
+                      </p>
+                      <p class="reviews__swiper-name">
+                        Leo White
+                      </p>
+                      <p class="reviews__swiper-who">
+                        CEO
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__swiper-pagination swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="team">
+        <div class="team__wrapper">
+          <div class="container">
+            <h2 class="team__title title title--white">
+              <i class="title__icon">
+                <svg viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M29.5 58.4271C45.7924 58.4271 59 45.476 59 29.4999C59 13.5239 45.7924 0.572754 29.5 0.572754C13.2076 0.572754 0 13.5239 0 29.4999C0 45.476 13.2076 58.4271 29.5 58.4271Z"
+                    fill="#86F9D7" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M32.6415 12.4252L50.3033 38.751C52.1469 41.2566 49.8976 44.1068 47.4955 44.1068H12.0293C10.8418 44.1068 9.65918 43.4901 9.02403 42.3593C8.37674 41.2069 8.48439 39.8498 9.1652 38.835L26.8834 12.4251C27.6239 11.2976 28.8202 10.8835 29.7624 10.8835C30.7047 10.8835 31.9009 11.2977 32.6415 12.4252ZM32.5702 16.1629L32.6046 16.1116C32.5933 16.1289 32.5818 16.146 32.5702 16.1629ZM26.9203 16.1118L26.9545 16.1628C26.943 16.1459 26.9316 16.1289 26.9203 16.1118ZM29.7624 20.3481L41.1739 37.3576H18.3509L29.7624 20.3481ZM44.6995 42.6128C44.6722 42.5737 44.6459 42.5345 44.6206 42.4951L44.6995 42.6128Z"
+                    fill="#131313" />
+                </svg>
+              </i>
+              our team & people
+            </h2>
+            <div class="team__swiper swiper">
+              <div class="team__swiper-wrapper swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <div class="team__swiper-slide">
+                      <img class="team__swiper-img" src="./assets/images/team/1.png" alt="">
+                      <p class="team__swiper-name">
+                        helen
+                      </p>
+                      <p class="team__swiper-who">
+                        ux/ui and visual
+                      </p>
+                      <p class="team__swiper-text">
+                        more than 6 years of experience
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <div class="team__swiper-slide">
+                      <img class="team__swiper-img" src="./assets/images/team/2.png" alt="">
+                      <p class="team__swiper-name">
+                        bogdan
+                      </p>
+                      <p class="team__swiper-who">
+                        CEO
+                      </p>
+                      <p class="team__swiper-text">
+                        more than 6 years of experience
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <div class="team__swiper-slide">
+                      <img class="team__swiper-img" src="./assets/images/team/3.png" alt="">
+                      <p class="team__swiper-name">
+                        Kate
+                      </p>
+                      <p class="team__swiper-who">
+                        Project Manager
+                      </p>
+                      <p class="team__swiper-text">
+                        more than 6 years of experience
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <div class="team__swiper-slide">
+                      <img class="team__swiper-img" src="./assets/images/team/1.png" alt="">
+                      <p class="team__swiper-name">
+                        helen
+                      </p>
+                      <p class="team__swiper-who">
+                        ux/ui and visual
+                      </p>
+                      <p class="team__swiper-text">
+                        more than 6 years of experience
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <div class="team__swiper-slide">
+                      <img class="team__swiper-img" src="./assets/images/team/2.png" alt="">
+                      <p class="team__swiper-name">
+                        bogdan
+                      </p>
+                      <p class="team__swiper-who">
+                        CEO
+                      </p>
+                      <p class="team__swiper-text">
+                        more than 6 years of experience
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <div class="team__swiper-slide">
+                      <img class="team__swiper-img" src="./assets/images/team/3.png" alt="">
+                      <p class="team__swiper-name">
+                        Kate
+                      </p>
+                      <p class="team__swiper-who">
+                        Project Manager
+                      </p>
+                      <p class="team__swiper-text">
+                        more than 6 years of experience
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="team__swiper-pagination swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="team__arrow arrow arrow--team">
+            <div class="team__arrow-prev arrow__prev swiper-button-prev"></div>
+            <div class="team__arrow-next arrow__next swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="tell">
+        <div class="tell__wrapper">
+          <div class="container">
+            <div class="tell__inner">
+              <p class="tell__text">
+                Tell us about your awesome project
+              </p>
+              <a class="btn btn--alt btn--shadow" href="#">
+                contact us
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="blog">
+        <div class="blog__wrapper">
+          <div class="container">
+            <h2 class="blog__title title">
+              <i class="title__icon">
+                <svg viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M29.5 58.4271C45.7924 58.4271 59 45.476 59 29.4999C59 13.5239 45.7924 0.572754 29.5 0.572754C13.2076 0.572754 0 13.5239 0 29.4999C0 45.476 13.2076 58.4271 29.5 58.4271Z"
+                    fill="#86F9D7" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M32.6415 12.4252L50.3033 38.751C52.1469 41.2566 49.8976 44.1068 47.4955 44.1068H12.0293C10.8418 44.1068 9.65918 43.4901 9.02403 42.3593C8.37674 41.2069 8.48439 39.8498 9.1652 38.835L26.8834 12.4251C27.6239 11.2976 28.8202 10.8835 29.7624 10.8835C30.7047 10.8835 31.9009 11.2977 32.6415 12.4252ZM32.5702 16.1629L32.6046 16.1116C32.5933 16.1289 32.5818 16.146 32.5702 16.1629ZM26.9203 16.1118L26.9545 16.1628C26.943 16.1459 26.9316 16.1289 26.9203 16.1118ZM29.7624 20.3481L41.1739 37.3576H18.3509L29.7624 20.3481ZM44.6995 42.6128C44.6722 42.5737 44.6459 42.5345 44.6206 42.4951L44.6995 42.6128Z"
+                    fill="#131313" />
+                </svg>
+              </i>
+              BLOG and news
+            </h2>
+            <div class="blog__inner">
+              <a class="blog__item" href="#">
+                <p class="blog__item-title">
+                  CPGs brands just get data clean rooms
+                </p>
+                <div class="blog__item-box">
+                  <img class="blog__item-img" src="./assets/images/blog/1.png" alt="">
+                  <div class="blog__item-block">
+                    <p class="blog__item-text">
+                      Passionate about marketing, we've curated
+                    </p>
+                    <div class="blog__link">
+                      <span>read</span>
+                      <i class="blog__link-arrow">
+                        <svg viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M15.5 28.9999C15.5 29.8279 16.172 30.4999 17 30.4999L36.6055 30.4999L30.8105 36.2949C30.224 36.8814 30.224 37.831 30.8105 38.416L30.9395 38.5449C31.526 39.1314 32.4755 39.1314 33.0605 38.5449L41.5449 30.0605C42.1314 29.474 42.1314 28.5244 41.5449 27.9394L33.0605 19.455C32.474 18.8685 31.5245 18.8685 30.9395 19.455L30.8105 19.5839C30.224 20.1704 30.224 21.12 30.8105 21.705L36.6055 27.4999L17 27.4999C16.172 27.4999 15.5 28.1719 15.5 28.9999Z"
+                            fill="black" />
+                        </svg>
+                      </i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a class="blog__item" href="#">
+                <p class="blog__item-title">
+                  Robotic process just change the game
+                </p>
+                <div class="blog__item-box">
+                  <img class="blog__item-img" src="./assets/images/blog/2.png" alt="">
+                  <div class="blog__item-block">
+                    <p class="blog__item-text">
+                      Passionate about marketing, we've curated
+                    </p>
+                    <div class="blog__link">
+                      <span>read</span>
+                      <i class="blog__link-arrow">
+                        <svg viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M15.5 28.9999C15.5 29.8279 16.172 30.4999 17 30.4999L36.6055 30.4999L30.8105 36.2949C30.224 36.8814 30.224 37.831 30.8105 38.416L30.9395 38.5449C31.526 39.1314 32.4755 39.1314 33.0605 38.5449L41.5449 30.0605C42.1314 29.474 42.1314 28.5244 41.5449 27.9394L33.0605 19.455C32.474 18.8685 31.5245 18.8685 30.9395 19.455L30.8105 19.5839C30.224 20.1704 30.224 21.12 30.8105 21.705L36.6055 27.4999L17 27.4999C16.172 27.4999 15.5 28.1719 15.5 28.9999Z"
+                            fill="black" />
+                        </svg>
+                      </i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a class="blog__item" href="#">
+                <p class="blog__item-title">
+                  How NFT used by brand to collect data
+                </p>
+                <div class="blog__item-box">
+                  <img class="blog__item-img" src="./assets/images/blog/3.png" alt="">
+                  <div class="blog__item-block">
+                    <p class="blog__item-text">
+                      Passionate about marketing, we've curated
+                    </p>
+                    <div class="blog__link">
+                      <span>read</span>
+                      <i class="blog__link-arrow">
+                        <svg viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M15.5 28.9999C15.5 29.8279 16.172 30.4999 17 30.4999L36.6055 30.4999L30.8105 36.2949C30.224 36.8814 30.224 37.831 30.8105 38.416L30.9395 38.5449C31.526 39.1314 32.4755 39.1314 33.0605 38.5449L41.5449 30.0605C42.1314 29.474 42.1314 28.5244 41.5449 27.9394L33.0605 19.455C32.474 18.8685 31.5245 18.8685 30.9395 19.455L30.8105 19.5839C30.224 20.1704 30.224 21.12 30.8105 21.705L36.6055 27.4999L17 27.4999C16.172 27.4999 15.5 28.1719 15.5 28.9999Z"
+                            fill="black" />
+                        </svg>
+                      </i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <a class="link" href="#">
+              read more
+              <i class="link__icon">
+                <svg viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="31" cy="31" r="31" fill="#86F9D7" />
+                  <path
+                    d="M20.8282 15.9765C20.1602 16.365 19.7583 17.0677 19.7583 17.8501L19.7583 44.8979C19.7583 45.6458 20.1522 46.3218 20.8096 46.7024C21.4829 47.0936 22.2866 47.1016 22.96 46.7157L46.7396 33.0201C47.3357 32.6714 47.6924 32.0434 47.6924 31.3407C47.6924 30.6381 47.3357 30.01 46.7369 29.6614L22.9573 15.9632C22.292 15.5826 21.4962 15.5879 20.8282 15.9765ZM41.5578 31.3407L23.8462 41.5392L23.8462 21.1396L41.5578 31.3407Z"
+                    fill="black" />
+                </svg>
+              </i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <img class="footer__bg" src="./assets/images/footer/bg.svg" alt="">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__item">
+              <a class="logo" href="/">
+                <img class="logo__img" src="./assets/images/logo.svg" alt="">
+              </a>
+              <p class="footer__item-text">
+                We help to keep a clear balance between creativity and clear stradegy
+              </p>
+            </div>
+            <div class="footer__elem footer__elem--mobile">
+              <a class="footer__mail" href="mailto:info@ezcaa.com">
+                info@ezcaa.com
+              </a>
+              <div class="socials socials--alt">
+                <a class="socials__link" href="#">
+                  <i class="socials__icon">
+                    <svg viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M27 5.3999C15.0714 5.3999 5.40002 15.0713 5.40002 26.9999C5.40002 31.0521 6.53824 34.83 8.47971 38.0706L5.59338 48.5999L16.3477 45.7769C19.4929 47.565 23.1237 48.5999 27 48.5999C38.9286 48.5999 48.6 38.9285 48.6 26.9999C48.6 15.0713 38.9286 5.3999 27 5.3999ZM19.6067 16.9241C19.9577 16.9241 20.3183 16.922 20.6297 16.9382C21.0149 16.9472 21.4342 16.9754 21.8356 17.8628C22.3126 18.9176 23.3512 21.5637 23.4844 21.8319C23.6176 22.1001 23.712 22.4161 23.5266 22.7671C23.3502 23.1271 23.2584 23.345 22.9992 23.6636C22.731 23.9732 22.4372 24.3577 22.1942 24.5917C21.926 24.8599 21.649 25.154 21.9586 25.6886C22.2682 26.2232 23.3434 27.9757 24.9328 29.3905C26.9758 31.2157 28.6996 31.7766 29.236 32.0448C29.7724 32.313 30.083 32.2712 30.3926 31.9112C30.7112 31.5602 31.7306 30.3558 32.0907 29.8194C32.4417 29.283 32.8 29.3758 33.286 29.5522C33.7792 29.7286 36.4093 31.0243 36.9457 31.2925C37.4821 31.5607 37.8338 31.6934 37.9688 31.9112C38.1074 32.1362 38.1075 33.2073 37.6629 34.4565C37.2183 35.7039 35.0351 36.9102 34.0559 36.9948C33.0677 37.0866 32.1454 37.439 27.6328 35.6624C22.1896 33.5186 18.7569 27.9435 18.4887 27.5835C18.2205 27.2325 16.309 24.6849 16.309 22.0569C16.309 19.4199 17.6916 18.1285 18.1758 17.5921C18.669 17.0557 19.2467 16.9241 19.6067 16.9241Z"
+                        fill="white" />
+                    </svg>
+                  </i>
+                </a>
+                <a class="socials__link" href="#">
+                  <i class="socials__icon">
+                    <svg viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M27 5.3999C15.0714 5.3999 5.40002 14.6681 5.40002 26.0999C5.40002 32.2221 8.19123 37.7049 12.6 41.4948V50.3999L21.3047 46.0476C23.122 46.5233 25.0254 46.7999 27 46.7999C38.9286 46.7999 48.6 37.5317 48.6 26.0999C48.6 14.6681 38.9286 5.3999 27 5.3999ZM24.9504 20.4433L30.2625 25.7624L39.7512 20.4433L29.0496 32.0413L23.8606 26.4655L14.1223 31.9147L24.9504 20.4433Z"
+                        fill="white" />
+                    </svg>
+                  </i>
+                </a>
+              </div>
+            </div>
+            <div class="footer__box">
+              <div class="footer__box-item">
+                <p class="footer__box-title">Home</p>
+                <a class="footer__box-link" href="#">About Us</a>
+                <a class="footer__box-link" href="#">Our Services</a>
+                <a class="footer__box-link" href="#">how Сhoose Us</a>
+                <a class="footer__box-link" href="#">team</a>
+              </div>
+              <div class="footer__box-item">
+                <p class="footer__box-title">Support</p>
+                <a class="footer__box-link" href="#">FAQ</a>
+                <a class="footer__box-link" href="#">Privacy Policy</a>
+                <a class="footer__box-link" href="#">Term of Service</a>
+              </div>
+            </div>
+            <div class="footer__block">
+              <div class="socials">
+                <a class="socials__link" href="#">
+                  <i class="socials__icon">
+                    <svg viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M22.5 0C10.0958 0 0 10.0958 0 22.5C0 34.9042 10.0958 45 22.5 45C34.9042 45 45 34.9042 45 22.5C45 10.0958 34.9042 0 22.5 0ZM22.5 3.75C32.8775 3.75 41.25 12.1225 41.25 22.5C41.25 31.9263 34.3344 39.6774 25.2905 41.0229V27.9675H30.6299L31.4685 22.5439H25.2905V19.5813C25.2905 17.3294 26.0304 15.3296 28.136 15.3296H31.5198V10.5981C30.9254 10.5175 29.6675 10.3418 27.29 10.3418C22.325 10.3418 19.4165 12.963 19.4165 18.9368V22.5439H14.3115V27.9675H19.4165V40.9753C10.5166 39.5075 3.75 31.8245 3.75 22.5C3.75 12.1225 12.1225 3.75 22.5 3.75Z"
+                        fill="white" />
+                    </svg>
+                  </i>
+                </a>
+                <a class="socials__link" href="#">
+                  <i class="socials__icon">
+                    <svg viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12.5 0C5.6075 0 0 5.6075 0 12.5V32.5C0 39.3925 5.6075 45 12.5 45H32.5C39.3925 45 45 39.3925 45 32.5V12.5C45 5.6075 39.3925 0 32.5 0H12.5ZM12.5 5H32.5C36.635 5 40 8.365 40 12.5V32.5C40 36.635 36.635 40 32.5 40H12.5C8.365 40 5 36.635 5 32.5V12.5C5 8.365 8.365 5 12.5 5ZM35 7.5C34.337 7.5 33.7011 7.76339 33.2322 8.23223C32.7634 8.70107 32.5 9.33696 32.5 10C32.5 10.663 32.7634 11.2989 33.2322 11.7678C33.7011 12.2366 34.337 12.5 35 12.5C35.663 12.5 36.2989 12.2366 36.7678 11.7678C37.2366 11.2989 37.5 10.663 37.5 10C37.5 9.33696 37.2366 8.70107 36.7678 8.23223C36.2989 7.76339 35.663 7.5 35 7.5ZM22.5 10C15.6075 10 10 15.6075 10 22.5C10 29.3925 15.6075 35 22.5 35C29.3925 35 35 29.3925 35 22.5C35 15.6075 29.3925 10 22.5 10ZM22.5 15C26.635 15 30 18.365 30 22.5C30 26.635 26.635 30 22.5 30C18.365 30 15 26.635 15 22.5C15 18.365 18.365 15 22.5 15Z"
+                        fill="white" />
+                    </svg>
+                  </i>
+                </a>
+                <a class="socials__link" href="#">
+                  <i class="socials__icon">
+                    <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M22 0C9.86939 0 0 9.86843 0 22C0 34.1316 9.86939 44 22 44C34.1306 44 44 34.1316 44 22C44 9.86843 34.1306 0 22 0ZM15.3043 31.5652H11.4783V17.2174H15.3043V31.5652ZM13.3913 14.3478C12.3343 14.3478 11.4783 13.4917 11.4783 12.4348C11.4783 11.3778 12.3343 10.5217 13.3913 10.5217C14.4483 10.5217 15.3043 11.3778 15.3043 12.4348C15.3043 13.4917 14.4483 14.3478 13.3913 14.3478ZM33.4783 31.5652H29.6522V26.7826V24.3913C29.6522 22.55 28.1457 21.0435 26.3043 21.0435C24.463 21.0435 22.9565 22.55 22.9565 24.3913V31.5652H19.1304V17.2174H22.9565V18.9544C24.0737 17.8812 25.5889 17.2174 27.2609 17.2174C30.6948 17.2174 33.4783 20.0009 33.4783 23.4348V31.5652Z"
+                        fill="white" />
+                    </svg>
+                  </i>
+                </a>
+              </div>
+              <div class="footer__elem">
+                <div class="socials socials--alt">
+                  <a class="socials__link" href="#">
+                    <i class="socials__icon">
+                      <svg viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M27 5.3999C15.0714 5.3999 5.40002 15.0713 5.40002 26.9999C5.40002 31.0521 6.53824 34.83 8.47971 38.0706L5.59338 48.5999L16.3477 45.7769C19.4929 47.565 23.1237 48.5999 27 48.5999C38.9286 48.5999 48.6 38.9285 48.6 26.9999C48.6 15.0713 38.9286 5.3999 27 5.3999ZM19.6067 16.9241C19.9577 16.9241 20.3183 16.922 20.6297 16.9382C21.0149 16.9472 21.4342 16.9754 21.8356 17.8628C22.3126 18.9176 23.3512 21.5637 23.4844 21.8319C23.6176 22.1001 23.712 22.4161 23.5266 22.7671C23.3502 23.1271 23.2584 23.345 22.9992 23.6636C22.731 23.9732 22.4372 24.3577 22.1942 24.5917C21.926 24.8599 21.649 25.154 21.9586 25.6886C22.2682 26.2232 23.3434 27.9757 24.9328 29.3905C26.9758 31.2157 28.6996 31.7766 29.236 32.0448C29.7724 32.313 30.083 32.2712 30.3926 31.9112C30.7112 31.5602 31.7306 30.3558 32.0907 29.8194C32.4417 29.283 32.8 29.3758 33.286 29.5522C33.7792 29.7286 36.4093 31.0243 36.9457 31.2925C37.4821 31.5607 37.8338 31.6934 37.9688 31.9112C38.1074 32.1362 38.1075 33.2073 37.6629 34.4565C37.2183 35.7039 35.0351 36.9102 34.0559 36.9948C33.0677 37.0866 32.1454 37.439 27.6328 35.6624C22.1896 33.5186 18.7569 27.9435 18.4887 27.5835C18.2205 27.2325 16.309 24.6849 16.309 22.0569C16.309 19.4199 17.6916 18.1285 18.1758 17.5921C18.669 17.0557 19.2467 16.9241 19.6067 16.9241Z"
+                          fill="white" />
+                      </svg>
+                    </i>
+                  </a>
+                  <a class="socials__link" href="#">
+                    <i class="socials__icon">
+                      <svg viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M27 5.3999C15.0714 5.3999 5.40002 14.6681 5.40002 26.0999C5.40002 32.2221 8.19123 37.7049 12.6 41.4948V50.3999L21.3047 46.0476C23.122 46.5233 25.0254 46.7999 27 46.7999C38.9286 46.7999 48.6 37.5317 48.6 26.0999C48.6 14.6681 38.9286 5.3999 27 5.3999ZM24.9504 20.4433L30.2625 25.7624L39.7512 20.4433L29.0496 32.0413L23.8606 26.4655L14.1223 31.9147L24.9504 20.4433Z"
+                          fill="white" />
+                      </svg>
+                    </i>
+                  </a>
+                </div>
+                <a class="footer__mail" href="mailto:info@ezcaa.com">
+                  info@ezcaa.com
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bot">
+            <p class="footer__copy">
+              © EZCAA, 2024
+            </p>
+            <div class="up">
+              <p class="up__text">
+                up
+              </p>
+              <i class="title__icon">
+                <svg viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M29.5 58.4271C45.7924 58.4271 59 45.476 59 29.4999C59 13.5239 45.7924 0.572754 29.5 0.572754C13.2076 0.572754 0 13.5239 0 29.4999C0 45.476 13.2076 58.4271 29.5 58.4271Z"
+                    fill="#C4FF02" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M32.6415 12.4252L50.3033 38.751C52.1469 41.2566 49.8976 44.1068 47.4955 44.1068H12.0293C10.8418 44.1068 9.65918 43.4901 9.02403 42.3593C8.37674 41.2069 8.48439 39.8498 9.1652 38.835L26.8834 12.4251C27.6239 11.2976 28.8202 10.8835 29.7624 10.8835C30.7047 10.8835 31.9009 11.2977 32.6415 12.4252ZM32.5702 16.1629L32.6046 16.1116C32.5933 16.1289 32.5818 16.146 32.5702 16.1629ZM26.9203 16.1118L26.9545 16.1628C26.943 16.1459 26.9316 16.1289 26.9203 16.1118ZM29.7624 20.3481L41.1739 37.3576H18.3509L29.7624 20.3481ZM44.6995 42.6128C44.6722 42.5737 44.6459 42.5345 44.6206 42.4951L44.6995 42.6128Z"
+                    fill="#131313" />
+                </svg>
+              </i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <div class="form" id="form">
+      <div class="form__wrapper">
+        <form class="form__inner" action="">
+          <a class="logo logo--alt" href="/">
+            <img class="logo__img" src="./assets/images/logo-black.svg" alt="">
+          </a>
+          <p class="form__text">
+            We are not like most agencies; that's why we only choose startups that we can help grow.
+          </p>
+          <div class="form__box">
+            <div class="form__block">
+              <label class="form__subtitle" for="">Full Name<span>*</span></label>
+              <input class="input" type="text" placeholder="Elena Efimova">
+            </div>
+            <div class="form__block">
+              <label class="form__subtitle" for="">Your Email<span>*</span></label>
+              <input class="input" type="email" placeholder="example@gmail.com">
+            </div>
+            <div class="form__block form__block--alt">
+              <label class="form__subtitle" for="">Company website</label>
+              <textarea class="textarea" name="website" rows="1" placeholder="example@gmail.com"></textarea>
+            </div>
+          </div>
+          <div class="form__type">
+            <p class="form__subtitle">
+              Who are your customers?
+            </p>
+            <div class="form__type-box">
+              <label class="form__type-label">
+                <input class="form__type-radio" type="radio" name="customers">
+                Businesses
+              </label>
+              <label class="form__type-label">
+                <input class="form__type-radio" type="radio" name="customers">
+                Consumers
+              </label>
+              <label class="form__type-label">
+                <input class="form__type-radio" type="radio" name="customers">
+                Both
+              </label>
+            </div>
+          </div>
+          <div class="form__spending ">
+            <p class="form__subtitle">
+              What are you currently spending on ads?
+            </p>
+            <div class="form__spending-box">
+              <label class="form__spending-label">
+                <input class="form__spending-radio" type="radio" name="spending">
+                Not running ads yet
+              </label>
+              <label class="form__spending-label">
+                <input class="form__spending-radio" type="radio" name="spending">
+                Less than $10k/mo
+              </label>
+              <label class="form__spending-label">
+                <input class="form__spending-radio" type="radio" name="spending">
+                $25-50k/mo
+              </label>
+              <label class="form__spending-label">
+                <input class="form__spending-radio" type="radio" name="spending">
+                $10-25k/mo
+              </label>
+              <label class="form__spending-label">
+                <input class="form__spending-radio" type="radio" name="spending">
+                $50k+/mo
+              </label>
+            </div>
+          </div>
+          <button class="btn btn--black btn--arrow">
+            SEND MESSAGE
+            <i class="btn__icon">
+              <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M16.6627 12.4518L3.27662 21.4324C2.0026 22.3698 0.553329 21.2261 0.553329 20.0047L0.553329 1.97106C0.553329 1.36724 0.866915 0.765908 1.4419 0.442948C2.02787 0.113818 2.71791 0.168558 3.23393 0.514733L16.6627 9.52397C17.236 9.90053 17.4465 10.5088 17.4465 10.9879C17.4465 11.467 17.236 12.0753 16.6627 12.4518ZM14.7621 12.4156L14.7882 12.4331C14.7794 12.4273 14.7707 12.4215 14.7621 12.4156ZM14.7881 9.54273L14.7622 9.56013C14.7707 9.55428 14.7794 9.54848 14.7881 9.54273ZM12.634 10.9879L3.98516 16.7903L3.98516 5.18544L12.634 10.9879ZM1.31304 18.583C1.33287 18.5691 1.35281 18.5557 1.37286 18.5429L1.31304 18.583Z"
+                  fill="#C4FF02" />
+              </svg>
+            </i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="./scripts/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+.btn {
+  display: inline-block;
+  font-size: 14px;
+  background-color: #D9291D;
+  color: #fff;
+  border-radius: 5px;
+  @include fluid(padding-left, 15px, 24px);
+  @include fluid(padding-right, 15px, 24px);
+  @include fluid(padding-top, 10px, 15px);
+  @include fluid(padding-bottom, 10px, 15px);
+  border: 1px solid #D9291D;
+  transition: background-color 0.23s ease-in-out,
+    color 0.23s ease-in-out, border-color 0.23s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    color: #D9291D;
+    background-color: #fff;
+  }
+
+  &--alt {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    @include fluid(gap, 10px, 14px);
+    color: #434242;
+    background-color: #E3E3E3;
+    border-color: #E3E3E3;
+
+    &:hover {
+      background-color: #D9291D;
+      color: #fff;
+
+      .btn__icon {
+        svg {
+          path {
+            fill: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  &--orange {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    @include fluid(gap, 10px, 14px);
+    color: #fff;
+    background-color: #EB8516;
+    border-color: #EB8516;
+
+    &:hover {
+      color: #EB8516;
+
+      .btn__icon {
+        svg {
+          path {
+            fill: #EB8516;
+          }
+        }
+      }
+    }
+  }
+
+  &__icon {
+    svg {
+      path {
+        transition: fill .23s ease-in-out;
+      }
+    }
+  }
+
+  &--more {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    @include fluid(font-size, 14px, 16px);
+    @include fluid(padding-left, 30px, 93px);
+    @include fluid(padding-right, 30px, 93px);
+    color: #434242;
+    background-color: #E3E3E3;
+    border-color: #E3E3E3;
+
+    &:hover {
+      background-color: #D9291D;
+      color: #fff;
+    }
+  }
+}

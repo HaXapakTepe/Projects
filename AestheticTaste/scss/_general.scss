@@ -1,0 +1,254 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+textarea,
+input {
+  outline: none;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+fieldset {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+textarea {
+  resize: none;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+html,
+body {
+  height: 100%;
+  z-index: -2;
+}
+
+body {
+  font-family: 'Gotham Pro';
+  font-weight: 400;
+  position: relative;
+  @include fluid(font-size, 12px, 14px);
+  line-height: 1.2;
+  color: #3E3535;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.wrapper {
+  min-width: 320px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  @include container;
+  @include fluid(width, 962px, 1356px);
+}
+
+h1,
+h2,
+.title {
+  font-family: "MADE Waffle Soft";
+  color: #3E3535;
+  line-height: 100%;
+  font-weight: 800;
+  text-transform: uppercase;
+  @include fluid(margin-bottom, 40px, 80px);
+  @include fluid(font-size, 36px, 56px);
+
+  &--yellow {
+    color: #FFA800;
+  }
+
+  &--white {
+    color: #fff;
+  }
+
+  &--alt {
+    span {
+      display: block;
+    }
+  }
+
+  span {
+    color: #FFA800;
+  }
+}
+
+.phone {
+  display: flex;
+  align-items: flex-start;
+
+  &:hover {
+    .phone__icon {
+      color: #FF3D00;
+    }
+
+    .phone__value {
+      color: #FF3D00;
+    }
+  }
+
+  &__icon {
+    margin-right: 20px;
+    font-size: 24px;
+    color: #FFFFFF;
+    transition: color 0.38s ease-in-out;
+    @include fluid(font-size, 22px, 24px);
+  }
+
+  &__value {
+    text-decoration: none;
+    font-weight: 700;
+    color: #FFFFFF;
+    transition: color 0.38s ease-in-out;
+    @include fluid(font-size, 18px, 24px);
+    @include fluid(line-height, 19px, 23px);
+  }
+}
+
+.fancybox {
+  &__backdrop {
+    background-color: rgba(62, 53, 53, 0.80);
+  }
+
+  &__content {
+
+    img {
+      @include fluid(max-width, 500px, 920px);
+      @include fluid(max-height, 500px, 920px);
+      border-radius: 20px;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+
+    .reviews__item-img {
+      height: 100px;
+      width: 100px;
+    }
+
+    .f-button.is-close-btn {
+      @include fluid(top, 15px, 30px);
+      @include fluid(right, 15px, 30px);
+      opacity: 1;
+      color: #7B7171;
+      --f-button-svg-width: 30px;
+      --f-button-svg-height: 30px;
+    }
+  }
+}
+
+.f-thumbs {
+  &__track {
+    gap: 10px;
+    transform: unset !important;
+  }
+
+  &__slide__button {
+    border-radius: 5px;
+  }
+
+  &.is-horizontal .f-thumbs__slide {
+    margin: 0;
+    --shift: 0 !important;
+  }
+
+  &.is-modern {
+    .f-thumbs__slide {
+      --clip-path: unset;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: linear-gradient(0deg, rgba(62, 53, 53, 0.50) 0%, rgba(62, 53, 53, 0.50) 100%);
+        pointer-events: none;
+      }
+    }
+
+    .is-selected {
+      &::after {
+        content: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+
+  .rellax {
+    display: none;
+  }
+
+  .title {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn {
+    padding: 8px;
+    padding-left: 12px;
+
+    &__text {
+      margin-right: 5px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .main {
+    >* {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .title {
+    font-size: 30px;
+  }
+}

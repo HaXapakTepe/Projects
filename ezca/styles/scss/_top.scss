@@ -1,0 +1,377 @@
+.top {
+  .socials {
+    @include fluid(margin-right, 0px, 34px);
+    @include fluid(margin-bottom, 30px, 56px);
+  }
+
+  &--pt {
+    .top__wrapper {
+      @include fluid(padding-top, 180px, 200px);
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    padding-bottom: 50px;
+
+    &--black {
+      @include fluid(padding-top, 150px, 244px);
+      background: #000;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    -o-object-position: top right;
+    object-position: top right;
+    -o-object-fit: cover;
+    object-fit: cover;
+
+    &--alt {
+      max-width: 550px;
+      max-height: 550px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -55%);
+    }
+
+    &--ellipsis {
+      @include fluid(height, 350px, 665px);
+      height: 72%;
+      top: 0;
+      right: 0;
+      -o-object-fit: contain;
+      object-fit: contain;
+      z-index: 1;
+    }
+  }
+
+  &__gradient {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    -o-object-position: bottom right;
+    object-position: bottom right;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  &__inner {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr .3fr;
+
+    &--alt {
+      grid-template-columns: .78fr 1fr;
+      align-items: center;
+    }
+
+    &--column {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    .btn--black {
+      max-width: 390px;
+      margin-left: auto;
+    }
+  }
+
+  &__title {
+    @include fluid(margin-bottom, 48px, 109px);
+    @include fluid(font-size, 35px, 80px);
+    font-weight: 700;
+    text-transform: uppercase;
+
+    span {
+      position: relative;
+      font-weight: 800;
+      background-color: #C4FF02;
+      border-radius: 30px;
+      padding: 0 12px;
+      margin-left: -12px;
+    }
+  }
+
+  &__text {
+    font-family: "Manrope";
+    font-weight: 800;
+    @include fluid(font-size, 20px, 25px);
+  }
+
+  &__btn {
+    @include fluid(margin-bottom, 48px, 106px);
+  }
+
+  &__triangle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    @include fluid(margin-bottom, 30px, 36px);
+
+    svg {
+      @include fluid(width, 225px, 385px);
+      @include fluid(height, 151px, 301px);
+    }
+  }
+
+  &__ideas {
+    display: block;
+    @include fluid(margin-bottom, 35px, 70px);
+    @include fluid(margin-right, 0px, 30px);
+
+    svg {
+      @include fluid(width, 307px, 437px);
+      @include fluid(height, 170px, 222px)
+    }
+  }
+
+  &__elem {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 20px, 35px);
+
+    &-accent {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+
+      @include fluid(padding-top, 6px, 10px);
+      @include fluid(padding-bottom, 6px, 10px);
+      @include fluid(padding-left, 15px, 25px);
+      @include fluid(padding-right, 15px, 25px);
+      @include fluid(margin-bottom, 0px, 25px);
+      font-weight: 700;
+      color: #fff;
+      border-radius: 28px;
+      background-color: #131313;
+    }
+
+    &-text {
+      font-family: "Manrope";
+      font-weight: 500;
+      @include fluid(font-size, 20px, 24px);
+    }
+
+    .btn {
+      max-width: 508px;
+    }
+  }
+
+  &__img {
+    margin-left: auto;
+    margin-right: auto;
+    @include fluid(height, 340px, 600px);
+    -o-object-fit: contain;
+    object-fit: contain;
+
+    &--animation {
+      position: relative;
+      @include fluid(height, 200px, 420px);
+      @include fluid(margin-top, -20px, -50px);
+      z-index: -1;
+    }
+  }
+
+  &__box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include fluid(gap, 25px, 54px);
+
+    &--alt {
+      gap: unset;
+    }
+
+    &-title {
+      text-align: center;
+      justify-content: center;
+
+      &--width {
+        @include fluid(font-size, 35px, 80px);
+        font-weight: 900;
+        @include fluid(margin-bottom, 15px, 30px);
+        @include fluid(max-width, 350px, 780px);
+      }
+    }
+
+    &-text {
+      font-family: "Manrope";
+      font-weight: 500;
+      @include fluid(font-size, 20px, 24px);
+      text-align: center;
+
+      &--mb {
+        @include fluid(margin-bottom, 25px, 57px);
+        @include fluid(max-width, 330px, 700px);
+        @include fluid(font-size, 12px, 25px);
+      }
+    }
+
+    .btn {
+      @include fluid(max-width, 292px, 508px);
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0;
+
+      &:has(+*) {
+        @include fluid(margin-bottom, 30px, 100px);
+      }
+    }
+  }
+
+  &__block {
+    &-text {
+      @include fluid(margin-bottom, 30px, 84px);
+      text-align: center;
+      color: rgb(255, 255, 255);
+      font-family: 'Manrope';
+      @include fluid(font-size, 20px, 25px);
+      font-weight: 500;
+    }
+
+    &-title {
+      @include fluid(max-width, 425px, 810px);
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+  }
+
+  &__icon {
+    position: relative;
+    z-index: 1;
+
+    svg {
+      @include fluid(width, 28px, 39px);
+      @include fluid(height, 28px, 39px);
+    }
+
+    &--left {
+      position: absolute;
+      top: 15%;
+      left: 5%;
+      transform: translate(-50%);
+    }
+
+    &--right {
+      position: absolute;
+      top: 65%;
+      right: 0;
+      transform: translate(-50%);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .top {
+    .socials {
+      display: none;
+    }
+
+    &__bg {
+      height: 55%;
+
+      &--alt {
+        max-width: 300px;
+        max-height: 300px;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+
+      &:last-child {
+        order: -1;
+
+        .btn {
+          display: none;
+        }
+      }
+    }
+
+    &__ideas {
+      order: -1;
+      margin-bottom: 0;
+    }
+
+    &__triangle {
+      margin-right: unset;
+    }
+
+    &__btn {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+    }
+
+    &__img {
+      height: 320px;
+
+      &--animation {
+        height: 220px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .top {
+    &__ideas {
+      svg {
+        width: 268px;
+        height: 130px;
+      }
+    }
+
+    &__triangle {
+      margin-right: unset;
+    }
+
+    &__text {
+      font-size: 15px;
+    }
+
+    &__box,
+    &__elem {
+      &-text {
+        font-size: 16px;
+      }
+    }
+
+    &__box {
+      &--alt {
+        .top__icon {
+
+          &--left {
+            top: -15%;
+          }
+
+          &--right {
+            top: 90%;
+          }
+        }
+      }
+    }
+  }
+}

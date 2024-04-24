@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/images/favicon.svg" type="x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./styles/css/normalize.css">
+  <link rel="stylesheet" href="./styles/css/style.css?v=0.0001">
+  <title>Blog</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="header__inner">
+        <a class="logo" href="/">
+          <img class="logo__img" src="./assets/images/logo.svg" alt="">
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link menu__link--bold" href="#">
+                Services
+                <i class="menu__icon">
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15 17.5887L10.2237 12.8124C9.70625 12.2949 8.86625 12.2949 8.34875 12.8124C7.83125 13.3299 7.83125 14.1699 8.34875 14.6874L14.1163 20.4549C14.605 20.9437 15.3962 20.9437 15.8837 20.4549L21.6512 14.6874C22.1687 14.1699 22.1687 13.3299 21.6512 12.8124C21.1337 12.2949 20.2937 12.2949 19.7762 12.8124L15 17.5887Z"
+                      fill="#C4FF02" />
+                  </svg>
+                </i>
+              </a>
+              <div class="dropdown">
+                <div class="dropdown__item">
+                  <div class="dropdown__box">
+                    <a class="dropdown__link" href="#">
+                      Services 1
+                    </a>
+                    <i class="dropdown__icon accordion">
+                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M17.5888 15.0002L12.8125 19.7764C12.295 20.2939 12.295 21.1339 12.8125 21.6514C13.33 22.1689 14.17 22.1689 14.6875 21.6514L20.455 15.8839C20.9438 15.3952 20.9438 14.6039 20.455 14.1164L14.6875 8.34893C14.17 7.83143 13.33 7.83143 12.8125 8.34893C12.295 8.86643 12.295 9.70643 12.8125 10.2239L17.5888 15.0002Z"
+                          fill="white" />
+                      </svg>
+                    </i>
+                  </div>
+                  <div class="accordion-content">
+                    <div class="dropdown">
+                      <div class="dropdown__item">
+                        <a class="dropdown__link" href="#">
+                          Services 1
+                        </a>
+                      </div>
+                      <div class="dropdown__item">
+                        <a class="dropdown__link" href="#">
+                          Services 2
+                        </a>
+                      </div>
+                      <div class="dropdown__item">
+                        <a class="dropdown__link" href="#">
+                          Services 3
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown__item">
+                  <div class="dropdown__box">
+                    <a class="dropdown__link" href="#">
+                      Services 2
+                    </a>
+                    <i class="dropdown__icon accordion">
+                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M17.5888 15.0002L12.8125 19.7764C12.295 20.2939 12.295 21.1339 12.8125 21.6514C13.33 22.1689 14.17 22.1689 14.6875 21.6514L20.455 15.8839C20.9438 15.3952 20.9438 14.6039 20.455 14.1164L14.6875 8.34893C14.17 7.83143 13.33 7.83143 12.8125 8.34893C12.295 8.86643 12.295 9.70643 12.8125 10.2239L17.5888 15.0002Z"
+                          fill="white" />
+                      </svg>
+                    </i>
+                  </div>
+                  <div class="accordion-content">
+                    <div class="dropdown">
+                      <div class="dropdown__item">
+                        <a class="dropdown__link" href="#">
+                          Services 1
+                        </a>
+                      </div>
+                      <div class="dropdown__item">
+                        <a class="dropdown__link" href="#">
+                          Services 2
+                        </a>
+                      </div>
+                      <div class="dropdown__item">
+                        <a class="dropdown__link" href="#">
+                          Services 3
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown__item">
+                  <div class="dropdown__box">
+                    <a class="dropdown__link" href="#">
+                      Services 3
+                    </a>
+                    <i class="dropdown__icon accordion">
+                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M17.5888 15.0002L12.8125 19.7764C12.295 20.2939 12.295 21.1339 12.8125 21.6514C13.33 22.1689 14.17 22.1689 14.6875 21.6514L20.455 15.8839C20.9438 15.3952 20.9438 14.6039 20.455 14.1164L14.6875 8.34893C14.17 7.83143 13.33 7.83143 12.8125 8.34893C12.295 8.86643 12.295 9.70643 12.8125 10.2239L17.5888 15.0002Z"
+                          fill="white" />
+                      </svg>
+                    </i>
+                  </div>
+                  <div class="accordion-content">
+                    <div class="dropdown">
+                      <div class="dropdown__item">
+                        <a class="dropdown__link" href="#">
+                          Services 1
+                        </a>
+                      </div>
+                      <div class="dropdown__item">
+                        <a class="dropdown__link" href="#">
+                          Services 2
+                        </a>
+                      </div>
+                      <div class="dropdown__item">
+                        <a class="dropdown__link" href="#">
+                          Services 3
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown__item">
+                  <div class="dropdown__box ">
+                    <a class="dropdown__link" href="#">
+                      Services 4
+                    </a>
+                    <i class="dropdown__icon accordion">
+                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M17.5888 15.0002L12.8125 19.7764C12.295 20.2939 12.295 21.1339 12.8125 21.6514C13.33 22.1689 14.17 22.1689 14.6875 21.6514L20.455 15.8839C20.9438 15.3952 20.9438 14.6039 20.455 14.1164L14.6875 8.34893C14.17 7.83143 13.33 7.83143 12.8125 8.34893C12.295 8.86643 12.295 9.70643 12.8125 10.2239L17.5888 15.0002Z"
+                          fill="white" />
+                      </svg>
+                    </i>
+                  </div>
+                  <div class="accordion-content">
+                    <div class="dropdown">
+                      <div class="dropdown__item">
+                        <a class="dropdown__link" href="#">
+                          Services 1
+                        </a>
+                      </div>
+                      <div class="dropdown__item">
+                        <a class="dropdown__link" href="#">
+                          Services 2
+                        </a>
+                      </div>
+                      <div class="dropdown__item">
+                        <a class="dropdown__link" href="#">
+                          Services 3
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Case Studies
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                About
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Clients
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Blog
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a class="start" data-fancybox href="#form">
+          Start
+          <i class="start__icon">
+            <svg viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M16.6627 12.4518L3.27668 21.4324C2.00266 22.3698 0.55339 21.2261 0.55339 20.0047L0.55339 1.97106C0.55339 1.36724 0.866975 0.765908 1.44196 0.442948C2.02793 0.113818 2.71797 0.168558 3.23399 0.514733L16.6628 9.52397C17.236 9.90053 17.4466 10.5088 17.4466 10.9879C17.4466 11.467 17.236 12.0753 16.6627 12.4518ZM14.7622 12.4156L14.7882 12.4331C14.7795 12.4273 14.7708 12.4215 14.7622 12.4156ZM14.7882 9.54273L14.7622 9.56013C14.7708 9.55428 14.7794 9.54848 14.7882 9.54273ZM12.6341 10.9879L3.98522 16.7903L3.98523 5.18544L12.6341 10.9879ZM1.3131 18.583C1.33293 18.5691 1.35288 18.5557 1.37292 18.5429L1.3131 18.583Z"
+                fill="#131313" />
+            </svg>
+          </i>
+        </a>
+        <div class="burger">
+          <div class="burger__line"></div>
+        </div>
+      </div>
+    </header>
+
+
+    <main class="main">
+
+
+      <section class="checklist">
+        <div class="checklist__wrapper">
+          <div class="container">
+            <a class="back" data-fancybox href="#form">
+              <i class="back__icon">
+                <svg width="17" height="22" viewBox="0 0 17 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.837104 9.54817L14.2231 0.567616C15.4972 -0.369825 16.9464 0.773892 16.9464 1.99531L16.9464 20.0289C16.9464 20.6328 16.6328 21.2341 16.0579 21.5571C15.4719 21.8862 14.7818 21.8314 14.2658 21.4853L0.837045 12.476C0.263774 12.0995 0.0532228 11.4912 0.0532228 11.0121C0.0532228 10.533 0.263789 9.92473 0.837104 9.54817ZM2.73763 9.58441L2.71157 9.56692C2.72035 9.5727 2.72903 9.57852 2.73763 9.58441ZM2.71164 12.4573L2.73757 12.4399C2.72902 12.4457 2.72037 12.4515 2.71164 12.4573ZM4.86572 11.0121L13.5146 5.20968L13.5146 16.8146L4.86572 11.0121ZM16.1867 3.41698C16.1669 3.43088 16.1469 3.44426 16.1269 3.45711L16.1867 3.41698Z"
+                    fill="white" />
+                </svg>
+              </i>
+              back
+            </a>
+            <h2 class="checklist__title title title--alt">
+              How to avoid a disastrous marketing campaign: 10 things to watch out for (Checklist)
+            </h2>
+            <p class="checklist__textAccent">
+              10 No-Nonsense Tips to Dodge Marketing Campaign Disasters
+            </p>
+            <p class="checklist__text">
+              Running a marketing campaign can be like navigating a minefield. Here's a straight-shooting checklist that
+              I swear by, to keep you from stepping on a landmine:
+            </p>
+            <div class="checklist__inner">
+              <div class="checklist__item">
+                <p class="checklist__item-num">
+                  #1
+                </p>
+                <div class="checklist__item-box">
+                  <p class="checklist__item-title">
+                    Get Your Goals Straight:
+                  </p>
+                  <div class="checklist__item-block">
+                    <img class="checklist__item-img" src="./assets/images/checklist/1.png" alt="">
+                    <p class="checklist__item-text">
+                      Start with a clear 'why'. What's the endgame of your campaign? More clicks, brand buzz, sales?
+                      Nail this down first.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="checklist__item">
+                <p class="checklist__item-num">
+                  #2
+                </p>
+                <div class="checklist__item-box">
+                  <p class="checklist__item-title">
+                    Talk to Your Audience, Not at Them:
+                  </p>
+                  <div class="checklist__item-block">
+                    <img class="checklist__item-img" src="./assets/images/checklist/2.png" alt="">
+                    <p class="checklist__item-text">
+                      Know your audience like your best friend. What do they want? What bugs them? Talk their language
+                      and hit where it matters.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="checklist__item">
+                <p class="checklist__item-num">
+                  #3
+                </p>
+                <div class="checklist__item-box">
+                  <p class="checklist__item-title">
+                    Budget: The Make or Break:
+                  </p>
+                  <div class="checklist__item-block">
+                    <img class="checklist__item-img" src="./assets/images/checklist/3.png" alt="">
+                    <p class="checklist__item-text">
+                      Money talks. Set a realistic budget, but keep a secret stash for those just-in-case moments. Don't
+                      let a few bucks be the downfall of a great idea.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="checklist__item">
+                <p class="checklist__item-num">
+                  #4
+                </p>
+                <div class="checklist__item-box">
+                  <p class="checklist__item-title">
+                    Spy on Your Rivals:
+                  </p>
+                  <div class="checklist__item-block">
+                    <img class="checklist__item-img" src="./assets/images/checklist/4.png" alt="">
+                    <p class="checklist__item-text">
+                      Keep your friends close, and your competitors closer. What's their game plan? Learn from their
+                      hits and misses and use that intel to outsmart them.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="checklist__item">
+                <p class="checklist__item-num">
+                  #5
+                </p>
+                <div class="checklist__item-box">
+                  <p class="checklist__item-title">
+                    Data: Your Secret Weapon:
+                  </p>
+                  <div class="checklist__item-block">
+                    <img class="checklist__item-img" src="./assets/images/checklist/5.png" alt="">
+                    <p class="checklist__item-text">
+                      Love your data. It tells you what's working and what's flopping. Keep an eye on those metrics and
+                      be ready to pivot on the fly.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="checklist__item">
+                <p class="checklist__item-num">
+                  #6
+                </p>
+                <div class="checklist__item-box">
+                  <p class="checklist__item-title">
+                    Creativity Isn’t Just Fluff:
+                  </p>
+                  <div class="checklist__item-block">
+                    <img class="checklist__item-img" src="./assets/images/checklist/6.png" alt="">
+                    <p class="checklist__item-text">
+                      Stand out or sit down. Your campaign needs to pop. Don't be afraid to try something new, even if
+                      it feels a bit out there.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="checklist__item">
+                <p class="checklist__item-num">
+                  #7
+                </p>
+                <div class="checklist__item-box">
+                  <p class="checklist__item-title">
+                    Test, Tweak, Triumph:
+                  </p>
+                  <div class="checklist__item-block">
+                    <img class="checklist__item-img" src="./assets/images/checklist/7.png" alt="">
+                    <p class="checklist__item-text">
+                      Test everything, assume nothing. Fine-tune your campaign based on real feedback, not just gut
+                      feelings.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="checklist__item">
+                <p class="checklist__item-num">
+                  #8
+                </p>
+                <div class="checklist__item-box">
+                  <p class="checklist__item-title">
+                    Timing Isn't Just a Tick:
+                  </p>
+                  <div class="checklist__item-block">
+                    <img class="checklist__item-img" src="./assets/images/checklist/8.png" alt="">
+                    <p class="checklist__item-text">
+                      Launching your campaign at the right time can be a game changer. Watch the market pulse – hit when
+                      the iron's hot.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="checklist__item">
+                <p class="checklist__item-num">
+                  #9
+                </p>
+                <div class="checklist__item-box">
+                  <p class="checklist__item-title">
+                    Play by the Rules:
+                  </p>
+                  <div class="checklist__item-block">
+                    <img class="checklist__item-img" src="./assets/images/checklist/9.png" alt="">
+                    <p class="checklist__item-text">
+                      Stay on the right side of the law and ethics. A legal misstep or ethical blunder can turn your
+                      campaign into a nightmare.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="checklist__item">
+                <p class="checklist__item-num">
+                  #10
+                </p>
+                <div class="checklist__item-box">
+                  <p class="checklist__item-title">
+                    Afterparty is Key:
+                  </p>
+                  <div class="checklist__item-block">
+                    <img class="checklist__item-img" src="./assets/images/checklist/10.png" alt="">
+                    <p class="checklist__item-text">
+                      When the campaign wraps, the real work begins. Follow up on those leads, dissect what worked and
+                      what didn’t, and gear up for the next round.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <p class="checklist__textBot">
+                <i class="checklist__textBot-icon">
+                  <svg viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M29.5 58.4271C45.7924 58.4271 59 45.476 59 29.4999C59 13.5239 45.7924 0.572754 29.5 0.572754C13.2076 0.572754 0 13.5239 0 29.4999C0 45.476 13.2076 58.4271 29.5 58.4271Z"
+                      fill="#C4FF02" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M32.6415 12.4252L50.3033 38.751C52.1469 41.2566 49.8976 44.1068 47.4955 44.1068H12.0293C10.8418 44.1068 9.65918 43.4901 9.02403 42.3593C8.37674 41.2069 8.48439 39.8498 9.1652 38.835L26.8834 12.4251C27.6239 11.2976 28.8202 10.8835 29.7624 10.8835C30.7047 10.8835 31.9009 11.2977 32.6415 12.4252ZM32.5702 16.1629L32.6046 16.1116C32.5933 16.1289 32.5818 16.146 32.5702 16.1629ZM26.9203 16.1118L26.9545 16.1628C26.943 16.1459 26.9316 16.1289 26.9203 16.1118ZM29.7624 20.3481L41.1739 37.3576H18.3509L29.7624 20.3481ZM44.6995 42.6128C44.6722 42.5737 44.6459 42.5345 44.6206 42.4951L44.6995 42.6128Z"
+                      fill="#131313" />
+                  </svg>
+                </i>
+                Remember, steering clear of a marketing disaster doesn't require a PhD. Just some street smarts, a bit
+                of savvy, and the guts to try something new.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="blog">
+        <div class="blog__wrapper">
+          <div class="container">
+            <div class="blog__inner">
+              <a class="blog__item" href="#">
+                <p class="blog__item-title">
+                  CPGs brands just get data clean rooms
+                </p>
+                <div class="blog__item-box">
+                  <img class="blog__item-img" src="./assets/images/blog/1.png" alt="">
+                  <div class="blog__item-block">
+                    <p class="blog__item-text">
+                      Passionate about marketing, we've curated
+                    </p>
+                    <div class="blog__link">
+                      <span>read</span>
+                      <i class="blog__link-arrow">
+                        <svg viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M15.5 28.9999C15.5 29.8279 16.172 30.4999 17 30.4999L36.6055 30.4999L30.8105 36.2949C30.224 36.8814 30.224 37.831 30.8105 38.416L30.9395 38.5449C31.526 39.1314 32.4755 39.1314 33.0605 38.5449L41.5449 30.0605C42.1314 29.474 42.1314 28.5244 41.5449 27.9394L33.0605 19.455C32.474 18.8685 31.5245 18.8685 30.9395 19.455L30.8105 19.5839C30.224 20.1704 30.224 21.12 30.8105 21.705L36.6055 27.4999L17 27.4999C16.172 27.4999 15.5 28.1719 15.5 28.9999Z"
+                            fill="black" />
+                        </svg>
+                      </i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a class="blog__item" href="#">
+                <p class="blog__item-title">
+                  Robotic process just change the game
+                </p>
+                <div class="blog__item-box">
+                  <img class="blog__item-img" src="./assets/images/blog/2.png" alt="">
+                  <div class="blog__item-block">
+                    <p class="blog__item-text">
+                      Passionate about marketing, we've curated
+                    </p>
+                    <div class="blog__link">
+                      <span>read</span>
+                      <i class="blog__link-arrow">
+                        <svg viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M15.5 28.9999C15.5 29.8279 16.172 30.4999 17 30.4999L36.6055 30.4999L30.8105 36.2949C30.224 36.8814 30.224 37.831 30.8105 38.416L30.9395 38.5449C31.526 39.1314 32.4755 39.1314 33.0605 38.5449L41.5449 30.0605C42.1314 29.474 42.1314 28.5244 41.5449 27.9394L33.0605 19.455C32.474 18.8685 31.5245 18.8685 30.9395 19.455L30.8105 19.5839C30.224 20.1704 30.224 21.12 30.8105 21.705L36.6055 27.4999L17 27.4999C16.172 27.4999 15.5 28.1719 15.5 28.9999Z"
+                            fill="black" />
+                        </svg>
+                      </i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a class="blog__item" href="#">
+                <p class="blog__item-title">
+                  How NFT used by brand to collect data
+                </p>
+                <div class="blog__item-box">
+                  <img class="blog__item-img" src="./assets/images/blog/3.png" alt="">
+                  <div class="blog__item-block">
+                    <p class="blog__item-text">
+                      Passionate about marketing, we've curated
+                    </p>
+                    <div class="blog__link">
+                      <span>read</span>
+                      <i class="blog__link-arrow">
+                        <svg viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M15.5 28.9999C15.5 29.8279 16.172 30.4999 17 30.4999L36.6055 30.4999L30.8105 36.2949C30.224 36.8814 30.224 37.831 30.8105 38.416L30.9395 38.5449C31.526 39.1314 32.4755 39.1314 33.0605 38.5449L41.5449 30.0605C42.1314 29.474 42.1314 28.5244 41.5449 27.9394L33.0605 19.455C32.474 18.8685 31.5245 18.8685 30.9395 19.455L30.8105 19.5839C30.224 20.1704 30.224 21.12 30.8105 21.705L36.6055 27.4999L17 27.4999C16.172 27.4999 15.5 28.1719 15.5 28.9999Z"
+                            fill="black" />
+                        </svg>
+                      </i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <a class="link" href="#">
+              read more
+              <i class="link__icon">
+                <svg viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="31" cy="31" r="31" fill="#86F9D7" />
+                  <path
+                    d="M20.8282 15.9765C20.1602 16.365 19.7583 17.0677 19.7583 17.8501L19.7583 44.8979C19.7583 45.6458 20.1522 46.3218 20.8096 46.7024C21.4829 47.0936 22.2866 47.1016 22.96 46.7157L46.7396 33.0201C47.3357 32.6714 47.6924 32.0434 47.6924 31.3407C47.6924 30.6381 47.3357 30.01 46.7369 29.6614L22.9573 15.9632C22.292 15.5826 21.4962 15.5879 20.8282 15.9765ZM41.5578 31.3407L23.8462 41.5392L23.8462 21.1396L41.5578 31.3407Z"
+                    fill="black" />
+                </svg>
+              </i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <img class="footer__bg" src="./assets/images/footer/bg.svg" alt="">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__item">
+              <a class="logo" href="/">
+                <img class="logo__img" src="./assets/images/logo.svg" alt="">
+              </a>
+              <p class="footer__item-text">
+                We help to keep a clear balance between creativity and clear stradegy
+              </p>
+            </div>
+            <div class="footer__elem footer__elem--mobile">
+              <a class="footer__mail" href="mailto:info@ezcaa.com">
+                info@ezcaa.com
+              </a>
+              <div class="socials socials--alt">
+                <a class="socials__link" href="#">
+                  <i class="socials__icon">
+                    <svg viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M27 5.3999C15.0714 5.3999 5.40002 15.0713 5.40002 26.9999C5.40002 31.0521 6.53824 34.83 8.47971 38.0706L5.59338 48.5999L16.3477 45.7769C19.4929 47.565 23.1237 48.5999 27 48.5999C38.9286 48.5999 48.6 38.9285 48.6 26.9999C48.6 15.0713 38.9286 5.3999 27 5.3999ZM19.6067 16.9241C19.9577 16.9241 20.3183 16.922 20.6297 16.9382C21.0149 16.9472 21.4342 16.9754 21.8356 17.8628C22.3126 18.9176 23.3512 21.5637 23.4844 21.8319C23.6176 22.1001 23.712 22.4161 23.5266 22.7671C23.3502 23.1271 23.2584 23.345 22.9992 23.6636C22.731 23.9732 22.4372 24.3577 22.1942 24.5917C21.926 24.8599 21.649 25.154 21.9586 25.6886C22.2682 26.2232 23.3434 27.9757 24.9328 29.3905C26.9758 31.2157 28.6996 31.7766 29.236 32.0448C29.7724 32.313 30.083 32.2712 30.3926 31.9112C30.7112 31.5602 31.7306 30.3558 32.0907 29.8194C32.4417 29.283 32.8 29.3758 33.286 29.5522C33.7792 29.7286 36.4093 31.0243 36.9457 31.2925C37.4821 31.5607 37.8338 31.6934 37.9688 31.9112C38.1074 32.1362 38.1075 33.2073 37.6629 34.4565C37.2183 35.7039 35.0351 36.9102 34.0559 36.9948C33.0677 37.0866 32.1454 37.439 27.6328 35.6624C22.1896 33.5186 18.7569 27.9435 18.4887 27.5835C18.2205 27.2325 16.309 24.6849 16.309 22.0569C16.309 19.4199 17.6916 18.1285 18.1758 17.5921C18.669 17.0557 19.2467 16.9241 19.6067 16.9241Z"
+                        fill="white" />
+                    </svg>
+                  </i>
+                </a>
+                <a class="socials__link" href="#">
+                  <i class="socials__icon">
+                    <svg viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M27 5.3999C15.0714 5.3999 5.40002 14.6681 5.40002 26.0999C5.40002 32.2221 8.19123 37.7049 12.6 41.4948V50.3999L21.3047 46.0476C23.122 46.5233 25.0254 46.7999 27 46.7999C38.9286 46.7999 48.6 37.5317 48.6 26.0999C48.6 14.6681 38.9286 5.3999 27 5.3999ZM24.9504 20.4433L30.2625 25.7624L39.7512 20.4433L29.0496 32.0413L23.8606 26.4655L14.1223 31.9147L24.9504 20.4433Z"
+                        fill="white" />
+                    </svg>
+                  </i>
+                </a>
+              </div>
+            </div>
+            <div class="footer__box">
+              <div class="footer__box-item">
+                <p class="footer__box-title">Home</p>
+                <a class="footer__box-link" href="#">About Us</a>
+                <a class="footer__box-link" href="#">Our Services</a>
+                <a class="footer__box-link" href="#">how Сhoose Us</a>
+                <a class="footer__box-link" href="#">team</a>
+              </div>
+              <div class="footer__box-item">
+                <p class="footer__box-title">Support</p>
+                <a class="footer__box-link" href="#">FAQ</a>
+                <a class="footer__box-link" href="#">Privacy Policy</a>
+                <a class="footer__box-link" href="#">Term of Service</a>
+              </div>
+            </div>
+            <div class="footer__block">
+              <div class="socials">
+                <a class="socials__link" href="#">
+                  <i class="socials__icon">
+                    <svg viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M22.5 0C10.0958 0 0 10.0958 0 22.5C0 34.9042 10.0958 45 22.5 45C34.9042 45 45 34.9042 45 22.5C45 10.0958 34.9042 0 22.5 0ZM22.5 3.75C32.8775 3.75 41.25 12.1225 41.25 22.5C41.25 31.9263 34.3344 39.6774 25.2905 41.0229V27.9675H30.6299L31.4685 22.5439H25.2905V19.5813C25.2905 17.3294 26.0304 15.3296 28.136 15.3296H31.5198V10.5981C30.9254 10.5175 29.6675 10.3418 27.29 10.3418C22.325 10.3418 19.4165 12.963 19.4165 18.9368V22.5439H14.3115V27.9675H19.4165V40.9753C10.5166 39.5075 3.75 31.8245 3.75 22.5C3.75 12.1225 12.1225 3.75 22.5 3.75Z"
+                        fill="white" />
+                    </svg>
+                  </i>
+                </a>
+                <a class="socials__link" href="#">
+                  <i class="socials__icon">
+                    <svg viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12.5 0C5.6075 0 0 5.6075 0 12.5V32.5C0 39.3925 5.6075 45 12.5 45H32.5C39.3925 45 45 39.3925 45 32.5V12.5C45 5.6075 39.3925 0 32.5 0H12.5ZM12.5 5H32.5C36.635 5 40 8.365 40 12.5V32.5C40 36.635 36.635 40 32.5 40H12.5C8.365 40 5 36.635 5 32.5V12.5C5 8.365 8.365 5 12.5 5ZM35 7.5C34.337 7.5 33.7011 7.76339 33.2322 8.23223C32.7634 8.70107 32.5 9.33696 32.5 10C32.5 10.663 32.7634 11.2989 33.2322 11.7678C33.7011 12.2366 34.337 12.5 35 12.5C35.663 12.5 36.2989 12.2366 36.7678 11.7678C37.2366 11.2989 37.5 10.663 37.5 10C37.5 9.33696 37.2366 8.70107 36.7678 8.23223C36.2989 7.76339 35.663 7.5 35 7.5ZM22.5 10C15.6075 10 10 15.6075 10 22.5C10 29.3925 15.6075 35 22.5 35C29.3925 35 35 29.3925 35 22.5C35 15.6075 29.3925 10 22.5 10ZM22.5 15C26.635 15 30 18.365 30 22.5C30 26.635 26.635 30 22.5 30C18.365 30 15 26.635 15 22.5C15 18.365 18.365 15 22.5 15Z"
+                        fill="white" />
+                    </svg>
+                  </i>
+                </a>
+                <a class="socials__link" href="#">
+                  <i class="socials__icon">
+                    <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M22 0C9.86939 0 0 9.86843 0 22C0 34.1316 9.86939 44 22 44C34.1306 44 44 34.1316 44 22C44 9.86843 34.1306 0 22 0ZM15.3043 31.5652H11.4783V17.2174H15.3043V31.5652ZM13.3913 14.3478C12.3343 14.3478 11.4783 13.4917 11.4783 12.4348C11.4783 11.3778 12.3343 10.5217 13.3913 10.5217C14.4483 10.5217 15.3043 11.3778 15.3043 12.4348C15.3043 13.4917 14.4483 14.3478 13.3913 14.3478ZM33.4783 31.5652H29.6522V26.7826V24.3913C29.6522 22.55 28.1457 21.0435 26.3043 21.0435C24.463 21.0435 22.9565 22.55 22.9565 24.3913V31.5652H19.1304V17.2174H22.9565V18.9544C24.0737 17.8812 25.5889 17.2174 27.2609 17.2174C30.6948 17.2174 33.4783 20.0009 33.4783 23.4348V31.5652Z"
+                        fill="white" />
+                    </svg>
+                  </i>
+                </a>
+              </div>
+              <div class="footer__elem">
+                <div class="socials socials--alt">
+                  <a class="socials__link" href="#">
+                    <i class="socials__icon">
+                      <svg viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M27 5.3999C15.0714 5.3999 5.40002 15.0713 5.40002 26.9999C5.40002 31.0521 6.53824 34.83 8.47971 38.0706L5.59338 48.5999L16.3477 45.7769C19.4929 47.565 23.1237 48.5999 27 48.5999C38.9286 48.5999 48.6 38.9285 48.6 26.9999C48.6 15.0713 38.9286 5.3999 27 5.3999ZM19.6067 16.9241C19.9577 16.9241 20.3183 16.922 20.6297 16.9382C21.0149 16.9472 21.4342 16.9754 21.8356 17.8628C22.3126 18.9176 23.3512 21.5637 23.4844 21.8319C23.6176 22.1001 23.712 22.4161 23.5266 22.7671C23.3502 23.1271 23.2584 23.345 22.9992 23.6636C22.731 23.9732 22.4372 24.3577 22.1942 24.5917C21.926 24.8599 21.649 25.154 21.9586 25.6886C22.2682 26.2232 23.3434 27.9757 24.9328 29.3905C26.9758 31.2157 28.6996 31.7766 29.236 32.0448C29.7724 32.313 30.083 32.2712 30.3926 31.9112C30.7112 31.5602 31.7306 30.3558 32.0907 29.8194C32.4417 29.283 32.8 29.3758 33.286 29.5522C33.7792 29.7286 36.4093 31.0243 36.9457 31.2925C37.4821 31.5607 37.8338 31.6934 37.9688 31.9112C38.1074 32.1362 38.1075 33.2073 37.6629 34.4565C37.2183 35.7039 35.0351 36.9102 34.0559 36.9948C33.0677 37.0866 32.1454 37.439 27.6328 35.6624C22.1896 33.5186 18.7569 27.9435 18.4887 27.5835C18.2205 27.2325 16.309 24.6849 16.309 22.0569C16.309 19.4199 17.6916 18.1285 18.1758 17.5921C18.669 17.0557 19.2467 16.9241 19.6067 16.9241Z"
+                          fill="white" />
+                      </svg>
+                    </i>
+                  </a>
+                  <a class="socials__link" href="#">
+                    <i class="socials__icon">
+                      <svg viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M27 5.3999C15.0714 5.3999 5.40002 14.6681 5.40002 26.0999C5.40002 32.2221 8.19123 37.7049 12.6 41.4948V50.3999L21.3047 46.0476C23.122 46.5233 25.0254 46.7999 27 46.7999C38.9286 46.7999 48.6 37.5317 48.6 26.0999C48.6 14.6681 38.9286 5.3999 27 5.3999ZM24.9504 20.4433L30.2625 25.7624L39.7512 20.4433L29.0496 32.0413L23.8606 26.4655L14.1223 31.9147L24.9504 20.4433Z"
+                          fill="white" />
+                      </svg>
+                    </i>
+                  </a>
+                </div>
+                <a class="footer__mail" href="mailto:info@ezcaa.com">
+                  info@ezcaa.com
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bot">
+            <p class="footer__copy">
+              © EZCAA, 2024
+            </p>
+            <div class="up">
+              <p class="up__text">
+                up
+              </p>
+              <i class="title__icon">
+                <svg viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M29.5 58.4271C45.7924 58.4271 59 45.476 59 29.4999C59 13.5239 45.7924 0.572754 29.5 0.572754C13.2076 0.572754 0 13.5239 0 29.4999C0 45.476 13.2076 58.4271 29.5 58.4271Z"
+                    fill="#C4FF02" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M32.6415 12.4252L50.3033 38.751C52.1469 41.2566 49.8976 44.1068 47.4955 44.1068H12.0293C10.8418 44.1068 9.65918 43.4901 9.02403 42.3593C8.37674 41.2069 8.48439 39.8498 9.1652 38.835L26.8834 12.4251C27.6239 11.2976 28.8202 10.8835 29.7624 10.8835C30.7047 10.8835 31.9009 11.2977 32.6415 12.4252ZM32.5702 16.1629L32.6046 16.1116C32.5933 16.1289 32.5818 16.146 32.5702 16.1629ZM26.9203 16.1118L26.9545 16.1628C26.943 16.1459 26.9316 16.1289 26.9203 16.1118ZM29.7624 20.3481L41.1739 37.3576H18.3509L29.7624 20.3481ZM44.6995 42.6128C44.6722 42.5737 44.6459 42.5345 44.6206 42.4951L44.6995 42.6128Z"
+                    fill="#131313" />
+                </svg>
+              </i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <div class="form" id="form">
+      <div class="form__wrapper">
+        <form class="form__inner" action="">
+          <a class="logo logo--alt" href="/">
+            <img class="logo__img" src="./assets/images/logo-black.svg" alt="">
+          </a>
+          <p class="form__text">
+            We are not like most agencies; that's why we only choose startups that we can help grow.
+          </p>
+          <div class="form__box">
+            <div class="form__block">
+              <label class="form__subtitle" for="">Full Name<span>*</span></label>
+              <input class="input" type="text" placeholder="Elena Efimova">
+            </div>
+            <div class="form__block">
+              <label class="form__subtitle" for="">Your Email<span>*</span></label>
+              <input class="input" type="email" placeholder="example@gmail.com">
+            </div>
+            <div class="form__block form__block--alt">
+              <label class="form__subtitle" for="">Company website</label>
+              <textarea class="textarea" name="website" rows="1" placeholder="example@gmail.com"></textarea>
+            </div>
+          </div>
+          <div class="form__type">
+            <p class="form__subtitle">
+              Who are your customers?
+            </p>
+            <div class="form__type-box">
+              <label class="form__type-label">
+                <input class="form__type-radio" type="radio" name="customers">
+                Businesses
+              </label>
+              <label class="form__type-label">
+                <input class="form__type-radio" type="radio" name="customers">
+                Consumers
+              </label>
+              <label class="form__type-label">
+                <input class="form__type-radio" type="radio" name="customers">
+                Both
+              </label>
+            </div>
+          </div>
+          <div class="form__spending ">
+            <p class="form__subtitle">
+              What are you currently spending on ads?
+            </p>
+            <div class="form__spending-box">
+              <label class="form__spending-label">
+                <input class="form__spending-radio" type="radio" name="spending">
+                Not running ads yet
+              </label>
+              <label class="form__spending-label">
+                <input class="form__spending-radio" type="radio" name="spending">
+                Less than $10k/mo
+              </label>
+              <label class="form__spending-label">
+                <input class="form__spending-radio" type="radio" name="spending">
+                $25-50k/mo
+              </label>
+              <label class="form__spending-label">
+                <input class="form__spending-radio" type="radio" name="spending">
+                $10-25k/mo
+              </label>
+              <label class="form__spending-label">
+                <input class="form__spending-radio" type="radio" name="spending">
+                $50k+/mo
+              </label>
+            </div>
+          </div>
+          <button class="btn btn--black btn--arrow">
+            SEND MESSAGE
+            <i class="btn__icon">
+              <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M16.6627 12.4518L3.27662 21.4324C2.0026 22.3698 0.553329 21.2261 0.553329 20.0047L0.553329 1.97106C0.553329 1.36724 0.866915 0.765908 1.4419 0.442948C2.02787 0.113818 2.71791 0.168558 3.23393 0.514733L16.6627 9.52397C17.236 9.90053 17.4465 10.5088 17.4465 10.9879C17.4465 11.467 17.236 12.0753 16.6627 12.4518ZM14.7621 12.4156L14.7882 12.4331C14.7794 12.4273 14.7707 12.4215 14.7621 12.4156ZM14.7881 9.54273L14.7622 9.56013C14.7707 9.55428 14.7794 9.54848 14.7881 9.54273ZM12.634 10.9879L3.98516 16.7903L3.98516 5.18544L12.634 10.9879ZM1.31304 18.583C1.33287 18.5691 1.35281 18.5557 1.37286 18.5429L1.31304 18.583Z"
+                  fill="#C4FF02" />
+              </svg>
+            </i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="./scripts/scripts.js"></script>
+</body>
+
+</html>

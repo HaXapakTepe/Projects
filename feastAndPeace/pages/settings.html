@@ -1,0 +1,4486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../images/favicon.ico" type="x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.css
+">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../css/icons.css">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css?v=0.00011">
+  <title>Заготовки</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <a class="logo" href="#">
+            <img class="logo__img" src="../images/logo.svg" alt="">
+            <p class="logo__text">
+              Организация выездных банкетов,
+              фуршетов, кофе-брейков
+            </p>
+          </a>
+          <div class="city">
+            <p class="city__text">
+              Ваш город
+            </p>
+            <div class="city__box">
+              <select class="city__box-example js-example-basic-single" name="state">
+                <option value="Саратов">Саратов</option>
+                <option value="Энгельс">Энгельс</option>
+                <option value="Москва">Москва</option>
+              </select>
+            </div>
+          </div>
+          <a class="user" href="#">
+            <div class="user__icon icon-user"></div>
+            Войти
+          </a>
+          <a class="phone" href="tel:+78452539724">
+            <div class="phone__icon icon-phone"></div>
+            (8452) 539-724
+          </a>
+          <button class="btn" data-fancybox data-src="#call">
+            Заказать звонок
+          </button>
+          <div class="burger">
+            <div class="burger__line"></div>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <div class="header__bottom-inner">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item menu__list-item--hidden">
+                  <a class="logo" href="#">
+                    <img class="logo__img" src="../images/logo.svg" alt="">
+                    <p class="logo__text">
+                      Организация выездных банкетов,
+                      фуршетов, кофе-брейков
+                    </p>
+                  </a>
+                  <div class="menu__close"></div>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">
+                    Заготовки
+                  </a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">
+                    Искусственный интеллект
+                  </a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">
+                    Каталог
+                  </a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">
+                    Фото и Видео
+                  </a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">
+                    О нас
+                  </a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">
+                    Франшиза
+                  </a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">
+                    Контакты
+                  </a>
+                </li>
+                <li class="menu__list-item menu__list-item--hidden">
+                  <a class="user" href="#">
+                    <div class="user__icon icon-user"></div>
+                    Войти
+                  </a>
+                </li>
+                <li class="menu__list-item menu__list-item--hidden">
+                  <a class="phone" href="tel:+78452539724">
+                    <div class="phone__icon icon-phone"></div>
+                    (8452) 539-724
+                  </a>
+                </li>
+                <li class="menu__list-item menu__list-item--hidden">
+                  <div class="social">
+                    <a class="social__icon icon-tg" href="#"></a>
+                    <a class="social__icon icon-vb" href="#"></a>
+                    <a class="social__icon icon-wa" href="#"></a>
+                    <a class="social__icon icon-vk" href="#"></a>
+                  </div>
+                </li>
+                <li class="menu__list-item menu__list-item--hidden">
+                  <button class="btn btn--menu" data-fancybox data-src="#call">
+                    Заказать звонок
+                  </button>
+                </li>
+              </ul>
+            </nav>
+            <div class="social">
+              <a class="social__icon icon-tg" href="#"></a>
+              <a class="social__icon icon-vb" href="#"></a>
+              <a class="social__icon icon-wa" href="#"></a>
+              <a class="social__icon icon-vk" href="#"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <main class="main">
+
+
+      <section class="choice">
+        <div class="container">
+          <h2 class="choice__title">
+            Выберите
+            <span>
+              заготовку
+            </span>
+          </h2>
+          <h3 class="choice__subtitle">
+            для вашего мероприятия
+          </h3>
+          <div class="choice__swiper swiper">
+            <div class="choice__wrapper swiper-wrapper">
+              <a class="choice__link swiper-slide" href="#">
+                <div class="choice__link-box">
+                  <img class="choice__link-img" src="../images/choice/1.svg" alt="">
+                </div>
+                <p class="choice__link-text">
+                  Посиделки с&nbspколлегами
+                </p>
+              </a>
+              <a class="choice__link swiper-slide" href="#">
+                <div class="choice__link-box">
+                  <img class="choice__link-img" src="../images/choice/2.svg" alt="">
+                </div>
+                <p class="choice__link-text">
+                  Строгий кофе&nbsp-&nbspбрейк
+                </p>
+              </a>
+              <a class="choice__link swiper-slide" href="#">
+                <div class="choice__link-box">
+                  <img class="choice__link-img" src="../images/choice/3.svg" alt="">
+                </div>
+                <p class="choice__link-text">
+                  Пикник
+                </p>
+              </a>
+              <a class="choice__link swiper-slide" href="#">
+                <div class="choice__link-box">
+                  <img class="choice__link-img" src="../images/choice/4.svg" alt="">
+                </div>
+                <p class="choice__link-text">
+                  Романтический вечер
+                </p>
+              </a>
+              <a class="choice__link swiper-slide" href="#">
+                <div class="choice__link-box">
+                  <img class="choice__link-img" src="../images/choice/5.svg" alt="">
+                </div>
+                <p class="choice__link-text">
+                  В компании друзей
+                </p>
+              </a>
+              <a class="choice__link swiper-slide" href="#">
+                <div class="choice__link-box">
+                  <img class="choice__link-img" src="../images/choice/6.svg" alt="">
+                </div>
+                <p class="choice__link-text">
+                  Праздник с&nbspсемьей
+                </p>
+              </a>
+              <a class="choice__link swiper-slide" href="#">
+                <div class="choice__link-box">
+                  <img class="choice__link-img" src="../images/choice/7.svg" alt="">
+                </div>
+                <p class="choice__link-text">
+                  Детский праздник
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="ai">
+        <div class="container">
+          <div class="ai__inner">
+            <div class="ai__item">
+              <div class="ai__item-start">
+                <h2 class="ai__title">
+                  Искусственный
+                  <span>
+                    интеллект
+                  </span>
+                </h2>
+                <h3 class="ai__subtitle">
+                  подберет меню, исходя из ваших предпочтений
+                </h3>
+                <div class="card">
+                  <div class="card__item">
+                    <div class="card__item-box">
+                      <img class="card__item-img" src="../images/card/1.jpg" alt="">
+                      <p class="card__item-num card__item-num--hidden">
+                        x1
+                      </p>
+                    </div>
+                    <p class="card__item-text">
+                      Тарталетки с семгой
+                      и&nbsp;творожным сыром
+                    </p>
+                    <div class="card__item-flex">
+                      <div class="card__flex">
+                        <div class="card__icon icon-info">
+                          <div class="card__item-hidden">
+                            Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                            искусственный
+                            интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                          </div>
+                        </div>
+                        <div class="card__flex-text">
+                          Cостав
+                          <div class="card__item-hidden">
+                            Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                            искусственный
+                            интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                          </div>
+                        </div>
+                      </div>
+                      <div class="count count--hidden">
+                        <div class="count__minus"></div>
+                        <div class="count__num"><span>1</span> шт</div>
+                        <div class="count__plus"></div>
+                      </div>
+                    </div>
+                    <div class="card__item-flex">
+                      <p class="card__item-price">
+                        3 500 ₽
+                      </p>
+                      <div class="card__flex toBasket toBasket--add">
+                        <div class="card__icon icon-basket-transparent"></div>
+                        <p class="card__flex-text">
+                          В корзину
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__item">
+                    <div class="card__item-box">
+                      <img class="card__item-img" src="../images/card/2.jpg" alt="">
+                      <p class="card__item-num card__item-num--hidden">
+                        x1
+                      </p>
+                    </div>
+                    <p class="card__item-text">
+                      Тарталетки с семгой
+                      и&nbsp;творожным сыром
+                    </p>
+                    <div class="card__item-flex">
+                      <div class="card__flex">
+                        <div class="card__icon icon-info">
+                          <div class="card__item-hidden">
+                            Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                            искусственный
+                            интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                          </div>
+                        </div>
+                        <div class="card__flex-text">
+                          Cостав
+                          <div class="card__item-hidden">
+                            Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                            искусственный
+                            интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                          </div>
+                        </div>
+                      </div>
+                      <div class="count count--hidden">
+                        <div class="count__minus"></div>
+                        <div class="count__num"><span>1</span> шт</div>
+                        <div class="count__plus"></div>
+                      </div>
+                    </div>
+                    <div class="card__item-flex">
+                      <p class="card__item-price">
+                        3 500 ₽
+                      </p>
+                      <div class="card__flex toBasket toBasket--add">
+                        <div class="card__icon icon-basket-transparent"></div>
+                        <p class="card__flex-text">
+                          В корзину
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__item">
+                    <div class="card__item-box">
+                      <img class="card__item-img" src="../images/card/3.jpg" alt="">
+                      <p class="card__item-num card__item-num--hidden">
+                        x1
+                      </p>
+                    </div>
+                    <p class="card__item-text">
+                      Тарталетки с семгой
+                      и&nbsp;творожным сыром
+                    </p>
+                    <div class="card__item-flex">
+                      <div class="card__flex">
+                        <div class="card__icon icon-info">
+                          <div class="card__item-hidden">
+                            Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                            искусственный
+                            интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                          </div>
+                        </div>
+                        <div class="card__flex-text">
+                          Cостав
+                          <div class="card__item-hidden">
+                            Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                            искусственный
+                            интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                          </div>
+                        </div>
+                      </div>
+                      <div class="count count--hidden">
+                        <div class="count__minus"></div>
+                        <div class="count__num"><span>1</span> шт</div>
+                        <div class="count__plus"></div>
+                      </div>
+                    </div>
+                    <div class="card__item-flex">
+                      <p class="card__item-price">
+                        3 500 ₽
+                      </p>
+                      <div class="card__flex toBasket toBasket--add">
+                        <div class="card__icon icon-basket-transparent"></div>
+                        <p class="card__flex-text">
+                          В корзину
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__item">
+                    <div class="card__item-box">
+                      <img class="card__item-img" src="../images/card/4.jpg" alt="">
+                      <p class="card__item-num card__item-num--hidden">
+                        x1
+                      </p>
+                    </div>
+                    <p class="card__item-text">
+                      Тарталетки с семгой
+                      и&nbsp;творожным сыром
+                    </p>
+                    <div class="card__item-flex">
+                      <div class="card__flex">
+                        <div class="card__icon icon-info">
+                          <div class="card__item-hidden">
+                            Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                            искусственный
+                            интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                          </div>
+                        </div>
+                        <div class="card__flex-text">
+                          Cостав
+                          <div class="card__item-hidden">
+                            Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                            искусственный
+                            интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                          </div>
+                        </div>
+                      </div>
+                      <div class="count count--hidden">
+                        <div class="count__minus"></div>
+                        <div class="count__num"><span>1</span> шт</div>
+                        <div class="count__plus"></div>
+                      </div>
+                    </div>
+                    <div class="card__item-flex">
+                      <p class="card__item-price">
+                        3 500 ₽
+                      </p>
+                      <div class="card__flex toBasket toBasket--add">
+                        <div class="card__icon icon-basket-transparent"></div>
+                        <p class="card__flex-text">
+                          В корзину
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__item">
+                    <div class="card__item-box">
+                      <img class="card__item-img" src="../images/card/5.jpg" alt="">
+                      <p class="card__item-num card__item-num--hidden">
+                        x1
+                      </p>
+                    </div>
+                    <p class="card__item-text">
+                      Тарталетки с семгой
+                      и&nbsp;творожным сыром
+                    </p>
+                    <div class="card__item-flex">
+                      <div class="card__flex">
+                        <div class="card__icon icon-info">
+                          <div class="card__item-hidden">
+                            Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                            искусственный
+                            интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                          </div>
+                        </div>
+                        <div class="card__flex-text">
+                          Cостав
+                          <div class="card__item-hidden">
+                            Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                            искусственный
+                            интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                          </div>
+                        </div>
+                      </div>
+                      <div class="count count--hidden">
+                        <div class="count__minus"></div>
+                        <div class="count__num"><span>1</span> шт</div>
+                        <div class="count__plus"></div>
+                      </div>
+                    </div>
+                    <div class="card__item-flex">
+                      <p class="card__item-price">
+                        3 500 ₽
+                      </p>
+                      <div class="card__flex toBasket toBasket--add">
+                        <div class="card__icon icon-basket-transparent"></div>
+                        <p class="card__flex-text">
+                          В корзину
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__item">
+                    <div class="card__item-box">
+                      <img class="card__item-img" src="../images/card/6.jpg" alt="">
+                      <p class="card__item-num card__item-num--hidden">
+                        x1
+                      </p>
+                    </div>
+                    <p class="card__item-text">
+                      Тарталетки с семгой
+                      и&nbsp;творожным сыром
+                    </p>
+                    <div class="card__item-flex">
+                      <div class="card__flex">
+                        <div class="card__icon icon-info">
+                          <div class="card__item-hidden">
+                            Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                            искусственный
+                            интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                          </div>
+                        </div>
+                        <div class="card__flex-text">
+                          Cостав
+                          <div class="card__item-hidden">
+                            Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                            искусственный
+                            интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                          </div>
+                        </div>
+                      </div>
+                      <div class="count count--hidden">
+                        <div class="count__minus"></div>
+                        <div class="count__num"><span>1</span> шт</div>
+                        <div class="count__plus"></div>
+                      </div>
+                    </div>
+                    <div class="card__item-flex">
+                      <p class="card__item-price">
+                        3 500 ₽
+                      </p>
+                      <div class="card__flex toBasket toBasket--add">
+                        <div class="card__icon icon-basket-transparent"></div>
+                        <p class="card__flex-text">
+                          В корзину
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__item">
+                    <div class="card__item-box">
+                      <img class="card__item-img" src="../images/card/1.jpg" alt="">
+                      <p class="card__item-num card__item-num--hidden">
+                        x1
+                      </p>
+                    </div>
+                    <p class="card__item-text">
+                      Тарталетки с семгой
+                      и&nbsp;творожным сыром
+                    </p>
+                    <div class="card__item-flex">
+                      <div class="card__flex">
+                        <div class="card__icon icon-info">
+                          <div class="card__item-hidden">
+                            Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                            искусственный
+                            интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                          </div>
+                        </div>
+                        <div class="card__flex-text">
+                          Cостав
+                          <div class="card__item-hidden">
+                            Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                            искусственный
+                            интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                          </div>
+                        </div>
+                      </div>
+                      <div class="count count--hidden">
+                        <div class="count__minus"></div>
+                        <div class="count__num"><span>1</span> шт</div>
+                        <div class="count__plus"></div>
+                      </div>
+                    </div>
+                    <div class="card__item-flex">
+                      <p class="card__item-price">
+                        3 500 ₽
+                      </p>
+                      <div class="card__flex toBasket toBasket--add">
+                        <div class="card__icon icon-basket-transparent"></div>
+                        <p class="card__flex-text">
+                          В корзину
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__item">
+                    <div class="card__item-box">
+                      <img class="card__item-img" src="../images/card/2.jpg" alt="">
+                      <p class="card__item-num card__item-num--hidden">
+                        x1
+                      </p>
+                    </div>
+                    <p class="card__item-text">
+                      Тарталетки с семгой
+                      и&nbsp;творожным сыром
+                    </p>
+                    <div class="card__item-flex">
+                      <div class="card__flex">
+                        <div class="card__icon icon-info">
+                          <div class="card__item-hidden">
+                            Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                            искусственный
+                            интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                          </div>
+                        </div>
+                        <div class="card__flex-text">
+                          Cостав
+                          <div class="card__item-hidden">
+                            Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                            искусственный
+                            интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                          </div>
+                        </div>
+                      </div>
+                      <div class="count count--hidden">
+                        <div class="count__minus"></div>
+                        <div class="count__num"><span>1</span> шт</div>
+                        <div class="count__plus"></div>
+                      </div>
+                    </div>
+                    <div class="card__item-flex">
+                      <p class="card__item-price">
+                        3 500 ₽
+                      </p>
+                      <div class="card__flex toBasket toBasket--add">
+                        <div class="card__icon icon-basket-transparent"></div>
+                        <p class="card__flex-text">
+                          В корзину
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__item">
+                    <div class="card__item-box">
+                      <img class="card__item-img" src="../images/card/3.jpg" alt="">
+                      <p class="card__item-num card__item-num--hidden">
+                        x1
+                      </p>
+                    </div>
+                    <p class="card__item-text">
+                      Тарталетки с семгой
+                      и&nbsp;творожным сыром
+                    </p>
+                    <div class="card__item-flex">
+                      <div class="card__flex">
+                        <div class="card__icon icon-info">
+                          <div class="card__item-hidden">
+                            Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                            искусственный
+                            интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                          </div>
+                        </div>
+                        <div class="card__flex-text">
+                          Cостав
+                          <div class="card__item-hidden">
+                            Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                            искусственный
+                            интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                          </div>
+                        </div>
+                      </div>
+                      <div class="count count--hidden">
+                        <div class="count__minus"></div>
+                        <div class="count__num"><span>1</span> шт</div>
+                        <div class="count__plus"></div>
+                      </div>
+                    </div>
+                    <div class="card__item-flex">
+                      <p class="card__item-price">
+                        3 500 ₽
+                      </p>
+                      <div class="card__flex toBasket toBasket--add">
+                        <div class="card__icon icon-basket-transparent"></div>
+                        <p class="card__flex-text">
+                          В корзину
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btn--white" data-fancybox data-src="#modalDishes">
+                  <span class="icon-add btn--white__icon"></span>
+                  Добавить блюдо
+                </button>
+              </div>
+            </div>
+            <div class="ai__item">
+              <form class="filter" action="">
+                <div class="filter__inner">
+                  <div class="filter__top">
+                    <div class="filter__top-icon">
+                      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="gear" clip-path="url(#clip0_140_6555)">
+                          <path id="Vector"
+                            d="M31.0002 20.0001C29.3002 19.0001 28.3002 17.6001 28.3002 16.0001C28.3002 14.4001 29.3002 13.0001 31.0002 12.0001C31.9002 11.5001 32.2002 10.4001 31.8002 9.4001V9.30011C31.4002 8.40011 30.4002 7.80011 29.4002 8.10011C27.5002 8.60011 25.8002 8.2001 24.7002 7.2001C23.6002 6.1001 23.3002 4.4001 23.8002 2.5001C24.0002 1.5001 23.5002 0.500105 22.6002 0.100105C21.7002 -0.299895 20.6002 0.100105 20.0002 0.900105C19.0002 2.6001 17.6002 3.6001 16.0002 3.6001C14.4002 3.6001 13.0002 2.6001 12.0002 0.900105C11.5002 0.000114904 10.4002 -0.299895 9.4002 0.100105C8.5002 0.600105 8.0002 1.6001 8.2002 2.6001C8.7002 4.5001 8.4002 6.20011 7.3002 7.30011C6.2002 8.30011 4.5002 8.6001 2.6002 8.2001C1.6002 8.0001 0.600203 8.5001 0.200203 9.4001V9.5001C-0.199797 10.4001 0.200203 11.5001 1.0002 12.1001C2.7002 13.1001 3.7002 14.5001 3.7002 16.1001C3.7002 17.6001 2.8002 19.0001 1.0002 20.1001C0.100203 20.6001 -0.199797 21.7001 0.200203 22.7001V22.8001C0.600203 23.7001 1.6002 24.3001 2.6002 24.0001C4.5002 23.5001 6.2002 23.8001 7.3002 24.9001C8.4002 26.0001 8.7002 27.7001 8.2002 29.6001C8.0002 30.6001 8.5002 31.6001 9.4002 32.0001C10.3002 32.4001 11.4002 32.0001 12.0002 31.2001C13.0002 29.5001 14.4002 28.5001 16.0002 28.5001C17.6002 28.5001 19.0002 29.5001 20.0002 31.2001C20.5002 32.1001 21.6002 32.4001 22.6002 32.0001C23.5002 31.6001 24.1002 30.6001 23.8002 29.6001C23.3002 27.7001 23.6002 26.0001 24.7002 24.9001C25.8002 23.8001 27.5002 23.5001 29.4002 24.0001C30.4002 24.2001 31.4002 23.7001 31.8002 22.8001C32.2002 21.6001 31.9002 20.5001 31.0002 20.0001ZM16.0002 25.0001C11.1002 25.0001 7.0002 21.0001 7.0002 16.0001C7.0002 11.0001 11.0002 7.0001 16.0002 7.0001C20.9002 7.0001 25.0002 11.0001 25.0002 16.0001C25.0002 21.0001 20.9002 25.0001 16.0002 25.0001Z"
+                            fill="#8DA0AA" />
+                          <path id="Vector_2"
+                            d="M15.9996 21.4001C18.9819 21.4001 21.3996 18.9824 21.3996 16.0001C21.3996 13.0178 18.9819 10.6001 15.9996 10.6001C13.0173 10.6001 10.5996 13.0178 10.5996 16.0001C10.5996 18.9824 13.0173 21.4001 15.9996 21.4001Z"
+                            fill="#7AC8C9" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_140_6555">
+                            <rect width="32" height="32" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                    <h3 class="filter__top-title">
+                      Настройте своё меню
+                    </h3>
+                  </div>
+                  <div class="filter__top-hidden">
+                    <div class="filter__accordion">
+                      <label class="filter__label">
+                        <div class="filter__flex filter__flex--required">
+                          Кол-во персон
+                          <div class="filter__icon icon-info">
+                            <span>
+                              *
+                            </span>
+                            <div class="filter__choice-hidden">
+                              Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                              искусственный
+                              интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                            </div>
+                          </div>
+                        </div>
+                        <div class="filter__flex">
+                          <input class="filter__label-input" name="quantity" type="text" required>
+                          <p class="filter__label-text">
+                            человек
+                          </p>
+                        </div>
+                      </label>
+                      <label class="filter__label">
+                        <div class="filter__flex filter__flex--required">
+                          Бюджет
+                          <div class="filter__icon icon-info">
+                            <span>
+                              *
+                            </span>
+                            <div class="filter__choice-hidden">
+                              Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                              искусственный
+                              интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                            </div>
+                          </div>
+                        </div>
+                        <div class="filter__flex">
+                          <input class="filter__label-input" name="price" type="text" autocomplete="off" required>
+                          <p class="filter__label-text">
+                            ₽
+                          </p>
+                        </div>
+                      </label>
+                      <div class="filter__box">
+                        <div class="filter__choice">
+                          <div class="filter__flex filter__flex--jcsb" data-id="4">
+                            <div class="filter__flex">
+                              Женщины
+                              <div class="filter__icon icon-info">
+                                <div class="filter__choice-hidden">
+                                  Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                                  искусственный
+                                  интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                                </div>
+                              </div>
+                            </div>
+                            Мужчины
+                          </div>
+                          <div class="filter__choice-range filter__choice-range--1"></div>
+                        </div>
+                        <div class="filter__choice">
+                          <div class="filter__flex filter__flex--jcsb" data-id="4">
+                            <div class="filter__flex">
+                              Детское
+                              <div class="filter__icon icon-info">
+                                <div class="filter__choice-hidden">
+                                  Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                                  искусственный
+                                  интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                                </div>
+                              </div>
+                            </div>
+                            Взрослое
+                          </div>
+                          <div class="filter__choice-range filter__choice-range--2"></div>
+                        </div>
+                        <div class="filter__choice">
+                          <div class="filter__flex filter__flex--jcsb" data-id="4">
+                            <div class="filter__flex">
+                              Дешевое
+                              <div class="filter__icon icon-info">
+                                <div class="filter__choice-hidden">
+                                  Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                                  искусственный
+                                  интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                                </div>
+                              </div>
+                            </div>
+                            Дорогое
+                          </div>
+                          <div class="filter__choice-range filter__choice-range--3"></div>
+                        </div>
+                        <div class="filter__choice">
+                          <div class="filter__flex filter__flex--jcsb" data-id="4">
+                            <div class="filter__flex">
+                              Официальное
+                              <div class="filter__icon icon-info">
+                                <div class="filter__choice-hidden">
+                                  Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                                  искусственный
+                                  интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                                </div>
+                              </div>
+                            </div>
+                            Праздничное
+                          </div>
+                          <div class="filter__choice-range filter__choice-range--4"></div>
+                        </div>
+                        <div class="filter__choice">
+                          <div class="filter__flex filter__flex--jcsb" data-id="4">
+                            <div class="filter__flex">
+                              Веганское
+                              <div class="filter__icon icon-info">
+                                <div class="filter__choice-hidden">
+                                  Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                                  искусственный
+                                  интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                                </div>
+                              </div>
+                            </div>
+                            Мясное
+                          </div>
+                          <div class="filter__choice-range filter__choice-range--5"></div>
+                        </div>
+                        <div class="filter__choice">
+                          <div class="filter__flex filter__flex--jcsb" data-id="4">
+                            <div class="filter__flex">
+                              Сладкое
+                              <div class="filter__icon icon-info">
+                                <div class="filter__choice-hidden">
+                                  Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                                  искусственный
+                                  интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                                </div>
+                              </div>
+                            </div>
+                            Соленое
+                          </div>
+                          <div class="filter__choice-range filter__choice-range--6"></div>
+                        </div>
+                        <div class="filter__choice">
+                          <div class="filter__flex filter__flex--jcsb" data-id="4">
+                            <div class="filter__flex">
+                              Под алкоголь
+                              <div class="filter__icon icon-info">
+                                <div class="filter__choice-hidden">
+                                  Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                                  искусственный
+                                  интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="filter__choice-range filter__choice-range--7"></div>
+                        </div>
+                      </div>
+                      <p class="filter__text filter__text--required">
+                        <span> * </span> Необходимо выбрать в первую очередь
+                      </p>
+                      <div class="filter__block">
+                        <p class="filter__text">
+                          На столе будет <span> 45 порций</span> из <span>9 блюд</span>, на <span>9845 грамм
+                          </span>. Это по 1520 рублей на
+                          одного гостя,
+                          по 5 порций
+                          и 1100 грамм на каждого
+                        </p>
+                        <div class="filter__block-mobile">
+                          <button class="btn accept">
+                            Принять
+                          </button>
+                          <button class="btn reset">
+                            Сбросить
+                          </button>
+                        </div>
+                        <div class="filter__block-box">
+                          <p class="filter__price">
+                            ₽
+                          </p>
+                          <button class="btn">
+                            Оформить без доп. услуг
+                          </button>
+                          <button class="btn btn--mobile">
+                            Заказать
+                          </button>
+                        </div>
+                        <div class="social">
+                          <a class="social__icon icon-download" href="#"></a>
+                          <a class="social__icon icon-share" href="#"></a>
+                          <a class="social__icon icon-phone" href="#"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="trust">
+        <div class="container">
+          <div class="trust__inner">
+            <img class="trust__bg" src="../images/trust/bg.jpg" alt="">
+            <h2 class="trust__title">
+              Не доверяете
+              <span>
+                роботам
+                и&nbsp;искусственному интеллекту?
+              </span>
+            </h2>
+            <h3 class="trust__subtitle">
+              Тогда составьте меню сами, с&nbsp;чистого&nbsp;листа.
+            </h3>
+            <button class="btn">
+              Открыть каталог
+            </button>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__item">
+            <a class="logo" href="#">
+              <img class="logo__img" src="../images/logo.svg" alt="">
+              <p class="logo__text">
+                Организация выездных банкетов,
+                фуршетов, кофе-брейков
+              </p>
+            </a>
+            <a class="footer__item-link" href="#">
+              Пользовательское соглашение
+            </a>
+            <a class="footer__item-link" href="#">
+              Политика конфиденциальности
+            </a>
+            <a class="footer__item-link" href="#">
+              Публичная оферта
+            </a>
+          </div>
+          <div class="footer__menu">
+            <div class="footer__menu-box">
+              <a class="footer__menu-link" href="#">
+                Заготовки
+              </a>
+              <a class="footer__menu-link" href="#">
+                Искусственный интеллект
+              </a>
+              <a class="footer__menu-link" href="#">
+                Каталог
+              </a>
+            </div>
+            <div class="footer__menu-box">
+              <a class="footer__menu-link" href="#">
+                Фото и Видео
+              </a>
+              <a class="footer__menu-link" href="#">
+                О нас
+              </a>
+              <a class="footer__menu-link" href="#">
+                Контакты
+              </a>
+            </div>
+            <div class="social">
+              <a class="social__icon icon-tg" href="#"></a>
+              <a class="social__icon icon-vb" href="#"></a>
+              <a class="social__icon icon-wa" href="#"></a>
+              <a class="social__icon icon-vk" href="#"></a>
+            </div>
+          </div>
+          <div class="footer__box">
+            <a class="phone" href="tel:+78452539724">
+              <div class="phone__icon icon-phone"></div>
+              (8452) 539-724
+            </a>
+            <button class="btn" data-fancybox data-src="#call">
+              Заказать звонок
+            </button>
+            <div class="social">
+              <a class="social__icon icon-tg" href="#"></a>
+              <a class="social__icon icon-vb" href="#"></a>
+              <a class="social__icon icon-wa" href="#"></a>
+              <a class="social__icon icon-vk" href="#"></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__bottom-mobile">
+            <a class="footer__bottom-link" href="#">
+              Пользовательское соглашение
+            </a>
+            <a class="footer__bottom-link" href="#">
+              Политика конфиденциальности
+            </a>
+            <a class="footer__bottom-link" href="#">
+              Публичная оферта
+            </a>
+          </div>
+          <p class="footer__bottom-copy">
+            2023 © Пир и Мир. Все права защищены.
+          </p>
+          <a class="developer" href="#">
+            Разработка сайта
+          </a>
+        </div>
+      </div>
+    </footer>
+
+
+    <form class="modalDishes" id="modalDishes" action="">
+      <div class="modalDishes__inner">
+        <h2 class="modalDishes__title">
+          Добавить блюда
+        </h2>
+        <div class="tab">
+          <div data-target="target1" class="modalDishes__target tab__target  tab__target--active">
+            Супы
+          </div>
+          <div data-target="target2" class="modalDishes__target tab__target ">
+            Горячее
+          </div>
+          <div data-target="target3" class="modalDishes__target tab__target ">
+            Салаты
+          </div>
+          <div data-target="target4" class="modalDishes__target tab__target ">
+            Закуски
+          </div>
+          <div data-target="target5" class="modalDishes__target tab__target ">
+            Выпечка
+          </div>
+          <div data-target="target6" class="modalDishes__target tab__target ">
+            Десерты
+          </div>
+          <div data-target="target7" class="modalDishes__target tab__target ">
+            Напитки
+          </div>
+        </div>
+        <div class="sorting">
+          <div class="sorting__box">
+            Сортировка
+            <div class="sorting__select">
+              <select class="sorting__select-item js-example-basic-multiple" multiple="multiple">
+                <option value="1">Выбор 1</option>
+                <option value="2">Выбор 2</option>
+                <option value="3">Выбор 3</option>
+                <option value="4">Выбор 4</option>
+                <option value="5">Выбор 5</option>
+                <option value="6">Выбор 6</option>
+              </select>
+            </div>
+          </div>
+          <div class="sorting__box">
+            Сортировка
+            <div class="sorting__select">
+              <select class="sorting__select-item js-example-basic-multiple" multiple="multiple">
+                <option value="1">Выбор 1</option>
+                <option value="2">Выбор 2</option>
+                <option value="3">Выбор 3</option>
+                <option value="4">Выбор 4</option>
+                <option value="5">Выбор 5</option>
+                <option value="6">Выбор 6</option>
+              </select>
+            </div>
+          </div>
+          <div class="sorting__box">
+            Сортировка
+            <div class="sorting__select">
+              <select class="sorting__select-item js-example-basic-multiple" multiple="multiple">
+                <option value="1">Выбор 1</option>
+                <option value="2">Выбор 2</option>
+                <option value="3">Выбор 3</option>
+                <option value="4">Выбор 4</option>
+                <option value="5">Выбор 5</option>
+                <option value="6">Выбор 6</option>
+              </select>
+            </div>
+          </div>
+          <div class="sorting__box">
+            Сортировка
+            <div class="sorting__select">
+              <select class="sorting__select-item js-example-basic-multiple" multiple="multiple">
+                <option value="1">Выбор 1</option>
+                <option value="2">Выбор 2</option>
+                <option value="3">Выбор 3</option>
+                <option value="4">Выбор 4</option>
+                <option value="5">Выбор 5</option>
+                <option value="6">Выбор 6</option>
+              </select>
+            </div>
+          </div>
+          <div class="sorting__box">
+            Сортировка
+            <div class="sorting__select">
+              <select class="sorting__select-item js-example-basic-multiple" multiple="multiple">
+                <option value="1">Выбор 1</option>
+                <option value="2">Выбор 2</option>
+                <option value="3">Выбор 3</option>
+                <option value="4">Выбор 4</option>
+                <option value="5">Выбор 5</option>
+                <option value="6">Выбор 6</option>
+              </select>
+            </div>
+          </div>
+          <div class="sorting__box">
+            Сортировка
+            <div class="sorting__select">
+              <select class="sorting__select-item js-example-basic-multiple" multiple="multiple">
+                <option value="1">Выбор 1</option>
+                <option value="2">Выбор 2</option>
+                <option value="3">Выбор 3</option>
+                <option value="4">Выбор 4</option>
+                <option value="5">Выбор 5</option>
+                <option value="6">Выбор 6</option>
+              </select>
+            </div>
+          </div>
+          <div class="sorting__box">
+            Сортировка
+            <div class="sorting__select">
+              <select class="sorting__select-item js-example-basic-multiple" multiple="multiple">
+                <option value="1">Выбор 1</option>
+                <option value="2">Выбор 2</option>
+                <option value="3">Выбор 3</option>
+                <option value="4">Выбор 4</option>
+                <option value="5">Выбор 5</option>
+                <option value="6">Выбор 6</option>
+              </select>
+            </div>
+          </div>
+          <div class="sorting__box">
+            <div class="sorting__flex">
+              <button class="btn">
+                Применить
+              </button>
+              <button class="btn btn--gray">
+                Сбросить
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="modalDishes__content">
+          <div data-info="target1" class="tab__info tab__info--active tab__info--opacity">
+            <div class="card">
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/1.jpg" alt="">
+                  <!-- <p class="card__item-num card__item-num--hidden">
+                    x1
+                  </p> -->
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info">
+                      <div class="card__item-hidden">
+                        Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                        искусственный
+                        интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                      </div>
+                    </div>
+                    <div class="card__flex-text">
+                      Cостав
+                      <div class="card__item-hidden">
+                        Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                        искусственный
+                        интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                      </div>
+                    </div>
+                  </div>
+                  <div class="count count--hidden">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <p class="card__flex-text">
+                      В корзину
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/2.jpg" alt="">
+                  <!-- <p class="card__item-num card__item-num--hidden">
+                    x1
+                  </p> -->
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info">
+                      <div class="card__item-hidden">
+                        Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                        искусственный
+                        интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                      </div>
+                    </div>
+                    <div class="card__flex-text">
+                      Cостав
+                      <div class="card__item-hidden">
+                        Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                        искусственный
+                        интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                      </div>
+                    </div>
+                  </div>
+                  <div class="count count--hidden">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <p class="card__flex-text">
+                      В корзину
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/3.jpg" alt="">
+                  <!-- <p class="card__item-num card__item-num--hidden">
+                    x1
+                  </p> -->
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info">
+                      <div class="card__item-hidden">
+                        Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                        искусственный
+                        интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                      </div>
+                    </div>
+                    <div class="card__flex-text">
+                      Cостав
+                      <div class="card__item-hidden">
+                        Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                        искусственный
+                        интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                      </div>
+                    </div>
+                  </div>
+                  <div class="count count--hidden">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <p class="card__flex-text">
+                      В корзину
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/4.jpg" alt="">
+                  <!-- <p class="card__item-num card__item-num--hidden">
+                    x1
+                  </p> -->
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info">
+                      <div class="card__item-hidden">
+                        Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                        искусственный
+                        интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                      </div>
+                    </div>
+                    <div class="card__flex-text">
+                      Cостав
+                      <div class="card__item-hidden">
+                        Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                        искусственный
+                        интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                      </div>
+                    </div>
+                  </div>
+                  <div class="count count--hidden">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <p class="card__flex-text">
+                      В корзину
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/5.jpg" alt="">
+                  <!-- <p class="card__item-num card__item-num--hidden">
+                    x1
+                  </p> -->
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info">
+                      <div class="card__item-hidden">
+                        Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                        искусственный
+                        интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                      </div>
+                    </div>
+                    <div class="card__flex-text">
+                      Cостав
+                      <div class="card__item-hidden">
+                        Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                        искусственный
+                        интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                      </div>
+                    </div>
+                  </div>
+                  <div class="count count--hidden">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <p class="card__flex-text">
+                      В корзину
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/6.jpg" alt="">
+                  <!-- <p class="card__item-num card__item-num--hidden">
+                    x1
+                  </p> -->
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info">
+                      <div class="card__item-hidden">
+                        Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                        искусственный
+                        интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                      </div>
+                    </div>
+                    <div class="card__flex-text">
+                      Cостав
+                      <div class="card__item-hidden">
+                        Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                        искусственный
+                        интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                      </div>
+                    </div>
+                  </div>
+                  <div class="count count--hidden">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <p class="card__flex-text">
+                      В корзину
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/1.jpg" alt="">
+                  <p class="card__item-num card__item-num--hidden">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info">
+                      <div class="card__item-hidden">
+                        Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                        искусственный
+                        интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                      </div>
+                    </div>
+                    <div class="card__flex-text">
+                      Cостав
+                      <div class="card__item-hidden">
+                        Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                        искусственный
+                        интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                      </div>
+                    </div>
+                  </div>
+                  <div class="count count--hidden">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <p class="card__flex-text">
+                      В корзину
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/2.jpg" alt="">
+                  <p class="card__item-num card__item-num--hidden">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info">
+                      <div class="card__item-hidden">
+                        Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                        искусственный
+                        интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                      </div>
+                    </div>
+                    <div class="card__flex-text">
+                      Cостав
+                      <div class="card__item-hidden">
+                        Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                        искусственный
+                        интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                      </div>
+                    </div>
+                  </div>
+                  <div class="count count--hidden">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <p class="card__flex-text">
+                      В корзину
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/3.jpg" alt="">
+                  <p class="card__item-num card__item-num--hidden">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info">
+                      <div class="card__item-hidden">
+                        Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                        искусственный
+                        интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                      </div>
+                    </div>
+                    <div class="card__flex-text">
+                      Cостав
+                      <div class="card__item-hidden">
+                        Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и
+                        искусственный
+                        интеллект сформирует новое меню, учитывая изменения в настройках. Продолжить?
+                      </div>
+                    </div>
+                  </div>
+                  <div class="count count--hidden">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <p class="card__flex-text">
+                      В корзину
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn--white">
+              Показать ещё
+            </button>
+          </div>
+          <div data-info="target2" class="tab__info">
+            <div class="card">
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/1.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/2.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/3.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/4.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/5.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/6.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/1.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/2.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/3.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/1.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/2.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/3.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn--white">
+              Показать ещё
+            </button>
+          </div>
+          <div data-info="target3" class="tab__info">
+            <div class="card">
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/1.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/2.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/3.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/4.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/5.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/6.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/1.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/2.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/3.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/1.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/2.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/3.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn--white">
+              Показать ещё
+            </button>
+          </div>
+          <div data-info="target4" class="tab__info">
+            <div class="card">
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/1.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/2.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/3.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/4.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/5.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/6.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/1.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/2.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/3.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/1.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/2.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/3.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn--white">
+              Показать ещё
+            </button>
+          </div>
+          <div data-info="target5" class="tab__info">
+            <div class="card">
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/1.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/2.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/3.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/4.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/5.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/6.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/1.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/2.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/3.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/1.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/2.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/3.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn--white">
+              Показать ещё
+            </button>
+          </div>
+          <div data-info="target6" class="tab__info">
+            <div class="card">
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/1.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/2.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/3.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/4.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/5.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/6.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/1.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/2.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/3.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/1.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/2.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/3.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn--white">
+              Показать ещё
+            </button>
+          </div>
+          <div data-info="target7" class="tab__info">
+            <div class="card">
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/1.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/2.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/3.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/4.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/5.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/6.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/1.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/2.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/3.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/1.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/2.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__item">
+                <div class="card__item-box">
+                  <img class="card__item-img" src="../images/card/3.jpg" alt="">
+                  <p class="card__item-num">
+                    x1
+                  </p>
+                </div>
+                <p class="card__item-text">
+                  Тарталетки с семгой
+                  и&nbsp;творожным сыром
+                </p>
+                <div class="card__item-flex">
+                  <div class="card__flex">
+                    <div class="card__icon icon-info"></div>
+                    <div class="card__flex-text">
+                      Cостав
+                    </div>
+                  </div>
+                  <div class="count">
+                    <div class="count__minus"></div>
+                    <div class="count__num"><span>1</span> шт</div>
+                    <div class="count__plus"></div>
+                  </div>
+                </div>
+                <div class="card__item-flex">
+                  <p class="card__item-price">
+                    3 500 ₽
+                  </p>
+                  <div class="card__flex toBasket toBasket--add">
+                    <div class="card__icon icon-basket-transparent"></div>
+                    <div class="card__flex-text">
+                      В корзину
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn--white">
+              Показать ещё
+            </button>
+          </div>
+          <div class="basket">
+            <div class="basket__item">
+              <div class="basket__top">
+                <div class="basket__top-icon">
+                  <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="basket">
+                      <path id="Vector"
+                        d="M25.3331 16.0004H6.66648C6.23581 16.0004 5.82648 15.9151 5.43848 15.7871L6.43314 25.7324C6.52938 26.7204 6.99058 27.6369 7.7266 28.3029C8.46261 28.9689 9.42054 29.3365 10.4131 29.3338H21.5865C22.5791 29.3365 23.537 28.9689 24.273 28.3029C25.009 27.6369 25.4702 26.7204 25.5665 25.7324L26.5611 15.7884C26.1718 15.9151 25.7638 16.0004 25.3331 16.0004Z"
+                        fill="#7AC8C9" />
+                      <path id="Vector_2"
+                        d="M25.3337 16H6.66699C5.60613 16 4.58871 15.5786 3.83857 14.8284C3.08842 14.0783 2.66699 13.0609 2.66699 12C2.66699 10.9391 3.08842 9.92172 3.83857 9.17157C4.58871 8.42143 5.60613 8 6.66699 8H25.3337C26.3945 8 27.4119 8.42143 28.1621 9.17157C28.9122 9.92172 29.3337 10.9391 29.3337 12C29.3337 13.0609 28.9122 14.0783 28.1621 14.8284C27.4119 15.5786 26.3945 16 25.3337 16Z"
+                        fill="#D8D8FF" />
+                      <path id="Vector_3"
+                        d="M25.3337 16H6.66699C5.60613 16 4.58871 15.5786 3.83857 14.8284C3.08842 14.0783 2.66699 13.0609 2.66699 12C2.66699 10.9391 3.08842 9.92172 3.83857 9.17157C4.58871 8.42143 5.60613 8 6.66699 8H25.3337C26.3945 8 27.4119 8.42143 28.1621 9.17157C28.9122 9.92172 29.3337 10.9391 29.3337 12C29.3337 13.0609 28.9122 14.0783 28.1621 14.8284C27.4119 15.5786 26.3945 16 25.3337 16Z"
+                        fill="#DBF1F1" />
+                      <path id="Vector_4"
+                        d="M20.5098 7.99965H23.4911L21.1938 3.40365C21.0357 3.08716 20.7584 2.84642 20.4228 2.7344C20.2567 2.67893 20.0812 2.65673 19.9065 2.66907C19.7317 2.68141 19.5611 2.72805 19.4044 2.80631C19.0879 2.96438 18.8472 3.2417 18.7352 3.57727C18.6232 3.91283 18.649 4.27916 18.8071 4.59565L20.5098 7.99965ZM11.4911 7.99965L13.1938 4.59565L13.1964 4.59031C13.3538 4.27347 13.3788 3.90709 13.2661 3.57177C13.1533 3.23646 12.9119 2.95968 12.5951 2.80231C12.2783 2.64495 11.9119 2.6199 11.5766 2.73267C11.2412 2.84545 10.9645 3.0868 10.8071 3.40365L8.50977 7.99965H11.4911ZM13.3338 18.6663C12.9801 18.6663 12.641 18.8068 12.391 19.0568C12.1409 19.3069 12.0004 19.646 12.0004 19.9996V22.6663C12.0004 23.0199 12.1409 23.3591 12.391 23.6091C12.641 23.8592 12.9801 23.9996 13.3338 23.9996C13.6874 23.9996 14.0265 23.8592 14.2766 23.6091C14.5266 23.3591 14.6671 23.0199 14.6671 22.6663V19.9996C14.6671 19.646 14.5266 19.3069 14.2766 19.0568C14.0265 18.8068 13.6874 18.6663 13.3338 18.6663ZM18.6671 18.6663C18.3135 18.6663 17.9743 18.8068 17.7243 19.0568C17.4742 19.3069 17.3338 19.646 17.3338 19.9996V22.6663C17.3338 23.0199 17.4742 23.3591 17.7243 23.6091C17.9743 23.8592 18.3135 23.9996 18.6671 23.9996C19.0207 23.9996 19.3599 23.8592 19.6099 23.6091C19.86 23.3591 20.0004 23.0199 20.0004 22.6663V19.9996C20.0004 19.646 19.86 19.3069 19.6099 19.0568C19.3599 18.8068 19.0207 18.6663 18.6671 18.6663Z"
+                        fill="#538889" />
+                    </g>
+                  </svg>
+                </div>
+                <h3 class="basket__top-title">
+                  Дополнительные
+                  блюда
+                </h3>
+                <p class="basket__top-num">3</p>
+              </div>
+              <p class="basket__text basket__text--null">
+                В вашей корзине пока пусто
+              </p>
+              <div class="basket__box">
+                <div class="basket__card">
+                  <img class="basket__card-img" src="../images/card/1.jpg" alt="img">
+                  <div class="basket__card-item">
+                    <p class="basket__card-text">
+                      Тарталетки с семгой
+                      и&nbsp;творожным сыром
+                    </p>
+                    <div class="count">
+                      <div class="count__minus"></div>
+                      <div class="count__num"><span>1</span> шт</div>
+                      <div class="count__plus"></div>
+                    </div>
+                  </div>
+                  <div class="basket__card-item">
+                    <div class="basket__card-icon icon-bin"></div>
+                    <div class="basket__card-price">
+                      3 500 ₽
+                    </div>
+                  </div>
+                </div>
+                <div class="basket__card">
+                  <img class="basket__card-img" src="../images/card/2.jpg" alt="img">
+                  <div class="basket__card-item">
+                    <p class="basket__card-text">
+                      Тарталетки с семгой
+                      и&nbsp;творожным сыром
+                    </p>
+                    <div class="count">
+                      <div class="count__minus"></div>
+                      <div class="count__num"><span>1</span> шт</div>
+                      <div class="count__plus"></div>
+                    </div>
+                  </div>
+                  <div class="basket__card-item">
+                    <div class="basket__card-icon icon-bin"></div>
+                    <div class="basket__card-price">
+                      3 500 ₽
+                    </div>
+                  </div>
+                </div>
+                <div class="basket__card">
+                  <img class="basket__card-img" src="../images/card/3.jpg" alt="img">
+                  <div class="basket__card-item">
+                    <p class="basket__card-text">
+                      Тарталетки с семгой
+                      и&nbsp;творожным сыром
+                    </p>
+                    <div class="count">
+                      <div class="count__minus"></div>
+                      <div class="count__num"><span>1</span> шт</div>
+                      <div class="count__plus"></div>
+                    </div>
+                  </div>
+                  <div class="basket__card-item">
+                    <div class="basket__card-icon icon-bin"></div>
+                    <div class="basket__card-price">
+                      3 500 ₽
+                    </div>
+                  </div>
+                </div>
+                <div class="basket__box">
+                  <p class="basket__price">
+                    18 000 ₽
+                  </p>
+                  <button class="btn">
+                    <span class="icon-add btn__icon"></span>
+                    Добавить блюдо
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+
+    <!-- скрытая кнопка для вызова  модалки "Внимание!" -->
+    <button class="btn" data-fancybox data-src="#attention" style="display: none;">
+      attention
+    </button>
+
+    <!-- модалка "Внимание!" -->
+    <div class="attention" id="attention">
+      <div class="attention__inner">
+        <h3 class="attention__title">
+          <span class="attention__icon">
+            <svg viewBox="0 0 48 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="Warning" clip-path="url(#clip0_258_2162)">
+                <path id="Vector"
+                  d="M46.8489 31.098L31.3529 4.24708C29.8183 1.5876 27.0695 0 24 0C20.9305 0 18.1817 1.5876 16.6471 4.24708L1.15109 31.098C-0.383878 33.7574 -0.383516 36.9327 1.15109 39.5921C2.68606 42.2515 5.4348 43.8392 8.50438 43.8392H39.4957C42.5652 43.8392 45.314 42.2516 46.8489 39.5921C48.3835 36.9327 48.3839 33.7574 46.8489 31.098Z"
+                  fill="#FE5722" />
+                <path id="Vector_2"
+                  d="M46.8486 31.098L31.3526 4.24708C29.818 1.5876 27.0692 0 23.9997 0C23.0865 0 22.208 0.156444 21.375 0.423798C23.3417 1.0553 25.0253 2.3788 26.1032 4.24702L41.5993 31.0979C43.1342 33.7574 43.1339 36.9326 41.5993 39.5921C40.0643 42.2515 37.3155 43.8391 34.246 43.8391H39.4953C42.5648 43.8391 45.3136 42.2515 46.8485 39.5921C48.3831 36.9327 48.3836 33.7574 46.8486 31.098Z"
+                  fill="#ED481B" />
+                <path id="Vector_3"
+                  d="M41.4252 33.8468L26.1954 7.45667C25.7373 6.66251 24.9167 6.18848 24.0002 6.18848C23.0837 6.18848 22.2631 6.66251 21.8051 7.45667L6.57529 33.8468C6.11683 34.6406 6.11683 35.5886 6.57529 36.3824C7.03334 37.1765 7.85393 37.6506 8.77044 37.6506H39.2301C40.1466 37.6506 40.9672 37.1765 41.4252 36.3824C41.8836 35.5886 41.8836 34.6406 41.4252 33.8468Z"
+                  fill="#FEC007" />
+                <path id="Vector_4"
+                  d="M41.4247 33.8468L26.1949 7.45667C25.7368 6.66251 24.9162 6.18848 23.9997 6.18848C23.0832 6.18848 22.2626 6.66251 21.8046 7.45667L21.7969 7.46988L37.019 33.8468C37.4774 34.6406 37.4774 35.5886 37.019 36.3824C36.561 37.1766 35.7404 37.6506 34.8239 37.6506H39.2295C40.146 37.6506 40.9666 37.1766 41.4247 36.3824C41.8831 35.5886 41.8831 34.6406 41.4247 33.8468Z"
+                  fill="#EDAD0C" />
+                <path id="Vector_5"
+                  d="M23.9998 27.2229C23.1716 27.2229 22.5 26.5512 22.5 25.7225V18.0268C22.5 17.1981 23.1716 16.5264 23.9998 16.5264C24.8281 16.5264 25.4996 17.1981 25.4996 18.0268V25.7225C25.4996 26.5512 24.8281 27.2229 23.9998 27.2229ZM23.9998 31.8153C23.6022 31.8153 23.2199 31.6578 22.9424 31.3727C22.6575 31.0952 22.5001 30.7125 22.5001 30.3149C22.5001 29.9173 22.6575 29.5347 22.9424 29.2572C23.4975 28.6945 24.5022 28.6945 25.057 29.2572C25.3422 29.5348 25.4996 29.9173 25.4996 30.3149C25.4996 30.705 25.3422 31.0951 25.057 31.3727C24.7797 31.6578 24.3971 31.8153 23.9998 31.8153Z"
+                  fill="#37474F" />
+              </g>
+              <defs>
+                <clipPath id="clip0_258_2162">
+                  <rect width="48" height="43.8392" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+
+          </span>
+          Внимание!
+        </h3>
+        <p class="attention__text">
+          Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и искусственный интеллект
+          сформирует новое меню, учитывая изменения в настройках. Продолжить?
+        </p>
+        <div class="attention__box">
+          <button class="btn">
+            Оставить, как есть
+          </button>
+          <button class="btn btn--gray">
+            Изменить
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <form class="modalForm" action="" id="call">
+      <div class="modalForm__inner">
+        <h3 class="modalForm__title">
+          Заказать звонок
+        </h3>
+        <p class="modalForm__subtitle">
+          Оставьте свои контактные данные и наши менеджеры свяжутся с Вами в ближайшее время
+        </p>
+        <label class="modalForm__label">
+          Ваше имя
+          <input class="modalForm__input" type="text" name="name" placeholder="Александр" required>
+        </label>
+        <label class="modalForm__label">
+          Ваш телефон
+          <input class="modalForm__input" type="text" name="phone" placeholder="+7 (___) ___-__-__" required>
+        </label>
+        <p class="modalForm__text">
+          Оставляя заявку вы даёте согласие на
+          <a href="#">
+            обработку персональных данных
+          </a> и с условиями
+          <a href="#">
+            политики конфиденциальности
+          </a>
+        </p>
+        <button class="btn">
+          Отправить заявку
+        </button>
+      </div>
+    </form>
+
+
+    <!-- скрытая кнопка для вызова  модалки "Вход" шаг-1 -->
+    <button class="btn" data-fancybox data-src="#entry-1" style="display: none;">
+      Вход
+    </button>
+    <form class="modalForm" action="" id="entry-1">
+      <div class="modalForm__inner">
+        <h3 class="modalForm__title">
+          Вход
+        </h3>
+        <p class="modalForm__subtitle">
+          Введите свой номер телефона и мы отправим
+          код подтверждения
+        </p>
+        <label class="modalForm__label">
+          Ваш телефон
+          <input class="modalForm__input" type="text" name="phone" placeholder="+7 (___) ___-__-__" required>
+        </label>
+        <p class="modalForm__text">
+          Оставляя заявку вы даёте согласие на
+          <a href="#">
+            обработку персональных данных
+          </a> и с условиями
+          <a href="#">
+            политики конфиденциальности
+          </a>
+        </p>
+        <button class="btn">
+          Отправить код
+        </button>
+      </div>
+    </form>
+
+
+    <!-- скрытая кнопка для вызова  модалки "Вход" шаг-2 -->
+    <button class="btn" data-fancybox data-src="#entry-2" style="display: none;">
+      Вход
+    </button>
+    <form class="modalForm" action="" id="entry-2">
+      <div class="modalForm__inner">
+        <h3 class="modalForm__title">
+          Вход
+        </h3>
+        <p class="modalForm__subtitle">
+          Код подтверждения отправлен
+          на номер +7 (900) 000-00-01
+        </p>
+        <label class="modalForm__label">
+          Код подтверждения
+          <div class="modalForm__label-box">
+            <input class="modalForm__input" type="text" name="name" placeholder="0000" required>
+            <button class="modalForm__label-btn">Отправить повторно</button>
+          </div>
+        </label>
+        <!-- при неправильном вводе кода убрать класс modalForm__text--none-->
+        <p class="modalForm__text modalForm__text--none">
+          Не приходит код подтверждения
+        </p>
+        <button class="btn">
+          Подтвердить
+        </button>
+      </div>
+    </form>
+
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/0.9.0/jquery.mask.min.js
+"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="../scripts/main.js?v=0.00011"></script>
+
+</body>
+
+</html>

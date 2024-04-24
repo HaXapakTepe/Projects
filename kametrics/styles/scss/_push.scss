@@ -1,0 +1,79 @@
+.push {
+  &__wrapper {
+    @include fluid(margin-top, 60px, 193px);
+  }
+
+  &__title {
+    @include fluid(margin-bottom, 30px, 100px);
+    font-family: 'Red Hat Display';
+    font-weight: 700;
+    @include fluid(font-size, 28px, 70px);
+    line-height: 110%;
+    text-align: center;
+    text-wrap: balance;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include fluid(column-gap, 15px, 28px);
+  }
+
+  &__item {
+    @include fluid(padding, 20px, 42px);
+    border-radius: 30px;
+    background-image: linear-gradient(180.00deg, #c2c2c21f, #19191900 75%);
+    @include fluid(min-height, 450px, 581px);
+    @include fluid(margin-top, -15px, -28px);
+
+    &:first-child,
+    &:nth-child(2) {
+      margin-top: unset;
+    }
+
+    &--alt {
+      background-image: unset;
+      padding: unset;
+
+      .push__item {
+        margin-top: unset;
+
+        &-title,
+        &-text {
+          @include fluid(padding-left, 20px, 42px);
+          @include fluid(padding-right, 20px, 42px);
+        }
+      }
+    }
+
+    &-title {
+      font-family: 'SF Pro Display';
+      @include fluid(font-size, 20px, 30px);
+      @include fluid(margin-bottom, 20px, 40px);
+    }
+
+    &-text {
+      &:has(+*) {
+        @include fluid(margin-bottom, 10px, 20px);
+      }
+
+      &:has(+.push__item--alt) {
+        margin-bottom: 0;
+      }
+    }
+
+    &-img {
+      -o-object-fit: contain;
+      object-fit: contain;
+      @include fluid(height, 280px, 330px);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .push {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+  }
+}

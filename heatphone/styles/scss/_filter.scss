@@ -1,0 +1,150 @@
+.filter {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  @include fluid(gap, 15px, 30px);
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 15px, 20px);
+
+    &-title {
+      color: #434242;
+    }
+
+    &-box {
+      display: flex;
+      align-items: center;
+      @include fluid(gap, 10px, 20px);
+    }
+
+    &-label {
+      position: relative;
+      padding: 10px 25px 10px 35px;
+      background-color: #F4F6F8;
+      border-radius: 10px;
+
+      &::after,
+      &::before {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #9FA3A8;
+        font-size: 14px;
+      }
+
+      &::after {
+        content: 'От';
+        left: 10px;
+      }
+
+      &::before {
+        content: '₸';
+        right: 10px;
+      }
+    }
+
+    &-input {
+      width: 100%;
+      background-color: transparent;
+
+      &::-webkit-inner-spin-button,
+      &::-webkit-outer-spin-button,
+      &[type="number"] {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+      }
+    }
+  }
+
+  &__accordion {
+    &-column {
+      &--max {
+        .filter__accordion-more {
+          display: none;
+        }
+      }
+    }
+
+    &-item {
+      @include fluid(padding-top, 10px, 20px);
+      @include fluid(padding-bottom, 10px, 20px);
+      border-top: 1px solid #e3e3e3;
+
+      &:last-child {
+        border-bottom: 1px solid #e3e3e3;
+      }
+    }
+
+    &-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+
+      &.accordion--active {
+        .filter__accordion-arrow {
+          transform: rotateX(-180deg);
+        }
+      }
+    }
+
+    &-arrow {
+      transition: transform .23s ease-in-out;
+    }
+
+    &-arrow,
+    &-question {
+      display: flex;
+      align-items: center;
+    }
+
+    &-question {
+      margin-left: auto;
+    }
+
+    &-hidden {
+      display: flex;
+      flex-direction: column;
+      @include fluid(gap, 10px, 15px);
+      @include fluid(margin-top, 15px, 20px);
+      padding-left: 28px;
+    }
+
+    &-more {
+      position: relative;
+      z-index: 10;
+      padding-left: 28px;
+      color: #9FA3A8;
+      @include fluid(margin-top, 15px, 20px);
+      cursor: pointer;
+    }
+
+    &-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-left: 28px;
+      padding-right: 35px;
+      @include fluid(margin-top, 15px, 20px);
+    }
+  }
+
+  &__reset {
+    text-align: center;
+    width: 100%;
+    @include fluid(padding-top, 10px, 14px);
+    @include fluid(padding-bottom, 10px, 14px);
+    background-color: #E3E3E3;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 992px) {
+  .filter {
+    max-width: unset;
+  }
+}

@@ -1,0 +1,312 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+textarea {
+  resize: none;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+input {
+  &:focus-visible {
+    outline: none;
+  }
+
+  &::-webkit-input-placeholder {
+    color: #DBDBDB;
+    font-family: "Journal Sans New";
+    @include fluid(font-size, 12px, 16px);
+    font-weight: 400;
+  }
+
+  &::-moz-placeholder {
+    color: #DBDBDB;
+    font-family: "Journal Sans New";
+    @include fluid(font-size, 12px, 16px);
+    font-weight: 400;
+  }
+
+  &:-ms-input-placeholder {
+    color: #DBDBDB;
+    font-family: "Journal Sans New";
+    @include fluid(font-size, 12px, 16px);
+    font-weight: 400;
+  }
+
+  &::-ms-input-placeholder {
+    color: #DBDBDB;
+    font-family: "Journal Sans New";
+    @include fluid(font-size, 12px, 16px);
+    font-weight: 400;
+  }
+
+  &::placeholder {
+    color: #DBDBDB;
+    font-family: "Journal Sans New";
+    @include fluid(font-size, 12px, 16px);
+    font-weight: 400;
+  }
+}
+
+fieldset {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  color: #111;
+  @include fluid(font-size, 30px, 60px);
+  line-height: 1;
+  font-weight: 400;
+
+  &.title {
+    &--white {
+      color: #fff;
+    }
+
+    &--fw {
+      font-weight: 700;
+      @include fluid(margin-bottom, 20px, 40px);
+    }
+  }
+}
+
+h3 {
+  @include fluid(font-size, 28px, 45px);
+  color: #111;
+  font-weight: 400;
+
+  &.title {
+
+    &--center {
+      text-align: center;
+    }
+
+    &--mb {
+      @include fluid(margin-bottom, 15px, 30px);
+    }
+  }
+}
+
+h4,
+h5,
+h6 {
+  color: #171717;
+  font-weight: 700;
+
+  &.title {
+    &--line {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -20px;
+        @include fluid(left, -50px, -60px);
+        width: 40px;
+        height: 75%;
+        border-radius: 2px;
+        background: #025EA1;
+      }
+    }
+
+    &--white {
+      color: #fff;
+
+      &::after {
+        background: #fff;
+      }
+    }
+
+    &--pink {
+      &::after {
+        background: #E20072;
+      }
+    }
+
+    &--fw {
+      font-weight: 400;
+    }
+  }
+}
+
+h4 {
+  @include fluid(font-size, 20px, 28px);
+}
+
+h5 {
+  @include fluid(font-size, 16px, 24px);
+}
+
+h6 {
+  font-size: 20px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #f9f9f9;
+  font-family: "Journal Sans New";
+  font-weight: 400;
+  @include fluid(font-size, 14px, 20px);
+  line-height: 1.2;
+  color: #111;
+  overflow-x: hidden;
+
+  &.no-scroll {
+    overflow-y: hidden;
+
+    .header {
+      &__block {
+        position: relative;
+        z-index: 12;
+      }
+
+      &__num {
+        &-text {
+          color: #E20072;
+
+          &::after {
+            background-color: #fff;
+          }
+        }
+      }
+
+      &__icon {
+        svg {
+          path {
+            fill: #fff;
+          }
+
+          circle {
+            stroke: #fff;
+          }
+        }
+
+        &--search {
+          svg {
+            path {
+              &:first-child {
+                stroke: #fff;
+                fill: transparent;
+              }
+
+              &:last-child {
+                fill: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.wrapper {
+  // min-height: 100vh;
+  min-width: 320px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  // контейнер + padding с двух сторон
+  @include fluid(width, 1194px, 1578px);
+  @include container;
+}
+
+.logo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  @include fluid(margin-right, 30px, 60px);
+
+  &__img {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -o-object-fit: contain;
+    object-fit: contain;
+    @include fluid(height, 37px, 54px);
+  }
+}
+
+.fancybox {
+  &__backdrop {
+    background: rgba(249, 249, 249, 0.95);
+  }
+
+  &__content {
+    .f-button.is-close-btn {
+      --f-button-width: 30px;
+      --f-button-height: 30px;
+      --f-button-svg-width: 30px;
+      --f-button-svg-height: 30px;
+      opacity: 1;
+
+      svg {
+        fill: #000;
+        stroke: #000;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 100%;
+    max-width: 728px;
+  }
+
+  .logo {
+    &__img {
+      height: 27px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+}

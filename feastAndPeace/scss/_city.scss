@@ -1,0 +1,19 @@
+.city {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+
+  &__text {
+    font-size: 12px;
+    line-height: 1;
+    color: #AABAC2;
+    white-space: nowrap;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,209 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+input {
+  outline: none;
+}
+
+fieldset {
+  padding: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h1.title,
+h2.title,
+.title {
+  @include fluid(font-size, 28px, 40px);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+}
+
+h3,
+h3.title {
+  @include fluid(font-size, 24px, 32px);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Inter";
+  font-weight: 400;
+  @include fluid(font-size, 14px, 16px);
+  line-height: 1.5;
+  color: #000;
+  letter-spacing: -0.6px;
+
+  &.no-scroll {
+    overflow-y: hidden;
+  }
+}
+
+.wrapper {
+  // min-height: 100vh;
+  min-width: 320px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.main {
+  flex-grow: 1;
+
+  &:has(>.shop--alt),
+  &:has(>.content) {
+    display: flex;
+    flex-direction: column
+  }
+}
+
+.container {
+  // контейнер + padding с двух сторон
+  @include fluid(width, 962px, 1190px);
+  @include container;
+}
+
+.logo {
+  &__img {
+    width: 131px;
+    height: 32px;
+  }
+}
+
+.check {
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  visibility: hidden;
+}
+
+.label {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  @include fluid(gap, 10px, 15px);
+  align-items: center;
+  @include fluid(font-size, 12px, 16px);
+  @include fluid(line-height, 14px, 19px);
+  color: #a2a2a2;
+  cursor: pointer;
+
+  &__input {
+    &:checked+.label__inputCustom {
+      border-color: #020202;
+      background-color: #020202;
+
+      &::after {
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+  }
+
+  &__inputCustom {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid rgba(39, 41, 55, 0.35);
+    background-color: #FFF;
+    transition: background-color 0.38s ease-in-out,
+      border 0.38s ease-in-out;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      width: 18px;
+      height: 18px;
+      background-image: url("../images/icons/check.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: transform 0.38s ease-in-out;
+    }
+  }
+
+  &--hidden {
+    pointer-events: none;
+    grid-template-columns: 1fr;
+
+    .label__input,
+    .label__inputCustom {
+      display: none;
+    }
+  }
+}
+
+.fancybox {
+  &__content {
+    @include fluid(padding, 20px, 32px);
+    border-radius: 16px;
+    background: #FFF;
+
+    >.f-button.is-close-btn {
+      top: 0;
+      opacity: 1;
+      color: #000;
+
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1366px) {}
+
+@media (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {}

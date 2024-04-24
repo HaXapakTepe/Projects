@@ -1,0 +1,226 @@
+.player {
+  position: relative;
+  margin-top: auto;
+
+  &__marquee {
+    font-weight: 700;
+    @include fluid(font-size, 16px, 18px);
+    margin-bottom: 10px;
+
+    &--mb {
+      @include fluid(margin-bottom, 55px, 35px);
+    }
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    &-line {
+      flex-grow: 1;
+      background-color: #ccc;
+      height: 5px;
+      border-radius: 25px;
+      margin-bottom: 4px;
+    }
+
+    &-time {
+      color: #0B6C72;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .player__icon {
+      margin-right: 0;
+    }
+  }
+
+  &__item {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-icon {
+      @include fluid(width, 29px, 32px);
+      @include fluid(height, 29px, 32px);
+      -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.25));
+      filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.25));
+
+      svg {
+        @include fluid(width, 29px, 32px);
+        @include fluid(height, 29px, 32px);
+      }
+    }
+
+    &-textIcon {
+      color: #223736;
+      font-family: 'Raleway';
+      @include fluid(font-size, 8px, 9px);
+      font-weight: 700;
+    }
+
+    &-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include fluid(gap, 3px, 5px);
+    }
+
+    &-text {
+      @include fluid(font-size, 13px, 15px);
+      font-weight: 700;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__icon {
+    cursor: pointer;
+
+    &--settings,
+    &--burger {
+      @include fluid(width, 25px, 30px);
+      @include fluid(height, 22px, 27px);
+    }
+
+    &--burger {
+      @include fluid(margin-right, 33px, 34px);
+    }
+
+    &--sound {
+      @include fluid(width, 19px, 20px);
+      @include fluid(height, 15px, 16px);
+      @include fluid(margin-right, 5px, 4px);
+    }
+
+    &--soundSlider {
+      @include fluid(width, 35px, 38px);
+      @include fluid(height, 8px, 10px);
+      @include fluid(margin-right, 11px, 16px);
+    }
+
+    &--prevSecond,
+    &--nextSecond {
+      @include fluid(width, 27px, 28px);
+      @include fluid(height, 30px, 32px);
+    }
+
+    &--prevSecond {
+      @include fluid(margin-right, 8px, 16px);
+    }
+
+    &--nextSecond {
+      @include fluid(margin-right, 15px, 24px);
+    }
+
+    &--prev,
+    &--next {
+      @include fluid(width, 27px, 28px);
+      @include fluid(height, 27px, 28px);
+    }
+
+    &--prev {
+      @include fluid(margin-right, 13px, 17px);
+    }
+
+    &--next {
+      @include fluid(margin-right, 9px, 12px);
+    }
+
+    &--play {
+      @include fluid(width, 40px, 45px);
+      @include fluid(height, 40px, 45px);
+      @include fluid(margin-right, 15px, 16px);
+    }
+
+    &--repeat {
+      @include fluid(width, 21px, 22px);
+      @include fluid(height, 19px, 20px);
+      @include fluid(margin-right, 15px, 22px);
+    }
+
+    &--active {
+      +.dropdown {
+        opacity: 1;
+        z-index: 10;
+        visibility: visible;
+        top: 120%;
+        height: unset;
+      }
+    }
+  }
+
+  &__speed {
+    color: #0B6C72;
+    @include fluid(font-size, 16px, 18px);
+    font-weight: 700;
+    @include fluid(margin-right, 18px, 27px);
+    cursor: pointer;
+
+    span {
+      @include fluid(font-size, 22px, 24px);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .player {
+    &__icon {
+
+      &--settings,
+      &--burger {
+        width: 19px;
+        height: 12px;
+      }
+
+      &--play,
+      &--repeat,
+      &--prev,
+      &--next,
+      &--prevSecond,
+      &--nextSecond,
+      &--settings,
+      &--burger,
+      &--soundSlider,
+      &--sound,
+      &--burger {
+        margin-right: 0;
+      }
+
+      &--repeat,
+      &--soundSlider {
+        display: none;
+      }
+
+      &--prevSecond,
+      &--nextSecond {
+        width: 20px;
+        height: 23px;
+      }
+
+      &--prev,
+      &--next {
+        width: 20px;
+        height: 20px;
+      }
+
+      &--play {
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    &__speed {
+      margin-right: 0;
+    }
+  }
+}

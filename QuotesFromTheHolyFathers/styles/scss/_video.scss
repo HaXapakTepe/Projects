@@ -1,0 +1,40 @@
+.video {
+  margin-top: 20px;
+  @include fluid(margin-bottom, 15px, 20px);
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include fluid(gap, 14px, 16px);
+  }
+
+  &__item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.15));
+    @include fluid(padding, 8px, 9px);
+
+    iframe {
+      width: 100%;
+      @include fluid(height, 232px, 266px);
+    }
+  }
+
+  .btn {
+    height: 100%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .video {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+
+    &__item {
+      iframe {
+        height: 350px;
+      }
+    }
+  }
+}

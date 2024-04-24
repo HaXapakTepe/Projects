@@ -1,0 +1,54 @@
+.count {
+  display: flex;
+  align-items: center;
+  @include fluid(gap, 5px, 10px);
+  opacity: 1;
+  z-index: 0;
+  visibility: visible;
+  transition: opacity .38s ease-in-out,
+    z-index .38s ease-in-out,
+    visibility .38s ease-in-out;
+
+  &--hidden {
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden
+  }
+
+  &__num {
+    @include fluid(font-size, 16px, 18px);
+    white-space: nowrap;
+  }
+
+  &__minus,
+  &__plus {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 24px;
+      height: 24px;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__minus {
+    &::after {
+      background-image: url("../images/icons/minus.svg");
+    }
+  }
+
+  &__plus {
+    &::after {
+      background-image: url("../images/icons/plus.svg");
+    }
+  }
+}

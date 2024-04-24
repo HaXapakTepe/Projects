@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/favicon.svg" type="x-icon">
+  <link rel="stylesheet" href="./plugins/selectize/css/selectize.css">
+  <link rel="stylesheet" href="./css/style.css?v=1">
+  <title>Airtip</title>
+</head>
+
+<body>
+
+
+
+  <section class="card">
+    <div class="card__wrapper">
+      <div class="card__inner">
+        <h3 class="card__title">NYX Dubai</h3>
+        <p class="card__text">Who the tip is for?</p>
+        <div class="card__content card__content--name">
+          <input class="card__input" list="how">
+          <datalist class="card__datalist" id="how">
+            <option class="card__datalist-option" value="Alexander Zakharov">
+            <option class="card__datalist-option" value="Vladimir Putin">
+            <option class="card__datalist-option" value="Sergey Orlov">
+            <option class="card__datalist-option" value="Alexey Petrov">
+            <option class="card__datalist-option" value="Elena Bom">
+          </datalist>
+        </div>
+        <div class="card__box">
+          <div class="card__box-item">
+            <img class="card__box-image" src="./images/card/1.png" alt="">
+            <div class="card__box-content">
+              <p class="card__box-name">Alexander Zakharov</p>
+              <p class="card__box-who">Waiter</p>
+            </div>
+          </div>
+          <div class="card__box-item">
+            <div class="progress-bar" data-total="1000" data-current="600"></div>
+            <div class=" card__box-content">
+              <p class="card__box-title">Training for a manager</p>
+              <p class="card__box-sum"><span class="card__box-span card__box-span--accent">600 AED </span>/ <span
+                  class="card__box-span">1000
+                  AED</span></p>
+            </div>
+          </div>
+        </div>
+        <p class="card__text">How much?</p>
+        <div class="card__content card__content--num">
+          <input class="card__input card__input--much" id="much" type="text" placeholder="50 AED">
+        </div>
+        <div class="card__much">
+          <div class="card__much-item">10 AED</div>
+          <div class="card__much-item">30 AED</div>
+          <div class="card__much-item">50 AED</div>
+          <div class="card__much-item">100 AED</div>
+        </div>
+        <div class="card__rating">
+          <p class="card__rating-title">Did you enjoy everything?</p>
+          <div class="rating">
+            <div class="rating__body">
+              <div class="rating__active"></div>
+              <div class="rating__items">
+                <input class="rating__item" type="radio" name="star" value="1">
+                <input class="rating__item" type="radio" name="star" value="2">
+                <input class="rating__item" type="radio" name="star" value="3">
+                <input class="rating__item" type="radio" name="star" value="4">
+                <input class="rating__item" type="radio" name="star" value="5">
+              </div>
+            </div>
+            <div class="rating__value">3</div>
+          </div>
+        </div>
+        <a class="card__link link--accentBlack link" href="#">
+          <img class="card__link-image" src="./images/icons/apple.svg" alt="">Pay</a>
+        <a class="card__link link link--accent" href="#">Pay tips</a>
+      </div>
+    </div>
+    <div class="card__textBottom">Tipping Service <span>Airtip</span></div>
+  </section>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+    type="text/javascript"></script>
+  <script src="./plugins/selectize/js/selectize.js"></script>
+  <script src="./plugins/Progress-Bar/jQuery-plugin-progressbar.js"></script>
+  <script src="./js/main.js?v=1"></script>
+</body>
+
+</html>

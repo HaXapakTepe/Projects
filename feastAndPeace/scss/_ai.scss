@@ -1,0 +1,55 @@
+.ai {
+  @include fluid(margin-top, 30px, 85px);
+  @include fluid(margin-bottom, 60px, 120px);
+
+  &--mb {
+    @include fluid(margin-bottom, 30px, 85px);
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    @include fluid(margin-bottom, 30px, 60px);
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    gap: 15px;
+  }
+
+  &__item {
+    &-img {
+      margin-left: auto;
+      @include fluid(height, 400px, 582px);
+      -o-object-fit: contain;
+      object-fit: contain;
+    }
+
+    &-box {
+      position: relative;
+      @include fluid(margin-top, 30px, 132px);
+
+      +.btn {
+        display: none;
+      }
+    }
+
+    &-title {
+      position: absolute;
+      top: 21%;
+      left: 0;
+      width: 63%;
+      font-family: 'Hermes';
+      @include fluid(font-size, 90px, 128px);
+      line-height: .9;
+      color: #7AC8C9;
+    }
+  }
+
+  .filter {
+    @include fluid(margin-left, 0px, 20px);
+  }
+}

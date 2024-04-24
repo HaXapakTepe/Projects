@@ -1,0 +1,124 @@
+.block {
+  @include fluid(margin-bottom, 15px, 20px);
+
+  &__inner {
+    @include fluid(padding-top, 15px, 30px);
+    @include fluid(padding-bottom, 15px, 30px);
+    @include fluid(padding-left, 25px, 50px);
+    @include fluid(padding-right, 25px, 50px);
+    border-radius: 20px;
+    background-color: #E2007A;
+  }
+
+  &__list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include fluid(gap, 20px, 60px);
+  }
+
+  &__arrow {
+    position: relative;
+    width: 12px;
+    height: 7px;
+    margin-top: 3px;
+
+    svg {
+      height: 7px;
+      width: 12px;
+      position: absolute;
+      @include fluid(right, -5px, -10px);
+      transition: transform .23s ease-in-out;
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    &:last-child {
+      .block__dropdown {
+        @include fluid(left, -40px, -55px);
+      }
+    }
+
+    &:hover {
+      .block__arrow {
+        svg {
+          transform: rotateX(-180deg);
+        }
+      }
+
+      .block__dropdown {
+        opacity: 1;
+        z-index: 11;
+        visibility: visible;
+        transform: translateY(0px);
+      }
+    }
+  }
+
+  &__text {
+    position: relative;
+    display: flex;
+    align-items: center;
+    @include fluid(font-size, 18px, 24px);
+    color: #fff;
+    line-height: normal;
+    transition: color .23s ease-in-out;
+  }
+
+  &__dropdown {
+    position: absolute;
+    @include fluid(top, 40px, 60px);
+    left: -25px;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 5px, 10px);
+    @include fluid(padding-top, 5px, 15px);
+    @include fluid(padding-bottom, 5px, 15px);
+    @include fluid(padding-left, 25px, 30px);
+    @include fluid(padding-right, 25px, 30px);
+    border-radius: 20px;
+    background-color: #E2007A;
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity .23s ease-in-out, visibility .23s ease-in-out, transform .23s ease-in-out, z-index .23s ease-in-out;
+
+    &-link {
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .block {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .block {
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    &__item {
+      position: relative;
+
+      &:last-child {
+        .block__dropdown {
+          left: -15px;
+        }
+      }
+    }
+
+    &__dropdown {
+      left: -25px;
+    }
+  }
+}

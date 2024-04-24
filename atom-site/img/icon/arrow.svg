@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+  <g id="Group_207" data-name="Group 207" transform="translate(-843 -725)">
+    <rect id="Base" width="42" height="42" rx="21" transform="translate(843 725)" fill="none"/>
+    <g id="Base-2" data-name="Base" transform="translate(843 725)" fill="none" stroke="#37334d" stroke-width="1">
+      <rect width="42" height="42" rx="21" stroke="none"/>
+      <rect x="0.5" y="0.5" width="41" height="41" rx="20.5" fill="none"/>
+    </g>
+    <path id="Arrow" d="M1.793,12.56a1.078,1.078,0,0,1-1.485,0,.988.988,0,0,1,0-1.432l4.872-4.7L.307,1.729A.988.988,0,0,1,.307.3,1.078,1.078,0,0,1,1.793.3L7.407,5.713a.988.988,0,0,1,0,1.432Z" transform="translate(860.786 739.571)" fill="#37334d"/>
+  </g>
+</svg>

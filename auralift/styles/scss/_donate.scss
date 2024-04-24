@@ -1,0 +1,184 @@
+.donate {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  background: rgba(16, 24, 40, 0.10);
+  opacity: 0;
+  z-index: -1;
+  visibility: hidden;
+  transition: opacity .23s ease-out,
+    z-index .23s ease-out,
+    visibility .23s ease-in-out;
+
+  &--active {
+    opacity: 1;
+    z-index: 100;
+    visibility: visible;
+  }
+
+  &--unset {
+    all: unset;
+  }
+
+  &__inner,
+  &__form {
+    position: relative;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    max-width: 500px;
+    width: 95%;
+    padding: 20px;
+    border-radius: 16px;
+    background: #FFF;
+    margin: auto;
+  }
+
+  &__close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+
+    svg {
+      position: relative;
+      z-index: 1;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      background: #F2F4F7;
+      opacity: 0;
+      transition: opacity 0.23s ease-in-out;
+    }
+
+    &:hover {
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__title {
+    color: #101828;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 24px;
+  }
+
+  &__subtitle {
+    color: #344054;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 6px;
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 36px;
+    border-radius: 8px;
+    border: 1px solid #EAECF0;
+    background-color: #F2F4F7;
+    transition: border-color .23s ease-in-out,
+      background-color .23s ease-in-out;
+    cursor: pointer;
+
+    &--check {
+      border-color: #BEF1E1;
+      background-color: #E8FAF4;
+
+      .donate__checked {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    &-span {
+      position: absolute;
+      top: 5px;
+      right: 4px;
+      padding: 2px 4px;
+      border-radius: 4px;
+      background: rgba(29, 41, 57, 0.50);
+      color: #FFF;
+      font-size: 8px;
+      font-weight: 500;
+      line-height: 10px;
+    }
+  }
+
+  &__input {
+    margin-bottom: 6px;
+  }
+
+  &__img {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 24px;
+  }
+
+  &__swiper {
+    margin-bottom: 24px;
+  }
+
+  &__checked {
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+    width: 19px;
+    height: 19px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .23s ease-in-out, visibility .23s ease-in-out;
+  }
+
+  &__check {
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 576px) {
+  .donate {
+    &__card {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+@media (max-width: 539px) {
+  .donate {
+
+    &__inner,
+    &__form {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}

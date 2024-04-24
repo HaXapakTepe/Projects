@@ -1,0 +1,193 @@
+.form {
+  position: relative;
+  @include fluid(margin-top, 30px, 120px);
+  @include fluid(margin-bottom, 30px, 69px);
+  @include fluid(padding-bottom, 15px, 31px);
+
+  &__inner {
+    position: relative;
+    @include fluid(padding-top, 40px, 80px);
+    @include fluid(padding-bottom, 30px, 60px);
+    @include fluid(padding-left, 30px, 60px);
+    @include fluid(padding-right, 30px, 60px);
+    border-radius: 20px;
+    overflow: hidden;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 34.3%;
+      height: 100%;
+      background: linear-gradient(270deg, #524848 0%, #3E3535 100%, #3E3535 100%);
+      z-index: -1;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 66%;
+    height: 100%;
+    z-index: -1;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, #524848 0%, rgba(82, 72, 72, 0.10) 100%);
+    }
+
+    &-img {
+      position: absolute;
+      height: 100%;
+      left: 0;
+      right: 0;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    @include fluid(margin-bottom, 15px, 25px);
+  }
+
+  &__subtitle {
+    max-width: 457px;
+    color: #FFF;
+    @include fluid(font-size, 14px, 18px);
+    line-height: 150%;
+    @include fluid(margin-bottom, 20px, 60px);
+  }
+
+  &__fieldset {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.25);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    @include fluid(padding-top, 20px, 60px);
+    @include fluid(padding-bottom, 20px, 27px);
+    @include fluid(padding-left, 30px, 60px);
+    @include fluid(padding-right, 30px, 60px);
+
+    &-box {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: space-between;
+      @include fluid(gap, 15px, 30px);
+      @include fluid(margin-bottom, 15px, 20px);
+    }
+
+    &-input {
+      width: 100%;
+      background-color: #fff;
+      @include fluid(padding-left, 15px, 20px);
+      @include fluid(padding-right, 15px, 20px);
+      @include fluid(padding-top, 10px, 15px);
+      @include fluid(padding-bottom, 10px, 15px);
+      color: #3E3535;
+      @include fluid(font-size, 14px, 18px);
+      line-height: 150%;
+      border-radius: 20px;
+    }
+
+    &-text {
+      color: #FFF;
+      @include fluid(font-size, 12px, 14px);
+      line-height: normal;
+    }
+  }
+
+  &__mint {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -2;
+    @include fluid(width, 170px, 230px);
+    @include fluid(height, 103px, 163px);
+  }
+
+  &__klaus {
+    position: absolute;
+    @include fluid(right, 0px, 125px);
+    @include fluid(bottom, 0px, -75px);
+    z-index: -2;
+    @include fluid(width, 380px, 618px);
+    @include fluid(height, 230px, 370px);
+  }
+
+  &__staranise {
+    position: absolute;
+    @include fluid(bottom, -40px, -30px);
+    @include fluid(left, 0px, 140px);
+    @include fluid(width, 180px, 274px);
+    @include fluid(height, 180px, 274px);
+    z-index: -2;
+
+    &--alt {
+      @include fluid(bottom, -50px, -40px);
+      @include fluid(left, 0px, 100px);
+      @include fluid(width, 250px, 325px);
+      @include fluid(height, 250px, 325px);
+    }
+  }
+
+  &__coriander {
+    position: absolute;
+    @include fluid(right, 0px, 120px);
+    @include fluid(bottom, -30px, -50px);
+    @include fluid(width, 220px, 325px);
+    @include fluid(height, 205px, 310px);
+    z-index: -2;
+
+    &--alt {
+      @include fluid(bottom, -30px, -50px);
+    }
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+
+    &-text {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .form {
+    &__fieldset {
+      &-box {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .form {
+    &__fieldset {
+      &-box {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .form {
+    &__inner {
+      padding: 15px;
+    }
+
+    &__fieldset {
+      padding: 15px;
+    }
+  }
+}

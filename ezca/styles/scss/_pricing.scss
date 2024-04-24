@@ -1,0 +1,184 @@
+.pricing {
+  &__wrapper {
+    @include fluid(margin-top, 112px, 101px);
+    @include fluid(margin-bottom, 97px, 227px);
+  }
+
+  &__title {
+    @include fluid(margin-bottom, 45px, 53px);
+  }
+
+  &__inner {
+    background-color: #131313;
+    border-radius: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__item {
+    position: relative;
+    left: -.2px;
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/2;
+    border-radius: 50px;
+    background-color: #C4FF02;
+    @include fluid(padding-top, 35px, 75px);
+    @include fluid(padding-bottom, 35px, 107px);
+    padding-right: 29px;
+    padding-left: 29px;
+
+    &-text {
+      max-width: 403px;
+      @include fluid(font-size, 20px, 25px);
+    }
+
+    &-textAlt {
+      display: flex;
+      align-items: center;
+      @include fluid(gap, 16px, 23px);
+      font-weight: 500;
+      @include fluid(font-size, 20px, 24px);
+      font-family: "Poppins";
+      @include fluid(margin-bottom, 39px, 64px);
+
+      &--right {
+        justify-content: end;
+        text-align: right;
+        @include fluid(margin-bottom, 17px, 36px);
+      }
+    }
+
+    &-num {
+      font-family: "Montserrat";
+      font-weight: 800;
+      @include fluid(font-size, 40px, 60px);
+    }
+
+    &-bot {
+      margin-top: auto;
+    }
+  }
+
+  &__info {
+    grid-column: 2/4;
+    display: flex;
+    flex-direction: column;
+    @include fluid(padding-top, 36px, 75px);
+    @include fluid(padding-bottom, 38px, 70px);
+    @include fluid(padding-right, 22px, 60px);
+    @include fluid(padding-left, 18px, 44px);
+    color: #fff;
+
+    &-title {
+      font-weight: 800;
+      @include fluid(font-size, 30px, 45px);
+      @include fluid(margin-bottom, 40px, 74px);
+    }
+
+    &-box {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      @include fluid(gap, 20px, 45px);
+    }
+
+    &-item {
+      display: flex;
+      @include fluid(gap, 16px, 19px);
+    }
+
+    &-icon {
+      align-items: start;
+
+      svg {
+        @include fluid(width, 24px, 35px);
+        @include fluid(height, 24px, 35px);
+      }
+    }
+
+    &-block {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    &-subtitle {
+      font-weight: 800;
+      @include fluid(font-size, 18px, 22px);
+    }
+
+    &-text {
+      @include fluid(font-size, 16px, 20px);
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .pricing {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+
+    &__item {
+      left: unset;
+      top: -.3px;
+
+      &-text {
+        margin-bottom: 49px;
+      }
+    }
+
+    &__info {
+      grid-column: unset;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing {
+    &__info {
+      &-box {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .pricing {
+    .btn {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__item {
+      &-text {
+        font-size: 15px;
+        text-align: center;
+        text-wrap: balance;
+      }
+
+      &-textAlt {
+        font-size: 15px;
+      }
+    }
+
+    &__info {
+      &-box {
+        gap: 45px;
+      }
+
+      &-title {
+        font-size: 20px;
+      }
+
+      &-subtitle {
+        font-size: 15px;
+      }
+
+      &-text {
+        font-size: 12px;
+      }
+    }
+  }
+}

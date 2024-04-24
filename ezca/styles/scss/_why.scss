@@ -1,0 +1,154 @@
+.why {
+  &__wrapper {
+    @include fluid(margin-top, 102px, 206px);
+    @include fluid(margin-bottom, 55px, 110px);
+  }
+
+  &__title {
+    @include fluid(margin-bottom, 37px, 54px);
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    @include fluid(font-size, 20px, 30px);
+    @include fluid(margin-bottom, 61px, 130px);
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @include fluid(gap, 47px, 50px);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:has(+.why__item) {
+      &:not(:nth-child(3n)) {
+        .why__item-icon {
+          &::after {
+            content: '';
+            position: absolute;
+            left: 130%;
+            top: 50%;
+            transform: translateY(-50%);
+            @include fluid(width, 125px, 266px);
+            height: 3px;
+            background-color: #000;
+          }
+        }
+      }
+    }
+
+    &-icon {
+      position: relative;
+      @include fluid(margin-bottom, 15px, 20px);
+
+      svg {
+        @include fluid(width, 80px, 133px);
+        @include fluid(height, 80px, 133px);
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    &-title {
+      @include fluid(margin-bottom, 27px, 40px);
+      text-align: center;
+      font-weight: 700;
+      @include fluid(font-size, 22px, 28px);
+    }
+
+    &-text {
+      font-family: "Manrope";
+      text-wrap: balance;
+      text-align: center;
+      font-weight: 500;
+      @include fluid(font-size, 18px, 24px);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .why {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+
+    &__item {
+      position: relative;
+      display: grid;
+      grid-template-columns: 54px 1fr;
+      align-items: start;
+      gap: 17px;
+
+      &:has(+.why__item) {
+        &:not(:nth-child(3n)) {
+          .why__item-icon {
+            &::after {
+              content: none;
+            }
+          }
+        }
+
+        .why__item-text {
+          &::after {
+            content: '';
+            position: absolute;
+            left: -45px;
+            bottom: -25px;
+            width: 2px;
+            height: 100%;
+            background-color: #000;
+          }
+        }
+      }
+
+      &-icon {
+        margin-bottom: 0;
+
+        svg {
+          width: 54px;
+          height: 54px;
+        }
+      }
+
+      &-title {
+        margin-top: 17px;
+        margin-bottom: 10px;
+      }
+
+      &-text,
+      &-title {
+        text-align: left;
+      }
+
+      &-text {
+        position: relative;
+        grid-column: 2/3;
+
+
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .why {
+    &__subtitle {
+      font-size: 12px;
+    }
+
+    &__item {
+      &-title {
+        font-size: 17px;
+      }
+
+      &-text {
+        font-size: 12px;
+      }
+    }
+  }
+}

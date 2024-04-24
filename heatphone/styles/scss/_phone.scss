@@ -1,0 +1,51 @@
+.phone {
+  display: flex;
+  flex-direction: column;
+
+  &__link {
+    text-align: right;
+    font-weight: 700;
+    @include fluid(font-size, 16px, 18px);
+    color: #4b4444;
+    transition: color 0.23s ease-in-out;
+
+    span {
+      font-weight: 500;
+      color: #9FA3A8;
+      font-size: 14px;
+      transition: color 0.23s ease-in-out;
+    }
+
+    &:hover {
+      color: #D9291D;
+
+      span {
+        color: #D9291D;
+      }
+    }
+  }
+
+  &--white {
+    .phone {
+      &__link {
+        color: #fff;
+
+        span {
+          color: #fff;
+        }
+
+        &:hover {
+          color: #D9291D;
+
+          span {
+            color: #D9291D;
+          }
+        }
+      }
+    }
+  }
+
+  &--mla {
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,49 @@
+.label {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: grid;
+  grid-template-columns: 16px 1fr;
+  @include fluid(gap, 5px, 10px);
+  @include fluid(font-size, 12px, 16px);
+  @include fluid(line-height, 14px, 19px);
+  align-items: center;
+  color: #343A3D;
+  cursor: pointer;
+
+  &__input {
+    &:checked+.label__inputCustom {
+      background-color: #fff;
+
+      &::after {
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+  }
+
+  &__inputCustom {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border: 1px solid #EBF2F5;
+    transition: background-color 0.38s ease-in-out;
+    border-radius: 50%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      width: 16px;
+      height: 16px;
+      background-image: url("../images/icons/check.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      border-radius: 50%;
+      transition: transform 0.38s ease-in-out;
+    }
+  }
+}

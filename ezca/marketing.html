@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/images/favicon.svg" type="x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./styles/css/normalize.css">
+  <link rel="stylesheet" href="./styles/css/style.css?v=0.0001">
+  <title>Marketing</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="header__inner">
+        <a class="logo" href="/">
+          <img class="logo__img" src="./assets/images/logo.svg" alt="">
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link menu__link--bold" href="#">
+                Services
+                <i class="menu__icon">
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15 17.5887L10.2237 12.8124C9.70625 12.2949 8.86625 12.2949 8.34875 12.8124C7.83125 13.3299 7.83125 14.1699 8.34875 14.6874L14.1163 20.4549C14.605 20.9437 15.3962 20.9437 15.8837 20.4549L21.6512 14.6874C22.1687 14.1699 22.1687 13.3299 21.6512 12.8124C21.1337 12.2949 20.2937 12.2949 19.7762 12.8124L15 17.5887Z"
+                      fill="#C4FF02" />
+                  </svg>
+                </i>
+              </a>
+              <div class="dropdown">
+                <div class="dropdown__item">
+                  <div class="dropdown__box">
+                    <a class="dropdown__link" href="#">
+                      Services 1
+                    </a>
+                    <i class="dropdown__icon accordion">
+                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M17.5888 15.0002L12.8125 19.7764C12.295 20.2939 12.295 21.1339 12.8125 21.6514C13.33 22.1689 14.17 22.1689 14.6875 21.6514L20.455 15.8839C20.9438 15.3952 20.9438 14.6039 20.455 14.1164L14.6875 8.34893C14.17 7.83143 13.33 7.83143 12.8125 8.34893C12.295 8.86643 12.295 9.70643 12.8125 10.2239L17.5888 15.0002Z"
+                          fill="white" />
+                      </svg>
+                    </i>
+                  </div>
+                  <div class="accordion-content">
+                    <div class="dropdown">
+                      <div class="dropdown__item">
+                        <a class="dropdown__link" href="#">
+                          Services 1
+                        </a>
+                      </div>
+                      <div class="dropdown__item">
+                        <a class="dropdown__link" href="#">
+                          Services 2
+                        </a>
+                      </div>
+                      <div class="dropdown__item">
+                        <a class="dropdown__link" href="#">
+                          Services 3
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown__item">
+                  <div class="dropdown__box">
+                    <a class="dropdown__link" href="#">
+                      Services 2
+                    </a>
+                    <i class="dropdown__icon accordion">
+                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M17.5888 15.0002L12.8125 19.7764C12.295 20.2939 12.295 21.1339 12.8125 21.6514C13.33 22.1689 14.17 22.1689 14.6875 21.6514L20.455 15.8839C20.9438 15.3952 20.9438 14.6039 20.455 14.1164L14.6875 8.34893C14.17 7.83143 13.33 7.83143 12.8125 8.34893C12.295 8.86643 12.295 9.70643 12.8125 10.2239L17.5888 15.0002Z"
+                          fill="white" />
+                      </svg>
+                    </i>
+                  </div>
+                  <div class="accordion-content">
+                    <div class="dropdown">
+                      <div class="dropdown__item">
+                        <a class="dropdown__link" href="#">
+                          Services 1
+                        </a>
+                      </div>
+                      <div class="dropdown__item">
+                        <a class="dropdown__link" href="#">
+                          Services 2
+                        </a>
+                      </div>
+                      <div class="dropdown__item">
+                        <a class="dropdown__link" href="#">
+                          Services 3
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown__item">
+                  <div class="dropdown__box">
+                    <a class="dropdown__link" href="#">
+                      Services 3
+                    </a>
+                    <i class="dropdown__icon accordion">
+                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M17.5888 15.0002L12.8125 19.7764C12.295 20.2939 12.295 21.1339 12.8125 21.6514C13.33 22.1689 14.17 22.1689 14.6875 21.6514L20.455 15.8839C20.9438 15.3952 20.9438 14.6039 20.455 14.1164L14.6875 8.34893C14.17 7.83143 13.33 7.83143 12.8125 8.34893C12.295 8.86643 12.295 9.70643 12.8125 10.2239L17.5888 15.0002Z"
+                          fill="white" />
+                      </svg>
+                    </i>
+                  </div>
+                  <div class="accordion-content">
+                    <div class="dropdown">
+                      <div class="dropdown__item">
+                        <a class="dropdown__link" href="#">
+                          Services 1
+                        </a>
+                      </div>
+                      <div class="dropdown__item">
+                        <a class="dropdown__link" href="#">
+                          Services 2
+                        </a>
+                      </div>
+                      <div class="dropdown__item">
+                        <a class="dropdown__link" href="#">
+                          Services 3
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown__item">
+                  <div class="dropdown__box ">
+                    <a class="dropdown__link" href="#">
+                      Services 4
+                    </a>
+                    <i class="dropdown__icon accordion">
+                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M17.5888 15.0002L12.8125 19.7764C12.295 20.2939 12.295 21.1339 12.8125 21.6514C13.33 22.1689 14.17 22.1689 14.6875 21.6514L20.455 15.8839C20.9438 15.3952 20.9438 14.6039 20.455 14.1164L14.6875 8.34893C14.17 7.83143 13.33 7.83143 12.8125 8.34893C12.295 8.86643 12.295 9.70643 12.8125 10.2239L17.5888 15.0002Z"
+                          fill="white" />
+                      </svg>
+                    </i>
+                  </div>
+                  <div class="accordion-content">
+                    <div class="dropdown">
+                      <div class="dropdown__item">
+                        <a class="dropdown__link" href="#">
+                          Services 1
+                        </a>
+                      </div>
+                      <div class="dropdown__item">
+                        <a class="dropdown__link" href="#">
+                          Services 2
+                        </a>
+                      </div>
+                      <div class="dropdown__item">
+                        <a class="dropdown__link" href="#">
+                          Services 3
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Case Studies
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                About
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Clients
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Blog
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a class="start" data-fancybox href="#form">
+          Start
+          <i class="start__icon">
+            <svg viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M16.6627 12.4518L3.27668 21.4324C2.00266 22.3698 0.55339 21.2261 0.55339 20.0047L0.55339 1.97106C0.55339 1.36724 0.866975 0.765908 1.44196 0.442948C2.02793 0.113818 2.71797 0.168558 3.23399 0.514733L16.6628 9.52397C17.236 9.90053 17.4466 10.5088 17.4466 10.9879C17.4466 11.467 17.236 12.0753 16.6627 12.4518ZM14.7622 12.4156L14.7882 12.4331C14.7795 12.4273 14.7708 12.4215 14.7622 12.4156ZM14.7882 9.54273L14.7622 9.56013C14.7708 9.55428 14.7794 9.54848 14.7882 9.54273ZM12.6341 10.9879L3.98522 16.7903L3.98523 5.18544L12.6341 10.9879ZM1.3131 18.583C1.33293 18.5691 1.35288 18.5557 1.37292 18.5429L1.3131 18.583Z"
+                fill="#131313" />
+            </svg>
+          </i>
+        </a>
+        <div class="burger">
+          <div class="burger__line"></div>
+        </div>
+      </div>
+    </header>
+
+
+    <main class="main">
+
+
+      <section class="top">
+        <div class="top__wrapper">
+          <img class="top__bg" src="./assets/images/top/bg-1.png" alt="">
+          <div class="container">
+            <div class="top__inner top__inner--alt">
+              <div class="top__elem">
+                <p class="top__elem-accent">
+                  #paidsocial
+                </p>
+                <h2 class="top__elem-title title title--initial">
+                  TikTok Marketing
+                  </p>
+                </h2>
+                <p class="top__elem-text">
+                  EThe ground-breaking virality of TikTok videos has altered the digital marketing scene. On top of
+                  that, TikTok is more popular than Twitter and Snapchat, and it’s also less filled with ads than its
+                  bigger rivals.
+                </p>
+                <button class="btn btn--blackAlt">
+                  Discuss the task
+                </button>
+              </div>
+              <img class="top__img" src="./assets/images/top/1.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="infoPart">
+        <div class="infoPart__wrapper">
+          <div class="container">
+            <div class="infoPart__top">
+              <div class="infoPart__top-item">
+                <p class="infoPart__top-title">
+                  Like it or not, TikTok is big and only getting bigger over time
+                </p>
+                <i class="infoPart__top-icon">
+                  <svg viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_181_564)">
+                      <path
+                        d="M24.5385 0C20.7479 0 17.8462 2.90174 17.8462 6.69231V24.5385H10.4567C7.33714 24.5385 6.88402 25.0003 9.34135 27.6755L24.1202 42.3846C29.0261 47.2906 28.9739 47.2906 33.8798 42.3846L48.6587 27.8846C51.3338 24.9829 50.445 24.5385 47.5433 24.5385H40.1538V6.69231C40.1538 2.90174 37.2521 0 33.4615 0H24.5385ZM0 42.3846V51.3077C0 55.0983 2.90174 58 6.69231 58H51.3077C55.0983 58 58 55.0983 58 51.3077V42.3846H53.5385V51.3077C53.5385 52.6496 52.6496 53.5385 51.3077 53.5385H6.69231C5.35036 53.5385 4.46154 52.6496 4.46154 51.3077V42.3846H0Z"
+                        fill="black" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_181_564">
+                        <rect width="58" height="58" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </i>
+                <div class="infoPart__top-box">
+                  <div class="infoPart__top-block">
+                    <p class="infoPart__top-accent">
+                      3 billion
+                    </p>
+                    <p class="infoPart__top-text">
+                      times downloaded
+                    </p>
+                  </div>
+                  <div class="infoPart__top-block">
+                    <p class="infoPart__top-text infoPart__top-text--alt">
+                      Tik Tok after its launch
+                    </p>
+                    <p class="infoPart__top-text infoPart__top-text--bold">
+                      (just a few years)
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="infoPart__top-item">
+                <i class="infoPart__top-icon">
+                  <svg viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M34.5 13.8C27.1814 13.8 24.15 18.4943 24.15 24.15C24.15 26.0544 25.0619 27.9684 25.0619 27.9684C24.6962 28.18 24.088 28.8525 24.2398 30.0393C24.5227 32.2519 25.4833 32.8099 26.0951 32.8559C26.3274 34.9213 28.5499 37.5659 29.325 37.95V41.0362C27.6 46.2112 13.8 45.425 13.8 57.5H55.2C55.2 45.425 41.4 46.2112 39.675 41.0362V37.95C40.4524 37.5659 42.6726 34.9213 42.9049 32.8559C43.5167 32.8099 44.4773 32.2519 44.7602 30.0393C44.912 28.8502 44.3038 28.18 43.9381 27.9684C43.9381 27.9684 44.85 26.2407 44.85 24.15C44.85 19.9617 43.2055 16.3875 39.675 16.3875C39.675 16.3875 38.4491 13.8 34.5 13.8ZM51.75 18.3956C50.5724 18.3956 49.5704 18.6086 48.6504 18.9122C49.1541 20.4739 49.45 22.2157 49.45 24.15C49.45 25.3736 49.2581 26.4954 49.0143 27.4338C49.3478 28.4205 49.4623 29.5056 49.3197 30.6188C48.9954 33.1511 48.0122 34.8722 46.7771 35.9555C46.4183 36.8249 45.927 37.6486 45.398 38.4352C46.0512 39.7761 47.0074 40.9699 47.4375 41.2114V41.2383C52.1226 43.4348 59.8 47.127 59.8 57.5H69C69 46.0966 57.5 47.734 56.0625 42.8465V41.2069C56.7088 40.8435 58.5601 38.3462 58.7533 36.3958C59.2616 36.3521 60.064 35.8271 60.2986 33.7364C60.4251 32.614 59.9194 31.9824 59.6158 31.7823C59.6158 31.7823 60.375 30.1461 60.375 28.175C60.375 24.219 59.0042 20.8438 56.0625 20.8438C56.0625 20.8438 55.0413 18.3956 51.75 18.3956ZM17.25 18.4C13.9587 18.4 12.9375 20.8438 12.9375 20.8438C9.9958 20.8438 8.625 24.2235 8.625 28.1795C8.625 30.1529 9.38418 31.7823 9.38418 31.7823C9.07828 31.9801 8.57487 32.614 8.70137 33.7364C8.93597 35.8271 9.73838 36.3565 10.2467 36.4002C10.4399 38.3506 12.2912 40.848 12.9375 41.2114V42.8465C11.5 47.7317 0 46.0966 0 57.5H9.2C9.2 47.127 16.8774 43.4371 21.5625 41.2383V41.2069C21.9926 40.9654 22.9488 39.7784 23.602 38.4352C23.073 37.6486 22.5817 36.8204 22.2229 35.951C20.9878 34.87 20.0023 33.1488 19.6803 30.6188C19.5354 29.4918 19.6543 28.3893 19.9947 27.3934C19.7463 26.4481 19.55 25.3253 19.55 24.15C19.55 22.2479 19.8193 20.4994 20.3092 18.9032C19.4007 18.6065 18.4115 18.4 17.25 18.4Z"
+                      fill="black" />
+                  </svg>
+                </i>
+                <div class="infoPart__top-box">
+                  <div class="infoPart__top-block">
+                    <p class="infoPart__top-accent">
+                      1 billion
+                    </p>
+                    <p class="infoPart__top-text">
+                      monthly active users
+                    </p>
+                  </div>
+                  <div class="infoPart__top-block">
+                    <p class="infoPart__top-text infoPart__top-text--bold">
+                      with the majority checking their feeds multiple times daily
+                    </p>
+                  </div>
+                </div>
+                <i class="infoPart__top-best">
+                  <svg viewBox="0 0 545 276" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1.82625" y="131.553" width="521" height="147" rx="73.5"
+                      transform="rotate(-14.418 1.82625 131.553)" fill="#131313" stroke="black" stroke-width="3" />
+                    <path
+                      d="M206.116 138.861L206.009 149.44L213.064 148.639L213.374 151.372L205.971 152.212L205.9 161.781L203.217 162.086L203.289 152.517L193.104 153.673L192.983 163.247L190.3 163.552L190.372 153.983L183.317 154.784L183.007 152.051L190.409 151.211L190.517 140.631L183.412 141.438L183.102 138.705L190.554 137.859L190.625 128.29L193.358 127.98L193.237 137.555L203.471 136.393L203.542 126.824L206.225 126.519L206.154 136.089L213.159 135.293L213.469 138.026L206.116 138.861ZM203.434 139.165L193.249 140.321L193.092 150.906L203.326 149.745L203.434 139.165ZM243.077 139.395C245.419 139.633 247.287 140.427 248.682 141.778C250.106 143.093 250.949 144.909 251.212 147.228C251.551 150.209 250.702 152.636 248.668 154.511C246.662 156.349 243.506 157.512 239.201 158.001L223.203 159.817L219.256 125.04L234.26 123.337C238.135 122.897 241.22 123.336 243.517 124.652C245.846 125.964 247.173 128.044 247.496 130.893C247.714 132.814 247.42 134.508 246.614 135.975C245.837 137.405 244.658 138.545 243.077 139.395ZM223.276 127.654L224.709 140.273L235.788 139.015C238.603 138.695 240.712 137.919 242.115 136.686C243.515 135.421 244.098 133.761 243.865 131.707C243.632 129.654 242.693 128.184 241.049 127.297C239.402 126.377 237.17 126.076 234.355 126.396L223.276 127.654ZM238.807 154.976C241.92 154.623 244.212 153.826 245.681 152.586C247.151 151.345 247.758 149.599 247.502 147.347C247.01 143.008 243.617 141.196 237.324 141.91L225.053 143.303L226.536 156.369L238.807 154.976ZM284.889 149.594L285.25 152.774L260.658 155.565L256.711 120.789L280.558 118.082L280.919 121.262L260.748 123.551L262.152 135.922L280.137 133.88L280.492 137.01L262.508 139.052L263.974 151.969L284.889 149.594ZM303.514 151.003C300.931 151.296 298.4 151.164 295.921 150.607C293.476 150.046 291.53 149.159 290.084 147.948L291.203 144.953C292.605 146.068 294.394 146.905 296.571 147.463C298.744 147.988 300.94 148.125 303.159 147.873C306.272 147.519 308.544 146.691 309.972 145.389C311.397 144.053 312.007 142.474 311.8 140.652C311.642 139.261 311.085 138.2 310.13 137.47C309.208 136.736 308.11 136.223 306.836 135.932C305.558 135.607 303.796 135.304 301.549 135.022C298.858 134.657 296.7 134.265 295.075 133.845C293.447 133.393 291.999 132.601 290.73 131.47C289.494 130.336 288.754 128.692 288.509 126.539C288.31 124.784 288.593 123.141 289.359 121.612C290.121 120.049 291.414 118.728 293.237 117.649C295.06 116.57 297.396 115.869 300.244 115.545C302.232 115.32 304.201 115.381 306.153 115.73C308.134 116.042 309.875 116.599 311.375 117.402L310.465 120.474C308.899 119.679 307.262 119.144 305.553 118.868C303.841 118.559 302.189 118.495 300.6 118.675C297.553 119.021 295.318 119.879 293.897 121.248C292.505 122.58 291.914 124.173 292.125 126.028C292.283 127.419 292.825 128.498 293.75 129.265C294.705 129.996 295.839 130.521 297.15 130.842C298.49 131.126 300.267 131.411 302.48 131.696C305.102 132.036 307.227 132.432 308.855 132.885C310.512 133.301 311.959 134.076 313.195 135.21C314.427 136.312 315.163 137.922 315.404 140.042C315.603 141.797 315.305 143.458 314.51 145.024C313.745 146.554 312.434 147.86 310.577 148.943C308.717 149.993 306.363 150.679 303.514 151.003ZM327.142 116.015L314.921 117.402L314.56 114.222L342.679 111.03L343.04 114.21L330.819 115.597L334.405 147.194L330.729 147.612L327.142 116.015Z"
+                      fill="white" />
+                  </svg>
+                </i>
+              </div>
+            </div>
+            <div class="infoPart__inner">
+              <div class="infoPart__item">
+                <div class="infoPart__item-picture">
+                  <img class="infoPart__item-img" src="./assets/images/infoPart/dollar.png" alt="">
+                </div>
+                <p class="infoPart__item-text">
+                  There’s no difference if you’re a small brand with a <span>tight budget or interested</span> in
+                  engaging in a
+                  long-term campaign, our digital marketing specialists have all it takes to optimize each of your
+                  <span>TikTok Advertising dollars and provide the maximum return on your investment.</span>
+                </p>
+              </div>
+              <div class="infoPart__elem">
+                <p class="infoPart__item-text">
+                  TikTok advertising outgrown <span>Instagram and Facebook</span> due to its high engagement and
+                  explosive growth.
+                  Brands as diverse as Duolingo, ASOS, Skittles, Fenty Beauty, Scrub Daddy, and the Washington Post have
+                  successfully engaged its massive audience to win a significant leg-up over their competition.
+                </p>
+                <div class="infoPart__elem-box">
+                  <img class="infoPart__elem-img" src="./assets/images/about/5.png" alt="">
+                  <img class="infoPart__elem-img" src="./assets/images/about/3.png" alt="">
+                  <i class="infoPart__elem-icon">
+                    <svg viewBox="0 0 97 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M96.9999 49.9999C96.9999 22.8177 75.3922 0.782132 48.7377 0.782133C22.0833 0.782134 0.475583 22.8177 0.475584 49.9999C0.475585 77.1822 22.0833 99.2178 48.7377 99.2178C75.3922 99.2178 96.9999 77.1822 96.9999 49.9999Z"
+                        fill="#C4FF02" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M20.2498 44.7586L64.1719 15.2917C68.3522 12.2158 73.1075 15.9686 73.1075 19.9763L73.1075 79.148C73.1075 81.1292 72.0786 83.1023 70.1919 84.162C68.2693 85.242 66.0051 85.0624 64.312 83.9265L20.2496 54.3655C18.3686 53.1299 17.6777 51.1342 17.6777 49.5621C17.6777 47.99 18.3686 45.9942 20.2498 44.7586ZM26.4858 44.8775L26.4003 44.8202C26.4291 44.8391 26.4576 44.8582 26.4858 44.8775ZM26.4005 54.3039L26.4856 54.2468C26.4575 54.266 26.4292 54.2851 26.4005 54.3039ZM33.4684 49.5621L61.847 30.5232L61.847 68.601L33.4684 49.5621ZM70.6148 24.641C70.5497 24.6867 70.4842 24.7305 70.4185 24.7727L70.6148 24.641Z"
+                        fill="#131313" />
+                    </svg>
+                  </i>
+                </div>
+                <p class="infoPart__elem-text infoPart__elem-text--bold">
+                  We’re big believers in the capacity of TikTok ads.
+                </p>
+              </div>
+            </div>
+            <div class="infoPart__inner">
+              <img class="infoPart__img" src="./assets/images/infoPart/1.png" alt="">
+              <p class="infoPart__inner-text">
+                The ground-breaking virality of TikTok videos has altered the digital marketing scene. <span>On top of
+                  that,
+                  TikTok is more popular than Twitter and Snapchat, and it’s also less filled with ads than its bigger
+                  rivals.</span>
+              </p>
+            </div>
+            <div class="infoPart__bot">
+              <p class="infoPart__bot-text">
+                TikTok Advertising lets any brand — large or small — free its creative side to grow. And while the
+                channel is a must for businesses targeted towards GenZ, more and more <a href="#">GenXers, Millenials
+                  and
+                  Boomers
+                  log on to the app daily. </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="advertisement">
+        <div class="advertisement__wrapper">
+          <div class="container">
+            <div class="advertisement__bacground">
+              <div class="advertisement__inner">
+                <p class="advertisement__accent">
+                  TIKTOK ADVERTISING:
+                </p>
+                <p class="advertisement__title">
+                  FREE YOUR BRAND’S CREATIVE SIDE
+                </p>
+                <p class="advertisement__text">
+                  The moment you’ve combined TikTok’s huge reach with the app’s adaptable ad formats, it becomes
+                  insanely easy to engage millions of potential customers around the world through creative and genuine
+                  brand content
+                </p>
+                <div class="advertisement__item">
+                  <div class="advertisement__item-elem">
+                    <div class="advertisement__item-box">
+                      <p class="advertisement__item-title">
+                        <i class="advertisement__item-icon">
+                          <svg viewBox="0 0 36 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M34.3295 19.9016L5.80342 0.735029C3.08844 -1.26569 1.85535e-06 1.17527 1.96929e-06 3.78206L3.65166e-06 42.2701C3.70799e-06 43.5587 0.668262 44.8421 1.89357 45.5314C3.1423 46.2338 4.6128 46.117 5.71245 45.3782L34.3296 26.1504C35.5513 25.3467 36 24.0486 36 23.026C36 22.0035 35.5513 20.7053 34.3295 19.9016ZM30.2794 19.979L30.335 19.9417C30.3163 19.954 30.2978 19.9664 30.2794 19.979ZM30.3348 26.1103L30.2796 26.0732C30.2978 26.0857 30.3162 26.0981 30.3348 26.1103ZM25.7444 23.026L7.31336 10.6423L7.31336 35.4098L25.7444 23.026ZM1.61897 6.81623C1.66123 6.84591 1.70374 6.87446 1.74645 6.90189L1.61897 6.81623Z"
+                              fill="#C4FF02" />
+                          </svg>
+                        </i>
+                        Brand Takeover Ads
+                      </p>
+                      <p class="advertisement__item-text">
+                        appear full-screen as soon as a user opens TikTok. They’re engaging right away, can’t be missed,
+                        and include a link to direct potential customers. This format is a great option for any business
+                        looking to raise brand awareness on a large scale.
+                      </p>
+                    </div>
+                    <p class="advertisement__item-num">
+                      #01
+                    </p>
+                  </div>
+                  <div class="advertisement__item-elem">
+                    <div class="advertisement__item-box">
+                      <p class="advertisement__item-title">
+                        <i class="advertisement__item-icon">
+                          <svg viewBox="0 0 36 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M34.3295 19.9016L5.80342 0.735029C3.08844 -1.26569 1.85535e-06 1.17527 1.96929e-06 3.78206L3.65166e-06 42.2701C3.70799e-06 43.5587 0.668262 44.8421 1.89357 45.5314C3.1423 46.2338 4.6128 46.117 5.71245 45.3782L34.3296 26.1504C35.5513 25.3467 36 24.0486 36 23.026C36 22.0035 35.5513 20.7053 34.3295 19.9016ZM30.2794 19.979L30.335 19.9417C30.3163 19.954 30.2978 19.9664 30.2794 19.979ZM30.3348 26.1103L30.2796 26.0732C30.2978 26.0857 30.3162 26.0981 30.3348 26.1103ZM25.7444 23.026L7.31336 10.6423L7.31336 35.4098L25.7444 23.026ZM1.61897 6.81623C1.66123 6.84591 1.70374 6.87446 1.74645 6.90189L1.61897 6.81623Z"
+                              fill="#C4FF02" />
+                          </svg>
+                        </i>
+                        TikTok TopView Ads
+                      </p>
+                      <p class="advertisement__item-text">
+                        appear as the first video three seconds after a user opens the app. TopView ads occupy the full
+                        screen, feature up to 60-seconds of video with auto-play and sound, and include a custom link.
+                      </p>
+                    </div>
+                    <p class="advertisement__item-num">
+                      #02
+                    </p>
+                  </div>
+                  <div class="advertisement__item-elem">
+                    <div class="advertisement__item-box">
+                      <p class="advertisement__item-title">
+                        <i class="advertisement__item-icon">
+                          <svg viewBox="0 0 36 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M34.3295 19.9016L5.80342 0.735029C3.08844 -1.26569 1.85535e-06 1.17527 1.96929e-06 3.78206L3.65166e-06 42.2701C3.70799e-06 43.5587 0.668262 44.8421 1.89357 45.5314C3.1423 46.2338 4.6128 46.117 5.71245 45.3782L34.3296 26.1504C35.5513 25.3467 36 24.0486 36 23.026C36 22.0035 35.5513 20.7053 34.3295 19.9016ZM30.2794 19.979L30.335 19.9417C30.3163 19.954 30.2978 19.9664 30.2794 19.979ZM30.3348 26.1103L30.2796 26.0732C30.2978 26.0857 30.3162 26.0981 30.3348 26.1103ZM25.7444 23.026L7.31336 10.6423L7.31336 35.4098L25.7444 23.026ZM1.61897 6.81623C1.66123 6.84591 1.70374 6.87446 1.74645 6.90189L1.61897 6.81623Z"
+                              fill="#C4FF02" />
+                          </svg>
+                        </i>
+                        In-Feed Ads
+                      </p>
+                      <p class="advertisement__item-text">
+                        allow businesses to integrate brand content in a user’s "For You Page." By including several
+                        call-to-actions, you’ll motivate prospective customers to shop, download your app, or visit your
+                        website straight from TikTok.
+                      </p>
+                    </div>
+                    <p class="advertisement__item-num">
+                      #03
+                    </p>
+                  </div>
+                  <div class="advertisement__item-elem">
+                    <div class="advertisement__item-box">
+                      <p class="advertisement__item-title">
+                        <i class="advertisement__item-icon">
+                          <svg viewBox="0 0 36 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M34.3295 19.9016L5.80342 0.735029C3.08844 -1.26569 1.85535e-06 1.17527 1.96929e-06 3.78206L3.65166e-06 42.2701C3.70799e-06 43.5587 0.668262 44.8421 1.89357 45.5314C3.1423 46.2338 4.6128 46.117 5.71245 45.3782L34.3296 26.1504C35.5513 25.3467 36 24.0486 36 23.026C36 22.0035 35.5513 20.7053 34.3295 19.9016ZM30.2794 19.979L30.335 19.9417C30.3163 19.954 30.2978 19.9664 30.2794 19.979ZM30.3348 26.1103L30.2796 26.0732C30.2978 26.0857 30.3162 26.0981 30.3348 26.1103ZM25.7444 23.026L7.31336 10.6423L7.31336 35.4098L25.7444 23.026ZM1.61897 6.81623C1.66123 6.84591 1.70374 6.87446 1.74645 6.90189L1.61897 6.81623Z"
+                              fill="#C4FF02" />
+                          </svg>
+                        </i>
+                        Branded Hashtag Challenges
+                      </p>
+                      <p class="advertisement__item-text">
+                        allows TikTok users the ability to participate and create content around your campaign theme.
+                        To get their Challenge Hashtag trending, advertisers can either team up with famous TikTok
+                        creators to encourage their followers to get on board or pay to have the challenge appear on the
+                        app’s Discover banner.
+                      </p>
+                    </div>
+                    <p class="advertisement__item-num">
+                      #04
+                    </p>
+                  </div>
+                  <div class="advertisement__item-elem">
+                    <div class="advertisement__item-box">
+                      <p class="advertisement__item-title">
+                        <i class="advertisement__item-icon">
+                          <svg viewBox="0 0 36 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M34.3295 19.9016L5.80342 0.735029C3.08844 -1.26569 1.85535e-06 1.17527 1.96929e-06 3.78206L3.65166e-06 42.2701C3.70799e-06 43.5587 0.668262 44.8421 1.89357 45.5314C3.1423 46.2338 4.6128 46.117 5.71245 45.3782L34.3296 26.1504C35.5513 25.3467 36 24.0486 36 23.026C36 22.0035 35.5513 20.7053 34.3295 19.9016ZM30.2794 19.979L30.335 19.9417C30.3163 19.954 30.2978 19.9664 30.2794 19.979ZM30.3348 26.1103L30.2796 26.0732C30.2978 26.0857 30.3162 26.0981 30.3348 26.1103ZM25.7444 23.026L7.31336 10.6423L7.31336 35.4098L25.7444 23.026ZM1.61897 6.81623C1.66123 6.84591 1.70374 6.87446 1.74645 6.90189L1.61897 6.81623Z"
+                              fill="#C4FF02" />
+                          </svg>
+                        </i>
+                        Branded Effects Ads
+                      </p>
+                      <p class="advertisement__item-text">
+                        and Snapchat Lenses are alike. They let marketers create custom sharable stickers, filters, and
+                        special effects. TikTok Branded Effects can go viral naturally, or advertisers can encourage
+                        users to create content using a custom filter in exchange for a shoutout or prize.
+                      </p>
+                    </div>
+                    <p class="advertisement__item-num">
+                      #05
+                    </p>
+                  </div>
+                  <div class="advertisement__item-last">
+                    <p class="advertisement__item-lastText">
+                      Similar to Facebook and Instagram, TikTok is also a powerful platform for Influencer Marketing.
+                      But while Instagram videos use heavy editing, makeup,professional studio lighting and camera work,
+                      TikTok users share experiences in the raw, making for more relatable and authentic Influencer
+                      content.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="advertisement__box">
+                <div class="advertisement__box-item">
+                  <p class="advertisement__box-title">
+                    AN ENTREPRENEUR’S VIEW ON VIRAL CONTENT CREATION
+                  </p>
+                  <p class="advertisement__box-text">
+                    An endless array of unique communities and content niches make TikTok Advertising an easy task for
+                    any business looking to raise awareness, engagements, and conversions in a massive way. But far
+                    too many businesses either overlook the platform entirely, assume it’s not for them, or lack the
+                    resources and expertise to create the kind of engaging branded content that goes viral on TikTok.
+                  </p>
+                </div>
+                <div class="advertisement__box-item">
+                  <p class="advertisement__box-text">
+                    As entrepreneurs, we’ve each started and sold several businesses before uniting our forces
+                    at Ezca. We love digital marketing with a burning passion because we’ve witnessed first-hand the
+                    chaos a badly conceptualized advertising strategy can inflict on a brand. And we have no time for
+                    the conventional approaches that have slowed our clients down in the past.
+                  </p>
+                  <p class="advertisement__box-text">
+                    Because we take our work seriously, we’ll treat your company as we would our own. We know every
+                    marketing dollar counts and become frustrated with disappointing conversion rates and
+                    overspending, as you probably do.
+                  </p>
+                </div>
+              </div>
+              <div class="advertisement__bot">
+                <div class="advertisement__bot-item">
+                  <p class="advertisement__bot-title">
+                    When you work with
+                  </p>
+                  <img class="advertisement__bot-logo" src="./assets/images/logo-black-yellow.png" alt="">
+                </div>
+                <div class="advertisement__bot-item">
+                  <p class="advertisement__bot-text">
+                    you’re utilizing the power of people with collective experience helping brands prosper in today’s
+                    competitive digital world. After lots of experimentation, we’ve found a way to leverage TikTok and
+                    other social media apps for long-term, scalable growth. And we assure you, the results won’t
+                    be disappointing.
+                  </p>
+                  <a class="btn btn--alt btn--shadow" href="#">
+                    contact us
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <img class="footer__bg" src="./assets/images/footer/bg.svg" alt="">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__item">
+              <a class="logo" href="/">
+                <img class="logo__img" src="./assets/images/logo.svg" alt="">
+              </a>
+              <p class="footer__item-text">
+                We help to keep a clear balance between creativity and clear stradegy
+              </p>
+            </div>
+            <div class="footer__elem footer__elem--mobile">
+              <a class="footer__mail" href="mailto:info@ezcaa.com">
+                info@ezcaa.com
+              </a>
+              <div class="socials socials--alt">
+                <a class="socials__link" href="#">
+                  <i class="socials__icon">
+                    <svg viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M27 5.3999C15.0714 5.3999 5.40002 15.0713 5.40002 26.9999C5.40002 31.0521 6.53824 34.83 8.47971 38.0706L5.59338 48.5999L16.3477 45.7769C19.4929 47.565 23.1237 48.5999 27 48.5999C38.9286 48.5999 48.6 38.9285 48.6 26.9999C48.6 15.0713 38.9286 5.3999 27 5.3999ZM19.6067 16.9241C19.9577 16.9241 20.3183 16.922 20.6297 16.9382C21.0149 16.9472 21.4342 16.9754 21.8356 17.8628C22.3126 18.9176 23.3512 21.5637 23.4844 21.8319C23.6176 22.1001 23.712 22.4161 23.5266 22.7671C23.3502 23.1271 23.2584 23.345 22.9992 23.6636C22.731 23.9732 22.4372 24.3577 22.1942 24.5917C21.926 24.8599 21.649 25.154 21.9586 25.6886C22.2682 26.2232 23.3434 27.9757 24.9328 29.3905C26.9758 31.2157 28.6996 31.7766 29.236 32.0448C29.7724 32.313 30.083 32.2712 30.3926 31.9112C30.7112 31.5602 31.7306 30.3558 32.0907 29.8194C32.4417 29.283 32.8 29.3758 33.286 29.5522C33.7792 29.7286 36.4093 31.0243 36.9457 31.2925C37.4821 31.5607 37.8338 31.6934 37.9688 31.9112C38.1074 32.1362 38.1075 33.2073 37.6629 34.4565C37.2183 35.7039 35.0351 36.9102 34.0559 36.9948C33.0677 37.0866 32.1454 37.439 27.6328 35.6624C22.1896 33.5186 18.7569 27.9435 18.4887 27.5835C18.2205 27.2325 16.309 24.6849 16.309 22.0569C16.309 19.4199 17.6916 18.1285 18.1758 17.5921C18.669 17.0557 19.2467 16.9241 19.6067 16.9241Z"
+                        fill="white" />
+                    </svg>
+                  </i>
+                </a>
+                <a class="socials__link" href="#">
+                  <i class="socials__icon">
+                    <svg viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M27 5.3999C15.0714 5.3999 5.40002 14.6681 5.40002 26.0999C5.40002 32.2221 8.19123 37.7049 12.6 41.4948V50.3999L21.3047 46.0476C23.122 46.5233 25.0254 46.7999 27 46.7999C38.9286 46.7999 48.6 37.5317 48.6 26.0999C48.6 14.6681 38.9286 5.3999 27 5.3999ZM24.9504 20.4433L30.2625 25.7624L39.7512 20.4433L29.0496 32.0413L23.8606 26.4655L14.1223 31.9147L24.9504 20.4433Z"
+                        fill="white" />
+                    </svg>
+                  </i>
+                </a>
+              </div>
+            </div>
+            <div class="footer__box">
+              <div class="footer__box-item">
+                <p class="footer__box-title">Home</p>
+                <a class="footer__box-link" href="#">About Us</a>
+                <a class="footer__box-link" href="#">Our Services</a>
+                <a class="footer__box-link" href="#">how Сhoose Us</a>
+                <a class="footer__box-link" href="#">team</a>
+              </div>
+              <div class="footer__box-item">
+                <p class="footer__box-title">Support</p>
+                <a class="footer__box-link" href="#">FAQ</a>
+                <a class="footer__box-link" href="#">Privacy Policy</a>
+                <a class="footer__box-link" href="#">Term of Service</a>
+              </div>
+            </div>
+            <div class="footer__block">
+              <div class="socials">
+                <a class="socials__link" href="#">
+                  <i class="socials__icon">
+                    <svg viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M22.5 0C10.0958 0 0 10.0958 0 22.5C0 34.9042 10.0958 45 22.5 45C34.9042 45 45 34.9042 45 22.5C45 10.0958 34.9042 0 22.5 0ZM22.5 3.75C32.8775 3.75 41.25 12.1225 41.25 22.5C41.25 31.9263 34.3344 39.6774 25.2905 41.0229V27.9675H30.6299L31.4685 22.5439H25.2905V19.5813C25.2905 17.3294 26.0304 15.3296 28.136 15.3296H31.5198V10.5981C30.9254 10.5175 29.6675 10.3418 27.29 10.3418C22.325 10.3418 19.4165 12.963 19.4165 18.9368V22.5439H14.3115V27.9675H19.4165V40.9753C10.5166 39.5075 3.75 31.8245 3.75 22.5C3.75 12.1225 12.1225 3.75 22.5 3.75Z"
+                        fill="white" />
+                    </svg>
+                  </i>
+                </a>
+                <a class="socials__link" href="#">
+                  <i class="socials__icon">
+                    <svg viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12.5 0C5.6075 0 0 5.6075 0 12.5V32.5C0 39.3925 5.6075 45 12.5 45H32.5C39.3925 45 45 39.3925 45 32.5V12.5C45 5.6075 39.3925 0 32.5 0H12.5ZM12.5 5H32.5C36.635 5 40 8.365 40 12.5V32.5C40 36.635 36.635 40 32.5 40H12.5C8.365 40 5 36.635 5 32.5V12.5C5 8.365 8.365 5 12.5 5ZM35 7.5C34.337 7.5 33.7011 7.76339 33.2322 8.23223C32.7634 8.70107 32.5 9.33696 32.5 10C32.5 10.663 32.7634 11.2989 33.2322 11.7678C33.7011 12.2366 34.337 12.5 35 12.5C35.663 12.5 36.2989 12.2366 36.7678 11.7678C37.2366 11.2989 37.5 10.663 37.5 10C37.5 9.33696 37.2366 8.70107 36.7678 8.23223C36.2989 7.76339 35.663 7.5 35 7.5ZM22.5 10C15.6075 10 10 15.6075 10 22.5C10 29.3925 15.6075 35 22.5 35C29.3925 35 35 29.3925 35 22.5C35 15.6075 29.3925 10 22.5 10ZM22.5 15C26.635 15 30 18.365 30 22.5C30 26.635 26.635 30 22.5 30C18.365 30 15 26.635 15 22.5C15 18.365 18.365 15 22.5 15Z"
+                        fill="white" />
+                    </svg>
+                  </i>
+                </a>
+                <a class="socials__link" href="#">
+                  <i class="socials__icon">
+                    <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M22 0C9.86939 0 0 9.86843 0 22C0 34.1316 9.86939 44 22 44C34.1306 44 44 34.1316 44 22C44 9.86843 34.1306 0 22 0ZM15.3043 31.5652H11.4783V17.2174H15.3043V31.5652ZM13.3913 14.3478C12.3343 14.3478 11.4783 13.4917 11.4783 12.4348C11.4783 11.3778 12.3343 10.5217 13.3913 10.5217C14.4483 10.5217 15.3043 11.3778 15.3043 12.4348C15.3043 13.4917 14.4483 14.3478 13.3913 14.3478ZM33.4783 31.5652H29.6522V26.7826V24.3913C29.6522 22.55 28.1457 21.0435 26.3043 21.0435C24.463 21.0435 22.9565 22.55 22.9565 24.3913V31.5652H19.1304V17.2174H22.9565V18.9544C24.0737 17.8812 25.5889 17.2174 27.2609 17.2174C30.6948 17.2174 33.4783 20.0009 33.4783 23.4348V31.5652Z"
+                        fill="white" />
+                    </svg>
+                  </i>
+                </a>
+              </div>
+              <div class="footer__elem">
+                <div class="socials socials--alt">
+                  <a class="socials__link" href="#">
+                    <i class="socials__icon">
+                      <svg viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M27 5.3999C15.0714 5.3999 5.40002 15.0713 5.40002 26.9999C5.40002 31.0521 6.53824 34.83 8.47971 38.0706L5.59338 48.5999L16.3477 45.7769C19.4929 47.565 23.1237 48.5999 27 48.5999C38.9286 48.5999 48.6 38.9285 48.6 26.9999C48.6 15.0713 38.9286 5.3999 27 5.3999ZM19.6067 16.9241C19.9577 16.9241 20.3183 16.922 20.6297 16.9382C21.0149 16.9472 21.4342 16.9754 21.8356 17.8628C22.3126 18.9176 23.3512 21.5637 23.4844 21.8319C23.6176 22.1001 23.712 22.4161 23.5266 22.7671C23.3502 23.1271 23.2584 23.345 22.9992 23.6636C22.731 23.9732 22.4372 24.3577 22.1942 24.5917C21.926 24.8599 21.649 25.154 21.9586 25.6886C22.2682 26.2232 23.3434 27.9757 24.9328 29.3905C26.9758 31.2157 28.6996 31.7766 29.236 32.0448C29.7724 32.313 30.083 32.2712 30.3926 31.9112C30.7112 31.5602 31.7306 30.3558 32.0907 29.8194C32.4417 29.283 32.8 29.3758 33.286 29.5522C33.7792 29.7286 36.4093 31.0243 36.9457 31.2925C37.4821 31.5607 37.8338 31.6934 37.9688 31.9112C38.1074 32.1362 38.1075 33.2073 37.6629 34.4565C37.2183 35.7039 35.0351 36.9102 34.0559 36.9948C33.0677 37.0866 32.1454 37.439 27.6328 35.6624C22.1896 33.5186 18.7569 27.9435 18.4887 27.5835C18.2205 27.2325 16.309 24.6849 16.309 22.0569C16.309 19.4199 17.6916 18.1285 18.1758 17.5921C18.669 17.0557 19.2467 16.9241 19.6067 16.9241Z"
+                          fill="white" />
+                      </svg>
+                    </i>
+                  </a>
+                  <a class="socials__link" href="#">
+                    <i class="socials__icon">
+                      <svg viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M27 5.3999C15.0714 5.3999 5.40002 14.6681 5.40002 26.0999C5.40002 32.2221 8.19123 37.7049 12.6 41.4948V50.3999L21.3047 46.0476C23.122 46.5233 25.0254 46.7999 27 46.7999C38.9286 46.7999 48.6 37.5317 48.6 26.0999C48.6 14.6681 38.9286 5.3999 27 5.3999ZM24.9504 20.4433L30.2625 25.7624L39.7512 20.4433L29.0496 32.0413L23.8606 26.4655L14.1223 31.9147L24.9504 20.4433Z"
+                          fill="white" />
+                      </svg>
+                    </i>
+                  </a>
+                </div>
+                <a class="footer__mail" href="mailto:info@ezcaa.com">
+                  info@ezcaa.com
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bot">
+            <p class="footer__copy">
+              © EZCAA, 2024
+            </p>
+            <div class="up">
+              <p class="up__text">
+                up
+              </p>
+              <i class="title__icon">
+                <svg viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M29.5 58.4271C45.7924 58.4271 59 45.476 59 29.4999C59 13.5239 45.7924 0.572754 29.5 0.572754C13.2076 0.572754 0 13.5239 0 29.4999C0 45.476 13.2076 58.4271 29.5 58.4271Z"
+                    fill="#C4FF02" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M32.6415 12.4252L50.3033 38.751C52.1469 41.2566 49.8976 44.1068 47.4955 44.1068H12.0293C10.8418 44.1068 9.65918 43.4901 9.02403 42.3593C8.37674 41.2069 8.48439 39.8498 9.1652 38.835L26.8834 12.4251C27.6239 11.2976 28.8202 10.8835 29.7624 10.8835C30.7047 10.8835 31.9009 11.2977 32.6415 12.4252ZM32.5702 16.1629L32.6046 16.1116C32.5933 16.1289 32.5818 16.146 32.5702 16.1629ZM26.9203 16.1118L26.9545 16.1628C26.943 16.1459 26.9316 16.1289 26.9203 16.1118ZM29.7624 20.3481L41.1739 37.3576H18.3509L29.7624 20.3481ZM44.6995 42.6128C44.6722 42.5737 44.6459 42.5345 44.6206 42.4951L44.6995 42.6128Z"
+                    fill="#131313" />
+                </svg>
+              </i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <div class="form" id="form">
+      <div class="form__wrapper">
+        <form class="form__inner" action="">
+          <a class="logo logo--alt" href="/">
+            <img class="logo__img" src="./assets/images/logo-black.svg" alt="">
+          </a>
+          <p class="form__text">
+            We are not like most agencies; that's why we only choose startups that we can help grow.
+          </p>
+          <div class="form__box">
+            <div class="form__block">
+              <label class="form__subtitle" for="">Full Name<span>*</span></label>
+              <input class="input" type="text" placeholder="Elena Efimova">
+            </div>
+            <div class="form__block">
+              <label class="form__subtitle" for="">Your Email<span>*</span></label>
+              <input class="input" type="email" placeholder="example@gmail.com">
+            </div>
+            <div class="form__block form__block--alt">
+              <label class="form__subtitle" for="">Company website</label>
+              <textarea class="textarea" name="website" rows="1" placeholder="example@gmail.com"></textarea>
+            </div>
+          </div>
+          <div class="form__type">
+            <p class="form__subtitle">
+              Who are your customers?
+            </p>
+            <div class="form__type-box">
+              <label class="form__type-label">
+                <input class="form__type-radio" type="radio" name="customers">
+                Businesses
+              </label>
+              <label class="form__type-label">
+                <input class="form__type-radio" type="radio" name="customers">
+                Consumers
+              </label>
+              <label class="form__type-label">
+                <input class="form__type-radio" type="radio" name="customers">
+                Both
+              </label>
+            </div>
+          </div>
+          <div class="form__spending ">
+            <p class="form__subtitle">
+              What are you currently spending on ads?
+            </p>
+            <div class="form__spending-box">
+              <label class="form__spending-label">
+                <input class="form__spending-radio" type="radio" name="spending">
+                Not running ads yet
+              </label>
+              <label class="form__spending-label">
+                <input class="form__spending-radio" type="radio" name="spending">
+                Less than $10k/mo
+              </label>
+              <label class="form__spending-label">
+                <input class="form__spending-radio" type="radio" name="spending">
+                $25-50k/mo
+              </label>
+              <label class="form__spending-label">
+                <input class="form__spending-radio" type="radio" name="spending">
+                $10-25k/mo
+              </label>
+              <label class="form__spending-label">
+                <input class="form__spending-radio" type="radio" name="spending">
+                $50k+/mo
+              </label>
+            </div>
+          </div>
+          <button class="btn btn--black btn--arrow">
+            SEND MESSAGE
+            <i class="btn__icon">
+              <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M16.6627 12.4518L3.27662 21.4324C2.0026 22.3698 0.553329 21.2261 0.553329 20.0047L0.553329 1.97106C0.553329 1.36724 0.866915 0.765908 1.4419 0.442948C2.02787 0.113818 2.71791 0.168558 3.23393 0.514733L16.6627 9.52397C17.236 9.90053 17.4465 10.5088 17.4465 10.9879C17.4465 11.467 17.236 12.0753 16.6627 12.4518ZM14.7621 12.4156L14.7882 12.4331C14.7794 12.4273 14.7707 12.4215 14.7621 12.4156ZM14.7881 9.54273L14.7622 9.56013C14.7707 9.55428 14.7794 9.54848 14.7881 9.54273ZM12.634 10.9879L3.98516 16.7903L3.98516 5.18544L12.634 10.9879ZM1.31304 18.583C1.33287 18.5691 1.35281 18.5557 1.37286 18.5429L1.31304 18.583Z"
+                  fill="#C4FF02" />
+              </svg>
+            </i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="./scripts/scripts.js"></script>
+</body>
+
+</html>

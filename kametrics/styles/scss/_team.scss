@@ -1,0 +1,97 @@
+.team {
+  &__wrapper {
+    @include fluid(margin-top, 60px, 130px);
+    @include fluid(margin-bottom, 60px, 180px);
+  }
+
+  &__title {
+    @include fluid(margin-bottom, 30px, 70px);
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    @include fluid(gap, 15px, 35px);
+  }
+
+  &__item {
+    &-box {
+      position: relative;
+      @include fluid(height, 280px, 348px);
+      border-radius: 30px;
+      overflow: hidden;
+      @include fluid(margin-bottom, 15px, 25px);
+    }
+
+    &-how {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      @include fluid(bottom, 20px, 25px);
+      @include fluid(padding-left, 12px, 20px);
+      @include fluid(padding-right, 12px, 20px);
+      @include fluid(padding-top, 10px, 13px);
+      @include fluid(padding-bottom, 10px, 13px);
+      font-family: 'SF Pro Display';
+      font-weight: 700;
+      border-radius: 70px;
+      box-shadow: 0px 2px 16px 0px rgba(13, 10, 44, 0.12);
+      background-color: rgb(95, 46, 234);
+      white-space: nowrap;
+    }
+
+    &-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 30px;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+
+    &-name {
+      font-family: 'SF Pro Display';
+      font-size: 36px;
+      @include fluid(font-size, 22px, 36px);
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    &-text {
+      color: rgb(243, 243, 243);
+      font-size: 21px;
+      @include fluid(font-size, 16px, 21px);
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .team {
+    &__inner {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__item {
+      &-box {
+        height: 250px;
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .team {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+
+    &__item {
+      &-box {
+        height: 280px;
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+.form {
+  .container {
+    width: 100%;
+  }
+
+  &__wrapper {
+    position: relative;
+    max-width: 1808px;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    @include fluid(padding-top, 30px, 80px);
+    @include fluid(padding-bottom, 30px, 130px);
+    @include fluid(padding-left, 30px, 150px);
+    @include fluid(padding-right, 30px, 150px);
+    @include fluid(margin-top, 60px, 160px);
+    @include fluid(margin-bottom, 60px, 150px);
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 100px;
+      @include fluid(border-radius, 50px, 100px);
+      -webkit-backdrop-filter: blur(700px);
+      backdrop-filter: blur(700px);
+      background: linear-gradient(166.29deg, rgb(96, 210, 195) 27.263%, rgb(131, 156, 242) 60.125%);
+      opacity: 0.3;
+      z-index: -1;
+    }
+  }
+
+  &__inner {
+    position: relative;
+  }
+
+  &__bg {
+    position: absolute;
+    @include fluid(width, 380px, 513px);
+    @include fluid(height, 380px, 513px);
+    top: 50%;
+    right: 0;
+    transform: translateY(-45%);
+    z-index: -1;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include fluid(margin-bottom, 15px, 22px);
+  }
+
+  &__title {
+    font-family: 'Red Hat Display';
+    font-size: 50px;
+    @include fluid(font-size, 22px, 50px);
+    font-weight: 700;
+  }
+
+  &__text {
+    font-family: 'Red Hat Display';
+    font-size: 26px;
+    @include fluid(font-size, 18px, 26px);
+    @include fluid(margin-bottom, 25px, 60px);
+  }
+
+  &__block {
+    display: grid;
+    grid-template-columns: minmax(180px, 1fr) minmax(180px, 1fr) minmax(180px, 1fr) minmax(180px, 1fr) minmax(155px, .58fr);
+    @include fluid(gap, 12px, 17px);
+  }
+
+  .btn {
+    border-radius: 100px;
+    @include fluid(padding-left, 15px, 30px);
+    @include fluid(padding-right, 15px, 30px);
+  }
+}
+
+@media (max-width: 992px) {
+  .form {
+    &__wrapper {
+      width: 100%;
+
+      &::after {
+        border-radius: 0;
+      }
+    }
+
+    &__block {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .form {
+    &__block {
+      grid-template-columns: 1fr;
+    }
+  }
+}

@@ -1,0 +1,290 @@
+.top {
+  position: relative;
+  @include fluid(padding-bottom, 60px, 120px);
+  overflow-x: hidden;
+
+  &__bg {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    -o-object-position: right;
+    object-position: right;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  &__inner {
+    position: relative;
+    padding-top: 165px;
+  }
+
+  &__swiper {
+    position: relative;
+    overflow: hidden;
+
+    &-slide {
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .swiper-pagination {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      left: -84px;
+      bottom: 142px;
+      pointer-events: none;
+
+      &-bullet {
+        margin-right: 16px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 12px;
+        height: 12px;
+        position: relative;
+        pointer-events: all;
+        opacity: 0.6;
+        border: 2px solid #FFFFFF;
+        background-color: transparent;
+
+        &::before {
+          transition: width 0.38s ease-in-out;
+          transition: height 0.38s ease-in-out;
+          content: "";
+          position: absolute;
+          width: 12px;
+          height: 12px;
+          background-color: #FFFFFF;
+          border-radius: 50%;
+          transition: all 0.38s ease-in-out;
+        }
+
+        &-active {
+          margin-right: 10px !important;
+          border: 2px solid #fff;
+          background-color: transparent;
+          opacity: 1;
+          width: 24px;
+          height: 24px;
+
+          &::before {
+            transition: width 0.38s ease-in-out;
+            transition: height 0.38s ease-in-out;
+            width: 12px;
+            height: 12px;
+            background-color: #fff
+          }
+        }
+      }
+    }
+  }
+
+  &__left {
+    @include fluid(padding-top, 120px, 138px);
+  }
+
+  &__right {
+    @include fluid(margin-top, 40px, 78px);
+    @include fluid(height, 460px, 589px);
+
+    img {
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+  }
+
+  &__text {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 13px;
+    @include fluid(font-size, 34px, 42px);
+    @include fluid(line-height, 32px, 40px)
+  }
+
+  &__title {
+    font-family: "MADE Waffle Soft";
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: 800;
+    line-height: 85.5%;
+    @include fluid(font-size, 50px, 89px);
+
+    &--big {
+      @include fluid(font-size, 85px, 150px);
+    }
+  }
+
+  .btn {
+    @include fluid(margin-top, 30px, 75px);
+  }
+
+  &__coriander {
+    pointer-events: none;
+    position: absolute;
+    left: 85%;
+    top: 25%;
+    z-index: 2;
+    @include fluid(width, 120px, 192px);
+    @include fluid(height, 120px, 192px);
+  }
+
+  &__onion {
+    pointer-events: none;
+    position: absolute;
+    left: 44%;
+    top: 40%;
+    z-index: 2;
+    @include fluid(width, 126px, 186px);
+    @include fluid(height, 130px, 190px);
+  }
+
+  &__pepper {
+    pointer-events: none;
+    position: absolute;
+    left: 40%;
+    top: 75%;
+    z-index: 2;
+    @include fluid(width, 300px, 442px);
+    @include fluid(height, 180px, 258px);
+  }
+
+  &__leaf {
+    pointer-events: none;
+    position: absolute;
+    left: 87%;
+    top: 89%;
+    z-index: 2;
+    @include fluid(width, 90px, 116px);
+    @include fluid(height, 100px, 142px);
+  }
+}
+
+@media (max-width: 992px) {
+  .top {
+    &__inner {
+      padding-top: 105px;
+    }
+
+    &__right {
+      height: 350px;
+    }
+
+    &__left {
+      padding-top: 100px;
+    }
+
+    &__text {
+      font-size: 24px;
+    }
+
+    &__title {
+      font-size: 36px;
+
+      &--big {
+        font-size: 61px;
+      }
+    }
+
+    &__swiper {
+      .swiper-pagination {
+        bottom: 0px;
+        left: 0px;
+
+        &-bullet {
+          &-active {
+            width: 18px;
+            height: 18px;
+
+            &::before {
+              width: 10px;
+              height: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .top {
+    &__right {
+      width: 280px;
+      height: 280px;
+    }
+
+    &__left {
+      padding-top: 70px;
+    }
+
+    &__title {
+      font-size: 33px;
+
+      &--big {
+        font-size: 56px;
+      }
+    }
+
+    &__text {
+      margin-bottom: 2px;
+      font-size: 20px;
+    }
+
+    &__swiper {
+      height: 338px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .top {
+    &__right {
+      margin-top: 0;
+      position: absolute;
+      left: 230px;
+      top: 9%;
+    }
+
+    &__swiper {
+      &-slide {
+        position: relative;
+      }
+
+      &-pagination {
+        bottom: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .top {
+    &__title {
+      font-size: 28px;
+
+      &--big {
+        font-size: 46px;
+      }
+    }
+
+    &__right {
+      left: 169px;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 5px;
+
+      &__text {
+        font-size: 10px;
+      }
+
+      &__icon {
+        font-size: 21px;
+      }
+    }
+  }
+}

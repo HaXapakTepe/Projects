@@ -1,0 +1,40 @@
+.text-accent {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 3px 12px;
+  border-radius: 16px;
+
+  &--green {
+    border: 1px solid #94E8CE;
+    background: #E8FAF4;
+    color: #12A87A;
+  }
+
+  &--purple {
+    color: #7F56D9;
+    border: 1px solid #E9D7FE;
+    background: #F9F5FF;
+  }
+
+  &--left {
+    margin-left: unset;
+  }
+
+  &--mbNone {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 539px) {
+  .text-accent {
+    padding: 1px 7px;
+    font-size: 12px;
+  }
+}

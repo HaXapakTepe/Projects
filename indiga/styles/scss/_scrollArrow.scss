@@ -1,0 +1,42 @@
+.scrollArrow {
+  position: fixed;
+  left: 20px;
+  bottom: 16px;
+  z-index: 15;
+  opacity: 0;
+  z-index: -1;
+  cursor: pointer;
+  border-radius: 50%;
+
+  &--alt {
+    .scrollArrow__img {
+      transform: rotate(90deg);
+    }
+  }
+
+  &--desk {
+    @include fluid(left, 20px, 105px);
+    @include fluid(bottom, 16px, 50px);
+    z-index: 25;
+    opacity: 1;
+
+    .scrollArrow__img {
+      @include fluid(width, 54px, 75px);
+      @include fluid(height, 54px, 75px);
+    }
+  }
+
+  &__img {
+    width: 54px;
+    height: 54px;
+    transform: rotate(-90deg);
+    transition: transform .38s ease-in-out;
+  }
+}
+
+@media (max-width: 992px) {
+  .scrollArrow {
+    opacity: 1;
+    z-index: 25;
+  }
+}

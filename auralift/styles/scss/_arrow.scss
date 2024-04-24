@@ -1,0 +1,43 @@
+.arrow {
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+
+  &__prev,
+  &__next {
+    position: relative;
+    top: unset;
+    left: unset;
+    right: unset;
+    margin: unset;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    background: #FFF;
+    transition: opacity 0.23s ease-in-out;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      translate: -50% -50%;
+      width: 16px;
+      height: 16px;
+      background-image: url('../../assets/images/icons/swiper-arrow.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+
+  &__prev {
+    &::before {
+      rotate: 180deg;
+    }
+  }
+}

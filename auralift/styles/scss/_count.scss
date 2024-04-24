@@ -1,0 +1,48 @@
+.count {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  &__num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #101828;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    background: #FFF;
+    width: 60px;
+    height: 36px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  &__plus,
+  &__minus {
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+  }
+
+  &__minus {
+    background: var(--White, #FFF);
+    border: 1px solid var(--gray-200, #EAECF0);
+  }
+
+  &__plus {
+    border: 1px solid #16CDA1;
+    background: #16CDA1;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+  }
+}

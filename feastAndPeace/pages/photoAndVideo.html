@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../images/favicon.ico" type="x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.css
+">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../css/icons.css">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css?v=0.00011">
+  <title>Фото и видео</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <a class="logo" href="#">
+            <img class="logo__img" src="../images/logo.svg" alt="">
+            <p class="logo__text">
+              Организация выездных банкетов,
+              фуршетов, кофе-брейков
+            </p>
+          </a>
+          <div class="city">
+            <p class="city__text">
+              Ваш город
+            </p>
+            <div class="city__box">
+              <select class="city__box-example js-example-basic-single" name="state">
+                <option value="Саратов">Саратов</option>
+                <option value="Энгельс">Энгельс</option>
+                <option value="Москва">Москва</option>
+              </select>
+            </div>
+          </div>
+          <a class="user" href="#">
+            <div class="user__icon icon-user"></div>
+            Войти
+          </a>
+          <a class="phone" href="tel:+78452539724">
+            <div class="phone__icon icon-phone"></div>
+            (8452) 539-724
+          </a>
+          <button class="btn" data-fancybox data-src="#call">
+            Заказать звонок
+          </button>
+          <div class="burger">
+            <div class="burger__line"></div>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <div class="header__bottom-inner">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item menu__list-item--hidden">
+                  <a class="logo" href="#">
+                    <img class="logo__img" src="../images/logo.svg" alt="">
+                    <p class="logo__text">
+                      Организация выездных банкетов,
+                      фуршетов, кофе-брейков
+                    </p>
+                  </a>
+                  <div class="menu__close"></div>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">
+                    Заготовки
+                  </a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">
+                    Искусственный интеллект
+                  </a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">
+                    Каталог
+                  </a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">
+                    Фото и Видео
+                  </a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">
+                    О нас
+                  </a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">
+                    Франшиза
+                  </a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#">
+                    Контакты
+                  </a>
+                </li>
+                <li class="menu__list-item menu__list-item--hidden">
+                  <a class="user" href="#">
+                    <div class="user__icon icon-user"></div>
+                    Войти
+                  </a>
+                </li>
+                <li class="menu__list-item menu__list-item--hidden">
+                  <a class="phone" href="tel:+78452539724">
+                    <div class="phone__icon icon-phone"></div>
+                    (8452) 539-724
+                  </a>
+                </li>
+                <li class="menu__list-item menu__list-item--hidden">
+                  <div class="social">
+                    <a class="social__icon icon-tg" href="#"></a>
+                    <a class="social__icon icon-vb" href="#"></a>
+                    <a class="social__icon icon-wa" href="#"></a>
+                    <a class="social__icon icon-vk" href="#"></a>
+                  </div>
+                </li>
+                <li class="menu__list-item menu__list-item--hidden">
+                  <button class="btn btn--menu" data-fancybox data-src="#call">
+                    Заказать звонок
+                  </button>
+                </li>
+              </ul>
+            </nav>
+            <div class="social">
+              <a class="social__icon icon-tg" href="#"></a>
+              <a class="social__icon icon-vb" href="#"></a>
+              <a class="social__icon icon-wa" href="#"></a>
+              <a class="social__icon icon-vk" href="#"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <main class="main">
+
+
+      <section class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__list-item">
+              <a class="breadcrumbs__list-link" href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__list-item">
+              <a class="breadcrumbs__list-link" href="#">Фото и видео</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+      <section class="gallery">
+        <div class="container">
+          <h2 class="gallery__title">
+            Фото и
+            <span>
+              видео
+            </span>
+          </h2>
+          <div class="gallery__inner">
+            <div class="gallery__item">
+              <p class="gallery__item-title">
+                Видео
+              </p>
+              <div class="gallery__item-box">
+                <div class="gallery__swiper gallery__swiper--1 swiper">
+                  <div class="gallery__wrapper swiper-wrapper">
+                    <div class="gallery__slide swiper-slide">
+                      <img class="gallery__img" src="../images/gallery/1.jpg" alt="">
+                      <div class="gallery__icon">
+                        <svg viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g id="Group 12750">
+                            <path id="Vector" fill-rule="evenodd" clip-rule="evenodd"
+                              d="M32.4141 0C50.0842 0 64.4141 14.3299 64.4141 32C64.4141 49.6701 50.0842 64 32.4141 64C14.744 64 0.414062 49.6701 0.414062 32C0.414062 14.3299 14.744 0 32.4141 0Z"
+                              fill="#7AC8C9" />
+                            <path id="Polygon 1"
+                              d="M43.536 28.781C46.0401 30.2117 46.0401 33.7883 43.536 35.219L29.0482 43.4965C26.5441 44.9271 23.4141 43.1388 23.4141 40.2775L23.4141 23.7225C23.4141 20.8612 26.5441 19.0729 29.0482 20.5035L43.536 28.781Z"
+                              fill="white" />
+                          </g>
+                        </svg>
+                      </div>
+                      <div class="gallery__hidden">
+                        <iframe data-fancybox src="https://www.youtube.com/embed/fEzDmqH6hNE"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowfullscreen muted></iframe>
+                      </div>
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <img class="gallery__img" src="../images/gallery/2.jpg" alt="">
+                      <div class="gallery__icon">
+                        <svg viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g id="Group 12750">
+                            <path id="Vector" fill-rule="evenodd" clip-rule="evenodd"
+                              d="M32.4141 0C50.0842 0 64.4141 14.3299 64.4141 32C64.4141 49.6701 50.0842 64 32.4141 64C14.744 64 0.414062 49.6701 0.414062 32C0.414062 14.3299 14.744 0 32.4141 0Z"
+                              fill="#7AC8C9" />
+                            <path id="Polygon 1"
+                              d="M43.536 28.781C46.0401 30.2117 46.0401 33.7883 43.536 35.219L29.0482 43.4965C26.5441 44.9271 23.4141 43.1388 23.4141 40.2775L23.4141 23.7225C23.4141 20.8612 26.5441 19.0729 29.0482 20.5035L43.536 28.781Z"
+                              fill="white" />
+                          </g>
+                        </svg>
+                      </div>
+                      <div class="gallery__hidden">
+                        <iframe data-fancybox="" src="https://www.youtube.com/embed/yJPJTSLQCq8"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowfullscreen muted></iframe>
+                      </div>
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <img class="gallery__img" src="../images/gallery/3.jpg" alt="">
+                      <div class="gallery__icon">
+                        <svg viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g id="Group 12750">
+                            <path id="Vector" fill-rule="evenodd" clip-rule="evenodd"
+                              d="M32.4141 0C50.0842 0 64.4141 14.3299 64.4141 32C64.4141 49.6701 50.0842 64 32.4141 64C14.744 64 0.414062 49.6701 0.414062 32C0.414062 14.3299 14.744 0 32.4141 0Z"
+                              fill="#7AC8C9" />
+                            <path id="Polygon 1"
+                              d="M43.536 28.781C46.0401 30.2117 46.0401 33.7883 43.536 35.219L29.0482 43.4965C26.5441 44.9271 23.4141 43.1388 23.4141 40.2775L23.4141 23.7225C23.4141 20.8612 26.5441 19.0729 29.0482 20.5035L43.536 28.781Z"
+                              fill="white" />
+                          </g>
+                        </svg>
+                      </div>
+                      <div class="gallery__hidden">
+                        <iframe data-fancybox src="https://www.youtube.com/embed/fEzDmqH6hNE"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowfullscreen muted></iframe>
+                      </div>
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <img class="gallery__img" src="../images/gallery/4.jpg" alt="">
+                      <div class="gallery__icon">
+                        <svg viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g id="Group 12750">
+                            <path id="Vector" fill-rule="evenodd" clip-rule="evenodd"
+                              d="M32.4141 0C50.0842 0 64.4141 14.3299 64.4141 32C64.4141 49.6701 50.0842 64 32.4141 64C14.744 64 0.414062 49.6701 0.414062 32C0.414062 14.3299 14.744 0 32.4141 0Z"
+                              fill="#7AC8C9" />
+                            <path id="Polygon 1"
+                              d="M43.536 28.781C46.0401 30.2117 46.0401 33.7883 43.536 35.219L29.0482 43.4965C26.5441 44.9271 23.4141 43.1388 23.4141 40.2775L23.4141 23.7225C23.4141 20.8612 26.5441 19.0729 29.0482 20.5035L43.536 28.781Z"
+                              fill="white" />
+                          </g>
+                        </svg>
+                      </div>
+                      <div class="gallery__hidden">
+                        <iframe data-fancybox="" src="https://www.youtube.com/embed/yJPJTSLQCq8"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowfullscreen muted></iframe>
+                      </div>
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <img class="gallery__img" src="../images/gallery/1.jpg" alt="">
+                      <div class="gallery__icon">
+                        <svg viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g id="Group 12750">
+                            <path id="Vector" fill-rule="evenodd" clip-rule="evenodd"
+                              d="M32.4141 0C50.0842 0 64.4141 14.3299 64.4141 32C64.4141 49.6701 50.0842 64 32.4141 64C14.744 64 0.414062 49.6701 0.414062 32C0.414062 14.3299 14.744 0 32.4141 0Z"
+                              fill="#7AC8C9" />
+                            <path id="Polygon 1"
+                              d="M43.536 28.781C46.0401 30.2117 46.0401 33.7883 43.536 35.219L29.0482 43.4965C26.5441 44.9271 23.4141 43.1388 23.4141 40.2775L23.4141 23.7225C23.4141 20.8612 26.5441 19.0729 29.0482 20.5035L43.536 28.781Z"
+                              fill="white" />
+                          </g>
+                        </svg>
+                      </div>
+                      <div class="gallery__hidden">
+                        <iframe data-fancybox src="https://www.youtube.com/embed/fEzDmqH6hNE"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowfullscreen muted></iframe>
+                      </div>
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <img class="gallery__img" src="../images/gallery/2.jpg" alt="">
+                      <div class="gallery__icon">
+                        <svg viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g id="Group 12750">
+                            <path id="Vector" fill-rule="evenodd" clip-rule="evenodd"
+                              d="M32.4141 0C50.0842 0 64.4141 14.3299 64.4141 32C64.4141 49.6701 50.0842 64 32.4141 64C14.744 64 0.414062 49.6701 0.414062 32C0.414062 14.3299 14.744 0 32.4141 0Z"
+                              fill="#7AC8C9" />
+                            <path id="Polygon 1"
+                              d="M43.536 28.781C46.0401 30.2117 46.0401 33.7883 43.536 35.219L29.0482 43.4965C26.5441 44.9271 23.4141 43.1388 23.4141 40.2775L23.4141 23.7225C23.4141 20.8612 26.5441 19.0729 29.0482 20.5035L43.536 28.781Z"
+                              fill="white" />
+                          </g>
+                        </svg>
+                      </div>
+                      <div class="gallery__hidden">
+                        <iframe data-fancybox="" src="https://www.youtube.com/embed/yJPJTSLQCq8"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowfullscreen muted></iframe>
+                      </div>
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <img class="gallery__img" src="../images/gallery/3.jpg" alt="">
+                      <div class="gallery__icon">
+                        <svg viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g id="Group 12750">
+                            <path id="Vector" fill-rule="evenodd" clip-rule="evenodd"
+                              d="M32.4141 0C50.0842 0 64.4141 14.3299 64.4141 32C64.4141 49.6701 50.0842 64 32.4141 64C14.744 64 0.414062 49.6701 0.414062 32C0.414062 14.3299 14.744 0 32.4141 0Z"
+                              fill="#7AC8C9" />
+                            <path id="Polygon 1"
+                              d="M43.536 28.781C46.0401 30.2117 46.0401 33.7883 43.536 35.219L29.0482 43.4965C26.5441 44.9271 23.4141 43.1388 23.4141 40.2775L23.4141 23.7225C23.4141 20.8612 26.5441 19.0729 29.0482 20.5035L43.536 28.781Z"
+                              fill="white" />
+                          </g>
+                        </svg>
+                      </div>
+                      <div class="gallery__hidden">
+                        <iframe data-fancybox src="https://www.youtube.com/embed/fEzDmqH6hNE"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowfullscreen muted></iframe>
+                      </div>
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <img class="gallery__img" src="../images/gallery/4.jpg" alt="">
+                      <div class="gallery__icon">
+                        <svg viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g id="Group 12750">
+                            <path id="Vector" fill-rule="evenodd" clip-rule="evenodd"
+                              d="M32.4141 0C50.0842 0 64.4141 14.3299 64.4141 32C64.4141 49.6701 50.0842 64 32.4141 64C14.744 64 0.414062 49.6701 0.414062 32C0.414062 14.3299 14.744 0 32.4141 0Z"
+                              fill="#7AC8C9" />
+                            <path id="Polygon 1"
+                              d="M43.536 28.781C46.0401 30.2117 46.0401 33.7883 43.536 35.219L29.0482 43.4965C26.5441 44.9271 23.4141 43.1388 23.4141 40.2775L23.4141 23.7225C23.4141 20.8612 26.5441 19.0729 29.0482 20.5035L43.536 28.781Z"
+                              fill="white" />
+                          </g>
+                        </svg>
+                      </div>
+                      <div class="gallery__hidden">
+                        <iframe data-fancybox="" src="https://www.youtube.com/embed/yJPJTSLQCq8"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowfullscreen muted></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery__prev gallery__prev--1 swiper-button-prev"></div>
+                <div class="gallery__next gallery__next--1 swiper-button-next"></div>
+              </div>
+            </div>
+            <div class="gallery__item">
+              <p class="gallery__item-title">
+                Банкеты
+              </p>
+              <div class="gallery__item-box">
+                <div class="gallery__swiper gallery__swiper--2 swiper">
+                  <div class="gallery__wrapper swiper-wrapper">
+                    <div class="gallery__slide swiper-slide">
+                      <img class="gallery__img" src="../images/gallery/1.jpg" data-fancybox="gallery2" alt="">
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <img class="gallery__img" src="../images/gallery/2.jpg" data-fancybox="gallery2" alt="">
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <img class="gallery__img" src="../images/gallery/3.jpg" data-fancybox="gallery2" alt="">
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <img class="gallery__img" src="../images/gallery/4.jpg" data-fancybox="gallery2" alt="">
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <img class="gallery__img" src="../images/gallery/1.jpg" data-fancybox="gallery2" alt="">
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <img class="gallery__img" src="../images/gallery/2.jpg" data-fancybox="gallery2" alt="">
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <img class="gallery__img" src="../images/gallery/3.jpg" data-fancybox="gallery2" alt="">
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <img class="gallery__img" src="../images/gallery/4.jpg" data-fancybox="gallery2" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery__prev gallery__prev--2 swiper-button-prev"></div>
+                <div class="gallery__next gallery__next--2 swiper-button-next"></div>
+              </div>
+            </div>
+            <div class="gallery__item">
+              <p class="gallery__item-title">
+                Кофе-брейки
+              </p>
+              <div class="gallery__item-box">
+                <div class="gallery__swiper gallery__swiper--3 swiper">
+                  <div class="gallery__wrapper swiper-wrapper">
+                    <div class="gallery__slide swiper-slide">
+                      <img class="gallery__img" src="../images/gallery/1.jpg" data-fancybox="gallery3" alt="">
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <img class="gallery__img" src="../images/gallery/2.jpg" data-fancybox="gallery3" alt="">
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <img class="gallery__img" src="../images/gallery/3.jpg" data-fancybox="gallery3" alt="">
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <img class="gallery__img" src="../images/gallery/4.jpg" data-fancybox="gallery3" alt="">
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <img class="gallery__img" src="../images/gallery/1.jpg" data-fancybox="gallery3" alt="">
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <img class="gallery__img" src="../images/gallery/2.jpg" data-fancybox="gallery3" alt="">
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <img class="gallery__img" src="../images/gallery/3.jpg" data-fancybox="gallery3" alt="">
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <img class="gallery__img" src="../images/gallery/4.jpg" data-fancybox="gallery3" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery__prev gallery__prev--3 swiper-button-prev"></div>
+                <div class="gallery__next gallery__next--3 swiper-button-next"></div>
+              </div>
+            </div>
+            <div class="gallery__item">
+              <p class="gallery__item-title">
+                Детские праздники
+              </p>
+              <div class="gallery__item-box">
+                <div class="gallery__swiper gallery__swiper--4 swiper">
+                  <div class="gallery__wrapper swiper-wrapper">
+                    <div class="gallery__slide swiper-slide">
+                      <img class="gallery__img" src="../images/gallery/1.jpg" data-fancybox="gallery4" alt="">
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <img class="gallery__img" src="../images/gallery/2.jpg" data-fancybox="gallery4" alt="">
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <img class="gallery__img" src="../images/gallery/3.jpg" data-fancybox="gallery4" alt="">
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <img class="gallery__img" src="../images/gallery/4.jpg" data-fancybox="gallery4" alt="">
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <img class="gallery__img" src="../images/gallery/1.jpg" data-fancybox="gallery4" alt="">
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <img class="gallery__img" src="../images/gallery/2.jpg" data-fancybox="gallery4" alt="">
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <img class="gallery__img" src="../images/gallery/3.jpg" data-fancybox="gallery4" alt="">
+                    </div>
+                    <div class="gallery__slide swiper-slide">
+                      <img class="gallery__img" src="../images/gallery/4.jpg" data-fancybox="gallery4" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery__prev gallery__prev--4 swiper-button-prev"></div>
+                <div class="gallery__next gallery__next--4 swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__item">
+            <a class="logo" href="#">
+              <img class="logo__img" src="../images/logo.svg" alt="">
+              <p class="logo__text">
+                Организация выездных банкетов,
+                фуршетов, кофе-брейков
+              </p>
+            </a>
+            <a class="footer__item-link" href="#">
+              Пользовательское соглашение
+            </a>
+            <a class="footer__item-link" href="#">
+              Политика конфиденциальности
+            </a>
+            <a class="footer__item-link" href="#">
+              Публичная оферта
+            </a>
+          </div>
+          <div class="footer__menu">
+            <div class="footer__menu-box">
+              <a class="footer__menu-link" href="#">
+                Заготовки
+              </a>
+              <a class="footer__menu-link" href="#">
+                Искусственный интеллект
+              </a>
+              <a class="footer__menu-link" href="#">
+                Каталог
+              </a>
+            </div>
+            <div class="footer__menu-box">
+              <a class="footer__menu-link" href="#">
+                Фото и Видео
+              </a>
+              <a class="footer__menu-link" href="#">
+                О нас
+              </a>
+              <a class="footer__menu-link" href="#">
+                Контакты
+              </a>
+            </div>
+          </div>
+          <div class="footer__box">
+            <a class="phone" href="tel:+78452539724">
+              <div class="phone__icon icon-phone"></div>
+              (8452) 539-724
+            </a>
+            <button class="btn" data-fancybox data-src="#call">
+              Заказать звонок
+            </button>
+            <div class="social">
+              <a class="social__icon icon-tg" href="#"></a>
+              <a class="social__icon icon-vb" href="#"></a>
+              <a class="social__icon icon-wa" href="#"></a>
+              <a class="social__icon icon-vk" href="#"></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__bottom-copy">
+            2023 © Пир и Мир. Все права защищены.
+          </p>
+          <a class="developer" href="#">
+            Разработка сайта
+          </a>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- скрытая кнопка для вызова  модалки "Внимание!" -->
+    <button class="btn" data-fancybox data-src="#attention" style="display: none;">
+      attention
+    </button>
+
+    <!-- модалка "Внимание!" -->
+    <div class="attention" id="attention">
+      <div class="attention__inner">
+        <h3 class="attention__title">
+          <span class="attention__icon">
+            <svg viewBox="0 0 48 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="Warning" clip-path="url(#clip0_258_2162)">
+                <path id="Vector"
+                  d="M46.8489 31.098L31.3529 4.24708C29.8183 1.5876 27.0695 0 24 0C20.9305 0 18.1817 1.5876 16.6471 4.24708L1.15109 31.098C-0.383878 33.7574 -0.383516 36.9327 1.15109 39.5921C2.68606 42.2515 5.4348 43.8392 8.50438 43.8392H39.4957C42.5652 43.8392 45.314 42.2516 46.8489 39.5921C48.3835 36.9327 48.3839 33.7574 46.8489 31.098Z"
+                  fill="#FE5722" />
+                <path id="Vector_2"
+                  d="M46.8486 31.098L31.3526 4.24708C29.818 1.5876 27.0692 0 23.9997 0C23.0865 0 22.208 0.156444 21.375 0.423798C23.3417 1.0553 25.0253 2.3788 26.1032 4.24702L41.5993 31.0979C43.1342 33.7574 43.1339 36.9326 41.5993 39.5921C40.0643 42.2515 37.3155 43.8391 34.246 43.8391H39.4953C42.5648 43.8391 45.3136 42.2515 46.8485 39.5921C48.3831 36.9327 48.3836 33.7574 46.8486 31.098Z"
+                  fill="#ED481B" />
+                <path id="Vector_3"
+                  d="M41.4252 33.8468L26.1954 7.45667C25.7373 6.66251 24.9167 6.18848 24.0002 6.18848C23.0837 6.18848 22.2631 6.66251 21.8051 7.45667L6.57529 33.8468C6.11683 34.6406 6.11683 35.5886 6.57529 36.3824C7.03334 37.1765 7.85393 37.6506 8.77044 37.6506H39.2301C40.1466 37.6506 40.9672 37.1765 41.4252 36.3824C41.8836 35.5886 41.8836 34.6406 41.4252 33.8468Z"
+                  fill="#FEC007" />
+                <path id="Vector_4"
+                  d="M41.4247 33.8468L26.1949 7.45667C25.7368 6.66251 24.9162 6.18848 23.9997 6.18848C23.0832 6.18848 22.2626 6.66251 21.8046 7.45667L21.7969 7.46988L37.019 33.8468C37.4774 34.6406 37.4774 35.5886 37.019 36.3824C36.561 37.1766 35.7404 37.6506 34.8239 37.6506H39.2295C40.146 37.6506 40.9666 37.1766 41.4247 36.3824C41.8831 35.5886 41.8831 34.6406 41.4247 33.8468Z"
+                  fill="#EDAD0C" />
+                <path id="Vector_5"
+                  d="M23.9998 27.2229C23.1716 27.2229 22.5 26.5512 22.5 25.7225V18.0268C22.5 17.1981 23.1716 16.5264 23.9998 16.5264C24.8281 16.5264 25.4996 17.1981 25.4996 18.0268V25.7225C25.4996 26.5512 24.8281 27.2229 23.9998 27.2229ZM23.9998 31.8153C23.6022 31.8153 23.2199 31.6578 22.9424 31.3727C22.6575 31.0952 22.5001 30.7125 22.5001 30.3149C22.5001 29.9173 22.6575 29.5347 22.9424 29.2572C23.4975 28.6945 24.5022 28.6945 25.057 29.2572C25.3422 29.5348 25.4996 29.9173 25.4996 30.3149C25.4996 30.705 25.3422 31.0951 25.057 31.3727C24.7797 31.6578 24.3971 31.8153 23.9998 31.8153Z"
+                  fill="#37474F" />
+              </g>
+              <defs>
+                <clipPath id="clip0_258_2162">
+                  <rect width="48" height="43.8392" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+
+          </span>
+          Внимание!
+        </h3>
+        <p class="attention__text">
+          Изменив параметры подбора меню, вы удалите все блюда, которые добавили вручную и искусственный интеллект
+          сформирует новое меню, учитывая изменения в настройках. Продолжить?
+        </p>
+        <div class="attention__box">
+          <button class="btn">
+            Оставить, как есть
+          </button>
+          <button class="btn btn--gray">
+            Изменить
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <form class="modalForm" action="" id="call">
+      <div class="modalForm__inner">
+        <h3 class="modalForm__title">
+          Заказать звонок
+        </h3>
+        <p class="modalForm__subtitle">
+          Оставьте свои контактные данные и наши менеджеры свяжутся с Вами в ближайшее время
+        </p>
+        <label class="modalForm__label">
+          Ваше имя
+          <input class="modalForm__input" type="text" name="name" placeholder="Александр" required>
+        </label>
+        <label class="modalForm__label">
+          Ваш телефон
+          <input class="modalForm__input" type="text" name="phone" placeholder="+7 (___) ___-__-__" required>
+        </label>
+        <p class="modalForm__text">
+          Оставляя заявку вы даёте согласие на
+          <a href="#">
+            обработку персональных данных
+          </a> и с условиями
+          <a href="#">
+            политики конфиденциальности
+          </a>
+        </p>
+        <button class="btn">
+          Отправить заявку
+        </button>
+      </div>
+    </form>
+
+
+    <!-- скрытая кнопка для вызова  модалки "Вход" шаг-1 -->
+    <button class="btn" data-fancybox data-src="#entry-1" style="display: none;">
+      Вход
+    </button>
+    <form class="modalForm" action="" id="entry-1">
+      <div class="modalForm__inner">
+        <h3 class="modalForm__title">
+          Вход
+        </h3>
+        <p class="modalForm__subtitle">
+          Введите свой номер телефона и мы отправим
+          код подтверждения
+        </p>
+        <label class="modalForm__label">
+          Ваш телефон
+          <input class="modalForm__input" type="text" name="phone" placeholder="+7 (___) ___-__-__" required>
+        </label>
+        <p class="modalForm__text">
+          Оставляя заявку вы даёте согласие на
+          <a href="#">
+            обработку персональных данных
+          </a> и с условиями
+          <a href="#">
+            политики конфиденциальности
+          </a>
+        </p>
+        <button class="btn">
+          Отправить код
+        </button>
+      </div>
+    </form>
+
+
+    <!-- скрытая кнопка для вызова  модалки "Вход" шаг-2 -->
+    <button class="btn" data-fancybox data-src="#entry-2" style="display: none;">
+      Вход
+    </button>
+    <form class="modalForm" action="" id="entry-2">
+      <div class="modalForm__inner">
+        <h3 class="modalForm__title">
+          Вход
+        </h3>
+        <p class="modalForm__subtitle">
+          Код подтверждения отправлен
+          на номер +7 (900) 000-00-01
+        </p>
+        <label class="modalForm__label">
+          Код подтверждения
+          <div class="modalForm__label-box">
+            <input class="modalForm__input" type="text" name="name" placeholder="0000" required>
+            <button class="modalForm__label-btn">Отправить повторно</button>
+          </div>
+        </label>
+        <!-- при неправильном вводе кода убрать класс modalForm__text--none-->
+        <p class="modalForm__text modalForm__text--none">
+          Не приходит код подтверждения
+        </p>
+        <button class="btn">
+          Подтвердить
+        </button>
+      </div>
+    </form>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/0.9.0/jquery.mask.min.js
+"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="../scripts/main.js?v=0.00011"></script>
+</body>
+
+</html>

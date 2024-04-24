@@ -1,0 +1,206 @@
+.outsourcing {
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    @include fluid(margin-bottom, 35px, 70px);
+
+    &-title {
+      @include fluid(margin-bottom, 15px, 30px);
+    }
+
+    &-subtitle {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-weight: 300;
+      max-width: 805px;
+
+      span {
+        position: relative;
+        padding-left: 8px;
+
+        &::after {
+          content: '|';
+          position: absolute;
+          left: 0px;
+          top: 0;
+        }
+      }
+    }
+
+    .link {
+      @include fluid(margin-top, 0px, -12px);
+      @include fluid(padding-left, 15px, 65px);
+      @include fluid(padding-right, 15px, 65px);
+    }
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr .4754fr;
+    @include fluid(gap, 15px, 26px);
+  }
+
+  &__form {
+    position: relative;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.40);
+    box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.08);
+    @include fluid(padding, 15px, 30px);
+    @include fluid(padding-top, 15px, 59px);
+
+    &-title {
+      font-size: 27px;
+      font-weight: 700;
+    }
+
+    &-subtitle {
+      font-size: 24px;
+      @include fluid(margin-bottom, 15px, 25px);
+    }
+
+    &-box {
+      display: flex;
+      flex-direction: column;
+      @include fluid(gap, 10px, 22px);
+    }
+
+    &-block {
+      display: flex;
+      @include fluid(gap, 12px, 22px);
+    }
+
+    &-label {
+      position: relative;
+      display: block;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      width: 100%;
+    }
+
+    &-textarea {
+      height: 100%;
+    }
+
+    &-textarea,
+    &-input {
+      width: 100%;
+    }
+
+    &-icon {
+      position: absolute;
+      @include fluid(left, 15px, 30px);
+      top: 50%;
+      transform: translateY(-50%);
+      @include fluid(width, 21px, 25px);
+      @include fluid(height, 20px, 24px);
+
+      &:has(+.textarea) {
+        @include fluid(top, 22px, 28px);
+        transform: unset;
+      }
+    }
+
+    .btn {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      @include fluid(margin-top, 5px, 8px);
+    }
+
+    .scrollArrow {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      margin: 0;
+    }
+  }
+
+  &__img {
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 992px) {
+  .outsourcing {
+    &__box {
+      margin-bottom: 25px;
+
+      &-title {
+        margin-bottom: 23px;
+
+        span {
+          display: block;
+        }
+      }
+
+      &-subtitle {
+        align-items: unset;
+        flex-direction: column;
+
+        span {
+          padding-left: 0;
+
+          &::after {
+            content: none;
+          }
+        }
+      }
+
+      .link {
+        display: none;
+      }
+    }
+
+    &__inner {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    &__img {
+      order: -1;
+      height: 400px;
+    }
+
+    &__form {
+      padding: 0;
+      border: none;
+
+      &-title,
+      &-subtitle {
+        text-align: center;
+      }
+
+      &-box {
+        gap: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .outsourcing {
+    &__img {
+      height: 288px;
+    }
+
+    &__form {
+      &-block {
+        flex-direction: column;
+      }
+
+      &-box {
+        grid-template-columns: 1fr;
+      }
+
+      .btn {
+        grid-column: unset;
+      }
+    }
+  }
+}

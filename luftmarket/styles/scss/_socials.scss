@@ -1,0 +1,30 @@
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+
+  &__icon {
+    width: 44px;
+    height: 47px;
+    justify-content: center;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition: border-color .23s ease-in-out;
+
+    svg {
+      path {
+        transition: fill .23s ease-in-out;
+      }
+    }
+
+    &:hover {
+      border-color: #1BAFE5;
+
+      svg {
+        path {
+          fill: #1BAFE5;
+        }
+      }
+    }
+  }
+}

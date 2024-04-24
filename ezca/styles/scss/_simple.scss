@@ -1,0 +1,89 @@
+.simple {
+  &__wrapper {
+    @include fluid(margin-top, 60px, 112px);
+    @include fluid(margin-bottom, 30px, 38px);
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr .92fr;
+    @include fluid(gap, 20px, 50px);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 25px, 48px);
+
+    &-logo {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      @include fluid(height, 50px, 98px);
+    }
+
+    &-text {
+      font-family: "Manrope";
+      font-weight: 500;
+      @include fluid(font-size, 16px, 20px);
+    }
+
+    &-link {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      background-color: #C4FF02;
+      color: #131313;
+      padding: 12px 15px;
+      border-radius: 25px;
+      transition: color .23s ease-in-out, background-color .23s ease-in-out;
+
+      &:hover {
+        color: #C4FF02;
+        background-color: #131313;
+        border-color: #C4FF02;
+      }
+    }
+  }
+
+  &__img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 40px;
+    @include fluid(height, 280px, 342px);
+  }
+}
+
+@media (max-width: 992px) {
+  .simple {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+
+    &__img {
+      border-radius: 30px;
+      -o-object-position: bottom;
+      object-position: bottom;
+    }
+  }
+}
+
+@media (max-width:576px) {
+  .simple {
+    &__item {
+      gap: 15px;
+
+      &-text {
+        font-size: 14px;
+      }
+
+      &-logo {
+        height: 45px;
+      }
+    }
+
+    &__img {
+      height: 250px;
+    }
+  }
+}

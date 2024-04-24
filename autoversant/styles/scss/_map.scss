@@ -1,0 +1,21 @@
+.map {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-top: 20px;
+
+  &__item {
+    display: block;
+    border-radius: 20px;
+    height: 330px;
+    @include fluid(height, 340px, 478px);
+
+    .ymaps-2-1-79-ground-pane {
+      -ms-filter: grayscale(1);
+      -webkit-filter: grayscale(1);
+      -moz-filter: grayscale(1);
+      -o-filter: grayscale(1);
+      filter: grayscale(1);
+    }
+  }
+}

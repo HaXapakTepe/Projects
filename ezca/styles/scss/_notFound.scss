@@ -1,0 +1,122 @@
+.notFound {
+  &__wrapper {
+    @include fluid(padding-top, 150px, 244px);
+    background: #131313;
+    @include fluid(padding-bottom, 60px, 120px);
+  }
+
+  &__inner {
+    position: relative;
+  }
+
+  &__icon {
+    position: relative;
+    z-index: 1;
+
+    svg {
+      @include fluid(width, 28px, 39px);
+      @include fluid(height, 28px, 39px);
+    }
+
+    &--left {
+      position: absolute;
+      top: 20%;
+      left: 5%;
+      transform: translate(-50%);
+    }
+
+    &--right {
+      position: absolute;
+      top: 80%;
+      right: 0;
+      transform: translate(-50%);
+    }
+  }
+
+  &__triangle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+    svg {
+      width: 100%;
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      @include fluid(height, 250px, 646px);
+    }
+  }
+
+  &__block {
+    position: relative;
+    z-index: 1;
+
+    &-title {
+      position: relative;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      color: rgb(196, 255, 2);
+      font-family: 'Silka';
+      @include fluid(font-size, 120px, 300px);
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+
+      &::after,
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        @include fluid(top, 7px, 10px);
+        transform: translateX(-50%);
+        @include fluid(height, 15px, 36px);
+        @include fluid(width, 15px, 36px);
+        background-color: rgb(196, 255, 2);
+        border-radius: 50%;
+      }
+
+      &::after {
+        left: 45%;
+      }
+
+      &::before {
+        left: 55%;
+      }
+    }
+
+    &-text {
+      font-family: 'Silka';
+      color: rgb(255, 255, 255);
+      @include fluid(font-size, 22px, 40px);
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      @include fluid(margin-bottom, 30px, 140px);
+    }
+
+    &-link {
+      font-family: 'Silka';
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include fluid(gap, 10px, 20px);
+      color: rgb(196, 255, 2);
+      font-size: 40px;
+      @include fluid(font-size, 18px, 40px);
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    &-icon {
+      svg {
+        @include fluid(width, 35px, 60px);
+        @include fluid(height, 35px, 60px);
+      }
+    }
+  }
+}

@@ -1,0 +1,146 @@
+.checklist {
+  &__wrapper {
+    @include fluid(padding-top, 30px, 62px);
+    @include fluid(margin-bottom, 60px, 212px);
+  }
+
+  &__title {
+    max-width: 1338px;
+    @include fluid(margin-bottom, 30px, 66px);
+    @include fluid(padding-left, 15px, 25px);
+    @include fluid(padding-right, 15px, 25px);
+  }
+
+  &__textAccent {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    @include fluid(font-size, 22px, 35px);
+    @include fluid(padding-left, 15px, 25px);
+    @include fluid(padding-right, 15px, 25px);
+    @include fluid(padding-top, 8px, 10px);
+    @include fluid(padding-bottom, 8px, 10px);
+    @include fluid(margin-bottom, 20px, 44px);
+    border-radius: 28px;
+    font-family: "Manrope";
+    font-weight: 800;
+    background-color: #C4FF02;
+  }
+
+  &__text {
+    max-width: 1086px;
+    @include fluid(margin-bottom, 30px, 90px);
+    @include fluid(padding-left, 15px, 25px);
+    @include fluid(padding-right, 15px, 25px);
+    font-family: "Manrope";
+    @include fluid(font-size, 18px, 24px);
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 30px, 108px);
+    @include fluid(padding-top, 35px, 72px);
+    @include fluid(padding-left, 25px, 54px);
+    @include fluid(padding-right, 25px, 54px);
+    @include fluid(padding-bottom, 50px, 118px);
+    background-color: #131313;
+    border-radius: 50px;
+  }
+
+  &__item {
+    display: flex;
+    @include fluid(gap, 15px, 25px);
+
+    &-num {
+      color: #C4FF02;
+      font-weight: 700;
+      @include fluid(font-size, 25px, 50px);
+    }
+
+    &-box {
+      display: flex;
+      flex-direction: column;
+      @include fluid(gap, 25px, 66px);
+    }
+
+    &-title {
+      font-weight: 700;
+      @include fluid(font-size, 22px, 35px);
+      color: #ffff;
+      @include fluid(margin-top, 3px, 9px);
+    }
+
+    &-block {
+      display: flex;
+      align-items: center;
+      @include fluid(gap, 15px, 21px);
+    }
+
+    &-img {
+      @include fluid(width, 60px, 100px);
+      @include fluid(min-width, 60px, 100px);
+      @include fluid(height, 50px, 80px);
+    }
+
+    &-text {
+      max-width: 714px;
+      font-family: "Manrope";
+      @include fluid(font-size, 18px, 24px);
+      color: #fff;
+    }
+  }
+
+  &__textBot {
+    display: flex;
+    @include fluid(gap, 17px, 60px);
+    font-weight: 800;
+    align-items: center;
+    @include fluid(font-size, 22px, 35px);
+    color: #fff;
+
+    &-icon {
+      @include fluid(margin-top, 1px, 10px);
+
+      svg {
+        @include fluid(width, 35px, 59px);
+        @include fluid(height, 35px, 59px);
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .checklist {
+    &__textAccent {
+      font-size: 16px;
+    }
+
+    &__text {
+      font-size: 14px;
+    }
+
+    &__item {
+      &-num {
+        font-size: 20px;
+      }
+
+      &-box {
+        gap: 20px;
+      }
+
+      &-title {
+        font-size: 16px;
+        margin-top: 0;
+      }
+
+      &-text {
+        font-size: 14px;
+      }
+    }
+
+    &__textBot {
+      font-size: 116px;
+    }
+  }
+}

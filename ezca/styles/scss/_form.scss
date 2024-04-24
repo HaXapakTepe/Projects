@@ -1,0 +1,203 @@
+.form {
+  display: none;
+  width: 100%;
+  max-width: 820px;
+
+  &.fancybox__content {
+    background-color: transparent;
+    padding: 0;
+
+    .f-button.is-close-btn {
+      width: 50px;
+      height: 50px;
+      top: 20px;
+      right: 30px;
+      opacity: 1;
+      color: #000;
+      --f-button-bg: transparent;
+
+      svg {
+        width: 30px;
+        height: 30px;
+        stroke-width: 2px;
+      }
+    }
+  }
+
+  .logo {
+    @include fluid(margin-bottom, 20px, 35px);
+  }
+
+  &__wrapper {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: auto;
+  }
+
+  &__inner {
+    position: relative;
+    top: 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+
+    border-radius: 24px;
+    background-color: #fff;
+    @include fluid(padding-top, 25px, 50px);
+    @include fluid(padding-bottom, 25px, 68px);
+    @include fluid(padding-left, 20px, 44px);
+    @include fluid(padding-right, 20px, 44px);
+  }
+
+  &__text {
+    max-width: 530px;
+    @include fluid(margin-bottom, 35px, 69px);
+    font-weight: 700;
+    @include fluid(font-size, 14px, 20px);
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: 1fr .9fr;
+    @include fluid(column-gap, 20px, 45px);
+    @include fluid(row-gap, 30px, 54px);
+    @include fluid(margin-bottom, 25px, 54px);
+  }
+
+  &__subtitle {
+    font-family: "Manrope";
+    font-weight: 800;
+    @include fluid(font-size, 16px, 22px);
+
+    span {
+      font-weight: 600;
+      font-family: "Poppins";
+      color: #FF0000;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &--alt {
+      grid-column: 1/3;
+    }
+  }
+
+  &__type {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 20px, 46px);
+    @include fluid(margin-bottom, 20px, 46px);
+
+    &-box {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      @include fluid(gap, 15px, 27px);
+    }
+
+    &-radio {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 0;
+      height: 0;
+      z-index: -1;
+    }
+
+    &-label {
+      position: relative;
+      border-radius: 16px;
+      border: 1px solid #000;
+      text-align: center;
+      @include fluid(font-size, 16px, 20px);
+      @include fluid(padding-top, 10px, 12px);
+      @include fluid(padding-bottom, 10px, 12px);
+      transition: background-color .23s ease-in-out;
+      cursor: pointer;
+
+      &--checked,
+      &:hover {
+        background-color: #C4FF02;
+      }
+    }
+  }
+
+  &__spending {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 20px, 46px);
+    @include fluid(margin-bottom, 30px, 69px);
+
+    &-box {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      @include fluid(column-gap, 15px, 27px);
+      @include fluid(row-gap, 15px, 21px);
+    }
+
+    &-radio {
+      width: 0;
+      height: 0;
+      position: absolute;
+      opacity: 0;
+      z-index: -1;
+      visibility: hidden;
+    }
+
+    &-label {
+      position: relative;
+      border-radius: 16px;
+      border: 1px solid #000;
+      text-align: center;
+      @include fluid(font-size, 16px, 20px);
+      @include fluid(padding-top, 10px, 12px);
+      @include fluid(padding-bottom, 10px, 12px);
+      transition: background-color .23s ease-in-out;
+      cursor: pointer;
+
+      &--checked,
+      &:hover {
+        background-color: #C4FF02;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .form {
+    &__type {
+      &-box {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .form {
+    &__box {
+      grid-template-columns: 1fr;
+    }
+
+    &__block {
+      &--alt {
+        grid-column: unset;
+      }
+    }
+
+    &__spending,
+    &__type {
+      &-box {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}

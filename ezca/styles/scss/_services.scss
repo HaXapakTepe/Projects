@@ -1,0 +1,172 @@
+.services {
+  &__wrapper {
+    @include fluid(margin-top, 58px, 127px);
+    @include fluid(margin-bottom, 70px, 190px);
+  }
+
+  &__top {
+    display: grid;
+    grid-template-columns: 1fr .93fr;
+    justify-content: space-between;
+    align-items: center;
+    @include fluid(margin-bottom, 35px, 121px);
+  }
+
+  &__title {
+    display: flex;
+    @include fluid(gap, 17px, 24px);
+  }
+
+  &__text {
+    font-family: "Poppins";
+    @include fluid(font-size, 20px, 30px);
+    text-transform: uppercase;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    @include fluid(gap, 9px, 26px);
+  }
+
+  &__card {
+    position: relative;
+    @include fluid(padding-top, 18px, 28px);
+    @include fluid(padding-bottom, 55px, 76px);
+    @include fluid(padding-left, 18px, 27px);
+    @include fluid(padding-right, 18px, 27px);
+    border: 1px solid #000;
+    border-radius: 20px;
+    transition: background-color .23s ease-in-out;
+
+    &:hover {
+      background-color: #C4FF02;
+
+      .services__card {
+
+        &-img,
+        &-link span {
+          opacity: 1;
+          z-index: 0;
+        }
+
+        &-arrow {
+          svg {
+            rect {
+              fill: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    &-img {
+      position: absolute;
+      @include fluid(top, 15px, 29px);
+      right: 0;
+      transform: rotate(2.09deg);
+      @include fluid(width, 110px, 147px);
+      @include fluid(height, 110px, 147px);
+      opacity: 0;
+      transition: opacity .23s ease-in-out;
+      pointer-events: none;
+    }
+
+    &-box {
+      position: relative;
+      z-index: 1;
+    }
+
+    &-icon {
+      @include fluid(margin-bottom, 13px, 30px);
+
+      svg {
+        @include fluid(width, 20px, 43px);
+        @include fluid(height, 16px, 34px);
+      }
+    }
+
+    &-title {
+      @include fluid(margin-bottom, 13px, 27px);
+      font-weight: 800;
+      @include fluid(font-size, 17px, 25px);
+      color: #000;
+    }
+
+    &-text {
+      width: 88%;
+      font-family: "Manrope";
+      @include fluid(font-size, 12px, 18px);
+      color: #000;
+    }
+
+    &-link {
+      position: absolute;
+      @include fluid(right, 16px, 21px);
+      @include fluid(bottom, 10px, 21px);
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      margin-left: auto;
+      @include fluid(font-size, 14px, 18px);
+      font-weight: 800;
+      color: #000;
+
+      span {
+        opacity: 0;
+        transition: opacity .23s ease-in-out;
+      }
+    }
+
+    &-arrow {
+      svg {
+        @include fluid(width, 29px, 58px);
+        @include fluid(height, 29px, 58px);
+
+        rect {
+          width: 100%;
+          height: 100%;
+          transition: fill 0.23s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .services {
+    &__top {
+      gap: 16px;
+      grid-template-columns: 1fr;
+      margin-bottom: 35px;
+    }
+
+    &__text {
+      padding-left: 55px;
+    }
+
+    &__inner {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .services {
+    &__text {
+      font-size: 12px;
+    }
+
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+
+    &__card {
+      padding-bottom: 36px;
+    }
+  }
+}

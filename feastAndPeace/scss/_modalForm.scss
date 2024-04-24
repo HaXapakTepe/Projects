@@ -1,0 +1,81 @@
+.modalForm {
+  display: none;
+  max-width: 480px;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid #EBF2F5;
+  background: #FFF;
+  box-shadow: 0px 10px 30px 0px rgba(18, 51, 72, 0.10);
+  @include fluid(padding, 20px, 40px);
+
+  &.fancybox__content {
+    .f-button.is-close-btn {
+      top: 20px;
+      right: 20px;
+      width: 32px;
+      height: 32px;
+      padding: 0;
+    }
+  }
+
+  &__title {
+    @include fluid(margin-bottom, 15px, 20px);
+  }
+
+  &__subtitle {
+    @include fluid(margin-bottom, 15px, 30px);
+    color: #848E94;
+    @include fluid(font-size, 12px, 14px);
+    line-height: 1.35;
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    @include fluid(margin-bottom, 15px, 20px);
+    color: #848E94;
+    @include fluid(font-size, 12px, 14px);
+
+    &-box {
+      position: relative;
+    }
+
+    &-btn {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      background-color: transparent;
+      color: #7AC8C9;
+      @include fluid(font-size, 12px, 14px);
+      cursor: pointer;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    @include fluid(padding-top, 10px, 16px);
+    @include fluid(padding-bottom, 10px, 16px);
+    @include fluid(padding-left, 15px, 20px);
+    @include fluid(padding-right, 15px, 20px);
+    border-radius: 51px;
+    border: 1px solid #EBF2F5;
+    background: #FFF;
+  }
+
+  &__text {
+    color: #AABAC2;
+    font-size: 12px;
+    line-height: 1.35;
+    @include fluid(margin-bottom, 15px, 30px);
+
+    &--none {
+      display: none;
+    }
+
+    a {
+      color: #7AC8C9;
+    }
+  }
+}

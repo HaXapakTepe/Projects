@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,viewport-fit=cover,maximum-scale=1,user-scalable=0" />
+  <link rel="shortcut icon" href="./images/favicon.svg" type="x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="./plugins/fancybox/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="./css/icons.css" />
+  <link rel="stylesheet" href="./css/style.css?v=0.0003" />
+  <title>Властелин</title>
+</head>
+
+<body>
+  <div class="bg">
+    <header class="header header--pt">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="#">
+            <img class="logo__img logo__img--tech" src="./images/logoTech.svg" alt="" />
+          </a>
+          <ul class="menu">
+            <li class="menu__item">
+              <a data-goto=".section-slider" class="menu__item-link" href="#"> Техника </a>
+            </li>
+            <li class="menu__item">
+              <a data-goto=".section-price" class="menu__item-link" href="#"> Цены </a>
+            </li>
+            <li class="menu__item">
+              <a data-goto=".section-contacts" class="menu__item-link" href="#">
+                Выездной ремонт
+              </a>
+            </li>
+            <li class="menu__item menu__item--hidden">
+              <a class="menu__item-link" href="tel:+79626165999"> 8 (962) 616-59-99 </a>
+            </li>
+            <li class="menu__item menu__item--hidden">
+              <a class="link link--small" href="#"> Заказать эвакуатор </a>
+            </li>
+          </ul>
+          <div class="header__item">
+            <a class="phone" href="tel:+79626165999"> 8 (962) 616-59-99 </a>
+            <a class="link link--small modalBox" href="#modalForm"> Заказать эвакуатор </a>
+          </div>
+          <div class="burger">
+            <div class="burger__line"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="top top--padding">
+      <div class="container">
+        <div class="top__inner top__inner--grid">
+          <div class="top__item">
+            <h1 class="top__title">Диагностика и ремонт</h1>
+            <p class="top__subtitle top__subtitle--mb">
+              Услуги по ремонту грузового транспорта в Саратове и Саратовской области
+            </p>
+            <a class="link link--inPink modalBox" href="#modalForm"> Вызвать помощь </a>
+          </div>
+          <div class="info" action="">
+            <div class="info__item">
+              <div class="info__item-box">
+                <div class="info__item-block">
+                  <h5 class="info__item-title info__item-title--mb">Автобусы</h5>
+                  <p class="info__item-num">от 4999₽</p>
+                </div>
+                <div class="info__item-icon icon-bus"></div>
+              </div>
+            </div>
+            <div class="info__item">
+              <div class="info__item-box">
+                <div class="info__item-block">
+                  <h5 class="info__item-title">Грузовой транспорт</h5>
+                  <p class="info__item-num">от 4999₽</p>
+                </div>
+                <div class="info__item-icon icon-truck"></div>
+              </div>
+            </div>
+            <div class="info__item">
+              <div class="info__item-box">
+                <div class="info__item-block">
+                  <h5 class="info__item-title">Коммерческий транспорт</h5>
+                  <p class="info__item-num">от 3999₽</p>
+                </div>
+                <div class="info__item-icon icon-vehicles"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="edge">
+    <div class="container">
+      <div class="edge__top">
+        <img class="edge__img" src="./images/edge/1.jpg" alt="" />
+        <div class="edge__item">
+          <h2 class="edge__title">Для юридических лиц</h2>
+          <p class="edge__subtitle">Диагностика бесплатна при заключении договора</p>
+          <ul class="edge__list">
+            <li class="edge__list-item">Работа с НДС</li>
+            <li class="edge__list-item">Комплексное обслуживание автопарков</li>
+            <li class="edge__list-item">Заключение договора</li>
+            <li class="edge__list-item">Оплата после выполнения работ</li>
+          </ul>
+          <form class="edge__form" action="">
+            <input class="input" type="text" placeholder="Откуда забрать автомобиль? (Адрес)" />
+            <button class="btn" type="submit">Оформить заявку</button>
+          </form>
+        </div>
+      </div>
+      <h2 class="edge__title edge__title--center">Преимущества</h2>
+      <div class="edge__bottom">
+        <div class="edge__bottom-item">
+          <p class="edge__bottom-text edge__bottom-text--lineOne">Онлайн запись</p>
+          <p class="edge__bottom-text edge__bottom-text--tar edge__bottom-text--lineTwo">
+            <span> Сертифицированное </span>
+            <span> оборудование и мастера </span>
+          </p>
+        </div>
+        <div class="edge__bottom-item">
+          <p class="edge__bottom-text edge__bottom-text--lineThree">
+            <span> Бесконтактное </span>
+            <span> обслуживание </span>
+          </p>
+          <p class="edge__bottom-text edge__bottom-text--lineFour">Все типы оплат</p>
+        </div>
+        <div class="edge__bottom-item">
+          <p class="edge__bottom-text edge__bottom-text--lineFive">Без очередей</p>
+          <p class="edge__bottom-text edge__bottom-text--lineSix">В удобное время</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="offsite offsite--bg">
+    <div class="container">
+      <h2 class="offsite__title offsite__title--mw">
+        Эвакуация автобусов, грузового транспорта и спецтехники
+      </h2>
+      <form class="offsite__form" action="">
+        <input class="input" type="text" placeholder="Откуда забрать автомобиль? (Адрес)" />
+        <button class="btn" type="submit">Заказать эвакуатор</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="price section-price">
+    <div class="container">
+      <div class="price__inner">
+        <h2 class="price__title title title--black">Цены на услуги</h2>
+        <div class="price__item">
+          <h4 class="price__item-title">Комплексная мойка автобуса 12м</h4>
+          <p class="price__item-text">1200 ₽</p>
+        </div>
+        <div class="price__item">
+          <h4 class="price__item-title">Комплексная мойка автобуса 9м</h4>
+          <p class="price__item-text">1000 ₽</p>
+        </div>
+        <div class="price__item">
+          <h4 class="price__item-title">Комплексная мойка микроавтобуса</h4>
+          <p class="price__item-text">400 ₽</p>
+        </div>
+        <div class="price__item">
+          <h4 class="price__item-title">Мойка легкового снаружи + коврики</h4>
+          <p class="price__item-text">200 ₽</p>
+        </div>
+        <div class="price__item">
+          <h4 class="price__item-title">Мойка грузовика до 5т</h4>
+          <p class="price__item-text">800 ₽</p>
+        </div>
+        <div class="price__item">
+          <h4 class="price__item-title">Мойка грузовика от 5т до 12т</h4>
+          <p class="price__item-text">1000 ₽</p>
+        </div>
+        <div class="price__item">
+          <h4 class="price__item-title">Мойка 4-х основого грузовика</h4>
+          <p class="price__item-text">1200 ₽</p>
+        </div>
+        <div class="price__item">
+          <h4 class="price__item-title">Мойка длинномера</h4>
+          <p class="price__item-text">1500 ₽</p>
+        </div>
+        <div class="price__item">
+          <h4 class="price__item-title">Мойка спецтехники</h4>
+          <p class="price__item-text">1500 ₽</p>
+        </div>
+        <div class="price__item">
+          <h4 class="price__item-title">Осмотр/дефектовка ходовой микроавтобуса</h4>
+          <p class="price__item-text">400 ₽</p>
+        </div>
+        <div class="price__item">
+          <h4 class="price__item-title">Осмотр/дефектовка ходовой грузовика</h4>
+          <p class="price__item-text">800 ₽</p>
+        </div>
+        <div class="price__item">
+          <h4 class="price__item-title">Ремонт котла подогрева</h4>
+          <p class="price__item-text">1500 ₽</p>
+        </div>
+        <div class="price__item">
+          <h4 class="price__item-title">Капитальный ремонт двигателя грузового</h4>
+          <p class="price__item-text">30000 ₽</p>
+        </div>
+        <div class="price__item">
+          <h4 class="price__item-title">Капитальный ремонт двигателя комерческого транспорта</h4>
+          <p class="price__item-text">15000 ₽</p>
+        </div>
+        <div class="price__item">
+          <h4 class="price__item-title">Ремонт генератора</h4>
+          <p class="price__item-text">1500 ₽</p>
+        </div>
+        <div class="price__item">
+          <h4 class="price__item-title">Диагностика двигателя</h4>
+          <p class="price__item-text">1500 ₽</p>
+        </div>
+        <div class="price__item">
+          <h4 class="price__item-title">Сварочные работы</h4>
+          <p class="price__item-text">1500 ₽/час</p>
+        </div>
+        <div class="price__item">
+          <h4 class="price__item-title">Шиномонтаж комерческого транспорта 1-ого колеса</h4>
+          <p class="price__item-text">от 250 ₽</p>
+        </div>
+        <div class="price__item">
+          <h4 class="price__item-title">Шиномонтаж грузового колеса</h4>
+          <p class="price__item-text">от 450 ₽</p>
+        </div>
+        <div class="price__item">
+          <h4 class="price__item-title">Балансировка 1-ого колеса</h4>
+          <p class="price__item-text">от 200 ₽</p>
+        </div>
+        <div class="price__item">
+          <h4 class="price__item-title">Комплексная смазка узлов и агрегатов</h4>
+          <p class="price__item-text">600 ₽</p>
+        </div>
+        <div class="price__item">
+          <h4 class="price__item-title">Ремонт КПП комерческого транспорта</h4>
+          <p class="price__item-text">от 5000 ₽</p>
+        </div>
+        <div class="price__item">
+          <h4 class="price__item-title">Ремонт КПП грузовой/автобус</h4>
+          <p class="price__item-text">от 13000 ₽</p>
+        </div>
+        <div class="price__item">
+          <h4 class="price__item-title">Замена моста комерческого транспорта</h4>
+          <p class="price__item-text">от 6000 ₽</p>
+        </div>
+        <div class="price__item">
+          <h4 class="price__item-title">Замена заднего моста на грузовике/автобусе</h4>
+          <p class="price__item-text">от 10000 ₽</p>
+        </div>
+        <div class="price__item">
+          <h4 class="price__item-title">Замена передней балки на грузовике/автобусе</h4>
+          <p class="price__item-text">от 7000 ₽</p>
+        </div>
+        <div class="price__item">
+          <h4 class="price__item-title">Замена шкворней грузовик/автобус</h4>
+          <p class="price__item-text">от 9000 ₽</p>
+        </div>
+        <div class="price__item">
+          <h4 class="price__item-title">Ремонт электрики</h4>
+          <p class="price__item-text">1500 ₽/час</p>
+        </div>
+        <div class="price__item">
+          <h4 class="price__item-title">Слесарные работы</h4>
+          <p class="price__item-text">1200 ₽/час</p>
+        </div>
+        <div class="price__item">
+          <h4 class="price__item-title">Малярные работы за 1-ин элемент</h4>
+          <p class="price__item-text">от 7000 ₽</p>
+        </div>
+      </div>
+      <a class="link modalBox" href="#modalForm"> Записаться на ТО </a>
+    </div>
+  </section>
+
+  <section class="techcenter section-slider">
+    <div class="container">
+      <h2 class="techcenter__title title title--black">Наш техцентр</h2>
+      <div class="techcenter__swiper swiper">
+        <div class="techcenter__wrapper swiper-wrapper">
+          <div class="techcenter__slide swiper-slide">
+            <img class="techcenter__img" src="./images/techcenter/1.jpg" alt="" />
+            <time class="techcenter__time" datetime="2023-09-15 19:00">Август</time>
+            <h4 class="techcenter__text">Наша команда</h4>
+          </div>
+          <div class="techcenter__slide swiper-slide">
+            <img class="techcenter__img" src="./images/techcenter/2.jpg" alt="" />
+            <time class="techcenter__time" datetime="2023-05-15 19:00">Май</time>
+            <h4 class="techcenter__text">Ремонт ДВС</h4>
+          </div>
+          <div class="techcenter__slide swiper-slide">
+            <img class="techcenter__img" src="./images/techcenter/3.jpg" alt="" />
+            <time class="techcenter__time" datetime="2023-09-15 19:00">Август</time>
+            <h4 class="techcenter__text">Последний этап покраски кузова</h4>
+          </div>
+          <div class="techcenter__slide swiper-slide">
+            <img class="techcenter__img" src="./images/techcenter/1.jpg" alt="" />
+            <time class="techcenter__time" datetime="2023-09-15 19:00">Август</time>
+            <h4 class="techcenter__text">Наша команда</h4>
+          </div>
+          <div class="techcenter__slide swiper-slide">
+            <img class="techcenter__img" src="./images/techcenter/2.jpg" alt="" />
+            <time class="techcenter__time" datetime="2023-05-15 19:00">Май</time>
+            <h4 class="techcenter__text">Ремонт ДВС</h4>
+          </div>
+          <div class="techcenter__slide swiper-slide">
+            <img class="techcenter__img" src="./images/techcenter/3.jpg" alt="" />
+            <time class="techcenter__time" datetime="2023-09-15 19:00">Август</time>
+            <h4 class="techcenter__text">Последний этап покраски кузова</h4>
+          </div>
+        </div>
+      </div>
+      <div class="techcenter__videoSwiper swiper">
+        <div class="techcenter__videoWrapper swiper-wrapper">
+          <div class="techcenter__videoSlide swiper-slide">
+            <div class="techcenter__box techcenter__box--poster">
+              <img class="techcenter__img" src="./images/techcenter/poster1.jpg" alt="" />
+              <iframe src="https://www.youtube.com/embed/T-x3TGboFD8" title="YouTube video player" frameborder="0"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+            <time class="techcenter__time" datetime="2023-09-15 19:00">Август</time>
+            <h4 class="techcenter__text">Ремонт двигателя грузовика MAN</h4>
+          </div>
+          <div class="techcenter__videoslide swiper-slide">
+            <div class="techcenter__box techcenter__box--poster">
+              <img class="techcenter__img" src="./images/techcenter/poster2.jpg" alt="" />
+              <iframe src="https://www.youtube.com/embed/3UjuWIbmh6U" title="YouTube video player" frameborder="0"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+            <time class="techcenter__time" datetime="2023-05-15 19:00">Май</time>
+            <h4 class="techcenter__text">Проверка ходовой части</h4>
+          </div>
+          <div class="techcenter__videoslide swiper-slide">
+            <div class="techcenter__box techcenter__box--poster">
+              <img class="techcenter__img" src="./images/techcenter/poster3.jpg" alt="" />
+              <iframe src="https://www.youtube.com/embed/BW_JlQkfL_Y" title="YouTube video player" frameborder="0"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+            <time class="techcenter__time" datetime="2023-09-15 19:00">Август</time>
+            <h4 class="techcenter__text">Подготовка к покраске кузова автобуса</h4>
+          </div>
+          <div class="techcenter__videoslide swiper-slide">
+            <div class="techcenter__box techcenter__box--poster">
+              <img class="techcenter__img" src="./images/techcenter/poster1.jpg" alt="" />
+              <iframe src="https://www.youtube.com/embed/T-x3TGboFD8" title="YouTube video player" frameborder="0"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+            <time class="techcenter__time" datetime="2023-09-15 19:00">Август</time>
+            <h4 class="techcenter__text">Ремонт двигателя грузовика MAN</h4>
+          </div>
+          <div class="techcenter__videoslide swiper-slide">
+            <div class="techcenter__box techcenter__box--poster">
+              <img class="techcenter__img" src="./images/techcenter/poster2.jpg" alt="" />
+              <iframe src="https://www.youtube.com/embed/3UjuWIbmh6U" title="YouTube video player" frameborder="0"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+            <time class="techcenter__time" datetime="2023-05-15 19:00">Май</time>
+            <h4 class="techcenter__text">Проверка ходовой части</h4>
+          </div>
+          <div class="techcenter__videoslide swiper-slide">
+            <div class="techcenter__box techcenter__box--poster">
+              <img class="techcenter__img" src="./images/techcenter/poster3.jpg" alt="" />
+              <iframe src="https://www.youtube.com/embed/BW_JlQkfL_Y" title="YouTube video player" frameborder="0"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+            <time class="techcenter__time" datetime="2023-09-15 19:00">Август</time>
+            <h4 class="techcenter__text">Подготовка к покраске кузова автобуса</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="painter">
+    <div class="container">
+      <h2 class="painter__title title title--black">Кузовные и малярные работы</h2>
+      <div class="painter__swiper swiper">
+        <div class="painter__wrapper swiper-wrapper">
+          <div class="painter__slide swiper-slide">
+            <img class="painter__img" src="./images/painter/1.jpg" alt="" />
+            <time class="painter__time" datetime="2023-09-15 19:00">Август</time>
+            <h4 class="painter__text">Наша команда</h4>
+          </div>
+          <div class="painter__slide swiper-slide">
+            <img class="painter__img" src="./images/painter/2.jpg" alt="" />
+            <time class="painter__time" datetime="2023-09-15 19:00">Август</time>
+            <h4 class="painter__text">Ремонт ДВС</h4>
+          </div>
+          <div class="painter__slide swiper-slide">
+            <img class="painter__img" src="./images/painter/3.jpg" alt="" />
+            <time class="painter__time" datetime="2023-09-15 19:00">Август</time>
+            <h4 class="painter__text">Последний этап покраски кузова</h4>
+          </div>
+          <div class="painter__slide swiper-slide">
+            <img class="painter__img" src="./images/painter/1.jpg" alt="" />
+            <time class="painter__time" datetime="2023-09-15 19:00">Август</time>
+            <h4 class="painter__text">Наша команда</h4>
+          </div>
+          <div class="painter__slide swiper-slide">
+            <img class="painter__img" src="./images/painter/2.jpg" alt="" />
+            <time class="painter__time" datetime="2023-09-15 19:00">Август</time>
+            <h4 class="painter__text">Ремонт ДВС</h4>
+          </div>
+          <div class="painter__slide swiper-slide">
+            <img class="painter__img" src="./images/painter/3.jpg" alt="" />
+            <time class="painter__time" datetime="2023-09-15 19:00">Август</time>
+            <h4 class="painter__text">Последний этап покраски кузова</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacts section-contacts">
+    <div class="contacts__container">
+      <div class="contacts__inner">
+        <div class="contacts__item">
+          <h2 class="contacts__title">Контакты:</h2>
+          <div class="contacts__item-box">
+            <a class="contacts__item-phone phone" href="tel:+79626165999"> 8 (962) 616-59-99 </a>
+            <div class="contacts__item-icon icon-phone"></div>
+          </div>
+          <div class="contacts__item-box">
+            <a class="contacts__item-mail" href="mailto:vlastelin@mail.com">
+              vlastelin@mail.com
+            </a>
+            <div class="contacts__item-icon icon-mail"></div>
+          </div>
+          <div class="contacts__item-box contacts__item-box--mb">
+            <p class="contacts__item-text">г. Саратов, ул. Кокуринская, д. 25, стр. 1</p>
+            <div class="contacts__item-icon icon-map"></div>
+          </div>
+          <a class="link link--inWhite modalBox" href="#modalForm"> Заказать эвакуатор </a>
+        </div>
+        <div class="contacts__item">
+          <div class="map" id="mapYandexTwo"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__item">
+          <a class="logo" href="#">
+            <img class="logo__img logo__img--tech" src="./images/logoTech.svg" alt="" />
+          </a>
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__item-link" href="#"> Техника </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#"> Цены </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#"> Выездной ремонт </a>
+            </li>
+          </ul>
+          <a class="phone" href="tel:+79626165999"> 8 (962) 616-59-99 </a>
+          <a class="link link--small modalBox" href="#modalForm"> Заказать эвакуатор </a>
+        </div>
+        <div class="footer__item">
+          <p class="footer__text">ООО «Vlastelin»</p>
+          <a class="development" href="#" target="_blank">
+            <p class="development__text">Разработка сайта</p>
+            <img class="development__img" src="./images/icons/spaceApp.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <form class="form" id="modalForm" action="">
+    <div class="form__inner">
+      <h4 class="form__title">Перезвоните мне</h4>
+      <input class="input" type="text" placeholder="Ваше имя" />
+      <input class="input" type="text" placeholder="Номер телефона" />
+      <div class="form__box">
+        <button class="btn" type="submit">Заказать звонок</button>
+        <label class="label">
+          <input class="label__input check" type="checkbox">
+          <span class="label__inputCustom"></span>
+          <p class="">Нажимая на кнопку вы соглашаетесь на обработку персональных данных и
+            <a class="label__link" href="#"> политикой конфиденциальности</a></p>
+        </label>
+      </div>
+    </div>
+  </form>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <script src="./plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="./js/ymapCustom.js"></script>
+  <script src="./js/main.js?v=0.0003"></script>
+
+  <script>
+    var points = [
+      [
+        '<div class="map-baloon"><p></p><p>г. Саратов, ул. Кокуринская,  д. 25, стр. 1</p></div>',
+        '51.54612118642397',
+        '46.01539384692296',
+      ],
+    ]
+
+    ymaps.ready(function () {
+      myCollection = new ymaps.GeoObjectCollection()
+      myMap = new ymaps.Map('mapYandexTwo', {
+        center: [51.54612118642397, 46.01539384692296],
+        zoom: 14,
+        controls: ['zoomControl'],
+      })
+      if ($(window).width() < 1024) {
+        myMap.behaviors.disable('scrollZoom')
+        myMap.behaviors.disable('drag')
+      }
+      for (i = 0; i < points.length; i++) {
+        var myPlacemark = new ymaps.Placemark(
+          [points[i][1], points[i][2]], {
+            balloonContent: points[i][0],
+          }, {
+            iconLayout: 'default#image',
+            iconImageHref: '../images/icons/points.svg',
+            iconImageSize: [38, 50],
+            balloonLayout: 'default#imageWithContent',
+          }
+        )
+        myCollection.add(myPlacemark)
+        myMap.geoObjects.add(myPlacemark)
+        myMap.events.add('click', function (e) {
+          console.log('hi')
+          myMap.balloon.close()
+        })
+      }
+
+      myMap.geoObjects.add(myCollection)
+      myPlacemark.events.add('click', function (event) {
+        event.preventDefault()
+      })
+    })
+  </script>
+</body>
+
+</html>

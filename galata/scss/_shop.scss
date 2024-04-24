@@ -1,0 +1,193 @@
+.shop {
+  margin-top: 30px;
+  @include fluid(margin-bottom, 30px, 80px);
+
+  &--alt {
+    flex-grow: 1;
+    @include fluid(padding-top, 30px, 70px);
+    @include fluid(padding-bottom, 30px, 70px);
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 100%;
+    background-color: #262739;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include fluid(margin-bottom, 20px, 68px);
+
+    &-block {
+      display: flex;
+      align-items: center;
+
+      .link--icon {
+        position: relative;
+        @include fluid(padding-right, 35px, 50px);
+
+        +.link {
+          margin-left: -10px;
+        }
+      }
+    }
+
+    .shop__title {
+      margin-bottom: unset;
+      color: #fff;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    @include fluid(column-gap, 20px, 40px);
+
+    &-title {
+      color: #fff;
+      @include fluid(margin-bottom, 4px, 8px);
+
+      &--mint {
+        color: #B7E8DF;
+      }
+
+      &--orange {
+        color: #FEE8A9;
+      }
+
+      &--pink {
+        color: #FBDFE3;
+      }
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px
+    }
+
+    &-link {
+      display: flex;
+      text-transform: uppercase;
+      color: #fff;
+    }
+  }
+
+  &__title {
+    @include fluid(margin-bottom, 20px, 28px);
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr .31fr;
+    @include fluid(gap, 20px, 40px);
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @include fluid(column-gap, 20px, 40px);
+    row-gap: 8px;
+
+    &-title {
+      grid-column: span 3;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      padding: 4px 10px;
+      border-radius: 24px;
+      @include fluid(font-size, 12px, 14px);
+      line-height: 1.4;
+      letter-spacing: -0.1px;
+
+      &--mint {
+        background-color: #B7E8DF;
+        @include fluid(margin-top, 7px, 12px);
+        @include fluid(margin-bottom, 4px, 8px);
+      }
+
+      &--orange {
+        background-color: #FEE8A9;
+      }
+
+      &--pink {
+        background-color: #FBDFE3;
+        @include fluid(margin-top, 7px, 12px);
+        @include fluid(margin-bottom, 4px, 8px);
+      }
+    }
+
+    &-box {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      @include fluid(column-gap, 20px, 40px);
+    }
+
+    &-link {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      color: #000;
+      @include fluid(font-size, 16px, 18px);
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .shop {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .shop {
+    &__box {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 20px;
+
+      &-title,
+      &-link {
+        text-align: center;
+      }
+
+      &-link {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .shop {
+    &__box {
+      &-block {
+        flex-direction: column;
+        gap: 10px;
+
+        .link--icon {
+          +.link {
+            margin-left: unset;
+          }
+        }
+      }
+    }
+
+    &__item {
+      grid-template-columns: repeat(2, 1fr);
+
+      &-title {
+        grid-column: span 2;
+      }
+    }
+  }
+}

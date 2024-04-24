@@ -1,0 +1,29 @@
+.socials {
+  display: flex;
+  gap: 12px;
+  height: 40px;
+
+  &__icon {
+    display: block;
+
+    svg {
+
+      rect,
+      path {
+        transition: fill .23s ease-in-out;
+      }
+    }
+
+    &:hover {
+      svg {
+        rect {
+          fill: #F9F5FF;
+        }
+
+        path {
+          fill: #9E77ED;
+        }
+      }
+    }
+  }
+}

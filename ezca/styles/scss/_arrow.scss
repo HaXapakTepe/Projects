@@ -1,0 +1,42 @@
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+
+  &--team {
+    max-width: 89%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__next,
+  &__prev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    transition: opacity 0.23s ease-in-out;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  &__prev {
+    background-image: url('../../assets/images/icons/swiper-left.svg');
+  }
+
+  &__next {
+    background-image: url('../../assets/images/icons/swiper-right.svg');
+  }
+}
+
+@media (max-width: 992px) {
+  .arrow {
+    display: none;
+  }
+}

@@ -1,0 +1,164 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+input,
+button {
+  outline: none;
+  font: inherit;
+}
+
+fieldset {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  &.title {
+    font-feature-settings: 'salt'on, 'liga'off;
+    @include fluid(font-size, 30px, 40px);
+    font-weight: 500;
+    line-height: 1.25;
+  }
+}
+
+.title {
+  font-feature-settings: 'salt'on, 'liga'off;
+  @include fluid(font-size, 24px, 32px);
+  font-weight: 500;
+
+  &--center {
+    text-align: center;
+  }
+}
+
+.gray {
+  background: var(--Light-grey, #EBF3F6);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Gotham Pro";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--Text, #18191F);
+
+  &.no-scroll {
+    overflow-y: hidden;
+  }
+}
+
+.wrapper {
+  // min-height: 100vh;
+  min-width: 320px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  // контейнер + padding с двух сторон
+  @include fluid(width, 962px, 1032px);
+  @include container;
+}
+
+[class$="__icon"],
+[class$="-icon"] {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  &__img {
+    -o-object-fit: contain;
+    object-fit: contain;
+    height: 37px;
+  }
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--Orange, #EF7F1A);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.fancybox {
+  &__container {
+    --fancybox-bg: rgba(24, 24, 27, 0.45);
+
+    .f-button.is-close-btn {
+      top: -4px;
+      right: -35px;
+      --f-button-svg-width: 24px;
+      --f-button-svg-height: 24px;
+      opacity: 1;
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 1366px) {}
+
+@media (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {
+  .logo {
+    &__img {
+      width: 231px;
+      height: 53px;
+    }
+  }
+
+  .is-compact .fancybox__content>.f-button.is-close-btn {
+    top: -38px;
+    --f-button-bg: none;
+    opacity: 1;
+    outline: none;
+
+    svg {
+      width: 24px;
+      height: 24px;
+      opacity: 1;
+      color: #fff;
+      stroke: #fff;
+    }
+  }
+}

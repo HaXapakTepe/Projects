@@ -1,0 +1,134 @@
+.promo {
+  min-height: 100dvh;
+
+  &__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100dvh;
+    overflow: hidden;
+    padding-top: 60px;
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+
+  &__bot {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+  }
+
+  &__inner {
+    @include fluid(margin-top, 24px, 85px);
+  }
+
+  &__subtitle {
+    @include fluid(font-size, 16px, 35px);
+    font-weight: 700;
+    color: #AF94CE;
+    @include fluid(margin-bottom, 18px, 38px);
+  }
+
+  &__title {
+    @include fluid(max-width, 470px, 850px);
+    @include fluid(margin-bottom, 9px, 23px);
+    @include fluid(font-size, 22px, 48px);
+    font-weight: 700;
+    color: #3C1E5B;
+    line-height: 1;
+    text-wrap: balance;
+
+    &--alt {
+      text-wrap: unset;
+    }
+
+    span {
+      position: relative;
+      color: #fff;
+      @include fluid(padding-left, 2px, 5px);
+      @include fluid(padding-right, 2px, 5px);
+      margin-left: -5px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-38%);
+        left: 0;
+        width: 100%;
+        height: 85%;
+        background-color: #8E72B0;
+        border-radius: 5px;
+        z-index: -1;
+      }
+
+      &:first-child {
+        &::after {
+          border-radius: 5px 0 0 5px;
+        }
+      }
+
+      &:last-child {
+        left: -7px;
+
+        &::after {
+          border-radius: 0 5px 5px 0;
+        }
+      }
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    color: #3C1E5B;
+    @include fluid(margin-bottom, 25px, 53px);
+    @include fluid(font-size, 16px, 23px);
+  }
+}
+
+@media(max-width: 576px) {
+  .promo {
+    &__inner {
+      padding-left: 21px;
+      padding-right: 21px;
+    }
+
+    &__title {
+      line-height: 1.05;
+      max-width: 240px;
+
+      &--alt {
+        max-width: 294px;
+      }
+
+      span {
+        &:first-child {
+          color: #3C1E5B;
+
+          &::after {
+            content: none;
+            border-radius: 5px;
+          }
+        }
+
+        &:last-child {
+          left: 0;
+
+          &::after {
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+}

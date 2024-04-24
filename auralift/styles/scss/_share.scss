@@ -1,0 +1,149 @@
+.share {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  background: rgba(16, 24, 40, 0.10);
+  opacity: 0;
+  z-index: -1;
+  visibility: hidden;
+  transition: opacity .23s ease-out,
+    z-index .23s ease-out,
+    visibility .23s ease-in-out;
+
+  &--active {
+    opacity: 1;
+    z-index: 100;
+    visibility: visible;
+  }
+
+  &__form {
+    position: relative;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    max-width: 500px;
+    width: 95%;
+    padding: 20px;
+    border-radius: 16px;
+    background: #FFF;
+    margin: auto;
+  }
+
+  &__close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+
+    svg {
+      position: relative;
+      z-index: 1;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      background: #F2F4F7;
+      opacity: 0;
+      transition: opacity 0.23s ease-in-out;
+    }
+
+    &:hover {
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__title {
+    color: #101828;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 24px;
+  }
+
+  &__subtitle {
+    color: #344054;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 6px;
+  }
+
+  &__label {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+
+    &-icon {
+      display: flex;
+      align-items: center;
+    }
+
+    &-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 7px 13px;
+      gap: 8px;
+      color: #12A87A;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 20px;
+      border-radius: 8px;
+      border: 1px solid #E8FAF4;
+      background-color: #E8FAF4;
+
+      &:last-child {
+        grid-column: 1/3;
+      }
+    }
+  }
+}
+
+@media (max-width: 539px) {
+  .share {
+    &__form {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    &__box {
+      grid-template-columns: 1fr;
+
+      &-link {
+        &:last-child {
+          grid-column: unset;
+        }
+      }
+    }
+  }
+}

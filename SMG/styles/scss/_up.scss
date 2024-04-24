@@ -1,0 +1,50 @@
+.up {
+  position: relative;
+  max-width: 486px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include fluid(gap, 22px, 24px);
+  border-radius: 53.32px;
+  background: linear-gradient(42.42deg, rgb(149, 86, 236) -3.033%, rgb(113, 49, 203) 103.28%);
+  @include fluid(padding-left, 15px, 78px);
+  @include fluid(padding-right, 15px, 78px);
+  @include fluid(padding-top, 13px, 16px);
+  @include fluid(padding-bottom, 13px, 16px);
+  margin-bottom: 50px;
+  cursor: pointer;
+
+  &--right {
+    @include fluid(right, 0px, -45px);
+  }
+
+  &__img {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__text {
+    color: #fff;
+    font-size: 15px;
+    text-wrap: balance;
+  }
+}
+
+@media(max-width:992px) {
+  .up {
+    max-width: 294px;
+    margin-bottom: 82px;
+
+    &__text {
+      font-size: 18px;
+      text-align: center;
+    }
+
+    &__img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}

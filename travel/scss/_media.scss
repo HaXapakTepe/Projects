@@ -1,0 +1,209 @@
+@media (max-width: 992px) {
+  .link {
+    &:hover {
+      color: #FFFFFF;
+      background-color: #5474FD;
+
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  .nav {
+    &__inner {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    &__link {
+      width: 186px;
+      margin: 0 auto 20px;
+    }
+  }
+
+  .menu {
+    &__item {
+      &:hover {
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  .iconsPage {
+    &__inner {
+      &::after {
+        width: 70%;
+        height: 29%;
+      }
+    }
+  }
+
+  .what {
+    &__item {
+      grid-template-columns: minmax(290px, 445px);
+      justify-content: center;
+      background-color: unset;
+    }
+
+    &__image {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__box {
+      padding: 20px;
+      text-align: center;
+      background-color: #333;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  .why {
+    &__inner {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    &__item {
+
+      &--grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      &-link {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      &-image {
+
+        &:first-child {
+          grid-column: 1/4;
+        }
+
+        &:last-child {
+          grid-column: 2/5;
+        }
+      }
+    }
+  }
+
+  .iconsPage {
+    &__inner {
+      &::after {
+        height: 26%;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .header {
+    &__top {
+      &-subtitle {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .search {
+    &__btn {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
+
+  .menu {
+    &__item {
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .country {
+
+    &__top,
+    &__bottom {
+      padding-top: 50px;
+      padding-bottom: 30px;
+    }
+  }
+
+  .what {
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+    &__text {
+      font-size: 16px;
+    }
+  }
+
+  .footer {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+    &__item {
+      text-align: center;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+
+      &-link {
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .search {
+    &__input {
+      &::placeholder {
+        font-size: 11px;
+        letter-spacing: unset;
+      }
+    }
+  }
+
+  .country {
+
+    &__top,
+    &__bottom {
+
+      &-inner {
+        grid-template-columns: 1fr;
+      }
+
+      &-item {
+        grid-column: unset;
+      }
+    }
+
+    &__link {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

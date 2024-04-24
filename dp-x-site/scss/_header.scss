@@ -1,0 +1,240 @@
+.header {
+  &__top {
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #DDE4EA;
+    padding: 6px 0 7px;
+
+    &-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    &-phone {
+      font-weight: 700;
+      color: #BBBDC0;
+      transition: color .38s ease-in-out;
+
+      &:active,
+      &:hover {
+        color: #D92227;
+      }
+    }
+
+    &-text {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.25;
+      color: #838a91;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    @include fluid(gap, 20px, 40px);
+
+    &-link {
+      font-size: 12px;
+      line-height: 15px;
+      color: #888b92;
+      transition: color .38s ease-in-out;
+
+      &:active,
+      &:hover {
+        color: #D92227;
+      }
+    }
+  }
+
+  &__bottom {
+    background-color: #fff;
+    @include fluid(padding-top, 15px, 21px);
+    @include fluid(padding-bottom, 15px, 22px);
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    @include fluid(margin-right, 20px, 39px);
+  }
+
+  &__catalog {
+    display: flex;
+    align-items: center;
+    background-color: #D92227;
+    border-radius: 5px;
+    @include fluid(padding-top, 10px, 11px);
+    @include fluid(padding-bottom, 10px, 11px);
+    @include fluid(padding-left, 10px, 14px);
+    @include fluid(padding-right, 10px, 14px);
+    @include fluid(gap, 5px, 9px);
+    @include fluid(margin-right, 15px, 19px);
+    cursor: pointer;
+    transition: background-color .38s ease-in-out,
+      outline .38s ease-in-out;
+    outline-offset: -1px;
+    outline: 1px solid #D92227;
+
+    &:active,
+    &:hover {
+      background-color: #fff;
+
+      .header__catalog-icon,
+      .header__catalog-text {
+        color: #D92227;
+      }
+    }
+
+    &-icon {
+      @include fluid(font-size, 20px, 24px);
+      color: #fff;
+      transition: color .38s ease-in-out;
+    }
+
+    &-text {
+      transition: color .38s ease-in-out;
+      color: #fff;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    @include fluid(gap, 20px, 40px);
+    cursor: pointer;
+
+
+    &-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
+      color: #000;
+
+      &--active,
+      &:active,
+      &:hover {
+
+        .header__item-icon,
+        .header__item-text {
+          color: #D92227;
+        }
+      }
+    }
+
+    &-icon {
+      color: #000;
+      @include fluid(font-size, 20px, 24px);
+      text-align: center;
+      transition: color .38s ease-in-out;
+    }
+
+    &-text {
+      transition: color .38s ease-in-out;
+    }
+  }
+
+  .search {
+    @include fluid(margin-right, 20px, 40px);
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    &__top {
+      &-text {
+        line-height: 1.2;
+      }
+
+      &-phone {
+        &:hover {
+          color: #BBBDC0;
+        }
+      }
+    }
+
+    &__list {
+      &-link {
+        &:hover {
+          color: #888b92;
+        }
+      }
+    }
+
+    .logo,
+    .search,
+    &__catalog {
+      margin-right: 0;
+    }
+
+    &__catalog {
+      margin-left: auto;
+
+      &:hover {
+        background-color: #D92227;
+
+        .header__catalog-icon,
+        .header__catalog-text {
+          color: #fff;
+        }
+      }
+    }
+
+    &__item {
+      &-link {
+        &:hover {
+
+          .header__item-icon,
+          .header__item-text {
+            color: #000;
+          }
+        }
+      }
+    }
+
+    &__inner {
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .search {
+      order: 1;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+
+    &__top {
+      &-inner {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+    }
+
+    &__inner {
+      justify-content: center;
+    }
+
+    &__catalog {
+      margin-left: unset;
+    }
+
+    &__catalog {
+      order: 1;
+    }
+  }
+}

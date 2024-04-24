@@ -1,0 +1,44 @@
+.attention {
+  display: none;
+  max-width: 480px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  @include fluid(padding, 20px, 40px);
+  border-radius: 20px;
+  border: 1px solid #EBF2F5;
+  background: #FFF;
+  /* 1 */
+  box-shadow: 0px 10px 30px 0px rgba(18, 51, 72, 0.10);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @include fluid(gap, 15px, 20px);
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include fluid(gap, 10px, 15px);
+  }
+
+  &__icon {
+    svg {
+      @include fluid(height, 32px, 48px);
+    }
+  }
+
+  &__text {
+    text-align: center;
+    color: #848E94;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}

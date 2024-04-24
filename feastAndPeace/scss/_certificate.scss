@@ -1,0 +1,37 @@
+.certificate {
+  position: relative;
+  @include fluid(margin-top, 30px, 105px);
+  @include fluid(margin-bottom, 30px, 120px);
+
+  &__bg {
+    position: absolute;
+    top: 73%;
+    @include fluid(right, 35px, 71px);
+    transform: translateY(-50%);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    z-index: -1;
+    @include fluid(width, 385px, 632px);
+  }
+
+  &__title {
+    @include fluid(margin-bottom, 20px, 60px);
+  }
+
+  // &__inner {
+  //   display: grid;
+  //   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  //   @include fluid(gap, 15px, 30px);
+  // }
+
+  &__img {
+    border-radius: 10px;
+    border: 1px solid #EBF2F5;
+    @include fluid(height, 240px, 270px);
+    cursor: pointer;
+  }
+}

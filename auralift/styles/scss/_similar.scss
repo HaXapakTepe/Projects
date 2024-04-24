@@ -1,0 +1,58 @@
+.similar {
+  margin: 75px 0 56px;
+
+  &__swiper {
+    overflow: visible;
+  }
+
+  &__box {
+    position: relative;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 22px;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      gap: 12px;
+    }
+
+    &-block {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+
+  &__slide {
+    align-self: stretch;
+    height: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .similar {
+    margin-bottom: 60px;
+
+    &__box {
+      margin-bottom: 26px;
+    }
+  }
+}
+
+@media (max-width: 539px) {
+  .similar {
+    &__arrow {
+      display: none;
+    }
+
+    &__title {
+      font-size: 36px;
+      line-height: 44px;
+    }
+  }
+}

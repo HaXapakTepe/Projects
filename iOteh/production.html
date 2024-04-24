@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>production</title>
+  <link rel="shortcut icon" href="./images/favicon.svg" type="x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./css/icons.css">
+  <link rel="stylesheet" href="./css/style.css?v=2.0">
+</head>
+
+
+<body>
+
+
+  <div class="preloader">
+    <img class="preloader__image" src="./images/preloader.png" alt="" />
+  </div>
+
+
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a class="nav__link" href="#">
+          <img class="logo" src="./images/logo.png" alt="логотип">
+        </a>
+        <ul class="menu">
+          <div class="close"></div>
+          <li class="menu__item menu__item--hidden">
+            <a class="menu__link link" href="#">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a data-goto=".section-about" class="menu__link link" href="#">О нас</a>
+          </li>
+          <li class="menu__item">
+            <a data-goto=".section-news" class="menu__link link" href="#">Новости</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link" href="#">Технология</a>
+          </li>
+          <li class="menu__item">
+            <a data-goto=".section-services" class="menu__link link" href="#">Услуги</a>
+          </li>
+          <li class="menu__item menu__item--opacity">
+            <a class="menu__link menu__link--stop link" href="#">Портфолио</a>
+            <div class="menu__item-opacity">
+              <a class="menu__link menu__link--opacity link" href="#">Наше производство</a>
+              <a class="menu__link menu__link--opacity link" href="#">Наши проекты</a>
+            </div>
+          </li>
+          <li class="menu__item menu__item--hidden">
+            <a class="menu__link link" href="#">Галерея</a>
+          </li>
+          <li class="menu__item menu__item--hidden">
+            <a class="menu__link link" href="#">Проекты</a>
+          </li>
+          <li class="menu__item">
+            <a data-goto=".section-certificate" class="menu__link link" href="#">Сертификаты</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <div class="nav__item">
+          <a class="nav__contact" href="tel:+74956275759">
+            +7 (495) 627-57-59
+          </a>
+          <a class="nav__contact" href="mailto:ionteh@ioteh.com">
+            ionteh@ioteh.com
+          </a>
+        </div>
+        <div class="nav__burger icon-menu">
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="productionPage">
+    <div class="container">
+      <div class="productionPage__inner">
+        <div class="productionPage__inner-box">
+          <h2 class="productionPage__title title">
+            Наше производство
+          </h2>
+          <a class="linkArrow linkArrow--reverse" href="#">
+            <p class="linkArrow__text">Назад</p>
+            <div class="icon-arrow linkArrow__icon linkArrow__icon--reverse"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="productionPage__video swiper">
+      <div class="productionPage__video-wrapper swiper-wrapper">
+        <div class="productionPage__video-slide swiper-slide">
+          <video id="myVideo1" class="productionPage__video-box" poster="./images/poster.jpg">
+            <source src="./video/video.mp4">
+          </video>
+          <button class="productionPage__video-play" type="button"></button>
+        </div>
+        <div class="productionPage__video-slide swiper-slide">
+          <video id="myVideo2" class="productionPage__video-box" poster="./images/poster.jpg">
+            <source src="./video/video.mp4">
+          </video>
+          <button class="productionPage__video-play" type="button"></button>
+        </div>
+        <div class="productionPage__video-slide swiper-slide">
+          <video id="myVideo3" class="productionPage__video-box" poster="./images/poster.jpg">
+            <source src="./video/video.mp4">
+          </video>
+          <button class="productionPage__video-play" type="button"></button>
+        </div>
+      </div>
+      <div class="productionPage__video-boxArrow">
+        <div class="swiper-button-next icon-swiper-right"></div>
+        <div class="swiper-button-prev icon-swiper-left"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="productionPage__content">
+        <p class="productionPage__content-text">
+          АО «Ионообменные технологии» имеет собственный производственный комплекс технологического оборудования
+          водоподготовки, производящегося под собственной торговой маркой.
+        </p>
+        <p class="productionPage__content-text">
+          Более 1200 м<sup>2</sup> крытых отапливаемых производственных площадей и квалифицированный рабочий персонал
+          позволяют
+          оперативно и качественно собирать блочные установки практически любой производительности.
+        </p>
+      </div>
+      <div class="productionPage__box">
+        <div class="productionPage__box-item modalBox" data-src="#prodim1">
+          <img id="prodim1" class="productionPage__box-image" src="./images/productionPage/1.png" alt="">
+        </div>
+        <div class="productionPage__box-item modalBox" data-src="#prodim2">
+          <img id="prodim2" class="productionPage__box-image" src="./images/productionPage/2.png" alt="">
+        </div>
+        <div class="productionPage__box-item modalBox" data-src="#prodim5">
+          <img id="prodim5" class="productionPage__box-image" src="./images/productionPage/5.png" alt="">
+        </div>
+        <div class="productionPage__box-item modalBox" data-src="#prodim3">
+          <img id="prodim3" class="productionPage__box-image" src="./images/productionPage/3.png" alt="">
+        </div>
+        <div class="productionPage__box-item modalBox" data-src="#prodim6">
+          <img id="prodim6" class="productionPage__box-image" src="./images/productionPage/6.png" alt="">
+        </div>
+        <div class="productionPage__box-item modalBox" data-src="#prodim7">
+          <img id="prodim7" class="productionPage__box-image" src="./images/productionPage/7.png" alt="">
+        </div>
+        <div class="productionPage__box-item modalBox" data-src="#prodim1">
+          <img id="prodim1" class="productionPage__box-image" src="./images/productionPage/4.png" alt="">
+        </div>
+      </div>
+      <a class="linkArrow linkArrow--top" href="#" id="up">
+        <p class="linkArrow__text">Наверх</p>
+        <div class="icon-arrow linkArrow__icon linkArrow__icon--top"></div>
+      </a>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__item">
+          <p class="footer__item-title">Ссылки</p>
+          <a class="footer__item-link" href="#">О нас</a>
+          <a class="footer__item-link" href="#">Главная</a>
+          <a class="footer__item-link" href="#">Новости</a>
+          <a class="footer__item-link" href="#">Наши решения</a>
+          <a class="footer__item-link" href="#">Наши услуги</a>
+          <a class="footer__item-link" href="#">Наше портфолио</a>
+          <a class="footer__item-link" href="#">Наши проекты</a>
+        </div>
+        <div class="footer__item">
+          <p class="footer__item-title">
+            Контакты
+          </p>
+          <p class="footer__item-text">
+            Юр. адрес: г. Москва, ул. Барклая, д. 13, стр.2
+          </p>
+          <a class="footer__item-link" href="tel:+74956275759">
+            тел./Факс: +7 (495) 627-57-59
+          </a>
+          <a class="footer__item-link" href="mailto:ionteh@ioteh.com">
+            E-mail: ionteh@ioteh.com
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
+  <script src="./plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="./js/main.js?v=2.0"></script>
+</body>
+
+</html>
