@@ -1,0 +1,38 @@
+.socials {
+  display: flex;
+  align-items: center;
+  @include fluid(gap, 5px, 10px);
+
+  &__icon {
+    transition: background-color .23s ease-in-out;
+    overflow: hidden;
+    @include fluid(border-radius, 10px, 14px);
+
+    svg {
+      @include fluid(width, 30px, 43px);
+      @include fluid(height, 30px, 43px);
+
+      rect {
+        transition: stroke .23s ease-in-out;
+      }
+
+      path {
+        transition: fill .23s ease-in-out;
+      }
+    }
+
+    &:hover {
+      background-color: #1730bd;
+
+      svg {
+        path {
+          fill: #fff;
+        }
+
+        rect {
+          stroke: transparent;
+        }
+      }
+    }
+  }
+}

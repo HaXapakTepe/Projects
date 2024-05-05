@@ -1,0 +1,64 @@
+.language {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  @include fluid(margin-right, 20px, 46px);
+  cursor: pointer;
+
+  &__text {
+    position: relative;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 4px;
+    color: #fff;
+
+    &-hidden {
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      z-index: -1;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.23s ease-in-out, visibility 0.23s ease-in-out, z-index 0.23s ease-in-out;
+    }
+  }
+
+  &--active {
+    .language__text-hidden {
+      z-index: 1;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+@media(max-width: 992px) {
+  .language {
+    margin-right: 0;
+  }
+}
+
+@media(max-width: 576px) {
+  .language {
+    &__icon {
+      svg {
+        circle {
+          stroke: #1730BD;
+        }
+      }
+
+      &:last-child {
+        svg {
+          path {
+            fill: #000;
+          }
+        }
+      }
+    }
+
+    &__text {
+      color: #000;
+    }
+  }
+}

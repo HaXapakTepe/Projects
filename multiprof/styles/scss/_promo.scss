@@ -1,0 +1,238 @@
+.promo {
+  &__wrapper {
+    position: relative;
+    @include fluid(padding-top, 100px, 177px);
+    @include fluid(padding-bottom, 30px, 86px);
+    overflow: hidden;
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    @include fluid(right, -150px, -20px);
+    z-index: -1;
+    pointer-events: none;
+    width: unset;
+    @include fluid(height, 400px, 580px);
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include fluid(margin-bottom, 25px, 41px);
+  }
+
+  &__swiper {
+    width: 100%;
+
+    &.swiper {
+      .swiper-pagination {
+        &-bullet {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+
+  &__title {
+    @include fluid(max-width, 300px, 496px);
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    @include fluid(gap, 20px, 30px);
+
+    &-text {
+      @include fluid(font-size, 18px, 22px);
+      @include fluid(max-width, 380px, 463px);
+      color: #000;
+      line-height: 1.48;
+    }
+  }
+
+  &__item {
+    @include fluid(margin-top, 10px, 30px);
+
+    &-icon {
+      @include fluid(margin-bottom, 10px, 20px);
+
+      svg {
+        width: unset;
+        @include fluid(height, 40px, 56.8px);
+      }
+    }
+
+    &-title {
+      @include fluid(font-size, 16px, 18px);
+      @include fluid(margin-bottom, 5px, 10px);
+      font-weight: 500;
+      color: #fff;
+      letter-spacing: .8px;
+    }
+
+    &-text {
+      @include fluid(max-width, 250px, 322px);
+      font-size: 14px;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px;
+
+    &-link {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include fluid(padding-top, 15px, 30px);
+      @include fluid(padding-bottom, 15px, 30px);
+      @include fluid(font-size, 14px, 18px);
+      background-color: #fff;
+      color: #1730BD;
+      line-height: 1;
+      z-index: 1;
+      // border: 1px solid #EBEDF1;
+      outline: 1px solid #EBEDF1;
+      border-bottom-right-radius: 30px;
+      box-shadow: 0px 4px 40px 0px rgba(99, 138, 225, 0.15);
+      transition: color 0.23s ease-in-out, outline-color 0.23s ease-in-out;
+
+      &::after {
+        content: '';
+        position: absolute;
+        @include fluid(width, 50px, 65px);
+        @include fluid(height, 50px, 65px);
+        border-radius: 50%;
+        background-color: #1730BD;
+        @include fluid(right, -11px, -21px);
+        @include fluid(bottom, -11px, -21px);
+        pointer-events: none;
+        z-index: -1;
+        transition: width 0.23s ease-in-out, height 0.23s ease-in-out, border-radius 0.23s ease-in-out, bottom 0.23s ease-in-out, right 0.23s ease-in-out;
+      }
+
+      &:hover {
+        color: #fff;
+        outline-color: transparent;
+
+        &::after {
+          width: 650px;
+          height: 650px;
+          border-radius: 0;
+        }
+      }
+    }
+
+    &-icon {
+      position: absolute;
+      right: 15px;
+      bottom: 15px;
+
+      svg {
+        @include fluid(width, 12px, 14px);
+        @include fluid(height, 12px, 14px);
+      }
+    }
+  }
+}
+
+@media(max-width: 1080px) {
+  .promo {
+    .container {
+      margin-left: 40px;
+    }
+  }
+}
+
+@media(max-width: 992px) {
+  .promo {
+    .container {
+      margin-left: auto;
+    }
+
+    &__wrapper {
+      padding-top: 30px;
+    }
+
+    &__bg {
+      right: -200px;
+    }
+
+    &__inner {
+      gap: 20px;
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .promo {
+    &__bg {
+      right: -325px;
+    }
+
+    &__swiper {
+      &.swiper {
+        .swiper-pagination {
+          width: 100%;
+          justify-content: center;
+
+          &-bullet {
+            background-color: #1730BD;
+          }
+        }
+      }
+    }
+
+    &__box {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media(max-width: 576px) {
+  .promo {
+    &__bg {
+      display: none;
+    }
+
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+    }
+
+    &__title,
+    &__info-text {
+      max-width: unset;
+    }
+
+    &__item {
+      &-icon {
+        svg {
+
+          path {
+            stroke: #000;
+          }
+
+          circle {
+            stroke: #000;
+          }
+
+        }
+      }
+
+      &-title,
+      &-text {
+        color: #000;
+        max-width: unset;
+      }
+    }
+  }
+}

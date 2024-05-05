@@ -1,0 +1,165 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+// *::-webkit-scrollbar {
+//   width: 3px;
+//   height: 0;
+//   background-color: transparent;
+// }
+
+// *::-webkit-scrollbar-thumb {
+//   background-color: #00000033;
+//   border-radius: 25px;
+// }
+
+ul {
+	list-style: none;
+}
+
+img {
+	width: 100%;
+	display: block;
+}
+
+// кастомная нумерация блоков
+// ol {
+//   counter-reset: num;
+//   list-style: decimal-leading-zero;
+
+//   li {
+//     &:before {
+//       content: counter(num, decimal-leading-zero);
+//       counter-increment: num;
+//       color: #FF7707;
+//       font-size: 40px;
+//       font-weight: 500;
+//       line-height: 120%;
+//       letter-spacing: -0.2px;
+//     }
+//   }
+// }
+
+// кол-во строк в блоке
+// * {
+//   display: -webkit-box;
+//   -webkit-line-clamp: 4;
+//   -webkit-box-orient: vertical;
+//   overflow: hidden;
+// }
+// обратиться к label в котором input
+// &:focus-within {
+//   border-color: #D9291D;
+// }
+
+// фокус лейблу родителю
+// &:focus-within {
+//   border-color: #d9291d;
+// }
+
+input,
+button {
+	font: inherit;
+}
+
+fieldset {
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+html,
+body {
+	position: relative;
+	height: 100%;
+}
+
+body {
+	background-color: #fff;
+	font-family: 'Montserrat';
+	font-weight: 400;
+	@include fluid(font-size, 14px, 16px);
+	line-height: 1.625;
+	color: #66727F;
+
+	&.no-scroll {
+		overflow-y: hidden;
+	}
+}
+
+.wrapper {
+	// min-height: 100dvh;
+	min-width: 320px;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.main {
+	flex-grow: 1;
+}
+
+.container {
+	// контейнер + padding с двух сторон
+	@include fluid(width, 962px, 1270px);
+	@include container;
+}
+
+[class$='__icon'],
+[class$='-icon'] {
+	display: flex;
+	align-items: center;
+
+	svg {
+		path {
+			transition: fill 0.23s ease-in-out, stroke 0.23s ease-in-out;
+		}
+	}
+}
+
+.logo {
+	&__img {
+		-o-object-fit: contain;
+		object-fit: contain;
+		@include fluid(height, 40px, 47px);
+		text-transform: uppercase;
+	}
+}
+
+.title {
+	@include fluid(font-size, 24px, 32px);
+	font-family: "Montserrat Alternates";
+	font-weight: 700;
+	line-height: 1.35;
+	color: #1C2E40;
+
+	&--center {
+		text-align: center;
+	}
+}
+
+h1.title {
+	@include fluid(font-size, 28px, 55px);
+	line-height: 0.83;
+	font-weight: 700;
+}
+
+.fon {
+	background: #F9FAFC;
+}
+
+@media (max-width: 1366px) {}
+
+@media (max-width: 992px) {
+	.container {
+		width: 100%;
+	}
+}

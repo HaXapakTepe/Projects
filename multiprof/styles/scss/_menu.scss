@@ -1,0 +1,161 @@
+.menu {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: fit-content;
+  height: 100%;
+  transform: translateX(-81%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  @include fluid(padding-left, 15px, 20px);
+  @include fluid(padding-right, 15px, 20px);
+  background: linear-gradient(180.00deg, rgb(23, 48, 189), rgb(71, 117, 221) 100%);
+  transition: transform .23s ease-in-out;
+  overflow-y: auto;
+  z-index: 10;
+
+  &__box {
+    display: flex;
+    gap: 50px;
+  }
+
+  &__list {
+    margin-top: 120px;
+  }
+
+  &__item {
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__list,
+  &__bot {
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    transition: opacity .23s ease-in-out, visibility .23s ease-in-out, z-index .23s ease-in-out;
+  }
+
+  &__link {
+    @include fluid(font-size, 16px, 17px);
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+  }
+
+  &__bot {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  &--active {
+    transform: translateX(0%);
+    justify-content: unset;
+
+    .menu {
+
+      &__list,
+      &__bot {
+        opacity: 1;
+        visibility: visible;
+        z-index: 3;
+      }
+    }
+  }
+
+  &__item {
+    width: 100%;
+    padding: 10px 0px;
+  }
+
+  &__link {
+    width: 100%;
+    display: block;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &__close {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 18px;
+    height: 18px;
+
+    &::before,
+    &::after {
+      content: "";
+      width: 14px;
+      height: 2px;
+      position: absolute;
+      left: 2px;
+      background: #fff;
+      border-radius: 3px;
+      transition: all .23s ease-in-out;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  .phone {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .menu {
+    &__item {
+      &--hidden {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .menu {
+    position: absolute;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu {
+    transform: translateX(-100%);
+
+    &__close {
+      display: block;
+    }
+
+    &--active {
+      transform: translateX(0%);
+      justify-content: unset;
+
+      .menu {
+
+        &__list,
+        &__bot {
+          opacity: 1;
+          visibility: visible;
+          z-index: 3;
+        }
+      }
+    }
+  }
+}

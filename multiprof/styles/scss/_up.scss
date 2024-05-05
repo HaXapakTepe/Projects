@@ -1,0 +1,20 @@
+.up {
+  overflow: hidden;
+  border-radius: 18px;
+  cursor: pointer;
+  opacity: 1;
+  z-index: 10;
+  visibility: visible;
+  transition: opacity 0.23s ease-in-out, visibility 0.23s ease-in-out, z-index 0.23s ease-in-out;
+
+  &--hidden {
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden
+  }
+
+  &__img {
+    @include fluid(width, 40px, 46px);
+    @include fluid(height, 40px, 46px);
+  }
+}

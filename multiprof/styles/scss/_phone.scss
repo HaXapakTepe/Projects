@@ -1,0 +1,13 @@
+.phone {
+  width: fit-content;
+  @include fluid(font-size, 16px, 20px);
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.2;
+  letter-spacing: .8px;
+
+  &--black {
+    @include fluid(font-size, 14px, 16px);
+    color: #263238;
+  }
+}

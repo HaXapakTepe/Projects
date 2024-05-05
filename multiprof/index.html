@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="./assets/images/favicon.svg" type="x-icon" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="./styles/css/normalize.css" />
+	<link rel="stylesheet" href="./styles/css/style.css?v=0.0001" />
+	<title>МНОГОПРОФ</title>
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<div class="menu">
+			<div class="menu__box">
+				<a class="logo logo--white" href="#">
+					<img class="logo__img" src="./assets/images/logo-white.png" alt="" />
+					<p class="logo__text">
+						Общество с&nbsp;ограниченной ответственностью “МногоПроф”
+					</p>
+				</a>
+				<div class="menu__close"></div>
+				<div class="burger removeMobile">
+					<div class="burger__line"></div>
+					<p class="burger__text">
+						Меню
+					</p>
+				</div>
+			</div>
+			<ul class="menu__list">
+				<li class="menu__item">
+					<a class="menu__link" href="#">
+						О нас/Миссия
+					</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="#">
+						Услуги
+					</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="#">
+						Новости
+					</a>
+				</li>
+				<li class="menu__item menu__item--hidden">
+					<a class="menu__link" href="#">
+						Сотрудничество
+					</a>
+				</li>
+				<li class="menu__item menu__item--hidden">
+					<a class="menu__link" href="#">
+						Информация
+					</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="#">
+						Контакты
+					</a>
+				</li>
+			</ul>
+			<div class="menu__bot">
+				<a class="phone" href="tel:+79110303097">
+					+7 (911) 030-30-97
+				</a>
+				<a class="btn btn--white" data-fancybox href="#modal">
+					Задать вопрос
+				</a>
+			</div>
+		</div>
+
+		<section class="promo">
+			<div class="promo__wrapper">
+				<img class="promo__bg" src="./assets/images/promo/bg.png" alt="">
+
+				<header class="header">
+					<div class="burger">
+						<div class="burger__line"></div>
+					</div>
+					<a class="logo" href="#">
+						<img class="logo__img" src="./assets/images/logo.png" alt="" />
+						<p class="logo__text">
+							Общество с&nbsp;ограниченной ответственностью “МногоПроф”
+						</p>
+					</a>
+					<div class="header__container container">
+						<div class="header__inner">
+							<nav class="header__nav">
+								<ul class="header__list">
+									<li class="header__item">
+										<a class="header__link" href="#" data-goto=".about">
+											Сотрудничество
+										</a>
+									</li>
+									<li class="header__item">
+										<a class="header__link" href="#">
+											Информация
+										</a>
+									</li>
+									<li class="header__item">
+										<a class="header__link" href="#">
+											Контакты
+										</a>
+									</li>
+								</ul>
+							</nav>
+							<div class="header__inner-box">
+								<a class="phone" href="tel:+79110303097">
+									+7 (911) 030-30-97
+								</a>
+								<div class="header__icons">
+									<i class="header__icons-icon">
+										<svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M18.6748 18.6859C18.4653 18.8948 18.1815 19.0121 17.8857 19.0121C17.5899 19.0121 17.3061 18.8948 17.0966 18.6859L13.4576 15.0122C11.9554 16.1511 10.1123 16.7484 8.22773 16.7072C6.34315 16.666 4.52788 15.9887 3.07695 14.7853C1.62602 13.5819 0.624698 11.9232 0.235721 10.0787C-0.153257 8.23427 0.0929719 6.31247 0.934391 4.62565C1.77581 2.93883 3.16296 1.58615 4.87041 0.787424C6.57787 -0.011299 8.50525 -0.209108 10.3393 0.226142C12.1734 0.661393 13.8064 1.70412 14.9729 3.18486C16.1395 4.66561 16.7709 6.49733 16.7647 8.38236C16.7588 10.2102 16.1503 11.985 15.0335 13.4319L18.6748 17.1078C18.8836 17.3173 19.0009 17.6011 19.0009 17.8969C19.0009 18.1927 18.8836 18.4764 18.6748 18.6859ZM8.38234 2.2353C7.16657 2.2353 5.9781 2.59582 4.96722 3.27126C3.95634 3.94671 3.16846 4.90675 2.7032 6.02998C2.23794 7.15321 2.11621 8.38918 2.3534 9.58159C2.59058 10.774 3.17603 11.8693 4.03572 12.729C4.8954 13.5887 5.9907 14.1741 7.18311 14.4113C8.37552 14.6485 9.61149 14.5268 10.7347 14.0615C11.8579 13.5962 12.818 12.8084 13.4934 11.7975C14.1689 10.7866 14.5294 9.59813 14.5294 8.38236C14.5294 6.75205 13.8818 5.18853 12.729 4.03573C11.5762 2.88293 10.0126 2.2353 8.38234 2.2353Z"
+												fill="white" />
+										</svg>
+									</i>
+									<i class="header__icons-icon">
+										<svg width="30" height="18" viewBox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M15 1C7 1 3.16667 6.5 2 9C3.5 11.8333 7.8 16.5 15 16.5C22.2 16.5 26.8333 11.8333 28 9C26.5 6.5 23 1 15 1Z"
+												stroke="white" stroke-width="2" />
+											<circle cx="14.5" cy="6.5" r="5.5" stroke="white" stroke-width="2" />
+										</svg>
+									</i>
+									<i class="header__icons-icon">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="10" cy="5" r="4" stroke="white" stroke-width="2" />
+											<path d="M1 19C1.52941 16.6667 4.07059 12 10 12C15.9294 12 18.4706 16.6667 19 19" stroke="white"
+												stroke-width="2" />
+										</svg>
+									</i>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="language">
+						<i class="language__icon">
+							<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<mask id="mask0_2603_123" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="23"
+									height="23">
+									<circle cx="11.5" cy="11.5" r="11.5" fill="#D9D9D9" />
+								</mask>
+								<g mask="url(#mask0_2603_123)">
+									<rect width="23" height="9.2" fill="white" />
+									<rect y="7.22858" width="23" height="9.2" fill="#1730BD" />
+									<rect y="15.1143" width="23" height="9.2" fill="#EF2C2C" />
+								</g>
+								<circle cx="11.5" cy="11.5" r="11" stroke="white" stroke-width="1.5" />
+							</svg>
+						</i>
+						<p class="language__text">
+							Ru
+							<span class="language__text-hidden">Eng</span>
+						</p>
+						<i class="language__icon">
+							<svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M4 4L0 0H8L4 4Z" fill="white" />
+							</svg>
+						</i>
+					</div>
+				</header>
+
+				<div class="container">
+					<div class="promo__inner">
+						<div class="promo__info">
+							<h1 class="promo__title title">
+								ГРУППА КОМПАНИЙ МНОГОПРОФ
+							</h1>
+							<p class="promo__info-text">
+								Экосистема для улучшения условий жизни и социальной интеграции людей с ограниченными возможностями
+							</p>
+						</div>
+						<div class="promo__swiper swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="promo__item">
+										<i class="promo__item-icon">
+											<svg width="70" height="58" viewBox="0 0 70 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M33.5837 28.5104H21.4211V24.4552H32.109C33.2754 24.4552 34.2211 23.5096 34.2211 22.3431C34.2211 21.1766 33.2754 20.231 32.109 20.231H21.4211V14.8105C21.4211 12.4851 19.5359 10.6 17.2105 10.6C14.8851 10.6 13 12.4851 13 14.8105V27.6069C13 32.0252 16.5817 35.6069 21 35.6069H31.5426C33.2074 35.6069 34.7533 36.4695 35.6276 37.8863L41.6959 47.7206C42.4007 48.863 43.9055 49.2051 45.035 48.4799L49.7126 45.4765C50.6637 44.8658 50.9821 43.6244 50.4422 42.6314C49.8605 41.5615 48.5089 41.185 47.4579 41.8001L45.3368 43.0414L37.6525 30.7638C36.775 29.3618 35.2376 28.5104 33.5837 28.5104Z"
+													stroke="white" stroke-width="1.5" />
+												<circle cx="17" cy="5.00001" r="4.05" stroke="white" stroke-width="1.5" />
+												<path
+													d="M1 39.4457C1 29.4044 7.27909 24.2515 10.4186 22.6V27.5546C10.3065 27.6647 10.1495 28.0831 9.07311 28.8759C7.9967 29.6686 6.83058 31.4082 6.38207 32.1789C5.03656 34.2709 3.28738 40.0403 7.05483 46.3822C10.8223 52.7241 17.3705 53.649 20.1736 53.3186C21.407 53.3186 24.586 52.9637 28.2467 50.6762C31.9469 48.364 34.9743 43.4094 34.9743 40.1063L36.9926 44.7306C37.1047 45.8317 35.9835 49.0907 30.6014 53.3186C25.2193 57.5466 17.5947 57.2823 14.4552 56.6217C9.97012 55.3005 1 49.4871 1 39.4457Z"
+													stroke="white" stroke-width="1.5" />
+												<path d="M25.8 13.6588L31.3111 6.74116L33.3778 7.7294L38.5444 1.79999L50.6 18.6" stroke="white"
+													stroke-width="1.5" />
+												<path d="M46.6 13.2039L51.2806 8.39999L51.9121 8.96862L53.6209 7.39999L69 19.4" stroke="white"
+													stroke-width="1.5" />
+											</svg>
+										</i>
+										<p class="promo__item-title">
+											Инватуризм
+										</p>
+										<p class="promo__item-text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+											labore et
+											dolore magna aliqua. Ut enim ad minim veniam, quis nostr
+										</p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="promo__item">
+										<i class="promo__item-icon">
+											<svg width="70" height="58" viewBox="0 0 70 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M33.5837 28.5104H21.4211V24.4552H32.109C33.2754 24.4552 34.2211 23.5096 34.2211 22.3431C34.2211 21.1766 33.2754 20.231 32.109 20.231H21.4211V14.8105C21.4211 12.4851 19.5359 10.6 17.2105 10.6C14.8851 10.6 13 12.4851 13 14.8105V27.6069C13 32.0252 16.5817 35.6069 21 35.6069H31.5426C33.2074 35.6069 34.7533 36.4695 35.6276 37.8863L41.6959 47.7206C42.4007 48.863 43.9055 49.2051 45.035 48.4799L49.7126 45.4765C50.6637 44.8658 50.9821 43.6244 50.4422 42.6314C49.8605 41.5615 48.5089 41.185 47.4579 41.8001L45.3368 43.0414L37.6525 30.7638C36.775 29.3618 35.2376 28.5104 33.5837 28.5104Z"
+													stroke="white" stroke-width="1.5" />
+												<circle cx="17" cy="5.00001" r="4.05" stroke="white" stroke-width="1.5" />
+												<path
+													d="M1 39.4457C1 29.4044 7.27909 24.2515 10.4186 22.6V27.5546C10.3065 27.6647 10.1495 28.0831 9.07311 28.8759C7.9967 29.6686 6.83058 31.4082 6.38207 32.1789C5.03656 34.2709 3.28738 40.0403 7.05483 46.3822C10.8223 52.7241 17.3705 53.649 20.1736 53.3186C21.407 53.3186 24.586 52.9637 28.2467 50.6762C31.9469 48.364 34.9743 43.4094 34.9743 40.1063L36.9926 44.7306C37.1047 45.8317 35.9835 49.0907 30.6014 53.3186C25.2193 57.5466 17.5947 57.2823 14.4552 56.6217C9.97012 55.3005 1 49.4871 1 39.4457Z"
+													stroke="white" stroke-width="1.5" />
+												<path d="M25.8 13.6588L31.3111 6.74116L33.3778 7.7294L38.5444 1.79999L50.6 18.6" stroke="white"
+													stroke-width="1.5" />
+												<path d="M46.6 13.2039L51.2806 8.39999L51.9121 8.96862L53.6209 7.39999L69 19.4" stroke="white"
+													stroke-width="1.5" />
+											</svg>
+										</i>
+										<p class="promo__item-title">
+											Инватуризм
+										</p>
+										<p class="promo__item-text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+											labore et
+											dolore magna aliqua. Ut enim ad minim veniam, quis nostr
+										</p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="promo__item">
+										<i class="promo__item-icon">
+											<svg width="70" height="58" viewBox="0 0 70 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M33.5837 28.5104H21.4211V24.4552H32.109C33.2754 24.4552 34.2211 23.5096 34.2211 22.3431C34.2211 21.1766 33.2754 20.231 32.109 20.231H21.4211V14.8105C21.4211 12.4851 19.5359 10.6 17.2105 10.6C14.8851 10.6 13 12.4851 13 14.8105V27.6069C13 32.0252 16.5817 35.6069 21 35.6069H31.5426C33.2074 35.6069 34.7533 36.4695 35.6276 37.8863L41.6959 47.7206C42.4007 48.863 43.9055 49.2051 45.035 48.4799L49.7126 45.4765C50.6637 44.8658 50.9821 43.6244 50.4422 42.6314C49.8605 41.5615 48.5089 41.185 47.4579 41.8001L45.3368 43.0414L37.6525 30.7638C36.775 29.3618 35.2376 28.5104 33.5837 28.5104Z"
+													stroke="white" stroke-width="1.5" />
+												<circle cx="17" cy="5.00001" r="4.05" stroke="white" stroke-width="1.5" />
+												<path
+													d="M1 39.4457C1 29.4044 7.27909 24.2515 10.4186 22.6V27.5546C10.3065 27.6647 10.1495 28.0831 9.07311 28.8759C7.9967 29.6686 6.83058 31.4082 6.38207 32.1789C5.03656 34.2709 3.28738 40.0403 7.05483 46.3822C10.8223 52.7241 17.3705 53.649 20.1736 53.3186C21.407 53.3186 24.586 52.9637 28.2467 50.6762C31.9469 48.364 34.9743 43.4094 34.9743 40.1063L36.9926 44.7306C37.1047 45.8317 35.9835 49.0907 30.6014 53.3186C25.2193 57.5466 17.5947 57.2823 14.4552 56.6217C9.97012 55.3005 1 49.4871 1 39.4457Z"
+													stroke="white" stroke-width="1.5" />
+												<path d="M25.8 13.6588L31.3111 6.74116L33.3778 7.7294L38.5444 1.79999L50.6 18.6" stroke="white"
+													stroke-width="1.5" />
+												<path d="M46.6 13.2039L51.2806 8.39999L51.9121 8.96862L53.6209 7.39999L69 19.4" stroke="white"
+													stroke-width="1.5" />
+											</svg>
+										</i>
+										<p class="promo__item-title">
+											Инватуризм
+										</p>
+										<p class="promo__item-text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+											labore et
+											dolore magna aliqua. Ut enim ad minim veniam, quis nostr
+										</p>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="promo__item">
+										<i class="promo__item-icon">
+											<svg width="70" height="58" viewBox="0 0 70 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M33.5837 28.5104H21.4211V24.4552H32.109C33.2754 24.4552 34.2211 23.5096 34.2211 22.3431C34.2211 21.1766 33.2754 20.231 32.109 20.231H21.4211V14.8105C21.4211 12.4851 19.5359 10.6 17.2105 10.6C14.8851 10.6 13 12.4851 13 14.8105V27.6069C13 32.0252 16.5817 35.6069 21 35.6069H31.5426C33.2074 35.6069 34.7533 36.4695 35.6276 37.8863L41.6959 47.7206C42.4007 48.863 43.9055 49.2051 45.035 48.4799L49.7126 45.4765C50.6637 44.8658 50.9821 43.6244 50.4422 42.6314C49.8605 41.5615 48.5089 41.185 47.4579 41.8001L45.3368 43.0414L37.6525 30.7638C36.775 29.3618 35.2376 28.5104 33.5837 28.5104Z"
+													stroke="white" stroke-width="1.5" />
+												<circle cx="17" cy="5.00001" r="4.05" stroke="white" stroke-width="1.5" />
+												<path
+													d="M1 39.4457C1 29.4044 7.27909 24.2515 10.4186 22.6V27.5546C10.3065 27.6647 10.1495 28.0831 9.07311 28.8759C7.9967 29.6686 6.83058 31.4082 6.38207 32.1789C5.03656 34.2709 3.28738 40.0403 7.05483 46.3822C10.8223 52.7241 17.3705 53.649 20.1736 53.3186C21.407 53.3186 24.586 52.9637 28.2467 50.6762C31.9469 48.364 34.9743 43.4094 34.9743 40.1063L36.9926 44.7306C37.1047 45.8317 35.9835 49.0907 30.6014 53.3186C25.2193 57.5466 17.5947 57.2823 14.4552 56.6217C9.97012 55.3005 1 49.4871 1 39.4457Z"
+													stroke="white" stroke-width="1.5" />
+												<path d="M25.8 13.6588L31.3111 6.74116L33.3778 7.7294L38.5444 1.79999L50.6 18.6" stroke="white"
+													stroke-width="1.5" />
+												<path d="M46.6 13.2039L51.2806 8.39999L51.9121 8.96862L53.6209 7.39999L69 19.4" stroke="white"
+													stroke-width="1.5" />
+											</svg>
+										</i>
+										<p class="promo__item-title">
+											Инватуризм
+										</p>
+										<p class="promo__item-text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+											labore et
+											dolore magna aliqua. Ut enim ad minim veniam, quis nostr
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="promo__swiper-pagination swiper-pagination"></div>
+						</div>
+					</div>
+					<div class="promo__box">
+						<a class="promo__box-link" href="#">
+							Экспертиза доступной среды
+							<i class="promo__box-icon">
+								<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.00001 1L4.52942 4.5294L13 13M13 13H1M13 13L13 1" stroke="white" stroke-width="1.5" />
+								</svg>
+							</i>
+						</a>
+						<a class="promo__box-link" href="#">
+							Учебный центр
+							<i class="promo__box-icon">
+								<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.00001 1L4.52942 4.5294L13 13M13 13H1M13 13L13 1" stroke="white" stroke-width="1.5" />
+								</svg>
+							</i>
+						</a>
+						<a class="promo__box-link" href="#">
+							Кадровое агентство
+							<i class="promo__box-icon">
+								<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.00001 1L4.52942 4.5294L13 13M13 13H1M13 13L13 1" stroke="white" stroke-width="1.5" />
+								</svg>
+							</i>
+						</a>
+						<a class="promo__box-link" href="#">
+							Аутсорсинг
+							<i class="promo__box-icon">
+								<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.00001 1L4.52942 4.5294L13 13M13 13H1M13 13L13 1" stroke="white" stroke-width="1.5" />
+								</svg>
+							</i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<main class="main">
+
+			<section class="info fon">
+				<div class="info__wrapper">
+					<div class="container">
+						<div class="info__inner">
+							<div class="info__box">
+								<div class="info__box-item">
+									<p class="info__box-num">1330</p>
+									<p class="info__box-text">клиентов</p>
+								</div>
+								<div class="info__box-item">
+									<p class="info__box-num">36</p>
+									<p class="info__box-text">партнеров</p>
+								</div>
+								<div class="info__box-item">
+									<p class="info__box-num">10</p>
+									<p class="info__box-text">лет опыта</p>
+								</div>
+								<div class="info__box-item">
+									<p class="info__box-num">50</p>
+									<p class="info__box-text">сотрудников</p>
+								</div>
+							</div>
+							<div class="info__item">
+								<h2 class="info__item-title title">
+									Экспертный центр
+								</h2>
+								<p class="info__item-text">
+									Наш ЭКСПЕРТНЫЙ ЦЕНТР - единственный зарегистрированный в Ленинградской области по СДС ВОИ.
+									СВИДЕТЕЛЬСТВО ОБ АККРЕДИТАЦИИ № ЭЦ-01-2300002 от 31.10.2023 г.
+								</p>
+								<p class="info__item-text">
+									Наши ЭКСПЕРТЫ - опытные специалисты, с правом проведения экспертиз по всей территории РФ.
+									<br>
+									Все прошли профессиональную подготовку и аттестацию в СДС ВОИ "Мир, доступный для всех". Обладают
+									актуальной информацией по действующему законодательству, нормам, стандартам и правилам формирования
+									доступности. Систематически повышают собственную компетенцию, и подтверждают ее на квалификационном
+									экзамене, по результатам которого выдается свидетельство эксперта.
+								</p>
+							</div>
+						</div>
+						<a class="btn btn--center" data-fancybox href="#modal">
+							Задать вопрос
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="tasks">
+				<div class="tasks__wrapper">
+					<div class="container">
+						<h2 class="tasks__title title title--center">
+							Основные задачи
+						</h2>
+						<div class="tasks__arrow">
+							<div class="tasks__arrow-prev  swiper-button-prev"></div>
+							<div class="tasks__arrow-next  swiper-button-next"></div>
+						</div>
+						<div class="tasks__swiper swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="tasks__item">
+										<img class="tasks__item-img" src="./assets/images/tasks/1.svg" alt="">
+										<div class="tasks__item-column">
+											<p class="tasks__item-title">
+												Сертификация объектов
+											</p>
+											<p class="tasks__item-text">
+												Обеспечение потребителю гарантий, что сертифицированные объекты, соответствуют требованиям,
+												установленным в нормативных документах
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="tasks__item">
+										<img class="tasks__item-img" src="./assets/images/tasks/2.svg" alt="">
+										<div class="tasks__item-column">
+											<p class="tasks__item-title">
+												Доступная среда для инвалидов и МГН
+											</p>
+											<p class="tasks__item-text">
+												Повышение уровня доступности для инвалидов и маломобильных групп населения объектов добровольной
+												сертификации
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="tasks__item tasks__item--alt">
+										<img class="tasks__item-img" src="./assets/images/tasks/3.svg" alt="">
+										<div class="tasks__item-column">
+											<p class="tasks__item-title">
+												Повышение спроса на объекты и услуги для инвалидов
+											</p>
+											<p class="tasks__item-text">
+												Стимулирование спроса на здания, сооружения, объекты инфраструктуры и услуги, доступные для
+												инвалидов и маломобильных групп населения
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="tasks__item tasks__item--alt">
+										<img class="tasks__item-img" src="./assets/images/tasks/4.svg" alt="">
+										<div class="tasks__item-column">
+											<p class="tasks__item-title">
+												Учебный центр
+											</p>
+											<p class="tasks__item-text">
+												Повышение квалификации, переквалификация по разным направлениям профессиональной деятельности
+												для инвалидов
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="tasks__item">
+										<img class="tasks__item-img" src="./assets/images/tasks/1.svg" alt="">
+										<div class="tasks__item-column">
+											<p class="tasks__item-title">
+												Сертификация объектов
+											</p>
+											<p class="tasks__item-text">
+												Обеспечение потребителю гарантий, что сертифицированные объекты, соответствуют требованиям,
+												установленным в нормативных документах
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="tasks__item">
+										<img class="tasks__item-img" src="./assets/images/tasks/2.svg" alt="">
+										<div class="tasks__item-column">
+											<p class="tasks__item-title">
+												Доступная среда для инвалидов и МГН
+											</p>
+											<p class="tasks__item-text">
+												Повышение уровня доступности для инвалидов и маломобильных групп населения объектов добровольной
+												сертификации
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="tasks__item tasks__item--alt">
+										<img class="tasks__item-img" src="./assets/images/tasks/3.svg" alt="">
+										<div class="tasks__item-column">
+											<p class="tasks__item-title">
+												Повышение спроса на объекты и услуги для инвалидов
+											</p>
+											<p class="tasks__item-text">
+												Стимулирование спроса на здания, сооружения, объекты инфраструктуры и услуги, доступные для
+												инвалидов и маломобильных групп населения
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="tasks__item tasks__item--alt">
+										<img class="tasks__item-img" src="./assets/images/tasks/4.svg" alt="">
+										<div class="tasks__item-column">
+											<p class="tasks__item-title">
+												Учебный центр
+											</p>
+											<p class="tasks__item-text">
+												Повышение квалификации, переквалификация по разным направлениям профессиональной деятельности
+												для инвалидов
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<p class="tasks__text">
+							<span class="tasks__text-num">10</span>
+							<span class="tasks__text-word">лет</span>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+							dolore magna aliqua.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="services">
+				<div class="services__wrapper">
+					<div class="services__bg">
+						<img class="services__bg-img" src="./assets/images/services/1.png" alt="">
+					</div>
+					<div class="container">
+						<div class="services__inner">
+							<div class="services__item">
+								<div class="services__item-box">
+									<p class="services__item-subtitle">
+										наши услуги:
+									</p>
+									<p class="services__item-title">
+										Доступная среда
+									</p>
+									<a class="btn btn--alt" data-fancybox href="#modal">
+										Задать вопрос
+									</a>
+								</div>
+							</div>
+							<div class="services__tab tab">
+								<div class="services__tab-top">
+									<div class="services__target tab__target tab__target--active">
+										Паспортизация
+									</div>
+									<div class="services__target tab__target">
+										Проектирование
+									</div>
+								</div>
+								<div class="tab__info tab__info--active tab__info--opacity">
+									<div class="services__info">
+										<p class="services__info-text">
+											ПАСПОРТИЗАЦИЯ назначена для объектов и услуг в приоритетных сферах жизнедеятельности граждан.
+											<br>
+											К ним относятся:
+										</p>
+										<ul class="services__list">
+											<li class="services__list-item">
+												здравоохранение
+											</li>
+											<li class="services__list-item">
+												образование
+											</li>
+											<li class="services__list-item">
+												соц.защита населения
+											</li>
+											<li class="services__list-item">
+												дорожно-транспортная инфраструктура
+											</li>
+											<li class="services__list-item">
+												физическая культура и спорт
+											</li>
+											<li class="services__list-item">
+												культура, религия, туризм
+											</li>
+											<li class="services__list-item">
+												административные и выставочная деятельность
+											</li>
+											<li class="services__list-item">
+												общественное питание
+											</li>
+											<li class="services__list-item">
+												почта, банки, связь и информация
+											</li>
+											<li class="services__list-item">
+												объекты ЖКХ
+											</li>
+											<li class="services__list-item">
+												иные ОСИ
+											</li>
+										</ul>
+										<p class="services__info-text">
+											Методика проведения прописана в приказе Министерства труда и социальной защиты граждан РФ от
+											25.12.2012 № 627
+										</p>
+									</div>
+								</div>
+								<div class="tab__info">
+									<div class="services__info">
+										<p class="services__info-text">
+											ПАСПОРТИЗАЦИЯ назначена для объектов и услуг в приоритетных сферах жизнедеятельности граждан.
+											<br>
+											К ним относятся:
+										</p>
+										<ul class="services__list">
+											<li class="services__list-item">
+												здравоохранение
+											</li>
+											<li class="services__list-item">
+												образование
+											</li>
+											<li class="services__list-item">
+												соц.защита населения
+											</li>
+											<li class="services__list-item">
+												дорожно-транспортная инфраструктура
+											</li>
+											<li class="services__list-item">
+												физическая культура и спорт
+											</li>
+											<li class="services__list-item">
+												культура, религия, туризм
+											</li>
+											<li class="services__list-item">
+												административные и выставочная деятельность
+											</li>
+											<li class="services__list-item">
+												общественное питание
+											</li>
+											<li class="services__list-item">
+												почта, банки, связь и информация
+											</li>
+											<li class="services__list-item">
+												объекты ЖКХ
+											</li>
+											<li class="services__list-item">
+												иные ОСИ
+											</li>
+										</ul>
+										<p class="services__info-text">
+											Методика проведения прописана в приказе Министерства труда и социальной защиты граждан РФ от
+											25.12.2012 № 627
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="services services--alt">
+				<div class="services__wrapper">
+					<div class="services__bg">
+						<img class="services__bg-img" src="./assets/images/services/2.png" alt="">
+					</div>
+					<div class="container">
+						<div class="services__inner">
+							<div class="services__item">
+								<div class="services__item-box">
+									<p class="services__item-title">
+										Учебный центр ДПО
+									</p>
+									<a class="btn" data-fancybox href="#modal">
+										Задать вопрос
+									</a>
+								</div>
+							</div>
+							<div class="services__info">
+								<p class="services__info-text">
+									Обучение осуществляется на основании лицензии на образовательную деятельность (ДПО) в двух
+									направлениях:
+								</p>
+								<ul class="services__list">
+									<li class="services__list-item">
+										Инклюзивная сфера: инструктажи, профкурсы, повышения квалификации, семинары и т.д.
+									</li>
+									<li class="services__list-item">
+										Профкурсы, инструктажи, повышения квалификации, переквалификации по разным направлениям
+										профессиональной деятельности
+									</li>
+								</ul>
+								<p class="services__info-text">
+									По окончании выпускник может получить документы об образовании с регистрацией в ФИС ФРДО
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="projects">
+				<div class="projects__wrapper">
+					<div class="container">
+						<div class="projects__inner">
+							<div class="projects__item">
+								<p class="projects__item-text">
+									Согласно договора о партнерстве между АНО ИОИ «В помощь инвалиду», ИНН 8605031520 и ООО "МногоПроф" ,
+									ИНН 4727007863 формируется и поддерживается федеральный интернет-портал "В ПОМОЩЬ ИНВАЛИДУ"
+									<a href="#">(в_помощь_инвалиду.рф)</a> , на котором размещается полезная актуальная информация, ссылки
+									и рекомендации,
+									регулирующие и освещающие жизнедеятельность инклюзивного сообщества России.
+								</p>
+								<p class="projects__item-text">
+									Пользователь в свободном доступе получает сводную актуальную на дату запроса информацию, собранную из
+									первоисточников, а также полезные прямые ссылки на ресурс поставщика работ, услуг или ТСР.
+									Присоединяйтесь и пользуйтесь.
+								</p>
+							</div>
+							<div class="projects__item projects__item--alt">
+								<img class="projects__item-img" src="./assets/images/projects/1.png" alt="">
+								<div class="projects__item-box">
+									<p class="projects__item-subtitle">
+										наши проекты:
+									</p>
+									<p class="projects__item-title">
+										Интернет портал
+										<br>
+										В помощь инвалиду
+									</p>
+									<a class="btn btn--alt" data-fancybox href="#modal">
+										Задать вопрос
+									</a>
+								</div>
+							</div>
+							<div class="projects__item projects__item--bgc">
+								<img class="projects__item-img" src="./assets/images/projects/1.png" alt="">
+								<div class="projects__item-box">
+									<p class="projects__item-subtitle">
+										наши проекты:
+									</p>
+									<p class="projects__item-title">
+										Преображение: Туризм и путешествия
+									</p>
+									<a class="btn btn--alt" data-fancybox href="#modal">
+										Задать вопрос
+									</a>
+								</div>
+							</div>
+							<div class="projects__item projects__item--gray">
+								<img class="projects__item-img" src="./assets/images/projects/2.png" alt="">
+								<p class="projects__item-text">
+									В группу компаний входит экскурсионное бюро "ПРЕОБРАЖЕНИЕ", г. Санкт-Петербург.
+								</p>
+								<p class="projects__item-text">
+									Туроператор, первые путешествия - в 2002 году. организует туристические поездки по России и За рубеж.
+								</p>
+								<p class="projects__item-text">
+									Особое внимание уделяется ОРГАНИЗАЦИИ ИНКЛЮЗИВНЫХ ПУТЕШЕСТВИЙ в проекте "МИР БЕЗ ГРАНИЦ"
+								</p>
+								<p class="projects__item-text">
+									Сайты:
+									<br>
+									<a href="#">www.gosti.today</a>
+									<a href="#">www.spbpalomniki.ru</a>
+									<br>
+									конт.тел. +7-812-925-40-26 +7-911-9241045
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="team fon">
+				<div class="team__wrapper">
+					<div class="container">
+						<div class="team__top">
+							<h2 class="title">
+								Команда
+							</h2>
+							<a class="team__top-link" href="#">
+								ВСЯ КОМАНДА
+							</a>
+						</div>
+						<div class="team__inner">
+							<div class="team__swiper swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="team__item">
+											<img class="team__item-img" src="./assets/images/team/1.png" alt="">
+											<div class="team__item-column">
+												<p class="team__item-who">
+													депутат
+												</p>
+												<p class="team__item-name">
+													Иванов Иван Иванович
+												</p>
+												<p class="team__item-text">
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+													labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+													Lorem
+													ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+													et
+													dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+												</p>
+												<a class="team__item-link" href="#">
+													Подробнее
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="team__item">
+											<img class="team__item-img" src="./assets/images/team/1.png" alt="">
+											<div class="team__item-column">
+												<p class="team__item-who">
+													депутат
+												</p>
+												<p class="team__item-name">
+													Иванов Иван Иванович
+												</p>
+												<p class="team__item-text">
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+													labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+													Lorem
+													ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+													et
+													dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+												</p>
+												<a class="team__item-link" href="#">
+													Подробнее
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="team__item">
+											<img class="team__item-img" src="./assets/images/team/1.png" alt="">
+											<div class="team__item-column">
+												<p class="team__item-who">
+													депутат
+												</p>
+												<p class="team__item-name">
+													Иванов Иван Иванович
+												</p>
+												<p class="team__item-text">
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+													labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+													Lorem
+													ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+													et
+													dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+												</p>
+												<a class="team__item-link" href="#">
+													Подробнее
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="team__item">
+											<img class="team__item-img" src="./assets/images/team/1.png" alt="">
+											<div class="team__item-column">
+												<p class="team__item-who">
+													депутат
+												</p>
+												<p class="team__item-name">
+													Иванов Иван Иванович
+												</p>
+												<p class="team__item-text">
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+													labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+													Lorem
+													ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+													et
+													dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+												</p>
+												<a class="team__item-link" href="#">
+													Подробнее
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="team__swiper-pagination swiper-pagination"></div>
+							<div class="team__arrow">
+								<div class="team__arrow-prev swiper-button-prev"></div>
+								<div class="team__arrow-next swiper-button-next"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="news">
+				<div class="news__wrapper">
+					<div class="container">
+						<div class="news__top">
+							<h2 class="title">
+								Новости
+							</h2>
+							<div class="news__top-box">
+								<a class="news__top-link news__top-link--alt" href="#">
+									Подписаться
+								</a>
+								<a class="news__top-link" href="#">
+									ВСе новости
+								</a>
+							</div>
+						</div>
+						<div class="news__inner">
+							<a class="news__card" href="#">
+								<img class="news__card-img" src="./assets/images/news/1.png" alt="">
+								<div class="news__card-box">
+									<p class="news__card-title">
+										Заголовок новости Заголовок новости Заголовок новости Заголовок новости Заголовок новости Заголовок
+										новости Заголовок
+									</p>
+									<time class="news__card-date" datetime="2024-09-10">
+										10 сентября 2024
+									</time>
+								</div>
+							</a>
+							<div class="news__item">
+								<a class="news__item-link" href="#">
+									<img class="news__item-img" src="./assets/images/news/1.png" alt="">
+									<div class="news__item-box">
+										<p class="news__item-title">
+											Заголовок новости Заголовок новости Заголовок новости Заголовок новости Заголовок новости
+											Заголовок
+											новости
+										</p>
+										<time class="news__item-date" datetime="2024-09-10">
+											10 сентября 2024
+										</time>
+									</div>
+								</a>
+								<a class="news__item-link" href="#">
+									<img class="news__item-img" src="./assets/images/news/1.png" alt="">
+									<div class="news__item-box">
+										<p class="news__item-title">
+											Заголовок новости Заголовок новости Заголовок новости Заголовок новости Заголовок новости
+											Заголовок
+											новости
+										</p>
+										<time class="news__item-date" datetime="2024-09-10">
+											10 сентября 2024
+										</time>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="footer fon">
+			<div class="footer__elem">
+				<div class="chat" style="display: none;">
+					<div class="chat__box">
+						<i class="chat__icon">
+							<svg width="36" height="33" viewBox="0 0 36 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M5.97222 0C2.67386 0 0 2.67386 0 5.97223V20.8109C0 24.1093 2.67386 26.7832 5.97222 26.7832H7.16634L5.99098 31.1757C5.67989 32.3383 7.08898 33.1791 7.96443 32.3533L13.2589 27.3592C13.4405 27.1879 13.5518 26.9888 13.6036 26.7832H29.0529C32.3512 26.7832 35.0251 24.1093 35.0251 20.8109V5.97222C35.0251 2.67386 32.3512 0 29.0529 0H5.97222Z"
+									fill="white" />
+								<path
+									d="M12.7778 13.7917C12.7778 12.8022 11.9756 12 10.9861 12H9.79166C8.80215 12 7.99999 12.8022 7.99999 13.7917V13.7917C7.99999 14.7812 8.80215 15.5833 9.79166 15.5833H10.9861C11.9756 15.5833 12.7778 14.7812 12.7778 13.7917V13.7917Z"
+									fill="#1730BD" />
+								<path
+									d="M19.9445 13.7917C19.9445 12.8022 19.1424 12 18.1529 12H16.9584C15.9689 12 15.1667 12.8022 15.1667 13.7917V13.7917C15.1667 14.7812 15.9689 15.5833 16.9584 15.5833H18.1529C19.1424 15.5833 19.9445 14.7812 19.9445 13.7917V13.7917Z"
+									fill="#1730BD" />
+								<path
+									d="M27.1112 13.7917C27.1112 12.8022 26.309 12 25.3195 12H24.1251C23.1356 12 22.3334 12.8022 22.3334 13.7917V13.7917C22.3334 14.7812 23.1356 15.5833 24.1251 15.5833H25.3195C26.309 15.5833 27.1112 14.7812 27.1112 13.7917V13.7917Z"
+									fill="#1730BD" />
+							</svg>
+						</i>
+						<p class="chat__text">
+							Чат
+						</p>
+					</div>
+				</div>
+				<div class="up up--hidden">
+					<img class="up__img" src="./assets/images/icons/up.svg" alt="">
+				</div>
+			</div>
+			<div class="container">
+				<div class="footer__inner">
+					<a class="logo" href="#">
+						<img class="logo__img" src="./assets/images/logo-footer.png" alt="" />
+						<p class="logo__text">
+							Общество с&nbsp;ограниченной ответственностью “МногоПроф”
+						</p>
+					</a>
+					<div class="footer__item">
+						<p class="footer__item-title">
+							Услуги
+						</p>
+						<a class="footer__item-link" href="#">Экспертиза</a>
+						<a class="footer__item-link" href="#">Учебный центр</a>
+						<a class="footer__item-link" href="#">Аутсорсинг</a>
+						<a class="footer__item-link" href="#">Кадровое агентство</a>
+					</div>
+					<div class="footer__item">
+						<p class="footer__item-title">
+							Пресс центр
+						</p>
+						<a class="footer__item-link" href="#">Новости</a>
+						<a class="btn btn--blue" href="#">
+							подписаться
+						</a>
+					</div>
+					<div class="footer__item">
+						<p class="footer__item-title">
+							Контакты
+						</p>
+						<a class="phone phone--black" href="tel:+79110303097">
+							+7 (911) 030-30-97
+						</a>
+						<div class="socials">
+							<a class="socials__icon" href="#">
+								<svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_2_1070)">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M22.994 17.7704V21.0274C22.9905 21.0812 22.9998 21.135 23.0212 21.1845C23.0426 21.234 23.0754 21.2777 23.1171 21.312C23.1587 21.3463 23.2078 21.3702 23.2605 21.3817C23.3132 21.3933 23.3678 21.3921 23.42 21.3784C23.72 21.3574 24.398 18.5784 24.699 17.9724C24.8587 17.6307 25.1154 17.3435 25.437 17.1464C25.5383 17.0546 25.6676 16.9996 25.804 16.9904H28.682C28.7597 17.0035 28.8328 17.0361 28.8943 17.0852C28.9559 17.1343 29.0039 17.1983 29.0339 17.2711C29.0639 17.344 29.0749 17.4232 29.0659 17.5015C29.0568 17.5797 29.0279 17.6544 28.982 17.7184C28.757 18.2184 26.827 21.3284 26.727 21.4544C26.6066 21.617 26.5255 21.8052 26.49 22.0044C26.5293 22.2398 26.638 22.458 26.802 22.6314C27.002 22.8574 28.618 24.6314 28.769 24.7864C28.9113 24.9498 29.0065 25.1489 29.044 25.3624C29.008 25.5443 28.9069 25.707 28.7596 25.8198C28.6124 25.9326 28.4291 25.9879 28.244 25.9754C27.618 25.9754 26.078 25.9754 25.902 25.9754C25.5502 25.8523 25.2266 25.6602 24.95 25.4104C24.725 25.2104 23.891 24.2584 23.766 24.1334C23.7237 24.0825 23.6696 24.0427 23.6085 24.0174C23.5473 23.9921 23.4809 23.9822 23.415 23.9884C23.265 23.9884 22.98 24.0034 22.993 24.5734C23.0287 24.9683 22.9459 25.3648 22.755 25.7124C22.6574 25.806 22.5417 25.8787 22.4149 25.926C22.2882 25.9733 22.1531 25.9942 22.018 25.9874C20.9951 26.0494 19.9779 25.7956 19.104 25.2604C17.53 24.2834 15.738 21.6724 14.904 20.0064C14.4065 19.1792 14.0991 18.2519 14.004 17.2914C14.054 17.1154 14.054 16.9914 14.23 16.9914C14.406 16.9914 16.619 16.9914 16.83 16.9914C16.9763 17.0635 17.0983 17.1768 17.181 17.3174C17.256 17.4174 17.828 19.1294 18.003 19.4304C18.178 19.7314 19.041 21.3804 19.509 21.3804C19.6644 21.3499 19.8014 21.2592 19.8902 21.1281C19.979 20.9969 20.0123 20.836 19.983 20.6804C19.983 20.2804 19.983 18.7014 19.983 18.5004C19.7927 18.057 19.4441 17.7004 19.005 17.5004C19.1143 17.3551 19.2538 17.2352 19.4138 17.1489C19.5738 17.0626 19.7506 17.012 19.932 17.0004C20.532 16.9754 22.037 16.9754 22.362 17.0244C22.5364 17.0584 22.6941 17.1509 22.809 17.2865C22.9238 17.4221 22.9891 17.5927 22.994 17.7704Z"
+											fill="#1730BD" />
+									</g>
+									<rect x="1" y="1" width="41" height="41" rx="14" stroke="#1730BD" stroke-width="2" />
+									<defs>
+										<clipPath id="clip0_2_1070">
+											<rect width="43" height="43" rx="15" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+							</a>
+							<a class="socials__icon" href="#">
+								<svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_2_1485)">
+										<g clip-path="url(#clip1_2_1485)">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M25.98 26.1001C25.9617 26.2991 25.8841 26.4881 25.7574 26.6426C25.6307 26.7972 25.4606 26.9102 25.269 26.9672C25.0774 27.0241 24.8733 27.0224 24.6827 26.9621C24.4922 26.9018 24.3239 26.7859 24.1999 26.6292C23.1099 25.7622 21.41 24.5141 21.41 24.5141C21.41 24.5141 20.1799 26.6811 19.9599 26.9031C19.8873 26.9643 19.8028 27.0096 19.7116 27.0363C19.6205 27.0629 19.5247 27.0702 19.4305 27.0577C19.3364 27.0452 19.2459 27.0131 19.1649 26.9636C19.0839 26.9141 19.014 26.8482 18.9599 26.7701C18.9487 26.736 18.9354 26.7026 18.92 26.6701L19.61 23.2181L24.53 18.3851L17.8199 22.2141C17.8199 22.2141 14.7899 21.3081 14.3399 21.1311C14.2239 21.0677 14.1281 20.9727 14.0638 20.8571C13.9995 20.7415 13.9693 20.6101 13.9767 20.478C13.984 20.346 14.0285 20.2187 14.1052 20.1109C14.1819 20.0031 14.2876 19.9193 14.41 19.8691C15.05 19.5431 26.3399 15.2311 26.7199 15.1201C27.0999 15.0091 28.1 14.7201 27.99 15.6931C27.88 16.6661 26.09 25.5661 25.98 26.1001Z"
+												fill="#1730BD" />
+										</g>
+									</g>
+									<rect x="1" y="1" width="41" height="41" rx="14" stroke="#1730BD" stroke-width="2" />
+									<defs>
+										<clipPath id="clip0_2_1485">
+											<rect width="43" height="43" rx="15" fill="white" />
+										</clipPath>
+										<clipPath id="clip1_2_1485">
+											<rect width="513" height="780" fill="white" transform="translate(-329 -517)" />
+										</clipPath>
+									</defs>
+								</svg>
+							</a>
+							<a class="socials__icon" href="#">
+								<svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_2_1900)">
+										<g clip-path="url(#clip1_2_1900)">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M25 28H18C16.8954 27.954 15.8542 27.4719 15.1044 26.6595C14.3546 25.8472 13.9575 24.7707 14 23.666V19.333C13.958 18.2286 14.3554 17.1524 15.1051 16.3403C15.8548 15.5282 16.8957 15.0463 18 15H25C26.1044 15.0463 27.1455 15.5284 27.8952 16.3407C28.645 17.153 29.0422 18.2294 29 19.334V23.667C29.0422 24.7715 28.6449 25.8477 27.8952 26.6599C27.1454 27.4721 26.1043 27.954 25 28ZM27 19.255C27.0306 18.6925 26.8375 18.1408 26.4628 17.7202C26.0881 17.2996 25.5622 17.0443 25 17.01H18C17.4377 17.0443 16.9118 17.2996 16.5372 17.7202C16.1625 18.1408 15.9694 18.6925 16 19.255V23.744C15.9694 24.3065 16.1625 24.8582 16.5372 25.2788C16.9118 25.6994 17.4377 25.9547 18 25.989H25C25.5622 25.9547 26.0881 25.6994 26.4628 25.2788C26.8375 24.8582 27.0306 24.3065 27 23.744V19.255ZM20 18.987L24 21.5L20 24.011V18.987Z"
+												fill="#1730BD" />
+										</g>
+									</g>
+									<rect x="1" y="1" width="41" height="41" rx="14" stroke="#1730BD" stroke-width="2" />
+									<defs>
+										<clipPath id="clip0_2_1900">
+											<rect width="43" height="43" rx="15" fill="white" />
+										</clipPath>
+										<clipPath id="clip1_2_1900">
+											<rect width="513" height="780" fill="white" transform="translate(-94 -517)" />
+										</clipPath>
+									</defs>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bot">
+					<p class="footer__copy">
+						© 2024 Все права защищены.
+					</p>
+					<a class="footer__bot-link" href="#">
+						Политика конфиденциальности
+					</a>
+				</div>
+			</div>
+		</footer>
+
+		<div class="modal" id="modal">
+			<form class="modal__inner" action="" method="post">
+				<p class="title">
+					Укажите данные
+				</p>
+				<input class="modal__input" type="text" name="name" placeholder="Имя" required>
+				<input class="modal__input" type="text" name="phone" placeholder="Телефон" required>
+				<button class="btn btn--center">
+					Отправить
+				</button>
+			</form>
+		</div>
+
+	</div>
+
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="https://unpkg.com/imask"></script>
+	<script src="./scripts/scripts.js"></script>
+</body>
+
+</html>
